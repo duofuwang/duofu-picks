@@ -30,6 +30,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -250,6 +251,10 @@ class RemoteFile(io.RawIOBase):
         with urllib.request.urlopen(request, timeout=60) as response:
             return response.read()
 
+    @property
+    def size(self) -> int:
+        return self._size
+
     def close(self) -> None:
         self._buffer = b""
         super().close()
@@ -268,6 +273,7 @@ def read_ipa_info(download_url: str) -> dict:
             if not names:
                 raise FetchError("IPA 内找不到 Info.plist")
             payload = archive.read(names[0])
+        total_size = remote.size
     finally:
         remote.close()
 
@@ -275,7 +281,9 @@ def read_ipa_info(download_url: str) -> dict:
     return {
         "bundleIdentifier": info.get("CFBundleIdentifier"),
         "displayName": info.get("CFBundleDisplayName") or info.get("CFBundleName"),
+        "version": info.get("CFBundleShortVersionString"),
         "build": info.get("CFBundleVersion"),
+        "size": total_size,
     }
 
 
@@ -451,6 +459,226 @@ def build_app(
     return app
 
 
+def read_ipa_info_local(path: Path) -> dict:
+    with zipfile.ZipFile(path) as archive:
+        names = [
+            n for n in archive.namelist()
+            if re.match(r"^Payload/[^/]+\.app/Info\.plist$", n)
+        ]
+        if not names:
+            names = [n for n in archive.namelist() if n.endswith(".app/Info.plist")]
+        if not names:
+            raise FetchError(f"{path.name} 里找不到 Payload/*.app/Info.plist")
+        payload = archive.read(names[0])
+
+    info = plistlib.loads(payload)
+    return {
+        "bundleIdentifier": info.get("CFBundleIdentifier"),
+        "displayName": info.get("CFBundleDisplayName") or info.get("CFBundleName"),
+        "version": info.get("CFBundleShortVersionString"),
+        "build": info.get("CFBundleVersion"),
+        "size": path.stat().st_size,
+    }
+
+
+def extract_icon(ipa_path: Path, bundle: str, icons_dir: Path) -> Path | None:
+    """从 IPA 里挑一张最大的 AppIcon 存到 icons/，返回写出的文件。"""
+    with zipfile.ZipFile(ipa_path) as archive:
+        candidates = [
+            (archive.getinfo(name).file_size, name)
+            for name in archive.namelist()
+            if re.match(r"^Payload/[^/]+\.app/AppIcon[^/]*\.png$", name)
+        ]
+        if not candidates:
+            return None
+        candidates.sort(reverse=True)
+        payload = archive.read(candidates[0][1])
+
+    icons_dir.mkdir(parents=True, exist_ok=True)
+    safe = re.sub(r"[^A-Za-z0-9._-]", "_", bundle)
+    target = icons_dir / f"{safe}.png"
+    target.write_bytes(payload)
+    return target
+
+
+# --------------------------------------------------------------------------
+# 直链条目：不走 GitHub Release 的 IPA
+# --------------------------------------------------------------------------
+
+def build_manual_app(
+    entry: dict,
+    detect: bool,
+    cache: dict,
+    used_keys: set[str],
+    warnings: list[str],
+    repository_icon: str | None,
+) -> dict | None:
+    url = entry.get("ipa")
+    if not isinstance(url, str) or not url.startswith("http"):
+        raise FetchError("ipa 字段必须是 http(s) 直链")
+
+    cache_key = f"direct@{url}"
+    info = cache.get(cache_key) or {}
+    if detect or not info:
+        try:
+            info = read_ipa_info(url)
+            cache[cache_key] = info
+            log(f"    探测直链 IPA 成功：{info.get('bundleIdentifier')} {info.get('version')}")
+        except Exception as exc:  # noqa: BLE001
+            if not info:
+                raise FetchError(f"无法读取 IPA 元数据：{exc}") from exc
+            warnings.append(f"{url} 元数据刷新失败，沿用缓存值：{exc}")
+    used_keys.add(cache_key)
+
+    bundle = entry.get("bundleIdentifier") or info.get("bundleIdentifier")
+    if not bundle:
+        raise FetchError("缺少 bundleIdentifier，且无法从 IPA 中探测到")
+
+    version = entry.get("version") or info.get("version")
+    if not version:
+        raise FetchError("无法确定版本号，请在配置里显式写 version")
+
+    name = entry.get("name") or info.get("displayName") or str(bundle)
+
+    versions = entry.get("versions")
+    if not isinstance(versions, list) or not versions:
+        item: dict = {"version": str(version)}
+        build = entry.get("buildVersion") or info.get("build")
+        if build:
+            item["buildVersion"] = str(build)
+        if entry.get("date"):
+            item["date"] = str(entry["date"])
+        description = trim(entry.get("versionDescription") or entry.get("description"))
+        if description:
+            item["localizedDescription"] = description
+        item["downloadURL"] = url
+        if info.get("size"):
+            item["size"] = int(info["size"])
+        if entry.get("minOSVersion"):
+            item["minOSVersion"] = str(entry["minOSVersion"])
+        versions = [item]
+
+    app: dict = {"name": str(name), "bundleIdentifier": str(bundle)}
+    if entry.get("developerName"):
+        app["developerName"] = str(entry["developerName"])
+    for field in ("subtitle", "category", "tintColor"):
+        if entry.get(field):
+            app[field] = str(entry[field])
+    description = trim(entry.get("description"))
+    if description:
+        app["localizedDescription"] = description
+
+    icon = entry.get("iconURL") or repository_icon
+    if not icon:
+        raise FetchError("直链条目必须提供 iconURL，或在 repository 里配置一个兜底图标")
+    app["iconURL"] = icon
+    app["versions"] = versions
+
+    log(f"  {app['name']:<22} {versions[0]['version']:<14} 直链      {url[:44]}")
+    return app
+
+
+# --------------------------------------------------------------------------
+# 本地文件条目：自己上传的 IPA
+# --------------------------------------------------------------------------
+
+def build_file_app(
+    entry: dict,
+    cache: dict,
+    used_keys: set[str],
+    warnings: list[str],
+    base_url: str | None,
+    repository_icon: str | None,
+) -> dict | None:
+    relative = entry.get("file")
+    if not isinstance(relative, str) or not relative.strip():
+        raise FetchError("file 字段必须是仓库内的相对路径，例如 ipas/MyApp.ipa")
+    relative = relative.strip().replace("\\", "/").lstrip("/")
+    if relative.startswith("./"):
+        relative = relative[2:]
+
+    path = (ROOT / relative).resolve()
+    if not path.is_relative_to(ROOT):
+        raise FetchError("file 路径必须位于仓库目录内")
+    if not path.is_file():
+        raise FetchError(f"找不到文件：{relative}")
+
+    stat = path.stat()
+    cache_key = f"file@{relative}"
+    cached = cache.get(cache_key) or {}
+    if cached.get("mtime") != stat.st_mtime or cached.get("bytes") != stat.st_size:
+        info = read_ipa_info_local(path)
+        info["mtime"] = stat.st_mtime
+        info["bytes"] = stat.st_size
+        info["size"] = stat.st_size
+        cache[cache_key] = info
+        log(f"    读取 {relative} → {info.get('bundleIdentifier')} {info.get('version')}")
+    else:
+        info = cached
+    used_keys.add(cache_key)
+
+    bundle = entry.get("bundleIdentifier") or info.get("bundleIdentifier")
+    if not bundle:
+        raise FetchError("缺少 bundleIdentifier，且无法从 IPA 中读到")
+    version = entry.get("version") or info.get("version")
+    if not version:
+        raise FetchError("缺少版本号，且无法从 IPA 中读到")
+    name = entry.get("name") or info.get("displayName") or str(bundle)
+
+    if not base_url:
+        raise FetchError("上传文件必须配置 repository.baseURL，否则无法生成下载地址")
+    base = base_url.rstrip("/")
+    download_url = f"{base}/{urllib.parse.quote(relative)}"
+
+    icon = entry.get("iconURL")
+    if not icon:
+        try:
+            written = extract_icon(path, str(bundle), ROOT / "icons")
+        except Exception as exc:  # noqa: BLE001
+            written = None
+            warnings.append(f"{relative} 图标提取失败：{exc}")
+        if written:
+            icon = f"{base}/icons/{urllib.parse.quote(written.name)}"
+    if not icon:
+        icon = repository_icon
+    if not icon:
+        raise FetchError("没有可用图标：请提供 iconURL，或让脚本从 IPA 里提取（需 baseURL）")
+
+    item: dict = {"version": str(version)}
+    build = entry.get("buildVersion") or info.get("build")
+    if build:
+        item["buildVersion"] = str(build)
+    if entry.get("date"):
+        item["date"] = str(entry["date"])
+    description = trim(entry.get("versionDescription") or entry.get("description"))
+    if description:
+        item["localizedDescription"] = description
+    item["downloadURL"] = download_url
+    if info.get("size"):
+        item["size"] = int(info["size"])
+    if entry.get("minOSVersion"):
+        item["minOSVersion"] = str(entry["minOSVersion"])
+
+    versions = entry.get("versions")
+    if not isinstance(versions, list) or not versions:
+        versions = [item]
+
+    app: dict = {"name": str(name), "bundleIdentifier": str(bundle)}
+    if entry.get("developerName"):
+        app["developerName"] = str(entry["developerName"])
+    for field in ("subtitle", "category", "tintColor"):
+        if entry.get(field):
+            app[field] = str(entry[field])
+    description = trim(entry.get("description"))
+    if description:
+        app["localizedDescription"] = description
+    app["iconURL"] = icon
+    app["versions"] = versions
+
+    log(f"  {app['name']:<22} {versions[0]['version']:<14} 本地文件   {relative}")
+    return app
+
+
 # --------------------------------------------------------------------------
 # 主流程
 # --------------------------------------------------------------------------
@@ -490,11 +718,22 @@ def main() -> int:
         if not isinstance(entry, dict):
             continue
         try:
-            app = build_app(
-                entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
-            )
+            if entry.get("file"):
+                app = build_file_app(
+                    entry, cache, used_keys, warnings, repo_meta.get("baseURL"),
+                    repo_meta.get("iconURL"),
+                )
+            elif entry.get("ipa"):
+                app = build_manual_app(
+                    entry, detect, cache, used_keys, warnings, repo_meta.get("iconURL")
+                )
+            else:
+                app = build_app(
+                    entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
+                )
         except FetchError as exc:
-            warnings.append(f"{entry.get('repo')} 已跳过：{exc}")
+            label = entry.get("repo") or entry.get("file") or entry.get("ipa") or "未命名条目"
+            warnings.append(f"{label} 已跳过：{exc}")
             continue
         if app is None:
             continue

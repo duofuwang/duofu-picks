@@ -33,14 +33,18 @@ duofu-picks/
 | `iconURL` | 源图标地址，建议 512×512 |
 | `headerURL` | 顶部横幅 |
 | `tintColor` | 主色调，`#RRGGBB` |
+| `baseURL` | 部署后的站点根地址。上传本地 IPA 或自动提取图标时必须填 |
 
-`apps` 数组里每一项对应一个上游仓库：
+`apps` 数组里每一项是一个应用，三种来源三选一：
 
 | 字段 | 必填 | 说明 |
 |---|---|---|
-| `repo` | 是 | `owner/name` 形式 |
-| `bundleIdentifier` | 建议 | 留空则需开启探测，见下文 |
+| `repo` | 三选一 | `owner/name` 形式，从 GitHub Release 自动跟踪 |
+| `ipa` | 三选一 | 外部 IPA 直链，脚本只索引不托管 |
+| `file` | 三选一 | 仓库内相对路径，如 `ipas/MyApp.ipa` |
+| `bundleIdentifier` | 建议 | 留空则从 IPA 里探测 |
 | `name` | 否 | 留空时依次回退到 IPA 内显示名、仓库名 |
+| `version` | 否 | 仅 `ipa` / `file` 条目有效，留空则从 IPA 里读 |
 | `asset` | 否 | 选哪个资产的正则，默认 `\.ipa$` |
 | `versionFrom` | 否 | `tag`（默认）或 `asset`，版本号从哪取 |
 | `includePrereleases` | 否 | 该仓库是否接受 pre-release |
@@ -52,7 +56,7 @@ duofu-picks/
 
 - `maxVersions`：每个应用保留几个历史版本，默认 0 表示全留
 - `includePrereleases`：所有仓库的默认 pre-release 策略
-- `detectAppInfo`：是否远程读取 IPA 探测 `bundleIdentifier`
+- `detectAppInfo`：是否读取 IPA 探测 `bundleIdentifier`
 
 ## 部署
 
@@ -89,6 +93,38 @@ python build.py --detect   # 强制重新探测 IPA 元数据
    不会下载整个包，结果缓存进 `appinfo.json`。
 2. 在 `apps` 里加一条 `{ "repo": "owner/name" }`。
 3. 推上去，等 Actions 跑完。
+
+## 收录不开源的应用（自己上传 IPA）
+
+`apps` 里除了 `repo`，还支持两种条目，差别在于 IPA 放在哪：
+
+```json
+{ "repo": "owner/name" }                                  // 上游 GitHub Release，自动跟踪
+{ "ipa": "https://example.com/app.ipa" }                   // 任意外部直链，不托管
+{ "file": "ipas/MyApp.ipa" }                               // 仓库内自带文件，走 Pages 分发
+```
+
+`file` 这条就是「自己上传」：把 IPA 丢进 `ipas/` 目录，配置里写相对路径，其余交给脚本。
+它会自动从 IPA 里读出 `bundleIdentifier`、版本号、构建号和显示名，再把 `AppIcon*.png`
+里最大的一张提取到 `icons/{bundleID}.png`，最后拼出 `baseURL` 下的下载地址和图标地址。
+
+前提是在 `repository` 里配好 `baseURL`：
+
+```json
+"baseURL": "https://<用户名>.github.io/<仓库名>"
+```
+
+需要注意的上限：**GitHub 拒绝超过 100MB 的单文件**，而 IPA 很容易超。超了就走
+`ipa` 直链（放对象存储、自家服务器），或者用 Release 附件再由 `repo` 条目引用。
+
+### 这条路的边界
+
+源的所有者能为所有下载内容背书。放什么，就等于你在分发什么：
+
+- **可以**：自己开发的应用、作者书面允许再分发的、企业内部分发给员工、把官方直链做索引
+- **不可以**：把别人付费应用、App Store 应用的解密包转存进来分发
+
+后者的风险和「用别人的破解源」是一样的，只是把风险从别人转移到了你自己的账号上。
 
 ## 几个实际会遇到的坑
 
