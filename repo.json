@@ -1,15 +1,47 @@
 {
   "name": "Duofu Picks",
   "identifier": "com.duofu.picks",
-  "subtitle": "开源应用精选，自动跟随上游 Release",
-  "description": "收录的开源应用，版本与下载地址由脚本从各项目 GitHub Release 自动同步。\n不镜像、不重打包，下载时直接连接上游发布地址。",
+  "subtitle": "自维护开源应用白名单",
+  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n不镜像、不重打包，下载直接指向上游，不接受任何第三方转包。",
   "website": "https://github.com/YOUR_NAME/duofu-picks",
   "tintColor": "#378ADD",
   "featuredApps": [
-    "com.xitrix.iTorrent2",
+    "com.kdt.livecontainer",
+    "com.SideStore.SideStore",
     "com.stik.stikdebug"
   ],
   "apps": [
+    {
+      "name": "AnymeX",
+      "bundleIdentifier": "com.ryan.anymex",
+      "developerName": "RyanYuuki",
+      "subtitle": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
+      "localizedDescription": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
+      "iconURL": "https://github.com/RyanYuuki.png?size=512",
+      "versions": [
+        {
+          "version": "3.2.0",
+          "date": "2026-10-27T18:49:08Z",
+          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6beae5c1) url nav, deeplink support for fcm by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/3bb0908d) torrent file selector in player by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/b61e9b75) cf bypass and webview support for linux by @RyanYuuki\n\n\n### 🔧 Bug Fixes & Improvements\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9975e4c0) fixed a grey screen when accessing released media on different services by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6db545c5) fixed visibility issues on light mode by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/ac97c83d) fixed rhttp disposing causing network reqs to fail by @RyanYuuki\n- [֍](https://github.com/RyanYu…",
+          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.2.0/AnymeX-iOS-v3.2.0.ipa",
+          "size": 80589346
+        },
+        {
+          "version": "3.1.9",
+          "date": "2026-10-25T19:43:42Z",
+          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/80f279c6) enhanced downloads ui and ux by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9c04ca66) runtime bridge support for IOS (thanks to dartotsu) by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9a109267) mpv config, some fixes and ui changes by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/538c3538) torrent download support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/55b6b13f) online subtitles back again by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/07b88757) audio delay support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/429a43ee) cold cache for instant load by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/Any…",
+          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.1.9/AnymeX-iOS-v3.1.9.ipa",
+          "size": 81113053
+        },
+        {
+          "version": "3.1.8",
+          "date": "2026-09-20T17:54:07Z",
+          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/84601c75) full cast support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/a8d6b9db) option to hide/show continue watching by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/5b39e824) enhanced orientation control by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/d2c4fd5c) Full download support on metadata services, lots of fixes by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/d1e44740) continue watching bar on home by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6f030199) improved episode releases cards by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/64de01b2) fcm support so i can notify users anytime i want by @RyanYuuki\n- [֍…",
+          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.1.8/AnymeX-iOS-v3.1.8.ipa",
+          "size": 39830598
+        }
+      ]
+    },
     {
       "name": "BuildBox",
       "bundleIdentifier": "com.mikevillarroel.buildbox",
@@ -73,6 +105,23 @@
       ]
     },
     {
+      "name": "IPAID",
+      "bundleIdentifier": "com.shplash.ipaid",
+      "developerName": "shplash",
+      "subtitle": "Edit IPA bundle identifiers made easy.",
+      "localizedDescription": "Edit IPA bundle identifiers made easy.",
+      "iconURL": "https://github.com/shplash.png?size=512",
+      "versions": [
+        {
+          "version": "1.21",
+          "date": "2026-09-15T18:10:50Z",
+          "localizedDescription": "## What’s New\r\n\r\nAdded an About screen with links to report issues, request features, visit the GitHub repository, and check for updates. It also includes an entirely optional support link, as well as a light/dark mode toggle.\r\n\r\n### Changes\r\n\r\n- Added About screen\r\n- Project links\r\n- Light/dark mode toggle\r\n- Support link",
+          "downloadURL": "https://github.com/shplash/IPAID/releases/download/v1.21/IPAID.ipa",
+          "size": 1766144
+        }
+      ]
+    },
+    {
       "name": "iTorrent",
       "bundleIdentifier": "com.xitrix.iTorrent2",
       "developerName": "XITRIX",
@@ -100,6 +149,223 @@
           "localizedDescription": "## What’s new\r\n* iOS 26 Support, iTorrent fully adopted new Liquid Glass design\r\n* LibTorrent updated to version 2.0.11\r\n* On first launch, app will ask if you'd like to use Cellular connection, instead of disabling it by default\r\n* Added German localization by @soebbing in https://github.com/XITRIX/iTorrent/pull/369\r\n* Added Italian localization by @fraucs in https://github.com/XITRIX/iTorrent/pull/385\r\n* Added Polish localization by @yaptx in https://github.com/XITRIX/iTorrent/pull/391\r\n* Added Spanish localization  by @Deci8BelioS in https://github.com/XITRIX/iTorrent/pull/396\r\n\r\n## Fixes\r\n* Crash on iOS <18 fixed\r\n\r\n## New Contributors\r\n* @soebbing made their first contribution in https://github.com/XITRIX/iTorrent/pull/369\r\n* @fraucs made their first contribution in https://github.com…",
           "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.1.0-1/iTorrent.ipa",
           "size": 7092275
+        }
+      ]
+    },
+    {
+      "name": "LiveContainer",
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "developerName": "LiveContainer",
+      "subtitle": "Run iOS apps without actually installing them!",
+      "localizedDescription": "Run iOS apps without actually installing them!",
+      "iconURL": "https://github.com/LiveContainer.png?size=512",
+      "versions": [
+        {
+          "version": "3.8.0",
+          "date": "2026-07-17T07:44:20Z",
+          "localizedDescription": "# LiveContainer 3.8.0\r\n\r\n> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> To install LiveContainer with built-in SideStore (`LiveContainer+SideStore.ipa`), please use [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\n# New Features\r\n\r\n## Storage Management\r\n\r\n- Added a new storage management view with a breakdown of app bundles, containers, temporary files, app group data, tweaks, and other files. (Hidden apps' size is included in \"other\" section until unlocked)\r\n- Added per-app storage details, including app bundle size, container sizes, and last-used date.\r\n- Added act…",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer%2BSideStore.ipa",
+          "size": 35403538
+        },
+        {
+          "version": "3.7.2",
+          "date": "2026-02-27T04:18:41Z",
+          "localizedDescription": "> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> To install LiveContainer with built-in SideStore (LiveContainer+SideStore.ipa), please use [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\n>[!Note]\r\n> This a minor release that solves the following issues in version 3.7.0 and adds the following features. For more information, please see [3.7.0 release note](https://github.com/LiveContainer/LiveContainer/releases/tag/3.7.0).\r\n\r\n## Bug Fixes\r\n\r\n- Fix an issue where built-in SideStore may freeze on launch (#1158)\r\n- Fix the ipa of another LiveContainer not generating in Liv…",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.7.2/LiveContainer%2BSideStore.ipa",
+          "size": 34811049
+        },
+        {
+          "version": "3.7.0",
+          "date": "2026-02-19T03:17:54Z",
+          "localizedDescription": "# LiveContainer 3.7.0\r\n\r\n> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> We recommend installing LiveContainer + SideStore using [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\nHappy Spring Festival / Lunar New Year! After six months of development, we’re excited to release **LiveContainer 3.7.0**. This update introduces several powerful new features, including the Launch App Shortcut, iOS 26 JIT script support, external containers, native icon generation, and more.\r\n\r\n\r\n# New Features\r\n\r\n## Launch App Shortcut\r\n\r\n> [!Note]\r\n> This feature requires LiveContainer to be…",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.7.0/LiveContainer%2BSideStore.ipa",
+          "size": 36613311
+        }
+      ]
+    },
+    {
+      "name": "Manic EMU",
+      "bundleIdentifier": "com.aoshuang.manicemu",
+      "developerName": "Manic-EMU",
+      "subtitle": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful…",
+      "localizedDescription": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful features while keeping a clean, sleek UI and delivering buttery-smooth gameplay.",
+      "iconURL": "https://github.com/Manic-EMU.png?size=512",
+      "versions": [
+        {
+          "version": "2.0.2",
+          "date": "2026-11-02T08:03:58Z",
+          "localizedDescription": "- Improved 3DS performance\r\n- Nimbus in Artic Base now supports the latest Pretendo\r\n- Improved Home Menu performance on the Azahar core\r\n- Fixed Wii pointer behavior for affected users\r\n- Added MeloCafe Link support\r\n- iPad now supports windowed apps\r\n- Redesigned the SNES skin\r\n- Added skin fallback: iPad can use iPhone skins\r\n- Support for iPhone Duo\r\n- Fixed AirPlay not working on iOS 27 or later\r\n- Added BitBop, a new sister app to Manic EMU for retro game music\r\n- Other bug fixes and improvements",
+          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.2/ManicEMU.v2.0.2.SideloadJIT.ipa",
+          "size": 293317769
+        },
+        {
+          "version": "2.0.1",
+          "date": "2026-09-18T09:29:42Z",
+          "localizedDescription": "- Added WonderSwan support\r\n- Added NAOMI, Atomiswave, and System SP arcade support\r\n- Added Flash support\r\n  · Skin button binding\r\n  · Hardware keyboard input\r\n  · Software keyboard input\r\n  · Touch input\r\n- Built-in, self-contained JIT — no external debugger required\r\n- Added Slow Motion\r\n- Improved GameCube and Wii performance\r\n- GameCube now supports multi-disc games\r\n- Improved Wii motion controls\r\n- Simulate the Wii IR pointer by touch\r\n- Add games from other emulators via a link\r\n- Fixed some arcade systems that wouldn’t run\r\n- Fixed Dreamcast games running too fast\r\n- Fixed PSP crashes\r\n- Added NDS lid open/close\r\n- Improved rotation: with orientation lock on in Control Center, the app no longer snaps back to portrait\r\n- In-game shortcut tips can now be turned off\r\n- Landscape lib…",
+          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.1/ManicEMU.v2.0.1.SideloadJIT.ipa",
+          "size": 288525117
+        },
+        {
+          "version": "2.0.0",
+          "date": "2026-09-03T10:06:18Z",
+          "localizedDescription": "> [!NOTE]\r\n> Starting from version 2.0.0, we no longer provide builds of TrollStore JIT. You can package it yourself by following the [guide](https://github.com/Rednick16/TrollStoreJITEnabler).\r\n\r\nThis is a major release focused on a redesigned interface, expanded platform support, and advanced features. Landscape browsing, library management, and external controller navigation have been rebuilt. It also adds several new systems and brings Netplay to eligible Libretro cores.\r\n\r\n\r\n### Before You Update\r\n\r\n- Dreamcast (Flycast): Existing save states will no longer work as of 2.0.0. Convert important save states to in-game saves before updating, or back up the `Flycast/dc` folder yourself.\r\n- Wii: A BootMii-format `keys.bin` is required.\r\n- Symbian: Install firmware in Settings first (`.ROM`;…",
+          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.0/ManicEMU.v2.0.0.SideloadJIT.ipa",
+          "size": 273393210
+        }
+      ]
+    },
+    {
+      "name": "MiniWatts",
+      "bundleIdentifier": "org.zhaohe.MiniWatts",
+      "developerName": "ResistanceTo",
+      "subtitle": "An iPhone battery, charging and thermal instrument built on private iOS APIs…",
+      "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
+      "iconURL": "https://github.com/ResistanceTo.png?size=512",
+      "versions": [
+        {
+          "version": "1.6.0",
+          "date": "2026-10-27T03:11:13Z",
+          "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **iPhone 18 Pro 高功率充电时会提示读数可能只有一半。** 在 iPhone 18 Pro 系列上用有线充电、协商功率超过 30 W 时，表盘旁会显示\"可能只读到一半\"，功率页和适配器页也会说明原因：这种情况下输入和电芯两侧的传感器都可能只测到一半功率。数值本身不做修正。\n- **新增\"电量核对\"。** 充电时，App 会把电量上升的速度换算成功率，和电芯传感器在同一段时间里测到的功率对比。如果电量涨得明显比传感器测到的快（1.6 倍以上），表盘旁会显示\"读数偏低\"，并给出两边的数值；如果两边一致，会显示核对通过，上面那条\"可能只读到一半\"的提示也会隐藏。电量要上涨至少 3% 才能给出结果，通常需要几分钟。\n- **传感器按 SMC key 识别，重复的读数会合并。** iOS 27 上每个传感器都会出现两份，以前只取第一份，现在取两份的平均值；发热页的列表里每个传感器也只出现一次。发热页和原始数据会在传感器名旁边标出 key（比如电池温度偏高的那个是 `TG0B`）。\n- **电池能量按机型给默认值。** iPhone 18 Pro Max 为 21.75 Wh，iPhone 17 Pro Max 为 19.7 Wh，其他机型仍是 15 Wh。设置 → 电池能量 里会显示本机型的额定值，点\"使用\"即可填入。已经手动设置过的值保持不变。\n- **原始数据新增\"Derived power checks\"一节。** 这一节记录半功率提示是否生效，以及电量核对的结果。\n\n## 修复\n\n- 适配器：iPhone 18 …",
+          "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.6.0/MiniWatts-unsigned.ipa",
+          "size": 3332420
+        },
+        {
+          "version": "1.5.1",
+          "date": "2026-10-13T02:45:39Z",
+          "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **输入读数不完整时，不再当作输入功率显示。** 在 iPad Pro 和 iPhone 18 Pro Max 上，输入传感器只测到了一部分功率（比如实际 43.5 W 只显示 21.8 W）。现在当进入电芯的功率比输入读数还大时，表盘改为显示\"进入电池\"的功率，不再计算效率和适配器利用率，并在功率页和适配器页说明原因。\n- **电池温度改用中位数。** 部分机型有四个同名的电池温度传感器，其中一个明显偏高。\"电池\"读数、热力图上的电池标记和分区标题现在都用中位数，四个读数仍然逐个列出。\n- **异常温度不再参与计算。** 以下读数不再计入热力图和最高温度，但仍保留在\"原始数据\"里，并注明原因：低于 −10 °C 的 PMU 传感器、高于 85 °C 而结温对不上的充电芯片温度、恰好为 0.0 °C 的传感器。\n- **支持 iPad。** 支持横竖屏，内容不再横向拉满。iPad 的传感器对应关系还没有验证，数据仅供参考。\n- **文案更准确。** \"来自充电器\"改为\"手机接口处 / 充电线圈处\"；适配器页注明额定功率是协商出的上限，不是功率计读数。\n- **原始数据更便于反馈。** 每个传感器带上服务编号，并列出被排除的读数。\n\n## 修复\n\n- 适配器：供电规格列表里不再出现\"65.5 V × 65.53 A\"这样的无效档位。\n- 实时活动：App 在前台时，读数变化 0.05 就会更新，不再等到变化 0.2 W 或 0.5 °C。\n\n## 注意\n\n- 这些修复是根据用户反馈的数据做的，没有在对应机型的真机上验证过。如果…",
+          "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.5.1/MiniWatts-unsigned.ipa",
+          "size": 3305290
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-10-10T07:18:40Z",
+          "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **缺失的读数不再显示成 0。** 某一侧没有读数时（例如无线充电没有输入电流），图表在那一段断开，不再掉到 0；能量统计也只累计真正测到的时间段。\n- **充电效率更准。** \"电芯占比\"和\"负载与损耗\"只按输入侧、电池侧同时有读数的时间段计算，某一侧中途缺失不会再把结果带偏。\n- **两个标签改名。** \"以热量损失\"改为\"负载与损耗\"：这部分是手机自身耗电加上转换损耗，并不全是发热。\"效率 / 往返效率\"改为\"电芯占比\"。\n- **\"暂停充电\"的判断更稳。** 状态切换要持续 30 秒才生效，不再来回跳；没有电池电流读数时显示\"保持状态未知\"，不再直接当成暂停充电。\n- **耗电估算不再因为切到后台而清空。** 短暂离开 App 再回来，估算值还在。\n- **历史文件损坏时不再被直接覆盖。** 读不出来的历史文件会改名保留，并在\"原始数据\"页给出提示。\n- **发热相关的说明更准确。** 系统热状态只说明\"可能\"在限制充电电流，不再说成确定的原因。\n\n## 修复\n\n- 历史记录：没有测到输入侧的记录，\"输入\"和\"充电器峰值\"显示为\"—\"，不再显示 0；列表里的迷你曲线改画电池侧功率，不再空白。\n- 实时活动：灵动岛展开后，右上角的状态文字和\"结束\"按钮不再被圆角裁掉；暂停提示能完整显示。\n- 原始数据：重名的 HID 服务各占一行，不再被合并。\n\n## 注意\n\n- 升级后历史记录的格式有变化，旧版本读不了新格式。**如果从 1.5.0 降级回旧版本，历史记录会丢失。**\n\n---\n\n## Improvements\n\n-…",
+          "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.5.0/MiniWatts-unsigned.ipa",
+          "size": 3284306
+        }
+      ]
+    },
+    {
+      "name": "Mori",
+      "bundleIdentifier": "com.mori.downloader",
+      "developerName": "coflyn",
+      "subtitle": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
+      "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
+      "iconURL": "https://github.com/coflyn.png?size=512",
+      "versions": [
+        {
+          "version": "4.5.1",
+          "date": "2026-10-18T23:48:43Z",
+          "localizedDescription": "What's New in v4.5.1\r\n\r\n- Automatic System Language Detection: Automatically detects device and browser language on first launch via navigator.languages / navigator.language and maps to 9 supported locales (Simplified Chinese, Indonesian, Japanese, Korean, Arabic, Russian, Tagalog, Hindi, and English fallback) (#17)\r\n- Android Share Sheet Locale Fallback: Added native Locale.getDefault() language detection in ShareActivity.java so shared links match device language even before app initialization\r\n- Gallery Tab Visibility Toggle: Added toggle to show or hide the Gallery tab under Settings -> Appearance (mori_show_gallery), completely bypassing background disk scans to save RAM and battery on lower-end devices\r\n- TikTok tt.site Shortlink Recognition: Added automatic recognition and URL clean…",
+          "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.1/Mori-v4.5.1-iOS-Unsigned.ipa",
+          "size": 2099521
+        },
+        {
+          "version": "4.5.0",
+          "date": "2026-10-15T01:40:00Z",
+          "localizedDescription": "What's New in v4.5.0\r\n\r\n- Local Media Gallery: Scans downloaded media across Mori directories with categorized tabs (Video, Audio, Image, PDF), live counters, and persistent sorting (Newest, Oldest, A-Z, Size)\r\n- In-App Native PDF Viewer: Bundled offline PDF.js engine with high-DPI canvas rendering, viewport lazy rendering, page 1 cover generator, and page count subtitle\r\n- High-Resolution 640px Thumbnails: Upgraded Android native frame extraction, web canvas generator, and PDF covers to 640px JPEG with sequential queue processing\r\n- Audio Gallery Previews & Grid Covers: History-style audio playback in gallery viewer with album art, track details, local binary streaming, and album artwork on grid cards\r\n- Gallery Favorites Priority: Favorited items float to top of grid with heart badge, ac…",
+          "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.0/Mori-v4.5.0-iOS-Unsigned.ipa",
+          "size": 2096767
+        },
+        {
+          "version": "4.4.0",
+          "date": "2026-09-30T22:16:05Z",
+          "localizedDescription": "What's New in v4.4.0\r\n- Custom Fullscreen Video Player: Replaced native WebView fullscreen with a custom cross-platform player featuring a title header, 60fps seek scrubbing, mute toggle, and back-button / Esc navigation\r\n- Batch Photo Download & PDF Export: Concurrently download all photos in carousels/slides (Instagram, TikTok, Pixiv, Douyin, RedNote) or compile them into a single PDF document\r\n- Reddit & TeraBox Platform Support: Added 2 new platforms (16 total) supporting RapidSave Reddit media and Sechno TeraBox folder and file extraction\r\n- Floating Download Bubble: Persistent monochrome floating bubble tracking up to 5 concurrent downloads with live progress rings\r\n- Concurrent Download Pool: Full concurrent download pool (up to 5 for photos/files, up to 3 for audio/video playlists)…",
+          "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.4.0/Mori-v4.4.0-iOS-Unsigned.ipa",
+          "size": 1662745
+        }
+      ]
+    },
+    {
+      "name": "Nuvio",
+      "bundleIdentifier": "com.nuvio.media",
+      "developerName": "NuvioMedia",
+      "subtitle": "Official Nuvio Mobile Repository",
+      "localizedDescription": "Official Nuvio Mobile Repository",
+      "iconURL": "https://github.com/NuvioMedia.png?size=512",
+      "versions": [
+        {
+          "version": "0.6.6-beta",
+          "date": "2026-10-31T02:59:46Z",
+          "localizedDescription": "- [Translation improvements and adjustments for Slovak language + added translated new strings files (#2448)](https://github.com/NuvioMedia/NuvioMobile/pull/2448) @mmsw91\r\n- [improve player badge codec detection and add filename matching (#2414)](https://github.com/NuvioMedia/NuvioMobile/pull/2414) @skoruppa\r\n- [Add intro, outro and recap skipping from MKV chapter titles (#2446)](https://github.com/NuvioMedia/NuvioMobile/pull/2446) @skoruppa \r\n- [feat(i18n): translate settings groups, subtitle appearance and ASS render modes (#2435)](https://github.com/NuvioMedia/NuvioMobile/pull/2435) @jhojhocraazy\r\n- Update Vietnamese translations ([#2441](https://github.com/NuvioMedia/NuvioMobile/pull/2441), [#2411](https://github.com/NuvioMedia/NuvioMobile/pull/2411)) @blueocean2308\r\n- Add subtitle cus…",
+          "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.6-beta/nuvio-0.6.6-full-release.ipa",
+          "size": 68521101
+        },
+        {
+          "version": "0.6.5-beta",
+          "date": "2026-10-27T02:04:03Z",
+          "localizedDescription": "- [feat(i18n): translate subtitle render scale and hero ratings settings (#2402)](https://github.com/NuvioMedia/NuvioMobile/pull/2402) @jhojhocraazy  \r\n- 2c69902b fix(servers): keep title lookups working between episodes @tapframe  \r\n- [Updated Bulgarian translations - fixes, party file, new strings (#2397)](https://github.com/NuvioMedia/NuvioMobile/pull/2397) @viiktr  \r\n- 88c9b4ce feat(player): split video and controls at the duo fold @tapframe  \r\n- [fix(debrid): recognize language words in release names (#2364)](https://github.com/NuvioMedia/NuvioMobile/pull/2364) @kernexshadow  \r\n- [i18n(vi): update latest Vietnamese strings (#2370)](https://github.com/NuvioMedia/NuvioMobile/pull/2370) @blueocean2308  \r\n- c85dc721 feat(player): remove source name from paused player @tapframe  \r\n- [l10n:…",
+          "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.5-beta/nuvio-0.6.5-full-release.ipa",
+          "size": 67965485
+        },
+        {
+          "version": "0.6.4-beta",
+          "date": "2026-10-23T23:20:42Z",
+          "localizedDescription": "- 8683505d fix(details): animate ratings on tablet @tapframe  \r\n- e6a05d1d feat(ios): support duo layout @tapframe  \r\n- b6287380 fix(deps): update haze to 1.7.3 @tapframe  \r\n- [fix(trakt): keep continue watching when a progress request fails (#2366)](https://github.com/NuvioMedia/NuvioMobile/pull/2366) @kernexshadow  \r\n- [perf(streams): compile badge rules once per change (#2365)](https://github.com/NuvioMedia/NuvioMobile/pull/2365) @kernexshadow  \r\n- [perf(debrid): cache stream filter regexes and reuse stream facts (#2362)](https://github.com/NuvioMedia/NuvioMobile/pull/2362) @kernexshadow  \r\n- [i18n(el): sync the Greek locale with 0.6.3 (player badges, Simkl statuses, engine switch, party chat) (#2359)](https://github.com/NuvioMedia/NuvioMobile/pull/2359) @nosvasedis  \r\n- [feat(i18n): co…",
+          "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.4-beta/nuvio-0.6.4-full-release.ipa",
+          "size": 67805794
+        }
+      ]
+    },
+    {
+      "name": "Nyxian",
+      "bundleIdentifier": "org.emexlabs.nyxian",
+      "developerName": "emexlab",
+      "subtitle": "IDE to develop native code iOS apps and utilities on stock iOS it self just via…",
+      "localizedDescription": "IDE to develop native code iOS apps and utilities on stock iOS it self just via a certificate and a custom micro kernel for those apps.",
+      "iconURL": "https://github.com/emexlab.png?size=512",
+      "versions": [
+        {
+          "version": "0.11.4",
+          "date": "2026-09-10T12:58:18Z",
+          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Feature: Swift typechecking. (cd5cb95c76d8279a57abc6a4c980dfb0b2c849e0)\r\n- Feature: Ksurface Kernel Extension projects. (cf9fcd92f7c8294e63c4e7cb62ff2853025330a3, 9d97e939a88453e8ad6f769997885b3f7cf95a23, f1539b729cd74f3854c5cd8d77d151b5913cbfe0, ca6f57fa2f3affcd471dc413f18bf3df55e790d2, 76dfdb0589147eb19956b1b6e36dd527d656e4f8, c981c47fcf3ce074c5a30b863ee5a7ade967f909, 1878e1a7cc26066b44f15d4f00a08c5d1356838d)\r\n- Feature: backup and restore app sizing for the entire Nyxian boot session. (39a7dd574647581f96d7dbe3c8480c801a89eb55, 1265add0552cc9e7817709988a89e54dc5d874f9, 075cb37f07f674d9c66317a406b67e4fd1696024)\r\n- Feature: symlinks are now partially supported in the file manager UI. (ddd3782a8279da0e068f0c80e524b80adcd47c0f, 7d76fea8d5555b7d8bb09040a8361c48d57a…",
+          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.4/Nyxian.ipa",
+          "size": 111250101
+        },
+        {
+          "version": "0.11.3.1",
+          "date": "2026-08-26T21:59:38Z",
+          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Fix: honor `UISupportedInterfaceOrientation` of the guest app more. (72615de83e6526ede52a824ff0dbaa1ea7d1358c)\r\n### Micro Kernel (ksurface)\r\n- Fix: properly reconnect with: `org.emexlabs.bootstrapd`. (b92142175bf9499304f349b4e01cf9d86de11da9)\r\n- Vulnerability Fix: patched a deadlock in SYS_wait4 (29d025256b654c63010def5365731da6384691cb, c5cd0b92f758e1afd103620a96ad13e00c9a8bbe)\r\n- Vulnerability Fix: patched threading issues in `kPECTLUserInterfaceOpenBundleIdentifier `. (c5630971f50f1676033acb868889360a5dd5c321)\r\n\r\n> [!NOTE]\r\n> Standard SDK used in this version of Nyxian is iPhoneOS26.5.\r\n\r\n> [!NOTE]\r\n> This is a fast patch release, please read the previous changelog.",
+          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.3.1/Nyxian.ipa",
+          "size": 105810643
+        },
+        {
+          "version": "0.11.3",
+          "date": "2026-08-26T15:53:27Z",
+          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Fix: iPhone apps randomly getting unfocused. (144fc95dc74423e937865cbba70b676b177a91bd)\r\n- Fix: random gesture races in iPadOS window server. (0222a71bcf83dee0b39cfa5709f812432130a2e7)\r\n- Feat: better settings design (7373e832fcf6df9a3948e0627fd06760882e42d8)\r\n- Feat: better onboarding design (943dbb1b05b82c590ca9b7b85fe171fa6c2fa328)\r\n- Feat: added extension-less mode for people who struggle to sign Nyxian correctly (212be3247e391f4911b50eec1761516902c17978)\r\n- Feat: added utility export (93fc9e002c35f5d88b30dd11d0d6f32e0ed38606)\r\n### CoreCompiler\r\n- Fix: Properly cleaning up arguments in swift driver in CCDriver. (873a762c3a93f65b357d0d3f3cefd2e69a590afd)\r\n### LiveProcess\r\n- Feat: Using HWHook's for DYLD shims. (a26e72008d39c6c82f54ac2ca417b785a0ce1f80, eda7d2…",
+          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.3/Nyxian.ipa",
+          "size": 105809283
+        }
+      ]
+    },
+    {
+      "name": "PiliPlus",
+      "bundleIdentifier": "com.example.piliplus",
+      "developerName": "bggRGjQaUbCoE",
+      "subtitle": "PiliPlus",
+      "localizedDescription": "PiliPlus",
+      "iconURL": "https://github.com/bggRGjQaUbCoE.png?size=512",
+      "versions": [
+        {
+          "version": "2.2.0.1",
+          "date": "2026-11-02T12:28:28Z",
+          "localizedDescription": "修复 bug\r\n修复无法播放 drm 番剧 #3449\r\n修复匿名账号搜索被风控 #3411\r\n修复安卓(vivo)音量调节 #3442 by @numb747\r\n修复 Linux MPRIS 未设置 DesktopEntry 与 Identity #3438 by @Infinifar",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.1/PiliPlus_ios_2.2.0%2B5590.ipa",
+          "size": 24914746
+        },
+        {
+          "version": "2.2.0",
+          "date": "2026-11-01T07:33:43Z",
+          "localizedDescription": "设置选项调整\r\n支持切换`番剧`/`剧集` PV\r\npgc/pugv api 迁移至 ogv\r\n`我的订阅`详情默认倒序显示\r\n相关推荐过滤屏蔽黑名单 #3276\r\n用户主页支持显示粉丝勋章 #3202\r\n键盘方向键支持长按持续回退 #3379\r\n同步空降助手新片段类型`惊吓` #3368\r\n桌面端进度条支持鼠标悬停预览视频画面\r\n增加桌面端视频底栏时长字体大小 #3372\r\n增加滚轮调节音量开关 #3340 by @Hdy08\r\n侧边栏支持隐藏文字 #3343 by @illumiat\r\n支持`,`/`.`键逐档切换倍速 #3294 by @lzblack\r\n重构 Linux 内嵌 WebView #3423 by @moluopro\r\nLinux 构建依赖调整 #3277 by @Tobiichi-Origuchi\r\nLinux 支持多媒体控制 #3355 by @Tobiichi-Origuchi\r\nLinux 支持检测网络类型 #3164 #3374 by @Tobiichi-Origuchi\r\n`我的`页面支持显示`观看记录`、`稍后再看`、`我的订阅`\r\n支持自定义`buvid` #3253 #3349 co-by @My-Responsitories\r\n缓存面板支持选择音质，修复音质选取问题 #3309 co-by @azkbzxf\r\n支持导出/导入所有数据到压缩包 #3248 by @nlsdt #3313 by @My-Responsitories\r\n其他调整 #3349 by @My-Responsitories\r\n构建脚本不再改写用户的全局 Git 配置 #3360 by @AmCh-Q\r\n\r\n适配更多专栏类型\r\n支持显示 UP 专栏文集 #3316\r\n\r\n首页直播置顶分类标签 #3363\r\n增加全屏 SC 是否显示/不透明度/缩放设置\r\n直播与视频的…",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0/PiliPlus_ios_2.2.0%2B5580.ipa",
+          "size": 24921912
+        },
+        {
+          "version": "2.1.6.2",
+          "date": "2026-10-10T13:07:12Z",
+          "localizedDescription": "专栏支持跳转至评论 #3213\r\n其他调整 #3208 by @My-Responsitories\r\n\r\n修复 bug\r\n修复搜索风控验证 #3106\r\n修复窗口大小变化时图片闪烁 #2685\r\n修复安卓视频暂停时画面裁切问题 #3034 by @Hdy08",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.1.6.2/PiliPlus_ios_2.1.6%2B5472.ipa",
+          "size": 24353925
         }
       ]
     },
@@ -135,6 +401,68 @@
       ]
     },
     {
+      "name": "ryP0",
+      "bundleIdentifier": "com.ry0.ryP0",
+      "developerName": "Sami-Wali",
+      "subtitle": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA…",
+      "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
+      "iconURL": "https://github.com/Sami-Wali.png?size=512",
+      "versions": [
+        {
+          "version": "2.2",
+          "date": "2026-10-23T20:45:34Z",
+          "localizedDescription": "# What’s New\r\n\r\n- Install Apps Directly on LiveContainer 1 Without LiveContainer 2 (Thats include any Container App)\r\n- Improved background downloads and Live Activity handling (only for Sideload not work with Containers).\r\n- Added built-in file picker compatibility for **LiveContainer**, without requiring the **Fix File Picker** option.\r\n- Added the new **PS3** theme with and Colors.\r\n- Added Installation Location to track updates for installed apps \r\n- Improved download count and progress indicators on the **Downloads** tab.\r\n- Fix Sign-in with Google Account \r\n- Add sections for Port Category (Ready to Install) (Built it Yourself)\r\n\r\n## Notes\r\n\r\n**LiveContainer or any Container App Users:** Enable **\"Switch App Without Asking\"** from the settings.",
+          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.2/ryP0-unsigned.ipa",
+          "size": 14531954
+        },
+        {
+          "version": "2.1",
+          "date": "2026-10-16T10:27:52Z",
+          "localizedDescription": "# What’s New\r\n\r\n## ryP0 2.1\r\n\r\n- Fixed IPA downloads for non LiveContainer users.\r\n- Added the new **Orbit** theme.\r\n- App requests now require **GitHub sign-in**, making it easier to track request status.\r\n\r\n## Notes\r\n\r\n**LiveContainer users:** Run ryP0 as a Shared App in LiveContainer 2 to keep LiveContainer 1 available for installations.",
+          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.1/ryP0-unsigned.ipa",
+          "size": 11010317
+        },
+        {
+          "version": "2.0",
+          "date": "2026-10-11T05:14:56Z",
+          "localizedDescription": "# What's New\r\n\r\n## ryP0 2.0 brings a rebuilt native iOS experience with more ways to discover, download, and organize apps.\r\n\r\n- Native SwiftUI interface with Liquid Glass controls on iOS 26.\r\n- Search, category filters, and support for multiple app sources.\r\n- Favorites and a New Releases page with searchable updates.\r\n- Available version history, release-channel filters, and Patch Notes.\r\n- In-app IPA downloads with progress, cancellation, and retry.\r\n- Background downloads and Live Activities on supported installations.\r\n- Save downloaded IPAs to Files or share them without downloading again.\r\n- LiveContainer, AltStore, and SideStore integrations.\r\n- Return to LiveContainer directly when running inside it.\r\n- Submit app requests and follow their status in My Requests.\r\n- Save app icons …",
+          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.0/ryP0-unsigned.ipa",
+          "size": 10751321
+        }
+      ]
+    },
+    {
+      "name": "SideStore",
+      "bundleIdentifier": "com.SideStore.SideStore",
+      "developerName": "SideStore",
+      "subtitle": "SideStore is a fork of AltStore that doesn't require an AltServer.",
+      "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
+      "iconURL": "https://github.com/SideStore.png?size=512",
+      "versions": [
+        {
+          "version": "0.7.0-alpha",
+          "date": "2026-09-15T11:12:49Z",
+          "localizedDescription": "## Build Info\r\n\r\nBuilt at (UTC): `Fri Sep 11 21:25:58 2026`\r\nBuilt at (UTC date): `2026-09-11`\r\nCommit SHA: `6032424a0e56c1c319762e786099bdd9186a238b`\r\nVersion: `0.7.0-20260911.328+6032424a`\r\n\r\n#### What's Changed:\r\n- **fixes for 503 during sign-in**: There were some changes from apple server side which broke 0.6.4 and prior versions and prevent them from signing into sidestore. This temporary version addresses the sign-in issue with 503 status code\r\n\r\n#### Full Changelog: [0.6.4...0.7.0-alpha](https://github.com/SideStore/SideStore/compare/0.6.4...0.7.0-alpha)",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa",
+          "size": 27770821
+        },
+        {
+          "version": "0.6.4",
+          "date": "2026-09-09T17:59:48Z",
+          "localizedDescription": "# :x: DO NOT USE SIGN-IN IS BROKEN ON 0.6.4 AND BEFORE\r\n\r\n\r\n## Build Info\r\n\r\nBuilt at (UTC): `Wed Sep 09 17:59:46 2026`\r\nBuilt at (UTC date): `2026-09-09`\r\nCommit SHA: `f93a95c079057090bea355453ef24f6e8668dfa9`\r\nVersion: `0.6.4`\r\n\r\n#### What's Changed:\r\n- **Developer Portal in Settings**: Manage your Apple Developer App IDs, Provisioning Profiles, Certificates, Devices, and App Groups directly inside the app for both paid and free team types.\r\n- **Manual Profile Creation**: Paid developer accounts can now create manual profiles on app without having to reach developer portal.\r\n- **Certificate Management**: Certificate CSR + create/revoke in developer portal, export, import, view all data including ASN1, keys, and much more metadata.\r\n- **Full Two-Factor Authentication**: Added support for …",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.4/SideStore.ipa",
+          "size": 27609918
+        },
+        {
+          "version": "0.6.3",
+          "date": "2026-05-05T03:59:02Z",
+          "localizedDescription": "# ⚠️**Please Reinstall With [iloader](https://iloader.app/)**⚠️\r\nIf you have updated to iOS 26.4+ and are receiving VPN errors.\r\n## What's Changed\r\n* Small fixes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1020\r\n* Fix expired Discord link in README.md by @Or3nges in https://github.com/SideStore/SideStore/pull/1101\r\n* Update error codes by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1078\r\n* LocalDevVPN by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1126\r\n* Sources: Update/Remove Sources from Trusted Sources by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1131\r\n* Adds StikDebug AltSource by @CelloSerenity in https://github.com/SideStore/SideStore/pull/1137\r\n* Update pairing file help link in alert by @basketshoe in htt…",
+          "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.6.3/SideStore.ipa",
+          "size": 28632252
+        }
+      ]
+    },
+    {
       "name": "StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
       "developerName": "StikDebug",
@@ -148,6 +476,99 @@
           "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n* more prob\r\n\r\n## New Contributors\r\n* @mvanhorn made their first contribution in https://github.com/StikDebug/StikDebug/pull/479\r\n* @OpenUmar made their first contribution in https://github.com/StikDeb…",
           "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
           "size": 16818331
+        }
+      ]
+    },
+    {
+      "name": "TiebaPure",
+      "bundleIdentifier": "dev.infinityf4p.tiebapure",
+      "developerName": "infinityf4p",
+      "subtitle": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
+      "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
+      "iconURL": "https://github.com/infinityf4p.png?size=512",
+      "versions": [
+        {
+          "version": "1.4.15",
+          "date": "2026-10-10T06:07:37Z",
+          "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f2769043456324521afd87d04ade8d92d33832e967c19c31123`\n\nCI `ci-ok` passed on PR #86, including unit tests, iOS compatibility checks, UI smoke tests, iPad layout tests, and the Release build.",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
+          "size": 9347637
+        },
+        {
+          "version": "1.4.14",
+          "date": "2026-08-24T01:40:29Z",
+          "localizedDescription": "## 修改内容\n\n- 新增帖子本地保存：支持完整楼层和楼中楼离线阅读、媒体下载、搜索、回复更新、存储管理及备份导入导出。\n- 新增内置与自定义阅读字体，并完善首页重复点击刷新。\n- 自动检测账号登录失效，提示后清理当前登录态，同时避免旧请求或网络中断误触发退出。\n- 修复 iOS 16 嵌套搜索布局递归卡死、文字选择与导航手势冲突，并将媒体、字体、语音和存储文件 I/O 移出主线程。\n- 加固本地帖子并发写入、媒体事务崩溃恢复、备份校验与字体目录一致性。\n\n## 验证\n\n- GitHub Actions ci-ok 全部通过，包含单元测试、iOS 16 兼容检查、iPhone/iPad UI 测试和 Release 构建。\n- App 与扩展均为 1.4.14 (58)、arm64、最低 iOS 16.4；IPA 压缩结构正常且未签名。\n- 发帖和回帖夹具 UI 测试通过；本次未改动认证写入路径，因此未重复进行真实账号写入测试。",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.14/TiebaPure-v1.4.14-unsigned.ipa",
+          "size": 3787516
+        },
+        {
+          "version": "1.4.13",
+          "date": "2026-08-20T15:32:45Z",
+          "localizedDescription": "## 修改内容\n\n- 修复多图帖子首图放大后停留在低清过渡图的问题，并增加受内存与帧数限制的 GIF 动画显示。\n- 修复回复倒序分页只作用于当前已加载页面的问题，并完善楼中楼进入动画、下拉/右滑退出和阅读位置恢复。\n- 修复 iOS 18 长按选择帖子文字时可能出现的布局卡死。\n- 修复登录账号发帖、回帖时 TBS 刷新失败的问题；恢复签名登录校验，并保留发送结果不明确时不自动重试的保护。\n\n## 验证\n\n- GitHub Actions `ci-ok` 全部通过。\n- 本地发布请求与身份夹具测试 48 项通过。\n- 真实账号发帖和回帖均验证成功。",
+          "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.13/TiebaPure-v1.4.13-unsigned.ipa",
+          "size": 3509096
+        }
+      ]
+    },
+    {
+      "name": "酷安桌面版",
+      "bundleIdentifier": "com.coolapk.desktop",
+      "developerName": "daimiaopeng",
+      "subtitle": "酷安跨平台桌面版",
+      "localizedDescription": "酷安跨平台桌面版",
+      "iconURL": "https://github.com/daimiaopeng.png?size=512",
+      "versions": [
+        {
+          "version": "1.35.0",
+          "date": "2026-10-15T03:53:20Z",
+          "localizedDescription": "## 更新日志\r\n\r\n### 新增\r\n- 桌面端支持从账号最近发布的动态、评论中识别手机型号和系统信息，自动用于请求设备配置；无可用记录时使用 iPhone 18 Pro Max 兼容模板。\r\n- 设备设置页展示自动识别的机型及来源。自动配置保留手动指纹和已保存的数盟设备 ID，切换账号时重新识别。\r\n- 搜索分类支持拖动排序，并可收起不常用栏目。\r\n- 无图模式新增详情页图片显示开关。\r\n- 新增浅色界面底色自定义和动态背景图显示开关。\r\n- 话题页新增我的点评卡片。\r\n- 设置页新增“液态玻璃”总开关，默认关闭，可统一控制首页和话题导航的液态玻璃效果。\r\n\r\n### 优化\r\n- 移动首页滚动时可自动收起搜索栏和底部导航；详情页底栏支持随滚动隐藏。\r\n- 优化移动端上传、下载布局，并增加 CDN 上传入口。\r\n- 优化首页与话题的沉浸式导航，适配 Android 和 iOS 安全区，并统一上下导航的玻璃效果。\r\n- 优化设置页窄屏和大字体下的布局。\r\n- 设置中心统一使用一个“设置”标签，切换菜单不再新增标签，返回时打开最近访问的栏目；已有固定和收藏的设置标签自动合并。\r\n- 隐藏桌面设置内容区与侧栏重复的栏目标题，保留说明和功能分组。\r\n\r\n### 修复\r\n- 修复私信列表中同一联系人可能重复显示的问题，覆盖缓存恢复、刷新及分页加载场景。\r\n- 修复已安装测试版选择稳定版更新渠道时，错误展示旧稳定版更新日志、发布日期和 Release 链接的问题。\r\n- 修正关于页的版本类型与更新渠道说明，避免测试版安装包被误认为稳定版。\r\n- 修复手机快捷入口图标缺失。\r\n- 修复系统榜首屏内容不足时不继续加载下一页，以及双列瀑布流滚动抽动、短列加载不及时的问题。\r\n- 修复切换应用窗口标签后话题列表意外刷新的问题。\r\n- 修复头条刷新和分页时游标传递异常。\r\n- 修复私信图片预览及…",
+          "downloadURL": "https://github.com/daimiaopeng/coolapk-desktop/releases/download/v1.35.0/coolapk-v1.35.0-ios-arm64-unsigned.ipa",
+          "size": 8021392
+        },
+        {
+          "version": "1.34.1",
+          "date": "2026-10-13T15:56:17Z",
+          "localizedDescription": "# v1.34.1 更新日志\r\n\r\n## 优化\r\n- 调整桌面右侧评论栏的默认宽度，随内容区域自适应；打开评论时隐藏首页榜单与热门话题侧栏。\r\n- 右侧评论改为默认关闭，首次升级时同步关闭，之后保留用户手动选择。\r\n- 加强文本处理与外部链接打开的安全校验。\r\n\r\n## 修复\r\n- 恢复 PC 模式设置页的左侧分类栏和页面标题，移动模式保留分类下拉菜单。\r\n- 修复 Linux 跟随系统主题的识别与切换问题。\r\n- 修复部分 Android 设备图标显示为方框的问题。\r\n- 修复 Android 实况播放能力被误判为不支持的问题。\r\n- 修复移动端文字选择菜单遮挡选区、影响拖动选择的问题。\r\n- 修复复制图片失败时意外将图片链接写入剪贴板的问题，并改善图片格式兼容性。\r\n- 修复首页“新机”栏目“更多”入口误跳转产品详情的问题。",
+          "downloadURL": "https://github.com/daimiaopeng/coolapk-desktop/releases/download/v1.34.1/coolapk-v1.34.1-ios-arm64-unsigned.ipa",
+          "size": 8050308
+        },
+        {
+          "version": "1.34.0",
+          "date": "2026-10-13T02:39:56Z",
+          "localizedDescription": "# v1.34.0 更新日志\r\n\r\n## 新增\r\n\r\n- **话题评分与点评：** 话题页新增评分分布、评分维度、近期评分趋势和用户点评，可按星级或详细评分筛选；动态详情补充评分信息。\r\n- **数码分类浏览：** 新增主分类与子分类目录，支持网格或列表查看商品，并使用分类提供的排序选项。\r\n- **分类表情与收藏管理：** 表情面板新增酷安表情、系统 Emoji、酷币、牛牛、最近使用和收藏分类。登录后可添加、删除和排序收藏表情，并在发动态或评论时插入。\r\n- **Windows 10 动态磁贴开发预览：** 可选择推荐、热榜、快讯或精选作为内容来源，最多轮播 5 条；启动设置页提供启用说明。\r\n- **性能诊断日志：** 增加卡顿与性能指标记录，用于排查性能问题；不记录正文、用户输入或媒体地址。\r\n- **通用文件下载：** 右键链接或音视频资源可下载文件；图片保存和下载可复用已加载或缓存的资源。\r\n- **桌面动态与评论布局：** 新增独立的“点击动态进入详情页”和“评论显示在右侧”开关。右侧评论统一适用于动态列表、话题页和动态详情页；宽窗口下支持拖动分隔线调节宽度，并记住位置。分栏详情页支持切换回复、点赞和转发列表。\r\n- **搜索入口与筛选：** 个人主页新增搜索该用户动态的入口；动态和综合搜索增加动态排序选项。\r\n- **关于页新增 QQ 交流群入口。**\r\n\r\n## 优化\r\n\r\n- **搜索结果处理：** 优化综合搜索结果解析和动态搜索参数；接口首屏没有结果时会继续补查，避免漏掉后续结果。\r\n- **手机端布局：** 调整快捷入口、侧栏和更多服务页面的手机布局，改善底部导航与安全区附近的遮挡。\r\n- **评论侧栏样式：** 动态详情复用话题评论栏的布局，统一排序、楼主筛选、输入框和评论列表样式。\r\n- **设置分类导航：** 全平台改用带图标的卡片下拉菜单，当前…",
+          "downloadURL": "https://github.com/daimiaopeng/coolapk-desktop/releases/download/v1.34.0/coolapk-v1.34.0-ios-arm64-unsigned.ipa",
+          "size": 7994957
+        }
+      ]
+    },
+    {
+      "name": "阅读",
+      "bundleIdentifier": "com.zhangruilin.yuedureader",
+      "developerName": "CHANG-JUI-LIN",
+      "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
+      "localizedDescription": "Yuedu is a native iOS reader that supports multiple book formats, RSS subscriptions, and user-provided book sources.",
+      "iconURL": "https://github.com/CHANG-JUI-LIN.png?size=512",
+      "versions": [
+        {
+          "version": "1.01",
+          "date": "2026-05-25T10:07:43Z",
+          "localizedDescription": "First public IPA release.\r\n\r\nAsset:\r\n- Yuedu-Reader-1.0.1.ipa\r\n\r\n## Install with AltStore Classic\r\n\r\n1. Install AltStore Classic on your iPhone.\r\n2. Add this source in AltStore:\r\n   https://raw.githubusercontent.com/CHANG-JUI-LIN/Yuedu-reader/main/altstore/apps.json\r\n3. Open the source, choose Yuedu Reader, then tap Install.\r\n4. Keep AltServer running on your Mac/PC to refresh the app before it expires.",
+          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/1.01/Yuedu-Reader-1.0.1.ipa",
+          "size": 22214468
+        },
+        {
+          "version": "1.0.4-2",
+          "date": "2026-05-31T18:45:55Z",
+          "localizedDescription": "> 公告：自即日起，GitHub Release 不再提供 IPA 安裝包。需要安裝或更新的使用者，請改至 TestFlight 或 App Store 下載。\n\n## 閱讀 1.0.4（build 2）\n\n- 線上書源「段評」（段落評論）章節改以一般章節的排版渲染（首行縮排、置中標題、正常行距），段評數量徽章內嵌於段末。\n- EPUB 目錄：子章節依錨點解析到所在頁，跳轉時直接落在該段落；目錄僅高亮目前所在章節（依章節 id，不再整個 spine 一起亮）。\n- 修正 RegexSanitizer 的優先級反轉問題（Thread Performance Checker 標記的卡頓風險）。",
+          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/v1.0.4-2/YueduReader.ipa",
+          "size": 22795452
+        },
+        {
+          "version": "1.0.3-5",
+          "date": "2026-05-30T08:21:58Z",
+          "localizedDescription": "### 1.0.3 (build 5)\n\n- TTS: added an offline on-device voice (AVSpeechSynthesizer) that is used automatically when no network voice source is configured — reading aloud now works fully offline. Selectable in TTS settings with a voice picker; existing HTTP/Legado voice sources still work and take priority when chosen.",
+          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/v1.0.3-5/Yuedu-Reader-1.0.3-5.ipa",
+          "size": 22359968
         }
       ]
     }

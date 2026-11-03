@@ -2,17 +2,28 @@
   "repository": {
     "name": "Duofu Picks",
     "identifier": "com.duofu.picks",
-    "subtitle": "开源应用精选，自动跟随上游 Release",
-    "description": "收录的开源应用，版本与下载地址由脚本从各项目 GitHub Release 自动同步。\n不镜像、不重打包，下载时直接连接上游发布地址。",
+    "subtitle": "自维护开源应用白名单",
+    "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n不镜像、不重打包，下载直接指向上游，不接受任何第三方转包。",
     "website": "https://github.com/YOUR_NAME/duofu-picks",
     "tintColor": "#378ADD"
   },
   "apps": [
     {
-      "repo": "XITRIX/iTorrent",
-      "bundleIdentifier": "com.xitrix.iTorrent2",
-      "name": "iTorrent",
+      "repo": "SideStore/SideStore",
+      "bundleIdentifier": "com.SideStore.SideStore",
+      "name": "SideStore",
       "featured": true
+    },
+    {
+      "repo": "LiveContainer/LiveContainer",
+      "bundleIdentifier": "com.kdt.livecontainer",
+      "name": "LiveContainer",
+      "featured": true
+    },
+    {
+      "repo": "Sami-Wali/ryP0",
+      "bundleIdentifier": "com.ry0.ryP0",
+      "name": "ryP0"
     },
     {
       "repo": "StikDebug/StikDebug",
@@ -21,9 +32,74 @@
       "featured": true
     },
     {
+      "repo": "claration/Feather",
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "name": "Feather"
+    },
+    {
       "repo": "mikevillarroel/buildbox-ios",
       "bundleIdentifier": "com.mikevillarroel.buildbox",
       "name": "BuildBox"
+    },
+    {
+      "repo": "XITRIX/iTorrent",
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "name": "iTorrent"
+    },
+    {
+      "repo": "coflyn/Mori",
+      "bundleIdentifier": "com.mori.downloader",
+      "name": "Mori"
+    },
+    {
+      "repo": "ResistanceTo/MiniWatts",
+      "bundleIdentifier": "org.zhaohe.MiniWatts",
+      "name": "MiniWatts"
+    },
+    {
+      "repo": "daimiaopeng/coolapk-desktop",
+      "bundleIdentifier": "com.coolapk.desktop",
+      "name": "酷安桌面版"
+    },
+    {
+      "repo": "shplash/IPAID",
+      "bundleIdentifier": "com.shplash.ipaid",
+      "name": "IPAID"
+    },
+    {
+      "repo": "emexlab/Nyxian",
+      "bundleIdentifier": "org.emexlabs.nyxian",
+      "name": "Nyxian"
+    },
+    {
+      "repo": "bggRGjQaUbCoE/PiliPlus",
+      "bundleIdentifier": "com.example.piliplus",
+      "name": "PiliPlus"
+    },
+    {
+      "repo": "infinityf4p/TiebaPure-iOS",
+      "bundleIdentifier": "dev.infinityf4p.tiebapure",
+      "name": "TiebaPure"
+    },
+    {
+      "repo": "RyanYuuki/AnymeX",
+      "bundleIdentifier": "com.ryan.anymex",
+      "name": "AnymeX"
+    },
+    {
+      "repo": "CHANG-JUI-LIN/Yuedu-reader",
+      "bundleIdentifier": "com.zhangruilin.yuedureader",
+      "name": "阅读"
+    },
+    {
+      "repo": "NuvioMedia/NuvioMobile",
+      "bundleIdentifier": "com.nuvio.media",
+      "name": "Nuvio"
+    },
+    {
+      "repo": "Manic-EMU/ManicEMU",
+      "bundleIdentifier": "com.aoshuang.manicemu",
+      "name": "Manic EMU"
     },
     {
       "repo": "Provenance-Emu/Provenance",
@@ -31,11 +107,6 @@
       "name": "Provenance",
       "asset": "^Provenance\\.ipa$",
       "includePrereleases": true
-    },
-    {
-      "repo": "claration/Feather",
-      "bundleIdentifier": "thewonderofyou.Feather",
-      "name": "Feather"
     }
   ],
   "maxVersions": 3,
