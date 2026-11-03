@@ -1,0 +1,43 @@
+{
+  "repository": {
+    "name": "Duofu Picks",
+    "identifier": "com.duofu.picks",
+    "subtitle": "开源应用精选，自动跟随上游 Release",
+    "description": "收录的开源应用，版本与下载地址由脚本从各项目 GitHub Release 自动同步。\n不镜像、不重打包，下载时直接连接上游发布地址。",
+    "website": "https://github.com/YOUR_NAME/duofu-picks",
+    "tintColor": "#378ADD"
+  },
+  "apps": [
+    {
+      "repo": "XITRIX/iTorrent",
+      "bundleIdentifier": "com.xitrix.iTorrent2",
+      "name": "iTorrent",
+      "featured": true
+    },
+    {
+      "repo": "StikDebug/StikDebug",
+      "bundleIdentifier": "com.stik.stikdebug",
+      "name": "StikDebug",
+      "featured": true
+    },
+    {
+      "repo": "mikevillarroel/buildbox-ios",
+      "bundleIdentifier": "com.mikevillarroel.buildbox",
+      "name": "BuildBox"
+    },
+    {
+      "repo": "Provenance-Emu/Provenance",
+      "bundleIdentifier": "com.provenance-emu.provenance",
+      "name": "Provenance",
+      "asset": "^Provenance\\.ipa$",
+      "includePrereleases": true
+    },
+    {
+      "repo": "claration/Feather",
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "name": "Feather"
+    }
+  ],
+  "maxVersions": 3,
+  "detectAppInfo": false
+}
