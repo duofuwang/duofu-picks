@@ -48,7 +48,7 @@ duofu-picks/
 | `includePrereleases` | 否 | 该仓库是否接受 pre-release |
 | `featured` | 否 | 是否进 `featuredApps` |
 | `iconURL` / `subtitle` / `description` / `category` / `tintColor` | 否 | 覆盖默认值 |
-| `minOSVersion` / `buildVersion` | 否 | 写进最新版本条目 |
+| `minOSVersion` / `buildVersion` | 否 | 写进最新版本条目；留空时从 IPA 的 `Info.plist` 读 |
 
 全局字段：
 

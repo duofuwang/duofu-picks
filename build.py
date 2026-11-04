@@ -287,6 +287,7 @@ def read_ipa_info(download_url: str) -> dict:
         "displayName": info.get("CFBundleDisplayName") or info.get("CFBundleName"),
         "version": info.get("CFBundleShortVersionString"),
         "build": info.get("CFBundleVersion"),
+        "minOSVersion": info.get("MinimumOSVersion"),
         "size": total_size,
     }
 
@@ -400,22 +401,25 @@ def build_app(
     # --- 标识信息 ---
     bundle = entry.get("bundleIdentifier")
     display_name = entry.get("name")
-    detected: dict = {}
 
     cache_key = f"{slug}@{latest['version']}"
-    needs_detect = detect or not bundle or not display_name
+    cached_info = cache.get(cache_key) or {}
+    detected: dict = cached_info
+    # 没配 minOSVersion、缓存里也没有时也探一次，用来补系统要求
+    wants_min_os = not entry.get("minOSVersion") and not cached_info.get("minOSVersion")
+    needs_detect = detect or not bundle or not display_name or wants_min_os
     if needs_detect:
-        detected = cache.get(cache_key) or {}
-        if not detected:
+        need_fetch = not detected or (wants_min_os and not detected.get("minOSVersion"))
+        if need_fetch:
             try:
-                detected = read_ipa_info(latest["downloadURL"])
-                detected["source_repo"] = slug
-                cache[cache_key] = detected
+                fresh = read_ipa_info(latest["downloadURL"])
+                fresh["source_repo"] = slug
+                cache[cache_key] = fresh
+                detected = fresh
                 log(f"    探测 IPA 元数据成功：{detected.get('bundleIdentifier')}")
             except Exception as exc:  # noqa: BLE001
                 warnings.append(f"{slug} 读取 IPA 元数据失败：{exc}")
-                detected = {}
-        else:
+        elif detected:
             log(f"    使用缓存的 IPA 元数据：{detected.get('bundleIdentifier')}")
     used_keys.add(cache_key)
 
@@ -428,6 +432,8 @@ def build_app(
 
     if detected.get("build") and "buildVersion" not in latest:
         latest["buildVersion"] = str(detected["build"])
+    if not latest.get("minOSVersion") and detected.get("minOSVersion"):
+        latest["minOSVersion"] = str(detected["minOSVersion"])
 
     repo_meta = {}
     try:
@@ -522,6 +528,7 @@ def read_ipa_info_local(path: Path) -> dict:
         "displayName": info.get("CFBundleDisplayName") or info.get("CFBundleName"),
         "version": info.get("CFBundleShortVersionString"),
         "build": info.get("CFBundleVersion"),
+        "minOSVersion": info.get("MinimumOSVersion"),
         "size": path.stat().st_size,
     }
 
@@ -596,8 +603,9 @@ def build_manual_app(
         item["downloadURL"] = url
         if info.get("size"):
             item["size"] = int(info["size"])
-        if entry.get("minOSVersion"):
-            item["minOSVersion"] = str(entry["minOSVersion"])
+        min_os = entry.get("minOSVersion") or info.get("minOSVersion")
+        if min_os:
+            item["minOSVersion"] = str(min_os)
         versions = [item]
 
     app: dict = {"name": str(name), "bundleIdentifier": str(bundle)}
@@ -924,8 +932,9 @@ def build_file_app(
     item["downloadURL"] = download_url
     if info.get("size"):
         item["size"] = int(info["size"])
-    if entry.get("minOSVersion"):
-        item["minOSVersion"] = str(entry["minOSVersion"])
+    min_os = entry.get("minOSVersion") or info.get("minOSVersion")
+    if min_os:
+        item["minOSVersion"] = str(min_os)
 
     versions = entry.get("versions")
     if not isinstance(versions, list) or not versions:
