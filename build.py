@@ -751,6 +751,43 @@ def _write_icon(
     return target
 
 
+def prune_icons(apps: list[dict], icons_dir: Path, dry_run: bool = False) -> list[str]:
+    """删掉没有任何应用引用的图标文件和来源记录，让仓库和 repo.json 对齐。"""
+    keep_stems = {
+        _safe_name(str(app.get("bundleIdentifier") or "")) for app in apps
+    }
+    keep_stems.discard("")
+    removed: list[str] = []
+
+    if icons_dir.is_dir():
+        for path in sorted(icons_dir.iterdir()):
+            if not path.is_file() or path.name.startswith("."):
+                continue
+            if path.suffix.lower() not in ICON_SUFFIXES:
+                continue
+            if path.stem in keep_stems:
+                continue
+            removed.append(path.name)
+            if not dry_run:
+                path.unlink()
+
+    sources = _load_icon_sources(icons_dir)
+    bundles = {
+        str(app.get("bundleIdentifier")) for app in apps if app.get("bundleIdentifier")
+    }
+    stale = sorted(bundle for bundle in sources if bundle not in bundles)
+    if stale:
+        removed.extend(f".sources.json · {bundle}" for bundle in stale)
+        if not dry_run:
+            for bundle in stale:
+                sources.pop(bundle, None)
+            (icons_dir / ".sources.json").write_text(
+                json.dumps(dict(sorted(sources.items())), ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+    return removed
+
+
 def api_get_bytes(url: str) -> bytes:
     headers = github_headers()
     headers["Accept"] = "application/vnd.github.raw"
@@ -1003,6 +1040,9 @@ def main() -> int:
     parser.add_argument(
         "--no-refresh-icons", action="store_true", help="跳过图标重取，直接用本地已有文件"
     )
+    parser.add_argument(
+        "--prune", action="store_true", help="清理没有任何应用引用的图标与来源记录"
+    )
     args = parser.parse_args()
 
     if not CONFIG_PATH.exists():
@@ -1093,10 +1133,23 @@ def main() -> int:
 
     save_cache(cache, used_keys)
 
+    pruned: list[str] = []
+    if args.prune:
+        if any("已跳过" in warning for warning in warnings):
+            log("")
+            log("本轮有条目被跳过，跳过图标清理，避免把暂时取不到的应用当成已删除。")
+        else:
+            pruned = prune_icons(apps, ROOT / "icons", dry_run=args.check)
+            if pruned:
+                log("")
+                log(("将清理 " if args.check else "已清理 ") + f"{len(pruned)} 项无引用图标：")
+                for name in pruned:
+                    log(f"  - {name}")
+
     if previous == text:
         log("")
         log("repo.json 无变化。")
-        return 0
+        return 1 if (args.check and pruned) else 0
 
     if args.check:
         log("")

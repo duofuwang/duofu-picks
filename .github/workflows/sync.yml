@@ -33,7 +33,7 @@ jobs:
       - name: 生成 repo.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python build.py
+        run: python build.py --prune
 
       - name: 提交变更
         run: |

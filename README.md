@@ -78,7 +78,11 @@ https://<你的用户名>.github.io/<仓库名>/repo.json
 python build.py            # 生成 repo.json
 python build.py --check    # 只判断有没有变化，有变化时退出码 1
 python build.py --detect   # 强制重新探测 IPA 元数据
+python build.py --prune    # 顺带清理没有应用引用的图标
+python build.py --no-refresh-icons   # 跳过图标重取，本地调试用
 ```
+
+从 `config.json` 删掉一个应用后，`repo.json` 下次生成时就会少掉它，但 `icons/` 里的图标文件会留下。`--prune` 就是清这个的：凡是文件名对不上任何现有 `bundleIdentifier` 的图标，连同 `icons/.sources.json` 里的记录一起删掉。工作流已经带上这个参数。
 
 设了 `GITHUB_TOKEN` 就走认证额度（5000 次/小时），不设只有 60 次/小时。每个应用大约消耗 2 次请求——Release 列表和仓库信息各一次——所以不认证时收录 20 多个应用，本地再调试几轮就会打满。打满后脚本不会覆盖现有 `repo.json`，并列出每个应用的失败原因。
 
