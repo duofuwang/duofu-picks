@@ -441,6 +441,12 @@ def build_app(
     if description:
         app["localizedDescription"] = description
     icon = entry.get("iconURL")
+    if icon and base_url:
+        # 配置里给的是外链时，顺手镜像一份到 icons/，避免依赖图床存活
+        mirrored = mirror_external_icon(str(icon), str(bundle), ROOT / "icons")
+        if mirrored:
+            icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(mirrored.name)}"
+            log(f"    镜像图标 → {mirrored.name}")
     if not icon and base_url:
         try:
             written = extract_icon_from_remote(
@@ -450,9 +456,18 @@ def build_app(
                 icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
                 log(f"    提取图标 → {written.name}")
         except Exception as exc:  # noqa: BLE001
-            warnings.append(f"{slug} 图标提取失败，改用兜底：{exc}")
+            warnings.append(f"{slug} 图标提取失败，继续尝试仓库 logo：{exc}")
+    if not icon and base_url:
+        try:
+            written = find_repo_icon(slug, str(bundle), ROOT / "icons")
+            if written:
+                icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
+                log(f"    仓库 logo → {written.name}")
+        except Exception as exc:  # noqa: BLE001
+            warnings.append(f"{slug} 仓库 logo 探测失败：{exc}")
     if not icon:
         icon = f"https://github.com/{owner}.png?size=512"
+        warnings.append(f"{slug} 没有可用图标，已回退为开发者头像")
     app["iconURL"] = icon
     if entry.get("tintColor"):
         app["tintColor"] = str(entry["tintColor"])
@@ -619,6 +634,128 @@ def extract_icon_from_remote(download_url: str, bundle: str, icons_dir: Path) ->
     icons_dir.mkdir(parents=True, exist_ok=True)
     target.write_bytes(payload)
     return target
+
+
+ICON_SUFFIXES = (".png", ".jpg", ".jpeg")
+ICON_DIR_HINT = re.compile(r"(^|/)(assets?|resources?|images?|icons?|\.github)/", re.I)
+ICON_NOISE = re.compile(r"(screenshot|preview|banner|header|background|placeholder|badge)", re.I)
+
+
+def _icon_suffix(data: bytes) -> str | None:
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return ".png"
+    if data[:3] == b"\xff\xd8\xff":
+        return ".jpg"
+    return None
+
+
+def _safe_name(bundle: str) -> str:
+    return re.sub(r"[^A-Za-z0-9._-]", "_", bundle)
+
+
+def _existing_icon(bundle: str, icons_dir: Path) -> Path | None:
+    """icons/ 里已经有现成的就复用，避免每次构建重新下载。"""
+    safe = _safe_name(bundle)
+    for suffix in ICON_SUFFIXES:
+        candidate = icons_dir / f"{safe}{suffix}"
+        if candidate.exists() and candidate.stat().st_size > 0:
+            return candidate
+    return None
+
+
+def api_get_bytes(url: str) -> bytes:
+    headers = github_headers()
+    headers["Accept"] = "application/vnd.github.raw"
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            request = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read()
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+            if attempt < 2:
+                time.sleep(2)
+    raise FetchError(f"{url} -> {last_error}")
+
+
+def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
+    """把配置里的外链图标下载到 icons/，让源不再依赖第三方图床。"""
+    if not url.startswith(("http://", "https://")):
+        return None
+    cached = _existing_icon(bundle, icons_dir)
+    if cached:
+        return cached
+    try:
+        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(request, timeout=30) as response:
+            data = response.read()
+    except Exception as exc:  # noqa: BLE001
+        log(f"    镜像图标失败，保留原地址：{exc}")
+        return None
+    suffix = _icon_suffix(data)
+    if not suffix or len(data) < 1024:
+        log("    镜像图标失败，下载到的不是有效图片，保留原地址")
+        return None
+    icons_dir.mkdir(parents=True, exist_ok=True)
+    target = icons_dir / f"{_safe_name(bundle)}{suffix}"
+    target.write_bytes(data)
+    return target
+
+
+def find_repo_icon(slug: str, bundle: str, icons_dir: Path) -> Path | None:
+    """IPA 里没有独立 PNG 时（图标编进 Assets.car），从仓库源码里找一张 logo。"""
+    cached = _existing_icon(bundle, icons_dir)
+    if cached:
+        return cached
+
+    tree = api_get(f"{API_ROOT}/repos/{slug}/git/trees/HEAD?recursive=1") or {}
+    blobs = [
+        item
+        for item in (tree.get("tree") or [])
+        if item.get("type") == "blob"
+        and str(item.get("path", "")).lower().endswith(ICON_SUFFIXES)
+        and 2048 <= int(item.get("size") or 0) <= 2_000_000
+    ]
+    if not blobs:
+        return None
+
+    project = slug.split("/")[-1].replace("-", "").replace("_", "").lower()
+
+    def score(item: dict) -> tuple[int, int]:
+        path = str(item.get("path", ""))
+        low = path.lower()
+        base = low.rsplit("/", 1)[-1]
+        value = 0
+        if re.search(r"icon|logo", base):
+            value += 40
+        if project and project in base.replace("-", "").replace("_", ""):
+            value += 25
+        if ICON_DIR_HINT.search(low):
+            value += 20
+        if low.count("/") <= 1:
+            value += 10
+        if ICON_NOISE.search(low):
+            value -= 60
+        return value, int(item.get("size") or 0)
+
+    blobs.sort(key=score, reverse=True)
+    for item in blobs[:5]:
+        path = str(item.get("path", ""))
+        try:
+            data = api_get_bytes(
+                f"{API_ROOT}/repos/{slug}/contents/{urllib.parse.quote(path)}"
+            )
+        except FetchError:
+            continue
+        suffix = _icon_suffix(data)
+        if not suffix:
+            continue
+        icons_dir.mkdir(parents=True, exist_ok=True)
+        target = icons_dir / f"{_safe_name(bundle)}{suffix}"
+        target.write_bytes(data)
+        return target
+    return None
 
 
 # --------------------------------------------------------------------------

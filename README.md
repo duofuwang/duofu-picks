@@ -88,6 +88,21 @@ python build.py --detect   # 强制重新探测 IPA 元数据
 2. 在 `apps` 里加一条 `{ "repo": "owner/name" }`。
 3. 推上去，等 Actions 跑完。
 
+## 图标是怎么来的
+
+按顺序试四种，命中就停：
+
+1. `config.json` 里写的 `iconURL`
+2. IPA 里的 `Payload/*.app/AppIcon*.png`，挑体积最大的一张
+3. 仓库源码里的 logo —— 文件名含 `icon`/`logo`、放在 `assets/` 一类的目录、2KB 到 2MB 的 PNG 或 JPEG，脚本用 tree API 列一遍文件再按权重挑
+4. 都没有，退成 `github.com/{作者}.png`，也就是开发者头像，同时在日志里留一条警告
+
+第 2 步失败的项目不少。图标编译进 `Assets.car` 的包，zip 里根本没有独立 PNG，这时靠第 3 步兜住。
+
+外链图标会被镜像：配置里写 imgur 之类的地址时，脚本下载一份存进 `icons/`，`repo.json` 指向自己的域名。下载失败就保留原地址——不会因为一次网络抖动把好图标换成别的。已经存在的文件直接复用，不重复拉。
+
+生成的图标必须提交，否则 Pages 上访问不到。工作流里已经有 `git add icons`。
+
 ## 收录不开源的应用（自己上传 IPA）
 
 除了 `repo`，`apps` 还支持两种条目，区别是 IPA 放在哪：
