@@ -26,7 +26,9 @@
           "date": "2026-10-16T22:25:27Z",
           "localizedDescription": "A small build update for 0.9 with a number of bug fixes.\r\n\r\n- Fixed some pages not loading in webtoon reader\r\n- Improved webtoon reader memory usage (hopefully fixes crash after reading multiple chapters)\r\n- Fixed crash when searching anywhere in the macOS app\r\n- Various other bug fixes",
           "downloadURL": "https://github.com/Aidoku/Aidoku/releases/download/v0.9-4/Aidoku.ipa",
-          "size": 14753154
+          "size": 14753154,
+          "buildVersion": "4",
+          "minOSVersion": "15.0"
         },
         {
           "version": "0.9",
@@ -58,7 +60,9 @@
           "date": "2026-10-24T04:52:28Z",
           "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应用语言切换不生效的问题\r\n- 修复 Jellyfin 数据源切集后找不到下一集资源的问题\r\n- 修复部分网络环境下数据源因页面链接使用 HTTP 而无法加载的问题 (#3633 by @wdw89)\r…",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
-          "size": 48615547
+          "size": 48615547,
+          "buildVersion": "6.4.99",
+          "minOSVersion": "16.0"
         },
         {
           "version": "6.3.0",
@@ -89,7 +93,9 @@
           "date": "2026-10-27T18:49:08Z",
           "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6beae5c1) url nav, deeplink support for fcm by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/3bb0908d) torrent file selector in player by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/b61e9b75) cf bypass and webview support for linux by @RyanYuuki\n\n\n### 🔧 Bug Fixes & Improvements\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9975e4c0) fixed a grey screen when accessing released media on different services by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6db545c5) fixed visibility issues on light mode by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/ac97c83d) fixed rhttp disposing causing network reqs to fail by @RyanYuuki\n- [֍](https://github.com/RyanYu…",
           "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.2.0/AnymeX-iOS-v3.2.0.ipa",
-          "size": 80589346
+          "size": 80589346,
+          "buildVersion": "42",
+          "minOSVersion": "13.0"
         },
         {
           "version": "3.1.9",
@@ -120,7 +126,9 @@
           "date": "2026-11-03T00:42:32Z",
           "localizedDescription": "New app icon.",
           "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.4/BuildBox-2.1.4.ipa",
-          "size": 15595926
+          "size": 15595926,
+          "buildVersion": "129",
+          "minOSVersion": "18.0"
         },
         {
           "version": "2.1.3",
@@ -151,7 +159,9 @@
           "date": "2026-07-05T02:11:53Z",
           "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added tweak options in default signing options.\r\n* Added ability to search for identifier's in Library @ismailcarlik in https://github.com/claration/Feather/pull/652\r\n* Fixed issue in the file enumeration logic, by using the path property instead of method.\r\n* Fixed credit links.\r\n* Fixed duplicate repository in recommended repositories.\r\n\r\n## New Contributors\r\n* @xiangfeidexiaohuo made their first contribution in https://github.com/claration/Feather/pull/634\r\n* @osageling made their first contribution in https://github.com/clar…",
           "downloadURL": "https://github.com/claration/feather/releases/download/v2.9.0/Feather.ipa",
-          "size": 14241853
+          "size": 14241853,
+          "buildVersion": "1",
+          "minOSVersion": "16.0"
         },
         {
           "version": "2.8.2",
@@ -182,7 +192,9 @@
           "date": "2026-09-15T18:10:50Z",
           "localizedDescription": "## What’s New\r\n\r\nAdded an About screen with links to report issues, request features, visit the GitHub repository, and check for updates. It also includes an entirely optional support link, as well as a light/dark mode toggle.\r\n\r\n### Changes\r\n\r\n- Added About screen\r\n- Project links\r\n- Light/dark mode toggle\r\n- Support link",
           "downloadURL": "https://github.com/shplash/IPAID/releases/download/v1.21/IPAID.ipa",
-          "size": 1766144
+          "size": 1766144,
+          "buildVersion": "112",
+          "minOSVersion": "15.0"
         }
       ]
     },
@@ -199,7 +211,9 @@
           "date": "2026-07-19T09:59:41Z",
           "localizedDescription": "## What's new:\r\n* Meet the new built-in VLC player. Play compatible video and audio files directly in iTorrent, even while they are still downloading.\r\n* Enjoy Picture in Picture, playback speeds from 0.5x to 2x, audio and subtitle track selection, precise seeking, and system media controls.\r\n* Take playback to a bigger screen with AirPlay or a compatible player discovered on your local network.\r\n* Choose how pieces are downloaded with Sequential and First & Last priority modes, making it easier to start watching sooner.\r\n* Select and share multiple completed files or entire folders in one go.\r\n\r\n## Improvements:\r\n* Refreshed the interface for iOS 26, with Liquid Glass styling, cleaner dialogs, and more polished navigation.\r\n* Made torrent details smoother and easier to use, with clearer d…",
           "downloadURL": "https://github.com/XITRIX/iTorrent/releases/download/v2.2.0-1/iTorrent.ipa",
-          "size": 24288935
+          "size": 24288935,
+          "buildVersion": "1",
+          "minOSVersion": "16.0"
         },
         {
           "version": "2.1.1-1",
@@ -230,7 +244,9 @@
           "date": "2026-07-17T07:44:20Z",
           "localizedDescription": "# LiveContainer 3.8.0\r\n\r\n> [!Warning]\r\n> The standalone version requires **SideStore 0.6.2+** or **AltStore 2.2.1+** for installation.\r\n> To install LiveContainer with built-in SideStore (`LiveContainer+SideStore.ipa`), please use [Impactor](https://github.com/khcrysalis/Impactor) or [iloader](https://github.com/nab138/iloader). See [our installation guide](https://livecontainer.github.io/docs/installation/lc_sidestore) for details.\r\n\r\n# New Features\r\n\r\n## Storage Management\r\n\r\n- Added a new storage management view with a breakdown of app bundles, containers, temporary files, app group data, tweaks, and other files. (Hidden apps' size is included in \"other\" section until unlocked)\r\n- Added per-app storage details, including app bundle size, container sizes, and last-used date.\r\n- Added act…",
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer%2BSideStore.ipa",
-          "size": 35403538
+          "size": 35403538,
+          "buildVersion": "3.8.0",
+          "minOSVersion": "15.0"
         },
         {
           "version": "3.7.2",
@@ -261,7 +277,9 @@
           "date": "2026-11-02T08:03:58Z",
           "localizedDescription": "- Improved 3DS performance\r\n- Nimbus in Artic Base now supports the latest Pretendo\r\n- Improved Home Menu performance on the Azahar core\r\n- Fixed Wii pointer behavior for affected users\r\n- Added MeloCafe Link support\r\n- iPad now supports windowed apps\r\n- Redesigned the SNES skin\r\n- Added skin fallback: iPad can use iPhone skins\r\n- Support for iPhone Duo\r\n- Fixed AirPlay not working on iOS 27 or later\r\n- Added BitBop, a new sister app to Manic EMU for retro game music\r\n- Other bug fixes and improvements",
           "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.2/ManicEMU.v2.0.2.SideloadJIT.ipa",
-          "size": 293317769
+          "size": 293317769,
+          "buildVersion": "5",
+          "minOSVersion": "15.0"
         },
         {
           "version": "2.0.1",
@@ -293,7 +311,9 @@
           "date": "2026-10-27T03:11:13Z",
           "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **iPhone 18 Pro 高功率充电时会提示读数可能只有一半。** 在 iPhone 18 Pro 系列上用有线充电、协商功率超过 30 W 时，表盘旁会显示\"可能只读到一半\"，功率页和适配器页也会说明原因：这种情况下输入和电芯两侧的传感器都可能只测到一半功率。数值本身不做修正。\n- **新增\"电量核对\"。** 充电时，App 会把电量上升的速度换算成功率，和电芯传感器在同一段时间里测到的功率对比。如果电量涨得明显比传感器测到的快（1.6 倍以上），表盘旁会显示\"读数偏低\"，并给出两边的数值；如果两边一致，会显示核对通过，上面那条\"可能只读到一半\"的提示也会隐藏。电量要上涨至少 3% 才能给出结果，通常需要几分钟。\n- **传感器按 SMC key 识别，重复的读数会合并。** iOS 27 上每个传感器都会出现两份，以前只取第一份，现在取两份的平均值；发热页的列表里每个传感器也只出现一次。发热页和原始数据会在传感器名旁边标出 key（比如电池温度偏高的那个是 `TG0B`）。\n- **电池能量按机型给默认值。** iPhone 18 Pro Max 为 21.75 Wh，iPhone 17 Pro Max 为 19.7 Wh，其他机型仍是 15 Wh。设置 → 电池能量 里会显示本机型的额定值，点\"使用\"即可填入。已经手动设置过的值保持不变。\n- **原始数据新增\"Derived power checks\"一节。** 这一节记录半功率提示是否生效，以及电量核对的结果。\n\n## 修复\n\n- 适配器：iPhone 18 …",
           "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.6.0/MiniWatts-unsigned.ipa",
-          "size": 3332420
+          "size": 3332420,
+          "buildVersion": "21",
+          "minOSVersion": "17.0"
         },
         {
           "version": "1.5.1",
@@ -324,7 +344,9 @@
           "date": "2026-10-18T23:48:43Z",
           "localizedDescription": "What's New in v4.5.1\r\n\r\n- Automatic System Language Detection: Automatically detects device and browser language on first launch via navigator.languages / navigator.language and maps to 9 supported locales (Simplified Chinese, Indonesian, Japanese, Korean, Arabic, Russian, Tagalog, Hindi, and English fallback) (#17)\r\n- Android Share Sheet Locale Fallback: Added native Locale.getDefault() language detection in ShareActivity.java so shared links match device language even before app initialization\r\n- Gallery Tab Visibility Toggle: Added toggle to show or hide the Gallery tab under Settings -> Appearance (mori_show_gallery), completely bypassing background disk scans to save RAM and battery on lower-end devices\r\n- TikTok tt.site Shortlink Recognition: Added automatic recognition and URL clean…",
           "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.1/Mori-v4.5.1-iOS-Unsigned.ipa",
-          "size": 2099521
+          "size": 2099521,
+          "buildVersion": "22",
+          "minOSVersion": "14.0"
         },
         {
           "version": "4.5.0",
@@ -355,7 +377,9 @@
           "date": "2026-11-04T02:57:36Z",
           "localizedDescription": "- 9f18bfee feat(player): resize video beside watch party panel @tapframe  \r\n- [Fix addon ASS subtitles not rendering with libass on Android (#2507)](https://github.com/NuvioMedia/NuvioMobile/pull/2507) @skoruppa  \r\n- [fix(ios): declare long-form video audio so playback is not shown as music (#2419)](https://github.com/NuvioMedia/NuvioMobile/pull/2419) @WhiteGiso  \r\n- [locales: add and update Arabic settings translations (#2498)](https://github.com/NuvioMedia/NuvioMobile/pull/2498) @aliabdoxd14  \r\n- [Add missing Polish translations (#2495)](https://github.com/NuvioMedia/NuvioMobile/pull/2495) @skoruppa  \r\n- [Keep stream info and current stream marker with reused links (#2494)](https://github.com/NuvioMedia/NuvioMobile/pull/2494) @skoruppa  \r\n- [i18n: harmonize French terminology with Nuvio …",
           "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.7-beta/nuvio-0.6.7-full-release.ipa",
-          "size": 68798444
+          "size": 68798444,
+          "buildVersion": "150",
+          "minOSVersion": "16.1"
         },
         {
           "version": "0.6.6-beta",
@@ -386,7 +410,9 @@
           "date": "2026-09-10T12:58:18Z",
           "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Feature: Swift typechecking. (cd5cb95c76d8279a57abc6a4c980dfb0b2c849e0)\r\n- Feature: Ksurface Kernel Extension projects. (cf9fcd92f7c8294e63c4e7cb62ff2853025330a3, 9d97e939a88453e8ad6f769997885b3f7cf95a23, f1539b729cd74f3854c5cd8d77d151b5913cbfe0, ca6f57fa2f3affcd471dc413f18bf3df55e790d2, 76dfdb0589147eb19956b1b6e36dd527d656e4f8, c981c47fcf3ce074c5a30b863ee5a7ade967f909, 1878e1a7cc26066b44f15d4f00a08c5d1356838d)\r\n- Feature: backup and restore app sizing for the entire Nyxian boot session. (39a7dd574647581f96d7dbe3c8480c801a89eb55, 1265add0552cc9e7817709988a89e54dc5d874f9, 075cb37f07f674d9c66317a406b67e4fd1696024)\r\n- Feature: symlinks are now partially supported in the file manager UI. (ddd3782a8279da0e068f0c80e524b80adcd47c0f, 7d76fea8d5555b7d8bb09040a8361c48d57a…",
           "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.4/Nyxian.ipa",
-          "size": 111250101
+          "size": 111250101,
+          "buildVersion": "20260910.92.RELEASE",
+          "minOSVersion": "18.0"
         },
         {
           "version": "0.11.3.1",
@@ -418,7 +444,9 @@
           "date": "2026-11-03T07:43:02Z",
           "localizedDescription": "更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa",
           "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
-          "size": 24933082
+          "size": 24933082,
+          "buildVersion": "5598",
+          "minOSVersion": "15.0"
         },
         {
           "version": "2.2.0.1",
@@ -449,7 +477,9 @@
           "date": "2026-03-30T03:20:16Z",
           "localizedDescription": "Fixes some issues with 3.3.0 maybe,\r\n\r\nI'm skipping this release officially in favor for 3.4.0",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.3.1/Provenance.ipa",
-          "size": 1166502021
+          "size": 1166502021,
+          "buildVersion": "2853",
+          "minOSVersion": "17.0"
         },
         {
           "version": "3.1.0",
@@ -514,7 +544,9 @@
           "date": "2026-10-23T20:45:34Z",
           "localizedDescription": "# What’s New\r\n\r\n- Install Apps Directly on LiveContainer 1 Without LiveContainer 2 (Thats include any Container App)\r\n- Improved background downloads and Live Activity handling (only for Sideload not work with Containers).\r\n- Added built-in file picker compatibility for **LiveContainer**, without requiring the **Fix File Picker** option.\r\n- Added the new **PS3** theme with and Colors.\r\n- Added Installation Location to track updates for installed apps \r\n- Improved download count and progress indicators on the **Downloads** tab.\r\n- Fix Sign-in with Google Account \r\n- Add sections for Port Category (Ready to Install) (Built it Yourself)\r\n\r\n## Notes\r\n\r\n**LiveContainer or any Container App Users:** Enable **\"Switch App Without Asking\"** from the settings.",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.2/ryP0-unsigned.ipa",
-          "size": 14531954
+          "size": 14531954,
+          "buildVersion": "1",
+          "minOSVersion": "17.0"
         },
         {
           "version": "2.1",
@@ -545,7 +577,9 @@
           "date": "2026-09-15T11:12:49Z",
           "localizedDescription": "## Build Info\r\n\r\nBuilt at (UTC): `Fri Sep 11 21:25:58 2026`\r\nBuilt at (UTC date): `2026-09-11`\r\nCommit SHA: `6032424a0e56c1c319762e786099bdd9186a238b`\r\nVersion: `0.7.0-20260911.328+6032424a`\r\n\r\n#### What's Changed:\r\n- **fixes for 503 during sign-in**: There were some changes from apple server side which broke 0.6.4 and prior versions and prevent them from signing into sidestore. This temporary version addresses the sign-in issue with 503 status code\r\n\r\n#### Full Changelog: [0.6.4...0.7.0-alpha](https://github.com/SideStore/SideStore/compare/0.6.4...0.7.0-alpha)",
           "downloadURL": "https://github.com/SideStore/SideStore/releases/download/0.7.0-alpha/SideStore.ipa",
-          "size": 27770821
+          "size": 27770821,
+          "buildVersion": "0700",
+          "minOSVersion": "15.0"
         },
         {
           "version": "0.6.4",
@@ -576,7 +610,9 @@
           "date": "2026-10-30T03:02:00Z",
           "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n* more prob\r\n\r\n## New Contributors\r\n* @mvanhorn made their first contribution in https://github.com/StikDebug/StikDebug/pull/479\r\n* @OpenUmar made their first contribution in https://github.com/StikDeb…",
           "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
-          "size": 16818331
+          "size": 16818331,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
         }
       ]
     },
@@ -594,7 +630,9 @@
           "date": "2026-10-10T06:07:37Z",
           "localizedDescription": "## What's included\n\n- Stabilizes Home tab reselection and refresh behavior after scrolling.\n- Returning from a thread or search now closes that screen first; the next Home tap refreshes the feed.\n- A Home tap during an in-flight refresh returns to the top without creating a duplicate request.\n- Bumps the app and Open In extension to version `1.4.15` (build `59`).\n\n## Download\n\n`TiebaPure-v1.4.15-unsigned.ipa` is an intentionally unsigned arm64 IPA for local installation/signing.\n\n- Minimum iOS: `16.4`\n- Commit: `5a87225190d6a79b1e3ad3b7d846edd407d416c7`\n- SHA-256: `28fbe31e673b1f2769043456324521afd87d04ade8d92d33832e967c19c31123`\n\nCI `ci-ok` passed on PR #86, including unit tests, iOS compatibility checks, UI smoke tests, iPad layout tests, and the Release build.",
           "downloadURL": "https://github.com/infinityf4p/TiebaPure-iOS/releases/download/v1.4.15/TiebaPure-v1.4.15-unsigned.ipa",
-          "size": 9347637
+          "size": 9347637,
+          "buildVersion": "59",
+          "minOSVersion": "16.4"
         },
         {
           "version": "1.4.14",
@@ -626,7 +664,9 @@
           "date": "2026-11-03T22:13:29Z",
           "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.44.4\n• Normal Home Layout now brings back the old Home with topic chips\n• Added Turn Off Haptics\n• Added Open Links Directly\n• Added Remove Autoplay Prompt\n• Added Remove More Videos\n• Added an option to remove Listen with YouTube Music from the ⋯ menu\n• Added a rotate button to the downloads player\n• Captions can now be turned on in Always Off mode\n\nFixed:\n• Tab settings ignored on YouTube's glass tab bar\n• Glass tab bar with icon-only tabs\n• Startup tab when Home is hidden\n• Tab labels and icons on YouTube's icon-only tab bar\n• Subscriptions tab missing from the bottom bar, and its icon\n• Remove Channel Watermark not working\n• Remove End Screen not working\n• Keep Progress Bar Visible not working\n\nYouTube 21.44.4 requires iOS 17, so there …",
           "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.5/YTKACE_1.1.5_YouTube_21.44.4.ipa",
-          "size": 139496330
+          "size": 139496330,
+          "buildVersion": "21.44.4",
+          "minOSVersion": "17.0"
         },
         {
           "version": "1.1.4",
@@ -658,7 +698,9 @@
           "date": "2026-11-01T13:23:20Z",
           "localizedDescription": "进一步处理闪烁跳动；ios26+ 放了更多的液态玻璃🎉\r\n### changes\r\n* feat(ios): 统一 iOS 26 Liquid Glass 导航与悬浮控件 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/172\r\n* fix(animation): 稳定正文渐显与标题接力，减少页面切换闪烁 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/174\r\n* fix(list): 稳定分页与卡片复用，完善个人主页交互 by @huamurui @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/175\r\n\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.7...v0.9.8",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.8/zhihu-minus-minus-v0.9.8-unsigned.ipa",
-          "size": 14501451
+          "size": 14501451,
+          "buildVersion": "1",
+          "minOSVersion": "16.4"
         },
         {
           "version": "0.9.7",
@@ -689,7 +731,9 @@
           "date": "2026-05-25T10:07:43Z",
           "localizedDescription": "First public IPA release.\r\n\r\nAsset:\r\n- Yuedu-Reader-1.0.1.ipa\r\n\r\n## Install with AltStore Classic\r\n\r\n1. Install AltStore Classic on your iPhone.\r\n2. Add this source in AltStore:\r\n   https://raw.githubusercontent.com/CHANG-JUI-LIN/Yuedu-reader/main/altstore/apps.json\r\n3. Open the source, choose Yuedu Reader, then tap Install.\r\n4. Keep AltServer running on your Mac/PC to refresh the app before it expires.",
           "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/1.01/Yuedu-Reader-1.0.1.ipa",
-          "size": 22214468
+          "size": 22214468,
+          "buildVersion": "2",
+          "minOSVersion": "18.0"
         },
         {
           "version": "1.0.4-2",

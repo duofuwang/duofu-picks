@@ -6,5 +6,203 @@
     "build": "4108",
     "size": 66858114,
     "source_repo": "liuchuancong/pure_live"
+  },
+  "SideStore/SideStore@0.7.0-alpha": {
+    "bundleIdentifier": "com.SideStore.SideStore",
+    "displayName": "SideStore",
+    "version": "0.7.0-20260911.328+6032424a",
+    "build": "0700",
+    "minOSVersion": "15.0",
+    "size": 27770821,
+    "source_repo": "SideStore/SideStore"
+  },
+  "LiveContainer/LiveContainer@3.8.0": {
+    "bundleIdentifier": "com.kdt.livecontainer",
+    "displayName": "LiveContainer",
+    "version": "3.8.0",
+    "build": "3.8.0",
+    "minOSVersion": "15.0",
+    "size": 35403538,
+    "source_repo": "LiveContainer/LiveContainer"
+  },
+  "Sami-Wali/ryP0@2.2": {
+    "bundleIdentifier": "com.ry0.ryP0",
+    "displayName": "ryP0",
+    "version": "2.2",
+    "build": "1",
+    "minOSVersion": "17.0",
+    "size": 14531954,
+    "source_repo": "Sami-Wali/ryP0"
+  },
+  "StikDebug/StikDebug@3.2.0": {
+    "bundleIdentifier": "com.stik.stikdebug",
+    "displayName": "StikDebug",
+    "version": "3.2.0",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 16818331,
+    "source_repo": "StikDebug/StikDebug"
+  },
+  "claration/Feather@2.9.0": {
+    "bundleIdentifier": "thewonderofyou.Feather",
+    "displayName": "Feather",
+    "version": "2.9.0",
+    "build": "1",
+    "minOSVersion": "16.0",
+    "size": 14241853,
+    "source_repo": "claration/Feather"
+  },
+  "mikevillarroel/buildbox-ios@2.1.4": {
+    "bundleIdentifier": "com.mikevillarroel.buildbox",
+    "displayName": "BuildBox",
+    "version": "2.1.4",
+    "build": "129",
+    "minOSVersion": "18.0",
+    "size": 15595926,
+    "source_repo": "mikevillarroel/buildbox-ios"
+  },
+  "XITRIX/iTorrent@2.2.0-1": {
+    "bundleIdentifier": "com.xitrix.iTorrent2",
+    "displayName": "iTorrent",
+    "version": "2.2.0",
+    "build": "1",
+    "minOSVersion": "16.0",
+    "size": 24288935,
+    "source_repo": "XITRIX/iTorrent"
+  },
+  "coflyn/Mori@4.5.1": {
+    "bundleIdentifier": "com.mori.downloader",
+    "displayName": "Mori",
+    "version": "4.5.1",
+    "build": "22",
+    "minOSVersion": "14.0",
+    "size": 2099521,
+    "source_repo": "coflyn/Mori"
+  },
+  "ResistanceTo/MiniWatts@1.6.0": {
+    "bundleIdentifier": "org.zhaohe.MiniWatts",
+    "displayName": "MiniWatts",
+    "version": "1.6.0",
+    "build": "21",
+    "minOSVersion": "17.0",
+    "size": 3332420,
+    "source_repo": "ResistanceTo/MiniWatts"
+  },
+  "shplash/IPAID@1.21": {
+    "bundleIdentifier": "com.shplash.ipaid",
+    "displayName": "IPAID",
+    "version": "1.21",
+    "build": "112",
+    "minOSVersion": "15.0",
+    "size": 1766144,
+    "source_repo": "shplash/IPAID"
+  },
+  "emexlab/Nyxian@0.11.4": {
+    "bundleIdentifier": "org.emexlabs.nyxian",
+    "displayName": "Nyxian",
+    "version": "0.11.4",
+    "build": "20260910.92.RELEASE",
+    "minOSVersion": "18.0",
+    "size": 111250101,
+    "source_repo": "emexlab/Nyxian"
+  },
+  "bggRGjQaUbCoE/PiliPlus@2.2.0.2": {
+    "bundleIdentifier": "com.example.piliplus",
+    "displayName": "PiliPlus",
+    "version": "2.2.0",
+    "build": "5598",
+    "minOSVersion": "15.0",
+    "size": 24933082,
+    "source_repo": "bggRGjQaUbCoE/PiliPlus"
+  },
+  "infinityf4p/TiebaPure-iOS@1.4.15": {
+    "bundleIdentifier": "dev.infinityf4p.tiebapure",
+    "displayName": "TiebaPure",
+    "version": "1.4.15",
+    "build": "59",
+    "minOSVersion": "16.4",
+    "size": 9347637,
+    "source_repo": "infinityf4p/TiebaPure-iOS"
+  },
+  "huamurui/zhihu-minus-minus@0.9.8": {
+    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
+    "displayName": "知乎--",
+    "version": "0.9.8",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 14501451,
+    "source_repo": "huamurui/zhihu-minus-minus"
+  },
+  "open-ani/animeko@6.4.0": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "displayName": "Animeko",
+    "version": "6.4.0",
+    "build": "6.4.99",
+    "minOSVersion": "16.0",
+    "size": 48615547,
+    "source_repo": "open-ani/animeko"
+  },
+  "Aidoku/Aidoku@0.9-4": {
+    "bundleIdentifier": "app.aidoku.Aidoku",
+    "displayName": "Aidoku",
+    "version": "0.9",
+    "build": "4",
+    "minOSVersion": "15.0",
+    "size": 14753154,
+    "source_repo": "Aidoku/Aidoku"
+  },
+  "RyanYuuki/AnymeX@3.2.0": {
+    "bundleIdentifier": "com.ryan.anymex",
+    "displayName": "AnymeX",
+    "version": "3.2.0",
+    "build": "42",
+    "minOSVersion": "13.0",
+    "size": 80589346,
+    "source_repo": "RyanYuuki/AnymeX"
+  },
+  "CHANG-JUI-LIN/Yuedu-reader@1.01": {
+    "bundleIdentifier": "com.zhangruilin.yuedureader",
+    "displayName": "閱讀",
+    "version": "1.0.1",
+    "build": "2",
+    "minOSVersion": "18.0",
+    "size": 22214468,
+    "source_repo": "CHANG-JUI-LIN/Yuedu-reader"
+  },
+  "NuvioMedia/NuvioMobile@0.6.7-beta": {
+    "bundleIdentifier": "com.nuvio.media",
+    "displayName": "Nuvio",
+    "version": "0.6.7",
+    "build": "150",
+    "minOSVersion": "16.1",
+    "size": 68798444,
+    "source_repo": "NuvioMedia/NuvioMobile"
+  },
+  "Manic-EMU/ManicEMU@2.0.2": {
+    "bundleIdentifier": "com.aoshuang.manicemu",
+    "displayName": "Manic EMU",
+    "version": "2.0.2",
+    "build": "5",
+    "minOSVersion": "15.0",
+    "size": 293317769,
+    "source_repo": "Manic-EMU/ManicEMU"
+  },
+  "Provenance-Emu/Provenance@3.3.1": {
+    "bundleIdentifier": "org.provenance-emu.provenance",
+    "displayName": "Provenance",
+    "version": "3.3.1",
+    "build": "2853",
+    "minOSVersion": "17.0",
+    "size": 1166502021,
+    "source_repo": "Provenance-Emu/Provenance"
+  },
+  "itzzace/ytkace@1.1.5": {
+    "bundleIdentifier": "com.google.ios.youtube",
+    "displayName": "YouTube",
+    "version": "21.44.4",
+    "build": "21.44.4",
+    "minOSVersion": "17.0",
+    "size": 139496330,
+    "source_repo": "itzzace/ytkace"
   }
 }
