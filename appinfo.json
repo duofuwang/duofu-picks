@@ -1,0 +1,10 @@
+{
+  "liuchuancong/pure_live@3.1.19": {
+    "bundleIdentifier": "com.mystyle.purelive.liu",
+    "displayName": "Pure Live",
+    "version": "3.1.19",
+    "build": "4108",
+    "size": 66858114,
+    "source_repo": "liuchuancong/pure_live"
+  }
+}
