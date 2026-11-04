@@ -59,6 +59,83 @@ def log(message: str) -> None:
     print(message, flush=True)
 
 
+def _windows_system_proxy() -> str | None:
+    """读 Windows 系统代理（Internet Settings），非 Windows 或未开启时返回 None。"""
+    if sys.platform != "win32":
+        return None
+    try:
+        import winreg
+    except ImportError:
+        return None
+    try:
+        with winreg.OpenKey(
+            winreg.HKEY_CURRENT_USER,
+            r"Software\Microsoft\Windows\CurrentVersion\Internet Settings",
+        ) as key:
+            enabled = winreg.QueryValueEx(key, "ProxyEnable")[0]
+            server = winreg.QueryValueEx(key, "ProxyServer")[0]
+    except OSError:
+        return None
+    if not enabled or not isinstance(server, str) or not server.strip():
+        return None
+    server = server.strip()
+    # 可能是 "host:port"，也可能是 "http=a:1;https=b:2"
+    if "=" in server:
+        parts = dict(
+            chunk.split("=", 1) for chunk in server.split(";") if "=" in chunk
+        )
+        server = parts.get("https") or parts.get("http") or ""
+    if not server:
+        return None
+    return server if "://" in server else f"http://{server}"
+
+
+def _is_loopback_proxy(url: str) -> bool:
+    host = urllib.parse.urlsplit(url if "://" in url else f"http://{url}").hostname
+    return host in {"127.0.0.1", "localhost", "::1"}
+
+
+PROXY_ENV_KEYS = (
+    "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY",
+    "http_proxy", "https_proxy", "all_proxy",
+)
+
+
+def apply_proxy(choice: str) -> None:
+    """决定本次构建走哪个代理：auto 跟随系统代理，none 直连，或显式 URL。"""
+    value = (choice or "auto").strip()
+
+    if value.lower() == "none":
+        for key in PROXY_ENV_KEYS:
+            os.environ.pop(key, None)
+        log("代理：已关闭，直连")
+        return
+
+    if value.lower() != "auto":
+        url = value if "://" in value else f"http://{value}"
+        for key in PROXY_ENV_KEYS:
+            os.environ[key] = url
+        log(f"代理：{url}")
+        return
+
+    current = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy") or ""
+    system = _windows_system_proxy()
+    # 环境变量里的回环端口通常是 IDE / 沙箱注入的中转，链路可能只放行部分域名，
+    # 系统代理才是真正在用的那个，所以这种情况下换成系统代理。
+    if system and (not current or (
+        _is_loopback_proxy(current) and current.rstrip("/") != system.rstrip("/")
+    )):
+        for key in PROXY_ENV_KEYS:
+            os.environ[key] = system
+        if current:
+            log(f"代理：{system}（系统代理，已绕开本地中转 {current}）")
+        else:
+            log(f"代理：{system}（系统代理）")
+        return
+
+    log(f"代理：{current or '未设置，直连'}")
+
+
 # --------------------------------------------------------------------------
 # GitHub API
 # --------------------------------------------------------------------------
@@ -1033,6 +1110,24 @@ def render(repository: dict) -> str:
     return json.dumps(repository, ensure_ascii=False, indent=2) + "\n"
 
 
+def shrink_guard(previous: str | None, apps: list[dict]) -> list[str]:
+    """对比上一次的 repo.json，返回本次「异常消失」的 bundle 列表。
+
+    额度耗尽、上游抽风、网络故障都会让成批应用被跳过，写出去就是把源写瘸。
+    少掉一两个可能是真的删了配置，少掉两成以上就要先停下来问一句。
+    """
+    if not previous:
+        return []
+    try:
+        old_apps = {a["bundleIdentifier"] for a in json.loads(previous).get("apps", [])}
+    except Exception:  # noqa: BLE001
+        return []
+    missing = sorted(old_apps - {a["bundleIdentifier"] for a in apps})
+    if len(missing) > max(2, int(len(old_apps) * 0.2)):
+        return missing
+    return []
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="从 GitHub Release 生成 AltStore 源")
     parser.add_argument("--check", action="store_true", help="只检查是否有变化")
@@ -1043,7 +1138,20 @@ def main() -> int:
     parser.add_argument(
         "--prune", action="store_true", help="清理没有任何应用引用的图标与来源记录"
     )
+    parser.add_argument(
+        "--proxy",
+        metavar="auto|none|URL",
+        default="auto",
+        help="auto 跟随系统代理并绕开本地中转，none 直连，或写 http://127.0.0.1:7897",
+    )
+    parser.add_argument(
+        "--allow-shrink",
+        action="store_true",
+        help="允许一次性少掉大量应用（默认会中止，防止额度耗尽或上游异常时写坏源）",
+    )
     args = parser.parse_args()
+
+    apply_proxy(args.proxy)
 
     if not CONFIG_PATH.exists():
         raise SystemExit(f"找不到配置文件：{CONFIG_PATH}")
@@ -1150,6 +1258,18 @@ def main() -> int:
         log("")
         log("repo.json 无变化。")
         return 1 if (args.check and pruned) else 0
+
+    # 额度耗尽或上游抽风时，会有成批应用被跳过。宁可这轮不写，也别把源写瘸。
+    if not args.allow_shrink:
+        missing = shrink_guard(previous, apps)
+        if missing:
+            log("")
+            log(f"本次会少掉 {len(missing)} 个应用：")
+            for bundle in missing[:10]:
+                log(f"  - {bundle}")
+            raise SystemExit(
+                "疑似额度耗尽或上游异常，已中止且未写入。确认无误后加 --allow-shrink 再跑。"
+            )
 
     if args.check:
         log("")
