@@ -160,15 +160,6 @@
     "size": 80589346,
     "source_repo": "RyanYuuki/AnymeX"
   },
-  "CHANG-JUI-LIN/Yuedu-reader@1.01": {
-    "bundleIdentifier": "com.zhangruilin.yuedureader",
-    "displayName": "閱讀",
-    "version": "1.0.1",
-    "build": "2",
-    "minOSVersion": "18.0",
-    "size": 22214468,
-    "source_repo": "CHANG-JUI-LIN/Yuedu-reader"
-  },
   "NuvioMedia/NuvioMobile@0.6.7-beta": {
     "bundleIdentifier": "com.nuvio.media",
     "displayName": "Nuvio",
@@ -204,5 +195,14 @@
     "minOSVersion": "17.0",
     "size": 139496330,
     "source_repo": "itzzace/ytkace"
+  },
+  "CHANG-JUI-LIN/Yuedu-reader@1.0.4-2": {
+    "bundleIdentifier": "com.zhangruilin.yuedureader",
+    "displayName": "閱讀",
+    "version": "1.0.4",
+    "build": "2",
+    "minOSVersion": "18.0",
+    "size": 22795452,
+    "source_repo": "CHANG-JUI-LIN/Yuedu-reader"
   }
 }

@@ -47,4 +47,12 @@ jobs:
           if [ -d icons ]; then git add icons; fi
           if [ -f appinfo.json ]; then git add appinfo.json; fi
           git commit -m "chore: 同步上游 Release"
-          git push
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "推送失败（第 $attempt 次），15 秒后重试"
+            sleep 15
+          done
+          echo "推送连续失败，本次放弃；下一轮会重新生成"
+          exit 1

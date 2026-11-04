@@ -1000,6 +1000,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="从 GitHub Release 生成 AltStore 源")
     parser.add_argument("--check", action="store_true", help="只检查是否有变化")
     parser.add_argument("--detect", action="store_true", help="强制刷新 IPA 元数据探测")
+    parser.add_argument(
+        "--no-refresh-icons", action="store_true", help="跳过图标重取，直接用本地已有文件"
+    )
     args = parser.parse_args()
 
     if not CONFIG_PATH.exists():
@@ -1012,7 +1015,7 @@ def main() -> int:
         raise SystemExit("config.json 的 apps 为空。")
 
     global REFRESH_ICONS
-    REFRESH_ICONS = bool(config.get("refreshIcons", True))
+    REFRESH_ICONS = bool(config.get("refreshIcons", True)) and not args.no_refresh_icons
 
     max_versions = int(config.get("maxVersions") or 0)
     default_prereleases = bool(config.get("includePrereleases") or False)
