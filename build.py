@@ -323,6 +323,7 @@ def build_app(
     cache: dict,
     used_keys: set[str],
     warnings: list[str],
+    base_url: str | None = None,
 ) -> dict | None:
     slug = entry.get("repo")
     if not isinstance(slug, str) or "/" not in slug:
@@ -439,10 +440,20 @@ def build_app(
     description = entry.get("description") or trim(repo_meta.get("description"))
     if description:
         app["localizedDescription"] = description
-    app["iconURL"] = (
-        entry.get("iconURL")
-        or f"https://github.com/{owner}.png?size=512"
-    )
+    icon = entry.get("iconURL")
+    if not icon and base_url:
+        try:
+            written = extract_icon_from_remote(
+                latest["downloadURL"], str(bundle), ROOT / "icons"
+            )
+            if written:
+                icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
+                log(f"    提取图标 → {written.name}")
+        except Exception as exc:  # noqa: BLE001
+            warnings.append(f"{slug} 图标提取失败，改用兜底：{exc}")
+    if not icon:
+        icon = f"https://github.com/{owner}.png?size=512"
+    app["iconURL"] = icon
     if entry.get("tintColor"):
         app["tintColor"] = str(entry["tintColor"])
     if entry.get("category"):
@@ -578,6 +589,38 @@ def build_manual_app(
     return app
 
 
+def extract_icon_from_remote(download_url: str, bundle: str, icons_dir: Path) -> Path | None:
+    """从远程 IPA 里取一张最大的 AppIcon 存到 icons/，返回写出的文件。
+
+    图标已存在时直接复用，避免每次构建都去拉一遍。
+    """
+    safe = re.sub(r"[^A-Za-z0-9._-]", "_", bundle)
+    target = icons_dir / f"{safe}.png"
+    if target.exists() and target.stat().st_size > 0:
+        return target
+
+    remote = RemoteFile(download_url)
+    try:
+        with zipfile.ZipFile(remote) as archive:
+            candidates = [
+                (archive.getinfo(name).file_size, name)
+                for name in archive.namelist()
+                if re.match(r"^Payload/[^/]+\.app/AppIcon[^/]*\.png$", name)
+            ]
+            if not candidates:
+                return None
+            candidates.sort(reverse=True)
+            payload = archive.read(candidates[0][1])
+    finally:
+        remote.close()
+
+    if not payload:
+        return None
+    icons_dir.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(payload)
+    return target
+
+
 # --------------------------------------------------------------------------
 # 本地文件条目：自己上传的 IPA
 # --------------------------------------------------------------------------
@@ -687,6 +730,7 @@ def build_repo_with_retry(
     cache: dict,
     used_keys: set[str],
     warnings: list[str],
+    base_url: str | None = None,
     attempts: int = 2,
 ) -> dict | None:
     """GitHub 类条目在网络抖动时重试一次，避免整条应用从源里消失。"""
@@ -694,7 +738,8 @@ def build_repo_with_retry(
     for attempt in range(attempts):
         try:
             return build_app(
-                entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
+                entry, max_versions, default_prereleases, detect, cache,
+                used_keys, warnings, base_url,
             )
         except FetchError as exc:
             last_error = exc
@@ -754,7 +799,8 @@ def main() -> int:
                 )
             else:
                 app = build_repo_with_retry(
-                    entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
+                    entry, max_versions, default_prereleases, detect, cache,
+                    used_keys, warnings, repo_meta.get("baseURL"),
                 )
         except FetchError as exc:
             label = entry.get("repo") or entry.get("file") or entry.get("ipa") or "未命名条目"
