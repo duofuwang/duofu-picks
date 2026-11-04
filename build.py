@@ -679,6 +679,31 @@ def build_file_app(
     return app
 
 
+def build_repo_with_retry(
+    entry: dict,
+    max_versions: int,
+    default_prereleases: bool,
+    detect: bool,
+    cache: dict,
+    used_keys: set[str],
+    warnings: list[str],
+    attempts: int = 2,
+) -> dict | None:
+    """GitHub 类条目在网络抖动时重试一次，避免整条应用从源里消失。"""
+    last_error: FetchError | None = None
+    for attempt in range(attempts):
+        try:
+            return build_app(
+                entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
+            )
+        except FetchError as exc:
+            last_error = exc
+            if attempt + 1 < attempts:
+                log(f"    重试 {entry.get('repo')}：{exc}")
+                time.sleep(3)
+    raise last_error if last_error else FetchError("未知错误")
+
+
 # --------------------------------------------------------------------------
 # 主流程
 # --------------------------------------------------------------------------
@@ -728,7 +753,7 @@ def main() -> int:
                     entry, detect, cache, used_keys, warnings, repo_meta.get("iconURL")
                 )
             else:
-                app = build_app(
+                app = build_repo_with_retry(
                     entry, max_versions, default_prereleases, detect, cache, used_keys, warnings
                 )
         except FetchError as exc:
