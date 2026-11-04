@@ -61,11 +61,6 @@
       "tintColor": "#c8c836"
     },
     {
-      "repo": "daimiaopeng/coolapk-desktop",
-      "bundleIdentifier": "com.coolapk.desktop",
-      "name": "酷安桌面版"
-    },
-    {
       "repo": "shplash/IPAID",
       "bundleIdentifier": "com.shplash.ipaid",
       "name": "IPAID"
