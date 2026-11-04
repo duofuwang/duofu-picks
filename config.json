@@ -28,7 +28,12 @@
       "name": "ryP0"
     },
     {
-      "repo": "liuchuancong/pure_live"
+      "repo": "liuchuancong/pure_live",
+      "bundleIdentifier": "com.mystyle.purelive.liu",
+      "subtitle": "开源的直播聚合播放器，一个应用看全网直播",
+      "description": "纯粹直播，Flutter 构建。支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、YY、Twitch、SOOP，以及 M38 自定义源。带多画面同看、弹幕、录制与定时关闭。上游只提供 TrollStore 版 IPA，需自行签名安装。",
+      "category": "entertainment",
+      "minOSVersion": "15.6"
     },
     {
       "repo": "StikDebug/StikDebug",
