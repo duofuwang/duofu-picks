@@ -25,13 +25,15 @@
     {
       "repo": "Sami-Wali/ryP0",
       "bundleIdentifier": "com.ry0.ryP0",
-      "name": "ryP0"
+      "name": "ryP0",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png"
     },
     {
       "repo": "StikDebug/StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
       "name": "StikDebug",
-      "featured": true
+      "featured": true,
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png"
     },
     {
       "repo": "claration/Feather",
