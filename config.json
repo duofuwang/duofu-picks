@@ -28,6 +28,9 @@
       "name": "ryP0"
     },
     {
+      "repo": "liuchuancong/pure_live"
+    },
+    {
       "repo": "StikDebug/StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
       "name": "StikDebug",
