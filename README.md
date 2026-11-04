@@ -2,7 +2,7 @@
 
 一个自动同步开源项目 Release 的 AltStore / AltSource 源。
 
-不用手动传 IPA，也不用改版本号。GitHub Actions 每 6 小时跑一次脚本，到各开源仓库的 Release 里找最新的 `.ipa`，更新 `repo.json`，提交后由 GitHub Pages 发布。
+不用手动传 IPA，也不用改版本号。GitHub Actions 按计划跑脚本（白天每 30 分钟，深夜停一轮），到各开源仓库的 Release 里找最新的 `.ipa`，更新 `repo.json`，提交后由 GitHub Pages 发布。
 
 **不镜像、不重打包、不代传文件。** 源里的 `downloadURL` 直接指向上游发布地址，用户下载时连的是原作者。
 
@@ -55,6 +55,7 @@ duofu-picks/
 - `maxVersions`：每个应用保留几个历史版本，默认 0 表示全留
 - `includePrereleases`：所有仓库的默认 pre-release 策略
 - `detectAppInfo`：是否读取 IPA 探测 `bundleIdentifier`
+- `refreshIcons`：默认 `true`，每次构建重新提取图标并覆盖；设为 `false` 则本地有就跳过
 
 ## 部署
 
@@ -99,9 +100,13 @@ python build.py --detect   # 强制重新探测 IPA 元数据
 
 第 2 步失败的项目不少。图标编译进 `Assets.car` 的包，zip 里根本没有独立 PNG，这时靠第 3 步兜住。
 
-外链图标会被镜像：配置里写 imgur 之类的地址时，脚本下载一份存进 `icons/`，`repo.json` 指向自己的域名。下载失败就保留原地址——不会因为一次网络抖动把好图标换成别的。但如果下回来的根本不是图片（图床删了图、返回一张 HTML 错误页），那就继续走第 2、3 步，实在找不到才用头像。已经存在的文件直接复用，不重复拉。
+外链图标会被镜像：配置里写 imgur 之类的地址时，脚本下载一份存进 `icons/`，`repo.json` 指向自己的域名。下载失败就保留原地址——不会因为一次网络抖动把好图标换成别的。但如果下回来的根本不是图片（图床删了图、返回一张 HTML 错误页），那就继续走第 2、3 步，实在找不到才用头像。
 
-这也意味着换图有个前提：想换掉某个外链图标，得先把 `icons/` 里对应的旧文件删掉，否则脚本会继续用本地那份。
+第 2、3 步默认每次都重新做一遍，取到就覆盖本地那份，所以上游换图标能自动跟上。代价是每次构建都要重新读一遍 IPA —— 这活交给 Actions，本地跑会受网络影响。想省掉这部分开销，在 `config.json` 里写 `"refreshIcons": false`，就退回「本地有就跳过」。
+
+取不到新图时会保留本地旧图，而不是顺手换成仓库里的小 logo。这个判断靠 `icons/.sources.json` 记的来源：旧图来自 IPA 的，就只有 IPA 提取成功才会替换；旧图本来取自仓库 logo 的，才会继续去仓库里刷新。
+
+外链镜像还是缓存优先，不重复去图床拉。想换掉某张 imgur 图，得先把 `icons/` 里对应的旧文件删掉。
 
 生成的图标必须提交，否则 Pages 上访问不到。工作流里已经有 `git add icons`。
 

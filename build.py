@@ -46,6 +46,10 @@ DEFAULT_ASSET_PATTERN = r"\.ipa$"
 VERSION_SPLIT = re.compile(r"[.\-_+ ]")
 MAX_DESCRIPTION = 800
 
+# 每次构建都重新从 IPA / 仓库里取图标，取到就覆盖本地那份。
+# 关掉（config.refreshIcons = false）则恢复「本地有就跳过」的老行为。
+REFRESH_ICONS = True
+
 
 class FetchError(Exception):
     pass
@@ -453,23 +457,33 @@ def build_app(
                 icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(mirrored.name)}"
                 log(f"    镜像图标 → {mirrored.name}")
     if not icon and base_url:
+        icons_dir = ROOT / "icons"
+        cached = _existing_icon(str(bundle), icons_dir)
+        cached_source = _icon_source(str(bundle), icons_dir) if cached else None
+        written = None
+        label = ""
         try:
             written = extract_icon_from_remote(
-                latest["downloadURL"], str(bundle), ROOT / "icons"
+                latest["downloadURL"], str(bundle), icons_dir
             )
-            if written:
-                icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
-                log(f"    提取图标 → {written.name}")
+            label = "提取图标"
         except Exception as exc:  # noqa: BLE001
-            warnings.append(f"{slug} 图标提取失败，继续尝试仓库 logo：{exc}")
-    if not icon and base_url:
-        try:
-            written = find_repo_icon(slug, str(bundle), ROOT / "icons")
-            if written:
-                icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
-                log(f"    仓库 logo → {written.name}")
-        except Exception as exc:  # noqa: BLE001
-            warnings.append(f"{slug} 仓库 logo 探测失败：{exc}")
+            warnings.append(f"{slug} 图标提取失败：{exc}")
+        # 只有本地没有图标、或旧图本来就取自仓库 logo 时才去翻仓库。
+        # 否则一次网络抖动就会把 IPA 里的高清图标换成仓库里的小图。
+        if written is None and (cached is None or cached_source == "assets"):
+            try:
+                written = find_repo_icon(slug, str(bundle), icons_dir)
+                label = "仓库 logo"
+            except Exception as exc:  # noqa: BLE001
+                warnings.append(f"{slug} 仓库 logo 探测失败：{exc}")
+        if written is None and cached:
+            written = cached
+            label = "沿用旧图"
+            warnings.append(f"{slug} 本次没取到新图标，沿用 {cached.name}")
+        if written:
+            icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(written.name)}"
+            log(f"    {label} → {written.name}")
     if not icon:
         icon = f"https://github.com/{owner}.png?size=512"
         warnings.append(f"{slug} 没有可用图标，已回退为开发者头像")
@@ -526,10 +540,7 @@ def extract_icon(ipa_path: Path, bundle: str, icons_dir: Path) -> Path | None:
         payload = archive.read(candidates[0][1])
 
     icons_dir.mkdir(parents=True, exist_ok=True)
-    safe = re.sub(r"[^A-Za-z0-9._-]", "_", bundle)
-    target = icons_dir / f"{safe}.png"
-    target.write_bytes(payload)
-    return target
+    return _write_icon(icons_dir, bundle, payload, ".png")
 
 
 # --------------------------------------------------------------------------
@@ -609,15 +620,19 @@ def build_manual_app(
     return app
 
 
-def extract_icon_from_remote(download_url: str, bundle: str, icons_dir: Path) -> Path | None:
+def extract_icon_from_remote(
+    download_url: str, bundle: str, icons_dir: Path, *, refresh: bool | None = None
+) -> Path | None:
     """从远程 IPA 里取一张最大的 AppIcon 存到 icons/，返回写出的文件。
 
-    图标已存在时直接复用，避免每次构建都去拉一遍。
+    默认每次都重新读一遍，这样上游换了图标能跟上。refresh=False 时本地有就跳过。
     """
-    safe = re.sub(r"[^A-Za-z0-9._-]", "_", bundle)
-    target = icons_dir / f"{safe}.png"
-    if target.exists() and target.stat().st_size > 0:
-        return target
+    if refresh is None:
+        refresh = REFRESH_ICONS
+    if not refresh:
+        cached = _existing_icon(bundle, icons_dir)
+        if cached:
+            return cached
 
     remote = RemoteFile(download_url)
     try:
@@ -636,14 +651,18 @@ def extract_icon_from_remote(download_url: str, bundle: str, icons_dir: Path) ->
 
     if not payload:
         return None
-    icons_dir.mkdir(parents=True, exist_ok=True)
-    target.write_bytes(payload)
-    return target
+    return _write_icon(icons_dir, bundle, payload, ".png")
 
 
 ICON_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp", ".gif")
 ICON_DIR_HINT = re.compile(r"(^|/)(assets?|resources?|images?|icons?|\.github)/", re.I)
-ICON_NOISE = re.compile(r"(screenshot|preview|banner|header|background|placeholder|badge)", re.I)
+ICON_NOISE = re.compile(
+    r"(screenshot|preview|banner|header|background|placeholder|badge"
+    r"|smoke|splash|launch|transparent|monochrome|adaptive|rounded)",
+    re.I,
+)
+NON_IOS_DIR = re.compile(r"(^|/)(android|macos|windows|linux|web|tvos|watchos|visionos|fastlane)/", re.I)
+VENDORED_DIR = re.compile(r"(^|/)(packages|vendor|third_party|examples?|samples?|docs?)/", re.I)
 
 
 class IconInvalid(Exception):
@@ -674,6 +693,49 @@ def _existing_icon(bundle: str, icons_dir: Path) -> Path | None:
         if candidate.exists() and candidate.stat().st_size > 0:
             return candidate
     return None
+
+
+def _load_icon_sources(icons_dir: Path) -> dict[str, str]:
+    try:
+        data = json.loads((icons_dir / ".sources.json").read_text(encoding="utf-8"))
+        return {str(key): str(value) for key, value in data.items()}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def _icon_source(bundle: str, icons_dir: Path) -> str | None:
+    return _load_icon_sources(icons_dir).get(bundle)
+
+
+def _set_icon_source(bundle: str, source: str, icons_dir: Path) -> None:
+    sources = _load_icon_sources(icons_dir)
+    if sources.get(bundle) == source:
+        return
+    sources[bundle] = source
+    target = icons_dir / ".sources.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        json.dumps(dict(sorted(sources.items())), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _write_icon(
+    icons_dir: Path, bundle: str, data: bytes, suffix: str, source: str = "ipa"
+) -> Path:
+    """写入图标，并清掉同一应用其他扩展名的旧文件，避免一份图标留两份。"""
+    icons_dir.mkdir(parents=True, exist_ok=True)
+    safe = _safe_name(bundle)
+    for other in ICON_SUFFIXES:
+        if other == suffix:
+            continue
+        stale = icons_dir / f"{safe}{other}"
+        if stale.exists():
+            stale.unlink()
+    target = icons_dir / f"{safe}{suffix}"
+    target.write_bytes(data)
+    _set_icon_source(bundle, source, icons_dir)
+    return target
 
 
 def api_get_bytes(url: str) -> bytes:
@@ -713,9 +775,7 @@ def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
     suffix = _icon_suffix(data)
     if not suffix or len(data) < 100:
         raise IconInvalid(f"{len(data)} 字节，开头 {data[:12]!r}")
-    icons_dir.mkdir(parents=True, exist_ok=True)
-    target = icons_dir / f"{_safe_name(bundle)}{suffix}"
-    target.write_bytes(data)
+    target = _write_icon(icons_dir, bundle, data, suffix, source="mirror")
     if len(data) < 2048:
         log(f"    图标偏小（{len(data)} 字节），可能不够清晰")
     return target
@@ -724,7 +784,7 @@ def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
 def find_repo_icon(slug: str, bundle: str, icons_dir: Path) -> Path | None:
     """IPA 里没有独立 PNG 时（图标编进 Assets.car），从仓库源码里找一张 logo。"""
     cached = _existing_icon(bundle, icons_dir)
-    if cached:
+    if cached and not REFRESH_ICONS:
         return cached
 
     tree = api_get(f"{API_ROOT}/repos/{slug}/git/trees/HEAD?recursive=1") or {}
@@ -745,16 +805,29 @@ def find_repo_icon(slug: str, bundle: str, icons_dir: Path) -> Path | None:
         low = path.lower()
         base = low.rsplit("/", 1)[-1]
         value = 0
-        if re.search(r"icon|logo", base):
-            value += 40
+        if "appicon.appiconset" in low:
+            # Xcode 的应用图标目录，最可靠
+            value += 120
+        if "appicon" in base:
+            value += 30
+        elif "icon" in base:
+            value += 35
+        elif "logo" in base:
+            value += 18
         if project and project in base.replace("-", "").replace("_", ""):
             value += 25
         if ICON_DIR_HINT.search(low):
-            value += 20
+            value += 15
         if low.count("/") <= 1:
             value += 10
+        if low.endswith(".png"):
+            value += 8
+        if NON_IOS_DIR.search(low):
+            value -= 45
+        if VENDORED_DIR.search(low):
+            value -= 100
         if ICON_NOISE.search(low):
-            value -= 60
+            value -= 90
         return value, int(item.get("size") or 0)
 
     blobs.sort(key=score, reverse=True)
@@ -769,10 +842,7 @@ def find_repo_icon(slug: str, bundle: str, icons_dir: Path) -> Path | None:
         suffix = _icon_suffix(data)
         if not suffix:
             continue
-        icons_dir.mkdir(parents=True, exist_ok=True)
-        target = icons_dir / f"{_safe_name(bundle)}{suffix}"
-        target.write_bytes(data)
-        return target
+        return _write_icon(icons_dir, bundle, data, suffix, source="assets")
     return None
 
 
@@ -926,6 +996,9 @@ def main() -> int:
     entries = config.get("apps") or []
     if not entries:
         raise SystemExit("config.json 的 apps 为空。")
+
+    global REFRESH_ICONS
+    REFRESH_ICONS = bool(config.get("refreshIcons", True))
 
     max_versions = int(config.get("maxVersions") or 0)
     default_prereleases = bool(config.get("includePrereleases") or False)
