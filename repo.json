@@ -82,7 +82,7 @@
       "developerName": "RyanYuuki",
       "subtitle": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
       "localizedDescription": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
-      "iconURL": "https://github.com/RyanYuuki.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ryan.anymex.png",
       "versions": [
         {
           "version": "3.2.0",
@@ -113,7 +113,7 @@
       "developerName": "mikevillarroel",
       "subtitle": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and…",
       "localizedDescription": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and install, all from your iPhone.",
-      "iconURL": "https://github.com/mikevillarroel.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mikevillarroel.buildbox.png",
       "versions": [
         {
           "version": "2.1.4",
@@ -144,7 +144,7 @@
       "developerName": "claration",
       "subtitle": "Free on-device iOS/iPadOS application manager/installer, using certificates…",
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
-      "iconURL": "https://github.com/claration.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png",
       "versions": [
         {
           "version": "2.9.0",
@@ -175,7 +175,7 @@
       "developerName": "shplash",
       "subtitle": "Edit IPA bundle identifiers made easy.",
       "localizedDescription": "Edit IPA bundle identifiers made easy.",
-      "iconURL": "https://github.com/shplash.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.shplash.ipaid.png",
       "versions": [
         {
           "version": "1.21",
@@ -192,7 +192,7 @@
       "developerName": "XITRIX",
       "subtitle": "Torrent client for iOS 16+",
       "localizedDescription": "Torrent client for iOS 16+",
-      "iconURL": "https://github.com/XITRIX.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png",
       "versions": [
         {
           "version": "2.2.0-1",
@@ -223,7 +223,7 @@
       "developerName": "LiveContainer",
       "subtitle": "Run iOS apps without actually installing them!",
       "localizedDescription": "Run iOS apps without actually installing them!",
-      "iconURL": "https://github.com/LiveContainer.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png",
       "versions": [
         {
           "version": "3.8.0",
@@ -254,7 +254,7 @@
       "developerName": "Manic-EMU",
       "subtitle": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful…",
       "localizedDescription": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful features while keeping a clean, sleek UI and delivering buttery-smooth gameplay.",
-      "iconURL": "https://github.com/Manic-EMU.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.aoshuang.manicemu.png",
       "versions": [
         {
           "version": "2.0.2",
@@ -317,7 +317,7 @@
       "developerName": "coflyn",
       "subtitle": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
-      "iconURL": "https://github.com/coflyn.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png",
       "versions": [
         {
           "version": "4.5.1",
@@ -348,7 +348,7 @@
       "developerName": "NuvioMedia",
       "subtitle": "Official Nuvio Mobile Repository",
       "localizedDescription": "Official Nuvio Mobile Repository",
-      "iconURL": "https://github.com/NuvioMedia.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png",
       "versions": [
         {
           "version": "0.6.7-beta",
@@ -379,7 +379,7 @@
       "developerName": "emexlab",
       "subtitle": "IDE to develop native code iOS apps and utilities on stock iOS it self just via…",
       "localizedDescription": "IDE to develop native code iOS apps and utilities on stock iOS it self just via a certificate and a custom micro kernel for those apps.",
-      "iconURL": "https://github.com/emexlab.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.emexlabs.nyxian.png",
       "versions": [
         {
           "version": "0.11.4",
@@ -442,7 +442,7 @@
       "developerName": "Provenance-Emu",
       "subtitle": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC…",
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
-      "iconURL": "https://github.com/Provenance-Emu.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.provenance-emu.provenance.png",
       "versions": [
         {
           "version": "3.3.1",
@@ -504,7 +504,7 @@
       "developerName": "SideStore",
       "subtitle": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
-      "iconURL": "https://github.com/SideStore.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png",
       "versions": [
         {
           "version": "0.7.0-alpha",
@@ -648,7 +648,7 @@
       "developerName": "CHANG-JUI-LIN",
       "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
       "localizedDescription": "Yuedu is a native iOS reader that supports multiple book formats, RSS subscriptions, and user-provided book sources.",
-      "iconURL": "https://github.com/CHANG-JUI-LIN.png?size=512",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png",
       "versions": [
         {
           "version": "1.01",
