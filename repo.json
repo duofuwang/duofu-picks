@@ -18,7 +18,7 @@
       "developerName": "Aidoku",
       "subtitle": "Manga reading app for iOS, iPadOS, and macOS",
       "localizedDescription": "Manga reading app for iOS, iPadOS, and macOS",
-      "iconURL": "https://i.imgur.com/WkDWgIs.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png",
       "tintColor": "#fc2c54",
       "versions": [
         {
@@ -50,7 +50,7 @@
       "developerName": "open-ani",
       "subtitle": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose…",
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
-      "iconURL": "https://i.imgur.com/SM5IYms.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png",
       "tintColor": "#6c9cc4",
       "versions": [
         {
@@ -285,7 +285,7 @@
       "developerName": "ResistanceTo",
       "subtitle": "An iPhone battery, charging and thermal instrument built on private iOS APIs…",
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
-      "iconURL": "https://i.imgur.com/ABGtsKA.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png",
       "tintColor": "#c8c836",
       "versions": [
         {
@@ -410,7 +410,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "PiliPlus",
       "localizedDescription": "PiliPlus",
-      "iconURL": "https://i.imgur.com/TpM9ZZe.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png",
       "tintColor": "#5cb47c",
       "versions": [
         {
@@ -552,7 +552,7 @@
       "developerName": "infinityf4p",
       "subtitle": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
-      "iconURL": "https://i.imgur.com/ByP23y5.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png",
       "tintColor": "#a77f57",
       "versions": [
         {
@@ -584,7 +584,7 @@
       "developerName": "itzzace",
       "subtitle": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with…",
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
-      "iconURL": "https://i.imgur.com/A3A6Bko.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png",
       "tintColor": "#fc0434",
       "versions": [
         {
