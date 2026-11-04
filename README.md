@@ -44,6 +44,7 @@ duofu-picks/
 | `name` | 否 | 留空时依次回退到 IPA 内显示名、仓库名 |
 | `version` | 否 | 仅 `ipa` / `file` 条目有效，留空则从 IPA 里读 |
 | `asset` | 否 | 选哪个资产的正则，默认 `\.ipa$` |
+| `excludeTags` | 否 | 要跳过的 tag 列表，用于排除重复或命名混乱的发版 |
 | `versionFrom` | 否 | `tag`（默认）或 `asset`，版本号从哪取 |
 | `includePrereleases` | 否 | 该仓库是否接受 pre-release |
 | `featured` | 否 | 是否进 `featuredApps` |

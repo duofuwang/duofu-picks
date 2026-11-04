@@ -339,6 +339,9 @@ def build_app(
     include_pre = entry.get("includePrereleases")
     if include_pre is None:
         include_pre = default_prereleases
+    exclude_tags = {
+        str(tag).strip() for tag in (entry.get("excludeTags") or []) if str(tag).strip()
+    }
 
     per_page = max(10, min(100, max(max_versions, 1) * 4))
     releases = api_get(f"{API_ROOT}/repos/{slug}/releases?per_page={per_page}")
@@ -349,6 +352,8 @@ def build_app(
     seen: set[str] = set()
     for release in releases:
         if release.get("draft"):
+            continue
+        if str(release.get("tag_name") or "") in exclude_tags:
             continue
         if release.get("prerelease") and not include_pre:
             continue

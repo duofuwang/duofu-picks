@@ -121,7 +121,8 @@
     {
       "repo": "CHANG-JUI-LIN/Yuedu-reader",
       "bundleIdentifier": "com.zhangruilin.yuedureader",
-      "name": "阅读"
+      "name": "阅读",
+      "excludeTags": ["1.01"]
     },
     {
       "repo": "NuvioMedia/NuvioMobile",
