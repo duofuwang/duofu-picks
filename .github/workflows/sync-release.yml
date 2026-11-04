@@ -2,8 +2,9 @@ name: 同步上游 Release
 
 on:
   schedule:
-    - cron: "0,30 0-15,22-23 * * *"
-    - cron: "0 16 * * *"
+    # 每 10 分钟一次，避开 0/30 这些整点分钟（平台在整点最拥堵）
+    - cron: "7,17,27,37,47,57 0-15,22-23 * * *"
+    - cron: "2 16 * * *"
   workflow_dispatch:
   push:
     branches: [main]
