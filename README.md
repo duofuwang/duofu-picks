@@ -2,7 +2,7 @@
 
 一个自动同步开源项目 Release 的 AltStore / AltSource 源。
 
-不用手动传 IPA，也不用改版本号。GitHub Actions 按计划跑脚本（白天每 30 分钟，深夜停一轮），到各开源仓库的 Release 里找最新的 `.ipa`，更新 `repo.json`，提交后由 GitHub Pages 发布。
+不用手动传 IPA，也不用改版本号。GitHub Actions 每 30 分钟跑一次脚本（北京时间 06:00 到次日 00:00，凌晨停 6 小时），到各开源仓库的 Release 里找最新的 `.ipa`，更新 `repo.json`，提交后由 GitHub Pages 发布。
 
 **不镜像、不重打包、不代传文件。** 源里的 `downloadURL` 直接指向上游发布地址，用户下载时连的是原作者。
 
