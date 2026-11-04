@@ -2,10 +2,11 @@
   "repository": {
     "name": "Duofu Picks",
     "identifier": "com.duofu.picks",
-    "subtitle": "自维护开源应用白名单",
-    "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n不镜像、不重打包，下载直接指向上游，不接受任何第三方转包。",
+    "subtitle": "精挑的开源 iOS 应用",
+    "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。",
     "website": "https://github.com/YOUR_NAME/duofu-picks",
-    "tintColor": "#378ADD"
+    "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
+    "tintColor": "#6156e2"
   },
   "apps": [
     {
@@ -54,7 +55,9 @@
     {
       "repo": "ResistanceTo/MiniWatts",
       "bundleIdentifier": "org.zhaohe.MiniWatts",
-      "name": "MiniWatts"
+      "name": "MiniWatts",
+      "iconURL": "https://i.imgur.com/ABGtsKA.png",
+      "tintColor": "#c8c836"
     },
     {
       "repo": "daimiaopeng/coolapk-desktop",
@@ -74,12 +77,37 @@
     {
       "repo": "bggRGjQaUbCoE/PiliPlus",
       "bundleIdentifier": "com.example.piliplus",
-      "name": "PiliPlus"
+      "name": "PiliPlus",
+      "iconURL": "https://i.imgur.com/TpM9ZZe.png",
+      "tintColor": "#5cb47c"
     },
     {
       "repo": "infinityf4p/TiebaPure-iOS",
       "bundleIdentifier": "dev.infinityf4p.tiebapure",
-      "name": "TiebaPure"
+      "name": "TiebaPure",
+      "iconURL": "https://i.imgur.com/ByP23y5.png",
+      "tintColor": "#a77f57"
+    },
+    {
+      "repo": "huamurui/zhihu-minus-minus",
+      "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
+      "name": "知乎--",
+      "iconURL": "https://i.imgur.com/zj4MbKD.png",
+      "tintColor": "#0484fc"
+    },
+    {
+      "repo": "open-ani/animeko",
+      "bundleIdentifier": "org.animeko.animeko",
+      "name": "Animeko",
+      "iconURL": "https://i.imgur.com/SM5IYms.png",
+      "tintColor": "#6c9cc4"
+    },
+    {
+      "repo": "Aidoku/Aidoku",
+      "bundleIdentifier": "app.aidoku.Aidoku",
+      "name": "Aidoku",
+      "iconURL": "https://i.imgur.com/WkDWgIs.png",
+      "tintColor": "#fc2c54"
     },
     {
       "repo": "RyanYuuki/AnymeX",
@@ -107,6 +135,14 @@
       "name": "Provenance",
       "asset": "^Provenance\\.ipa$",
       "includePrereleases": true
+    },
+    {
+      "repo": "itzzace/ytkace",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "name": "YTKACE",
+      "asset": "^YTKACE_(?!.*iOS16).*\\.ipa$",
+      "iconURL": "https://i.imgur.com/A3A6Bko.png",
+      "tintColor": "#fc0434"
     }
   ],
   "maxVersions": 3,
