@@ -711,13 +711,13 @@ def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
         log(f"    镜像图标失败，保留原地址：{exc}")
         return None
     suffix = _icon_suffix(data)
-    if not suffix or len(data) < 1024:
-        raise IconInvalid(
-            f"{len(data)} 字节，开头 {data[:12]!r}"
-        )
+    if not suffix or len(data) < 100:
+        raise IconInvalid(f"{len(data)} 字节，开头 {data[:12]!r}")
     icons_dir.mkdir(parents=True, exist_ok=True)
     target = icons_dir / f"{_safe_name(bundle)}{suffix}"
     target.write_bytes(data)
+    if len(data) < 2048:
+        log(f"    图标偏小（{len(data)} 字节），可能不够清晰")
     return target
 
 
