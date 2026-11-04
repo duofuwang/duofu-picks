@@ -443,10 +443,15 @@ def build_app(
     icon = entry.get("iconURL")
     if icon and base_url:
         # 配置里给的是外链时，顺手镜像一份到 icons/，避免依赖图床存活
-        mirrored = mirror_external_icon(str(icon), str(bundle), ROOT / "icons")
-        if mirrored:
-            icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(mirrored.name)}"
-            log(f"    镜像图标 → {mirrored.name}")
+        try:
+            mirrored = mirror_external_icon(str(icon), str(bundle), ROOT / "icons")
+        except IconInvalid as exc:
+            warnings.append(f"{slug} 配置的图标不是图片（{exc}），改用其他来源")
+            icon = None
+        else:
+            if mirrored:
+                icon = f"{base_url.rstrip('/')}/icons/{urllib.parse.quote(mirrored.name)}"
+                log(f"    镜像图标 → {mirrored.name}")
     if not icon and base_url:
         try:
             written = extract_icon_from_remote(
@@ -636,9 +641,13 @@ def extract_icon_from_remote(download_url: str, bundle: str, icons_dir: Path) ->
     return target
 
 
-ICON_SUFFIXES = (".png", ".jpg", ".jpeg")
+ICON_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp", ".gif")
 ICON_DIR_HINT = re.compile(r"(^|/)(assets?|resources?|images?|icons?|\.github)/", re.I)
 ICON_NOISE = re.compile(r"(screenshot|preview|banner|header|background|placeholder|badge)", re.I)
+
+
+class IconInvalid(Exception):
+    """下载回来的是 HTML 错误页之类，不是能用的图片。"""
 
 
 def _icon_suffix(data: bytes) -> str | None:
@@ -646,6 +655,10 @@ def _icon_suffix(data: bytes) -> str | None:
         return ".png"
     if data[:3] == b"\xff\xd8\xff":
         return ".jpg"
+    if data[:6] in (b"GIF87a", b"GIF89a"):
+        return ".gif"
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return ".webp"
     return None
 
 
@@ -680,7 +693,11 @@ def api_get_bytes(url: str) -> bytes:
 
 
 def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
-    """把配置里的外链图标下载到 icons/，让源不再依赖第三方图床。"""
+    """把配置里的外链图标下载到 icons/，让源不再依赖第三方图床。
+
+    网络失败时返回 None，调用方保留原地址；拿到的不是图片时抛 IconInvalid，
+    调用方改从 IPA 或仓库里找，避免把一个坏链留在源里。
+    """
     if not url.startswith(("http://", "https://")):
         return None
     cached = _existing_icon(bundle, icons_dir)
@@ -695,8 +712,9 @@ def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
         return None
     suffix = _icon_suffix(data)
     if not suffix or len(data) < 1024:
-        log("    镜像图标失败，下载到的不是有效图片，保留原地址")
-        return None
+        raise IconInvalid(
+            f"{len(data)} 字节，开头 {data[:12]!r}"
+        )
     icons_dir.mkdir(parents=True, exist_ok=True)
     target = icons_dir / f"{_safe_name(bundle)}{suffix}"
     target.write_bytes(data)
