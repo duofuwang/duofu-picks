@@ -2,7 +2,7 @@
   "name": "Duofu Picks",
   "identifier": "com.duofu.picks",
   "subtitle": "精挑的开源 iOS 应用",
-  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。",
+  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目因上游停止发版而由本项目自行构建，已在条目内注明。",
   "website": "https://github.com/duofuwang/duofu-picks",
   "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
   "tintColor": "#6156e2",

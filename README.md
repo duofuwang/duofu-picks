@@ -6,6 +6,8 @@
 
 **不镜像、不重打包、不代传文件。** 源里的 `downloadURL` 直接指向上游发布地址，用户下载时连的是原作者。
 
+只有一个例外：**「阅读」指向本项目自行构建的产物**。作者已停止在 GitHub Release 提供 IPA，只能自己编，详见[自行构建的条目](#自行构建的条目)。
+
 ## 目录结构
 
 ```
@@ -15,7 +17,7 @@ duofu-picks/
 ├── repo.json                # 产物，脚本自动写，不要手改
 ├── appinfo.json             # 可选缓存，开启 IPA 探测后才出现
 ├── .nojekyll                # 让 Pages 跳过 Jekyll
-└── .github/workflows/sync.yml
+└── .github/workflows/sync-release.yml
 ```
 
 ## 配置说明
@@ -48,6 +50,7 @@ duofu-picks/
 | `versionFrom` | 否 | `tag`（默认）或 `asset`，版本号从哪取 |
 | `includePrereleases` | 否 | 该仓库是否接受 pre-release |
 | `featured` | 否 | 是否进 `featuredApps` |
+| `developerName` | 否 | 开发者名，留空取仓库 owner。条目指向自己的 fork 时要手动写成原作者，否则客户端里会显示成你 |
 | `iconURL` / `subtitle` / `description` / `category` / `tintColor` | 否 | 覆盖默认值 |
 | `minOSVersion` / `buildVersion` | 否 | 写进最新版本条目；留空时从 IPA 的 `Info.plist` 读 |
 
@@ -149,6 +152,32 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 
 后者和你直接用别人的破解源没有区别，只是风险落在了自己的账号上。
 
+## 自行构建的条目
+
+「阅读」是这个仓库里唯一一条不来自上游发版的条目。
+
+**为什么。** 上游 `CHANG-JUI-LIN/Yuedu-reader` 自 2026-06 起不再往 GitHub Release 传 IPA，官方渠道改成 App Store 付费版和 TestFlight。能抓到的最后一个包停在 `1.0.4-2`（2026-05-31），而代码已经走到 3.0.1，中间隔了两个大版本，那个旧包在较新系统上导入还有问题。
+
+**能编到哪一版由许可证决定**，这是改动前必须先确认的事：
+
+| 时期 | 截止提交 | 日期 | 许可证 | 能公开分发构建？ |
+|---|---|---|---|---|
+| 早期 | `87ffc52` | 2026-07-25 | MIT | 可以 |
+| 中期 | `0479b74` | 2026-10-21 | MPL-2.0 | 可以，须提供源码 |
+| 现在 | — | 10-21 之后 | PolyForm Strict 1.0.0 | **不行** |
+
+PolyForm Strict 禁止分发构建产物，连修改源码也不允许。所以能合法编的最后一版是 `0479b74`（= 3.0.0 build 3），fork 停在那个提交上，不能往上合。
+
+**怎么做的。** 构建仓库是 [`duofuwang/Yuedu-reader`](https://github.com/duofuwang/Yuedu-reader)，分支 `sideload-3.0.0` 基点 `0479b74`：`macos-26` runner 执行 `xcodebuild archive`，全程 `CODE_SIGNING_ALLOWED=NO`，产物发到该 fork 的 Release，本仓库的 `config.json` 指向它。
+
+没有描述文件时 `Auth.auth()`、`Firestore.firestore()`、`CKContainer(identifier:)` 都会抛 ObjC 异常，而 Swift 抓不住，所以这些都得在构造前拦住，打一组侧载补丁。打包时还会往 `Info.plist` 写 `YueduUnsignedBuild=true`，运行时据此把云服务判为不可用，而不是让 App 崩在启动阶段。
+
+`build-unsigned-ipa.yml` 第一步校验 `LICENSE` 首行是不是 MPL —— 有人把上游新提交合进来会让它直接失败。那是闸，不是 bug。
+
+**条目里写清楚。** 客户端里显示的是该版本的 release notes（`config.json` 的 `description` 只在 release 没写说明时兜底），所以把「自行构建的非官方产物、云功能不可用、需要同步请用官方版本」写进 release notes；`developerName` 固定成原作者，免得客户端里显示成 fork 所有者。
+
+**代价。** 版本永久停在 3.0.0，3.0.1 及之后都拿不到；编译链路要自己维护（成功一次后产物是静态的，不跑就一直在）；许可证不授予商标权，名字和图标严格说仍属原作者。
+
 ## 几个实际会遇到的坑
 
 **pre-release 默认不收。** 像 Provenance 这种只在 pre-release 通道发版的，必须给那个仓库单独写 `"includePrereleases": true`，否则会报「没有匹配的资产」。它的 `alpha` 标签下挂着 `Provenance-iOS.ipa`、`Provenance-tvOS.ipa`、`Provenance-iOS-NoExtensions.ipa` 三个包，所以还要用 `"asset": "^Provenance\\.ipa$"` 精确指定，否则可能选到 tvOS 包。
@@ -168,3 +197,5 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 ## 注意
 
 聚合分发他人的 IPA 涉及原作者授权，请确认每个项目允许再分发，或者只作个人自用。本模板不镜像文件，下载流量仍然走上游。
+
+自行构建的条目要额外看两层：**源码许可证允不允许分发编译产物**，以及**作者是否还提供官方包**。前者决定你能不能放，后者决定你有没有必要放 —— 作者还在正常发版时，自己编一份只会让版本落后、还多一份维护成本。
