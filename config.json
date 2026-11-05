@@ -149,6 +149,15 @@
       "asset": "^YTKACE_(?!.*iOS16).*\\.ipa$",
       "iconURL": "https://i.imgur.com/A3A6Bko.png",
       "tintColor": "#fc0434"
+    },
+    {
+      "repo": "Apollo-Reborn/Apollo-Reborn",
+      "bundleIdentifier": "com.christianselig.Apollo",
+      "name": "Apollo for Reddit",
+      "asset": "^Apollo-Reborn-.*-GLASS\\.ipa$",
+      "versionFrom": "asset",
+      "iconURL": "https://apolloreborn.app/assets/icon.png",
+      "developerName": "Apollo-Reborn"
     }
   ],
   "maxVersions": 3,
