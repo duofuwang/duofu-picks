@@ -204,5 +204,14 @@
     "minOSVersion": "17.0",
     "size": 37436375,
     "source_repo": "duofuwang/Yuedu-reader"
+  },
+  "duofuwang/feather@2.9.0-2": {
+    "bundleIdentifier": "thewonderofyou.Feather",
+    "displayName": "Feather",
+    "version": "2.9.0",
+    "build": "6b9adec5b6d3d041c2b994e67593ab857e79175a",
+    "minOSVersion": "16.0",
+    "size": 14163633,
+    "source_repo": "duofuwang/feather"
   }
 }

@@ -2,7 +2,7 @@
   "name": "Duofu Picks",
   "identifier": "com.duofu.picks",
   "subtitle": "精挑的开源 iOS 应用",
-  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目因上游停止发版而由本项目自行构建，已在条目内注明。",
+  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目由本项目自行构建（上游停止发版，或跟进开发分支的夜间构建），已在条目内注明。",
   "website": "https://github.com/duofuwang/duofu-picks",
   "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
   "tintColor": "#6156e2",
@@ -176,6 +176,37 @@
           "localizedDescription": "Thank you for all your feedback and contributions!\r\n\r\n> [!TIP]\r\n> For `idevice` configuration, you can use [Impactor](https://github.com/claration/Impactor?tab=readme-ov-file#pairing-file) for easily retrieving a pairing file for installing!\r\n\r\n## What's Changed\r\n* Added support for using remote pairing on 17.4+, for 17.3 and below, use a standard pairing file.\r\n* Added more recommended sources by @CelloSerenity in https://github.com/CLARATION/Feather/pull/585\r\n* Added option to inject into all available extensions within an app by @waruhachi in https://github.com/CLARATION/Feather/pull/592\r\n\r\n## New Contributors\r\n* @waruhachi made their first contribution in https://github.com/CLARATION/Feather/pull/592\r\n\r\n**Full Changelog**: https://github.com/CLARATION/Feather/compare/v2.6.0...v2.7.0",
           "downloadURL": "https://github.com/claration/feather/releases/download/v2.7.0/Feather.ipa",
           "size": 14154834
+        }
+      ]
+    },
+    {
+      "name": "Feather Nightly",
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "developerName": "claration",
+      "subtitle": "每日从上游 main 分支自动构建的夜间版，非官方 Release",
+      "localizedDescription": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
+      "versions": [
+        {
+          "version": "2.9.0-2",
+          "date": "2026-11-05T06:16:06Z",
+          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-2/Feather.ipa",
+          "size": 14163633,
+          "buildVersion": "6b9adec5b6d3d041c2b994e67593ab857e79175a",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.9.0-1",
+          "date": "2026-11-05T03:52:39Z",
+          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-1/Feather.ipa",
+          "size": 14122517
+        },
+        {
+          "version": "2.9.0-n4",
+          "date": "2026-11-05T02:56:45Z",
+          "localizedDescription": "**Full Changelog**: https://github.com/duofuwang/feather/commits/v2.9.0-n4",
+          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-n4/Feather.ipa",
+          "size": 14122307
         }
       ]
     },
