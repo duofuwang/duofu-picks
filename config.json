@@ -3,7 +3,7 @@
     "name": "Duofu Picks",
     "identifier": "com.duofu.picks",
     "subtitle": "精挑的开源 iOS 应用",
-    "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目因上游停止发版而由本项目自行构建，已在条目内注明。",
+    "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目由本项目自行构建（上游停止发版，或跟进开发分支的夜间构建），已在条目内注明。",
     "website": "https://github.com/duofuwang/duofu-picks",
     "baseURL": "https://duofuwang.github.io/duofu-picks",
     "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
@@ -45,6 +45,15 @@
       "repo": "claration/Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
       "name": "Feather"
+    },
+    {
+      "repo": "duofuwang/feather",
+      "bundleIdentifier": "thewonderofyou.Feather",
+      "name": "Feather Nightly",
+      "developerName": "claration",
+      "subtitle": "每日从上游 main 分支自动构建的夜间版，非官方 Release",
+      "description": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
+      "asset": "^Feather\\.ipa$"
     },
     {
       "repo": "mikevillarroel/buildbox-ios",

@@ -6,7 +6,7 @@
 
 **不镜像、不重打包、不代传文件。** 源里的 `downloadURL` 直接指向上游发布地址，用户下载时连的是原作者。
 
-只有一个例外：**「阅读」指向本项目自行构建的产物**。作者已停止在 GitHub Release 提供 IPA，只能自己编，详见[自行构建的条目](#自行构建的条目)。
+例外有两条：**「阅读」和「Feather Nightly」指向本项目自行构建的产物**。前者是作者已停止在 GitHub Release 提供 IPA，只能自己编；后者是每天跟进上游开发分支的夜间构建。详见[自行构建的条目](#自行构建的条目)。
 
 ## 目录结构
 
@@ -158,7 +158,7 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 
 ## 自行构建的条目
 
-「阅读」是这个仓库里唯一一条不来自上游发版的条目。
+「阅读」和「Feather Nightly」是两条不来自上游正式发版的条目，但性质不同：前者是上游停止发版后不得不自己编，后者是上游还在正常发版、本项目主动跟进其开发分支的每日构建。
 
 **为什么。** 上游 `CHANG-JUI-LIN/Yuedu-reader` 自 2026-06 起不再往 GitHub Release 传 IPA，官方渠道改成 App Store 付费版和 TestFlight。能抓到的最后一个包停在 `1.0.4-2`（2026-05-31），而代码已经走到 3.0.1，中间隔了两个大版本，那个旧包在较新系统上导入还有问题。
 
@@ -181,6 +181,14 @@ PolyForm Strict 禁止分发构建产物，连修改源码也不允许。所以�
 **条目里写清楚。** 客户端里显示的是该版本的 release notes（`config.json` 的 `description` 只在 release 没写说明时兜底），所以把「自行构建的非官方产物、云功能不可用、需要同步请用官方版本」写进 release notes；`developerName` 固定成原作者，免得客户端里显示成 fork 所有者。
 
 **代价。** 版本永久停在 3.0.0，3.0.1 及之后都拿不到；编译链路要自己维护（成功一次后产物是静态的，不跑就一直在）；许可证不授予商标权，名字和图标严格说仍属原作者。
+
+### Feather Nightly
+
+构建仓库是 [`duofuwang/feather`](https://github.com/duofuwang/feather)，默认分支 `nightly`：每天 UTC 18:00 从 `claration/Feather` 的 `main` 同步最新提交，在 macOS runner 上编译后发到该 fork 的 Release，tag 为 `v{版本}-{序号}`（`v2.9.0-1`、`v2.9.0-2`…），且都标成正式 Release 而非 pre-release，所以本源不需要为它开 `includePrereleases`。
+
+**关键限制：它没有改 bundle ID。** 夜版 IPA 的 `CFBundleIdentifier` 仍是 `thewonderofyou.Feather`，和官方稳定版一致，显示名也都叫 Feather。本源里两条虽然并列，客户端按 bundle ID 识别应用时可能只认其中一条，装夜版会覆盖稳定版（反过来也一样），条目描述里已写明。真要长期两个版本共存，得先让 fork 在构建时给夜版换一个独立 ID。
+
+条目里 `developerName` 固定写成原作者 `claration`，否则客户端会显示成 fork 的所有者；`asset` 精确限定为 `Feather.ipa`。nightly 工作流用 `agvtool new-version -all $(git rev-parse HEAD)` 把提交哈希写进 `CFBundleVersion`，所以条目的 `buildVersion` 是一串 40 位哈希；图标文件名按 bundle ID 命名，两条 Feather 会共用 `icons/thewonderofyou.Feather.png`。
 
 ## 几个实际会遇到的坑
 
