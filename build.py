@@ -22,6 +22,7 @@
 from __future__ import annotations
 
 import argparse
+import colorsys
 import hashlib
 import io
 import json
@@ -863,11 +864,6 @@ def normalize_apple_png(data: bytes) -> bytes:
     if len(raw) < height * (stride + 1):
         return data
 
-    def paeth(a: int, b: int, c: int) -> int:
-        p = a + b - c
-        pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
-        return a if pa <= pb and pa <= pc else (b if pb <= pc else c)
-
     prev = bytearray(stride)
     out = bytearray()
     pos = 0
@@ -972,6 +968,386 @@ def versioned_icon_url(icon: str) -> str:
     return urllib.parse.urlunsplit(
         (parts.scheme, parts.netloc, parts.path, urllib.parse.urlencode(params), parts.fragment)
     )
+
+
+# --------------------------------------------------------------------------
+# tintColor：从本地图标里取主色
+# --------------------------------------------------------------------------
+
+TINT_SAMPLE_MAX = 96       # 统计前先降采样到 96×96 以内
+TINT_HUE_BUCKETS = 24      # 色相分 24 桶，每桶 15°
+TINT_MIN_LIGHTNESS = 0.25     # HSL 明度下限，更暗的像素按「背景」排除
+TINT_TARGET_LIGHTNESS = 0.55  # HSL 明度目标（Vibrant 用 0.5，这里略偏亮）
+
+
+def paeth(a: int, b: int, c: int) -> int:
+    """PNG 滤波用的 Paeth 预测器，CgBI 转换和 PNG 解码共用。"""
+    p = a + b - c
+    pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
+    return a if pa <= pb and pa <= pc else (b if pb <= pc else c)
+
+
+def _grid_step(width: int, height: int, max_side: int) -> int:
+    return max(1, (max(width, height) + max_side - 1) // max_side)
+
+
+def decode_png(data: bytes, max_side: int = TINT_SAMPLE_MAX) -> tuple[int, int, bytes] | None:
+    """把标准 PNG 解成降采样后的 (宽, 高, RGBA 字节串)。
+
+    只用标准库，不装 Pillow 也能跑；更重要的是本地和 Actions 走的是同一条
+    解码路径，算出来的 hex 完全一致，不会让 repo.json 每轮来回抖。
+    支持 8/16bit 的灰 / RGB / 带 alpha 组合，以及调色板 1/2/4/8bit；16bit
+    只取每个通道的高 8 位（低 8 位对取主色没影响）。隔行 PNG 和非调色板
+    tRNS 直接返回 None，图标里基本见不到。
+    """
+    if data[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    pos = 8
+    width = height = 0
+    depth, color, interlace = 8, 0, 0
+    palette, trns, idat = b"", b"", bytearray()
+    while pos + 12 <= len(data):
+        length = struct.unpack_from(">I", data, pos)[0]
+        ctype = data[pos + 4: pos + 8]
+        if pos + 12 + length > len(data):
+            return None
+        body = data[pos + 8: pos + 8 + length]
+        if ctype == b"IHDR":
+            if length != 13:
+                return None
+            width, height, depth, color, _, _, interlace = struct.unpack(">IIBBBBB", body)
+        elif ctype == b"PLTE":
+            palette = body
+        elif ctype == b"tRNS":
+            trns = body
+        elif ctype == b"IDAT":
+            idat += body
+        elif ctype == b"IEND":
+            break
+        pos += 12 + length
+
+    channels = {0: 1, 2: 3, 3: 1, 4: 2, 6: 4}.get(color)
+    if not width or not height or interlace or channels is None:
+        return None
+    if depth == 16:
+        if color not in (0, 2, 4, 6):  # 16bit 调色板不存在
+            return None
+    elif depth != 8 and not (color == 3 and depth in (1, 2, 4)):
+        return None
+    if width * height > 40_000_000:  # 异常文件别吃满内存
+        return None
+
+    stride = (width * channels * depth + 7) // 8
+    try:
+        raw = zlib.decompress(bytes(idat))
+    except zlib.error:
+        return None
+    if len(raw) < height * (stride + 1):
+        return None
+
+    step = _grid_step(width, height, max_side)
+    xs = range(0, width, step)
+    ys = range(0, height, step)
+    grid_w, grid_h = len(xs), len(ys)
+    out = bytearray(grid_w * grid_h * 4)
+    row_index = {y: i for i, y in enumerate(ys)}
+    bpp = max(1, (channels * depth + 7) // 8)
+    prev = bytearray(stride)
+    pos = 0
+
+    for y in range(height):
+        ftype = raw[pos]
+        pos += 1
+        line = bytearray(raw[pos: pos + stride])
+        pos += stride
+        # 滤波是行间依赖的，非采样行也得还原，只是不用转成像素。
+        if ftype == 1:
+            for i in range(bpp, stride):
+                line[i] = (line[i] + line[i - bpp]) & 255
+        elif ftype == 2:
+            for i in range(stride):
+                line[i] = (line[i] + prev[i]) & 255
+        elif ftype == 3:
+            for i in range(stride):
+                left = line[i - bpp] if i >= bpp else 0
+                line[i] = (line[i] + ((left + prev[i]) >> 1)) & 255
+        elif ftype == 4:
+            for i in range(stride):
+                a = line[i - bpp] if i >= bpp else 0
+                c = prev[i - bpp] if i >= bpp else 0
+                line[i] = (line[i] + paeth(a, prev[i], c)) & 255
+        elif ftype != 0:
+            return None
+
+        if y in row_index:
+            base = row_index[y] * grid_w * 4
+            for col, x in enumerate(xs):
+                offset = base + col * 4
+                if color == 3:  # 调色板
+                    if depth == 8:
+                        index = line[x]
+                    else:
+                        per_byte = 8 // depth
+                        byte = line[x // per_byte]
+                        shift = 8 - depth - (x % per_byte) * depth
+                        index = (byte >> shift) & ((1 << depth) - 1)
+                    p = index * 3
+                    if p + 2 < len(palette):
+                        alpha = trns[index] if index < len(trns) else 255
+                        out[offset: offset + 4] = bytes((
+                            palette[p], palette[p + 1], palette[p + 2], alpha,
+                        ))
+                else:  # 灰 / RGB / 带 alpha，8bit 或 16bit 通用
+                    unit = 2 if depth == 16 else 1
+                    src = x * channels * unit
+                    if color == 6:
+                        pixel = (
+                            line[src], line[src + unit],
+                            line[src + 2 * unit], line[src + 3 * unit],
+                        )
+                    elif color == 2:
+                        pixel = (line[src], line[src + unit], line[src + 2 * unit], 255)
+                    elif color == 4:
+                        gray = line[src]
+                        pixel = (gray, gray, gray, line[src + unit])
+                    else:
+                        gray = line[src]
+                        pixel = (gray, gray, gray, 255)
+                    out[offset: offset + 4] = bytes(pixel)
+        prev = line
+    return grid_w, grid_h, bytes(out)
+
+
+def decode_image_with_pillow(
+    data: bytes, max_side: int = TINT_SAMPLE_MAX
+) -> tuple[int, int, bytes] | None:
+    """非 PNG 图标（jpg / webp / gif）交给 Pillow；没装就放弃这张图。"""
+    try:
+        from PIL import Image
+    except ImportError:
+        return None
+    try:
+        with Image.open(io.BytesIO(data)) as image:
+            rgba = image.convert("RGBA")
+            step = _grid_step(rgba.width, rgba.height, max_side)
+            grid = rgba.resize(
+                (len(range(0, rgba.width, step)), len(range(0, rgba.height, step))),
+                getattr(Image, "Resampling", Image).NEAREST,
+            )
+            return grid.width, grid.height, grid.tobytes()
+    except Exception:  # noqa: BLE001 - 第三方解码器异常种类多，不能让构建挂掉
+        return None
+
+
+def dominant_tint(grid: tuple[int, int, bytes]) -> str | None:
+    """从采样网格里挑主色，返回 #RRGGBB。
+
+    思路：先扔掉透明、近黑、近白和低饱和的像素（App 图标里这些通常是背景
+    或留白），再把剩下的按色相分桶加权。选桶时用环形三桶滑窗，这样跨 0°
+    的红色不会被劈成两半；桶内做加权 RGB 平均，最后把饱和度/明度收进一个
+    适合当强调色的区间。灰阶或纯黑白图标直接返回 None，不硬凑一个颜色。
+
+    两个借鉴 Vibrant 的调整：一是把 HSL 明度低于 0.25 的像素当深色背景排除，
+    否则「大面积深色底 + 小面积亮色 logo」会稳稳挑到背景；二是权重和桶打分
+    都带上对中等明度、高饱和色的偏好。面积仍是主导项 —— 连续渐变图标必须
+    取面积重心，不能为了「最醒目」挑走渐变里最饱和的一小段。
+    """
+    width, height, rgba = grid
+    count = TINT_HUE_BUCKETS
+    weights = [0.0] * count
+    sums = [[0.0, 0.0, 0.0] for _ in range(count)]
+    sat_sums = [0.0] * count
+    light_sums = [0.0] * count
+    useful = 0
+    for i in range(width * height):
+        r, g, b, alpha = rgba[i * 4: i * 4 + 4]
+        if alpha < 128:
+            continue
+        high, low = max(r, g, b), min(r, g, b)
+        # 近黑、近白和灰阶都在这里被排除（白色/浅灰的 high-low 都很小）。
+        if high < 24 or high - low < 20:
+            continue
+        lightness = (high + low) / 510.0
+        if lightness < TINT_MIN_LIGHTNESS:
+            continue
+        hue, saturation, value = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
+        if saturation < 0.15:
+            continue
+        useful += 1
+        tone = 1.0 - abs(lightness - TINT_TARGET_LIGHTNESS)
+        weight = (0.4 + saturation) * (0.45 + value) * (0.55 + 0.45 * tone)
+        bucket = min(count - 1, int(hue * count))
+        weights[bucket] += weight
+        sums[bucket][0] += r * weight
+        sums[bucket][1] += g * weight
+        sums[bucket][2] += b * weight
+        sat_sums[bucket] += saturation * weight
+        light_sums[bucket] += lightness * weight
+
+    if useful < max(12, width * height * 0.01) or not any(weights):
+        return None
+
+    def bucket_score(index: int) -> float:
+        group = ((index - 1) % count, index, (index + 1) % count)
+        area = sum(weights[j] for j in group)
+        if area <= 0:
+            return 0.0
+        avg_saturation = sum(sat_sums[j] for j in group) / area
+        avg_lightness = sum(light_sums[j] for j in group) / area
+        tone = 1.0 - abs(avg_lightness - TINT_TARGET_LIGHTNESS)
+        return area * (0.5 + 0.5 * avg_saturation) * (0.5 + 0.5 * tone)
+
+    center = max(range(count), key=bucket_score)
+    group = ((center - 1) % count, center, (center + 1) % count)
+    total = sum(weights[i] for i in group)
+    if total <= 0:
+        return None
+    r = sum(sums[i][0] for i in group) / total / 255
+    g = sum(sums[i][1] for i in group) / total / 255
+    b = sum(sums[i][2] for i in group) / total / 255
+    hue, saturation, value = colorsys.rgb_to_hsv(r, g, b)
+    saturation = min(0.90, max(0.50, saturation * 1.06))
+    value = min(0.96, max(0.70, value * 1.02))
+    r, g, b = colorsys.hsv_to_rgb(hue, saturation, value)
+    return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
+
+
+def tint_from_icon(path: Path) -> str | None:
+    """PNG 走标准库解码，其他格式才用 Pillow（可选），失败返回 None。"""
+    try:
+        data = path.read_bytes()
+    except OSError:
+        return None
+    if path.suffix.lower() == ".png":
+        grid = decode_png(data)
+    else:
+        grid = decode_image_with_pillow(data)
+    return dominant_tint(grid) if grid else None
+
+
+def local_icon_path(app: dict, icons_dir: Path) -> Path | None:
+    """按 iconURL 找到实际用的那张本地图，找不到再按 bundle ID 回退。"""
+    icon = str(app.get("iconURL") or "")
+    try:
+        parts = urllib.parse.urlsplit(icon)
+    except ValueError:
+        parts = None
+    marker = "/icons/"
+    if parts and marker in parts.path:
+        name = urllib.parse.unquote(parts.path.rsplit(marker, 1)[-1])
+        if name and "/" not in name and ".." not in name:
+            candidate = icons_dir / name
+            if candidate.is_file():
+                return candidate
+    return _existing_icon(str(app.get("bundleIdentifier") or ""), icons_dir)
+
+
+def set_app_tint(app: dict, color: str | None) -> None:
+    """写入 tintColor 并保持它紧跟 iconURL 的字段顺序。"""
+    if not color:
+        app.pop("tintColor", None)
+        return
+    rebuilt: dict = {}
+    for key, value in app.items():
+        if key == "tintColor":
+            continue
+        rebuilt[key] = value
+        if key == "iconURL":
+            rebuilt["tintColor"] = color
+    if "tintColor" not in rebuilt:
+        rebuilt["tintColor"] = color
+    app.clear()
+    app.update(rebuilt)
+
+
+def manual_tint_map(entries: list) -> dict[str, str]:
+    """config.json 里手写的 tintColor 是唯一真源，永远优先于自动取色。"""
+    return {
+        str(entry["bundleIdentifier"]): str(entry["tintColor"])
+        for entry in entries
+        if isinstance(entry, dict) and entry.get("bundleIdentifier") and entry.get("tintColor")
+    }
+
+
+def source_tint(config: dict) -> str | None:
+    """源自身的主色，作为「有图标但取不到彩色」时的兜底。"""
+    raw = str((config.get("repository") or {}).get("tintColor") or "").strip()
+    if not raw:
+        return None
+    return raw if raw.startswith("#") else "#" + raw
+
+
+def apply_auto_tints(
+    apps: list[dict],
+    manual: dict[str, str],
+    icons_dir: Path,
+    enabled: bool = True,
+    fallback: str | None = None,
+) -> list[tuple[str, str | None, str]]:
+    """给每个 app 定 tintColor，返回 (名称, 颜色, 来源) 列表。"""
+    results: list[tuple[str, str | None, str]] = []
+    cache: dict[Path, str | None] = {}
+    for app in apps:
+        bundle = str(app.get("bundleIdentifier") or "")
+        if bundle in manual:
+            color, source = manual[bundle], "manual"
+        elif not enabled:
+            color, source = None, "off"
+        else:
+            path = local_icon_path(app, icons_dir)
+            if path is None:
+                color, source = None, "none"
+            else:
+                if path not in cache:
+                    cache[path] = tint_from_icon(path)
+                color = cache[path]
+                if color:
+                    source = "auto"
+                elif fallback:
+                    # 纯黑白图标没有可提取的彩色；用源主色兜底，
+                    # 免得客户端对这几个应用显示成另一套默认蓝。
+                    color, source = fallback, "fallback"
+                else:
+                    source = "none"
+        set_app_tint(app, color)
+        results.append((str(app.get("name") or bundle), color, source))
+    return results
+
+
+def refresh_tints(check: bool) -> int:
+    """离线模式：不联网，只按 icons/ 重算 repo.json 里的 tintColor。"""
+    if not CONFIG_PATH.exists() or not OUTPUT_PATH.exists():
+        raise SystemExit("离线刷新需要 config.json 和 repo.json 都存在。")
+    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8-sig"))
+    repository = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    apps = repository.get("apps") or []
+    before = [app.get("tintColor") for app in apps]
+    manual = manual_tint_map(config.get("apps") or [])
+    enabled = bool(config.get("tintFromIcons", True))
+    fallback = source_tint(config) if config.get("tintFallback", True) else None
+    results = apply_auto_tints(apps, manual, ROOT / "icons", enabled, fallback)
+
+    labels = {
+        "manual": "配置指定", "auto": "图标取色",
+        "fallback": "无彩色·回退源主色", "none": "无可用颜色", "off": "已关闭",
+    }
+    for name, color, source in results:
+        log(f"  {name:<22} {color or '—':<9} {labels[source]}")
+    log("")
+    log(f"共 {sum(1 for _, _, s in results if s == 'auto')} 个取自图标，"
+        f"{sum(1 for _, _, s in results if s == 'manual')} 个沿用配置，"
+        f"{sum(1 for _, _, s in results if s == 'fallback')} 个回退源主色。")
+
+    after = [app.get("tintColor") for app in apps]
+    if before == after:
+        log("repo.json 的 tintColor 无变化。")
+        return 0
+    if check:
+        log("repo.json 的 tintColor 需要更新（--check 模式不写入）。")
+        return 1
+    OUTPUT_PATH.write_text(render(repository), encoding="utf-8", newline="\n")
+    log("已写入 repo.json。")
+    return 0
 
 
 def prune_icons(apps: list[dict], icons_dir: Path, dry_run: bool = False) -> list[str]:
@@ -1295,7 +1671,17 @@ def main() -> int:
         action="store_true",
         help="允许一次性少掉大量应用（默认会中止，防止额度耗尽或上游异常时写坏源）",
     )
+    parser.add_argument(
+        "--tints", action="store_true",
+        help="不联网，只按 icons/ 重算 repo.json 里的 tintColor",
+    )
+    parser.add_argument(
+        "--no-tints", action="store_true", help="本次构建不自动生成 tintColor",
+    )
     args = parser.parse_args()
+
+    if args.tints:
+        return refresh_tints(args.check)
 
     apply_proxy(args.proxy)
 
@@ -1357,6 +1743,21 @@ def main() -> int:
         raise SystemExit("没有取到任何可用应用，中止以免覆盖现有 repo.json。")
 
     apps.sort(key=lambda a: a["name"].lower())
+
+    # tintColor 在图标定稿后统一算：本地和 Actions 用同一份 PNG 解码，
+    # 图标换了颜色会跟着变，config.json 里手写的那些始终优先。
+    enabled = bool(config.get("tintFromIcons", True)) and not args.no_tints
+    fallback = source_tint(config) if config.get("tintFallback", True) else None
+    tint_results = apply_auto_tints(
+        apps, manual_tint_map(entries), ROOT / "icons", enabled, fallback
+    )
+    log("")
+    log(
+        f"tintColor：{sum(1 for _, _, s in tint_results if s == 'auto')} 个取自图标，"
+        f"{sum(1 for _, _, s in tint_results if s == 'manual')} 个沿用配置，"
+        f"{sum(1 for _, _, s in tint_results if s == 'fallback')} 个回退源主色，"
+        f"{sum(1 for _, _, s in tint_results if s == 'none')} 个没取到。"
+    )
 
     repository: dict = {}
     for field in ("name", "identifier", "subtitle", "description",

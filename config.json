@@ -161,5 +161,7 @@
     }
   ],
   "maxVersions": 3,
-  "detectAppInfo": false
+  "detectAppInfo": false,
+  "tintFromIcons": true,
+  "tintFallback": true
 }

@@ -87,6 +87,7 @@
       "subtitle": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
       "localizedDescription": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ryan.anymex.png?v=68be091480a0",
+      "tintColor": "#6156e2",
       "versions": [
         {
           "version": "3.2.0",
@@ -120,6 +121,7 @@
       "subtitle": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and…",
       "localizedDescription": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and install, all from your iPhone.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mikevillarroel.buildbox.png?v=67a93f1eb511",
+      "tintColor": "#1899f1",
       "versions": [
         {
           "version": "2.1.4",
@@ -153,6 +155,7 @@
       "subtitle": "Free on-device iOS/iPadOS application manager/installer, using certificates…",
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
+      "tintColor": "#6874f1",
       "versions": [
         {
           "version": "2.9.0",
@@ -186,6 +189,7 @@
       "subtitle": "每日从上游 main 分支自动构建的夜间版，非官方 Release",
       "localizedDescription": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
+      "tintColor": "#6874f1",
       "versions": [
         {
           "version": "2.9.0-2",
@@ -217,6 +221,7 @@
       "subtitle": "Edit IPA bundle identifiers made easy.",
       "localizedDescription": "Edit IPA bundle identifiers made easy.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.shplash.ipaid.png?v=939f1ee64ceb",
+      "tintColor": "#75a3ea",
       "versions": [
         {
           "version": "1.21",
@@ -236,6 +241,7 @@
       "subtitle": "Torrent client for iOS 16+",
       "localizedDescription": "Torrent client for iOS 16+",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png?v=876fcdb2ebae",
+      "tintColor": "#f39a62",
       "versions": [
         {
           "version": "2.2.0-1",
@@ -269,6 +275,7 @@
       "subtitle": "Run iOS apps without actually installing them!",
       "localizedDescription": "Run iOS apps without actually installing them!",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png?v=afe19efa8601",
+      "tintColor": "#1873f5",
       "versions": [
         {
           "version": "3.8.0",
@@ -302,6 +309,7 @@
       "subtitle": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful…",
       "localizedDescription": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful features while keeping a clean, sleek UI and delivering buttery-smooth gameplay.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.aoshuang.manicemu.png?v=bc2114aa515e",
+      "tintColor": "#f51837",
       "versions": [
         {
           "version": "2.0.2",
@@ -369,6 +377,7 @@
       "subtitle": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png?v=990870ea8bb6",
+      "tintColor": "#6156e2",
       "versions": [
         {
           "version": "4.5.1",
@@ -402,6 +411,7 @@
       "subtitle": "Official Nuvio Mobile Repository",
       "localizedDescription": "Official Nuvio Mobile Repository",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png?v=3ccc20092cbc",
+      "tintColor": "#9445e7",
       "versions": [
         {
           "version": "0.6.7-beta",
@@ -435,6 +445,7 @@
       "subtitle": "IDE to develop native code iOS apps and utilities on stock iOS it self just via…",
       "localizedDescription": "IDE to develop native code iOS apps and utilities on stock iOS it self just via a certificate and a custom micro kernel for those apps.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.emexlabs.nyxian.png?v=94135c72b3d0",
+      "tintColor": "#9c6ddb",
       "versions": [
         {
           "version": "0.11.4",
@@ -502,6 +513,7 @@
       "subtitle": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC…",
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.provenance-emu.provenance.png?v=dbc8ca81dfc4",
+      "tintColor": "#1899f5",
       "versions": [
         {
           "version": "3.3.1",
@@ -535,6 +547,7 @@
       "subtitle": "开源的直播聚合播放器，一个应用看全网直播",
       "localizedDescription": "纯粹直播，Flutter 构建。支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、YY、Twitch、SOOP，以及 M38 自定义源。带多画面同看、弹幕、录制与定时关闭。上游只提供 TrollStore 版 IPA，需自行签名安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mystyle.purelive.liu.png?v=20f9b0fc329a",
+      "tintColor": "#48abf1",
       "category": "entertainment",
       "versions": [
         {
@@ -569,6 +582,7 @@
       "subtitle": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA…",
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=ab500d73a64a",
+      "tintColor": "#6054d4",
       "versions": [
         {
           "version": "2.2",
@@ -602,6 +616,7 @@
       "subtitle": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png?v=c5ba32c13412",
+      "tintColor": "#9f19f5",
       "versions": [
         {
           "version": "0.7.0-alpha",
@@ -635,6 +650,7 @@
       "subtitle": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
+      "tintColor": "#4797f5",
       "versions": [
         {
           "version": "3.2.0",
@@ -756,6 +772,7 @@
       "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
       "localizedDescription": "由本项目基于上游 0479b74（MPL-2.0）自行构建的 unsigned IPA，不是官方产物。\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此版本保留完整阅读功能（本地书库、格式解析、RSS、书源），账号登录、iCloud 同步、订阅等云端功能在此构建中不可用。\n\n需要云同步请使用官方版本。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png?v=e9128f24c273",
+      "tintColor": "#1a58b9",
       "versions": [
         {
           "version": "3.0.0",

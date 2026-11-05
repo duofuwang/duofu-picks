@@ -51,7 +51,8 @@ duofu-picks/
 | `includePrereleases` | 否 | 该仓库是否接受 pre-release |
 | `featured` | 否 | 是否进 `featuredApps` |
 | `developerName` | 否 | 开发者名，留空取仓库 owner。条目指向自己的 fork 时要手动写成原作者，否则客户端里会显示成你 |
-| `iconURL` / `subtitle` / `description` / `category` / `tintColor` | 否 | 覆盖默认值 |
+| `iconURL` / `subtitle` / `description` / `category` | 否 | 覆盖默认值 |
+| `tintColor` | 否 | 手动指定主色调，写了就**覆盖**脚本从图标自动取的颜色 |
 | `minOSVersion` / `buildVersion` | 否 | 写进最新版本条目；留空时从 IPA 的 `Info.plist` 读 |
 
 全局字段：
@@ -60,6 +61,8 @@ duofu-picks/
 - `includePrereleases`：所有仓库的默认 pre-release 策略
 - `detectAppInfo`：是否读取 IPA 探测 `bundleIdentifier`
 - `refreshIcons`：默认 `true`，每次构建重新提取图标并覆盖；设为 `false` 则本地有就跳过
+- `tintFromIcons`：默认 `true`，从 `icons/` 里的图标自动取主色生成 `tintColor`；设为 `false` 则只保留手写的
+- `tintFallback`：默认 `true`，纯黑白图标取不到彩色时用源自身的主色兜底；设为 `false` 则这类应用不写 `tintColor`
 
 ## 部署
 
@@ -82,7 +85,10 @@ python build.py            # 生成 repo.json
 python build.py --check    # 只判断有没有变化，有变化时退出码 1
 python build.py --detect   # 强制重新探测 IPA 元数据
 python build.py --prune    # 顺带清理没有应用引用的图标
+python build.py --tints    # 不联网，只按 icons/ 重算 tintColor
+python build.py --tints --check   # 预览会改成哪些颜色，不写入
 python build.py --no-refresh-icons   # 跳过图标重取，本地调试用
+python build.py --no-tints           # 本次构建不自动生成 tintColor
 python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 ```
 
@@ -126,6 +132,29 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 生成的图标必须提交，否则 Pages 上访问不到。工作流里已经有 `git add icons`。
 
 `repo.json` 里的 `iconURL` 末尾会带一个 `?v=<内容 hash>`。AltStore / SideStore 按 URL 缓存图标，而文件名固定是 `{bundleId}.png`——不加版本号的话，就算上游换了图标、或者这边修了图标编码，客户端也会一直抱着缓存里的旧图不放。`阅读` 从 1.0.4-2 换到 3.0.0 时就撞上了这个：线上文件早就是新图标了，客户端里还显示水墨风旧版。hash 只由图标文件内容算出，内容不变 URL 就不变，不会反复触发下载。
+
+## tintColor 是怎么来的
+
+每个应用的 `tintColor` 不用手写：构建时会按 `iconURL` 找到 `icons/` 下实际用的那张图，从里面取主色写进 `repo.json`。上游换图标，颜色自动跟着换。
+
+优先级只有一条：**`config.json` 里手写的 `tintColor` 永远优先**。想让某个应用回到自动取色，把那行删掉即可；想全关掉，把全局 `tintFromIcons` 设为 `false`。`repository.tintColor` 是源自身的主色，不参与自动取色。
+
+取色过程：
+
+1. PNG 用标准库自己解（8/16bit 的灰、RGB、带 alpha，以及调色板 1/2/4/8bit 都支持，16bit 取高 8 位）。走同一条解码路径是为了让本地和 Actions 算出**完全相同的 hex**，不至于每轮把 `repo.json` 改来改去。非 PNG 图标需要 Pillow，没装就跳过这一张。
+2. 降采样到 96×96 以内，丢掉透明、近黑、近白、低饱和，以及 HSL 明度低于 0.25 的深色像素 —— App 图标里这些通常是背景和留白。最后一条是关键：不排掉深色底，「大面积深色背景 + 小面积亮色 logo」的图标一定会挑到背景色。
+3. 剩下的按色相分 24 桶加权，权重和桶打分都偏好中等明度（HSL 0.55）和高饱和（借鉴 Vibrant 的打分思路），但**面积仍是主导项** —— 连续渐变图标必须取面积重心，不能为了「最醒目」挑走渐变里最饱和的一小段。用环形三桶滑窗选主桶（跨 0° 的红色不会被劈成两半），桶内做加权平均，最后把饱和度收进 0.50–0.90、明度收进 0.70–0.96，保证它在客户端里当强调色够醒目。
+
+纯黑白图标取不到彩色（目前是 AnymeX 和 Mori），默认用 `repository.tintColor` 兜底，免得客户端对这几个应用显示成另一套默认蓝。不想要这个行为就把全局 `tintFallback` 设为 `false`，或者干脆在 `config.json` 里给它们手写一行。
+
+不用跑完整构建也能重算（完整构建要打 GitHub API，容易撞限流）：
+
+```bash
+python build.py --tints          # 只重算 repo.json 里的 tintColor，不联网
+python build.py --tints --check  # 列出每个应用会用什么颜色，不写入
+```
+
+`--tints` 会逐个打印应用名、颜色和来源（图标取色 / 配置指定 / 无可用颜色），改完图标后拿它验一下最省事。正常构建也会在日志里给一行汇总。
 
 ## 收录不开源的应用（自己上传 IPA）
 
