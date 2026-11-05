@@ -196,15 +196,6 @@
     "size": 139496330,
     "source_repo": "itzzace/ytkace"
   },
-  "duofuwang/Yuedu-reader@3.0.0": {
-    "bundleIdentifier": "com.zhangruilin.yuedureader",
-    "displayName": "閱讀",
-    "version": "3.0.0",
-    "build": "3",
-    "minOSVersion": "17.0",
-    "size": 37436375,
-    "source_repo": "duofuwang/Yuedu-reader"
-  },
   "duofuwang/feather@2.9.0-2": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",

@@ -6,7 +6,7 @@
 
 **不镜像、不重打包、不代传文件。** 源里的 `downloadURL` 直接指向上游发布地址，用户下载时连的是原作者。
 
-例外有两条：**「阅读」和「Feather Nightly」指向本项目自行构建的产物**。前者是作者已停止在 GitHub Release 提供 IPA，只能自己编；后者是每天跟进上游开发分支的夜间构建。详见[自行构建的条目](#自行构建的条目)。
+例外只有一条：**「Feather Nightly」指向本项目自行构建的产物**，它每天跟进上游开发分支做夜间构建。详见[自行构建的条目](#自行构建的条目)。
 
 ## 目录结构
 
@@ -131,7 +131,7 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 
 生成的图标必须提交，否则 Pages 上访问不到。工作流里已经有 `git add icons`。
 
-`repo.json` 里的 `iconURL` 末尾会带一个 `?v=<内容 hash>`。AltStore / SideStore 按 URL 缓存图标，而文件名固定是 `{bundleId}.png`——不加版本号的话，就算上游换了图标、或者这边修了图标编码，客户端也会一直抱着缓存里的旧图不放。`阅读` 从 1.0.4-2 换到 3.0.0 时就撞上了这个：线上文件早就是新图标了，客户端里还显示水墨风旧版。hash 只由图标文件内容算出，内容不变 URL 就不变，不会反复触发下载。
+`repo.json` 里的 `iconURL` 末尾会带一个 `?v=<内容 hash>`。AltStore / SideStore 按 URL 缓存图标，而文件名固定是 `{bundleId}.png`——不加版本号的话，就算上游换了图标、或者这边修了图标编码，客户端也会一直抱着缓存里的旧图不放。hash 只由图标文件内容算出，内容不变 URL 就不变，不会反复触发下载。
 
 ## tintColor 是怎么来的
 
@@ -187,31 +187,7 @@ python build.py --tints --check  # 列出每个应用会用什么颜色，不写
 
 ## 自行构建的条目
 
-「阅读」和「Feather Nightly」是两条不来自上游正式发版的条目，但性质不同：前者是上游停止发版后不得不自己编，后者是上游还在正常发版、本项目主动跟进其开发分支的每日构建。
-
-**为什么。** 上游 `CHANG-JUI-LIN/Yuedu-reader` 自 2026-06 起不再往 GitHub Release 传 IPA，官方渠道改成 App Store 付费版和 TestFlight。能抓到的最后一个包停在 `1.0.4-2`（2026-05-31），而代码已经走到 3.0.1，中间隔了两个大版本，那个旧包在较新系统上导入还有问题。
-
-**能编到哪一版由许可证决定**，这是改动前必须先确认的事：
-
-| 时期 | 截止提交 | 日期 | 许可证 | 能公开分发构建？ |
-|---|---|---|---|---|
-| 早期 | `87ffc52` | 2026-07-25 | MIT | 可以 |
-| 中期 | `0479b74` | 2026-10-21 | MPL-2.0 | 可以，须提供源码 |
-| 现在 | — | 10-21 之后 | PolyForm Strict 1.0.0 | **不行** |
-
-PolyForm Strict 禁止分发构建产物，连修改源码也不允许。所以能合法编的最后一版是 `0479b74`（= 3.0.0 build 3），fork 停在那个提交上，不能往上合。
-
-**怎么做的。** 构建仓库是 [`duofuwang/Yuedu-reader`](https://github.com/duofuwang/Yuedu-reader)，分支 `sideload-3.0.0` 基点 `0479b74`：`macos-26` runner 执行 `xcodebuild archive`，全程 `CODE_SIGNING_ALLOWED=NO`，产物发到该 fork 的 Release，本仓库的 `config.json` 指向它。
-
-没有描述文件时 `Auth.auth()`、`Firestore.firestore()`、`CKContainer(identifier:)` 都会抛 ObjC 异常，而 Swift 抓不住，所以这些都得在构造前拦住，打一组侧载补丁。打包时还会往 `Info.plist` 写 `YueduUnsignedBuild=true`，运行时据此把云服务判为不可用，而不是让 App 崩在启动阶段。
-
-`build-unsigned-ipa.yml` 第一步校验 `LICENSE` 首行是不是 MPL —— 有人把上游新提交合进来会让它直接失败。那是闸，不是 bug。
-
-**条目里写清楚。** 客户端里显示的是该版本的 release notes（`config.json` 的 `description` 只在 release 没写说明时兜底），所以把「自行构建的非官方产物、云功能不可用、需要同步请用官方版本」写进 release notes；`developerName` 固定成原作者，免得客户端里显示成 fork 所有者。
-
-**代价。** 版本永久停在 3.0.0，3.0.1 及之后都拿不到；编译链路要自己维护（成功一次后产物是静态的，不跑就一直在）；许可证不授予商标权，名字和图标严格说仍属原作者。
-
-### Feather Nightly
+目前只有一条自建条目：**Feather Nightly**。它不来自上游正式发版，而是每天跟进上游开发分支的夜间构建。
 
 构建仓库是 [`duofuwang/feather`](https://github.com/duofuwang/feather)，默认分支 `nightly`：每天 UTC 18:00 从 `claration/Feather` 的 `main` 同步最新提交，在 macOS runner 上编译后发到该 fork 的 Release，tag 为 `v{版本}-{序号}`（`v2.9.0-1`、`v2.9.0-2`…），且都标成正式 Release 而非 pre-release，所以本源不需要为它开 `includePrereleases`。
 

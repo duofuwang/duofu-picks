@@ -2,7 +2,7 @@
   "name": "Duofu Picks",
   "identifier": "com.duofu.picks",
   "subtitle": "精挑的开源 iOS 应用",
-  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目由本项目自行构建（上游停止发版，或跟进开发分支的夜间构建），已在条目内注明。",
+  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目由本项目自行构建（跟进开发分支的夜间构建），已在条目内注明。",
   "website": "https://github.com/duofuwang/duofu-picks",
   "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
   "tintColor": "#6156e2",
@@ -762,26 +762,6 @@
           "localizedDescription": "* fix: register zhihu URL scheme on iOS by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/146\r\n* fix: 修复启动与游客阅读，调整内容过滤默认值 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/145\r\n\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.4...v0.9.5",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.5/zhihu-minus-minus-v0.9.5-unsigned.ipa",
           "size": 14460451
-        }
-      ]
-    },
-    {
-      "name": "阅读",
-      "bundleIdentifier": "com.zhangruilin.yuedureader",
-      "developerName": "CHANG-JUI-LIN",
-      "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
-      "localizedDescription": "由本项目基于上游 0479b74（MPL-2.0）自行构建的 unsigned IPA，不是官方产物。\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此版本保留完整阅读功能（本地书库、格式解析、RSS、书源），账号登录、iCloud 同步、订阅等云端功能在此构建中不可用。\n\n需要云同步请使用官方版本。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png?v=e9128f24c273",
-      "tintColor": "#1a58b9",
-      "versions": [
-        {
-          "version": "3.0.0",
-          "date": "2026-11-05T03:35:46Z",
-          "localizedDescription": "基于上游 `0479b74`（MPL-2.0）构建的 unsigned IPA，不是官方产物。\n\n- 版本：3.0.0 (3)\n- Bundle ID：`com.zhangruilin.yuedureader`（与原版一致，重签后可覆盖安装）\n- 最低系统：iOS 17.0\n- 未签名：用 AltStore、SideStore、Sideloadly 或 LiveContainer 安装\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此构建保留完整阅读功能（本地书库、格式解析、RSS、书源）；账号登录、iCloud 同步、订阅等云端功能不可用。\n\n需要云同步请使用官方版本。\n\n---\n\n本构建的源码取自 CHANG-JUI-LIN/Yuedu-reader 的 `0479b74`（2026-10-21，当时以 Mozilla Public License 2.0 发布）。MPL-2.0 允许分发二进制，条件是向接收者提供对应源码：源码即本仓库，构建脚本见 `.github/workflows/build-unsigned-ipa.yml`。\n\n上游在 `0479b74` 之后改用 PolyForm Strict 1.0.0，其代码不在本构建范围内。名称与图标的商标权未随源码许可授予，仍归原作者所有。",
-          "downloadURL": "https://github.com/duofuwang/Yuedu-reader/releases/download/v3.0.0/YueduReader-unsigned.ipa",
-          "size": 37436375,
-          "buildVersion": "3",
-          "minOSVersion": "17.0"
         }
       ]
     }
