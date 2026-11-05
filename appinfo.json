@@ -89,15 +89,6 @@
     "size": 9347637,
     "source_repo": "infinityf4p/TiebaPure-iOS"
   },
-  "huamurui/zhihu-minus-minus@0.9.8": {
-    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
-    "displayName": "知乎--",
-    "version": "0.9.8",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 14501451,
-    "source_repo": "huamurui/zhihu-minus-minus"
-  },
   "open-ani/animeko@6.4.0": {
     "bundleIdentifier": "org.animeko.animeko",
     "displayName": "Animeko",
@@ -142,5 +133,14 @@
     "minOSVersion": "16.0",
     "size": 14163633,
     "source_repo": "duofuwang/feather"
+  },
+  "huamurui/zhihu-minus-minus@0.9.9": {
+    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
+    "displayName": "知乎--",
+    "version": "0.9.9",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 14830602,
+    "source_repo": "huamurui/zhihu-minus-minus"
   }
 }
