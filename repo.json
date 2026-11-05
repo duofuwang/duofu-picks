@@ -114,39 +114,6 @@
       ]
     },
     {
-      "name": "Apollo for Reddit",
-      "bundleIdentifier": "com.christianselig.Apollo",
-      "developerName": "Apollo-Reborn",
-      "subtitle": "iOS tweak for Apollo Reddit app - use your own API keys, unlocked Ultra…",
-      "localizedDescription": "iOS tweak for Apollo Reddit app - use your own API keys, unlocked Ultra features, and other enhancements",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.christianselig.Apollo.png?v=bee52341158c",
-      "versions": [
-        {
-          "version": "4.0.1",
-          "date": "2026-10-30T01:24:25Z",
-          "localizedDescription": "### Performance\n\n- Send fewer Reddit requests on **API-Key-Free** accounts by not repeating link preview lookups for sites that block previews and by briefly reusing the Inbox's reply lookups, so ordinary reading reaches Reddit's rate limit later (#1579: @icpryde)\n  - New replies, and anything you post or edit, still refresh right away\n\n### Fixes\n\n- Fix **multi-photo posts** showing a reddit.com link and 0 photos since Reddit began marking their photos as failed, so the gallery, feed carousel, media viewer, Save All and Gallery View show them again (#1589: @icpryde)\n  - Covers galleries posted from Apollo with Reddit as the Media Upload Host and from other apps; they show as square cards in the feed\n- Fix **API-Key-Free search** showing \"Error searching\" or \"Error loading subreddits\" for p…",
-          "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.0.1/Apollo-Reborn-4.0.1-GLASS.ipa",
-          "size": 129202414,
-          "buildVersion": "303",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "4.0.0",
-          "date": "2026-10-25T17:15:04Z",
-          "localizedDescription": "### Features\r\n\r\n- Add **iPhone Duo** support with layouts that adapt to the closed display, open portrait, open landscape and partially folded positions, using the existing Apollo Reborn builds (#1245: @IllIIllIllIllII)\r\n  - Browse a feed beside its comments, choose Original or Focused content widths, and open the subreddit list in a Standard or Liquid Glass panel\r\n  - Inbox, Account and Settings gain sidebar/detail layouts in open landscape, while Search can keep results beside the page you open\r\n  - Pixel Pals is unavailable on Duo; regular iPhones keep it\r\n- Add an optional **iPad Layout (Beta)** on iPadOS 18 and later, with a native sidebar, adjustable feed and reader columns, and full-width Gallery View (#1385: @jordanearle)\r\n  - Try it from the one-time invitation or turn on iPad Lay…",
-          "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_4.0.0/Apollo-Reborn-4.0.0-GLASS.ipa",
-          "size": 129151957
-        },
-        {
-          "version": "3.9.0",
-          "date": "2026-10-09T22:56:25Z",
-          "localizedDescription": "### Features\n\n- Add an **in-app update prompt**: from the next release on, Apollo Reborn checks for updates once a day and, when one is out, lets you send it to AltStore, SideStore, Feather, or FlareStore or download the IPA, with the release notes a tap away (#1343: @IllIIllIllIllII)\n  - Tap **Later** or **Skip this version** to put it off, check any time with **Check for Updates** (About), or turn off **Automatic Update Checks** (Privacy, on by default); jailbreak installs don't check\n  - What's New now shows the app icon you picked instead of the default one\n- Open the **subreddit switcher** as a native sheet when you tap a feed's title, with search, your favorites, and live results, instead of the small floating dropdown; typing a multireddit like apple+iphone still works (#1313, #1387…",
-          "downloadURL": "https://github.com/Apollo-Reborn/Apollo-Reborn/releases/download/v1.15.11_3.9.0/Apollo-Reborn-3.9.0-GLASS.ipa",
-          "size": 128560322
-        }
-      ]
-    },
-    {
       "name": "BuildBox",
       "bundleIdentifier": "com.mikevillarroel.buildbox",
       "developerName": "mikevillarroel",
