@@ -204,5 +204,14 @@
     "minOSVersion": "17.0",
     "size": 37436375,
     "source_repo": "duofuwang/Yuedu-reader"
+  },
+  "Apollo-Reborn/Apollo-Reborn@4.0.1": {
+    "bundleIdentifier": "com.christianselig.Apollo",
+    "displayName": "Apollo",
+    "version": "4.0.1",
+    "build": "303",
+    "minOSVersion": "15.0",
+    "size": 129202414,
+    "source_repo": "Apollo-Reborn/Apollo-Reborn"
   }
 }
