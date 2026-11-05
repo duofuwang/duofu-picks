@@ -1,12 +1,4 @@
 {
-  "liuchuancong/pure_live@3.1.19": {
-    "bundleIdentifier": "com.mystyle.purelive.liu",
-    "displayName": "Pure Live",
-    "version": "3.1.19",
-    "build": "4108",
-    "size": 66858114,
-    "source_repo": "liuchuancong/pure_live"
-  },
   "SideStore/SideStore@0.7.0-alpha": {
     "bundleIdentifier": "com.SideStore.SideStore",
     "displayName": "SideStore",
@@ -52,15 +44,6 @@
     "size": 14241853,
     "source_repo": "claration/Feather"
   },
-  "mikevillarroel/buildbox-ios@2.1.4": {
-    "bundleIdentifier": "com.mikevillarroel.buildbox",
-    "displayName": "BuildBox",
-    "version": "2.1.4",
-    "build": "129",
-    "minOSVersion": "18.0",
-    "size": 15595926,
-    "source_repo": "mikevillarroel/buildbox-ios"
-  },
   "XITRIX/iTorrent@2.2.0-1": {
     "bundleIdentifier": "com.xitrix.iTorrent2",
     "displayName": "iTorrent",
@@ -87,24 +70,6 @@
     "minOSVersion": "17.0",
     "size": 3332420,
     "source_repo": "ResistanceTo/MiniWatts"
-  },
-  "shplash/IPAID@1.21": {
-    "bundleIdentifier": "com.shplash.ipaid",
-    "displayName": "IPAID",
-    "version": "1.21",
-    "build": "112",
-    "minOSVersion": "15.0",
-    "size": 1766144,
-    "source_repo": "shplash/IPAID"
-  },
-  "emexlab/Nyxian@0.11.4": {
-    "bundleIdentifier": "org.emexlabs.nyxian",
-    "displayName": "Nyxian",
-    "version": "0.11.4",
-    "build": "20260910.92.RELEASE",
-    "minOSVersion": "18.0",
-    "size": 111250101,
-    "source_repo": "emexlab/Nyxian"
   },
   "bggRGjQaUbCoE/PiliPlus@2.2.0.2": {
     "bundleIdentifier": "com.example.piliplus",
@@ -151,15 +116,6 @@
     "size": 14753154,
     "source_repo": "Aidoku/Aidoku"
   },
-  "RyanYuuki/AnymeX@3.2.0": {
-    "bundleIdentifier": "com.ryan.anymex",
-    "displayName": "AnymeX",
-    "version": "3.2.0",
-    "build": "42",
-    "minOSVersion": "13.0",
-    "size": 80589346,
-    "source_repo": "RyanYuuki/AnymeX"
-  },
   "NuvioMedia/NuvioMobile@0.6.7-beta": {
     "bundleIdentifier": "com.nuvio.media",
     "displayName": "Nuvio",
@@ -168,24 +124,6 @@
     "minOSVersion": "16.1",
     "size": 68798444,
     "source_repo": "NuvioMedia/NuvioMobile"
-  },
-  "Manic-EMU/ManicEMU@2.0.2": {
-    "bundleIdentifier": "com.aoshuang.manicemu",
-    "displayName": "Manic EMU",
-    "version": "2.0.2",
-    "build": "5",
-    "minOSVersion": "15.0",
-    "size": 293317769,
-    "source_repo": "Manic-EMU/ManicEMU"
-  },
-  "Provenance-Emu/Provenance@3.3.1": {
-    "bundleIdentifier": "org.provenance-emu.provenance",
-    "displayName": "Provenance",
-    "version": "3.3.1",
-    "build": "2853",
-    "minOSVersion": "17.0",
-    "size": 1166502021,
-    "source_repo": "Provenance-Emu/Provenance"
   },
   "itzzace/ytkace@1.1.5": {
     "bundleIdentifier": "com.google.ios.youtube",

@@ -14,135 +14,109 @@
       "repo": "SideStore/SideStore",
       "bundleIdentifier": "com.SideStore.SideStore",
       "name": "SideStore",
-      "featured": true
+      "featured": true,
+      "subtitle": "不依赖 AltServer 的 AltStore 分支，用证书在设备上自签安装 IPA"
     },
     {
       "repo": "LiveContainer/LiveContainer",
       "bundleIdentifier": "com.kdt.livecontainer",
       "name": "LiveContainer",
-      "featured": true
+      "featured": true,
+      "subtitle": "不真正安装就能运行其它 iOS 应用的容器"
     },
     {
       "repo": "Sami-Wali/ryP0",
       "bundleIdentifier": "com.ry0.ryP0",
-      "name": "ryP0"
-    },
-    {
-      "repo": "liuchuancong/pure_live",
-      "bundleIdentifier": "com.mystyle.purelive.liu",
-      "subtitle": "开源的直播聚合播放器，一个应用看全网直播",
-      "description": "纯粹直播，Flutter 构建。支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、YY、Twitch、SOOP，以及 M38 自定义源。带多画面同看、弹幕、录制与定时关闭。上游只提供 TrollStore 版 IPA，需自行签名安装。",
-      "category": "entertainment",
-      "minOSVersion": "15.6"
+      "name": "ryP0",
+      "subtitle": "发现、下载与管理 IPA 的应用库"
     },
     {
       "repo": "StikDebug/StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
       "name": "StikDebug",
-      "featured": true
+      "featured": true,
+      "subtitle": "设备端调试器与 JIT 启用工具，基于 idevice"
     },
     {
       "repo": "claration/Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
-      "name": "Feather"
+      "name": "Feather",
+      "subtitle": "设备端 IPA 安装器，用自己的证书签名并管理应用"
     },
     {
       "repo": "duofuwang/feather",
       "bundleIdentifier": "thewonderofyou.Feather",
       "name": "Feather Nightly",
       "developerName": "claration",
-      "subtitle": "每日从上游 main 分支自动构建的夜间版，非官方 Release",
+      "subtitle": "本项目自建的夜间版，每天跟进上游 main 分支，非官方 Release",
       "description": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
       "asset": "^Feather\\.ipa$"
     },
     {
-      "repo": "mikevillarroel/buildbox-ios",
-      "bundleIdentifier": "com.mikevillarroel.buildbox",
-      "name": "BuildBox"
-    },
-    {
       "repo": "XITRIX/iTorrent",
       "bundleIdentifier": "com.xitrix.iTorrent2",
-      "name": "iTorrent"
+      "name": "iTorrent",
+      "subtitle": "BitTorrent 客户端，内置 VLC 支持边下边播"
     },
     {
       "repo": "coflyn/Mori",
       "bundleIdentifier": "com.mori.downloader",
-      "name": "Mori"
+      "name": "Mori",
+      "subtitle": "轻量媒体下载器"
     },
     {
       "repo": "ResistanceTo/MiniWatts",
       "bundleIdentifier": "org.zhaohe.MiniWatts",
       "name": "MiniWatts",
       "iconURL": "https://i.imgur.com/ABGtsKA.png",
-      "tintColor": "#c8c836"
-    },
-    {
-      "repo": "shplash/IPAID",
-      "bundleIdentifier": "com.shplash.ipaid",
-      "name": "IPAID"
-    },
-    {
-      "repo": "emexlab/Nyxian",
-      "bundleIdentifier": "org.emexlabs.nyxian",
-      "name": "Nyxian"
+      "tintColor": "#c8c836",
+      "subtitle": "基于私有 API 的电池、充电与温度仪表"
     },
     {
       "repo": "bggRGjQaUbCoE/PiliPlus",
       "bundleIdentifier": "com.example.piliplus",
       "name": "PiliPlus",
       "iconURL": "https://i.imgur.com/TpM9ZZe.png",
-      "tintColor": "#5cb47c"
+      "tintColor": "#5cb47c",
+      "subtitle": "第三方哔哩哔哩客户端"
     },
     {
       "repo": "infinityf4p/TiebaPure-iOS",
       "bundleIdentifier": "dev.infinityf4p.tiebapure",
       "name": "TiebaPure",
       "iconURL": "https://i.imgur.com/ByP23y5.png",
-      "tintColor": "#a77f57"
+      "tintColor": "#a77f57",
+      "subtitle": "原生 SwiftUI 构建的非官方贴吧客户端"
     },
     {
       "repo": "huamurui/zhihu-minus-minus",
       "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
       "name": "知乎--",
       "iconURL": "https://i.imgur.com/zj4MbKD.png",
-      "tintColor": "#0484fc"
+      "tintColor": "#0484fc",
+      "subtitle": "轻量、简洁的第三方知乎客户端"
     },
     {
       "repo": "open-ani/animeko",
       "bundleIdentifier": "org.animeko.animeko",
       "name": "Animeko",
       "iconURL": "https://i.imgur.com/SM5IYms.png",
-      "tintColor": "#6c9cc4"
+      "tintColor": "#6c9cc4",
+      "subtitle": "弹幕追番平台，Bangumi 同步、离线缓存、BT 与弹幕过滤"
     },
     {
       "repo": "Aidoku/Aidoku",
       "bundleIdentifier": "app.aidoku.Aidoku",
       "name": "Aidoku",
       "iconURL": "https://i.imgur.com/WkDWgIs.png",
-      "tintColor": "#fc2c54"
-    },
-    {
-      "repo": "RyanYuuki/AnymeX",
-      "bundleIdentifier": "com.ryan.anymex",
-      "name": "AnymeX"
+      "tintColor": "#fc2c54",
+      "subtitle": "开源漫画阅读器，支持扩展书源"
     },
     {
       "repo": "NuvioMedia/NuvioMobile",
       "bundleIdentifier": "com.nuvio.media",
-      "name": "Nuvio"
-    },
-    {
-      "repo": "Manic-EMU/ManicEMU",
-      "bundleIdentifier": "com.aoshuang.manicemu",
-      "name": "Manic EMU"
-    },
-    {
-      "repo": "Provenance-Emu/Provenance",
-      "bundleIdentifier": "com.provenance-emu.provenance",
-      "name": "Provenance",
-      "asset": "^Provenance\\.ipa$",
-      "includePrereleases": true
+      "name": "Nuvio",
+      "subtitle": "插件式影视聚合播放器与追剧管理"
     },
     {
       "repo": "itzzace/ytkace",
@@ -150,7 +124,8 @@
       "name": "YTKACE",
       "asset": "^YTKACE_(?!.*iOS16).*\\.ipa$",
       "iconURL": "https://i.imgur.com/A3A6Bko.png",
-      "tintColor": "#fc0434"
+      "tintColor": "#fc0434",
+      "subtitle": "YouTube 增强与下载器，去广告、后台播放"
     }
   ],
   "maxVersions": 3,

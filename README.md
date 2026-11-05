@@ -145,7 +145,7 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 2. 降采样到 96×96 以内，丢掉透明、近黑、近白、低饱和，以及 HSL 明度低于 0.25 的深色像素 —— App 图标里这些通常是背景和留白。最后一条是关键：不排掉深色底，「大面积深色背景 + 小面积亮色 logo」的图标一定会挑到背景色。
 3. 剩下的按色相分 24 桶加权，权重和桶打分都偏好中等明度（HSL 0.55）和高饱和（借鉴 Vibrant 的打分思路），但**面积仍是主导项** —— 连续渐变图标必须取面积重心，不能为了「最醒目」挑走渐变里最饱和的一小段。用环形三桶滑窗选主桶（跨 0° 的红色不会被劈成两半），桶内做加权平均，最后把饱和度收进 0.50–0.90、明度收进 0.70–0.96，保证它在客户端里当强调色够醒目。
 
-纯黑白图标取不到彩色（目前是 AnymeX 和 Mori），默认用 `repository.tintColor` 兜底，免得客户端对这几个应用显示成另一套默认蓝。不想要这个行为就把全局 `tintFallback` 设为 `false`，或者干脆在 `config.json` 里给它们手写一行。
+纯黑白图标取不到彩色（目前是 Mori），默认用 `repository.tintColor` 兜底，免得客户端对这几个应用显示成另一套默认蓝。不想要这个行为就把全局 `tintFallback` 设为 `false`，或者干脆在 `config.json` 里给它们手写一行。
 
 不用跑完整构建也能重算（完整构建要打 GitHub API，容易撞限流）：
 
@@ -197,9 +197,9 @@ python build.py --tints --check  # 列出每个应用会用什么颜色，不写
 
 ## 几个实际会遇到的坑
 
-**pre-release 默认不收。** 像 Provenance 这种只在 pre-release 通道发版的，必须给那个仓库单独写 `"includePrereleases": true`，否则会报「没有匹配的资产」。它的 `alpha` 标签下挂着 `Provenance-iOS.ipa`、`Provenance-tvOS.ipa`、`Provenance-iOS-NoExtensions.ipa` 三个包，所以还要用 `"asset": "^Provenance\\.ipa$"` 精确指定，否则可能选到 tvOS 包。
+**pre-release 默认不收。** 有些仓库只在 pre-release 通道发版，必须给那个仓库单独写 `"includePrereleases": true`，否则会报「没有匹配的资产」。这类仓库还常在同一个 Release 里同时挂 iOS、tvOS、无扩展等多个 IPA，所以通常还要用 `"asset"` 正则精确指定，否则可能选错包。
 
-**资产命名不统一。** `iTorrent.ipa`、`StikDebug-3.2.0.ipa`、`BuildBox-2.1.4.ipa` 都是常见写法。默认的 `\.ipa$` 能覆盖绝大多数；一个 Release 挂多个 IPA 时才需要写正则。
+**资产命名不统一。** `iTorrent.ipa`、`StikDebug-3.2.0.ipa` 都是常见写法。默认的 `\.ipa$` 能覆盖绝大多数；一个 Release 挂多个 IPA 时才需要写正则。
 
 **版本号来自 tag。** `v2.2.0-1` 会变成 `2.2.0-1`（只剥掉开头的 `v`）。如果项目 tag 是 `release-2026` 这种没有语义版本号的，改用 `"versionFrom": "asset"`，从资产文件名里抽 `1.2.3` 形式的数字。
 

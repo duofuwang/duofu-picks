@@ -16,7 +16,7 @@
       "name": "Aidoku",
       "bundleIdentifier": "app.aidoku.Aidoku",
       "developerName": "Aidoku",
-      "subtitle": "Manga reading app for iOS, iPadOS, and macOS",
+      "subtitle": "开源漫画阅读器，支持扩展书源",
       "localizedDescription": "Manga reading app for iOS, iPadOS, and macOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png?v=b6be60fd8491",
       "tintColor": "#fc2c54",
@@ -50,7 +50,7 @@
       "name": "Animeko",
       "bundleIdentifier": "org.animeko.animeko",
       "developerName": "open-ani",
-      "subtitle": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose…",
+      "subtitle": "弹幕追番平台，Bangumi 同步、离线缓存、BT 与弹幕过滤",
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=a51680c62b9b",
       "tintColor": "#6c9cc4",
@@ -81,78 +81,10 @@
       ]
     },
     {
-      "name": "AnymeX",
-      "bundleIdentifier": "com.ryan.anymex",
-      "developerName": "RyanYuuki",
-      "subtitle": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
-      "localizedDescription": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ryan.anymex.png?v=68be091480a0",
-      "tintColor": "#6156e2",
-      "versions": [
-        {
-          "version": "3.2.0",
-          "date": "2026-10-27T18:49:08Z",
-          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6beae5c1) url nav, deeplink support for fcm by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/3bb0908d) torrent file selector in player by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/b61e9b75) cf bypass and webview support for linux by @RyanYuuki\n\n\n### 🔧 Bug Fixes & Improvements\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9975e4c0) fixed a grey screen when accessing released media on different services by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6db545c5) fixed visibility issues on light mode by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/ac97c83d) fixed rhttp disposing causing network reqs to fail by @RyanYuuki\n- [֍](https://github.com/RyanYu…",
-          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.2.0/AnymeX-iOS-v3.2.0.ipa",
-          "size": 80589346,
-          "buildVersion": "42",
-          "minOSVersion": "13.0"
-        },
-        {
-          "version": "3.1.9",
-          "date": "2026-10-25T19:43:42Z",
-          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/80f279c6) enhanced downloads ui and ux by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9c04ca66) runtime bridge support for IOS (thanks to dartotsu) by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/9a109267) mpv config, some fixes and ui changes by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/538c3538) torrent download support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/55b6b13f) online subtitles back again by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/07b88757) audio delay support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/429a43ee) cold cache for instant load by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/Any…",
-          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.1.9/AnymeX-iOS-v3.1.9.ipa",
-          "size": 81113053
-        },
-        {
-          "version": "3.1.8",
-          "date": "2026-09-20T17:54:07Z",
-          "localizedDescription": "### 🆕 Changelog\n### 🌟 Features\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/84601c75) full cast support by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/a8d6b9db) option to hide/show continue watching by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/5b39e824) enhanced orientation control by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/d2c4fd5c) Full download support on metadata services, lots of fixes by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/d1e44740) continue watching bar on home by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/6f030199) improved episode releases cards by @RyanYuuki\n- [֍](https://github.com/RyanYuuki/AnymeX/commit/64de01b2) fcm support so i can notify users anytime i want by @RyanYuuki\n- [֍…",
-          "downloadURL": "https://github.com/RyanYuuki/AnymeX/releases/download/v3.1.8/AnymeX-iOS-v3.1.8.ipa",
-          "size": 39830598
-        }
-      ]
-    },
-    {
-      "name": "BuildBox",
-      "bundleIdentifier": "com.mikevillarroel.buildbox",
-      "developerName": "mikevillarroel",
-      "subtitle": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and…",
-      "localizedDescription": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and install, all from your iPhone.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mikevillarroel.buildbox.png?v=67a93f1eb511",
-      "tintColor": "#1899f1",
-      "versions": [
-        {
-          "version": "2.1.4",
-          "date": "2026-11-03T00:42:32Z",
-          "localizedDescription": "New app icon.",
-          "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.4/BuildBox-2.1.4.ipa",
-          "size": 15595926,
-          "buildVersion": "129",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "2.1.3",
-          "date": "2026-11-02T21:09:08Z",
-          "localizedDescription": "## What's new in 2.1.3\n\n**Icon, perfected:**\n- The blueprint grid was redrawn clean — crisp single lines at every size, in the app icon and everywhere in the app\n\n**Button fix (from 2.1.2):**\n- Download and Sign in the Catalog (Featured carousel and app rows) and Install in the Library now respond across the whole button, not just the text",
-          "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.3/BuildBox-2.1.3.ipa",
-          "size": 15651369
-        },
-        {
-          "version": "2.1.2",
-          "date": "2026-11-02T21:02:26Z",
-          "localizedDescription": "## What's new in 2.1.2\n\n**Icon, refined:**\n- The planet of apps now shows its blueprint grid — same artwork, design lines visible at any size, in the app icon and everywhere in the app\n\n**Button fix:**\n- Download and Sign in the Catalog (Featured carousel and app rows) and Install in the Library now respond across the whole button, not just the text",
-          "downloadURL": "https://github.com/mikevillarroel/buildbox-ios/releases/download/v2.1.2/BuildBox-2.1.2.ipa",
-          "size": 16058860
-        }
-      ]
-    },
-    {
       "name": "Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "claration",
-      "subtitle": "Free on-device iOS/iPadOS application manager/installer, using certificates…",
+      "subtitle": "设备端 IPA 安装器，用自己的证书签名并管理应用",
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
@@ -186,7 +118,7 @@
       "name": "Feather Nightly",
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "claration",
-      "subtitle": "每日从上游 main 分支自动构建的夜间版，非官方 Release",
+      "subtitle": "本项目自建的夜间版，每天跟进上游 main 分支，非官方 Release",
       "localizedDescription": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
@@ -215,30 +147,10 @@
       ]
     },
     {
-      "name": "IPAID",
-      "bundleIdentifier": "com.shplash.ipaid",
-      "developerName": "shplash",
-      "subtitle": "Edit IPA bundle identifiers made easy.",
-      "localizedDescription": "Edit IPA bundle identifiers made easy.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.shplash.ipaid.png?v=939f1ee64ceb",
-      "tintColor": "#75a3ea",
-      "versions": [
-        {
-          "version": "1.21",
-          "date": "2026-09-15T18:10:50Z",
-          "localizedDescription": "## What’s New\r\n\r\nAdded an About screen with links to report issues, request features, visit the GitHub repository, and check for updates. It also includes an entirely optional support link, as well as a light/dark mode toggle.\r\n\r\n### Changes\r\n\r\n- Added About screen\r\n- Project links\r\n- Light/dark mode toggle\r\n- Support link",
-          "downloadURL": "https://github.com/shplash/IPAID/releases/download/v1.21/IPAID.ipa",
-          "size": 1766144,
-          "buildVersion": "112",
-          "minOSVersion": "15.0"
-        }
-      ]
-    },
-    {
       "name": "iTorrent",
       "bundleIdentifier": "com.xitrix.iTorrent2",
       "developerName": "XITRIX",
-      "subtitle": "Torrent client for iOS 16+",
+      "subtitle": "BitTorrent 客户端，内置 VLC 支持边下边播",
       "localizedDescription": "Torrent client for iOS 16+",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png?v=876fcdb2ebae",
       "tintColor": "#f39a62",
@@ -272,7 +184,7 @@
       "name": "LiveContainer",
       "bundleIdentifier": "com.kdt.livecontainer",
       "developerName": "LiveContainer",
-      "subtitle": "Run iOS apps without actually installing them!",
+      "subtitle": "不真正安装就能运行其它 iOS 应用的容器",
       "localizedDescription": "Run iOS apps without actually installing them!",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png?v=afe19efa8601",
       "tintColor": "#1873f5",
@@ -303,44 +215,10 @@
       ]
     },
     {
-      "name": "Manic EMU",
-      "bundleIdentifier": "com.aoshuang.manicemu",
-      "developerName": "Manic-EMU",
-      "subtitle": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful…",
-      "localizedDescription": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful features while keeping a clean, sleek UI and delivering buttery-smooth gameplay.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.aoshuang.manicemu.png?v=bc2114aa515e",
-      "tintColor": "#f51837",
-      "versions": [
-        {
-          "version": "2.0.2",
-          "date": "2026-11-02T08:03:58Z",
-          "localizedDescription": "- Improved 3DS performance\r\n- Nimbus in Artic Base now supports the latest Pretendo\r\n- Improved Home Menu performance on the Azahar core\r\n- Fixed Wii pointer behavior for affected users\r\n- Added MeloCafe Link support\r\n- iPad now supports windowed apps\r\n- Redesigned the SNES skin\r\n- Added skin fallback: iPad can use iPhone skins\r\n- Support for iPhone Duo\r\n- Fixed AirPlay not working on iOS 27 or later\r\n- Added BitBop, a new sister app to Manic EMU for retro game music\r\n- Other bug fixes and improvements",
-          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.2/ManicEMU.v2.0.2.SideloadJIT.ipa",
-          "size": 293317769,
-          "buildVersion": "5",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "2.0.1",
-          "date": "2026-09-18T09:29:42Z",
-          "localizedDescription": "- Added WonderSwan support\r\n- Added NAOMI, Atomiswave, and System SP arcade support\r\n- Added Flash support\r\n  · Skin button binding\r\n  · Hardware keyboard input\r\n  · Software keyboard input\r\n  · Touch input\r\n- Built-in, self-contained JIT — no external debugger required\r\n- Added Slow Motion\r\n- Improved GameCube and Wii performance\r\n- GameCube now supports multi-disc games\r\n- Improved Wii motion controls\r\n- Simulate the Wii IR pointer by touch\r\n- Add games from other emulators via a link\r\n- Fixed some arcade systems that wouldn’t run\r\n- Fixed Dreamcast games running too fast\r\n- Fixed PSP crashes\r\n- Added NDS lid open/close\r\n- Improved rotation: with orientation lock on in Control Center, the app no longer snaps back to portrait\r\n- In-game shortcut tips can now be turned off\r\n- Landscape lib…",
-          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.1/ManicEMU.v2.0.1.SideloadJIT.ipa",
-          "size": 288525117
-        },
-        {
-          "version": "2.0.0",
-          "date": "2026-09-03T10:06:18Z",
-          "localizedDescription": "> [!NOTE]\r\n> Starting from version 2.0.0, we no longer provide builds of TrollStore JIT. You can package it yourself by following the [guide](https://github.com/Rednick16/TrollStoreJITEnabler).\r\n\r\nThis is a major release focused on a redesigned interface, expanded platform support, and advanced features. Landscape browsing, library management, and external controller navigation have been rebuilt. It also adds several new systems and brings Netplay to eligible Libretro cores.\r\n\r\n\r\n### Before You Update\r\n\r\n- Dreamcast (Flycast): Existing save states will no longer work as of 2.0.0. Convert important save states to in-game saves before updating, or back up the `Flycast/dc` folder yourself.\r\n- Wii: A BootMii-format `keys.bin` is required.\r\n- Symbian: Install firmware in Settings first (`.ROM`;…",
-          "downloadURL": "https://github.com/Manic-EMU/ManicEMU/releases/download/v2.0.0/ManicEMU.v2.0.0.SideloadJIT.ipa",
-          "size": 273393210
-        }
-      ]
-    },
-    {
       "name": "MiniWatts",
       "bundleIdentifier": "org.zhaohe.MiniWatts",
       "developerName": "ResistanceTo",
-      "subtitle": "An iPhone battery, charging and thermal instrument built on private iOS APIs…",
+      "subtitle": "基于私有 API 的电池、充电与温度仪表",
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=034c5f83ad7b",
       "tintColor": "#c8c836",
@@ -374,7 +252,7 @@
       "name": "Mori",
       "bundleIdentifier": "com.mori.downloader",
       "developerName": "coflyn",
-      "subtitle": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
+      "subtitle": "轻量媒体下载器",
       "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png?v=990870ea8bb6",
       "tintColor": "#6156e2",
@@ -408,7 +286,7 @@
       "name": "Nuvio",
       "bundleIdentifier": "com.nuvio.media",
       "developerName": "NuvioMedia",
-      "subtitle": "Official Nuvio Mobile Repository",
+      "subtitle": "插件式影视聚合播放器与追剧管理",
       "localizedDescription": "Official Nuvio Mobile Repository",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png?v=3ccc20092cbc",
       "tintColor": "#9445e7",
@@ -439,44 +317,10 @@
       ]
     },
     {
-      "name": "Nyxian",
-      "bundleIdentifier": "org.emexlabs.nyxian",
-      "developerName": "emexlab",
-      "subtitle": "IDE to develop native code iOS apps and utilities on stock iOS it self just via…",
-      "localizedDescription": "IDE to develop native code iOS apps and utilities on stock iOS it self just via a certificate and a custom micro kernel for those apps.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.emexlabs.nyxian.png?v=94135c72b3d0",
-      "tintColor": "#9c6ddb",
-      "versions": [
-        {
-          "version": "0.11.4",
-          "date": "2026-09-10T12:58:18Z",
-          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Feature: Swift typechecking. (cd5cb95c76d8279a57abc6a4c980dfb0b2c849e0)\r\n- Feature: Ksurface Kernel Extension projects. (cf9fcd92f7c8294e63c4e7cb62ff2853025330a3, 9d97e939a88453e8ad6f769997885b3f7cf95a23, f1539b729cd74f3854c5cd8d77d151b5913cbfe0, ca6f57fa2f3affcd471dc413f18bf3df55e790d2, 76dfdb0589147eb19956b1b6e36dd527d656e4f8, c981c47fcf3ce074c5a30b863ee5a7ade967f909, 1878e1a7cc26066b44f15d4f00a08c5d1356838d)\r\n- Feature: backup and restore app sizing for the entire Nyxian boot session. (39a7dd574647581f96d7dbe3c8480c801a89eb55, 1265add0552cc9e7817709988a89e54dc5d874f9, 075cb37f07f674d9c66317a406b67e4fd1696024)\r\n- Feature: symlinks are now partially supported in the file manager UI. (ddd3782a8279da0e068f0c80e524b80adcd47c0f, 7d76fea8d5555b7d8bb09040a8361c48d57a…",
-          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.4/Nyxian.ipa",
-          "size": 111250101,
-          "buildVersion": "20260910.92.RELEASE",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.11.3.1",
-          "date": "2026-08-26T21:59:38Z",
-          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Fix: honor `UISupportedInterfaceOrientation` of the guest app more. (72615de83e6526ede52a824ff0dbaa1ea7d1358c)\r\n### Micro Kernel (ksurface)\r\n- Fix: properly reconnect with: `org.emexlabs.bootstrapd`. (b92142175bf9499304f349b4e01cf9d86de11da9)\r\n- Vulnerability Fix: patched a deadlock in SYS_wait4 (29d025256b654c63010def5365731da6384691cb, c5cd0b92f758e1afd103620a96ad13e00c9a8bbe)\r\n- Vulnerability Fix: patched threading issues in `kPECTLUserInterfaceOpenBundleIdentifier `. (c5630971f50f1676033acb868889360a5dd5c321)\r\n\r\n> [!NOTE]\r\n> Standard SDK used in this version of Nyxian is iPhoneOS26.5.\r\n\r\n> [!NOTE]\r\n> This is a fast patch release, please read the previous changelog.",
-          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.3.1/Nyxian.ipa",
-          "size": 105810643
-        },
-        {
-          "version": "0.11.3",
-          "date": "2026-08-26T15:53:27Z",
-          "localizedDescription": "## Changelog\r\n### Nyxian\r\n- Fix: iPhone apps randomly getting unfocused. (144fc95dc74423e937865cbba70b676b177a91bd)\r\n- Fix: random gesture races in iPadOS window server. (0222a71bcf83dee0b39cfa5709f812432130a2e7)\r\n- Feat: better settings design (7373e832fcf6df9a3948e0627fd06760882e42d8)\r\n- Feat: better onboarding design (943dbb1b05b82c590ca9b7b85fe171fa6c2fa328)\r\n- Feat: added extension-less mode for people who struggle to sign Nyxian correctly (212be3247e391f4911b50eec1761516902c17978)\r\n- Feat: added utility export (93fc9e002c35f5d88b30dd11d0d6f32e0ed38606)\r\n### CoreCompiler\r\n- Fix: Properly cleaning up arguments in swift driver in CCDriver. (873a762c3a93f65b357d0d3f3cefd2e69a590afd)\r\n### LiveProcess\r\n- Feat: Using HWHook's for DYLD shims. (a26e72008d39c6c82f54ac2ca417b785a0ce1f80, eda7d2…",
-          "downloadURL": "https://github.com/emexlab/Nyxian/releases/download/0.11.3/Nyxian.ipa",
-          "size": 105809283
-        }
-      ]
-    },
-    {
       "name": "PiliPlus",
       "bundleIdentifier": "com.example.piliplus",
       "developerName": "bggRGjQaUbCoE",
-      "subtitle": "PiliPlus",
+      "subtitle": "第三方哔哩哔哩客户端",
       "localizedDescription": "PiliPlus",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png?v=7ed3143e1216",
       "tintColor": "#5cb47c",
@@ -507,79 +351,10 @@
       ]
     },
     {
-      "name": "Provenance",
-      "bundleIdentifier": "com.provenance-emu.provenance",
-      "developerName": "Provenance-Emu",
-      "subtitle": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC…",
-      "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.provenance-emu.provenance.png?v=dbc8ca81dfc4",
-      "tintColor": "#1899f5",
-      "versions": [
-        {
-          "version": "3.3.1",
-          "date": "2026-03-30T03:20:16Z",
-          "localizedDescription": "Fixes some issues with 3.3.0 maybe,\r\n\r\nI'm skipping this release officially in favor for 3.4.0",
-          "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.3.1/Provenance.ipa",
-          "size": 1166502021,
-          "buildVersion": "2853",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "3.1.0",
-          "date": "2025-08-18T17:07:19Z",
-          "localizedDescription": "## What's Changed\r\n* fixed ios 16 md5 hash failing; fixed bios watcher crashing by @pabloarista in https://github.com/Provenance-Emu/Provenance/pull/2409\r\n* Release/3.0.6a by @JoeMatt in https://github.com/Provenance-Emu/Provenance/pull/2410\r\n* iCloud Sync v1 by @pabloarista in https://github.com/Provenance-Emu/Provenance/pull/2414\r\n* Feature/emulation scene by @JoeMatt in https://github.com/Provenance-Emu/Provenance/pull/2411\r\n\r\n\r\n**Full Changelog**: https://github.com/Provenance-Emu/Provenance/compare/3.0.6...3.1.0",
-          "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.1.0/Provenance.ipa",
-          "size": 1069142524
-        },
-        {
-          "version": "3.0.6a",
-          "date": "2025-04-01T04:35:18Z",
-          "localizedDescription": "## [3.0.6] - 2025-03-16\r\n\r\nSpecial thanks to all contributors and testers who helped make this release possible.\r\n\r\n### Added\r\n- Core Options Menu for RetroArch cores\r\n- Enhanced search functionality with auto-hiding search bars\r\n- Improved disc selection menu for multi-disc games\r\n- Support for custom textures in 3DS games\r\n- RAR archive support in file enumeration\r\n\r\n### Improved\r\n- Major 3DS performance optimizations:\r\n  - NEON-optimized shader interpreter\r\n  - Enhanced Vulkan rendering pipeline\r\n  - Audio processing improvements with NEON optimizations\r\n  - Camera, gyro, and microphone support\r\n  - Async presentation for smoother gameplay\r\n- Updated Mednafen to version 1.32.1\r\n- Improved RetroArch cores with better Vulkan support\r\n- Enhanced continues section with optimized paging\r\n- T…",
-          "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/3.0.6a/Provenance.ipa",
-          "size": 700853173
-        }
-      ]
-    },
-    {
-      "name": "Pure Live",
-      "bundleIdentifier": "com.mystyle.purelive.liu",
-      "developerName": "liuchuancong",
-      "subtitle": "开源的直播聚合播放器，一个应用看全网直播",
-      "localizedDescription": "纯粹直播，Flutter 构建。支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、YY、Twitch、SOOP，以及 M38 自定义源。带多画面同看、弹幕、录制与定时关闭。上游只提供 TrollStore 版 IPA，需自行签名安装。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mystyle.purelive.liu.png?v=20f9b0fc329a",
-      "tintColor": "#48abf1",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "3.1.19",
-          "date": "2026-10-10T04:32:55Z",
-          "localizedDescription": "# 纯粹直播 v3.1.19\n|版本|下载地址|\n|---|---|\n|TV版|[pure_live_TV](https://github.com/liuchuancong/pure_live_TV/releases/latest)|\n|Windows/macOS/Android/iOS版|[pure_live](https://github.com/liuchuancong/pure_live/releases/latest)|\n### 🖥️ Windows 版\n- **Portable ZIP**：解压即用，无需安装\n- **EXE 安装包**：适合所有用户\n- **MSIX 包**：现代应用格式，支持干净卸载\n- 适配：Windows 10/11 x64\n### 🍎 macOS 版\n- macOS 桌面版\n- Universal：Apple Silicon + Intel\n- ZIP / DMG\n### 📱 Android 版\n- Android 8.0+（API 26，FFmpegKit 录制依赖要求）\n- ARM64-v8a\n- ARMv7\n- x86_64\n- 统一 SHA256 校验文件：[**ANDROID_SHA256SUM.txt**](https://github.com/liuchuancong/pure_live/releases/download/v3.1.19/ANDROID_SHA256SUM.txt)\n### 🐧 Linux 版\n- Linux x64\n- **DEB 安装包**：适合 Debian/Ubuntu 及其衍生发行版\n- **Portable ZIP / tar.gz**：解压即用，无需安装\n### 🍎 iOS 版\n- unsigned iOS device application\n- TrollStore / ad-hoc I…",
-          "downloadURL": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.19/PureLive-3.1.19-4108-ios-arm64-trollstore.ipa",
-          "size": 66858114,
-          "minOSVersion": "15.6",
-          "buildVersion": "4108"
-        },
-        {
-          "version": "3.1.18",
-          "date": "2026-10-08T06:21:08Z",
-          "localizedDescription": "# 纯粹直播 v3.1.18\n|版本|下载地址|\n|---|---|\n|TV版|[pure_live_TV](https://github.com/liuchuancong/pure_live_TV/releases/latest)|\n|Windows/macOS/Android/iOS版|[pure_live](https://github.com/liuchuancong/pure_live/releases/latest)|\n### 🖥️ Windows 版\n- **Portable ZIP**：解压即用，无需安装\n- **EXE 安装包**：适合所有用户\n- **MSIX 包**：现代应用格式，支持干净卸载\n- 适配：Windows 10/11 x64\n### 🍎 macOS 版\n- macOS 桌面版\n- Universal：Apple Silicon + Intel\n- ZIP / DMG\n### 📱 Android 版\n- Android 8.0+（API 26，FFmpegKit 录制依赖要求）\n- ARM64-v8a\n- ARMv7\n- x86_64\n- 统一 SHA256 校验文件：[**ANDROID_SHA256SUM.txt**](https://github.com/liuchuancong/pure_live/releases/download/v3.1.18/ANDROID_SHA256SUM.txt)\n### 🐧 Linux 版\n- Linux x64\n- **DEB 安装包**：适合 Debian/Ubuntu 及其衍生发行版\n- **Portable ZIP / tar.gz**：解压即用，无需安装\n### 🍎 iOS 版\n- unsigned iOS device application\n- TrollStore / ad-hoc I…",
-          "downloadURL": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.18/PureLive-3.1.18-4107-ios-arm64-trollstore.ipa",
-          "size": 66861211
-        },
-        {
-          "version": "3.1.17",
-          "date": "2026-09-27T13:09:49Z",
-          "localizedDescription": "# 纯粹直播 v3.1.17\n|版本|下载地址|\n|---|---|\n|TV版|[pure_live_TV](https://github.com/liuchuancong/pure_live_TV/releases/latest)|\n|Windows/macOS/Android/iOS版|[pure_live](https://github.com/liuchuancong/pure_live/releases/latest)|\n### 🖥️ Windows 版\n- **Portable ZIP**：解压即用，无需安装\n- **EXE 安装包**：适合所有用户\n- **MSIX 包**：现代应用格式，支持干净卸载\n- 适配：Windows 10/11 x64\n### 🍎 macOS 版\n- macOS 桌面版\n- Universal：Apple Silicon + Intel\n- ZIP / DMG\n### 📱 Android 版\n- Android 8.0+（API 26，FFmpegKit 录制依赖要求）\n- ARM64-v8a\n- ARMv7\n- x86_64\n- 统一 SHA256 校验文件：[**ANDROID_SHA256SUM.txt**](https://github.com/liuchuancong/pure_live/releases/download/v3.1.17/ANDROID_SHA256SUM.txt)\n### 🐧 Linux 版\n- Linux x64\n- Portable tar.gz\n### 🍎 iOS 版\n- unsigned iOS device application\n- TrollStore / ad-hoc IPA\n- ARM64\n### 🔧 Build Metadata\n[**BUILD_METADATA.json**](h…",
-          "downloadURL": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.17/PureLive-3.1.17-4106-ios-arm64-trollstore.ipa",
-          "size": 65187928
-        }
-      ]
-    },
-    {
       "name": "ryP0",
       "bundleIdentifier": "com.ry0.ryP0",
       "developerName": "Sami-Wali",
-      "subtitle": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA…",
+      "subtitle": "发现、下载与管理 IPA 的应用库",
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=ab500d73a64a",
       "tintColor": "#6054d4",
@@ -613,7 +388,7 @@
       "name": "SideStore",
       "bundleIdentifier": "com.SideStore.SideStore",
       "developerName": "SideStore",
-      "subtitle": "SideStore is a fork of AltStore that doesn't require an AltServer.",
+      "subtitle": "不依赖 AltServer 的 AltStore 分支，用证书在设备上自签安装 IPA",
       "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png?v=c5ba32c13412",
       "tintColor": "#9f19f5",
@@ -647,7 +422,7 @@
       "name": "StikDebug",
       "bundleIdentifier": "com.stik.stikdebug",
       "developerName": "StikDebug",
-      "subtitle": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
+      "subtitle": "设备端调试器与 JIT 启用工具，基于 idevice",
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
       "tintColor": "#4797f5",
@@ -667,7 +442,7 @@
       "name": "TiebaPure",
       "bundleIdentifier": "dev.infinityf4p.tiebapure",
       "developerName": "infinityf4p",
-      "subtitle": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
+      "subtitle": "原生 SwiftUI 构建的非官方贴吧客户端",
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png?v=3f413c784997",
       "tintColor": "#a77f57",
@@ -701,7 +476,7 @@
       "name": "YTKACE",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "itzzace",
-      "subtitle": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with…",
+      "subtitle": "YouTube 增强与下载器，去广告、后台播放",
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=6b2bab94b0ea",
       "tintColor": "#fc0434",
@@ -735,7 +510,7 @@
       "name": "知乎--",
       "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
       "developerName": "huamurui",
-      "subtitle": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
+      "subtitle": "轻量、简洁的第三方知乎客户端",
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=00eb98bbb264",
       "tintColor": "#0484fc",
