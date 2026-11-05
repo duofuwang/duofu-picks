@@ -119,10 +119,11 @@
       "name": "AnymeX"
     },
     {
-      "repo": "CHANG-JUI-LIN/Yuedu-reader",
+      "repo": "duofuwang/Yuedu-reader",
       "bundleIdentifier": "com.zhangruilin.yuedureader",
       "name": "阅读",
-      "excludeTags": ["1.01"]
+      "description": "由本项目基于上游 0479b74（MPL-2.0）自行构建的 unsigned IPA，不是官方产物。\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此版本保留完整阅读功能（本地书库、格式解析、RSS、书源），账号登录、iCloud 同步、订阅等云端功能在此构建中不可用。\n\n需要云同步请使用官方版本。",
+      "developerName": "CHANG-JUI-LIN"
     },
     {
       "repo": "NuvioMedia/NuvioMobile",

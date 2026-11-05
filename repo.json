@@ -723,31 +723,17 @@
       "bundleIdentifier": "com.zhangruilin.yuedureader",
       "developerName": "CHANG-JUI-LIN",
       "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
-      "localizedDescription": "Yuedu is a native iOS reader that supports multiple book formats, RSS subscriptions, and user-provided book sources.",
+      "localizedDescription": "由本项目基于上游 0479b74（MPL-2.0）自行构建的 unsigned IPA，不是官方产物。\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此版本保留完整阅读功能（本地书库、格式解析、RSS、书源），账号登录、iCloud 同步、订阅等云端功能在此构建中不可用。\n\n需要云同步请使用官方版本。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png",
       "versions": [
         {
-          "version": "1.0.4-2",
-          "date": "2026-05-31T18:45:55Z",
-          "localizedDescription": "> 公告：自即日起，GitHub Release 不再提供 IPA 安裝包。需要安裝或更新的使用者，請改至 TestFlight 或 App Store 下載。\n\n## 閱讀 1.0.4（build 2）\n\n- 線上書源「段評」（段落評論）章節改以一般章節的排版渲染（首行縮排、置中標題、正常行距），段評數量徽章內嵌於段末。\n- EPUB 目錄：子章節依錨點解析到所在頁，跳轉時直接落在該段落；目錄僅高亮目前所在章節（依章節 id，不再整個 spine 一起亮）。\n- 修正 RegexSanitizer 的優先級反轉問題（Thread Performance Checker 標記的卡頓風險）。",
-          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/v1.0.4-2/YueduReader.ipa",
-          "size": 22795452,
-          "buildVersion": "2",
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.3-5",
-          "date": "2026-05-30T08:21:58Z",
-          "localizedDescription": "### 1.0.3 (build 5)\n\n- TTS: added an offline on-device voice (AVSpeechSynthesizer) that is used automatically when no network voice source is configured — reading aloud now works fully offline. Selectable in TTS settings with a voice picker; existing HTTP/Legado voice sources still work and take priority when chosen.",
-          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/v1.0.3-5/Yuedu-Reader-1.0.3-5.ipa",
-          "size": 22359968
-        },
-        {
-          "version": "1.0.3",
-          "date": "2026-05-26T07:27:24Z",
-          "localizedDescription": "### 1.0.3 (build 4)\n- Account: added account deletion (sign out, revoke federated login, and erase iCloud-synced data) to meet App Store guideline 5.1.1(v).\n- Account: you can now edit your display name.\n- Sign in with Apple: no longer shows the opaque Apple user identifier as an email; falls back to a provider label when Apple returns no email.\n\n### New\n- iCloud sync (backup / restore with conflict resolution) and Sign in with Apple.\n\n### Improvements & Bug Fixes\n- Reader: page-curl turns no longer animate and bounce back after switching from scroll to paged mode.\n- Reader: scrolling back into an unloaded chapter no longer jumps to the chapter start; the reading position is preserved.\n- Reader: smoother chapter-boundary loading (both neighbouring chapters stay paginated) and CTFrame work …",
-          "downloadURL": "https://github.com/CHANG-JUI-LIN/Yuedu-reader/releases/download/v1.0.3/Yuedu-Reader-1.0.3.ipa",
-          "size": 22339754
+          "version": "3.0.0",
+          "date": "2026-11-05T03:35:46Z",
+          "localizedDescription": "基于上游 `0479b74`（MPL-2.0）构建的 unsigned IPA，不是官方产物。\n\n- 版本：3.0.0 (3)\n- Bundle ID：`com.zhangruilin.yuedureader`（与原版一致，重签后可覆盖安装）\n- 最低系统：iOS 17.0\n- 未签名：用 AltStore、SideStore、Sideloadly 或 LiveContainer 安装\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此构建保留完整阅读功能（本地书库、格式解析、RSS、书源）；账号登录、iCloud 同步、订阅等云端功能不可用。\n\n需要云同步请使用官方版本。\n\n---\n\n本构建的源码取自 CHANG-JUI-LIN/Yuedu-reader 的 `0479b74`（2026-10-21，当时以 Mozilla Public License 2.0 发布）。MPL-2.0 允许分发二进制，条件是向接收者提供对应源码：源码即本仓库，构建脚本见 `.github/workflows/build-unsigned-ipa.yml`。\n\n上游在 `0479b74` 之后改用 PolyForm Strict 1.0.0，其代码不在本构建范围内。名称与图标的商标权未随源码许可授予，仍归原作者所有。",
+          "downloadURL": "https://github.com/duofuwang/Yuedu-reader/releases/download/v3.0.0/YueduReader-unsigned.ipa",
+          "size": 37436375,
+          "buildVersion": "3",
+          "minOSVersion": "17.0"
         }
       ]
     }

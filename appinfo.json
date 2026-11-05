@@ -196,13 +196,13 @@
     "size": 139496330,
     "source_repo": "itzzace/ytkace"
   },
-  "CHANG-JUI-LIN/Yuedu-reader@1.0.4-2": {
+  "duofuwang/Yuedu-reader@3.0.0": {
     "bundleIdentifier": "com.zhangruilin.yuedureader",
     "displayName": "閱讀",
-    "version": "1.0.4",
-    "build": "2",
-    "minOSVersion": "18.0",
-    "size": 22795452,
-    "source_repo": "CHANG-JUI-LIN/Yuedu-reader"
+    "version": "3.0.0",
+    "build": "3",
+    "minOSVersion": "17.0",
+    "size": 37436375,
+    "source_repo": "duofuwang/Yuedu-reader"
   }
 }
