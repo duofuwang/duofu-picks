@@ -113,6 +113,8 @@ python build.py --proxy none         # 直连；也可写 http://127.0.0.1:7897
 
 第 2 步失败的项目不少。图标编译进 `Assets.car` 的包，zip 里根本没有独立 PNG，这时靠第 3 步兜住。
 
+第 2 步取到的 PNG 还有个坑：Xcode 打包时常用 pngcrush 把它转成 Apple 私有的 `CgBI` 格式——`IHDR` 前多一个 `CgBI` chunk、IDAT 用 raw deflate、通道顺序是 BGRA 且 alpha 预乘。iOS 的 `UIImage` 能读，浏览器和 Pillow 这类标准解码器会直接报 `broken data stream`，表现出来就是源在网页上图标全空。脚本在写入 `icons/` 前会用 `normalize_apple_png()` 转成标准 PNG；遇到看不懂的格式原样放过，不会让构建挂掉。
+
 外链图标会被镜像：配置里写 imgur 之类的地址时，脚本下载一份存进 `icons/`，`repo.json` 指向自己的域名。下载失败就保留原地址——不会因为一次网络抖动把好图标换成别的。但如果下回来的根本不是图片（图床删了图、返回一张 HTML 错误页），那就继续走第 2、3 步，实在找不到才用头像。
 
 第 2、3 步默认每次都重新做一遍，取到就覆盖本地那份，所以上游换图标能自动跟上。代价是每次构建都要重新读一遍 IPA —— 这活交给 Actions，本地跑会受网络影响。想省掉这部分开销，在 `config.json` 里写 `"refreshIcons": false`，就退回「本地有就跳过」。

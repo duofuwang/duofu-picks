@@ -27,12 +27,14 @@ import json
 import os
 import plistlib
 import re
+import struct
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
+import zlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -810,10 +812,122 @@ def _set_icon_source(bundle: str, source: str, icons_dir: Path) -> None:
     )
 
 
+def normalize_apple_png(data: bytes) -> bytes:
+    """把 Xcode pngcrush 产出的 CgBI 图标转成标准 PNG。
+
+    IPA 里的 AppIcon*.png 常被 Xcode 改成 Apple 私有变体：IHDR 前多一个
+    CgBI chunk、IDAT 用 raw deflate（无 zlib 头）、通道顺序是 BGRA 且 alpha
+    预乘。iOS 的 UIImage 能读，但浏览器和 Pillow 等标准解码器会直接报
+    "broken data stream"，导致源里图标在网页上显示不出来。
+
+    只处理 8bit / 非隔行的 RGB(A)；遇到看不懂的格式原样返回，别让构建挂掉。
+    """
+    sig = b"\x89PNG\r\n\x1a\n"
+    if len(data) < 33 or data[:8] != sig or data[12:16] != b"CgBI":
+        return data
+
+    idat, keep, ihdr = b"", [], None
+    pos = 8
+    while pos + 12 <= len(data):
+        length = struct.unpack_from(">I", data, pos)[0]
+        ctype = data[pos + 4 : pos + 8]
+        payload = data[pos + 8 : pos + 8 + length]
+        if pos + 12 + length > len(data):
+            return data
+        if ctype == b"IHDR":
+            width, height, depth, color, _, _, interlace = struct.unpack(
+                ">IIBBBBB", payload
+            )
+            if depth != 8 or color not in (2, 6) or interlace != 0:
+                return data
+            ihdr = (width, height, 4 if color == 6 else 3)
+            keep.append((ctype, payload))
+        elif ctype == b"IDAT":
+            idat += payload
+        elif ctype not in (b"CgBI", b"iDOT", b"IEND"):
+            keep.append((ctype, payload))
+        pos += 12 + length
+
+    if ihdr is None or not idat:
+        return data
+    width, height, bpp = ihdr
+    try:
+        try:
+            raw = zlib.decompress(idat)
+        except zlib.error:
+            raw = zlib.decompress(idat, -15)  # Apple 用 raw deflate
+    except zlib.error:
+        return data
+    stride = width * bpp
+    if len(raw) < height * (stride + 1):
+        return data
+
+    def paeth(a: int, b: int, c: int) -> int:
+        p = a + b - c
+        pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
+        return a if pa <= pb and pa <= pc else (b if pb <= pc else c)
+
+    prev = bytearray(stride)
+    out = bytearray()
+    pos = 0
+    for _ in range(height):
+        ftype = raw[pos]
+        pos += 1
+        line = bytearray(raw[pos : pos + stride])
+        pos += stride
+        if ftype > 4:
+            return data
+        for x in range(stride):
+            a = line[x - bpp] if x >= bpp else 0
+            b = prev[x]
+            c = prev[x - bpp] if x >= bpp else 0
+            if ftype == 1:
+                line[x] = (line[x] + a) & 255
+            elif ftype == 2:
+                line[x] = (line[x] + b) & 255
+            elif ftype == 3:
+                line[x] = (line[x] + ((a + b) // 2)) & 255
+            elif ftype == 4:
+                line[x] = (line[x] + paeth(a, b, c)) & 255
+        if bpp == 4:
+            for x in range(0, stride, 4):
+                blue, green, red, alpha = line[x], line[x + 1], line[x + 2], line[x + 3]
+                if 0 < alpha < 255:  # 撤销 alpha 预乘
+                    red = min(255, red * 255 // alpha)
+                    green = min(255, green * 255 // alpha)
+                    blue = min(255, blue * 255 // alpha)
+                line[x], line[x + 2] = red, blue
+        else:
+            for x in range(0, stride, 3):
+                line[x], line[x + 2] = line[x + 2], line[x]
+        out += b"\x00" + line  # 全部改用 filter 0 重新编码
+        prev = line
+
+    def chunk(ctype: bytes, payload: bytes) -> bytes:
+        return (
+            struct.pack(">I", len(payload))
+            + ctype
+            + payload
+            + struct.pack(">I", zlib.crc32(ctype + payload) & 0xFFFFFFFF)
+        )
+
+    return (
+        sig
+        + b"".join(chunk(ct, body) for ct, body in keep)
+        + chunk(b"IDAT", zlib.compress(bytes(out), 9))
+        + chunk(b"IEND", b"")
+    )
+
+
 def _write_icon(
     icons_dir: Path, bundle: str, data: bytes, suffix: str, source: str = "ipa"
 ) -> Path:
     """写入图标，并清掉同一应用其他扩展名的旧文件，避免一份图标留两份。"""
+    if suffix.lower() == ".png":
+        try:
+            data = normalize_apple_png(data)
+        except (ValueError, struct.error, zlib.error):
+            pass  # 转换不了就照原样写，退回到旧行为
     icons_dir.mkdir(parents=True, exist_ok=True)
     safe = _safe_name(bundle)
     for other in ICON_SUFFIXES:
