@@ -18,7 +18,7 @@
       "developerName": "Aidoku",
       "subtitle": "Manga reading app for iOS, iPadOS, and macOS",
       "localizedDescription": "Manga reading app for iOS, iPadOS, and macOS",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png?v=b6be60fd8491",
       "tintColor": "#fc2c54",
       "versions": [
         {
@@ -52,7 +52,7 @@
       "developerName": "open-ani",
       "subtitle": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose…",
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=a51680c62b9b",
       "tintColor": "#6c9cc4",
       "versions": [
         {
@@ -86,7 +86,7 @@
       "developerName": "RyanYuuki",
       "subtitle": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
       "localizedDescription": "An Open Source app for Tracking Multi Service (AL, MAL, SIMKL)",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ryan.anymex.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ryan.anymex.png?v=68be091480a0",
       "versions": [
         {
           "version": "3.2.0",
@@ -119,7 +119,7 @@
       "developerName": "mikevillarroel",
       "subtitle": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and…",
       "localizedDescription": "BuildBox for iPhone — compile Swift source into unsigned IPAs, sign and install, all from your iPhone.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mikevillarroel.buildbox.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mikevillarroel.buildbox.png?v=67a93f1eb511",
       "versions": [
         {
           "version": "2.1.4",
@@ -152,7 +152,7 @@
       "developerName": "claration",
       "subtitle": "Free on-device iOS/iPadOS application manager/installer, using certificates…",
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "versions": [
         {
           "version": "2.9.0",
@@ -185,7 +185,7 @@
       "developerName": "shplash",
       "subtitle": "Edit IPA bundle identifiers made easy.",
       "localizedDescription": "Edit IPA bundle identifiers made easy.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.shplash.ipaid.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.shplash.ipaid.png?v=939f1ee64ceb",
       "versions": [
         {
           "version": "1.21",
@@ -204,7 +204,7 @@
       "developerName": "XITRIX",
       "subtitle": "Torrent client for iOS 16+",
       "localizedDescription": "Torrent client for iOS 16+",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png?v=876fcdb2ebae",
       "versions": [
         {
           "version": "2.2.0-1",
@@ -237,7 +237,7 @@
       "developerName": "LiveContainer",
       "subtitle": "Run iOS apps without actually installing them!",
       "localizedDescription": "Run iOS apps without actually installing them!",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png?v=afe19efa8601",
       "versions": [
         {
           "version": "3.8.0",
@@ -270,7 +270,7 @@
       "developerName": "Manic-EMU",
       "subtitle": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful…",
       "localizedDescription": "Manic EMU is an all-in-one retro game emulator for iOS. It packs powerful features while keeping a clean, sleek UI and delivering buttery-smooth gameplay.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.aoshuang.manicemu.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.aoshuang.manicemu.png?v=bc2114aa515e",
       "versions": [
         {
           "version": "2.0.2",
@@ -303,7 +303,7 @@
       "developerName": "ResistanceTo",
       "subtitle": "An iPhone battery, charging and thermal instrument built on private iOS APIs…",
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=034c5f83ad7b",
       "tintColor": "#c8c836",
       "versions": [
         {
@@ -337,7 +337,7 @@
       "developerName": "coflyn",
       "subtitle": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png?v=990870ea8bb6",
       "versions": [
         {
           "version": "4.5.1",
@@ -370,7 +370,7 @@
       "developerName": "NuvioMedia",
       "subtitle": "Official Nuvio Mobile Repository",
       "localizedDescription": "Official Nuvio Mobile Repository",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png?v=3ccc20092cbc",
       "versions": [
         {
           "version": "0.6.7-beta",
@@ -403,7 +403,7 @@
       "developerName": "emexlab",
       "subtitle": "IDE to develop native code iOS apps and utilities on stock iOS it self just via…",
       "localizedDescription": "IDE to develop native code iOS apps and utilities on stock iOS it self just via a certificate and a custom micro kernel for those apps.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.emexlabs.nyxian.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.emexlabs.nyxian.png?v=94135c72b3d0",
       "versions": [
         {
           "version": "0.11.4",
@@ -436,7 +436,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "PiliPlus",
       "localizedDescription": "PiliPlus",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png?v=7ed3143e1216",
       "tintColor": "#5cb47c",
       "versions": [
         {
@@ -470,7 +470,7 @@
       "developerName": "Provenance-Emu",
       "subtitle": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC…",
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.provenance-emu.provenance.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.provenance-emu.provenance.png?v=dbc8ca81dfc4",
       "versions": [
         {
           "version": "3.3.1",
@@ -503,7 +503,7 @@
       "developerName": "liuchuancong",
       "subtitle": "开源的直播聚合播放器，一个应用看全网直播",
       "localizedDescription": "纯粹直播，Flutter 构建。支持哔哩哔哩、虎牙、斗鱼、快手、抖音、网易 CC、YY、Twitch、SOOP，以及 M38 自定义源。带多画面同看、弹幕、录制与定时关闭。上游只提供 TrollStore 版 IPA，需自行签名安装。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mystyle.purelive.liu.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mystyle.purelive.liu.png?v=20f9b0fc329a",
       "category": "entertainment",
       "versions": [
         {
@@ -537,7 +537,7 @@
       "developerName": "Sami-Wali",
       "subtitle": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA…",
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=ab500d73a64a",
       "versions": [
         {
           "version": "2.2",
@@ -570,7 +570,7 @@
       "developerName": "SideStore",
       "subtitle": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png?v=c5ba32c13412",
       "versions": [
         {
           "version": "0.7.0-alpha",
@@ -603,7 +603,7 @@
       "developerName": "StikDebug",
       "subtitle": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
       "versions": [
         {
           "version": "3.2.0",
@@ -622,7 +622,7 @@
       "developerName": "infinityf4p",
       "subtitle": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png?v=3f413c784997",
       "tintColor": "#a77f57",
       "versions": [
         {
@@ -656,7 +656,7 @@
       "developerName": "itzzace",
       "subtitle": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with…",
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=6b2bab94b0ea",
       "tintColor": "#fc0434",
       "versions": [
         {
@@ -690,7 +690,7 @@
       "developerName": "huamurui",
       "subtitle": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=00eb98bbb264",
       "tintColor": "#0484fc",
       "versions": [
         {
@@ -724,7 +724,7 @@
       "developerName": "CHANG-JUI-LIN",
       "subtitle": "Yuedu is a native iOS reader that supports multiple book formats, RSS…",
       "localizedDescription": "由本项目基于上游 0479b74（MPL-2.0）自行构建的 unsigned IPA，不是官方产物。\n\n上游已于 2026 年 6 月起停止在 GitHub Release 提供安装包，官方渠道改为 App Store 付费版和 TestFlight。此版本保留完整阅读功能（本地书库、格式解析、RSS、书源），账号登录、iCloud 同步、订阅等云端功能在此构建中不可用。\n\n需要云同步请使用官方版本。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zhangruilin.yuedureader.png?v=e9128f24c273",
       "versions": [
         {
           "version": "3.0.0",

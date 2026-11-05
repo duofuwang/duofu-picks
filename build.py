@@ -22,6 +22,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import io
 import json
 import os
@@ -577,7 +578,7 @@ def build_app(
     if not icon:
         icon = f"https://github.com/{owner}.png?size=512"
         warnings.append(f"{slug} 没有可用图标，已回退为开发者头像")
-    app["iconURL"] = icon
+    app["iconURL"] = versioned_icon_url(str(icon))
     if entry.get("tintColor"):
         app["tintColor"] = str(entry["tintColor"])
     if entry.get("category"):
@@ -705,7 +706,7 @@ def build_manual_app(
     icon = entry.get("iconURL") or repository_icon
     if not icon:
         raise FetchError("直链条目必须提供 iconURL，或在 repository 里配置一个兜底图标")
-    app["iconURL"] = icon
+    app["iconURL"] = versioned_icon_url(str(icon))
     app["versions"] = versions
 
     log(f"  {app['name']:<22} {versions[0]['version']:<14} 直链      {url[:44]}")
@@ -940,6 +941,37 @@ def _write_icon(
     target.write_bytes(data)
     _set_icon_source(bundle, source, icons_dir)
     return target
+
+
+def versioned_icon_url(icon: str) -> str:
+    """给本站 icons/ 下的图标 URL 追加内容 hash，图标一变就换 URL。
+
+    AltStore / SideStore 按 URL 缓存图标，而文件名一直是 {bundleId}.png：
+    上游换了图标、或我们修了图标编码，URL 没变，客户端就一直抱着旧图不放
+    （阅读从 1.0.4-2 换成 3.0.0 后就卡在水墨风旧图标）。加 ?v=<hash> 后
+    内容变化会自然触发重新下载；内容没变时 URL 稳定，不会造成缓存抖动。
+
+    只处理 icons/ 下确实存在的本地文件，外链和开发者头像原样返回。
+    """
+    try:
+        parts = urllib.parse.urlsplit(icon)
+    except ValueError:
+        return icon
+    marker = "/icons/"
+    if marker not in parts.path:
+        return icon
+    filename = urllib.parse.unquote(parts.path.rsplit(marker, 1)[-1])
+    if not filename or "/" in filename:
+        return icon
+    local = ROOT / "icons" / filename
+    if not local.is_file():
+        return icon
+    digest = hashlib.sha256(local.read_bytes()).hexdigest()[:12]
+    params = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k != "v"]
+    params.append(("v", digest))
+    return urllib.parse.urlunsplit(
+        (parts.scheme, parts.netloc, parts.path, urllib.parse.urlencode(params), parts.fragment)
+    )
 
 
 def prune_icons(apps: list[dict], icons_dir: Path, dry_run: bool = False) -> list[str]:
@@ -1182,7 +1214,7 @@ def build_file_app(
     description = trim(entry.get("description"))
     if description:
         app["localizedDescription"] = description
-    app["iconURL"] = icon
+    app["iconURL"] = versioned_icon_url(str(icon))
     app["versions"] = versions
 
     log(f"  {app['name']:<22} {versions[0]['version']:<14} 本地文件   {relative}")
