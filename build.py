@@ -1315,17 +1315,18 @@ def apply_auto_tints(
 
 
 def refresh_tints(check: bool) -> int:
-    """离线模式：不联网，只按 icons/ 重算 repo.json 里的 tintColor。"""
+    """离线模式：不联网，只重算 repo.json 里的 tintColor，并补齐顶层 size。"""
     if not CONFIG_PATH.exists() or not OUTPUT_PATH.exists():
         raise SystemExit("离线刷新需要 config.json 和 repo.json 都存在。")
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8-sig"))
     repository = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
     apps = repository.get("apps") or []
-    before = [app.get("tintColor") for app in apps]
+    before = [(app.get("tintColor"), app.get("size")) for app in apps]
     manual = manual_tint_map(config.get("apps") or [])
     enabled = bool(config.get("tintFromIcons", True))
     fallback = source_tint(config) if config.get("tintFallback", True) else None
     results = apply_auto_tints(apps, manual, ROOT / "icons", enabled, fallback)
+    sized = apply_app_sizes(apps)
 
     labels = {
         "manual": "配置指定", "auto": "图标取色",
@@ -1337,13 +1338,14 @@ def refresh_tints(check: bool) -> int:
     log(f"共 {sum(1 for _, _, s in results if s == 'auto')} 个取自图标，"
         f"{sum(1 for _, _, s in results if s == 'manual')} 个沿用配置，"
         f"{sum(1 for _, _, s in results if s == 'fallback')} 个回退源主色。")
+    log(f"顶层 size：{sized}/{len(apps)} 个应用取自最新版本。")
 
-    after = [app.get("tintColor") for app in apps]
+    after = [(app.get("tintColor"), app.get("size")) for app in apps]
     if before == after:
-        log("repo.json 的 tintColor 无变化。")
+        log("repo.json 的 tintColor / size 无变化。")
         return 0
     if check:
-        log("repo.json 的 tintColor 需要更新（--check 模式不写入）。")
+        log("repo.json 需要更新（--check 模式不写入）。")
         return 1
     OUTPUT_PATH.write_text(render(repository), encoding="utf-8", newline="\n")
     log("已写入 repo.json。")
@@ -1628,6 +1630,36 @@ def build_repo_with_retry(
 # 主流程
 # --------------------------------------------------------------------------
 
+def apply_app_sizes(apps: list[dict]) -> int:
+    """把默认安装版本的 size 补一份到 app 顶层，返回补上的应用数。
+
+    versions 里每个版本本来就有 size，但部分客户端在应用列表/详情页读的是
+    app 级别的 size，顶层缺了就显示不出体积。统一取 versions[0]（脚本已按
+    版本号和日期倒序排过，也是用户默认装的那版），顺序放在 versions 之前。
+    最新版没有 size 时清掉旧值，避免留下过期数据。
+    """
+    count = 0
+    for app in apps:
+        versions = app.get("versions") or []
+        size = versions[0].get("size") if versions and isinstance(versions[0], dict) else None
+        if not isinstance(size, int) or size <= 0:
+            app.pop("size", None)
+            continue
+        rebuilt: dict = {}
+        for key, value in app.items():
+            if key == "size":
+                continue
+            if key == "versions":
+                rebuilt["size"] = size
+            rebuilt[key] = value
+        if "size" not in rebuilt:
+            rebuilt["size"] = size
+        app.clear()
+        app.update(rebuilt)
+        count += 1
+    return count
+
+
 def render(repository: dict) -> str:
     return json.dumps(repository, ensure_ascii=False, indent=2) + "\n"
 
@@ -1744,6 +1776,9 @@ def main() -> int:
 
     apps.sort(key=lambda a: a["name"].lower())
 
+    # 顶层 size 取默认安装版本，供只读 app.size 的客户端显示体积。
+    sized = apply_app_sizes(apps)
+
     # tintColor 在图标定稿后统一算：本地和 Actions 用同一份 PNG 解码，
     # 图标换了颜色会跟着变，config.json 里手写的那些始终优先。
     enabled = bool(config.get("tintFromIcons", True)) and not args.no_tints
@@ -1758,6 +1793,7 @@ def main() -> int:
         f"{sum(1 for _, _, s in tint_results if s == 'fallback')} 个回退源主色，"
         f"{sum(1 for _, _, s in tint_results if s == 'none')} 个没取到。"
     )
+    log(f"顶层 size：{sized}/{len(apps)} 个应用取自最新版本。")
 
     repository: dict = {}
     for field in ("name", "identifier", "subtitle", "description",
