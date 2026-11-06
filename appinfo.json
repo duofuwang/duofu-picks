@@ -107,15 +107,6 @@
     "size": 139496330,
     "source_repo": "itzzace/ytkace"
   },
-  "huamurui/zhihu-minus-minus@0.9.9": {
-    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
-    "displayName": "知乎--",
-    "version": "0.9.9",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 14830602,
-    "source_repo": "huamurui/zhihu-minus-minus"
-  },
   "duofuwang/feather@2.9.0-3": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",
@@ -314,15 +305,6 @@
     "size": 37133055,
     "source_repo": "Jellify-Music/App"
   },
-  "missuo/kumone@0.3.28": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.28",
-    "build": "391",
-    "minOSVersion": "16.0",
-    "size": 4037666,
-    "source_repo": "missuo/kumone"
-  },
   "pounat/absorb@1.12.1-304": {
     "bundleIdentifier": "com.barnabas.absorb",
     "displayName": "Absorb",
@@ -413,15 +395,6 @@
     "size": 45348117,
     "source_repo": "cogwheel0/conduit"
   },
-  "JiangNanGenius/floe-agent@1.7.74": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.7.74",
-    "build": "315",
-    "minOSVersion": "26.0",
-    "size": 821389309,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "Lingyan000/fluxdo@0.2.29": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
     "displayName": "FluxDO",
@@ -484,5 +457,23 @@
     "minOSVersion": "16.4",
     "size": 4325990,
     "source_repo": "wszqkzqk/PvZ-Portable"
+  },
+  "huamurui/zhihu-minus-minus@0.9.10": {
+    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
+    "displayName": "知乎--",
+    "version": "0.9.10",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 14833319,
+    "source_repo": "huamurui/zhihu-minus-minus"
+  },
+  "missuo/kumone@0.3.29": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.29",
+    "build": "399",
+    "minOSVersion": "16.0",
+    "size": 3937238,
+    "source_repo": "missuo/kumone"
   }
 }

@@ -307,41 +307,6 @@
       ]
     },
     {
-      "name": "Floe Agent",
-      "bundleIdentifier": "org.floeagent.ios",
-      "developerName": "JiangNanGenius",
-      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
-      "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
-      "tintColor": "#1662df",
-      "size": 821389309,
-      "versions": [
-        {
-          "version": "1.7.74",
-          "date": "2026-11-05T11:28:33Z",
-          "localizedDescription": "# Floe Agent 1.7.74 (315)\n\n## 简体中文\n\n- 优化本机运行环境的任务调度，减少计算过程中的线程交接和重复唤醒。\n- 修复部分技能处理符号链接文件失败的问题，保留目录访问边界和只读保护。\n- 修正助手读取 Office 页面时图像上下颠倒的问题。\n- 保留现有项目文件、已安装依赖和运行环境，无需重新下载或重置。\n\n## English\n\n- Optimized local runtime scheduling to reduce worker handoffs and redundant wakeups during computation.\n- Fixed symbolic-link file operations used by some skills while retaining directory containment and read-only protection.\n- Corrected vertically flipped Office page images sent to the assistant.\n- Preserves existing project files, installed dependencies and the runtime without downloading or resetting the environment.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.74/Floe-Agent-1.7.74-build315-unsigned.ipa",
-          "size": 821389309,
-          "buildVersion": "315",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.7.73",
-          "date": "2026-11-05T07:53:38Z",
-          "localizedDescription": "# Floe Agent 1.7.73 (314)\n\n## 简体中文\n\n- 修复重新打开 App 后，已有任务的本机运行环境被误判为不可用、执行工具消失的问题。\n- 恢复原来的运行位置、文件和已安装依赖，无需重新保存设置、重建任务或重置环境。\n- 保留运行位置身份及重建校验；真正不可用的环境仍会如实提示。\n\n## English\n\n- Fixed saved tasks incorrectly losing their local execution tools after reopening the App.\n- Restores the existing execution location, files and installed dependencies without re-saving settings, recreating the task or resetting the environment.\n- Retains execution identity and rebuild checks, and reports genuinely unavailable environments.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the work…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.73/Floe-Agent-1.7.73-build314-unsigned.ipa",
-          "size": 821388350
-        },
-        {
-          "version": "1.7.72",
-          "date": "2026-11-05T06:25:49Z",
-          "localizedDescription": "# Floe Agent 1.7.72 (313)\n\n## 简体中文\n\n- 修复点击停止后，文字和思考内容仍继续显示的问题。\n- 修复任务文件区将 `.floecad` 当作文件夹展开的问题，可直接进入原生 3D 工作台。\n- 长按自己发送的文字或助手回复可使用系统选区和复制；聊天查找保留在会话菜单中。\n- 补齐共享 Linux 的整机关机、重启及占用查看，支持运行会话互发协调消息。默认保留其他任务正在进行的工作。\n- 环境没有待恢复的损坏时，“修复”如实返回无需修复，不重置文件或依赖。改核心数沿用在线调整，不再被旧提示引导为重启。\n- 通用设置新增实体键盘回车选项，可选择换行或发送；发送模式下 Shift＋回车换行。\n\n## English\n\n- Fixed text and reasoning continuing to animate after Stop.\n- Fixed `.floecad` packages expanding as folders in task files. Open them directly in the native 3D workbench.\n- Long-press user messages or assistant replies for system text selection and copying. Find in Chat remains in the conversation menu.\n- Added shared Linux machine shutdown, restart and occupancy inspection, with coordination messages between live tasks. Other active work is preserved by default.\n- Re…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.72/Floe-Agent-1.7.72-build313-unsigned.ipa",
-          "size": 821386511
-        }
-      ]
-    },
-    {
       "name": "FluxDO",
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "developerName": "Lingyan000",
@@ -692,16 +657,23 @@
       "localizedDescription": "雲の音 — A native music player for macOS and iOS, built with SwiftUI",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/sb.moe.kumone-ios.png?v=e0c37a6f19b7",
       "tintColor": "#df3e34",
-      "size": 4037666,
+      "size": 3937238,
       "versions": [
+        {
+          "version": "0.3.29",
+          "date": "2026-11-06T19:18:52Z",
+          "localizedDescription": "### Fixed\n\n- **macOS**: the now-playing page opens and closes cleanly — the page title, search field and sidebar toggle no longer hang over it while it moves, it no longer snaps into place at the end, and the thin white line beside the window buttons is gone; its collapse button is larger, sits in the top-right corner and always answers clicks.\n- **iOS**: adding a song to a playlist from the now-playing page shows the confirmation over the page; a song that is already in the playlist says so, and any other failure is shown inside the playlist picker (#182).\n- **iOS**: the search field stays visible when the Search tab opens.\n\n### Improved\n\n- **macOS**: hiding and showing the sidebar is smooth — the sidebar stays put and the page slides over it, the toggle never leaves its place beside the …",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.29/Kumone-iOS-0.3.29.ipa",
+          "size": 3937238,
+          "buildVersion": "399",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.3.28",
           "date": "2026-11-04T13:13:45Z",
           "localizedDescription": "### Improved\n\n- **macOS**: the bundle identifier is now `sb.moe.kumone`. After updating, settings and caches start fresh, the first-launch check appears once more, the iCloud sync passphrase has to be entered again and system permissions (such as notifications) need granting again; sign-in and offline downloads carry over.\n- **iOS**: the bundle identifier is now `sb.moe.kumone-ios`. AltStore and other sideloading tools install it as a separate app; once it is set up, the old one can be deleted.\n\n---\n\n### 改进\n\n- **macOS**：bundle ID 改为 `sb.moe.kumone`。更新后设置和缓存会重置，需要再做一次首次启动验证、重新输入 iCloud 同步口令，并重新授予通知等系统权限；登录状态和离线下载保留。\n- **iOS**：bundle ID 改为 `sb.moe.kumone-ios`。AltStore 等侧载工具会把它装成一个新的 App，设置好之后可以删除旧版。",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.28/Kumone-iOS-0.3.28.ipa",
-          "size": 4037666,
-          "buildVersion": "391",
-          "minOSVersion": "16.0"
+          "size": 4037666
         },
         {
           "version": "0.3.27",
@@ -709,13 +681,6 @@
           "localizedDescription": "### Added\n\n- **iOS + macOS**: a short first-launch check — answer two simple arithmetic questions to get started.\n\n### Improved\n\n- **iOS + macOS**: sign-in, recommendation and library screens no longer name a specific service — the QR sign-in now just says to scan with the official app.\n- **iOS**: the bundle identifier is `sb.moe.kumone` again.\n\n---\n\n### 新增\n\n- **iOS + macOS**：首次启动新增一个小验证——答对两道简单的算术题即可开始使用。\n\n### 改进\n\n- **iOS + macOS**：登录、推荐和资料库页面不再出现具体服务的名称，扫码登录改为提示用官方 App 扫码。\n- **iOS**：bundle ID 恢复为 `sb.moe.kumone`。",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.27/Kumone-iOS-0.3.27.ipa",
           "size": 4037650
-        },
-        {
-          "version": "0.3.26",
-          "date": "2026-11-03T11:01:25Z",
-          "localizedDescription": "### Added\n\n- **macOS**: desktop lyrics now sing along — with 逐字歌词（卡拉OK） on, the floating line lights up character by character from the song's word timings, the same wipe as the now-playing page; it freezes while paused and keeps running with the main window hidden (#174).\n\n### Improved\n\n- **macOS**: the About window credits MOE AI LLC.\n\n---\n\n### 新增\n\n- **macOS**：桌面歌词支持逐字卡拉 OK——开启「逐字歌词（卡拉OK）」后，悬浮歌词按歌曲的逐字时间逐个亮起，与播放页同一套扫光；暂停时停住，主窗口隐藏时照常运行（#174）。\n\n### 改进\n\n- **macOS**：关于窗口的版权署名改为 MOE AI LLC。",
-          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.26/Kumone-iOS-0.3.26.ipa",
-          "size": 4001101
         }
       ]
     },
@@ -1060,7 +1025,7 @@
       "bundleIdentifier": "com.lollipopkit.toolbox",
       "developerName": "lollipopkit",
       "subtitle": "ServerBox：服务器状态监控与运维工具箱",
-      "localizedDescription": "ServerBox - server status & toolbox",
+      "localizedDescription": "ServerBox - high performance server toolbox app & server written in Flutter & Rust.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.lollipopkit.toolbox.png?v=9ac4188436ba",
       "tintColor": "#e0695e",
       "size": 46255780,

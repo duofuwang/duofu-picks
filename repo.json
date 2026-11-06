@@ -457,16 +457,23 @@
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=8d13574c3405",
       "tintColor": "#0484fc",
-      "size": 14830602,
+      "size": 14833319,
       "versions": [
+        {
+          "version": "0.9.10",
+          "date": "2026-11-06T14:01:41Z",
+          "localizedDescription": "### What's Changed\r\n* 统一首页导航与内容操作栏外观 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/187\r\n* 调整 Android 页面进入和返回转场 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/186\r\n* 优化文章与想法详情首屏和操作栏 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/188\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6296309837490493137-w\" src=\"https://github.com/user-attachments/assets/bbed6e50-bf62-4205-a4ef-65cc71fd9174\" />\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6298716015608665964-w\" src=\"https://github.com/user-attachments/assets/99226fd4-0af5-47a7-b3aa-5aae9ac0b929\" />\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.9...v0.9.10",
+          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa",
+          "size": 14833319,
+          "buildVersion": "1",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "0.9.9",
           "date": "2026-11-05T12:55:17Z",
           "localizedDescription": "一些 ui 调整与问题修复。\r\n\r\n### What's Changed\r\n* fix(ios): 修复系统分享无响应及长图导出失败 by @Cheukfung in https://github.com/huamurui/zhihu-minus-minus/pull/177\r\n* 优化回答悬浮操作栏布局与液态玻璃交互 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/182\r\n* fix(images): 长图在正文和预览中保持清晰 (#147) by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/157\r\n* fix(iOS): 修复复杂行内公式字形重叠 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/180\r\n* fix(iOS): 改善液态玻璃控件的对比度与布局 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/181\r\n\r\n### New Contributors\r\n* @Cheukfung made their first contribution in https://github.com/huamurui/zhihu-minus-minus/pull/177\r\n \r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.8...v0.9.9\r\n\r\n\r\n<details>\r\n<summary>📱 ios 界面截图 </sum…",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.9/zhihu-minus-minus-v0.9.9-unsigned.ipa",
-          "size": 14830602,
-          "buildVersion": "1",
-          "minOSVersion": "16.4"
+          "size": 14830602
         },
         {
           "version": "0.9.8",
@@ -474,13 +481,6 @@
           "localizedDescription": "进一步处理闪烁跳动；ios26+ 放了更多的液态玻璃🎉\r\n### changes\r\n* feat(ios): 统一 iOS 26 Liquid Glass 导航与悬浮控件 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/172\r\n* fix(animation): 稳定正文渐显与标题接力，减少页面切换闪烁 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/174\r\n* fix(list): 稳定分页与卡片复用，完善个人主页交互 by @huamurui @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/175\r\n\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.7...v0.9.8",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.8/zhihu-minus-minus-v0.9.8-unsigned.ipa",
           "size": 14501451
-        },
-        {
-          "version": "0.9.7",
-          "date": "2026-10-30T11:15:40Z",
-          "localizedDescription": "修 0.9.6 的问题\r\n- ios 侧滑返回\r\n- 安卓过渡动画补充\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.6...v0.9.7",
-          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.7/zhihu-minus-minus-v0.9.7-unsigned.ipa",
-          "size": 14488327
         }
       ]
     }
