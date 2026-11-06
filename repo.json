@@ -20,6 +20,7 @@
       "localizedDescription": "Manga reading app for iOS, iPadOS, and macOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png?v=b6be60fd8491",
       "tintColor": "#fc2c54",
+      "size": 14753154,
       "versions": [
         {
           "version": "0.9-4",
@@ -54,6 +55,7 @@
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=a51680c62b9b",
       "tintColor": "#6c9cc4",
+      "size": 48615547,
       "versions": [
         {
           "version": "6.4.0",
@@ -88,6 +90,7 @@
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
+      "size": 14241853,
       "versions": [
         {
           "version": "2.9.0",
@@ -122,6 +125,7 @@
       "localizedDescription": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
+      "size": 14163630,
       "versions": [
         {
           "version": "2.9.0-3",
@@ -153,6 +157,7 @@
       "localizedDescription": "Torrent client for iOS 16+",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.xitrix.iTorrent2.png?v=876fcdb2ebae",
       "tintColor": "#f39a62",
+      "size": 24288935,
       "versions": [
         {
           "version": "2.2.0-1",
@@ -187,6 +192,7 @@
       "localizedDescription": "Run iOS apps without actually installing them!",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kdt.livecontainer.png?v=afe19efa8601",
       "tintColor": "#1873f5",
+      "size": 35403538,
       "versions": [
         {
           "version": "3.8.0",
@@ -221,6 +227,7 @@
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=034c5f83ad7b",
       "tintColor": "#c8c836",
+      "size": 3332420,
       "versions": [
         {
           "version": "1.6.0",
@@ -255,6 +262,7 @@
       "localizedDescription": "Client-side media downloader App and CLI built with Capacitor and Node.js.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mori.downloader.png?v=990870ea8bb6",
       "tintColor": "#6156e2",
+      "size": 2099534,
       "versions": [
         {
           "version": "4.5.2",
@@ -289,6 +297,7 @@
       "localizedDescription": "Official Nuvio Mobile Repository",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.nuvio.media.png?v=3ccc20092cbc",
       "tintColor": "#9445e7",
+      "size": 68872061,
       "versions": [
         {
           "version": "0.6.8-beta",
@@ -323,6 +332,7 @@
       "localizedDescription": "PiliPlus",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png?v=7ed3143e1216",
       "tintColor": "#5cb47c",
+      "size": 24933082,
       "versions": [
         {
           "version": "2.2.0.2",
@@ -357,6 +367,7 @@
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=ab500d73a64a",
       "tintColor": "#6054d4",
+      "size": 14531954,
       "versions": [
         {
           "version": "2.2",
@@ -391,6 +402,7 @@
       "localizedDescription": "SideStore is a fork of AltStore that doesn't require an AltServer.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.SideStore.SideStore.png?v=c5ba32c13412",
       "tintColor": "#9f19f5",
+      "size": 27770821,
       "versions": [
         {
           "version": "0.7.0-alpha",
@@ -425,6 +437,7 @@
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
       "tintColor": "#4797f5",
+      "size": 16818331,
       "versions": [
         {
           "version": "3.2.0",
@@ -445,6 +458,7 @@
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png?v=3f413c784997",
       "tintColor": "#a77f57",
+      "size": 9347637,
       "versions": [
         {
           "version": "1.4.15",
@@ -479,6 +493,7 @@
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=6b2bab94b0ea",
       "tintColor": "#fc0434",
+      "size": 139496330,
       "versions": [
         {
           "version": "1.1.5",
@@ -513,6 +528,7 @@
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=00eb98bbb264",
       "tintColor": "#0484fc",
+      "size": 14830602,
       "versions": [
         {
           "version": "0.9.9",
