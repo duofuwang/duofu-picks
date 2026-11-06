@@ -2,7 +2,6 @@
   "name": "Duofu Picks",
   "identifier": "com.duofu.picks",
   "subtitle": "精挑的开源 iOS 应用",
-  "description": "只收录确认开源、且由原作者自己在 GitHub Release 发版的应用。\n版本与下载地址由脚本自动同步，不镜像、不重打包。\n个别条目由本项目自行构建（跟进开发分支的夜间构建），已在条目内注明。",
   "website": "https://github.com/duofuwang/duofu-picks",
   "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
   "tintColor": "#6156e2",
@@ -18,7 +17,7 @@
       "developerName": "Aidoku",
       "subtitle": "开源漫画阅读器，支持扩展书源",
       "localizedDescription": "Manga reading app for iOS, iPadOS, and macOS",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png?v=b6be60fd8491",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.aidoku.Aidoku.png?v=a6f94ac5ce52",
       "tintColor": "#fc2c54",
       "size": 14753154,
       "versions": [
@@ -53,7 +52,7 @@
       "developerName": "open-ani",
       "subtitle": "弹幕追番平台，Bangumi 同步、离线缓存、BT 与弹幕过滤",
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=a51680c62b9b",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=8f3100fc8127",
       "tintColor": "#6c9cc4",
       "size": 48615547,
       "versions": [
@@ -122,7 +121,7 @@
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "claration",
       "subtitle": "本项目自建的夜间版，每天跟进上游 main 分支，非官方 Release",
-      "localizedDescription": "由本项目从 claration/Feather 的 main 分支每日同步后自行构建，不是原作者发布的正式 Release。每天 UTC 18:00 跟进上游最新提交，版本号形如 2.9.0-2，可能包含尚未验证的改动。\n\n注意：IPA 的 bundle ID 与官方稳定版相同（thewonderofyou.Feather），两者不能同时安装，装其中一个会覆盖另一个。",
+      "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
       "size": 14163630,
@@ -225,7 +224,7 @@
       "developerName": "ResistanceTo",
       "subtitle": "基于私有 API 的电池、充电与温度仪表",
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=034c5f83ad7b",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=f99dba3182e4",
       "tintColor": "#c8c836",
       "size": 3332420,
       "versions": [
@@ -260,7 +259,7 @@
       "developerName": "bggRGjQaUbCoE",
       "subtitle": "第三方哔哩哔哩客户端",
       "localizedDescription": "PiliPlus",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png?v=7ed3143e1216",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.piliplus.png?v=c3d53de9a26d",
       "tintColor": "#5cb47c",
       "size": 24933082,
       "versions": [
@@ -386,7 +385,7 @@
       "developerName": "infinityf4p",
       "subtitle": "原生 SwiftUI 构建的非官方贴吧客户端",
       "localizedDescription": "原生 SwiftUI 构建的非官方贴吧 iOS 客户端，支持浏览、搜索、收藏、媒体查看与本地阅读记录。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png?v=3f413c784997",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.infinityf4p.tiebapure.png?v=16f272a76c39",
       "tintColor": "#a77f57",
       "size": 9347637,
       "versions": [
@@ -456,7 +455,7 @@
       "developerName": "huamurui",
       "subtitle": "轻量、简洁的第三方知乎客户端",
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=00eb98bbb264",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=8d13574c3405",
       "tintColor": "#0484fc",
       "size": 14830602,
       "versions": [

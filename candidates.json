@@ -1,0 +1,1374 @@
+{
+  "name": "Duofu Picks · Candidates",
+  "identifier": "com.duofu.picks.candidates",
+  "website": "https://github.com/duofuwang/duofu-picks",
+  "iconURL": "https://i.imgur.com/pqIZoZo.jpeg",
+  "tintColor": "#6156e2",
+  "apps": [
+    {
+      "name": "3105",
+      "bundleIdentifier": "com.apple.mobile.MobileHouseArrest",
+      "developerName": "YangJiiii",
+      "subtitle": "iOS 应用数据浏览器 + 便携补丁管理器",
+      "localizedDescription": "Native iOS app-data browser, portable patch manager, limited cleaner, and PosterBoard wallpaper lab.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.apple.mobile.MobileHouseArrest.png?v=cbb4f0126818",
+      "tintColor": "#f56a18",
+      "size": 4604223,
+      "versions": [
+        {
+          "version": "2.0",
+          "date": "2026-09-14T06:18:20Z",
+          "localizedDescription": "# 3105 2.0\n\nBản 2.0 chuyển 3105 thành một nơi thống nhất để tìm, cài đặt và quản lý Patch, hình nền, Dialer và các tính năng dành cho thiết bị.\n\n## Điểm mới\n\n- Kho nội dung mới với Dành cho bạn, Mới cập nhật và nhiều nguồn.\n- Mục Đã cài quản lý mọi loại nội dung, có biểu tượng, phân loại và thông báo cập nhật.\n- Patch hỗ trợ nhiều ứng dụng và App Group trong cùng một gói, tùy chỉnh trước khi áp dụng và mật khẩu tùy chọn.\n- Cải thiện sao lưu, đặt lại, khôi phục và xóa Patch đang hoạt động.\n- Hỗ trợ giao diện Dialer dạng .3105pass và hình nền .tendies từ kho.\n- Trình quản lý Tệp mới có Workspace, Application, App Group, tệp ẩn, thẻ, yêu thích và trình sửa plist.\n- Dọn dẹp trở thành tính năng có thể cài hoặc gỡ; các bản iOS 27 được hỗ trợ có thêm Footnote và Supervised.\n- Thiết kế lại trang c…",
+          "downloadURL": "https://github.com/YangJiiii/3105/releases/download/v2.0/3105-2.0-build8-20260914-125906-unsigned.ipa",
+          "size": 4604223,
+          "buildVersion": "8",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.1.1",
+          "date": "2026-08-19T17:23:28Z",
+          "localizedDescription": "# 3105 1.1.1\n\nHotfix sửa lỗi chạm — Files/Patch có thể tap lại bình thường.\n\n## Cài đặt\n\n- Asset đính kèm là IPA **unsigned** (`Payload/3105.app`) để ký lại bằng ESign với chứng chỉ doanh nghiệp.\n- Bundle đích: `com.apple.mobile.MobileHouseArrest`.\n- Không hỗ trợ SideStore, AltStore, 3uTools hoặc LiveContainer.\n\n---\n\n## English summary\n\n3105 1.1.1 is a quick hotfix for tap blocking in Files/Patch.\n\nThe attached IPA is unsigned (`Payload/3105.app`) for enterprise-certificate/ESign signing. Bundle `com.apple.mobile.MobileHouseArrest`.",
+          "downloadURL": "https://github.com/YangJiiii/3105/releases/download/v1.1.1/3105-unsigned.ipa",
+          "size": 3281026
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-08-19T16:23:34Z",
+          "localizedDescription": "# 3105 1.1.0\n\nBản cập nhật tập trung vào mở rộng hỗ trợ iOS, onboarding khi cài đè và thông báo mật khẩu patch.\n\n## Tính năng mới\n\n- Mở rộng iOS được xác minh: **iOS 17.0–17.7.x** và **iOS 18.0–18.7.1** (kexploit kernel), cùng với **iOS 26.0–26.6.1** và **iOS 27.0 Developer Beta 1–4 / Public Beta 1–2**.\n- Khi nhập patch `.3105` mà nhập sai mật khẩu sẽ hiển thị **\"Sai mật khẩu\"** rõ ràng thay vì lỗi chung.\n- **Onboarding hiển thị lại khi cài đè** — cài đè app cùng phiên bản (ví dụ cài lại 1.1.0 đè lên 1.1.0) sẽ hiện lại màn hình hướng dẫn, đảm bảo người dùng mới và người cập nhật đều thấy đầy đủ các bước.\n- Biểu tượng ứng dụng được làm mới.\n\n## Cài đặt\n\n- Asset đính kèm là IPA **unsigned**, dành để ký lại bằng ESign với chứng chỉ doanh nghiệp.\n- Bundle đích: `com.apple.mobile.MobileHouseArr…",
+          "downloadURL": "https://github.com/YangJiiii/3105/releases/download/v1.1.0/3105-unsigned.ipa",
+          "size": 3271690
+        }
+      ]
+    },
+    {
+      "name": "Absorb",
+      "bundleIdentifier": "com.barnabas.absorb",
+      "developerName": "pounat",
+      "subtitle": "Audiobookshelf 有声书客户端",
+      "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=8db853b5a9fb",
+      "tintColor": "#5fbfb7",
+      "size": 48090333,
+      "versions": [
+        {
+          "version": "1.12.1-304",
+          "date": "2026-11-05T03:29:05Z",
+          "localizedDescription": "# v1.12.1-304\n## Beta 5\n\n### Windows\n- **New** - Absorb for Windows: an installer is attached to each release from now on. Sign in, play, download, read and transcribe like on the phone. Needs Windows 10 or newer\n  - It's new, so as always let me know about bugs you find, and about areas that don't feel very desktop yet\n  - The installer isn't signed yet, so Windows will warn before it runs\n\n### Audio (Android)\n- **Improved** - The loudness slider levels quiet books automatically instead of adding a fixed boost\n- **Improved** - The equalizer and bass boost run inside the player on Android, so they work on every phone\n- **New** - A pitch slider in the equalizer, to make the narrator sound lower or higher\n- **New** - Play with other audio, in Playback settings, keeps Absorb playing when anot…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-304/absorb-1.12.1-304-pre.ipa",
+          "size": 48090333,
+          "buildVersion": "304",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.12.1-303",
+          "date": "2026-11-01T16:07:47Z",
+          "localizedDescription": "# v1.12.1-303\r\n## Beta 4\r\n\r\n### BookOrbit\r\n- **New** - Send to E-Reader: email a book to your Kindle or other e-reader from its details. Your devices, groups, templates and send history are under Send by email in your account in Settings, and admins set up mail servers in Server admin\r\n- **New** - Quick Match several books at once from the library's select mode, like on Audiobookshelf\r\n- **New** - Request books missing from your series, from Find Missing Books or the Scan Series results, if your account can make requests\r\n- **New** - Tab hold shortcuts include BookOrbit's admin pages\r\n- **Fix** - Resetting a book takes it out of Currently Reading and clears its ebook spot, books you only read can be reset, and you can set a book back to Unread\r\n\r\n### Read along\r\n- **New** - Create a read a…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-303/absorb-1.12.1-303-pre.ipa",
+          "size": 47841246
+        },
+        {
+          "version": "1.12.1-302",
+          "date": "2026-10-29T19:07:29Z",
+          "localizedDescription": "# v1.12.1-302\r\n## Beta 3\r\n\r\n### Narrated EPUBs\r\n- **New** - Narrated EPUB3s on Audiobookshelf stream without downloading first, the same as on BookOrbit. Download one to listen offline\r\n- **New** - Covers show a book and headphones badge on read aloud EPUB3 files\r\n- **Improved** - Read along jumps straight to the sentence being read when you're far behind, and opening the book lands on it\r\n- **Fix** - Narrated books with commas or special characters in their audio file names download and play\r\n\r\n### Reader\r\n- **New** - Translate button when you select text. It sends the text to a translation app on your phone, Apple's translator on iPhone, or Google Translate or DeepL on the web (pick one in the Tt menu, Translate with)\r\n- **Fix** - Pages no longer wobble in paged mode with the top bar pin…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-302/absorb-1.12.1-302-pre.ipa",
+          "size": 47531928
+        }
+      ]
+    },
+    {
+      "name": "AltLoad",
+      "bundleIdentifier": "com.mirazbakis.altload",
+      "developerName": "mirazbakis",
+      "subtitle": "纯端侧安装/自动刷新 AltStore、SideStore",
+      "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=11ca162f6d75",
+      "tintColor": "#6156e2",
+      "size": 11794981,
+      "versions": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-01T09:56:00Z",
+          "localizedDescription": "## AltLoad 1.4.0\n\n### New\n- **Husk.** Install Husk from the store list, with this iPhone's pairing file already inside it for its built-in JIT.\n- **French, German, Italian, Chinese and Russian.** AltLoad follows your iPhone's language.\n- **Update notices.** AltLoad tells you when a newer version is out.\n\n### Fixed\n- **Pairing files for SideStore and SideStore + LiveContainer.** They now include this iPhone's UDID and go everywhere SideStore looks, along with the settings newer builds need.\n- **\"Apple ID or password incorrect\" with Anisette on Automatic.** Apple gives that answer for anisette data it won't accept too, so AltLoad now tries the next server instead of stopping, and keeps your saved password.\n- Fixed potential issues with Apple IDs",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.4.0/AltLoad.ipa",
+          "size": 11794981,
+          "buildVersion": "7",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-10-31T08:29:17Z",
+          "localizedDescription": "## AltLoad 1.3.0\n\n### Fixed\n- **SideStore no longer asks you to import a pairing file.** AltLoad now hands the pairing file over the way SideStore reads it, on stable and Nightly. If SideStore has already been opened and still asks, restart your iPhone.\n- **SideStore + LiveContainer gets the pairing file too.** It's placed for you at install, so there's nothing to import by hand.\n\n### Changed\n- **Far fewer Apple ID sign-ins.** AltLoad keeps Apple's developer token after you sign in and reuses it for installs, refreshes and the account screens, so unstable anisette servers and 2FA prompts get in the way less often. Signing out deletes it.\n- **Pure black background** with a small navy glow.\n- **Cleaner screens.** Pair, Pairing File to Apps and the install results are simpler, and placing a p…",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.3.0/AltLoad.ipa",
+          "size": 11540525
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-10-16T18:03:50Z",
+          "localizedDescription": "## AltLoad 1.2.0\n\n### New\n- **Choose what happens to app extensions.** Before installing a store or an IPA, pick **Keep Extensions**, **Keep, Use Main Profile** (the whole app uses one App ID) or **Remove Extensions**, like SideStore. Handy with a free Apple ID's 10 App IDs a week.\n- **Pairing code in the Dynamic Island.** While you pair, the six-digit code shows in the Dynamic Island and on the Lock Screen, so you can read it while you're in Settings.\n- **Import a pairing file.** Tools › Pair › Import Pairing File adds a pairing file made on a computer and uses it for installs.\n- **Runs on iOS 18 and later.** Below iOS 27 the iPhone can't pair with AltLoad itself, so the Pair screen walks you through importing a pairing file instead.\n- **App IDs in Tools.** See every App ID on your Apple …",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.2.0/AltLoad.ipa",
+          "size": 11637451
+        }
+      ]
+    },
+    {
+      "name": "AltStore",
+      "bundleIdentifier": "com.rileytestut.AltStore",
+      "developerName": "altstoreio",
+      "subtitle": "AltStore 官方本体，非越狱设备自签商店",
+      "localizedDescription": "AltStore is an alternative app store for non-jailbroken iOS devices.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.rileytestut.AltStore.png?v=d6645350e2bb",
+      "tintColor": "#3fb0b2",
+      "size": 40616419,
+      "versions": [
+        {
+          "version": "2.3",
+          "date": "2026-09-30T20:16:23Z",
+          "localizedDescription": "### New\r\n\r\nRemote AltServer\r\n* Supports sideloading apps without a computer\r\n* Install, refresh, and (de-)activate apps from anywhere with a WiFi connection\r\n* Tap “Set up Remote AltServer” in AltStore settings to get started\r\n* Thanks @jkcoxson and the entire SideStore team for making this possible!\r\n\r\nLiquid Glass UI\r\n* Updated design to fit at home on iOS 26\r\n\r\n### Improved\r\n\r\n* Includes `ALT_CLASSIC_VER` header with current build version when fetching sources\r\n* Uses app's tint color as background color when loading app icon\r\n* Improved error messages for better troubleshooting guidance\r\n* Raised minimum iOS version to 17.4\r\n\r\n### Fixed\r\n* Fixed unreadable text in light mode for some news alerts (thanks @partyknightsdev!)\r\n* Fixed showing empty text view for updates with no description…",
+          "downloadURL": "https://github.com/altstoreio/AltStore/releases/download/v2.3/AltStore_Classic_Notarized_2_3.ipa",
+          "size": 40616419,
+          "buildVersion": "63",
+          "minOSVersion": "17.4"
+        }
+      ]
+    },
+    {
+      "name": "Asspp",
+      "bundleIdentifier": "wiki.qaq.Asspp",
+      "developerName": "Lakr233",
+      "subtitle": "多区 Apple ID 的 App Store 客户端，可下载已签名 IPA",
+      "localizedDescription": "The App Store for your multi-account eco system.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/wiki.qaq.Asspp.png?v=581d0b0211d3",
+      "tintColor": "#188ef5",
+      "size": 16458246,
+      "versions": [
+        {
+          "version": "4.2.2",
+          "date": "2026-10-20T03:08:48Z",
+          "localizedDescription": "## Changes\n\n- Recover downloads when Apple returns an empty HTTP 500 by retrying the version-pinned request through the bag’s update endpoint.\n- Update ApplePackage to 2.0.3 with Swift 6.2 compatibility fixes.\n- Report Keychain save failures before completing login, and preserve stored data when loading fails.\n- Improve empty account layout, editable device identifiers, and account table column widths.\n- Remove personal metadata from bundled installation certificates and omit the CA private key.\n- Explicitly clear development teams for release builds and check packaged artifacts before publication.\n\n## Installation certificate\n\nThe local installation CA was replaced to remove personal metadata. If you use OTA installation, install and trust the new certificate from Settings after updating.…",
+          "downloadURL": "https://github.com/Lakr233/Asspp/releases/download/4.2.2/Asspp.ipa",
+          "size": 16458246,
+          "buildVersion": "0",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "4.2.1",
+          "date": "2026-06-14T02:47:42Z",
+          "localizedDescription": "Release 4.2.1",
+          "downloadURL": "https://github.com/Lakr233/Asspp/releases/download/4.2.1/Asspp.ipa",
+          "size": 15162563
+        },
+        {
+          "version": "4.2.0",
+          "date": "2026-06-12T08:23:55Z",
+          "localizedDescription": "Release 4.2.0",
+          "downloadURL": "https://github.com/Lakr233/Asspp/releases/download/4.2.0/Asspp.ipa",
+          "size": 15153128
+        }
+      ]
+    },
+    {
+      "name": "Bangumi",
+      "bundleIdentifier": "tv.bangumi.czy0729",
+      "developerName": "czy0729",
+      "subtitle": "Bangumi 番组计划第三方客户端",
+      "localizedDescription": ":electron: An unofficial https://bgm.tv ui first app client for Android and iOS, built with React Native. 一个无广告、以爱好为驱动、不以盈利为目的、专门做 ACG 的类似豆瓣的追番记录，bgm.tv 第三方客户端。为移动端重新设计，内置大量加强的网页端难以实现的功能，且提供了相当的自定义选项。 目前已适配 iOS / Android。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/tv.bangumi.czy0729.png?v=fc1d5950a9af",
+      "tintColor": "#df271e",
+      "size": 28323372,
+      "versions": [
+        {
+          "version": "8.41.1",
+          "date": "2026-10-01T16:00:42Z",
+          "localizedDescription": "[图文说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/osqdpz?singleDoc)\r\n\r\n[蓝奏云 v8a APK](https://czy0729.lanzoub.com/i9zUd4alwcni) (只能电脑UA访问) |  [123pan v8a APK](https://1819463884.share.123pan.cn/123pan/K0fQjv-M84A3) (需登录, zip请自行解压) \r\n\r\n[v8a APK 或者 IPA] 手动点击下方 Assets\r\n\r\n## 8.41.1 - 2026/10/01\r\n\r\n### 优化\r\n- [x] [每日放送] 新增 2026S4 元数据\r\n- [x] [组件] Tab 页面改为按距当前页的距离保活（默认 2 页，可在设置里调整为 1 页或无限制），超出距离的失焦页面会停止常驻副作用并卸载内容，改善长时间使用的内存占用\r\n- [x] [游戏、ADV] 静态数据重建更新\r\n- [x] [设置] 底栏分组改名为「页面导航」，并调整了部分设置的分组位置\r\n- [x] [更多角色] 新增角色定位筛选工具条\r\n- [x] [组件] 隐藏右上角菜单的「网页版查看」项\r\n- [x] 大量内部重构、类型收敛与补充单测，不详细说明\r\n\r\n### 修复\r\n- [x] [iOS] 修复输入框长按菜单显示英文的问题\r\n- [x] [iOS] 修复用户页有概率视差背景图不显示的问题，并统一双端背景图的加载与失败回退表现\r\n- [x] [人物] 修复人物作品路由参数过窄的问题\r\n- [x] [好友] 修复代理模式下 p1 接口 /p1 前缀丢失的问题",
+          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/8.41.1/bangumi_v8.41.1.ipa",
+          "size": 28323372,
+          "buildVersion": "1",
+          "minOSVersion": "16.4"
+        },
+        {
+          "version": "8.40.2",
+          "date": "2026-09-17T15:33:02Z",
+          "localizedDescription": "[图文说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/osqdpz?singleDoc)\r\n\r\n[蓝奏云 v8a APK](https://czy0729.lanzoub.com/iWOGc48vb3eh) (只能电脑UA访问) |  [123pan v8a APK](https://1819463884.share.123pan.cn/123pan/K0fQjv-J4iH3) (需登录, zip请自行解压)  | [v8a APK] 手动点击下方 Assets\r\n\r\n[蓝奏云 IPA](https://czy0729.lanzoub.com/ikUOE49083vg) (最新 Expo 版本下的公测版，目前可能会有很多小问题，遇到问题请反馈，持续优化发包后会一直替换这个下载地址)  | [github IPA] 手动点击下方 Assets\r\n\r\n## 8.40.2 - 2026/09/17\r\n\r\n### 优化\r\n- [x] [组件] 修复图片不能根据大小自动加载的问题，现在图片支持显示下载进度，加载失败后自动重试有次数上限；封面圆角与安卓卡片遮罩等视觉细节统一优化\r\n- [x] [条目] 优化续集条目的剧照匹配，并支持手动刷新\r\n- [x] [条目] 优化非动画类型条目的相关预览，视频点击优先唤起客户端\r\n- [x] [发现] 封面卡底部改为图片本色模糊的氛围色，按压反馈改为缩放\r\n\r\n### 修复\r\n- [x] [进度] 修复了收藏为空的用户被误判为授权过期、每次冷启动都重复要求重新授权的问题\r\n- [x] [条目] 修复取景地标截图因接口图片地址错误而全部加载失败的问题\r\n- [x] 修复开启过反代镜像，反代镜像失效后切换到新代理后，部分图片仍在使用过期缓存数据导致不能加载的问题\r\n- [x] 修复部分页面首屏渲染报…",
+          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/8.40.2/bangumi_v8.40.2_build_20260919.ipa",
+          "size": 28173699
+        },
+        {
+          "version": "upstream-8.39.0",
+          "date": "2026-08-27T19:28:27Z",
+          "localizedDescription": "Automated unsigned IPA build for upstream Bangumi tag `8.39.0`.\n\nSource: https://github.com/czy0729/Bangumi/tree/8.39.0\n\nSource archive: https://github.com/czy0729/Bangumi/archive/refs/tags/8.39.0.zip\n\nThe IPA is intentionally unsigned and should be signed by your sideloading tool or a later signing workflow.\n\nBuild run: https://github.com/czy0729/Bangumi/actions/runs/33107489626",
+          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/upstream-8.39.0/Bangumi-8.39.0-unsigned.ipa",
+          "size": 23457639
+        }
+      ]
+    },
+    {
+      "name": "Breeze",
+      "bundleIdentifier": "com.zephyr.breeze",
+      "developerName": "deretame",
+      "subtitle": "插件式漫画阅读器",
+      "localizedDescription": "使用flutter构建的漫画阅读器，通过插件提供漫画支持。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zephyr.breeze.png?v=796a11be77ae",
+      "tintColor": "#e22e2e",
+      "size": 26431983,
+      "versions": [
+        {
+          "version": "3.0.37",
+          "date": "2026-10-31T09:28:32Z",
+          "localizedDescription": "## 📝 更新日志\n## [v3.0.37]\n\n### 功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\n\n### 修复\n\n- 修复自定义插件顺序无效的问题\n\n### 优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/deretame/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/deretame/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\n| **iOS** | [Breeze-iOS-v3.0.37.ipa](https://github.com/deretame/Breeze/releases/…",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+          "size": 26431983,
+          "buildVersion": "2225",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "3.0.36",
+          "date": "2026-10-25T05:46:26Z",
+          "localizedDescription": "## 📝 更新日志\n## [v3.0.36]\n\n### 功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n\n### 优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.36.exe](https://github.com/deretame/Breeze/releases/download/v3.0.36/windows-installer-v3.0.36.exe) |\n| **macOS** | [Breeze-macOS-v3.0.36.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-macOS-v3.0.36.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.36.apk](https://github.com/deretame/Breeze/releases/download/v3.0.36/app-arm64-v8a-release-v3.0.36.apk) |\n| **iOS** | [Breeze-iOS-v3.0.36.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa) |\n| **Linux** | [breeze-v3.0.36.flatpak](https://github.com/deretame/Breeze/releases/dow…",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+          "size": 26377539
+        },
+        {
+          "version": "3.0.35",
+          "date": "2026-10-18T05:23:12Z",
+          "localizedDescription": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v…",
+          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+          "size": 26309164
+        }
+      ]
+    },
+    {
+      "name": "Conduit",
+      "bundleIdentifier": "app.cogwheel.conduit",
+      "developerName": "cogwheel0",
+      "subtitle": "Open WebUI / OpenAI 兼容接口的原生客户端",
+      "localizedDescription": "Native iOS and Android client for Open WebUI, direct OpenAI-compatible, Ollama, and Hermes agents.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.cogwheel.conduit.png?v=b21cbc3637aa",
+      "tintColor": "#174beb",
+      "size": 45348117,
+      "versions": [
+        {
+          "version": "4.2.2",
+          "date": "2026-10-26T17:41:38Z",
+          "localizedDescription": "## What's Changed\n* Support Open WebUI 0.12.3 by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/850\n* Fix four reported bugs: Direct next to Hermes, MCP tool images, channel thread scrolling, default filters by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/870\n* fix/feat: Improve handling for video files in OpenWebUI/chat by @dalgibbard in https://github.com/cogwheel0/conduit/pull/869\n* Open the Android assistant on a ready new chat, and keep it after a reboot by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/872\n* Mark chats unread from the chat list and show web unread marks in the app by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/874\n* Share screenshots and Files documents to Conduit on iOS with their real contents by @cogwheel0 in https://github…",
+          "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.2/conduit.ipa",
+          "size": 45348117,
+          "buildVersion": "153",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "4.2.1",
+          "date": "2026-10-16T18:51:35Z",
+          "localizedDescription": "## What's Changed\n* Support Open WebUI 0.12.2 by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/847\n* Let the speaker button work from the start of Android voice calls by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/849\n\n\n**Full Changelog**: https://github.com/cogwheel0/conduit/compare/v4.2.0...v4.2.1",
+          "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.1/conduit.ipa",
+          "size": 45123011
+        },
+        {
+          "version": "4.2.0",
+          "date": "2026-10-13T06:42:19Z",
+          "localizedDescription": "## What's Changed\n* Add Open WebUI client parity and Advanced UI controls by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/807\n* Make everyday Open WebUI features available without Advanced and polish the new screens by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/808\n* CI: run steps in parallel, cache Gradle, and trim setup by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/810\n* Add Flutter control facades and a narrow platform UI vocabulary (1/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/811\n* Enforce the platform UI seam with a shrinking allow-list (2/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/812\n* Route settings selection controls through platform UI (3/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/813\n*…",
+          "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.0/conduit.ipa",
+          "size": 45085120
+        }
+      ]
+    },
+    {
+      "name": "EhPanda",
+      "bundleIdentifier": "app.ehpanda",
+      "developerName": "EhPanda-Team",
+      "subtitle": "SwiftUI + TCA 的 E-Hentai 客户端",
+      "localizedDescription": "An unofficial E-Hentai App for iOS built with SwiftUI & TCA.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.ehpanda.png?v=aeb2413f9c17",
+      "tintColor": "#56b297",
+      "size": 19041995,
+      "versions": [
+        {
+          "version": "3.0.0",
+          "date": "2026-08-20T02:37:46Z",
+          "localizedDescription": "## Features\r\n\r\n- **Offline downloads.** Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- **Date Seek.** Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- **WebP images** are now supported.\r\n- **Redesigned toasts.** Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\n\r\n## Bugfixes\r\n\r\n- The page slider and the current page no longer drift out of sync\r\n- Fixed a gesture problem in the reading control panel…",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda.ipa",
+          "size": 19041995,
+          "buildVersion": "158",
+          "minOSVersion": "27.0"
+        },
+        {
+          "version": "2.8.1",
+          "date": "2026-07-20T12:12:04Z",
+          "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
+          "size": 7352364
+        },
+        {
+          "version": "2.7.10",
+          "date": "2024-12-21T03:22:53Z",
+          "localizedDescription": "1. Fixed reading page scroll functionality.",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
+          "size": 7231227
+        }
+      ]
+    },
+    {
+      "name": "Floe Agent",
+      "bundleIdentifier": "org.floeagent.ios",
+      "developerName": "JiangNanGenius",
+      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
+      "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
+      "tintColor": "#1662df",
+      "size": 821389309,
+      "versions": [
+        {
+          "version": "1.7.74",
+          "date": "2026-11-05T11:28:33Z",
+          "localizedDescription": "# Floe Agent 1.7.74 (315)\n\n## 简体中文\n\n- 优化本机运行环境的任务调度，减少计算过程中的线程交接和重复唤醒。\n- 修复部分技能处理符号链接文件失败的问题，保留目录访问边界和只读保护。\n- 修正助手读取 Office 页面时图像上下颠倒的问题。\n- 保留现有项目文件、已安装依赖和运行环境，无需重新下载或重置。\n\n## English\n\n- Optimized local runtime scheduling to reduce worker handoffs and redundant wakeups during computation.\n- Fixed symbolic-link file operations used by some skills while retaining directory containment and read-only protection.\n- Corrected vertically flipped Office page images sent to the assistant.\n- Preserves existing project files, installed dependencies and the runtime without downloading or resetting the environment.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.74/Floe-Agent-1.7.74-build315-unsigned.ipa",
+          "size": 821389309,
+          "buildVersion": "315",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.7.73",
+          "date": "2026-11-05T07:53:38Z",
+          "localizedDescription": "# Floe Agent 1.7.73 (314)\n\n## 简体中文\n\n- 修复重新打开 App 后，已有任务的本机运行环境被误判为不可用、执行工具消失的问题。\n- 恢复原来的运行位置、文件和已安装依赖，无需重新保存设置、重建任务或重置环境。\n- 保留运行位置身份及重建校验；真正不可用的环境仍会如实提示。\n\n## English\n\n- Fixed saved tasks incorrectly losing their local execution tools after reopening the App.\n- Restores the existing execution location, files and installed dependencies without re-saving settings, recreating the task or resetting the environment.\n- Retains execution identity and rebuild checks, and reports genuinely unavailable environments.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the work…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.73/Floe-Agent-1.7.73-build314-unsigned.ipa",
+          "size": 821388350
+        },
+        {
+          "version": "1.7.72",
+          "date": "2026-11-05T06:25:49Z",
+          "localizedDescription": "# Floe Agent 1.7.72 (313)\n\n## 简体中文\n\n- 修复点击停止后，文字和思考内容仍继续显示的问题。\n- 修复任务文件区将 `.floecad` 当作文件夹展开的问题，可直接进入原生 3D 工作台。\n- 长按自己发送的文字或助手回复可使用系统选区和复制；聊天查找保留在会话菜单中。\n- 补齐共享 Linux 的整机关机、重启及占用查看，支持运行会话互发协调消息。默认保留其他任务正在进行的工作。\n- 环境没有待恢复的损坏时，“修复”如实返回无需修复，不重置文件或依赖。改核心数沿用在线调整，不再被旧提示引导为重启。\n- 通用设置新增实体键盘回车选项，可选择换行或发送；发送模式下 Shift＋回车换行。\n\n## English\n\n- Fixed text and reasoning continuing to animate after Stop.\n- Fixed `.floecad` packages expanding as folders in task files. Open them directly in the native 3D workbench.\n- Long-press user messages or assistant replies for system text selection and copying. Find in Chat remains in the conversation menu.\n- Added shared Linux machine shutdown, restart and occupancy inspection, with coordination messages between live tasks. Other active work is preserved by default.\n- Re…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.7.72/Floe-Agent-1.7.72-build313-unsigned.ipa",
+          "size": 821386511
+        }
+      ]
+    },
+    {
+      "name": "FluxDO",
+      "bundleIdentifier": "com.github.lingyan000.fluxdo",
+      "developerName": "Lingyan000",
+      "subtitle": "Linux.do 论坛第三方客户端",
+      "localizedDescription": "一个 Linux.do 第三方客户端",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.lingyan000.fluxdo.png?v=2069ea0effe2",
+      "tintColor": "#f5b018",
+      "size": 55505719,
+      "versions": [
+        {
+          "version": "0.2.29",
+          "date": "2026-10-20T08:49:53Z",
+          "localizedDescription": "这一版重点打磨了发帖与回复：编辑工具更顺手，草稿保存和附件上传的状态也更清楚。话题列表可按需展示摘要与图片，树形阅读支持续读，底栏和编辑工具栏则换上了新的玻璃质感。\n\n### ✍️ 更顺手的编辑体验\n\n- 发帖、编辑和回复的工具栏重新整理，支持切换富文本、源码和预览。手机上收起键盘后仍可使用工具，展开面板查找功能，也能搜索全部工具、挑选常用项。\n- 富文本编辑器仍为「实验性」功能。这次完善了文字选择、光标移动、链接编辑和图片操作，减少切换视图时失败、编辑链接后光标位置异常等问题。\n- 输入斜杠可查找要插入的内容；图片、引用、代码块等内容的操作入口也更统一。图片网格可以继续添加图片，并单独操作其中一张。\n- 手机端新增表格行列操作面板，点选单元格后即可插入或删除行列。编辑表格时会调整滚动位置，减少输入区域被键盘挡住的情况。\n\n### 📝 草稿保存更安心\n\n- 草稿会明确显示待保存、保存中、已保存或失败；只存到本机、尚未同步到云端时，也有单独提示。\n- 多设备修改同一份草稿发生冲突时，可以选择使用云端版本或用本机内容覆盖云端，取消则继续保留本机内容。\n- 修复云端草稿恢复、多设备同步和展开编辑器后自动保存的问题，也修复了舍弃草稿后旧内容又被重新保存、长草稿恢复时编辑区偶现空白的情况。\n\n### 📤 附件上传与视频压缩\n\n- 发帖、回复和聊天中的附件现在都有更清楚的任务状态，可以查看准备、上传和处理进度，失败后重试，也能取消或移除。\n- 富文本中的上传图片会在正文位置显示预览和状态，减少重复提示；还有附件未完成或失败时，会提示先处理再发布。\n- 超限音视频按社区允许的附件大小进行压缩。视频可选择「兼容优先」「录屏清晰优先」或「体积优先」；未超限的文件保留原文件。\n- 支持社区开启的分片上传，并修复空草稿选图后无法上传、部分上传创建失败和聊天图片处理不一致的问题。\n\n### 📖 列…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.29/fluxdo-unsigned.ipa",
+          "size": 55505719,
+          "buildVersion": "2026102016",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.2.28",
+          "date": "2026-09-04T14:08:17Z",
+          "localizedDescription": "这一版重点补齐了多人私信的成员管理，也重新梳理了下载、保存和导出的整套体验。表情包市场更好找、更快打开，弱网看图、Mac 粘贴和反复验证等实际问题也得到修复。\n\n### 💌 多人私信\n\n- 多人私信现在会展示全部成员和群组，长对话在首楼和帖子流底部都能方便查看。\n- 可以继续邀请用户或群组加入；新建私信时，原本预填的收件人也可以自由增删。\n- 有权限的管理者可以移除成员或群组，参与者也可以主动退出。成员变动会及时反映在当前会话中，被移出的用户会自动离开该私信页面。\n- 私信可以从更多菜单归档，之后也能移回收件箱；其他设备上的归档变化会同步过来。\n- 成员标签统一为更紧凑的单行样式，点击用户即可打开资料卡片，查看信息或继续互动。\n\n### 📤 下载、保存与导出\n\n- 导出文章的面板重新整理为「范围、文件格式、去向」三部分。选好后可以直接保存、另存为、分享或发送到 Notion，执行进度会显示在对应选项旁。\n- Android 可以把文章直接保存到公共下载目录；iPhone 和 iPad 改用系统文件导出面板，导出楼层很多的长文章时也更省内存、更稳定。\n- 下载列表新增长按菜单，可以按当前平台选择打开、保存到文件、另存为、分享或删除，不必再到应用目录里找文件。\n- 导出历史也有了长按菜单，可打开文件或所在文件夹、在浏览器中打开、再次分享，或者只删除这条记录。\n- 正文图片的长按或右键菜单新增「保存图片」。移动端保存到相册，桌面端选择保存位置，Linux 上不再错误提示相册权限。\n- 备份文件现在只保存到本地，避免误分享到聊天软件；日志则明确拆成「保存」和「分享」。分享、导出产生的临时文件会定期自动清理。\n\n### 😀 表情包市场\n\n- 表情包市场支持按分类浏览和按名称搜索，找表情包不再需要从完整列表一路翻下去。\n- 搜索会先给出已经加载的结果，再自动补齐当前分类；快速切换分类或…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.28/fluxdo-unsigned.ipa",
+          "size": 54824957
+        },
+        {
+          "version": "0.2.27",
+          "date": "2026-08-21T07:40:24Z",
+          "localizedDescription": "这一版重点在两处:长按、放大、返回这些动作的观感重做了一轮,外观能改的地方多了不少。另外新增加解密工具箱和话题目录。\n\n### 🎨 外观\n\n- 主题色新增六套配色:默认、湖蓝、海洋、樱花、春、秋。\n- 「中性」开关:界面表面不再被主题色染色。\n- 「纯黑」开关:深色模式下用真黑背景,AMOLED 屏更省电。\n- 可以设置背景图片,配合「透明」表面质感透出背景,遮罩浓淡和模糊程度可调。\n- 底栏新增三个开关:只留图标、悬浮胶囊、毛玻璃。\n\n### 🔍 长按预览\n\n- 长按话题卡片的预览换了样式,打开和收起都比以前连贯。\n- 预览里的分类和标签可以直接点进去。\n- 预览打开更快,大多数时候不用等加载。\n- 搜索结果、话题内搜索的卡片也能长按预览了。\n\n### 🖼️ 图片\n\n- 长按正文图片会浮起预览和一排操作。\n- 放大之后直接返回,不再中途跳一下才回到原位。\n- 修了返回时的黑闪,以及轮播图、聊天图片被裁切。\n\n### 🔐 加解密工具箱\n\n- 选中疑似密文的内容,工具栏出现「解密」,面板自动识别算法,解出来可复制或引用回复。\n- 编辑器里选中内容点钥匙按钮即加密插回,富文本模式在「+」菜单。\n- 算法覆盖 AES、3DES、ChaCha20 等对称算法,Base64/Hex/ROT13 编码,MD5/SHA/SM3 哈希,RSA,以及凯撒、维吉尼亚、栅栏、摩斯。与 openssl 命令行生成的密文互通。\n- 密文识别认 Base32、折行 Base64、带冒号或短横的 Hex;可选记住密码,功能设置里一键清除。\n\n### 📑 话题目录\n\n- 长帖会生成目录,宽屏在右侧,窄屏收在右下角按钮里。\n- 滚动时当前小节自动高亮,点一下跳过去。\n- Markdown 工具栏新增「插入目录」。\n\n### 🛡️ 过盾与网络\n\n- 修了验证通过后又被反复要求验证。\n- 「切换兼容模式」的询问…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.27/fluxdo-unsigned.ipa",
+          "size": 54730095
+        }
+      ]
+    },
+    {
+      "name": "Gopeed",
+      "bundleIdentifier": "com.gopeed.gopeed",
+      "developerName": "GopeedLab",
+      "subtitle": "现代下载管理器，HTTP / BT / 磁力",
+      "localizedDescription": "A fast, modern download manager for HTTP, BitTorrent, Magnet, and ed2k. Cross-platform, built with Golang and Flutter.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.gopeed.gopeed.png?v=3337369c0bbd",
+      "tintColor": "#5acb6a",
+      "size": 40979942,
+      "versions": [
+        {
+          "version": "2.0.0-beta.4",
+          "date": "2026-11-03T01:51:29Z",
+          "localizedDescription": "<table>\r\n  <tbody>\r\n    <tr>\r\n      <td rowspan=\"4\">🪟 Windows</td>\r\n      <td rowspan=\"2\"><code>EXE</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.4-windows-amd64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.4-windows-arm64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"2\"><code>Portable</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.4-windows-amd64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.4-windows-arm64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"…",
+          "downloadURL": "https://github.com/GopeedLab/gopeed/releases/download/v2.0.0-beta.4/Gopeed-v2.0.0-beta.4-ios.ipa",
+          "size": 40979942,
+          "buildVersion": "4",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.0.0-beta.3",
+          "date": "2026-09-18T16:07:39Z",
+          "localizedDescription": "<table>\r\n  <tbody>\r\n    <tr>\r\n      <td rowspan=\"4\">🪟 Windows</td>\r\n      <td rowspan=\"2\"><code>EXE</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.3-windows-amd64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.3-windows-arm64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"2\"><code>Portable</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.3-windows-amd64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.3-windows-arm64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"…",
+          "downloadURL": "https://github.com/GopeedLab/gopeed/releases/download/v2.0.0-beta.3/Gopeed-v2.0.0-beta.3-ios.ipa",
+          "size": 40548283
+        },
+        {
+          "version": "2.0.0-beta.2",
+          "date": "2026-09-11T00:55:14Z",
+          "localizedDescription": "<table>\r\n  <tbody>\r\n    <tr>\r\n      <td rowspan=\"4\">🪟 Windows</td>\r\n      <td rowspan=\"2\"><code>EXE</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.2-windows-amd64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.2-windows-arm64.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"2\"><code>Portable</code></td>\r\n      <td>amd64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.2-windows-amd64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td>arm64</td>\r\n      <td><a href=\"https://gopeed.com/api/download?tpl=Gopeed-v2.0.0-beta.2-windows-arm64-portable.zip\">📥</a></td>\r\n    </tr>\r\n    <tr>\r\n      <td rowspan=\"…",
+          "downloadURL": "https://github.com/GopeedLab/gopeed/releases/download/v2.0.0-beta.2/Gopeed-v2.0.0-beta.2-ios.ipa",
+          "size": 31500464
+        }
+      ]
+    },
+    {
+      "name": "Hackers",
+      "bundleIdentifier": "com.weiranzhang.Hackers",
+      "developerName": "weiran",
+      "subtitle": "SwiftUI 写的 Hacker News 阅读器",
+      "localizedDescription": "Hackers is an elegant iOS app for reading Hacker News written in Swift.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.weiranzhang.Hackers.png?v=41bc9a046e0c",
+      "tintColor": "#b24084",
+      "size": 8938581,
+      "versions": [
+        {
+          "version": "5.6.0+170",
+          "date": "2026-10-13T09:55:32Z",
+          "localizedDescription": "Support for iPhone Duo’s distinctive design.",
+          "downloadURL": "https://github.com/weiran/Hackers/releases/download/v5.6.0%2B170/Hackers.ipa",
+          "size": 8938581,
+          "buildVersion": "170",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "5.5.0+167",
+          "date": "2026-09-12T12:06:47Z",
+          "localizedDescription": "Rebuilt with the final Xcode 27 SDK so 5.5.0 can ship on the App Store. Comment composer refresh: the composer now lives in a bottom bar, keeps your draft when you switch reply targets, and new replies appear first in comment threads.",
+          "downloadURL": "https://github.com/weiran/Hackers/releases/download/v5.5.0%2B167/Hackers.ipa",
+          "size": 8870580
+        }
+      ]
+    },
+    {
+      "name": "Husk",
+      "bundleIdentifier": "com.husk.app",
+      "developerName": "Leviidev",
+      "subtitle": "在 iOS 上原生 / 模拟运行 Android",
+      "localizedDescription": "Run Android on iOS. Natively or Emulated.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.husk.app.png?v=031135c03c54",
+      "tintColor": "#4a35f3",
+      "size": 142303569,
+      "versions": [
+        {
+          "version": "3.4",
+          "date": "2026-11-05T03:33:53Z",
+          "localizedDescription": "## What's new?\n\n3.4 is a compatibility release. About 97% of the 472 F-Droid apps we test now run, up from 85%. On the 169 Play Store apps we test, about 90% run, not counting apps with anti-tamper or fraud protection, which Husk doesn't try to bypass. All of these numbers are from testing on a Mac.\n\n### More Android apps\n- Microsoft Word opens (Excel and PowerPoint share its libraries)\n- Slack, Gmail, Teams, Deezer, Flipboard and Picsart get past the crashes that stopped them\n- More engines and frameworks start: React Native's new architecture, Qt 6 / QML, and apps using JavaScriptCore\n- libGDX and other OpenGL apps draw again (3.3 broke these)\n- Apps that keep secrets in Android's secure key store work better\n- Apps with big bundled databases open\n- UPnP and network discovery apps can st…",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.4/Husk.ipa",
+          "size": 142303569,
+          "buildVersion": "149",
+          "minOSVersion": "15.5"
+        },
+        {
+          "version": "3.3",
+          "date": "2026-11-01T01:43:51Z",
+          "localizedDescription": "## Play without JIT\nMore games convert and sign their libraries on the device. One library that cannot convert no longer stops the rest. Certificates from SideStore, AltStore, or a `.p12` import more reliably, and converted libraries are signed again after this update.\n\n## More Android apps\nJava apps pick up missing platform classes from AOSP when `framework.jar` is bundled. Jobs and boot receivers actually start, and Wi-Fi, location, and settings answer as a running phone would.\n\n## Importing files\nThe in-app file picker for Android apps can be used more than once in a session.\n\n## 32-bit ARM apps\nAPKs that only ship `armeabi-v7a` libraries are translated to arm64. This path is still incomplete (Minecraft PE is the current test case).\n\n## Fixes\nCertificate import, leftover store passwords…",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.3/Husk.ipa",
+          "size": 142239082
+        },
+        {
+          "version": "3.2.1",
+          "date": "2026-10-31T02:58:46Z",
+          "localizedDescription": "Fixed certificate importing bug for 3.2 JIT-less",
+          "downloadURL": "https://github.com/Leviidev/Husk/releases/download/3.2.1/Husk.ipa",
+          "size": 140697147
+        }
+      ]
+    },
+    {
+      "name": "iSH",
+      "bundleIdentifier": "app.ish.iSH",
+      "developerName": "ish-app",
+      "subtitle": "iOS 上的 Linux shell（Alpine）",
+      "localizedDescription": "Linux shell for iOS",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.ish.iSH.png?v=1160326afa2e",
+      "tintColor": "#6156e2",
+      "size": 4602446,
+      "versions": [
+        {
+          "version": "builds/813",
+          "date": "2026-08-22T06:20:14Z",
+          "localizedDescription": "Automated daily build",
+          "downloadURL": "https://github.com/ish-app/ish/releases/download/builds/813/iSH.ipa",
+          "size": 4602446,
+          "buildVersion": "813",
+          "minOSVersion": "11.0"
+        },
+        {
+          "version": "builds/812",
+          "date": "2026-07-27T07:29:21Z",
+          "localizedDescription": "Automated daily build",
+          "downloadURL": "https://github.com/ish-app/ish/releases/download/builds/812/iSH.ipa",
+          "size": 4596003
+        },
+        {
+          "version": "builds/811",
+          "date": "2026-07-18T06:54:56Z",
+          "localizedDescription": "Automated daily build",
+          "downloadURL": "https://github.com/ish-app/ish/releases/download/builds/811/iSH.ipa",
+          "size": 4595946
+        }
+      ]
+    },
+    {
+      "name": "Jellify",
+      "bundleIdentifier": "com.cosmonautical.jellify",
+      "developerName": "Jellify-Music",
+      "subtitle": "Jellyfin 音乐播放器",
+      "localizedDescription": "A cross-platform, free and open source music player for Jellyfin, powered by React Native",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=4574c38b4ade",
+      "tintColor": "#14b4cc",
+      "size": 37133055,
+      "versions": [
+        {
+          "version": "1.3.1",
+          "date": "2026-10-29T20:17:21Z",
+          "localizedDescription": "Welcome to Jellify 1.3.1\r\n\r\nWe’ve polished up the whole experience this week, bringing some snappy performance fixes and useful new management tools to your library. Everything feels smoother, faster, and more intuitive than ever!\r\n\r\n*   Audio Quality Upgrade: We fixed how Jellify streams AAC files on Android, so your music now streams as-is without needing unnecessary transcoding. Enjoy cleaner, more consistent audio quality across the board!\r\n*   UI Polish: The underlying design library was upgraded - giving us an opportunity to comb through the app to make styling more consistent, animations more stable, and the overall feel to be more cohesive \r\n*   Smarter Filtering and Flow: We’ve significantly improved the filtering component and made some quality-of-life updates to components like …",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.1/Jellify-1.3.1.ipa",
+          "size": 37133055,
+          "buildVersion": "167",
+          "minOSVersion": "16.4"
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-10-17T02:21:39Z",
+          "localizedDescription": "Welcome to Jellify 1.3.0\n\nHey music lovers! We've packed this update with some really sweet fixes and major stability improvements to make sure your playlist keeps going strong wherever you are. Grab your headphones and get ready to stream!\n\n*   **Improved Car Experience:** We've made some great updates for Android Auto users, giving you server-backed browsing and a much smoother experience when resuming playback in your car.\n*   **Flawless Playback:** We tackled some lingering glitches, including better buffering and fixes to the main player screen. Now your music should stream more reliably, even when switching between tracks or listening on the go.\n*   **Enhanced Stability on All Platforms:** This update includes better organization for music albums and fixes a small issue on iOS where …",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.0/Jellify-1.3.0.ipa",
+          "size": 41451346
+        },
+        {
+          "version": "1.2.11",
+          "date": "2026-10-05T10:23:55Z",
+          "localizedDescription": "Welcome to Jellify 1.2.11\n\nWe are bringing you a highly stable update focused on fixing key areas related to playback and library integration. This release smooths out common glitches, ensuring your music streams and playlists look perfect no matter what device or Jellyfin version you are using.\n\n*   **Playlist Visibility Fixed:** We corrected an issue that caused playlists to fail to display correctly when using certain versions of Jellyfin (specifically version 12). Your comprehensive music library should now be fully accessible and visible across your connected accounts.\n*   **Improved Shuffle Playback:** We addressed a regression in the music shuffling system. Enjoy continuous, uninterrupted listening experiences, knowing that your random playlist order is always stable and reliable.\n*…",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.2.11/Jellify-1.2.11.ipa",
+          "size": 41199026
+        }
+      ]
+    },
+    {
+      "name": "JHenTai",
+      "bundleIdentifier": "top.jtmonster.jhentai",
+      "developerName": "jiangtian616",
+      "subtitle": "e-hentai / exhentai 跨平台漫画客户端",
+      "localizedDescription": "A cross-platform manga app made for e-hentai & exhentai by Flutter",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/top.jtmonster.jhentai.png?v=c2fc5d391b61",
+      "tintColor": "#ebeb18",
+      "size": 13027008,
+      "versions": [
+        {
+          "version": "8.0.18",
+          "date": "2026-10-23T15:40:51Z",
+          "localizedDescription": "- 修复解锁归档时出现卡解析Ⅰ的异常问题\r\n\r\n--------------------\r\n\r\n- Fix the bug that caused a parsing error I when unlocking archives.",
+          "downloadURL": "https://github.com/jiangtian616/JHenTai/releases/download/v8.0.18/JHenTai_8.0.18%2B344.ipa",
+          "size": 13027008,
+          "buildVersion": "344",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "8.0.17+339",
+          "date": "2026-10-21T15:13:16Z",
+          "localizedDescription": "- 修复解锁归档等操作时出现403的异常问题\n- 优化阅读页滚动时的手势识别\n\n--------------------\n\n- Fix the bug that caused a 403 error when unlocking archives and performing other operations.\n- Optimize gesture recognition when scrolling on the reading page.",
+          "downloadURL": "https://github.com/jiangtian616/JHenTai/releases/download/v8.0.17%2B339/JHenTai_8.0.17%2B338.ipa",
+          "size": 13025995
+        },
+        {
+          "version": "8.0.16+334",
+          "date": "2026-09-09T13:55:14Z",
+          "localizedDescription": "- 优化在RTL阅读方向下对点击区域动作的语义处理 #825 \r\n- 修复恢复部分长标题画廊任务时标题读取错误的bug @snownico0722 \r\n- 降低详情页预载图片的数量 @sanxi33 \r\n\r\n--------------------\r\n\r\n- Fix the bug where modifying network settings did not update the UI",
+          "downloadURL": "https://github.com/jiangtian616/JHenTai/releases/download/v8.0.16%2B334/JHenTai_8.0.16%2B334.ipa",
+          "size": 13025015
+        }
+      ]
+    },
+    {
+      "name": "Kazumi",
+      "bundleIdentifier": "com.example.kazumi",
+      "developerName": "Predidit",
+      "subtitle": "规则驱动的番剧采集与在线播放，支持弹幕、超分",
+      "localizedDescription": "基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕，支持实时超分辨率。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.kazumi.png?v=e1e18b5bfdc4",
+      "tintColor": "#b1e572",
+      "size": 30439714,
+      "versions": [
+        {
+          "version": "2.4.3",
+          "date": "2026-11-04T12:12:33Z",
+          "localizedDescription": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
+          "size": 30439714,
+          "buildVersion": "20403",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.4.2",
+          "date": "2026-10-23T09:43:33Z",
+          "localizedDescription": "- 修复部分地区规则仓库无法访问的问题",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
+          "size": 30521004
+        },
+        {
+          "version": "2.4.1",
+          "date": "2026-10-22T15:04:45Z",
+          "localizedDescription": "- 修复规则镜像在部分地区无法访问的问题 (#2747 #2748) (@Predidit)\r\n- 修复 linux 平台 deeplink 无法使用的问题 (@Tobiichi-Origuchi)\r\n> [!NOTE]\r\n> 这是 2.4.0 的热修复版本，更多更新日志参考 2.4.0",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.1/Kazumi_ios_2.4.1_no_sign.ipa",
+          "size": 30514613
+        }
+      ]
+    },
+    {
+      "name": "Kelivo",
+      "bundleIdentifier": "psyche.kelivo",
+      "developerName": "Chevey339",
+      "subtitle": "Flutter 跨平台 LLM 聊天客户端",
+      "localizedDescription": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/psyche.kelivo.png?v=752ceed4b0bc",
+      "tintColor": "#b27545",
+      "size": 46627606,
+      "versions": [
+        {
+          "version": "1.3.4",
+          "date": "2026-11-02T15:08:16Z",
+          "localizedDescription": "## What's Changed\r\n\r\nThis maintenance release focuses on message-saving stability and platform interaction fixes.\r\n\r\n- **Message-saving stability:** Fix an AOT compiler issue that could terminate the process when sending messages, regenerating replies, or saving edits to message history. Resolve checkpoint compatibility before the write loop while retaining incremental writes for changed message parts. This covers the persistence path used when saving an edit that removes images. (#1342)\r\n- **Android text selection:** Keep the editor's selection menu available after Select All so subsequent actions remain accessible. Retire replaced selection sessions before actions can use callbacks from an outdated selection. (#1343)\r\n- **iOS Live Activities:** Use the system background for the Lock Scre…",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.4/Kelivo_ios_1.3.4%2B84.ipa",
+          "size": 46627606,
+          "buildVersion": "84",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.3.3",
+          "date": "2026-11-02T06:55:29Z",
+          "localizedDescription": "## What's Changed\n\n- feat: Add a desktop side panel that keeps files, topics, and browser tabs together for each conversation, with shortcuts.\n- feat: Adapt desktop layouts down to a 360px-wide window.\n- feat: Add isolated workspace web apps. A `.app.html` file keeps its own saved data and cookies, separate from normal browsing.\n- feat: Bound how many images stay in context. Older tool screenshots can be omitted automatically, pinned images stay, and an omitted image can be attached again.\n- feat: Quote selected message text into the composer, jump back to the source, and translate the selection in the app.\n- feat: Copy an assistant in full, or choose memories, phrases, world books, skills, tools, and the default workspace.\n- feat: Let each conversation choose its own MCP servers, or keep …",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.3/Kelivo_ios_1.3.3%2B83.ipa",
+          "size": 46628767
+        },
+        {
+          "version": "1.3.2",
+          "date": "2026-10-26T14:49:14Z",
+          "localizedDescription": "## What's Changed\r\n\r\n- feat: Rebuild Markdown rendering, with GitHub alerts, directive cards, inline HTML, themed highlights, math, and bounded SVG.\r\n- feat: Copy a message as Markdown, and copy a selection as rich HTML.\r\n- feat: Add an integrated browser with tabs, bookmarks, history, downloads, and agent browser tools. Browser steps appear as page cards on the timeline, with workspace page previews.\r\n- feat: Add IntelligentUI, including layouts, forms, charts, tables, and restricted web previews, with a built-in visualize skill.\r\n- feat: Add reversible context management. Compress a chat into an editable summary or mark a context boundary, then undo either one. Original messages are kept.\r\n- feat: Add per-conversation tool permissions, with ask-for-approval and full access.\r\n- feat: Add …",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.2/Kelivo_ios_1.3.2%2B81.ipa",
+          "size": 46210644
+        }
+      ]
+    },
+    {
+      "name": "Ketch",
+      "bundleIdentifier": "com.linroid.ketch.app",
+      "developerName": "linroid",
+      "subtitle": "跨平台开源下载管理器",
+      "localizedDescription": "A fast, open-source download manager for every device you own.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.linroid.ketch.app.png?v=0757d3398120",
+      "tintColor": "#f37f46",
+      "size": 29659453,
+      "versions": [
+        {
+          "version": "0.10.2",
+          "date": "2026-10-29T11:59:41Z",
+          "localizedDescription": "## Get Ketch\n\nPick your device below. Desktop apps include everything they need to run.\n\n| Your device | Download | Package |\n| --- | --- | --- |\n| **macOS** | [Apple silicon][download-1] · [Intel][download-2] | DMG |\n| **Windows** | [Intel / AMD (x64)][download-3] · [ARM64][download-4] | MSI installer |\n| Windows · portable | [Intel / AMD (x64)][download-5] · [ARM64][download-6] | ZIP · no installation |\n| **Linux** · Debian / Ubuntu | [Intel / AMD (x64)][download-7] · [ARM64][download-8] | DEB |\n| **Android** · 8.0+ | [Universal][download-9] | APK |\n| **iPhone / iPad** · iOS 15+ | [Unsigned][download-10] | IPA · sideload |\n\nApple silicon covers M-series Macs. On Windows, choose Intel / AMD for most PCs,\nor ARM64 for devices with processors such as Snapdragon.\n\n**Already using Ketch?** Ch…",
+          "downloadURL": "https://github.com/linroid/Ketch/releases/download/v0.10.2/ketch-ios-0.10.2.ipa",
+          "size": 29659453,
+          "buildVersion": "63",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.10.1",
+          "date": "2026-10-20T10:26:25Z",
+          "localizedDescription": "## Get Ketch\n\nPick your device below. Desktop apps include everything they need to run.\n\n| Your device | Download | Package |\n| --- | --- | --- |\n| **macOS** | [Apple silicon][download-1] · [Intel][download-2] | DMG |\n| **Windows** | [Intel / AMD (x64)][download-3] · [ARM64][download-4] | MSI installer |\n| Windows · portable | [Intel / AMD (x64)][download-5] · [ARM64][download-6] | ZIP · no installation |\n| **Linux** · Debian / Ubuntu | [Intel / AMD (x64)][download-7] · [ARM64][download-8] | DEB |\n| **Android** · 8.0+ | [Universal][download-9] | APK |\n| **iPhone / iPad** · iOS 15+ | [Unsigned][download-10] | IPA · sideload |\n\nApple silicon covers M-series Macs. On Windows, choose Intel / AMD for most PCs,\nor ARM64 for devices with processors such as Snapdragon.\n\n**Already using Ketch?** Ch…",
+          "downloadURL": "https://github.com/linroid/Ketch/releases/download/v0.10.1/ketch-ios-0.10.1.ipa",
+          "size": 29472210
+        },
+        {
+          "version": "0.10.0",
+          "date": "2026-10-18T10:07:40Z",
+          "localizedDescription": "## Get Ketch\n\nPick your device below. Desktop apps include everything they need to run.\n\n| Your device | Download | Package |\n| --- | --- | --- |\n| **macOS** | [Apple silicon][download-1] · [Intel][download-2] | DMG |\n| **Windows** | [Intel / AMD (x64)][download-3] · [ARM64][download-4] | MSI installer |\n| Windows · portable | [Intel / AMD (x64)][download-5] · [ARM64][download-6] | ZIP · no installation |\n| **Linux** · Debian / Ubuntu | [Intel / AMD (x64)][download-7] · [ARM64][download-8] | DEB |\n| **Android** · 8.0+ | [Universal][download-9] | APK |\n| **iPhone / iPad** · iOS 15+ | [Unsigned][download-10] | IPA · sideload |\n\nApple silicon covers M-series Macs. On Windows, choose Intel / AMD for most PCs,\nor ARM64 for devices with processors such as Snapdragon.\n\n**Already using Ketch?** Ch…",
+          "downloadURL": "https://github.com/linroid/Ketch/releases/download/v0.10.0/ketch-ios-0.10.0.ipa",
+          "size": 29466091
+        }
+      ]
+    },
+    {
+      "name": "Kumone",
+      "bundleIdentifier": "sb.moe.kumone-ios",
+      "developerName": "missuo",
+      "subtitle": "SwiftUI 原生音乐播放器「雲の音」",
+      "localizedDescription": "雲の音 — A native music player for macOS and iOS, built with SwiftUI",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/sb.moe.kumone-ios.png?v=e0c37a6f19b7",
+      "tintColor": "#df3e34",
+      "size": 4037666,
+      "versions": [
+        {
+          "version": "0.3.28",
+          "date": "2026-11-04T13:13:45Z",
+          "localizedDescription": "### Improved\n\n- **macOS**: the bundle identifier is now `sb.moe.kumone`. After updating, settings and caches start fresh, the first-launch check appears once more, the iCloud sync passphrase has to be entered again and system permissions (such as notifications) need granting again; sign-in and offline downloads carry over.\n- **iOS**: the bundle identifier is now `sb.moe.kumone-ios`. AltStore and other sideloading tools install it as a separate app; once it is set up, the old one can be deleted.\n\n---\n\n### 改进\n\n- **macOS**：bundle ID 改为 `sb.moe.kumone`。更新后设置和缓存会重置，需要再做一次首次启动验证、重新输入 iCloud 同步口令，并重新授予通知等系统权限；登录状态和离线下载保留。\n- **iOS**：bundle ID 改为 `sb.moe.kumone-ios`。AltStore 等侧载工具会把它装成一个新的 App，设置好之后可以删除旧版。",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.28/Kumone-iOS-0.3.28.ipa",
+          "size": 4037666,
+          "buildVersion": "391",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.3.27",
+          "date": "2026-11-04T12:39:48Z",
+          "localizedDescription": "### Added\n\n- **iOS + macOS**: a short first-launch check — answer two simple arithmetic questions to get started.\n\n### Improved\n\n- **iOS + macOS**: sign-in, recommendation and library screens no longer name a specific service — the QR sign-in now just says to scan with the official app.\n- **iOS**: the bundle identifier is `sb.moe.kumone` again.\n\n---\n\n### 新增\n\n- **iOS + macOS**：首次启动新增一个小验证——答对两道简单的算术题即可开始使用。\n\n### 改进\n\n- **iOS + macOS**：登录、推荐和资料库页面不再出现具体服务的名称，扫码登录改为提示用官方 App 扫码。\n- **iOS**：bundle ID 恢复为 `sb.moe.kumone`。",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.27/Kumone-iOS-0.3.27.ipa",
+          "size": 4037650
+        },
+        {
+          "version": "0.3.26",
+          "date": "2026-11-03T11:01:25Z",
+          "localizedDescription": "### Added\n\n- **macOS**: desktop lyrics now sing along — with 逐字歌词（卡拉OK） on, the floating line lights up character by character from the song's word timings, the same wipe as the now-playing page; it freezes while paused and keeps running with the main window hidden (#174).\n\n### Improved\n\n- **macOS**: the About window credits MOE AI LLC.\n\n---\n\n### 新增\n\n- **macOS**：桌面歌词支持逐字卡拉 OK——开启「逐字歌词（卡拉OK）」后，悬浮歌词按歌曲的逐字时间逐个亮起，与播放页同一套扫光；暂停时停住，主窗口隐藏时照常运行（#174）。\n\n### 改进\n\n- **macOS**：关于窗口的版权署名改为 MOE AI LLC。",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.26/Kumone-iOS-0.3.26.ipa",
+          "size": 4001101
+        }
+      ]
+    },
+    {
+      "name": "LinuxRunner",
+      "bundleIdentifier": "dev.linuxrunner.app",
+      "developerName": "mxhm11cr",
+      "subtitle": "在 iPhone/iPad 跑 ARM64 Linux 用户态与桌面程序",
+      "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=98b559ad0a87",
+      "tintColor": "#e79f17",
+      "size": 21513740,
+      "versions": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-01T21:53:14Z",
+          "localizedDescription": "# LinuxRunner 1.1.0 — Build 900\r\n\r\nLinuxRunner brings ARM64 Linux applications and desktop environments to iPhone and iPad without a jailbreak. Version 1.1.0 adds external-display workflows, a Metal-backed virtual GPU, more desktops and substantial runtime improvements.\r\n\r\n## What's New\r\n\r\n- **DeX Mode:** use a compatible external display with keyboard/mouse input or the iPhone's relative touchpad. USB-C/compatible adapters and AirPlay use iOS display support; a separate external scene enables independent phone controls.\r\n- **Metal GPU acceleration:** compatible guest Mesa/virgl workloads use virglrenderer, ANGLE and Apple Metal. Select **Settings → Graphics → Linux GPU Device → GPU → Metal GPU · Experimental**, fully restart the app, then check **Active renderer**. Automatic does not enab…",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.0/LinuxRunner-1.1.0-build900.ipa",
+          "size": 21513740,
+          "buildVersion": "900",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-10-27T07:30:48Z",
+          "localizedDescription": "# LinuxRunner v1.0.1\n\nLinux on your iPhone and iPad. This update adds iPad desktop adaptations, brings Arch Linux ARM into the setup workflow and improves package recovery and desktop sessions.\n\n## What's New\n\n- **iPad support:** window-aware desktop sizing, hardware-keyboard desktop shortcuts and the shared touch/pointer interface. Tested on a physical iPad.\n- **Arch Linux ARM:** install signed packages, use `pacman` and explore an experimental Openbox desktop with LXQt Panel and PCManFM-Qt.\n- **One setup workflow:** **Distributions → Set Up Linux…** installs a distribution or configures an existing environment while preserving its files and accounts.\n\nThe maintainer reports a working Arch graphical desktop and graphical application launches on a physical iPhone using **build 897**. Teleg…",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.0.1/LinuxRunner-1.0.1.ipa",
+          "size": 14646386
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-10-25T21:10:18Z",
+          "localizedDescription": "# LinuxRunner 1.0.0 \r\nLinux on your iPhone.\r\n\r\nLinuxRunner runs ARM64 Linux userspace applications and desktop environments on iOS through a custom ARM64 interpreter and Linux compatibility layer. **No jailbreak, virtual machine or JIT is required.**\r\n\r\n## What you can do\r\n\r\n- Install **Debian 13 ARM64** or use bundled **Alpine 3.24 ARM64**.\r\n- Use a Linux terminal, user accounts, `apt`, `apk`, compilers and scripting tools.\r\n- Open LinuxRunner Desktop or explore **KDE Plasma**.\r\n- Run desktop applications including Dolphin and Konsole, with browser and Blender compatibility depending on the application and workload.\r\n- Use Mesa software graphics and try experimental Metal acceleration for supported OpenGL paths.\r\n\r\n## Installation\r\n\r\n1. Download `LinuxRunner-1.0.0.ipa` from this release.\r…",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.0.0/LinuxRunner-1.0.0.ipa",
+          "size": 14496024
+        }
+      ]
+    },
+    {
+      "name": "Madeira",
+      "bundleIdentifier": "com.willfaust.madeora",
+      "developerName": "willfaust",
+      "subtitle": "用 FEX-Emu + Wine + DXMT 在 iOS 跑 x86 Windows 游戏",
+      "localizedDescription": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.willfaust.madeora.png?v=3e89e2ebc87a",
+      "tintColor": "#5d82bf",
+      "size": 186400561,
+      "versions": [
+        {
+          "version": "0.2.0",
+          "date": "2026-11-04T03:29:04Z",
+          "localizedDescription": "### New\n- **More stores.** Madeira has a new **GOG** section: sign in with GOG's own login page, see your library, download and update games with the DLC you own, verify and repair them, and play with Galaxy achievements and stats (Madeira stands in for GOG Galaxy). A new **EA app** section: sign in, see your library and download games without the EA app. A new **itch.io** store shows your itch.io games and free games, and downloads and installs them, .7z archives included. **Epic Games** now handles game downloads and cloud saves together.\n- **Store tabs.** With more than one store on the library page, a row of tabs at the top (All, Steam, Other, GOG, itch.io, Epic, EA) shows one store at a time. All is the page as before; the tab you pick is remembered.\n- **Steam:**\n  - DLC downloads wit…",
+          "downloadURL": "https://github.com/willfaust/Madeira/releases/download/v0.2.0/Madeira-0.2.0.ipa",
+          "size": 186400561,
+          "buildVersion": "5",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.1.3",
+          "date": "2026-10-03T16:49:54Z",
+          "localizedDescription": "### New\n- **In-app JIT: no StikDebug needed.** Madeira can enable JIT by itself through a bundled helper built on StikJIT. On iOS 27 it pairs with the iPhone it runs on: in Settings › Privacy & Security › Developer Mode, tap **Pair with Madeira** and enter the PIN Madeira shows. No computer needed. On iOS 26, import a pairing file instead. The pairing is kept in the Keychain. StikDebug still works. (#127)\n- **Play turns JIT on for you.** If JIT is off, Play enables it and then starts the game. The button reads **Starting JIT** meanwhile.\n- **Madeira JIT shortcut (iOS 27, optional).** LocalDevVPN's loopback does not work over cellular data. The shortcut connects LocalDevVPN, turns Cellular Data off when there is no Wi-Fi, and puts both back once the game has started, along with any VPN you …",
+          "downloadURL": "https://github.com/willfaust/Madeira/releases/download/v0.1.3/Madeira-0.1.3.ipa",
+          "size": 145554426
+        },
+        {
+          "version": "0.1.2",
+          "date": "2026-10-03T05:43:06Z",
+          "localizedDescription": "### Fixed\n- **Direct3D 9 and Direct3D 11 games run on iOS 26 again.** The graphics layer's built-in shader library was compiled for the newest Metal version (4.1), which only iOS 27 understands, so on iOS 26 every 64-bit D3D11 game and every 32-bit D3D9 and D3D11 game failed at start-up (\"This library is using language version 4.1 which is not supported on this OS\"). The library now targets Metal 3.1, which every supported iOS accepts. Affects v0.1.0 and v0.1.1. (#129)\n\n### Install\n- Requires **iOS 26 or later**.\n- The IPA is ad-hoc signed (no certificate) and carries the app's entitlements, including the increased memory limit. Sideload it with your own Apple ID (SideStore, AltStore, Sideloadly, Plume or similar), which signs it for your device.\n- Enable JIT with Madeira's **Enable JIT** …",
+          "downloadURL": "https://github.com/willfaust/Madeira/releases/download/v0.1.2/Madeira-0.1.2.ipa",
+          "size": 142471753
+        }
+      ]
+    },
+    {
+      "name": "Mangayomi",
+      "bundleIdentifier": "com.kodjodevf.mangayomi",
+      "developerName": "kodjodevf",
+      "subtitle": "漫画 / 小说 / 视频阅读器，支持扩展源",
+      "localizedDescription": "Free and open source application for reading manga, novels, and watching animes available on Android, iOS, macOS, Linux and Windows",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kodjodevf.mangayomi.png?v=3b7171face5d",
+      "tintColor": "#d61f2b",
+      "size": 115450399,
+      "versions": [
+        {
+          "version": "0.9.95",
+          "date": "2026-11-01T15:17:25Z",
+          "localizedDescription": "## Why 0.9.95 and not 1.0.0?\r\n\r\nThis release has almost everything planned for 1.0.0: a new design, a rebuilt player and hundreds of fixes. But so much has changed that it needs testing on more devices and libraries than we can cover ourselves.\r\n\r\nSo 0.9.95 is the last step before 1.0.0. The goal now is stability, not new features. If something breaks or looks wrong, please [open an issue](https://github.com/kodjodevf/mangayomi/issues) with your device and app version. 1.0.0 will come once this version has proven solid.\r\n\r\n## Highlights\r\n\r\n* **Shiori, a new design for the whole app:** every screen has been redrawn on one design system, with new navigation, transitions and an ergonomic pass throughout (#1077).\r\n* **A rebuilt video player:** new controls on phone, desktop and TV, plus video …",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa",
+          "size": 115450399,
+          "buildVersion": "128",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.9.9",
+          "date": "2026-10-12T15:52:14Z",
+          "localizedDescription": "## What's Changed\n* fix(extension): enable mobile code copy by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1039\n* fix(reader): restore double-tap zoom toggle by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1037\n* feat(player): add hold-and-slide speed selector by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1038\n* fix(http): drop the quotes Linux wraps the saved user agent in by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1036\n* fix(security): show what deep links install and keep tokens out of sh… by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1041\n* chore: await dropped writes, add guard lints, localize hardcoded strings by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1042\n* refactor: move the …",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.9/Mangayomi-v0.9.9-ios.ipa",
+          "size": 114603425
+        },
+        {
+          "version": "0.9.8",
+          "date": "2026-10-06T13:56:40Z",
+          "localizedDescription": "## What's Changed\r\n* fix(tracker): improve Trakt.tv multi-season mapping, watchlist, and ratings sync by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1024\r\n* feat(tracker): Add backlog sections (Plan to read/Watchlist), handle AniList 429 rate limits, and prioritize Trakt series by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1030\r\n* fix(mihon): use the Cloudflare proxy for extension-server sources by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1026\r\n* fix(mihon): identify which source of an extension a call is for by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1027\r\n* Improve LNReader extension compatibility\r\n* fix: stale chapter page lists and add WebP decoding on Linux by @MenaHere in https://github.com/kodjodevf/…",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.8/Mangayomi-v0.9.8-ios.ipa",
+          "size": 114518028
+        }
+      ]
+    },
+    {
+      "name": "Onion Browser",
+      "bundleIdentifier": "com.miketigas.OnionBrowser",
+      "developerName": "OnionBrowser",
+      "subtitle": "基于 Tor 的隐私浏览器",
+      "localizedDescription": "An open-source, privacy-enhancing web browser for iOS, utilizing the Tor anonymity network",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.miketigas.OnionBrowser.png?v=5a3a4a36912d",
+      "tintColor": "#912cb2",
+      "size": 41185417,
+      "versions": [
+        {
+          "version": "3.4.5",
+          "date": "2026-10-30T13:42:29Z",
+          "localizedDescription": "- Updated Tor to 0.4.9.15.",
+          "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.5/OnionBrowser.ipa",
+          "size": 41185417,
+          "buildVersion": "184466.519833954",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "3.4.4",
+          "date": "2026-10-19T10:52:46Z",
+          "localizedDescription": "- Fixed crash when trying to create or edit a bookmark.",
+          "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.4/OnionBrowser.ipa",
+          "size": 42254891
+        },
+        {
+          "version": "3.4.3",
+          "date": "2026-10-13T09:37:57Z",
+          "localizedDescription": "- Updated Tor to 0.4.9.14 and OpenSSL to 3.6.5.\r\n- Updated Snowflake to 2.15.1.\r\n- Updated Lyrebird to version 0.9.0.",
+          "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.3/OnionBrowser.ipa",
+          "size": 43256904
+        }
+      ]
+    },
+    {
+      "name": "OpenNutriTracker",
+      "bundleIdentifier": "com.opennutritracker.ont.opennutritracker",
+      "developerName": "simonoppowa",
+      "subtitle": "开源卡路里 / 营养追踪",
+      "localizedDescription": "🍴 OpenNutriTracker is a free and open source calorie tracker with a focus on simplicity and privacy.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.opennutritracker.ont.opennutritracker.png?v=4a6166b893ee",
+      "tintColor": "#1ede5c",
+      "size": 32794585,
+      "versions": [
+        {
+          "version": "2.6.0",
+          "date": "2026-10-30T20:32:44Z",
+          "localizedDescription": "## What's Changed\n* fix(ios): give the widget extension a bundle id the release team can register by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1450\n* chore(l10n): update translations by @hosted-weblate[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1454\n* fix: stop three top Sentry crashes (comma-decimal quantity, info-link launch, bad meal URLs) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1456\n* fix: tolerate bad OFF responses, drop expected Sentry noise, survive Health Connect rate limits by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1457\n* fix: route every link launch through the safe launcher by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1458\n* feat: one add-food scr…",
+          "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.6.0/opennutritracker.ipa",
+          "size": 32794585,
+          "buildVersion": "68",
+          "minOSVersion": "15.5"
+        },
+        {
+          "version": "2.5.0",
+          "date": "2026-10-23T11:22:41Z",
+          "localizedDescription": "## What's Changed\n* chore(store): caption the Play set, add the iOS screenshots, retire \"Free forever\" by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1120\n* chore(ci): drop the iOS screenshot lane by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1121\n* fix(health): read workouts without the permissions Play refused (develop) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1123\n* chore(release): bump to 2.3.0+65 and add the build 65 note (develop) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1125\n* fix(l10n): disclose body fat only where it is read by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1128\n* fix(health): five review findings from #1122, #1128 and #1132 by @si…",
+          "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.5.0/opennutritracker.ipa",
+          "size": 32731039
+        },
+        {
+          "version": "2.4.0",
+          "date": "2026-09-26T21:58:39Z",
+          "localizedDescription": "## What's Changed\n* ci(ios): drop the screenshot lane from main by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1145\n* chore(store): bring the store assets on main level with develop by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1147\n* ci(l10n): merge Weblate's pull requests with a merge commit once CI is green (main) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1226\n* Release 2.4.0+66 by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1270\n\n\n**Full Changelog**: https://github.com/simonoppowa/OpenNutriTracker/compare/v2.3.0...v2.4.0",
+          "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.4.0/opennutritracker.ipa",
+          "size": 32376572
+        }
+      ]
+    },
+    {
+      "name": "OSS Weather",
+      "bundleIdentifier": "com.akylas.weather",
+      "developerName": "ossappscollective",
+      "subtitle": "无广告开源天气应用",
+      "localizedDescription": "An OSS weather app for iOS/Android",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.akylas.weather.png?v=4573599fdc3a",
+      "tintColor": "#f49e1e",
+      "size": 27510302,
+      "versions": [
+        {
+          "version": "ios/alpha/3.01.1/169",
+          "date": "2026-11-04T13:30:02Z",
+          "localizedDescription": "### Bug fixes\n- clear stale data on a failed provider switch and send the runtime MF key (#646) (https://github.com/ossappscollective/oss-weather/commit/e66bcc724d4d62f3e65096f67c6aa45de4520dc4)",
+          "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.01.1/169/ossweather.ipa",
+          "size": 27510302,
+          "buildVersion": "169",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "ios/alpha/3.01.0/168",
+          "date": "2026-11-03T22:31:21Z",
+          "localizedDescription": "### Features\n- add daily rows to tall hourly widget (#610) (https://github.com/ossappscollective/oss-weather/commit/2275337af54b51c6b4399b7124b1fa89f524a662)\n- use METAR observations for the current conditions (#617) (https://github.com/ossappscollective/oss-weather/commit/797258e29a969dfd34fa42da836c1d80bef1735a)\n- add Open-Meteo as marine weather provider and a full-day tide chart (#628) (https://github.com/ossappscollective/oss-weather/commit/4060aa5ca82f01f2ed0a8f690918632532e9711a)\n\n### Bug fixes\n- Translations update from Hosted Weblate (#606) (https://github.com/ossappscollective/oss-weather/commit/f27ee6d452433f68df94e03a8029e1617ec2e6fa)\n- skip provider in swipe cycle when no api key is set (#608) (https://github.com/ossappscollective/oss-weather/commit/2565f602997730f61868d3b45c7…",
+          "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.01.0/168/ossweather.ipa",
+          "size": 27510198
+        },
+        {
+          "version": "ios/alpha/3.00.5/167",
+          "date": "2026-10-26T16:26:03Z",
+          "localizedDescription": "### Features\n- add a clear button to the api key prompts (#603) (https://github.com/ossappscollective/oss-weather/commit/2902348f5d556986501e10434b0d4c031ae82c93)\n\n### Bug fixes\n- replace model chips with one models chip and sheet (#591) (https://github.com/ossappscollective/oss-weather/commit/e469925e73949ec52a09f3d72615bfc7cad28255)\n- skip the highlight when the daily page has no start time (#594) (https://github.com/ossappscollective/oss-weather/commit/989b549d3886670c3ce12c7788bd071323c3b9bb)\n- Translations update from Hosted Weblate (#595) (https://github.com/ossappscollective/oss-weather/commit/2cdd87846be45ef26f4b74f235373afc83bb62cd)\n- Translations update from Hosted Weblate (#596) (https://github.com/ossappscollective/oss-weather/commit/de77da5115c9fc90e579137085b59ff361dee057)\n- …",
+          "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.00.5/167/ossweather.ipa",
+          "size": 27484196
+        }
+      ]
+    },
+    {
+      "name": "PiPixiv",
+      "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
+      "developerName": "darriousliu",
+      "subtitle": "Compose Multiplatform 的 Pixiv 客户端",
+      "localizedDescription": "一个使用Compose Multiplatform开发的第三方Pixiv客户端，支持国内直连",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mrl.pixiv.PiPixiv.png?v=7fd6be94e3c6",
+      "tintColor": "#18b4f5",
+      "size": 21428661,
+      "versions": [
+        {
+          "version": "2.6.0",
+          "date": "2026-11-03T15:54:18Z",
+          "localizedDescription": "## ✨ 新功能\n\n- 🎨 **UI 样式优化**：进一步统一漫画、发现、个人页、设置及筛选面板的 Material Expressive 风格，以圆润的卡片和按钮、清晰的内容分组、协调的排版与留白，呈现更轻盈、层次分明的界面；半透明液态玻璃悬浮导航搭配柔和的按压与切换动效，让浏览更流畅自然\n- 🫧 **悬浮导航与入口整理**：底部导航改为悬浮液态玻璃样式，优化选中动画、内容留白和页面切换，宽屏继续使用自适应侧栏；“我的阅读”整合稍后阅读、小说书签与漫画追更，并记忆上次打开的页签\n- 🔎 **搜索高级筛选**：插画搜索新增宽高范围、画幅比例、绘图工具和语言筛选；小说搜索新增字数、单词数、阅读时长、语言、题材、仅原创及支持角色名字替换等筛选条件。非 Premium 用户启用高级筛选时，热门预览会切换为最新作品排序\n- 🗂️ **收藏高级筛选**：自己的插画和小说收藏支持组合收藏标签、作品标签、收藏月份及收藏时间顺序筛选；统一筛选底部面板，支持公开与非公开切换、标签候选和一键清空，应用后直接在原收藏列表查看结果。高级筛选需等待 Pixiv 完成收藏索引同步\n- 🔔 **应用内通知中心**：新增通知列表和未读提示，可从首页及个人页进入，并打开通知关联的作品、作者或网页\n- 👥 **作者发现**：新增推荐作者、相似作者及我的粉丝列表，可预览作品、进入作者主页，以及直接关注或取消关注\n- 📚 **漫画系列与追更**：新增作者漫画系列、系列目录和漫画追更列表；作品页支持查看所属系列及跳转上一话、下一话，追更列表可进入系列目录或直接阅读最新一话\n- ☁️ **Pixiv 云端屏蔽管理**：支持查看、添加和删除账号中的用户、标签屏蔽，显示已用额度；可手动将云端规则导入本地，保留已有本地屏蔽和正则规则\n- 📖 **小说目录快捷入口**：系列小说阅读操作栏新增目录按钮，无需回到顶部即可打开章节…",
+          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.6.0/PiPixiv-v2.6.0-ios.ipa",
+          "size": 21428661,
+          "buildVersion": "20600",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "2.5.1",
+          "date": "2026-09-25T02:25:54Z",
+          "localizedDescription": "## ✨ 新功能\r\n\r\n- 🌐 **系统代理模式**：网络设置新增并默认使用系统代理，明确区分系统代理、直连与手动 HTTP / SOCKS 代理；切换网络模式后重启应用生效 (#149)\r\n\r\n## 🐛 问题修复\r\n\r\n- 🧭 **主导航底栏遮挡**：修复进入小说、设置、搜索等二级页面后，首页底部导航仍然显示并覆盖内容的问题，保留大屏侧边导航 (#150)\r\n- 💬 **评论与举报页面崩溃**：修复页面进入后台或保存导航状态时，序列化字段冲突导致的崩溃\r\n- 📖 **小说滚动条**：修复长篇小说滚动条位置不稳定、难以拖动定位的问题，扩大拖动热区并调整边缘间距\r\n- 🔝 **小说阅读按钮**：回到顶部、上一章和下一章按钮改为相同尺寸并纵向排列，避免互相重叠，并为滚动条保留拖动空间\r\n- ▶️ **继续阅读入口**：调整系列页面续读入口的位置与布局，章节标题最多显示两行，阅读进度独立展示，修复重复显示百分号的问题 (#151)\r\n- 🎨 **桌面系统主题**：修复 Windows、macOS 跟随系统主题时识别错误或更新不及时的问题，保留手动主题选择 (#148)\r\n- 🍎 **iOS 代理与下载**：修复直连模式仍继承系统代理，以及后台下载未遵循应用代理设置的问题；系统代理、直连、HTTP 和 SOCKS 模式已完成模拟器实际下载回归 (#149)\r\n\r\n## ✅ Issue 处理情况\r\n\r\n以下为本版实现与验证情况，不代表 GitHub Issue 已关闭。\r\n\r\n| 状态 | Issue | 说明 |\r\n|------|-------|------|\r\n| ✅ 已修复 | #148 | 桌面端跟随系统主题识别与更新 |\r\n| ✅ 已实现并完成专项回归 | #149 | 默认系统代理、独立直连模式，以及 iOS 后台下载代理配置 |\r\n| ✅ 已修复 | #150 | 主…",
+          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.5.1/PiPixiv-v2.5.1-ios.ipa",
+          "size": 20056263
+        },
+        {
+          "version": "2.5.0",
+          "date": "2026-09-24T06:28:03Z",
+          "localizedDescription": "## ✨ 新功能\r\n\r\n- 🪟 **可调整的自适应分栏**：在宽屏设备上并排浏览列表与详情，支持拖动分隔条调整宽度；图片预览与小说阅读会根据当前分栏宽度调整布局，并优化单栏、双栏切换与返回导航\r\n- 🔎 **搜索内容筛选**：新增仅动图、排除动图、仅漫画、仅系列小说及 R-18 内容筛选；区分搜索页临时筛选与设置中的默认筛选，临时调整不再影响后续搜索的默认值 (#131)\r\n- ⌨️ **多关键词搜索补全**：只替换光标所在的关键词，保留其他搜索词及排除符号，方便组合标签搜索 (#118)\r\n- 🔒 **私密关注入口**：在新作页的“关注”中增加公开与私密切换，并分别保留列表位置 (#118)\r\n- 📚 **小说系列续读**：系列页面显示上次阅读的章节与进度，提供“继续阅读”入口，并标记上次阅读的章节 (#118)\r\n- 📖 **阅读导航增强**：小说阅读页新增返回顶部按钮和可拖动的阅读滚动条，方便快速定位长篇内容 (#140)\r\n- 🗂️ **独立的内容模式偏好**：完善插画与小说模式切换入口；收藏和历史分别记住自己的内容模式，不再跟随其他页面一起切换 (#143)\r\n- 🤖 **AI 翻译设置更新**：更新 OpenAI、Claude、Gemini 的内置模型列表并保留已有模型配置；取消并发请求数原有的 8 个上限，支持设置更大的并发数，默认仍为 2\r\n\r\n## 🐛 问题修复\r\n\r\n- 🔖 **小说阅读位置恢复**：修复重新进入作品时恢复旧进度、旧页面回写覆盖新进度的问题；修复 Android 沉浸模式下反复进入小说造成阅读位置累计偏移的问题 (#141)\r\n- 🖥️ **桌面图片预览无响应**：修复打开图片预览后页面失去响应的问题，恢复预览退出后的列表点击和滚动操作\r\n- 🪟 **分栏切换稳定性**：修复分栏返回时瀑布流列数变化导致的崩溃；切换收藏内容类型时关闭旧详情…",
+          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.5.0/PiPixiv-v2.5.0-ios.ipa",
+          "size": 20037734
+        }
+      ]
+    },
+    {
+      "name": "Provenance Alpha",
+      "bundleIdentifier": "org.provenance-emu.provenance.alpha",
+      "developerName": "Provenance-Emu",
+      "subtitle": "iOS/tvOS 多机种复古游戏模拟器前端",
+      "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
+      "tintColor": "#1899f5",
+      "size": 1196896816,
+      "versions": [
+        {
+          "version": "alpha",
+          "date": "2026-11-06T03:39:15Z",
+          "localizedDescription": "## Alpha Build `01eadd7`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`01eadd7`](https://github.com/Provenance-Emu/Provenance/commit/01eadd7f552ff259e29156a94d7046a16f187bc6) |\n| **Built** | 2026-11-06 03:38 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42152206554) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n01eadd7f5 fix mednafen warnings\ne226e176b dolphin bump\nf1ad6e7b7 update dolphin core\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding …",
+          "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
+          "size": 1196896816,
+          "buildVersion": "11056",
+          "minOSVersion": "17.0"
+        }
+      ]
+    },
+    {
+      "name": "PvZ Portable",
+      "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
+      "developerName": "wszqkzqk",
+      "subtitle": "植物大战僵尸社区重实现",
+      "localizedDescription": "A cross-platform reimplementation of Plants vs. Zombies by the community. Aiming to bring 100% authentic experience of GOTY edition.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.wszqkzqk.pvz-portable.png?v=355de068e707",
+      "tintColor": "#d7d035",
+      "size": 4325990,
+      "versions": [
+        {
+          "version": "0.2.6",
+          "date": "2026-10-25T01:24:44Z",
+          "localizedDescription": "## What's Changed\n* Fix: avoid duplicate sell price zero by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/501\n* Refactor: standardize byte types on uint8_t by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/503\n* Refactor: avoid redundant triangle vertex initialization by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/504\n* Refactor: reduce pitch interpolation index overhead by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/507\n* Refactor: queue vertex uploads and deduplicate GL state by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/511\n* Refactor: reuse particle shake random values by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/505\n* Refactor: reduce repeated pool effect computations by @wszqkzqk in https://github…",
+          "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.6/pvz-portable-ios-arm64.ipa",
+          "size": 4325990,
+          "buildVersion": "938",
+          "minOSVersion": "16.4"
+        },
+        {
+          "version": "0.2.5",
+          "date": "2026-10-10T06:25:37Z",
+          "localizedDescription": "## What's Changed\n* Refactor: type mRenderData and make Challenge level tables constexpr by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/484\n* Fix: use PottedPlantGlow for standard pots in ZenGarden::AddHappyEffect by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/486\n* Feat: allow moving the Android app to external or adoptable storage by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/488\n* Feat: add optional custom properties overrides by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/493\n* Fix: use Tall-nuts in Another Chain Reaction by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/496\n* Refactor: batch triangles with mixed blend modes by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/497\n\n\n**Full Changelog**: ht…",
+          "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.5/pvz-portable-ios-arm64.ipa",
+          "size": 4326134
+        },
+        {
+          "version": "0.2.4",
+          "date": "2026-09-24T02:00:51Z",
+          "localizedDescription": "## What's Changed\n* Feat: deploy the WebAssembly build to GitHub Pages on release tags by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/474\n* Fix: gate the Pages deployment on the full build matrix by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/475\n* Fix: point the README's play-online links at the GitHub Pages deployment by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/476\n* Chore: drop redundant mpg123/libvorbis/libogg dependency declarations by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/480\n* Feat: expand LOW_MEMORY mode for memory-constrained platforms by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/479\n\n\n**Full Changelog**: https://github.com/wszqkzqk/PvZ-Portable/compare/0.2.3...0.2.4",
+          "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.4/pvz-portable-ios-arm64.ipa",
+          "size": 4326667
+        }
+      ]
+    },
+    {
+      "name": "Robrix",
+      "bundleIdentifier": "rs.robius.robrix",
+      "developerName": "project-robius",
+      "subtitle": "Rust 编写的 Matrix 聊天客户端",
+      "localizedDescription": "Robrix: a powerful multi-platform Matrix chat client written in Rust, using the Makepad UI toolkit and Robius platform abstractions",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/rs.robius.robrix.png?v=d72a3422dbd4",
+      "tintColor": "#15d2cc",
+      "size": 64432202,
+      "versions": [
+        {
+          "version": "1.0.0-beta.5",
+          "date": "2026-10-31T06:19:21Z",
+          "localizedDescription": "New features: find and add people/rooms/spaces, a new Room Info pane, better sync status indicator, improved Android performance (120 Hz!) and better battery life, and also 32-bit Android support.\r\n\r\n## Highlights from this release\r\n* 👥 Search for and add people (and rooms and spaces, like before)\r\n  * You can search public directories of rooms and spaces too (see Settings to modify)\r\n  * Find someone by name or user ID to start a direct message with them\r\n* ℹ️ The new Room Info pane shows a room's details and options\r\n* 🔄 The sync indicator now shows when Robrix is catching up, and when it was last synced\r\n* Light or dark themes now apply to system UI too, like window title bars, soft keyboards, menus, etc\r\n* ⚡ 🔋 Android performance and efficiency improvements: 120Hz buttery smooth refres…",
+          "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.5/robrix-1.0.0-beta.5-ios-aarch64.ipa",
+          "size": 64432202,
+          "buildVersion": "20261030.1635",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.0-beta.4",
+          "date": "2026-10-21T10:30:22Z",
+          "localizedDescription": "The big new feature in this release is a proper 🌑 dark mode theme 🌚, which you can select in the settings screen.\r\n\r\nThere are a few other improvements, mostly platform things on Android & iOS.\r\n\r\n## Highlights from this release\r\n* A brand new 🌑 dark mode theme 🌚! Choose it in Settings → Appearance\r\n  * Switching themes takes effect instantly without restarting Robrix, and is remembered across restarting the app\r\n  * Coming soon: more themes, auto-switching based on system theme, etc\r\n* Android: resizing the screen, doing split-screen, or opening/closing a folding phone now seamlessly works without losing any app context\r\n* iOS 27: fixed a rare/unusual crash when tapping a text input\r\n* Rotating your phone keeps your scroll position in the room locked to where it was\r\n* Modals (dialog popu…",
+          "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.4/robrix-1.0.0-beta.4-ios-aarch64.ipa",
+          "size": 63919528
+        },
+        {
+          "version": "1.0.0-beta.3",
+          "date": "2026-10-12T22:45:50Z",
+          "localizedDescription": "Cool new features: full navigation history that lets you go back and forward through rooms just like a web browser, swipe gestures to go back (on mobile), support for animated stickers/images, in-app link handling, and more!\r\n\r\nWe also polished the UI all over the place, from the image viewer and welcome screen to the layout and HTML formatting of messages. Many features were further stabilized in preparation for our full 1.0 release.\r\n\r\n## Highlights from this release\r\n* Full navigation history: go back and forward through all the rooms, threads, spaces, etc you've visited, just like a web browser\r\n  * You can use the new back/forward buttons in the window's title bar, your mouse's back/forward buttons, the back gesture on Android, or the back button in mobile view mode\r\n  * Long-press (o…",
+          "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.3/robrix-1.0.0-beta.3-ios-aarch64.ipa",
+          "size": 63909803
+        }
+      ]
+    },
+    {
+      "name": "ServerBox",
+      "bundleIdentifier": "com.lollipopkit.toolbox",
+      "developerName": "lollipopkit",
+      "subtitle": "ServerBox：服务器状态监控与运维工具箱",
+      "localizedDescription": "ServerBox - server status & toolbox",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.lollipopkit.toolbox.png?v=9ac4188436ba",
+      "tintColor": "#e0695e",
+      "size": 46255780,
+      "versions": [
+        {
+          "version": "1.0.1856",
+          "date": "2026-11-01T07:33:37Z",
+          "localizedDescription": "### Added\n\n- **Every block device in the server details:** the disk dialog lists all disks and partitions, including unmounted and blank disks, with model, size, type, connection and file system. Also in the Monitor panel (agent v0.3.0). Linux only.\n- **Android:** a redesigned home-screen widget that can be resized and shows more as it grows; Home-screen shortcuts to a server; a Quick Settings tile for sessions; share text and files from other apps into a snippet or a server; keyboard shortcuts; the app's language in system settings; and widget previews in the launcher.\n- **Editing files on Monitor-only servers and this device,** as on SSH servers. A file that changed on the server since it was opened is not overwritten without asking.\n- Persian (فارسی), the first right-to-left language.\n\n…",
+          "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1856/ServerBox_v1.0.1856_NoSign.ipa",
+          "size": 46255780,
+          "buildVersion": "1856",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.0.1844",
+          "date": "2026-10-29T18:40:29Z",
+          "localizedDescription": "### Added\n\n- **SSH host certificates:** connect to servers that present only a host certificate, and trust host certificate authorities in Settings → SSH, as OpenSSH's `@cert-authority` does, matched by host pattern.\n- **Encrypted key passphrases are remembered** in this device's system keychain, so they are not asked for after a restart. The key itself stays encrypted, including in backups. The key editor shows the saved passphrase after app-lock authentication. Turn it off in Settings → SSH.\n- Agent: a conversation can include what is on screen, such as the selected server's status, containers, processes, services, terminal or file view.\n\n### Changed\n\n- SSH connections using AES-GCM are faster, including file transfers.\n- The first tab of Terminal, Files and Remote desktop, the list to p…",
+          "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1844/ServerBox_v1.0.1844_NoSign.ipa",
+          "size": 45584899
+        },
+        {
+          "version": "1.0.1816",
+          "date": "2026-10-20T07:12:17Z",
+          "localizedDescription": "### Added\r\n\r\n- **Icon packs:** icons chosen apart from the theme, and themable icons in the Files window, looked up by file extension.\r\n- **Markdown preview:** Markdown files open rendered in the file editor, with an Edit button for the source.\r\n- **Reconnect button in the terminal,** for a connection that looks alive but no longer answers.\r\n- **System groups** beside system users, in the app and the Monitor panel.\r\n- **Screen readers:** the terminal can be read with a screen reader, the benchmark log is read as text, icon-only buttons have names, and the Monitor panel can be used with a keyboard and a screen reader. The panel's terminal reader mode is opt-in.\r\n- The app and the Monitor agent check that they speak the same protocol version, and say which one needs updating when they do not…",
+          "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1816/ServerBox_v1.0.1816_NoSign.ipa",
+          "size": 45197952
+        }
+      ]
+    },
+    {
+      "name": "SideInstaller",
+      "bundleIdentifier": "com.frizzlem.sideinstaller",
+      "developerName": "FrizzleM",
+      "subtitle": "在 iOS 27 设备上纯端侧安装 SideStore",
+      "localizedDescription": "An an app that installs Sidestore on iOS 27, fully on-device",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.frizzlem.sideinstaller.png?v=f5575a80ef0e",
+      "tintColor": "#6156e2",
+      "size": 10380171,
+      "versions": [
+        {
+          "version": "1.6.5",
+          "date": "2026-11-02T22:21:12Z",
+          "localizedDescription": "# Added\r\n\r\n- Madeira is now fetched from its main repo, with stable and nightly releases being given as a choice to the user\r\n\r\n# Fixed\r\n\r\n- An imported SideStore, LiveContainer + SideStore or Madeira .ipa is now set up just like the download, including SideStore's pairing file and certificate (#108). Where GitHub can't be reached, as in mainland China, a card explains how to bring the .ipa this way.\r\n- Apps with an ExtensionKit extension (in Extensions rather than PlugIns) install instead of failing with “Mismatched bundle IDs”: those extensions now get the app's new bundle ID, its provisioning profile and their own signature (#110).\r\n- Apps with data after a binary's signature, such as IPAs taken from a TrollStore install, can be signed instead of stopping with “cannot grow a code signat…",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.6.5/SideInstaller.ipa",
+          "size": 10380171,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "1.6.4",
+          "date": "2026-10-31T14:30:24Z",
+          "localizedDescription": "# Fixed\n\n- Inside LiveContainer, “Use SideStore's certificate” now works (#95). SideStore's reply can't reach SideInstaller there, so SideInstaller takes the certificate LiveContainer holds instead (its built-in SideStore's, or the copy LiveContainer imported) and checks it against your Apple ID as before.\n- Inside LiveContainer, “Get it from SideStore” now imports the pairing file LiveContainer's built-in SideStore keeps, asking first, instead of opening SideStore for a reply that never came. In Multitask Mode, or when there's no file to take, it says what to do instead.",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.6.4/SideInstaller.ipa",
+          "size": 10345806
+        },
+        {
+          "version": "1.6.3",
+          "date": "2026-10-31T10:40:37Z",
+          "localizedDescription": "# Fixed\n\n- With a pairing file made on a computer, “Open the device link” no longer stops with “peer closed connection without sending TLS close_notify” before iOS 26.4 (#105, #107). SideInstaller now answers the iPhone’s heartbeat while the link is open, as SideStore and StikDebug do.",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.6.3/SideInstaller.ipa",
+          "size": 10328448
+        }
+      ]
+    },
+    {
+      "name": "Table Habit",
+      "bundleIdentifier": "io.github.friesi23.mhabit",
+      "developerName": "FriesI23",
+      "subtitle": "习惯打卡，智能评分 + WebDAV 同步",
+      "localizedDescription": "Open-source Flutter habit tracker with smart scoring, WebDAV sync, local-first storage, privacy-focused design, and support for Android, iOS, Windows, macOS, and Linux.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.friesi23.mhabit.png?v=ac25ecabf890",
+      "tintColor": "#1790e3",
+      "size": 15961434,
+      "versions": [
+        {
+          "version": "1.27.18+207",
+          "date": "2026-11-02T00:45:29Z",
+          "localizedDescription": "# Released: v1.27.18+207\r\n\r\nTable Habit now supports iOS Home Screen widgets! Thanks to\r\n[@IlyaPalochkin](https://github.com/IlyaPalochkin) for contributing the initial\r\ninteractive widgets (#680).\r\n\r\n## ✨ Features\r\n\r\n- Add interactive Home Screen widgets for iOS 17+, with seven-day progress and\r\n  check-in, undo and refresh actions without opening the app (#680)\r\n- Choose automatic or fixed habits, including archived habits; fixed habits\r\n  appear first. Small, medium and large widgets show up to one, three and six\r\n  habits respectively (#687)\r\n- Keep automatic check-ins visible until tapping **Next** to show another habit;\r\n  widgets on the same device share check-in and Next updates. Fixed habits stay\r\n  visible with Undo. Show a completion message when all goals are complete, or\r\n  **…",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.18%2B207/mhabit-unsigned.ipa",
+          "size": 15961434,
+          "buildVersion": "207",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.27.15+204",
+          "date": "2026-10-19T04:13:10Z",
+          "localizedDescription": "# Released: v1.27.15+204\r\n\r\n## ✨ Features\r\n\r\n- Integrate native desktop title bars and keep app bars pinned while scrolling\r\n  (#677)\r\n  - Fuse macOS window controls with adaptive toolbars and handle fullscreen\r\n    transitions\r\n  - Match native title bar colors to the app theme on Windows and Linux\r\n- Keep a manually collapsed sidebar closed across layout and interface-style\r\n  changes within the current session (#679)\r\n- Restore desktop window size and position before the window first appears\r\n  (#681)\r\n  - Save ordinary window geometry without treating fullscreen or maximized\r\n    bounds as the preferred window size\r\n\r\n## 🐛 Fixes\r\n\r\n- Preserve open dialogs and their state while updating theme colors, and keep\r\n  dialog app bars consistent with their local theme (#677)\r\n- Restore the Set…",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.15%2B204/mhabit-unsigned.ipa",
+          "size": 15128625
+        },
+        {
+          "version": "1.27.13+202",
+          "date": "2026-10-10T00:16:09Z",
+          "localizedDescription": "# Released: v1.27.13+202\r\n\r\n> Includes updates since the previous stable release, v1.27.9+198.\r\n\r\n## ✨ Features\r\n\r\n- Add adaptive, collapsible side navigation with an edge style on newer Apple\r\n  systems (#667)\r\n  - Preserve navigation state, search, selection, and page actions across\r\n    layout changes\r\n- Apply app theme colors and custom palettes to the side navigation (#668)\r\n- Let users show or hide navigation destinations in the top toolbar when the\r\n  Apple sidebar is collapsed (#671)\r\n- Adapt navigation and content safe areas for iPhone Duo and compact-height\r\n  layouts (#674)\r\n- Scroll Habits and Today to the top when reselecting the active root tab\r\n  (#675)\r\n  - Return nested pages to the tab's root before scrolling on a subsequent tap\r\n  - Respect reduced motion preferences and…",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.13%2B202/mhabit-unsigned.ipa",
+          "size": 15116961
+        }
+      ]
+    },
+    {
+      "name": "Termix",
+      "bundleIdentifier": "com.karmaa.termix",
+      "developerName": "Termix-SSH",
+      "subtitle": "Termix 服务器 / SSH 管理移动端",
+      "localizedDescription": "Manage your Termix servers from your phone or tablet.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.karmaa.termix.png?v=bbbfcd0d4028",
+      "tintColor": "#f58b3b",
+      "size": 54067691,
+      "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-11-03T14:46:32Z",
+          "localizedDescription": "Termix Mobile now works with no server. Hosts, logins and snippets stay encrypted on the phone, and the terminal, files, tunnels, Docker, metrics, services and remote desktop connect straight from it. Link one or more Termix servers to sync with them and use their plugins.\n\n| Platform | Download |\n|----------|----------|\n| **Android** | [APK](https://github.com/Termix-SSH/Mobile/releases/download/v2.0.0/termix_android.apk) |\n| **iOS** | [IPA](https://github.com/Termix-SSH/Mobile/releases/download/v2.0.0/termix_ios.ipa) |\n\n### Added\n\n- Use the app with no server: an encrypted local database, backups locked with a passphrase, and SSH, Telnet, RDP and VNC straight from the phone\n- Link more than one Termix server, switch between them, and sync hosts, logins, snippets and settings both ways, a…",
+          "downloadURL": "https://github.com/Termix-SSH/Mobile/releases/download/v2.0.0/termix_ios.ipa",
+          "size": 54067691,
+          "buildVersion": "132",
+          "minOSVersion": "16.4"
+        },
+        {
+          "version": "1.6.0",
+          "date": "2026-10-09T15:53:06Z",
+          "localizedDescription": "The app now follows which Termix plugins are turned on, and RDP asks for credentials when a host has none saved.\n\n| Platform | Download |\n|----------|----------|\n| **Android** | [APK](https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_android.apk) |\n| **iOS** | [IPA](https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_ios.ipa) |\n\n### Added\n\n- Hide host actions, editor sections, settings and keyboard tabs for features the server has turned off\n- Refresh the server's features on pull to refresh, when the app comes back and when the server reports a feature is off\n\n### Changed\n\n- Renamed Server Stats to Host Metrics, including the home screen widget, to match Termix\n\n### Fixed\n\n- RDP asks for a username and password when the host has none saved instead of fa…",
+          "downloadURL": "https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_ios.ipa",
+          "size": 17172388
+        },
+        {
+          "version": "release-1.5.1-tag",
+          "date": "2026-10-01T18:57:16Z",
+          "localizedDescription": "Improved terminal text selection, added compatibility for Termix plugins, and fixed several bugs.\r\n\r\n| Platform | Download |\r\n|----------|----------|\r\n| **Android** | [APK](https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_android.apk) |\r\n| **iOS** | [IPA](https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_ios.ipa) |\r\n\r\nUpdate Log:\r\n- Improved terminal selection system\r\n- Added compatibility for the Termix plugin update\r\n\r\nBug Fixes:\r\n- Restore format checks for guacamole assets\r\n- Respect configured RDP resolution\r\n- Send terminal JWT as protocol fixing infinite reconnect\r\n- Fit VNC and keep touch cords in sync\r\n- Host form keeps field it does not edit\r\n- Handle TOTP/browser sign in replies for files/docker",
+          "downloadURL": "https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_ios.ipa",
+          "size": 17167817
+        }
+      ]
+    },
+    {
+      "name": "TokenBar",
+      "bundleIdentifier": "dev.tokenbar.app",
+      "developerName": "lwh0630",
+      "subtitle": "AI 额度监控（Codex / Claude / Cursor）",
+      "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
+      "tintColor": "#2ad8c9",
+      "size": 11050215,
+      "versions": [
+        {
+          "version": "1.2.7",
+          "date": "2026-11-03T12:19:52Z",
+          "localizedDescription": "## TokenBar v1.2.7\r\n\r\nA fix for a **Windows crash**, on top of v1.2.6.\r\n\r\n### Fixed\r\n\r\n- **Windows: the app no longer closes itself** when you open an account (for example by clicking the Codex card) or close a dialog. The crash is a bug in Flutter's Windows engine: once any accessibility client is attached (a screen reader, an input method or another tool that inspects windows) and a page is opened or closed, the engine dereferences an empty pointer and the process dies. The upstream bug (flutter/flutter#175041) is still open and is present in the newest Flutter (3.47.9), so TokenBar now stops publishing its accessibility tree on Windows.\r\n- Built with Flutter 3.47.9 (was 3.47.7).\r\n\r\n### Notes\r\n\r\n- **Windows no longer supports screen readers** until the Flutter bug is fixed. Other platfor…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.7/tokenbar-v1.2.7-ios-unsigned.ipa",
+          "size": 11050215,
+          "buildVersion": "13",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.2.6",
+          "date": "2026-11-03T11:10:50Z",
+          "localizedDescription": "## TokenBar v1.2.6\r\n\r\nA follow-up to v1.2.0 (Liquid Glass). It adds **in-app updates**, a custom background, swipe navigation on phones and a cost-first usage history, makes the app smoother and lighter, and **fixes very high memory use and laggy window resizing on Windows**. This release replaces v1.2.1, v1.2.2, v1.2.4 and v1.2.5 (their notes are included below); v1.2.2 was withdrawn because of the memory problem.\r\n\r\n### Fixed in v1.2.6 (Android)\r\n\r\n- **Card blur no longer disappears** while pulling down to refresh or scrolling past the end of a list: Android 12+ wrapped the list in an effect layer that left the blurred cards without a backdrop. The stretch effect is gone (the refresh spinner is unchanged).\r\n- **Card blur stays on while opening a page** such as an account's details, inste…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.6/tokenbar-v1.2.6-ios-unsigned.ipa",
+          "size": 11041461
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-02T16:22:57Z",
+          "localizedDescription": "## TokenBar v1.2.0 - Liquid Glass\r\n\r\nA full visual refresh across desktop and mobile. Behavior, data and sync are unchanged.\r\n\r\n### Highlights\r\n\r\n- **Liquid Glass look**: translucent glass panels over a softly drifting ambient background, rounded corners, hairline rims and staggered entrance animations. Reduced-motion settings are honored, and the background animation pauses while the app is hidden.\r\n- **Unified title bar (desktop)**: frameless window with a custom 40 px title bar that blends into the app. Windows keeps native resizing, macOS keeps the traffic lights, Linux gets resize edges.\r\n- **Restyled pages**: navigation (side rail on wide screens, floating bottom bar on narrow ones), dashboard, accounts, settings, account detail, update dialog and the tray panel.\r\n- **Mobile sync (An…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.0/tokenbar-v1.2.0-ios-unsigned.ipa",
+          "size": 9969979
+        }
+      ]
+    },
+    {
+      "name": "UTM",
+      "bundleIdentifier": "com.utmapp.UTM",
+      "developerName": "utmapp",
+      "subtitle": "在 iPhone/iPad 上跑 Windows、Linux 虚拟机",
+      "localizedDescription": "Virtual machines for iOS and macOS",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.utmapp.UTM.png?v=a7c05965a891",
+      "tintColor": "#2951d8",
+      "size": 150556668,
+      "versions": [
+        {
+          "version": "5.0.8",
+          "date": "2026-10-17T02:44:56Z",
+          "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\r\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk …",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
+          "size": 150556668,
+          "buildVersion": "128",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "4.7.5",
+          "date": "2026-01-03T17:51:54Z",
+          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.5)\r\n* Fixed some rare conditions that could lead to a VM fail to start and spin infinitely\r\n* Fi…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-HV.ipa",
+          "size": 130058653
+        },
+        {
+          "version": "4.7.4",
+          "date": "2025-09-15T19:14:29Z",
+          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.4)\r\n* (macOS) Fixed a crash on VM start when a toolbar menu was reinitialized (note v4.7.4 was r…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.4/UTM-HV.ipa",
+          "size": 130036994
+        }
+      ]
+    },
+    {
+      "name": "VeneraNext",
+      "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+      "developerName": "CyrilPeng",
+      "subtitle": "跨平台漫画阅读器，本地 / WebDAV / 网络源",
+      "localizedDescription": "VeneraNext 是一个跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源、第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.cyrilpeng.veneranext.png?v=d3a6b622a90d",
+      "tintColor": "#1580c2",
+      "size": 21307925,
+      "versions": [
+        {
+          "version": "1.18.2",
+          "date": "2026-11-01T03:37:14Z",
+          "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- **Android TV（#120）**：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打开菜单，返回先关闭菜单再保存退出；菜单内不在背景翻页，失焦或切后台停止连发。目录搜索用上下键移出输入框，左右键编辑光标。\n- TV 默认开启单页低内存模式…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
+          "size": 21307925,
+          "buildVersion": "243",
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.18.1",
+          "date": "2026-10-25T03:30:26Z",
+          "localizedDescription": "### 正式版说明\n\n- 发布补丁正式版 `1.18.1+236`，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n\n### 重点复测与已知限制\n\n- **#111 升级／恢复后启动**：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- **#119 Android 自定义存储目录**：已修复 SAF 选择器返回的 `android://` 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- **#115 归档导入后不显示**：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- **#118 单页翻页闪背景**：已修复切换当前页时重建已加载画面的代码路径；iPad／Android 原设备观感仍待复测，不取消墨水屏的主动刷新。\n-…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
+          "size": 21194544
+        },
+        {
+          "version": "1.18.0",
+          "date": "2026-10-14T09:59:36Z",
+          "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n\n### 新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n\n### 修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回 201、却因下载／CDN 的 ETag 无法授权清理而持续报错并阻断后续同步的问题。\n- 恢复 WebDAV 文件下载重定向兼容：仅允许 GET 受控跟随，跨源不传递 WebDA…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
+          "size": 21127254
+        }
+      ]
+    },
+    {
+      "name": "Voyager",
+      "bundleIdentifier": "app.vger.voyager",
+      "developerName": "aeharding",
+      "subtitle": "Lemmy / Piefed 社区客户端",
+      "localizedDescription": "Voyager — a beautiful app for Lemmy and Piefed",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.vger.voyager.png?v=5970e2eaf08a",
+      "tintColor": "#3e6db2",
+      "size": 8232319,
+      "versions": [
+        {
+          "version": "2.49.1",
+          "date": "2026-09-13T05:07:24Z",
+          "localizedDescription": "## 🐛 Fixes\n\n- fix: preserve special characters in search\n   - PR: #2358\n\n## 📝 Other Changes\n\n- chore: rust react compiler pipeline\n   - PR: #2357\n- chore: upgrade dependencies\n   - PR: #2359",
+          "downloadURL": "https://github.com/aeharding/voyager/releases/download/2.49.1/Voyager-iOS-2.49.1.ipa",
+          "size": 8232319,
+          "buildVersion": "988",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "2.49.0",
+          "date": "2026-09-06T18:45:37Z",
+          "localizedDescription": "## 🚀 Features\n\n- feat: enable rich editor by default\n   - PR: #2352\n\n## 🐛 Fixes\n\n- fix: show two column setting in desktop app\n   - PR: #2346\n- fix: stabilize navigation after ionic v9 upgrade\n   - PR: #2348\n- fix: preserve tab state during route transitions\n   - PR: #2349\n- fix: prevent random community transition flicker\n   - PR: #2353\n\n## 📝 Other Changes\n\n- chore: upgrade to ionic v9\n   - PR: #2347\n- test: expand provider matrix to comment threads, feed and search\n   - PR: #2321\n- chore: upgrade threadiverse to 0.21.2\n   - PR: #2350\n- chore: upgrade dependencies\n   - PR: #2351",
+          "downloadURL": "https://github.com/aeharding/voyager/releases/download/2.49.0/Voyager-iOS-2.49.0.ipa",
+          "size": 8216630
+        },
+        {
+          "version": "2.48.5",
+          "date": "2026-08-17T22:50:15Z",
+          "localizedDescription": "## 🐛 Fixes\n\n- fix: address flathub quality guideline failures\n   - PR: #2344\n- fix: hide desktop window until app is loaded to prevent flicker\n   - PR: #2345",
+          "downloadURL": "https://github.com/aeharding/voyager/releases/download/2.48.5/Voyager-iOS-2.48.5.ipa",
+          "size": 8043246
+        }
+      ]
+    },
+    {
+      "name": "Yattee",
+      "bundleIdentifier": "stream.yattee.app",
+      "developerName": "yattee",
+      "subtitle": "面向隐私的视频播放器（Invidious / Piped）",
+      "localizedDescription": "Privacy oriented video player for iOS, tvOS and macOS",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/stream.yattee.app.png?v=2355e8dce224",
+      "tintColor": "#3877e0",
+      "size": 33702868,
+      "versions": [
+        {
+          "version": "2.0.0-259",
+          "date": "2026-04-18T19:06:33Z",
+          "localizedDescription": "## What's Changed\r\n\r\n**tvOS support** — Yattee 2 is available on Apple TV via TestFlight, bringing many new features with a native interface built for the large-screen layout\r\n\r\n* Redesigned player controls with a seek bar and storyboard support\r\n* Sidebar navigation\r\n* Two-column layouts for Video Info, Channel, Playlist detail, Subscriptions, and setting screens\r\n* Top Shelf extension\r\n\r\n### New Features\r\n\r\n* Add List/Grid layout option for Home sections\r\n* Add Playlists entry to sidebar main navigation\r\n* Add Continue Watching toggles to tab bar and sidebar settings\r\n* Replace onboarding flow with silent v1 import and iCloud alert\r\n\r\n### Bug Fixes\r\n\r\n* Fix storyboard downloads with Yattee Server direct YouTube URLs\r\n\r\n### Improvements\r\n\r\n* Store higher-quality YouTube thumbnail URLs in …",
+          "downloadURL": "https://github.com/yattee/yattee/releases/download/2.0.0-259/Yattee-2.0.0-iOS.ipa",
+          "size": 33702868,
+          "buildVersion": "259",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "2.0.0-256",
+          "date": "2026-03-28T14:17:47Z",
+          "localizedDescription": "## What's Changed\n\n### New Features\n\n* Show seek time preview when no storyboards are available\n* Add separate glass capsule for chapter title above seek preview\n\n### Bug Fixes\n\n* Fix 5 TestFlight crash types from builds 250-254\n* Fix HTTP basic auth credentials being stripped from instance URLs\n* Fix Home view showing zero counts after returning from background\n* Fix HomeView data staleness on new watch entries, tab switches, and settings dismissal\n* Fix missing leading padding on instance content section headers\n\n### Improvements\n\n* Deduplicate time formatting and clean up unused code\n* Update packages",
+          "downloadURL": "https://github.com/yattee/yattee/releases/download/2.0.0-256/Yattee-2.0.0-iOS.ipa",
+          "size": 33518998
+        },
+        {
+          "version": "2.0.0-beta.278",
+          "date": "2026-10-31T19:49:09Z",
+          "localizedDescription": "## What's Changed\n\n### Bug fixes\n* Log and alert when hardware decoding falls back to software mid-playback\n* Reload the avfoundation audio output when it restarts while paused\n* Keep the display link paused while the app is in the background\n* Open SwiftData and TipKit stores after didFinishLaunching on iOS",
+          "downloadURL": "https://github.com/yattee/yattee/releases/download/2.0.0-beta.278/Yattee-2.0.0-iOS.ipa",
+          "size": 39795855
+        }
+      ]
+    }
+  ]
+}

@@ -124,5 +124,365 @@
     "minOSVersion": "16.0",
     "size": 14163630,
     "source_repo": "duofuwang/feather"
+  },
+  "utmapp/UTM@5.0.8": {
+    "bundleIdentifier": "com.utmapp.UTM",
+    "displayName": "UTM",
+    "version": "5.0.8",
+    "build": "128",
+    "minOSVersion": "15.0",
+    "size": 150556668,
+    "source_repo": "utmapp/UTM"
+  },
+  "altstoreio/AltStore@2.3": {
+    "bundleIdentifier": "com.rileytestut.AltStore",
+    "displayName": "AltStore",
+    "version": "2.3.1",
+    "build": "63",
+    "minOSVersion": "17.4",
+    "size": 40616419,
+    "source_repo": "altstoreio/AltStore"
+  },
+  "Lakr233/Asspp@4.2.2": {
+    "bundleIdentifier": "wiki.qaq.Asspp",
+    "displayName": "Asspp",
+    "version": "4.2.0",
+    "build": "0",
+    "minOSVersion": "17.0",
+    "size": 16458246,
+    "source_repo": "Lakr233/Asspp"
+  },
+  "ish-app/ish@builds/813": {
+    "bundleIdentifier": "app.ish.iSH",
+    "displayName": "iSH",
+    "version": "1.3.3",
+    "build": "813",
+    "minOSVersion": "11.0",
+    "size": 4602446,
+    "source_repo": "ish-app/ish"
+  },
+  "Provenance-Emu/Provenance@alpha": {
+    "bundleIdentifier": "org.provenance-emu.provenance.alpha",
+    "displayName": "Provenance Alpha",
+    "version": "3.4.0",
+    "build": "11056",
+    "minOSVersion": "17.0",
+    "size": 1196896816,
+    "source_repo": "Provenance-Emu/Provenance"
+  },
+  "FrizzleM/SideInstaller@1.6.5": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "1.6.5",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10380171,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "OnionBrowser/OnionBrowser@3.4.5": {
+    "bundleIdentifier": "com.miketigas.OnionBrowser",
+    "displayName": "Onion Browser",
+    "version": "3.4.5",
+    "build": "184466.519833954",
+    "minOSVersion": "15.0",
+    "size": 41185417,
+    "source_repo": "OnionBrowser/OnionBrowser"
+  },
+  "mirazbakis/AltLoad@1.4.0": {
+    "bundleIdentifier": "com.mirazbakis.altload",
+    "displayName": "AltLoad",
+    "version": "1.4.0",
+    "build": "7",
+    "minOSVersion": "18.0",
+    "size": 11794981,
+    "source_repo": "mirazbakis/AltLoad"
+  },
+  "mxhm11cr/LinuxRunner@1.1.0": {
+    "bundleIdentifier": "dev.linuxrunner.app",
+    "displayName": "LinuxRunner",
+    "version": "1.1.0",
+    "build": "900",
+    "minOSVersion": "15.0",
+    "size": 21513740,
+    "source_repo": "mxhm11cr/LinuxRunner"
+  },
+  "YangJiiii/3105@2.0": {
+    "bundleIdentifier": "com.apple.mobile.MobileHouseArrest",
+    "displayName": "3105",
+    "version": "2.0",
+    "build": "8",
+    "minOSVersion": "16.0",
+    "size": 4604223,
+    "source_repo": "YangJiiii/3105"
+  },
+  "weiran/Hackers@5.6.0+170": {
+    "bundleIdentifier": "com.weiranzhang.Hackers",
+    "displayName": "Hackers",
+    "version": "5.6.0",
+    "build": "170",
+    "minOSVersion": "26.0",
+    "size": 8938581,
+    "source_repo": "weiran/Hackers"
+  },
+  "Predidit/Kazumi@2.4.3": {
+    "bundleIdentifier": "com.example.kazumi",
+    "displayName": "Kazumi",
+    "version": "2.4.3",
+    "build": "20403",
+    "minOSVersion": "15.0",
+    "size": 30439714,
+    "source_repo": "Predidit/Kazumi"
+  },
+  "czy0729/Bangumi@8.41.1": {
+    "bundleIdentifier": "tv.bangumi.czy0729",
+    "displayName": "Bangumi",
+    "version": "8.41.1",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 28323372,
+    "source_repo": "czy0729/Bangumi"
+  },
+  "kodjodevf/mangayomi@0.9.95": {
+    "bundleIdentifier": "com.kodjodevf.mangayomi",
+    "displayName": "Mangayomi",
+    "version": "0.9.95",
+    "build": "128",
+    "minOSVersion": "15.0",
+    "size": 115450399,
+    "source_repo": "kodjodevf/mangayomi"
+  },
+  "yattee/yattee@2.0.0-259": {
+    "bundleIdentifier": "stream.yattee.app",
+    "displayName": "Yattee",
+    "version": "2.0.0",
+    "build": "259",
+    "minOSVersion": "18.0",
+    "size": 33702868,
+    "source_repo": "yattee/yattee"
+  },
+  "Chevey339/kelivo@1.3.4": {
+    "bundleIdentifier": "psyche.kelivo",
+    "displayName": "Kelivo",
+    "version": "1.3.4",
+    "build": "84",
+    "minOSVersion": "15.0",
+    "size": 46627606,
+    "source_repo": "Chevey339/kelivo"
+  },
+  "jiangtian616/JHenTai@8.0.18": {
+    "bundleIdentifier": "top.jtmonster.jhentai",
+    "displayName": "JHenTai",
+    "version": "8.0.18",
+    "build": "344",
+    "minOSVersion": "13.0",
+    "size": 13027008,
+    "source_repo": "jiangtian616/JHenTai"
+  },
+  "deretame/Breeze@3.0.37": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "displayName": "Breeze",
+    "version": "3.0.37",
+    "build": "2225",
+    "minOSVersion": "15.0",
+    "size": 26431983,
+    "source_repo": "deretame/Breeze"
+  },
+  "CyrilPeng/Venera-Next@1.18.2": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "displayName": "VeneraNext",
+    "version": "1.18.2",
+    "build": "243",
+    "minOSVersion": "14.0",
+    "size": 21307925,
+    "source_repo": "CyrilPeng/Venera-Next"
+  },
+  "EhPanda-Team/EhPanda@3.0.0": {
+    "bundleIdentifier": "app.ehpanda",
+    "displayName": "EhPanda",
+    "version": "3.0.0",
+    "build": "158",
+    "minOSVersion": "27.0",
+    "size": 19041995,
+    "source_repo": "EhPanda-Team/EhPanda"
+  },
+  "Jellify-Music/App@1.3.1": {
+    "bundleIdentifier": "com.cosmonautical.jellify",
+    "displayName": "Jellify",
+    "version": "1.3.1",
+    "build": "167",
+    "minOSVersion": "16.4",
+    "size": 37133055,
+    "source_repo": "Jellify-Music/App"
+  },
+  "missuo/kumone@0.3.28": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.28",
+    "build": "391",
+    "minOSVersion": "16.0",
+    "size": 4037666,
+    "source_repo": "missuo/kumone"
+  },
+  "pounat/absorb@1.12.1-304": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.12.1",
+    "build": "304",
+    "minOSVersion": "15.0",
+    "size": 48090333,
+    "source_repo": "pounat/absorb"
+  },
+  "GopeedLab/gopeed@2.0.0-beta.4": {
+    "bundleIdentifier": "com.gopeed.gopeed",
+    "displayName": "Gopeed",
+    "version": "2.0.0.4",
+    "build": "4",
+    "minOSVersion": "14.0",
+    "size": 40979942,
+    "source_repo": "GopeedLab/gopeed"
+  },
+  "lollipopkit/flutter_server_box@1.0.1856": {
+    "bundleIdentifier": "com.lollipopkit.toolbox",
+    "displayName": "ServerBox",
+    "version": "1.0.1856",
+    "build": "1856",
+    "minOSVersion": "15.0",
+    "size": 46255780,
+    "source_repo": "lollipopkit/flutter_server_box"
+  },
+  "linroid/Ketch@0.10.2": {
+    "bundleIdentifier": "com.linroid.ketch.app",
+    "displayName": "Ketch",
+    "version": "0.10.2",
+    "build": "63",
+    "minOSVersion": "15.0",
+    "size": 29659453,
+    "source_repo": "linroid/Ketch"
+  },
+  "simonoppowa/OpenNutriTracker@2.6.0": {
+    "bundleIdentifier": "com.opennutritracker.ont.opennutritracker",
+    "displayName": "OpenNutriTracker",
+    "version": "2.6.0",
+    "build": "68",
+    "minOSVersion": "15.5",
+    "size": 32794585,
+    "source_repo": "simonoppowa/OpenNutriTracker"
+  },
+  "FriesI23/mhabit@1.27.18+207": {
+    "bundleIdentifier": "io.github.friesi23.mhabit",
+    "displayName": "Table Habit",
+    "version": "1.27.18",
+    "build": "207",
+    "minOSVersion": "15.0",
+    "size": 15961434,
+    "source_repo": "FriesI23/mhabit"
+  },
+  "ossappscollective/oss-weather@ios/alpha/3.01.1/169": {
+    "bundleIdentifier": "com.akylas.weather",
+    "displayName": "OSS Weather",
+    "version": "3.01.1",
+    "build": "169",
+    "minOSVersion": "17.0",
+    "size": 27510302,
+    "source_repo": "ossappscollective/oss-weather"
+  },
+  "Termix-SSH/Mobile@2.0.0": {
+    "bundleIdentifier": "com.karmaa.termix",
+    "displayName": "Termix",
+    "version": "2.0.0",
+    "build": "132",
+    "minOSVersion": "16.4",
+    "size": 54067691,
+    "source_repo": "Termix-SSH/Mobile"
+  },
+  "lwh0630/TokenBar@1.2.7": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.7",
+    "build": "13",
+    "minOSVersion": "15.0",
+    "size": 11050215,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "cogwheel0/conduit@4.2.2": {
+    "bundleIdentifier": "app.cogwheel.conduit",
+    "displayName": "Conduit",
+    "version": "4.2.2",
+    "build": "153",
+    "minOSVersion": "16.0",
+    "size": 45348117,
+    "source_repo": "cogwheel0/conduit"
+  },
+  "JiangNanGenius/floe-agent@1.7.74": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.7.74",
+    "build": "315",
+    "minOSVersion": "26.0",
+    "size": 821389309,
+    "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Lingyan000/fluxdo@0.2.29": {
+    "bundleIdentifier": "com.github.lingyan000.fluxdo",
+    "displayName": "FluxDO",
+    "version": "0.2.29",
+    "build": "2026102016",
+    "minOSVersion": "15.0",
+    "size": 55505719,
+    "source_repo": "Lingyan000/fluxdo"
+  },
+  "aeharding/voyager@2.49.1": {
+    "bundleIdentifier": "app.vger.voyager",
+    "displayName": "Voyager",
+    "version": "2.49.1",
+    "build": "988",
+    "minOSVersion": "15.0",
+    "size": 8232319,
+    "source_repo": "aeharding/voyager"
+  },
+  "project-robius/robrix@1.0.0-beta.5": {
+    "bundleIdentifier": "rs.robius.robrix",
+    "displayName": "Robrix",
+    "version": "1.0.0",
+    "build": "20261030.1635",
+    "minOSVersion": "15.0",
+    "size": 64432202,
+    "source_repo": "project-robius/robrix"
+  },
+  "darriousliu/PiPixiv@2.6.0": {
+    "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
+    "displayName": "PiPixiv",
+    "version": "2.6.0",
+    "build": "20600",
+    "minOSVersion": "18.0",
+    "size": 21428661,
+    "source_repo": "darriousliu/PiPixiv"
+  },
+  "willfaust/Madeira@0.2.0": {
+    "bundleIdentifier": "com.willfaust.madeora",
+    "displayName": "Madeira",
+    "version": "0.2.0",
+    "build": "5",
+    "minOSVersion": "18.0",
+    "size": 186400561,
+    "source_repo": "willfaust/Madeira"
+  },
+  "Leviidev/Husk@3.4": {
+    "bundleIdentifier": "com.husk.app",
+    "displayName": "Husk",
+    "version": "3.4",
+    "build": "149",
+    "minOSVersion": "15.5",
+    "size": 142303569,
+    "source_repo": "Leviidev/Husk"
+  },
+  "wszqkzqk/PvZ-Portable@0.2.6": {
+    "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
+    "displayName": "PvZ Portable",
+    "version": "0.2.6",
+    "build": "938",
+    "minOSVersion": "16.4",
+    "size": 4325990,
+    "source_repo": "wszqkzqk/PvZ-Portable"
   }
 }
