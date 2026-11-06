@@ -204,7 +204,7 @@
     {
       "name": "Breeze",
       "bundleIdentifier": "com.zephyr.breeze",
-      "developerName": "deretame",
+      "developerName": "breeze-project-org",
       "subtitle": "插件式漫画阅读器",
       "localizedDescription": "使用flutter构建的漫画阅读器，通过插件提供漫画支持。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zephyr.breeze.png?v=796a11be77ae",
@@ -215,7 +215,7 @@
           "version": "3.0.37",
           "date": "2026-10-31T09:28:32Z",
           "localizedDescription": "## 📝 更新日志\n## [v3.0.37]\n\n### 功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\n\n### 修复\n\n- 修复自定义插件顺序无效的问题\n\n### 优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/deretame/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/deretame/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\n| **iOS** | [Breeze-iOS-v3.0.37.ipa](https://github.com/deretame/Breeze/releases/…",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
           "size": 26431983,
           "buildVersion": "2225",
           "minOSVersion": "15.0"
@@ -224,14 +224,14 @@
           "version": "3.0.36",
           "date": "2026-10-25T05:46:26Z",
           "localizedDescription": "## 📝 更新日志\n## [v3.0.36]\n\n### 功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n\n### 优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.36.exe](https://github.com/deretame/Breeze/releases/download/v3.0.36/windows-installer-v3.0.36.exe) |\n| **macOS** | [Breeze-macOS-v3.0.36.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-macOS-v3.0.36.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.36.apk](https://github.com/deretame/Breeze/releases/download/v3.0.36/app-arm64-v8a-release-v3.0.36.apk) |\n| **iOS** | [Breeze-iOS-v3.0.36.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa) |\n| **Linux** | [breeze-v3.0.36.flatpak](https://github.com/deretame/Breeze/releases/dow…",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
           "size": 26377539
         },
         {
           "version": "3.0.35",
           "date": "2026-10-18T05:23:12Z",
           "localizedDescription": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v…",
-          "downloadURL": "https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
           "size": 26309164
         }
       ]
@@ -972,14 +972,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1196896816,
+      "size": 1196986558,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-06T03:39:15Z",
-          "localizedDescription": "## Alpha Build `01eadd7`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`01eadd7`](https://github.com/Provenance-Emu/Provenance/commit/01eadd7f552ff259e29156a94d7046a16f187bc6) |\n| **Built** | 2026-11-06 03:38 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42152206554) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n01eadd7f5 fix mednafen warnings\ne226e176b dolphin bump\nf1ad6e7b7 update dolphin core\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding …",
+          "date": "2026-11-06T10:34:57Z",
+          "localizedDescription": "## Alpha Build `ffd611e`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`ffd611e`](https://github.com/Provenance-Emu/Provenance/commit/ffd611e4f41f263e5d839ac7cecc35973309f32d) |\n| **Built** | 2026-11-06 10:33 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42198262079) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nffd611e4f fix: normalize the performance HUD frame count to Double\ne375782d2 [Agent] refactor(emulator): move the performance HUD into a session feature (#3800)\n9585469ce [Agent] feat(logging): configure diagnostic exports and browse session f…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1196896816,
+          "size": 1196986558,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
