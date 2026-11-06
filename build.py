@@ -42,6 +42,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config.json"
 OUTPUT_PATH = ROOT / "repo.json"
+CANDIDATES_PATH = ROOT / "candidates.json"
 CACHE_PATH = ROOT / "appinfo.json"
 
 API_ROOT = "https://api.github.com"
@@ -1710,6 +1711,10 @@ def main() -> int:
     parser.add_argument(
         "--no-tints", action="store_true", help="本次构建不自动生成 tintColor",
     )
+    parser.add_argument(
+        "--no-candidates", action="store_true",
+        help="本次构建不生成候选源 candidates.json",
+    )
     args = parser.parse_args()
 
     if args.tints:
@@ -1725,6 +1730,9 @@ def main() -> int:
     entries = config.get("apps") or []
     if not entries:
         raise SystemExit("config.json 的 apps 为空。")
+    # 候选源是独立的第二个源：不与正式源去重，共用一个缓存与图标目录。
+    candidate_meta = config.get("candidatesRepository") or {}
+    candidate_entries = config.get("candidates") or []
 
     global REFRESH_ICONS
     REFRESH_ICONS = bool(config.get("refreshIcons", True)) and not args.no_refresh_icons
@@ -1737,37 +1745,52 @@ def main() -> int:
     used_keys: set[str] = set()
     warnings: list[str] = []
 
-    log(f"读取 {len(entries)} 个上游仓库…")
-    apps: list[dict] = []
-    featured: set[str] = set()
-
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        try:
-            if entry.get("file"):
-                app = build_file_app(
-                    entry, cache, used_keys, warnings, repo_meta.get("baseURL"),
-                    repo_meta.get("iconURL"),
-                )
-            elif entry.get("ipa"):
-                app = build_manual_app(
-                    entry, detect, cache, used_keys, warnings, repo_meta.get("iconURL")
-                )
-            else:
-                app = build_repo_with_retry(
-                    entry, max_versions, default_prereleases, detect, cache,
-                    used_keys, warnings, repo_meta.get("baseURL"),
-                )
-        except FetchError as exc:
+    def build_group(group_entries, group_label, loose=False):
+        """构建一组条目。候选源用 loose=True 放宽异常，避免任何一条拖垮正式源。"""
+        group_apps: list[dict] = []
+        group_featured: set[str] = set()
+        group_failed: list[str] = []
+        for entry in group_entries:
+            if not isinstance(entry, dict):
+                continue
             label = entry.get("repo") or entry.get("file") or entry.get("ipa") or "未命名条目"
-            warnings.append(f"{label} 已跳过：{exc}")
-            continue
-        if app is None:
-            continue
-        apps.append(app)
-        if entry.get("featured"):
-            featured.add(app["bundleIdentifier"])
+            try:
+                if entry.get("file"):
+                    app = build_file_app(
+                        entry, cache, used_keys, warnings, repo_meta.get("baseURL"),
+                        repo_meta.get("iconURL"),
+                    )
+                elif entry.get("ipa"):
+                    app = build_manual_app(
+                        entry, detect, cache, used_keys, warnings, repo_meta.get("iconURL")
+                    )
+                else:
+                    app = build_repo_with_retry(
+                        entry, max_versions, default_prereleases, detect, cache,
+                        used_keys, warnings, repo_meta.get("baseURL"),
+                    )
+            except FetchError as exc:
+                # 候选源的失败只进终端汇总，不写 warnings：否则 --prune 会因为
+                # 「本轮有条目被跳过」而每轮都放弃清理图标。
+                if not loose:
+                    warnings.append(f"{label} 已跳过：{exc}")
+                group_failed.append(f"{label}：{exc}")
+                continue
+            except Exception as exc:  # noqa: BLE001
+                # 只有候选源放宽；正式源维持原有严格行为。
+                if not loose:
+                    raise
+                group_failed.append(f"{label}：{exc}")
+                continue
+            if app is None:
+                continue
+            group_apps.append(app)
+            if entry.get("featured"):
+                group_featured.add(app["bundleIdentifier"])
+        return group_apps, group_featured, group_failed
+
+    log(f"读取 {len(entries)} 个上游仓库…")
+    apps, featured, _main_failed = build_group(entries, "正式")
 
     if not apps:
         for warning in warnings:
@@ -1776,8 +1799,28 @@ def main() -> int:
 
     apps.sort(key=lambda a: a["name"].lower())
 
+    # 候选源：每次构建顺带生成，不去重（两个源相互独立），单条失败只警告跳过。
+    candidate_apps: list[dict] = []
+    candidate_failed: list[str] = []
+    candidates_enabled = bool(candidate_entries) and not args.no_candidates
+    if candidates_enabled:
+        log(f"读取 {len(candidate_entries)} 个候选仓库…")
+        candidate_apps, _ignored, candidate_failed = build_group(
+            candidate_entries, "候选", loose=True
+        )
+        candidate_apps.sort(key=lambda a: a["name"].lower())
+        if not candidate_apps:
+            log("候选源本轮没有取到任何应用，跳过写入以免覆盖现有 candidates.json。")
+        if candidate_failed:
+            log("")
+            log(f"候选源跳过 {len(candidate_failed)}/{len(candidate_entries)} 个：")
+            for line in candidate_failed:
+                log(f"  - {line}")
+
     # 顶层 size 取默认安装版本，供只读 app.size 的客户端显示体积。
     sized = apply_app_sizes(apps)
+    if candidate_apps:
+        apply_app_sizes(candidate_apps)
 
     # tintColor 在图标定稿后统一算：本地和 Actions 用同一份 PNG 解码，
     # 图标换了颜色会跟着变，config.json 里手写的那些始终优先。
@@ -1786,6 +1829,12 @@ def main() -> int:
     tint_results = apply_auto_tints(
         apps, manual_tint_map(entries), ROOT / "icons", enabled, fallback
     )
+    if candidate_apps:
+        candidate_tints = apply_auto_tints(
+            candidate_apps, manual_tint_map(candidate_entries),
+            ROOT / "icons", enabled, fallback
+        )
+        log(f"候选源 tintColor：{sum(1 for _, _, s in candidate_tints if s == 'auto')} 个取自图标。")
     log("")
     log(
         f"tintColor：{sum(1 for _, _, s in tint_results if s == 'auto')} 个取自图标，"
@@ -1795,24 +1844,43 @@ def main() -> int:
     )
     log(f"顶层 size：{sized}/{len(apps)} 个应用取自最新版本。")
 
-    repository: dict = {}
-    for field in ("name", "identifier", "subtitle", "description",
-                  "website", "iconURL", "headerURL", "tintColor"):
-        value = repo_meta.get(field)
-        if isinstance(value, str) and value.strip():
-            repository[field] = value.strip()
-    if not repository.get("name"):
-        raise SystemExit("repository.name 不能为空。")
-    if not repository.get("identifier"):
-        warnings.append("repository.identifier 为空，建议补上以免换域名后重复添加")
+    def make_repository(meta: dict, group_apps: list[dict],
+                        group_featured: set[str] | None = None,
+                        label: str = "repository") -> dict:
+        repository: dict = {}
+        for field in ("name", "identifier", "subtitle", "description",
+                      "website", "iconURL", "headerURL", "tintColor"):
+            value = meta.get(field)
+            if isinstance(value, str) and value.strip():
+                repository[field] = value.strip()
+        if not repository.get("name"):
+            raise SystemExit(f"{label}.name 不能为空。")
+        if not repository.get("identifier"):
+            warnings.append(f"{label}.identifier 为空，建议补上以免换域名后重复添加")
+        if group_featured:
+            featured_apps = [
+                a["bundleIdentifier"] for a in group_apps
+                if a["bundleIdentifier"] in group_featured
+            ]
+            if featured_apps:
+                repository["featuredApps"] = featured_apps
+        repository["apps"] = group_apps
+        return repository
 
-    featured_apps = [a["bundleIdentifier"] for a in apps if a["bundleIdentifier"] in featured]
-    if featured_apps:
-        repository["featuredApps"] = featured_apps
-    repository["apps"] = apps
-
-    text = render(repository)
+    text = render(make_repository(repo_meta, apps, featured))
     previous = OUTPUT_PATH.read_text(encoding="utf-8") if OUTPUT_PATH.exists() else None
+
+    # 候选源不做比例 shrink_guard，只防「一条都没取到」把源写成空壳。
+    candidate_text: str | None = None
+    candidate_previous: str | None = None
+    if candidates_enabled and candidate_apps:
+        candidate_text = render(
+            make_repository(candidate_meta, candidate_apps, label="candidatesRepository")
+        )
+        candidate_previous = (
+            CANDIDATES_PATH.read_text(encoding="utf-8")
+            if CANDIDATES_PATH.exists() else None
+        )
 
     for warning in warnings:
         log(f"警告：{warning}")
@@ -1821,6 +1889,8 @@ def main() -> int:
     log(f"共 {len(apps)} 个应用：")
     for app in apps:
         log(f"  {app['name']:<22} {app['versions'][0]['version']:<14} {app['bundleIdentifier']}")
+    if candidate_apps:
+        log(f"候选源共 {len(candidate_apps)} 个应用。")
 
     save_cache(cache, used_keys)
 
@@ -1830,20 +1900,22 @@ def main() -> int:
             log("")
             log("本轮有条目被跳过，跳过图标清理，避免把暂时取不到的应用当成已删除。")
         else:
-            pruned = prune_icons(apps, ROOT / "icons", dry_run=args.check)
+            # 两源共用 icons/，清理时按并集保留，避免后一个源把前一个的图标删掉。
+            pruned = prune_icons(
+                apps + candidate_apps, ROOT / "icons", dry_run=args.check
+            )
             if pruned:
                 log("")
                 log(("将清理 " if args.check else "已清理 ") + f"{len(pruned)} 项无引用图标：")
                 for name in pruned:
                     log(f"  - {name}")
 
-    if previous == text:
-        log("")
-        log("repo.json 无变化。")
-        return 1 if (args.check and pruned) else 0
+    changed_main = previous != text
+    changed_candidates = bool(candidate_text and candidate_previous != candidate_text)
 
     # 额度耗尽或上游抽风时，会有成批应用被跳过。宁可这轮不写，也别把源写瘸。
-    if not args.allow_shrink:
+    # shrink_guard 只作用于正式源；候选源允许部分缺失。
+    if changed_main and not args.allow_shrink:
         missing = shrink_guard(previous, apps)
         if missing:
             log("")
@@ -1855,13 +1927,30 @@ def main() -> int:
             )
 
     if args.check:
+        if changed_main or changed_candidates or pruned:
+            log("")
+            log(
+                f"检测到变化（--check 不写入）：repo.json "
+                f"{'有' if changed_main else '无'}、candidates.json "
+                f"{'有' if changed_candidates else '无'}。"
+            )
+            return 1
         log("")
-        log("repo.json 需要更新（--check 模式不写入）。")
-        return 1
+        log("repo.json / candidates.json 均无变化。")
+        return 0
 
-    OUTPUT_PATH.write_text(text, encoding="utf-8", newline="\n")
-    log("")
-    log(f"已写入 {OUTPUT_PATH.name}")
+    if changed_main:
+        OUTPUT_PATH.write_text(text, encoding="utf-8", newline="\n")
+        log("")
+        log("已写入 repo.json")
+    else:
+        log("")
+        log("repo.json 无变化。")
+    if changed_candidates:
+        CANDIDATES_PATH.write_text(candidate_text, encoding="utf-8", newline="\n")
+        log("已写入 candidates.json")
+    elif candidate_text:
+        log("candidates.json 无变化。")
     return 0
 
 
