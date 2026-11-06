@@ -53,15 +53,6 @@
     "size": 24288935,
     "source_repo": "XITRIX/iTorrent"
   },
-  "coflyn/Mori@4.5.1": {
-    "bundleIdentifier": "com.mori.downloader",
-    "displayName": "Mori",
-    "version": "4.5.1",
-    "build": "22",
-    "minOSVersion": "14.0",
-    "size": 2099521,
-    "source_repo": "coflyn/Mori"
-  },
   "ResistanceTo/MiniWatts@1.6.0": {
     "bundleIdentifier": "org.zhaohe.MiniWatts",
     "displayName": "MiniWatts",
@@ -107,15 +98,6 @@
     "size": 14753154,
     "source_repo": "Aidoku/Aidoku"
   },
-  "NuvioMedia/NuvioMobile@0.6.7-beta": {
-    "bundleIdentifier": "com.nuvio.media",
-    "displayName": "Nuvio",
-    "version": "0.6.7",
-    "build": "150",
-    "minOSVersion": "16.1",
-    "size": 68798444,
-    "source_repo": "NuvioMedia/NuvioMobile"
-  },
   "itzzace/ytkace@1.1.5": {
     "bundleIdentifier": "com.google.ios.youtube",
     "displayName": "YouTube",
@@ -125,15 +107,6 @@
     "size": 139496330,
     "source_repo": "itzzace/ytkace"
   },
-  "duofuwang/feather@2.9.0-2": {
-    "bundleIdentifier": "thewonderofyou.Feather",
-    "displayName": "Feather",
-    "version": "2.9.0",
-    "build": "6b9adec5b6d3d041c2b994e67593ab857e79175a",
-    "minOSVersion": "16.0",
-    "size": 14163633,
-    "source_repo": "duofuwang/feather"
-  },
   "huamurui/zhihu-minus-minus@0.9.9": {
     "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
     "displayName": "知乎--",
@@ -142,5 +115,32 @@
     "minOSVersion": "16.4",
     "size": 14830602,
     "source_repo": "huamurui/zhihu-minus-minus"
+  },
+  "duofuwang/feather@2.9.0-3": {
+    "bundleIdentifier": "thewonderofyou.Feather",
+    "displayName": "Feather",
+    "version": "2.9.0",
+    "build": "4d82070dfb53df1f0a4bb3146fe02d32240d38c9",
+    "minOSVersion": "16.0",
+    "size": 14163630,
+    "source_repo": "duofuwang/feather"
+  },
+  "coflyn/Mori@4.5.2": {
+    "bundleIdentifier": "com.mori.downloader",
+    "displayName": "Mori",
+    "version": "4.5.2",
+    "build": "23",
+    "minOSVersion": "14.0",
+    "size": 2099534,
+    "source_repo": "coflyn/Mori"
+  },
+  "NuvioMedia/NuvioMobile@0.6.8-beta": {
+    "bundleIdentifier": "com.nuvio.media",
+    "displayName": "Nuvio",
+    "version": "0.6.8",
+    "build": "151",
+    "minOSVersion": "16.1",
+    "size": 68872061,
+    "source_repo": "NuvioMedia/NuvioMobile"
   }
 }

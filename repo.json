@@ -124,25 +124,24 @@
       "tintColor": "#6874f1",
       "versions": [
         {
+          "version": "2.9.0-3",
+          "date": "2026-11-05T23:11:58Z",
+          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-3/Feather.ipa",
+          "size": 14163630,
+          "buildVersion": "4d82070dfb53df1f0a4bb3146fe02d32240d38c9",
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "2.9.0-2",
           "date": "2026-11-05T06:16:06Z",
           "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-2/Feather.ipa",
-          "size": 14163633,
-          "buildVersion": "6b9adec5b6d3d041c2b994e67593ab857e79175a",
-          "minOSVersion": "16.0"
+          "size": 14163633
         },
         {
           "version": "2.9.0-1",
           "date": "2026-11-05T03:52:39Z",
           "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-1/Feather.ipa",
           "size": 14122517
-        },
-        {
-          "version": "2.9.0-n4",
-          "date": "2026-11-05T02:56:45Z",
-          "localizedDescription": "**Full Changelog**: https://github.com/duofuwang/feather/commits/v2.9.0-n4",
-          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-n4/Feather.ipa",
-          "size": 14122307
         }
       ]
     },
@@ -258,13 +257,20 @@
       "tintColor": "#6156e2",
       "versions": [
         {
+          "version": "4.5.2",
+          "date": "2026-11-05T22:19:00Z",
+          "localizedDescription": "# What's New in Mori 4.5.2\r\n\r\n### New Features & Enhancements\r\n\r\n* **Batch Media Format Preference**: Added user preference under Settings -> Behavior Settings (`mori_batch_format`) to choose between \"Video (Best Available)\" and \"Audio Only (MP3)\" during batch downloads with complete 9-language localization support.\r\n* **Pure Audio Batch Pipeline**: Dedicated audio download handling for Spotify, Apple Music, and Bandcamp preventing songs from entering photo carousel or PDF compiler logic.\r\n* **Silent Shorts Normalization**: Automatic canonicalization in batch analyzer (`analyzeUrlSilent`) ensuring queued YouTube Shorts links resolve reliably without manual URL editing.\r\n* **Mori CLI First-Class Desktop Runner**: Replaced legacy desktop download links on the landing page with official stand…",
+          "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.2/Mori-v4.5.2-iOS-Unsigned.ipa",
+          "size": 2099534,
+          "buildVersion": "23",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "4.5.1",
           "date": "2026-10-18T23:48:43Z",
           "localizedDescription": "What's New in v4.5.1\r\n\r\n- Automatic System Language Detection: Automatically detects device and browser language on first launch via navigator.languages / navigator.language and maps to 9 supported locales (Simplified Chinese, Indonesian, Japanese, Korean, Arabic, Russian, Tagalog, Hindi, and English fallback) (#17)\r\n- Android Share Sheet Locale Fallback: Added native Locale.getDefault() language detection in ShareActivity.java so shared links match device language even before app initialization\r\n- Gallery Tab Visibility Toggle: Added toggle to show or hide the Gallery tab under Settings -> Appearance (mori_show_gallery), completely bypassing background disk scans to save RAM and battery on lower-end devices\r\n- TikTok tt.site Shortlink Recognition: Added automatic recognition and URL clean…",
           "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.1/Mori-v4.5.1-iOS-Unsigned.ipa",
-          "size": 2099521,
-          "buildVersion": "22",
-          "minOSVersion": "14.0"
+          "size": 2099521
         },
         {
           "version": "4.5.0",
@@ -272,13 +278,6 @@
           "localizedDescription": "What's New in v4.5.0\r\n\r\n- Local Media Gallery: Scans downloaded media across Mori directories with categorized tabs (Video, Audio, Image, PDF), live counters, and persistent sorting (Newest, Oldest, A-Z, Size)\r\n- In-App Native PDF Viewer: Bundled offline PDF.js engine with high-DPI canvas rendering, viewport lazy rendering, page 1 cover generator, and page count subtitle\r\n- High-Resolution 640px Thumbnails: Upgraded Android native frame extraction, web canvas generator, and PDF covers to 640px JPEG with sequential queue processing\r\n- Audio Gallery Previews & Grid Covers: History-style audio playback in gallery viewer with album art, track details, local binary streaming, and album artwork on grid cards\r\n- Gallery Favorites Priority: Favorited items float to top of grid with heart badge, ac…",
           "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.5.0/Mori-v4.5.0-iOS-Unsigned.ipa",
           "size": 2096767
-        },
-        {
-          "version": "4.4.0",
-          "date": "2026-09-30T22:16:05Z",
-          "localizedDescription": "What's New in v4.4.0\r\n- Custom Fullscreen Video Player: Replaced native WebView fullscreen with a custom cross-platform player featuring a title header, 60fps seek scrubbing, mute toggle, and back-button / Esc navigation\r\n- Batch Photo Download & PDF Export: Concurrently download all photos in carousels/slides (Instagram, TikTok, Pixiv, Douyin, RedNote) or compile them into a single PDF document\r\n- Reddit & TeraBox Platform Support: Added 2 new platforms (16 total) supporting RapidSave Reddit media and Sechno TeraBox folder and file extraction\r\n- Floating Download Bubble: Persistent monochrome floating bubble tracking up to 5 concurrent downloads with live progress rings\r\n- Concurrent Download Pool: Full concurrent download pool (up to 5 for photos/files, up to 3 for audio/video playlists)…",
-          "downloadURL": "https://github.com/coflyn/Mori/releases/download/v4.4.0/Mori-v4.4.0-iOS-Unsigned.ipa",
-          "size": 1662745
         }
       ]
     },
@@ -292,13 +291,20 @@
       "tintColor": "#9445e7",
       "versions": [
         {
+          "version": "0.6.8-beta",
+          "date": "2026-11-05T18:26:56Z",
+          "localizedDescription": "- 0403e6f6 fix(player): detach mpv surfaces on the playback thread @tapframe  \r\n- 68c815b2 feat(streams): update blur @tapframe  \r\n- b90454d7 feat(details): update blur @tapframe  \r\n- [fix(ios): keep an add-on subtitle selected before mpv loads the file (#2517)](https://github.com/NuvioMedia/NuvioMobile/pull/2517) @skoruppa  \r\n- [sync ASS/SSA add-on subtitles drawn by libass (#2515)](https://github.com/NuvioMedia/NuvioMobile/pull/2515) @skoruppa  \r\n- [fix(i18n): drop trailing period from two pt-BR descriptions (#2506)](https://github.com/NuvioMedia/NuvioMobile/pull/2506) @jhojhocraazy  \r\n- [fix(player): stop Exo/libmpv auto-switch ping-pong on the same source (#2485)](https://github.com/NuvioMedia/NuvioMobile/pull/2485) @halibiram  \r\n- [fix(player): resume a closed torrent stream at the st…",
+          "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.8-beta/nuvio-0.6.8-full-release.ipa",
+          "size": 68872061,
+          "buildVersion": "151",
+          "minOSVersion": "16.1"
+        },
+        {
           "version": "0.6.7-beta",
           "date": "2026-11-04T02:57:36Z",
           "localizedDescription": "- 9f18bfee feat(player): resize video beside watch party panel @tapframe  \r\n- [Fix addon ASS subtitles not rendering with libass on Android (#2507)](https://github.com/NuvioMedia/NuvioMobile/pull/2507) @skoruppa  \r\n- [fix(ios): declare long-form video audio so playback is not shown as music (#2419)](https://github.com/NuvioMedia/NuvioMobile/pull/2419) @WhiteGiso  \r\n- [locales: add and update Arabic settings translations (#2498)](https://github.com/NuvioMedia/NuvioMobile/pull/2498) @aliabdoxd14  \r\n- [Add missing Polish translations (#2495)](https://github.com/NuvioMedia/NuvioMobile/pull/2495) @skoruppa  \r\n- [Keep stream info and current stream marker with reused links (#2494)](https://github.com/NuvioMedia/NuvioMobile/pull/2494) @skoruppa  \r\n- [i18n: harmonize French terminology with Nuvio …",
           "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.7-beta/nuvio-0.6.7-full-release.ipa",
-          "size": 68798444,
-          "buildVersion": "150",
-          "minOSVersion": "16.1"
+          "size": 68798444
         },
         {
           "version": "0.6.6-beta",
@@ -306,13 +312,6 @@
           "localizedDescription": "- [Translation improvements and adjustments for Slovak language + added translated new strings files (#2448)](https://github.com/NuvioMedia/NuvioMobile/pull/2448) @mmsw91\r\n- [improve player badge codec detection and add filename matching (#2414)](https://github.com/NuvioMedia/NuvioMobile/pull/2414) @skoruppa\r\n- [Add intro, outro and recap skipping from MKV chapter titles (#2446)](https://github.com/NuvioMedia/NuvioMobile/pull/2446) @skoruppa \r\n- [feat(i18n): translate settings groups, subtitle appearance and ASS render modes (#2435)](https://github.com/NuvioMedia/NuvioMobile/pull/2435) @jhojhocraazy\r\n- Update Vietnamese translations ([#2441](https://github.com/NuvioMedia/NuvioMobile/pull/2441), [#2411](https://github.com/NuvioMedia/NuvioMobile/pull/2411)) @blueocean2308\r\n- Add subtitle cus…",
           "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.6-beta/nuvio-0.6.6-full-release.ipa",
           "size": 68521101
-        },
-        {
-          "version": "0.6.5-beta",
-          "date": "2026-10-27T02:04:03Z",
-          "localizedDescription": "- [feat(i18n): translate subtitle render scale and hero ratings settings (#2402)](https://github.com/NuvioMedia/NuvioMobile/pull/2402) @jhojhocraazy  \r\n- 2c69902b fix(servers): keep title lookups working between episodes @tapframe  \r\n- [Updated Bulgarian translations - fixes, party file, new strings (#2397)](https://github.com/NuvioMedia/NuvioMobile/pull/2397) @viiktr  \r\n- 88c9b4ce feat(player): split video and controls at the duo fold @tapframe  \r\n- [fix(debrid): recognize language words in release names (#2364)](https://github.com/NuvioMedia/NuvioMobile/pull/2364) @kernexshadow  \r\n- [i18n(vi): update latest Vietnamese strings (#2370)](https://github.com/NuvioMedia/NuvioMobile/pull/2370) @blueocean2308  \r\n- c85dc721 feat(player): remove source name from paused player @tapframe  \r\n- [l10n:…",
-          "downloadURL": "https://github.com/NuvioMedia/NuvioMobile/releases/download/0.6.5-beta/nuvio-0.6.5-full-release.ipa",
-          "size": 67965485
         }
       ]
     },
