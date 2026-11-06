@@ -124,23 +124,5 @@
     "minOSVersion": "16.0",
     "size": 14163630,
     "source_repo": "duofuwang/feather"
-  },
-  "coflyn/Mori@4.5.2": {
-    "bundleIdentifier": "com.mori.downloader",
-    "displayName": "Mori",
-    "version": "4.5.2",
-    "build": "23",
-    "minOSVersion": "14.0",
-    "size": 2099534,
-    "source_repo": "coflyn/Mori"
-  },
-  "NuvioMedia/NuvioMobile@0.6.8-beta": {
-    "bundleIdentifier": "com.nuvio.media",
-    "displayName": "Nuvio",
-    "version": "0.6.8",
-    "build": "151",
-    "minOSVersion": "16.1",
-    "size": 68872061,
-    "source_repo": "NuvioMedia/NuvioMobile"
   }
 }
