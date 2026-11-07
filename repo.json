@@ -226,16 +226,23 @@
       "localizedDescription": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature sensors, and the USB-PD handshake.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.zhaohe.MiniWatts.png?v=f99dba3182e4",
       "tintColor": "#c8c836",
-      "size": 3332420,
+      "size": 3374224,
       "versions": [
+        {
+          "version": "1.7.0",
+          "date": "2026-11-07T08:08:32Z",
+          "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **温度可以显示为华氏度。** 设置 → 单位 里可选\"自动 / °C / °F\"。\"自动\"跟随系统地区，以及\"设置 › 通用 › 语言与地区\"里的\"温度\"选项，所以地区使用华氏度的用户升级后会直接看到 °F。App 各页、图表、热力图、悬浮读数、实时活动和小组件都按所选单位显示；原始数据仍显示传感器给出的 °C。(#25)\n- **充电预估。** 充电时，功率页会显示充到 80% 和充到 100% 还要多久，以及大约几点。时间根据电量实际上升的速度推算，不依赖电池能量设置；要等电量变化两次才会出现，通常需要几分钟。80% 以后按典型充电曲线估算，只是近似值。(#27)\n- **显示版本号。** 设置 → 关于 里显示当前版本，原始数据导出的第一行也带上了版本号。(#27)\n- **iPad 布局。** iPad 横屏和 13 英寸竖屏时，各页分成两栏；窄屏时仍是一栏。历史记录里单次充电的详情页在 iPad 上不再横向铺满。(#22)\n- **iPad 热力图。** 在 iPad 上，发热页画的是 iPad 的轮廓，各区域按 iPad Pro 11 英寸的内部布局放置：主板在中间，两侧是电芯，充电芯片在 USB-C 接口旁。设备页和设置里的图标也换成了 iPad。(#13, #22)\n\n## 修复\n\n- 发热：CPU 簇（`pACC`、`eACC`）和图像处理器（`ISP`）等传感器以前被归入\"其他传感器\"，现在算作 SoC，SoC 区域的温度也会把它们算进去。iPhone 11 上 `FrontCameraDie`、`BC…",
+          "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.7.0/MiniWatts-unsigned.ipa",
+          "size": 3374224,
+          "buildVersion": "22",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.6.0",
           "date": "2026-10-27T03:11:13Z",
           "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **iPhone 18 Pro 高功率充电时会提示读数可能只有一半。** 在 iPhone 18 Pro 系列上用有线充电、协商功率超过 30 W 时，表盘旁会显示\"可能只读到一半\"，功率页和适配器页也会说明原因：这种情况下输入和电芯两侧的传感器都可能只测到一半功率。数值本身不做修正。\n- **新增\"电量核对\"。** 充电时，App 会把电量上升的速度换算成功率，和电芯传感器在同一段时间里测到的功率对比。如果电量涨得明显比传感器测到的快（1.6 倍以上），表盘旁会显示\"读数偏低\"，并给出两边的数值；如果两边一致，会显示核对通过，上面那条\"可能只读到一半\"的提示也会隐藏。电量要上涨至少 3% 才能给出结果，通常需要几分钟。\n- **传感器按 SMC key 识别，重复的读数会合并。** iOS 27 上每个传感器都会出现两份，以前只取第一份，现在取两份的平均值；发热页的列表里每个传感器也只出现一次。发热页和原始数据会在传感器名旁边标出 key（比如电池温度偏高的那个是 `TG0B`）。\n- **电池能量按机型给默认值。** iPhone 18 Pro Max 为 21.75 Wh，iPhone 17 Pro Max 为 19.7 Wh，其他机型仍是 15 Wh。设置 → 电池能量 里会显示本机型的额定值，点\"使用\"即可填入。已经手动设置过的值保持不变。\n- **原始数据新增\"Derived power checks\"一节。** 这一节记录半功率提示是否生效，以及电量核对的结果。\n\n## 修复\n\n- 适配器：iPhone 18 …",
           "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.6.0/MiniWatts-unsigned.ipa",
-          "size": 3332420,
-          "buildVersion": "21",
-          "minOSVersion": "17.0"
+          "size": 3332420
         },
         {
           "version": "1.5.1",
@@ -243,13 +250,6 @@
           "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **输入读数不完整时，不再当作输入功率显示。** 在 iPad Pro 和 iPhone 18 Pro Max 上，输入传感器只测到了一部分功率（比如实际 43.5 W 只显示 21.8 W）。现在当进入电芯的功率比输入读数还大时，表盘改为显示\"进入电池\"的功率，不再计算效率和适配器利用率，并在功率页和适配器页说明原因。\n- **电池温度改用中位数。** 部分机型有四个同名的电池温度传感器，其中一个明显偏高。\"电池\"读数、热力图上的电池标记和分区标题现在都用中位数，四个读数仍然逐个列出。\n- **异常温度不再参与计算。** 以下读数不再计入热力图和最高温度，但仍保留在\"原始数据\"里，并注明原因：低于 −10 °C 的 PMU 传感器、高于 85 °C 而结温对不上的充电芯片温度、恰好为 0.0 °C 的传感器。\n- **支持 iPad。** 支持横竖屏，内容不再横向拉满。iPad 的传感器对应关系还没有验证，数据仅供参考。\n- **文案更准确。** \"来自充电器\"改为\"手机接口处 / 充电线圈处\"；适配器页注明额定功率是协商出的上限，不是功率计读数。\n- **原始数据更便于反馈。** 每个传感器带上服务编号，并列出被排除的读数。\n\n## 修复\n\n- 适配器：供电规格列表里不再出现\"65.5 V × 65.53 A\"这样的无效档位。\n- 实时活动：App 在前台时，读数变化 0.05 就会更新，不再等到变化 0.2 W 或 0.5 °C。\n\n## 注意\n\n- 这些修复是根据用户反馈的数据做的，没有在对应机型的真机上验证过。如果…",
           "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.5.1/MiniWatts-unsigned.ipa",
           "size": 3305290
-        },
-        {
-          "version": "1.5.0",
-          "date": "2026-10-10T07:18:40Z",
-          "localizedDescription": "Unsigned build — sign it with your own Apple ID before installing.\nhttps://github.com/ResistanceTo/MiniWatts#install\n\n## 改进\n\n- **缺失的读数不再显示成 0。** 某一侧没有读数时（例如无线充电没有输入电流），图表在那一段断开，不再掉到 0；能量统计也只累计真正测到的时间段。\n- **充电效率更准。** \"电芯占比\"和\"负载与损耗\"只按输入侧、电池侧同时有读数的时间段计算，某一侧中途缺失不会再把结果带偏。\n- **两个标签改名。** \"以热量损失\"改为\"负载与损耗\"：这部分是手机自身耗电加上转换损耗，并不全是发热。\"效率 / 往返效率\"改为\"电芯占比\"。\n- **\"暂停充电\"的判断更稳。** 状态切换要持续 30 秒才生效，不再来回跳；没有电池电流读数时显示\"保持状态未知\"，不再直接当成暂停充电。\n- **耗电估算不再因为切到后台而清空。** 短暂离开 App 再回来，估算值还在。\n- **历史文件损坏时不再被直接覆盖。** 读不出来的历史文件会改名保留，并在\"原始数据\"页给出提示。\n- **发热相关的说明更准确。** 系统热状态只说明\"可能\"在限制充电电流，不再说成确定的原因。\n\n## 修复\n\n- 历史记录：没有测到输入侧的记录，\"输入\"和\"充电器峰值\"显示为\"—\"，不再显示 0；列表里的迷你曲线改画电池侧功率，不再空白。\n- 实时活动：灵动岛展开后，右上角的状态文字和\"结束\"按钮不再被圆角裁掉；暂停提示能完整显示。\n- 原始数据：重名的 HID 服务各占一行，不再被合并。\n\n## 注意\n\n- 升级后历史记录的格式有变化，旧版本读不了新格式。**如果从 1.5.0 降级回旧版本，历史记录会丢失。**\n\n---\n\n## Improvements\n\n-…",
-          "downloadURL": "https://github.com/ResistanceTo/MiniWatts/releases/download/v1.5.0/MiniWatts-unsigned.ipa",
-          "size": 3284306
         }
       ]
     },

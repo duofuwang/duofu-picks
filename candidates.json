@@ -958,16 +958,23 @@
       "localizedDescription": "A cross-platform reimplementation of Plants vs. Zombies by the community. Aiming to bring 100% authentic experience of GOTY edition.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.wszqkzqk.pvz-portable.png?v=355de068e707",
       "tintColor": "#d7d035",
-      "size": 4325990,
+      "size": 4328679,
       "versions": [
+        {
+          "version": "0.2.7",
+          "date": "2026-11-07T08:56:15Z",
+          "localizedDescription": "## What's Changed\n* Fix: correct Grave Buster death dirt position by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/518\n* Fix: release uploaded resources after WASM startup by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/516\n* Feat: rewrite the v4 save converter as a structured save editor by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/519\n* Fix: restore graceful Android exit and relaunch by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/522\n* Refactor: centralize challenge screen button state by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/514\n\n\n**Full Changelog**: https://github.com/wszqkzqk/PvZ-Portable/compare/0.2.6...0.2.7",
+          "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.7/pvz-portable-ios-arm64.ipa",
+          "size": 4328679,
+          "buildVersion": "943",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "0.2.6",
           "date": "2026-10-25T01:24:44Z",
           "localizedDescription": "## What's Changed\n* Fix: avoid duplicate sell price zero by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/501\n* Refactor: standardize byte types on uint8_t by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/503\n* Refactor: avoid redundant triangle vertex initialization by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/504\n* Refactor: reduce pitch interpolation index overhead by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/507\n* Refactor: queue vertex uploads and deduplicate GL state by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/511\n* Refactor: reuse particle shake random values by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/505\n* Refactor: reduce repeated pool effect computations by @wszqkzqk in https://github…",
           "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.6/pvz-portable-ios-arm64.ipa",
-          "size": 4325990,
-          "buildVersion": "938",
-          "minOSVersion": "16.4"
+          "size": 4325990
         },
         {
           "version": "0.2.5",
@@ -975,13 +982,6 @@
           "localizedDescription": "## What's Changed\n* Refactor: type mRenderData and make Challenge level tables constexpr by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/484\n* Fix: use PottedPlantGlow for standard pots in ZenGarden::AddHappyEffect by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/486\n* Feat: allow moving the Android app to external or adoptable storage by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/488\n* Feat: add optional custom properties overrides by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/493\n* Fix: use Tall-nuts in Another Chain Reaction by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/496\n* Refactor: batch triangles with mixed blend modes by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/497\n\n\n**Full Changelog**: ht…",
           "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.5/pvz-portable-ios-arm64.ipa",
           "size": 4326134
-        },
-        {
-          "version": "0.2.4",
-          "date": "2026-09-24T02:00:51Z",
-          "localizedDescription": "## What's Changed\n* Feat: deploy the WebAssembly build to GitHub Pages on release tags by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/474\n* Fix: gate the Pages deployment on the full build matrix by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/475\n* Fix: point the README's play-online links at the GitHub Pages deployment by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/476\n* Chore: drop redundant mpg123/libvorbis/libogg dependency declarations by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/480\n* Feat: expand LOW_MEMORY mode for memory-constrained platforms by @wszqkzqk in https://github.com/wszqkzqk/PvZ-Portable/pull/479\n\n\n**Full Changelog**: https://github.com/wszqkzqk/PvZ-Portable/compare/0.2.3...0.2.4",
-          "downloadURL": "https://github.com/wszqkzqk/PvZ-Portable/releases/download/0.2.4/pvz-portable-ios-arm64.ipa",
-          "size": 4326667
         }
       ]
     },

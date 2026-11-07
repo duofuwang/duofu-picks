@@ -44,15 +44,6 @@
     "size": 24288935,
     "source_repo": "XITRIX/iTorrent"
   },
-  "ResistanceTo/MiniWatts@1.6.0": {
-    "bundleIdentifier": "org.zhaohe.MiniWatts",
-    "displayName": "MiniWatts",
-    "version": "1.6.0",
-    "build": "21",
-    "minOSVersion": "17.0",
-    "size": 3332420,
-    "source_repo": "ResistanceTo/MiniWatts"
-  },
   "bggRGjQaUbCoE/PiliPlus@2.2.0.2": {
     "bundleIdentifier": "com.example.piliplus",
     "displayName": "PiliPlus",
@@ -440,15 +431,6 @@
     "size": 142303569,
     "source_repo": "Leviidev/Husk"
   },
-  "wszqkzqk/PvZ-Portable@0.2.6": {
-    "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
-    "displayName": "PvZ Portable",
-    "version": "0.2.6",
-    "build": "938",
-    "minOSVersion": "16.4",
-    "size": 4325990,
-    "source_repo": "wszqkzqk/PvZ-Portable"
-  },
   "huamurui/zhihu-minus-minus@0.9.10": {
     "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
     "displayName": "知乎--",
@@ -475,5 +457,23 @@
     "minOSVersion": "17.4",
     "size": 16924629,
     "source_repo": "StikDebug/StikDebug"
+  },
+  "ResistanceTo/MiniWatts@1.7.0": {
+    "bundleIdentifier": "org.zhaohe.MiniWatts",
+    "displayName": "MiniWatts",
+    "version": "1.7.0",
+    "build": "22",
+    "minOSVersion": "17.0",
+    "size": 3374224,
+    "source_repo": "ResistanceTo/MiniWatts"
+  },
+  "wszqkzqk/PvZ-Portable@0.2.7": {
+    "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
+    "displayName": "PvZ Portable",
+    "version": "0.2.7",
+    "build": "943",
+    "minOSVersion": "16.4",
+    "size": 4328679,
+    "source_repo": "wszqkzqk/PvZ-Portable"
   }
 }
