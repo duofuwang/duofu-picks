@@ -260,15 +260,6 @@
     "size": 26431983,
     "source_repo": "deretame/Breeze"
   },
-  "CyrilPeng/Venera-Next@1.18.2": {
-    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
-    "displayName": "VeneraNext",
-    "version": "1.18.2",
-    "build": "243",
-    "minOSVersion": "14.0",
-    "size": 21307925,
-    "source_repo": "CyrilPeng/Venera-Next"
-  },
   "EhPanda-Team/EhPanda@3.0.0": {
     "bundleIdentifier": "app.ehpanda",
     "displayName": "EhPanda",
@@ -277,15 +268,6 @@
     "minOSVersion": "27.0",
     "size": 19041995,
     "source_repo": "EhPanda-Team/EhPanda"
-  },
-  "Jellify-Music/App@1.3.1": {
-    "bundleIdentifier": "com.cosmonautical.jellify",
-    "displayName": "Jellify",
-    "version": "1.3.1",
-    "build": "167",
-    "minOSVersion": "16.4",
-    "size": 37133055,
-    "source_repo": "Jellify-Music/App"
   },
   "pounat/absorb@1.12.1-304": {
     "bundleIdentifier": "com.barnabas.absorb",
@@ -367,15 +349,6 @@
     "minOSVersion": "15.0",
     "size": 11050215,
     "source_repo": "lwh0630/TokenBar"
-  },
-  "cogwheel0/conduit@4.2.2": {
-    "bundleIdentifier": "app.cogwheel.conduit",
-    "displayName": "Conduit",
-    "version": "4.2.2",
-    "build": "153",
-    "minOSVersion": "16.0",
-    "size": 45348117,
-    "source_repo": "cogwheel0/conduit"
   },
   "Lingyan000/fluxdo@0.2.29": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
@@ -475,5 +448,32 @@
     "minOSVersion": "16.4",
     "size": 4328679,
     "source_repo": "wszqkzqk/PvZ-Portable"
+  },
+  "CyrilPeng/Venera-Next@1.18.3": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "displayName": "VeneraNext",
+    "version": "1.18.3",
+    "build": "249",
+    "minOSVersion": "14.0",
+    "size": 21467556,
+    "source_repo": "CyrilPeng/Venera-Next"
+  },
+  "Jellify-Music/App@1.4.0": {
+    "bundleIdentifier": "com.cosmonautical.jellify",
+    "displayName": "Jellify",
+    "version": "1.4.0",
+    "build": "169",
+    "minOSVersion": "16.4",
+    "size": 38242006,
+    "source_repo": "Jellify-Music/App"
+  },
+  "cogwheel0/conduit@4.3.0": {
+    "bundleIdentifier": "app.cogwheel.conduit",
+    "displayName": "Conduit",
+    "version": "4.3.0",
+    "build": "154",
+    "minOSVersion": "16.0",
+    "size": 45894857,
+    "source_repo": "cogwheel0/conduit"
   }
 }

@@ -244,16 +244,23 @@
       "localizedDescription": "Native iOS and Android client for Open WebUI, direct OpenAI-compatible, Ollama, and Hermes agents.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.cogwheel.conduit.png?v=b21cbc3637aa",
       "tintColor": "#174beb",
-      "size": 45348117,
+      "size": 45894857,
       "versions": [
+        {
+          "version": "4.3.0",
+          "date": "2026-11-07T16:16:13Z",
+          "localizedDescription": "## What's Changed\n* Add a seekable read-aloud player for cloud and device voices by @kapily in https://github.com/cogwheel0/conduit/pull/901\n* Filter playback voices by language by @kapily in https://github.com/cogwheel0/conduit/pull/902\n* Preserve per-chat text and recording drafts across restarts by @kapily in https://github.com/cogwheel0/conduit/pull/903\n* Use native floating context menus on iOS by @kapily in https://github.com/cogwheel0/conduit/pull/904\n* Customize and reorder response actions in Chat settings by @kapily in https://github.com/cogwheel0/conduit/pull/905\n* Add an Appearance option to hide the Notes shortcut by @kapily in https://github.com/cogwheel0/conduit/pull/906\n* Tighten the gap above the chat composer by @kapily in https://github.com/cogwheel0/conduit/pull/907\n* A…",
+          "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.3.0/conduit.ipa",
+          "size": 45894857,
+          "buildVersion": "154",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "4.2.2",
           "date": "2026-10-26T17:41:38Z",
           "localizedDescription": "## What's Changed\n* Support Open WebUI 0.12.3 by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/850\n* Fix four reported bugs: Direct next to Hermes, MCP tool images, channel thread scrolling, default filters by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/870\n* fix/feat: Improve handling for video files in OpenWebUI/chat by @dalgibbard in https://github.com/cogwheel0/conduit/pull/869\n* Open the Android assistant on a ready new chat, and keep it after a reboot by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/872\n* Mark chats unread from the chat list and show web unread marks in the app by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/874\n* Share screenshots and Files documents to Conduit on iOS with their real contents by @cogwheel0 in https://github…",
           "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.2/conduit.ipa",
-          "size": 45348117,
-          "buildVersion": "153",
-          "minOSVersion": "16.0"
+          "size": 45348117
         },
         {
           "version": "4.2.1",
@@ -261,13 +268,6 @@
           "localizedDescription": "## What's Changed\n* Support Open WebUI 0.12.2 by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/847\n* Let the speaker button work from the start of Android voice calls by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/849\n\n\n**Full Changelog**: https://github.com/cogwheel0/conduit/compare/v4.2.0...v4.2.1",
           "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.1/conduit.ipa",
           "size": 45123011
-        },
-        {
-          "version": "4.2.0",
-          "date": "2026-10-13T06:42:19Z",
-          "localizedDescription": "## What's Changed\n* Add Open WebUI client parity and Advanced UI controls by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/807\n* Make everyday Open WebUI features available without Advanced and polish the new screens by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/808\n* CI: run steps in parallel, cache Gradle, and trim setup by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/810\n* Add Flutter control facades and a narrow platform UI vocabulary (1/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/811\n* Enforce the platform UI seam with a shrinking allow-list (2/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/812\n* Route settings selection controls through platform UI (3/5) by @cogwheel0 in https://github.com/cogwheel0/conduit/pull/813\n*…",
-          "downloadURL": "https://github.com/cogwheel0/conduit/releases/download/v4.2.0/conduit.ipa",
-          "size": 45085120
         }
       ]
     },
@@ -482,16 +482,23 @@
       "localizedDescription": "A cross-platform, free and open source music player for Jellyfin, powered by React Native",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=b09f342f1476",
       "tintColor": "#54d7e6",
-      "size": 37133055,
+      "size": 38242006,
       "versions": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-07T19:17:39Z",
+          "localizedDescription": "Welcome to Jellify 1.4.0\n\nI am so excited to share all the wonderful improvements we have packed into this latest version! We have introduced some amazing new features like CarPlay support and several polish updates to your favorite interface elements. This update is all about making your music experience smoother, faster, and more enjoyable for everyone.\n\n* We have officially added CarPlay support, which includes a dedicated library tab for your road trips. We also introduced a new Your Playlists section and renamed the Add to Queue button to Play Later to make the app even more intuitive.\n* The shuffle feature is now nearly instant because we moved the logic to native operations to remove any lag. We also fixed several playback issues, including lyrics readability on light backgrounds, s…",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.0/Jellify-1.4.0.ipa",
+          "size": 38242006,
+          "buildVersion": "169",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "1.3.1",
           "date": "2026-10-29T20:17:21Z",
           "localizedDescription": "Welcome to Jellify 1.3.1\r\n\r\nWe’ve polished up the whole experience this week, bringing some snappy performance fixes and useful new management tools to your library. Everything feels smoother, faster, and more intuitive than ever!\r\n\r\n*   Audio Quality Upgrade: We fixed how Jellify streams AAC files on Android, so your music now streams as-is without needing unnecessary transcoding. Enjoy cleaner, more consistent audio quality across the board!\r\n*   UI Polish: The underlying design library was upgraded - giving us an opportunity to comb through the app to make styling more consistent, animations more stable, and the overall feel to be more cohesive \r\n*   Smarter Filtering and Flow: We’ve significantly improved the filtering component and made some quality-of-life updates to components like …",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.1/Jellify-1.3.1.ipa",
-          "size": 37133055,
-          "buildVersion": "167",
-          "minOSVersion": "16.4"
+          "size": 37133055
         },
         {
           "version": "1.3.0",
@@ -499,13 +506,6 @@
           "localizedDescription": "Welcome to Jellify 1.3.0\n\nHey music lovers! We've packed this update with some really sweet fixes and major stability improvements to make sure your playlist keeps going strong wherever you are. Grab your headphones and get ready to stream!\n\n*   **Improved Car Experience:** We've made some great updates for Android Auto users, giving you server-backed browsing and a much smoother experience when resuming playback in your car.\n*   **Flawless Playback:** We tackled some lingering glitches, including better buffering and fixes to the main player screen. Now your music should stream more reliably, even when switching between tracks or listening on the go.\n*   **Enhanced Stability on All Platforms:** This update includes better organization for music albums and fixes a small issue on iOS where …",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.0/Jellify-1.3.0.ipa",
           "size": 41451346
-        },
-        {
-          "version": "1.2.11",
-          "date": "2026-10-05T10:23:55Z",
-          "localizedDescription": "Welcome to Jellify 1.2.11\n\nWe are bringing you a highly stable update focused on fixing key areas related to playback and library integration. This release smooths out common glitches, ensuring your music streams and playlists look perfect no matter what device or Jellyfin version you are using.\n\n*   **Playlist Visibility Fixed:** We corrected an issue that caused playlists to fail to display correctly when using certain versions of Jellyfin (specifically version 12). Your comprehensive music library should now be fully accessible and visible across your connected accounts.\n*   **Improved Shuffle Playback:** We addressed a regression in the music shuffling system. Enjoy continuous, uninterrupted listening experiences, knowing that your random playlist order is always stable and reliable.\n*…",
-          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.2.11/Jellify-1.2.11.ipa",
-          "size": 41199026
         }
       ]
     },
@@ -1238,16 +1238,23 @@
       "localizedDescription": "VeneraNext 是一个跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源、第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.cyrilpeng.veneranext.png?v=d3a6b622a90d",
       "tintColor": "#1580c2",
-      "size": 21307925,
+      "size": 21467556,
       "versions": [
+        {
+          "version": "1.18.3",
+          "date": "2026-11-07T18:10:18Z",
+          "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyrilpeng.veneranext.harmony`，最低／目标 SDK 为 API 26，版本为 `1.18.3`，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，以及带一层可选外部总目录的「漫画合集 ZIP」；结构有多本漫画／单本多章节歧义时由用户确认，取消不入库。目录仅复制导入，PDF 导入、系统分享及生物认证等…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
+          "size": 21467556,
+          "buildVersion": "249",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "1.18.2",
           "date": "2026-11-01T03:37:14Z",
           "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- **Android TV（#120）**：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打开菜单，返回先关闭菜单再保存退出；菜单内不在背景翻页，失焦或切后台停止连发。目录搜索用上下键移出输入框，左右键编辑光标。\n- TV 默认开启单页低内存模式…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-          "size": 21307925,
-          "buildVersion": "243",
-          "minOSVersion": "14.0"
+          "size": 21307925
         },
         {
           "version": "1.18.1",
@@ -1255,13 +1262,6 @@
           "localizedDescription": "### 正式版说明\n\n- 发布补丁正式版 `1.18.1+236`，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n\n### 重点复测与已知限制\n\n- **#111 升级／恢复后启动**：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- **#119 Android 自定义存储目录**：已修复 SAF 选择器返回的 `android://` 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- **#115 归档导入后不显示**：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- **#118 单页翻页闪背景**：已修复切换当前页时重建已加载画面的代码路径；iPad／Android 原设备观感仍待复测，不取消墨水屏的主动刷新。\n-…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
           "size": 21194544
-        },
-        {
-          "version": "1.18.0",
-          "date": "2026-10-14T09:59:36Z",
-          "localizedDescription": "本次正式版在 v1.17.0 基础上完成大范围架构重构，收束阅读器、漫画源、同步与运行时的职责边界，并新增图片原始像素尺寸、章节阅读进度、自动阅读屏幕常亮与跳过不可用图片。同步修复 WebDAV 应用数据同步、日志持久化、AVIF 识别及图片去混淆性能问题，修复 Rust 依赖安全告警并更新相关依赖。经 v1.18.0-rc.1 至 rc.5 逐版验证，Windows 与 Android 的 WebDAV 手动上传、云端下载覆盖及自动同步已通过实机验收。\n\n### 新增\n\n- 阅读器可选显示图片原始像素尺寸，支持单页、多页、连续阅读及宽图拆分；缩小解码和缓存命中仍保留原始尺寸，开关支持全局／设备／单本设置（#95）。\n- 收藏、追更及漫画卡片显示章节和页码进度，阅读时持久化章节／分组名称，图源不可用后仍可查看；旧历史兼容序号回退，长标题支持省略、完整提示和读屏（#93）。\n- 自动阅读默认保持 Android／iOS 屏幕常亮，提供全局／设备／单本开关；停止自动阅读、切后台和退出时恢复系统休眠，旋转与迟到的原生回调不会遗留常亮状态（#96）。\n- 自动阅读新增默认关闭的「跳过不可用图片」选项：失败图片按正常节奏跳过，加载中的图片在 1–60 秒可调的前台等待后继续；覆盖单页、并排页及连续／瀑布流视图，保留操作暂停和章节加载保护，修复瀑布流短错误占位在末章提前可见时的停止定位（#98 后续建议）。\n\n### 修复\n\n- 应用数据同步恢复 v1.17.0 的 WebDAV SDK 上传、下载及旧备份清理流程，沿用日期与数据版本文件名，不再要求条件 PUT、强 ETag 或内容基线；修复候选版上传已返回 201、却因下载／CDN 的 ETag 无法授权清理而持续报错并阻断后续同步的问题。\n- 恢复 WebDAV 文件下载重定向兼容：仅允许 GET 受控跟随，跨源不传递 WebDA…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.0/VeneraNext-ios-1.18.0%2B234.ipa",
-          "size": 21127254
         }
       ]
     },
