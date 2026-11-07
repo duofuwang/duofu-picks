@@ -715,12 +715,58 @@ def build_manual_app(
     return app
 
 
+def _primary_icon_candidates(archive: zipfile.ZipFile, names: list[str]) -> list[tuple[int, str]]:
+    """按 Info.plist 的 CFBundlePrimaryIcon 声明找主图标 PNG。
+
+    旧式项目用 CFBundleIconFiles 列出 IPA 内的 PNG 基名，但文件名未必以
+    AppIcon 开头（"App Icon60x60" / "LinuxRunnerAppIcon60x60" /
+    "AltLoad60x60" / "teal-icon-composer60x60"…），上面那条正则匹配不到。
+    新式项目只有 CFBundleIconName，图标编进 Assets.car，zip 里没有独立 PNG，
+    这里会返回空列表，交给上层回退到仓库素材。
+    """
+    plists = [n for n in names if re.match(r"^Payload/[^/]+\.app/Info\.plist$", n)]
+    if not plists:
+        return []
+    try:
+        info = plistlib.loads(archive.read(plists[0]))
+    except Exception:  # noqa: BLE001
+        return []
+    icons = info.get("CFBundleIcons") or info.get("CFBundleIcons~ipad") or {}
+    primary = icons.get("CFBundlePrimaryIcon") or {}
+    bases: list[str] = []
+    files = primary.get("CFBundleIconFiles")
+    if isinstance(files, list):
+        bases.extend(str(x) for x in files)
+    elif isinstance(files, str):
+        bases.append(files)
+    if isinstance(primary.get("CFBundleIconName"), str):
+        bases.append(primary["CFBundleIconName"])
+    bases = [x for x in bases if x]
+    if not bases:
+        return []
+
+    appdir = plists[0].rsplit("/", 1)[0] + "/"
+    found = []
+    for name in names:
+        if not name.startswith(appdir) or not name.lower().endswith(".png"):
+            continue
+        stem = name[len(appdir):]
+        if "/" in stem:  # 排除 PlugIns / appex / bundle 里的同名资源
+            continue
+        if any(stem.startswith(base) for base in bases):
+            found.append((archive.getinfo(name).file_size, name))
+    return found
+
+
 def extract_icon_from_remote(
     download_url: str, bundle: str, icons_dir: Path, *, refresh: bool | None = None
 ) -> Path | None:
-    """从远程 IPA 里取一张最大的 AppIcon 存到 icons/，返回写出的文件。
+    """从远程 IPA 里取一张最大的主图标存到 icons/，返回写出的文件。
 
-    默认每次都重新读一遍，这样上游换了图标能跟上。refresh=False 时本地有就跳过。
+    先按文件名 AppIcon*.png 找（老规则，保证既有条目行为不变），找不到再
+    按 Info.plist 的 CFBundlePrimaryIcon 声明定向匹配。只传 zip 目录和一张
+    PNG 的字节，不全量下载。默认每次重读，这样上游换了图标能跟上；
+    refresh=False 时本地有就跳过。
     """
     if refresh is None:
         refresh = REFRESH_ICONS
@@ -732,11 +778,14 @@ def extract_icon_from_remote(
     remote = RemoteFile(download_url)
     try:
         with zipfile.ZipFile(remote) as archive:
+            names = archive.namelist()
             candidates = [
                 (archive.getinfo(name).file_size, name)
-                for name in archive.namelist()
+                for name in names
                 if re.match(r"^Payload/[^/]+\.app/AppIcon[^/]*\.png$", name)
             ]
+            if not candidates:
+                candidates = _primary_icon_candidates(archive, names)
             if not candidates:
                 return None
             candidates.sort(reverse=True)
@@ -1406,27 +1455,48 @@ def api_get_bytes(url: str) -> bytes:
     raise FetchError(f"{url} -> {last_error}")
 
 
-def mirror_external_icon(url: str, bundle: str, icons_dir: Path) -> Path | None:
+def mirror_external_icon(
+    url: str, bundle: str, icons_dir: Path, refresh: bool | None = None
+) -> Path | None:
     """把配置里的外链图标下载到 icons/，让源不再依赖第三方图床。
 
-    网络失败时返回 None，调用方保留原地址；拿到的不是图片时抛 IconInvalid，
-    调用方改从 IPA 或仓库里找，避免把一个坏链留在源里。
+    refresh=True（默认跟随全局 REFRESH_ICONS）时每次都重新拉一次上游，
+    上游换了图标就能跟上；内容没变时不写盘，配合 versioned_icon_url 的
+    ?v= 也不会造成缓存抖动。网络失败或拿到的不是图片时回退本地缓存，
+    本地也没有才返回 None / 抛 IconInvalid，让调用方改从 IPA 或仓库找。
     """
     if not url.startswith(("http://", "https://")):
         return None
+    if refresh is None:
+        refresh = REFRESH_ICONS
     cached = _existing_icon(bundle, icons_dir)
-    if cached:
+    if cached and not refresh:
         return cached
     try:
         request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(request, timeout=30) as response:
             data = response.read()
     except Exception as exc:  # noqa: BLE001
+        if cached:
+            log(f"    镜像图标失败，沿用本地缓存：{exc}")
+            return cached
         log(f"    镜像图标失败，保留原地址：{exc}")
         return None
     suffix = _icon_suffix(data)
     if not suffix or len(data) < 100:
+        if cached:
+            log(f"    镜像图标不是图片（{len(data)} 字节），沿用本地缓存")
+            return cached
         raise IconInvalid(f"{len(data)} 字节，开头 {data[:12]!r}")
+    # 内容没变就别写盘：文件名固定，重复写会让每轮构建都动一次产物。
+    comparable = data
+    if suffix.lower() == ".png":
+        try:
+            comparable = normalize_apple_png(data)
+        except (ValueError, struct.error, zlib.error):
+            pass
+    if cached and cached.suffix.lower() == suffix.lower() and cached.read_bytes() == comparable:
+        return cached
     target = _write_icon(icons_dir, bundle, data, suffix, source="mirror")
     if len(data) < 2048:
         log(f"    图标偏小（{len(data)} 字节），可能不够清晰")

@@ -152,11 +152,13 @@
     },
     {
       "repo": "mirazbakis/AltLoad",
-      "subtitle": "纯端侧安装/自动刷新 AltStore、SideStore"
+      "subtitle": "纯端侧安装/自动刷新 AltStore、SideStore",
+      "iconURL": "https://raw.githubusercontent.com/mirazbakis/AltLoad/main/site/AltLoad.png"
     },
     {
       "repo": "mxhm11cr/LinuxRunner",
-      "subtitle": "在 iPhone/iPad 跑 ARM64 Linux 用户态与桌面程序"
+      "subtitle": "在 iPhone/iPad 跑 ARM64 Linux 用户态与桌面程序",
+      "iconURL": "https://raw.githubusercontent.com/mxhm11cr/LinuxRunner/main/assets/branding/linuxrunner-icon.png"
     },
     {
       "repo": "YangJiiii/3105",
