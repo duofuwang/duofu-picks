@@ -937,14 +937,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1196986558,
+      "size": 1197082172,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-06T10:34:57Z",
-          "localizedDescription": "## Alpha Build `ffd611e`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`ffd611e`](https://github.com/Provenance-Emu/Provenance/commit/ffd611e4f41f263e5d839ac7cecc35973309f32d) |\n| **Built** | 2026-11-06 10:33 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42198262079) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nffd611e4f fix: normalize the performance HUD frame count to Double\ne375782d2 [Agent] refactor(emulator): move the performance HUD into a session feature (#3800)\n9585469ce [Agent] feat(logging): configure diagnostic exports and browse session f…",
+          "date": "2026-11-07T00:32:39Z",
+          "localizedDescription": "## Alpha Build `db21dd4`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`db21dd4`](https://github.com/Provenance-Emu/Provenance/commit/db21dd43f6308eaf845c0e8ff1f2f2aba30b8c3c) |\n| **Built** | 2026-11-07 00:32 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42311771195) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ndb21dd43f chore: bump SkinKit to 0.3.0 (#3804)\n```\n\n### Merged PRs\n- #3804: chore: bump SkinKit to 0.3.0\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from s…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1196986558,
+          "size": 1197082172,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

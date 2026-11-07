@@ -26,15 +26,6 @@
     "size": 14531954,
     "source_repo": "Sami-Wali/ryP0"
   },
-  "StikDebug/StikDebug@3.2.0": {
-    "bundleIdentifier": "com.stik.stikdebug",
-    "displayName": "StikDebug",
-    "version": "3.2.0",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 16818331,
-    "source_repo": "StikDebug/StikDebug"
-  },
   "claration/Feather@2.9.0": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",
@@ -475,5 +466,14 @@
     "minOSVersion": "16.0",
     "size": 3937238,
     "source_repo": "missuo/kumone"
+  },
+  "StikDebug/StikDebug@3.2.1": {
+    "bundleIdentifier": "com.stik.stikdebug",
+    "displayName": "StikDebug",
+    "version": "3.2.1",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 16924629,
+    "source_repo": "StikDebug/StikDebug"
   }
 }

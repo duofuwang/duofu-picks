@@ -366,16 +366,23 @@
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
       "tintColor": "#4797f5",
-      "size": 16818331,
+      "size": 16924629,
       "versions": [
+        {
+          "version": "3.2.1",
+          "date": "2026-11-07T05:15:03Z",
+          "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
+          "size": 16924629,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "3.2.0",
           "date": "2026-10-30T03:02:00Z",
           "localizedDescription": "## What's Changed\r\n* Adds on-device pairing file creation and management for the local device, as well as external devices (Apple TV included)\r\n* Error cleanup\r\n* Fixes some connection issues\r\n* Prevent stale legacy pairing files overriding fresh imports by @mvanhorn in https://github.com/StikDebug/StikDebug/pull/479\r\n* Revert \"Prevent stale legacy pairing files overriding fresh imports\" by @CelloSerenity in https://github.com/StikDebug/StikDebug/pull/486\r\n* fix: release the route when playback finishes so a new spot can be set by @OpenUmar in https://github.com/StikDebug/StikDebug/pull/490\r\n* more prob\r\n\r\n## New Contributors\r\n* @mvanhorn made their first contribution in https://github.com/StikDebug/StikDebug/pull/479\r\n* @OpenUmar made their first contribution in https://github.com/StikDeb…",
           "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.0/StikDebug-3.2.0.ipa",
-          "size": 16818331,
-          "buildVersion": "1",
-          "minOSVersion": "17.4"
+          "size": 16818331
         }
       ]
     },
