@@ -294,8 +294,8 @@
       "developerName": "Sami-Wali",
       "subtitle": "发现、下载与管理 IPA 的应用库",
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=ab500d73a64a",
-      "tintColor": "#6054d4",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=e9e8ae44fc4e",
+      "tintColor": "#6456de",
       "size": 14531954,
       "versions": [
         {
@@ -364,8 +364,8 @@
       "developerName": "StikDebug",
       "subtitle": "设备端调试器与 JIT 启用工具，基于 idevice",
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=6cbde6094b20",
-      "tintColor": "#4797f5",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=43cbbfbfddc5",
+      "tintColor": "#1b97f5",
       "size": 16924629,
       "versions": [
         {
@@ -427,7 +427,7 @@
       "developerName": "itzzace",
       "subtitle": "YouTube 增强与下载器，去广告、后台播放",
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=6b2bab94b0ea",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=1075b78b6bbe",
       "tintColor": "#fc0434",
       "size": 139496330,
       "versions": [

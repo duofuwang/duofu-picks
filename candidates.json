@@ -81,8 +81,8 @@
       "developerName": "mirazbakis",
       "subtitle": "纯端侧安装/自动刷新 AltStore、SideStore",
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=11ca162f6d75",
-      "tintColor": "#6156e2",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
+      "tintColor": "#59b299",
       "size": 11794981,
       "versions": [
         {
@@ -116,8 +116,8 @@
       "developerName": "altstoreio",
       "subtitle": "AltStore 官方本体，非越狱设备自签商店",
       "localizedDescription": "AltStore is an alternative app store for non-jailbroken iOS devices.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.rileytestut.AltStore.png?v=d6645350e2bb",
-      "tintColor": "#3fb0b2",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.rileytestut.AltStore.png?v=e4d7ec15d42f",
+      "tintColor": "#3eafb2",
       "size": 40616419,
       "versions": [
         {
@@ -382,8 +382,8 @@
       "developerName": "weiran",
       "subtitle": "SwiftUI 写的 Hacker News 阅读器",
       "localizedDescription": "Hackers is an elegant iOS app for reading Hacker News written in Swift.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.weiranzhang.Hackers.png?v=41bc9a046e0c",
-      "tintColor": "#b24084",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.weiranzhang.Hackers.png?v=375564c10d8b",
+      "tintColor": "#b24c88",
       "size": 8938581,
       "versions": [
         {
@@ -480,8 +480,8 @@
       "developerName": "Jellify-Music",
       "subtitle": "Jellyfin 音乐播放器",
       "localizedDescription": "A cross-platform, free and open source music player for Jellyfin, powered by React Native",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=4574c38b4ade",
-      "tintColor": "#14b4cc",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=b09f342f1476",
+      "tintColor": "#54d7e6",
       "size": 37133055,
       "versions": [
         {
@@ -690,8 +690,8 @@
       "developerName": "mxhm11cr",
       "subtitle": "在 iPhone/iPad 跑 ARM64 Linux 用户态与桌面程序",
       "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=98b559ad0a87",
-      "tintColor": "#e79f17",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=84a600dbb996",
+      "tintColor": "#60bdf5",
       "size": 21513740,
       "versions": [
         {
@@ -1306,8 +1306,8 @@
       "developerName": "yattee",
       "subtitle": "面向隐私的视频播放器（Invidious / Piped）",
       "localizedDescription": "Privacy oriented video player for iOS, tvOS and macOS",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/stream.yattee.app.png?v=2355e8dce224",
-      "tintColor": "#3877e0",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/stream.yattee.app.png?v=d26b33e976d8",
+      "tintColor": "#1979e8",
       "size": 33702868,
       "versions": [
         {
