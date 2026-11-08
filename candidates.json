@@ -622,16 +622,23 @@
       "localizedDescription": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/psyche.kelivo.png?v=752ceed4b0bc",
       "tintColor": "#b27545",
-      "size": 46627606,
+      "size": 47758377,
       "versions": [
+        {
+          "version": "1.3.5",
+          "date": "2026-11-08T12:28:45Z",
+          "localizedDescription": "## What's Changed\n\n- feat: Add automatic context compaction, with editable summary templates, per-conversation settings, and undo. OpenAI native compaction can be enabled separately.\n- feat: Add a fixed context start, so history is sent from a chosen message without rolling truncation by message count.\n- feat: Add Standard, Fast, and UltraFast response speed controls in the reasoning picker, saved per conversation and model.\n- feat: Add a per-conversation control for image recall, plus local budgets for image size, image count, and request body.\n- feat: Detect vision, tools, and thinking support on local Ollama models.\n- feat: Let each assistant choose which memory types are always injected in full.\n- feat: Add custom model icons, including color and monochrome LobeHub styles.\n- feat: Add …",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.5/Kelivo_ios_1.3.5%2B85.ipa",
+          "size": 47758377,
+          "buildVersion": "85",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.3.4",
           "date": "2026-11-02T15:08:16Z",
           "localizedDescription": "## What's Changed\r\n\r\nThis maintenance release focuses on message-saving stability and platform interaction fixes.\r\n\r\n- **Message-saving stability:** Fix an AOT compiler issue that could terminate the process when sending messages, regenerating replies, or saving edits to message history. Resolve checkpoint compatibility before the write loop while retaining incremental writes for changed message parts. This covers the persistence path used when saving an edit that removes images. (#1342)\r\n- **Android text selection:** Keep the editor's selection menu available after Select All so subsequent actions remain accessible. Retire replaced selection sessions before actions can use callbacks from an outdated selection. (#1343)\r\n- **iOS Live Activities:** Use the system background for the Lock Scre…",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.4/Kelivo_ios_1.3.4%2B84.ipa",
-          "size": 46627606,
-          "buildVersion": "84",
-          "minOSVersion": "15.0"
+          "size": 46627606
         },
         {
           "version": "1.3.3",
@@ -639,13 +646,6 @@
           "localizedDescription": "## What's Changed\n\n- feat: Add a desktop side panel that keeps files, topics, and browser tabs together for each conversation, with shortcuts.\n- feat: Adapt desktop layouts down to a 360px-wide window.\n- feat: Add isolated workspace web apps. A `.app.html` file keeps its own saved data and cookies, separate from normal browsing.\n- feat: Bound how many images stay in context. Older tool screenshots can be omitted automatically, pinned images stay, and an omitted image can be attached again.\n- feat: Quote selected message text into the composer, jump back to the source, and translate the selection in the app.\n- feat: Copy an assistant in full, or choose memories, phrases, world books, skills, tools, and the default workspace.\n- feat: Let each conversation choose its own MCP servers, or keep …",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.3/Kelivo_ios_1.3.3%2B83.ipa",
           "size": 46628767
-        },
-        {
-          "version": "1.3.2",
-          "date": "2026-10-26T14:49:14Z",
-          "localizedDescription": "## What's Changed\r\n\r\n- feat: Rebuild Markdown rendering, with GitHub alerts, directive cards, inline HTML, themed highlights, math, and bounded SVG.\r\n- feat: Copy a message as Markdown, and copy a selection as rich HTML.\r\n- feat: Add an integrated browser with tabs, bookmarks, history, downloads, and agent browser tools. Browser steps appear as page cards on the timeline, with workspace page previews.\r\n- feat: Add IntelligentUI, including layouts, forms, charts, tables, and restricted web previews, with a built-in visualize skill.\r\n- feat: Add reversible context management. Compress a chat into an editable summary or mark a context boundary, then undo either one. Original messages are kept.\r\n- feat: Add per-conversation tool permissions, with ask-for-approval and full access.\r\n- feat: Add …",
-          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.2/Kelivo_ios_1.3.2%2B81.ipa",
-          "size": 46210644
         }
       ]
     },
