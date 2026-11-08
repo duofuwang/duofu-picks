@@ -170,15 +170,6 @@
     "size": 11794981,
     "source_repo": "mirazbakis/AltLoad"
   },
-  "mxhm11cr/LinuxRunner@1.1.0": {
-    "bundleIdentifier": "dev.linuxrunner.app",
-    "displayName": "LinuxRunner",
-    "version": "1.1.0",
-    "build": "900",
-    "minOSVersion": "15.0",
-    "size": 21513740,
-    "source_repo": "mxhm11cr/LinuxRunner"
-  },
   "YangJiiii/3105@2.0": {
     "bundleIdentifier": "com.apple.mobile.MobileHouseArrest",
     "displayName": "3105",
@@ -449,15 +440,6 @@
     "size": 21467556,
     "source_repo": "CyrilPeng/Venera-Next"
   },
-  "Jellify-Music/App@1.4.0": {
-    "bundleIdentifier": "com.cosmonautical.jellify",
-    "displayName": "Jellify",
-    "version": "1.4.0",
-    "build": "169",
-    "minOSVersion": "16.4",
-    "size": 38242006,
-    "source_repo": "Jellify-Music/App"
-  },
   "cogwheel0/conduit@4.3.0": {
     "bundleIdentifier": "app.cogwheel.conduit",
     "displayName": "Conduit",
@@ -484,5 +466,23 @@
     "minOSVersion": "15.0",
     "size": 47758377,
     "source_repo": "Chevey339/kelivo"
+  },
+  "mxhm11cr/LinuxRunner@1.1.1": {
+    "bundleIdentifier": "dev.linuxrunner.app",
+    "displayName": "LinuxRunner",
+    "version": "1.1.1",
+    "build": "905",
+    "minOSVersion": "15.0",
+    "size": 26429748,
+    "source_repo": "mxhm11cr/LinuxRunner"
+  },
+  "Jellify-Music/App@1.4.1": {
+    "bundleIdentifier": "com.cosmonautical.jellify",
+    "displayName": "Jellify",
+    "version": "1.4.1",
+    "build": "317",
+    "minOSVersion": "16.4",
+    "size": 38530310,
+    "source_repo": "Jellify-Music/App"
   }
 }

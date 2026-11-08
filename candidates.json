@@ -517,16 +517,23 @@
       "localizedDescription": "A cross-platform, free and open source music player for Jellyfin, powered by React Native",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=b09f342f1476",
       "tintColor": "#54d7e6",
-      "size": 38242006,
+      "size": 38530310,
       "versions": [
+        {
+          "version": "1.4.1",
+          "date": "2026-11-08T16:06:22Z",
+          "localizedDescription": "Welcome to Jellify 1.4.1\n\nI am so happy to introduce our latest updates designed to make your music experience even more seamless. This release focuses on refining our internal architecture and enhancing the overall visual polish of the app. We also included some fun new features to help you connect with other Jellify fans.\n\n- We added support for iMessage sticker packs and an optional Discord role ID for release announcements. This makes it much easier to share your love for Jellify with friends and stay in the loop on our newest updates.\n- The app received a major refactor of our theme palettes and types to improve the structural consistency of the UI. You can expect a more refined and cohesive look throughout your music journey.\n- We updated several core dependencies, including tamagui …",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.1/Jellify-1.4.1.ipa",
+          "size": 38530310,
+          "buildVersion": "317",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "1.4.0",
           "date": "2026-11-07T19:17:39Z",
           "localizedDescription": "Welcome to Jellify 1.4.0\n\nI am so excited to share all the wonderful improvements we have packed into this latest version! We have introduced some amazing new features like CarPlay support and several polish updates to your favorite interface elements. This update is all about making your music experience smoother, faster, and more enjoyable for everyone.\n\n* We have officially added CarPlay support, which includes a dedicated library tab for your road trips. We also introduced a new Your Playlists section and renamed the Add to Queue button to Play Later to make the app even more intuitive.\n* The shuffle feature is now nearly instant because we moved the logic to native operations to remove any lag. We also fixed several playback issues, including lyrics readability on light backgrounds, s…",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.0/Jellify-1.4.0.ipa",
-          "size": 38242006,
-          "buildVersion": "169",
-          "minOSVersion": "16.4"
+          "size": 38242006
         },
         {
           "version": "1.3.1",
@@ -534,13 +541,6 @@
           "localizedDescription": "Welcome to Jellify 1.3.1\r\n\r\nWe’ve polished up the whole experience this week, bringing some snappy performance fixes and useful new management tools to your library. Everything feels smoother, faster, and more intuitive than ever!\r\n\r\n*   Audio Quality Upgrade: We fixed how Jellify streams AAC files on Android, so your music now streams as-is without needing unnecessary transcoding. Enjoy cleaner, more consistent audio quality across the board!\r\n*   UI Polish: The underlying design library was upgraded - giving us an opportunity to comb through the app to make styling more consistent, animations more stable, and the overall feel to be more cohesive \r\n*   Smarter Filtering and Flow: We’ve significantly improved the filtering component and made some quality-of-life updates to components like …",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.1/Jellify-1.3.1.ipa",
           "size": 37133055
-        },
-        {
-          "version": "1.3.0",
-          "date": "2026-10-17T02:21:39Z",
-          "localizedDescription": "Welcome to Jellify 1.3.0\n\nHey music lovers! We've packed this update with some really sweet fixes and major stability improvements to make sure your playlist keeps going strong wherever you are. Grab your headphones and get ready to stream!\n\n*   **Improved Car Experience:** We've made some great updates for Android Auto users, giving you server-backed browsing and a much smoother experience when resuming playback in your car.\n*   **Flawless Playback:** We tackled some lingering glitches, including better buffering and fixes to the main player screen. Now your music should stream more reliably, even when switching between tracks or listening on the go.\n*   **Enhanced Stability on All Platforms:** This update includes better organization for music albums and fixes a small issue on iOS where …",
-          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.0/Jellify-1.3.0.ipa",
-          "size": 41451346
         }
       ]
     },
@@ -727,16 +727,23 @@
       "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=84a600dbb996",
       "tintColor": "#60bdf5",
-      "size": 21513740,
+      "size": 26429748,
       "versions": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-08T16:35:07Z",
+          "localizedDescription": "LinuxRunner 1.1.1 adds Fedora and Kali Linux, an experimental SteamOS ARM64 environment that installs from Valve's image, and a redesigned interface. It also reduces memory pressure on iPhone and iPad and fixes a long list of desktop problems.\n\n## What's New\n\n- **Redesigned interface:** a new Home screen with a live desktop preview, a Distributions tab with installed cards and each distribution's own logo, and Settings grouped into clear categories. Existing preferences are kept.\n- **Termux-like terminal on iPhone:** sharper text, true black background, a two-row key bar (ESC, TAB, CTRL, ALT, arrows, HOME, END, PGUP, PGDN) and clipboard access.\n- **Install screensaver for OLED screens:** after 3, 4 or 5 minutes without a touch during an installation, the screen goes black with a small movi…",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.1/LinuxRunner-1.1.1-build905.ipa",
+          "size": 26429748,
+          "buildVersion": "905",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-01T21:53:14Z",
           "localizedDescription": "# LinuxRunner 1.1.0 — Build 900\r\n\r\nLinuxRunner brings ARM64 Linux applications and desktop environments to iPhone and iPad without a jailbreak. Version 1.1.0 adds external-display workflows, a Metal-backed virtual GPU, more desktops and substantial runtime improvements.\r\n\r\n## What's New\r\n\r\n- **DeX Mode:** use a compatible external display with keyboard/mouse input or the iPhone's relative touchpad. USB-C/compatible adapters and AirPlay use iOS display support; a separate external scene enables independent phone controls.\r\n- **Metal GPU acceleration:** compatible guest Mesa/virgl workloads use virglrenderer, ANGLE and Apple Metal. Select **Settings → Graphics → Linux GPU Device → GPU → Metal GPU · Experimental**, fully restart the app, then check **Active renderer**. Automatic does not enab…",
           "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.0/LinuxRunner-1.1.0-build900.ipa",
-          "size": 21513740,
-          "buildVersion": "900",
-          "minOSVersion": "15.0"
+          "size": 21513740
         },
         {
           "version": "1.0.1",
@@ -744,13 +751,6 @@
           "localizedDescription": "# LinuxRunner v1.0.1\n\nLinux on your iPhone and iPad. This update adds iPad desktop adaptations, brings Arch Linux ARM into the setup workflow and improves package recovery and desktop sessions.\n\n## What's New\n\n- **iPad support:** window-aware desktop sizing, hardware-keyboard desktop shortcuts and the shared touch/pointer interface. Tested on a physical iPad.\n- **Arch Linux ARM:** install signed packages, use `pacman` and explore an experimental Openbox desktop with LXQt Panel and PCManFM-Qt.\n- **One setup workflow:** **Distributions → Set Up Linux…** installs a distribution or configures an existing environment while preserving its files and accounts.\n\nThe maintainer reports a working Arch graphical desktop and graphical application launches on a physical iPhone using **build 897**. Teleg…",
           "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.0.1/LinuxRunner-1.0.1.ipa",
           "size": 14646386
-        },
-        {
-          "version": "1.0.0",
-          "date": "2026-10-25T21:10:18Z",
-          "localizedDescription": "# LinuxRunner 1.0.0 \r\nLinux on your iPhone.\r\n\r\nLinuxRunner runs ARM64 Linux userspace applications and desktop environments on iOS through a custom ARM64 interpreter and Linux compatibility layer. **No jailbreak, virtual machine or JIT is required.**\r\n\r\n## What you can do\r\n\r\n- Install **Debian 13 ARM64** or use bundled **Alpine 3.24 ARM64**.\r\n- Use a Linux terminal, user accounts, `apt`, `apk`, compilers and scripting tools.\r\n- Open LinuxRunner Desktop or explore **KDE Plasma**.\r\n- Run desktop applications including Dolphin and Konsole, with browser and Blender compatibility depending on the application and workload.\r\n- Use Mesa software graphics and try experimental Metal acceleration for supported OpenGL paths.\r\n\r\n## Installation\r\n\r\n1. Download `LinuxRunner-1.0.0.ipa` from this release.\r…",
-          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.0.0/LinuxRunner-1.0.0.ipa",
-          "size": 14496024
         }
       ]
     },
