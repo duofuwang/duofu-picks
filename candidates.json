@@ -307,6 +307,41 @@
       ]
     },
     {
+      "name": "Floe Agent",
+      "bundleIdentifier": "org.floeagent.ios",
+      "developerName": "JiangNanGenius",
+      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
+      "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
+      "tintColor": "#1662df",
+      "size": 855615788,
+      "versions": [
+        {
+          "version": "1.8.5",
+          "date": "2026-11-07T20:39:55Z",
+          "localizedDescription": "# Floe 1.8.5 (325)\n\n## 简体中文\n\n- 会议统一为一个助手，结合当前会议笔记回答问题、执行整理指令，并保留未发送草稿。\n- 调整 CAD 加工、工程分析和制造单元的工作页、检查器与返回操作；修复工程页高度、键盘避让及仅聚焦字段导致结果清空的问题。\n- 补齐已保存制造单元结果的助手读取、保存结果打开入口，以及连接工具的地址和端口错误反馈。\n- 合并画布右上更多菜单，保留原编辑动作和导出格式；完善文件删除确认与返回。\n- 新增可选的统一推送设置，默认关闭。后台执行仍受系统时限约束，设备登记与实际通知收取尚未完成验证。\n\n本候选仅供内部 TestFlight。原生 USB 驱动尚未随包提供。\n\n请重点检查菜单、布局、开页、返回和此前报告的界面问题。本轮不重跑完整功能与稳定性矩阵；315 正式审核及自动发布设置保持不变，不提交公开 TestFlight。\n\n## English\n\n- Meetings use one assistant to answer questions and organize the current meeting notes, while retaining unsent drafts.\n- Refines CAD machining, engineering and manufacturing-cell work pages, inspectors and navigation. Fixes engineering-page height, keyboard avoidance and a result being cleared when a field was only focused.\n- Adds assistant readback of saved manufacturing-cell results, visible…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.5/Floe-Agent-1.8.5-build325-unsigned.ipa",
+          "size": 855615788,
+          "buildVersion": "325",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.8.4",
+          "date": "2026-11-07T20:32:50Z",
+          "localizedDescription": "# Floe 1.8.4 (324)\n\n## 简体中文\n\n本构建保留上一内部构建的整批预研修复，并补齐 App 实际签名所需的 Wi-Fi 信息权限；描述文件的授权与 App 的声明保持一致。\n\n- 空间恢复置顶作品、实际使用记录和传统文件夹；文件默认列表，可切换缩略图。作品和文件夹增加删除与最近删除恢复；任务文件树、搜索结果和预览补齐删除及返回入口，并保护正在编辑的文件。\n- 工具箱采用顶部横向展示与完整工具列表。漫游默认使用当前网关；Wi-Fi 名称与 BSSID 按系统授权读取。修复诊断结果、文件校验选择和导出；AI 分析增加进度、停止与超时反馈。普通聊天接入 WebSocket／匿名 MQTT 与本会话通信记录工具。\n- 加工和 3D 打印从 CAD 的加工入口进入。加工先选择机床，再设置毛坯、坐标和工序；预览沿刀路逐步去料并显示已实现的碰撞检查。切片完成自动进入“预览”，参数与保存结果保持对应。\n- 创意模式画布复用原有编辑框架，保留正文、资产、历史和撤销；补齐源文件、编辑器及流程操作，并回收不再引用的旧快照副本。\n- 补齐 CAD 当前对象读取、改名和保存，二维 DXF 导入接线，以及建筑工作台的墙体、矩形房间工具。导入网格可准备后进入雕刻；精确实体转换需要明确确认。\n- 补齐音视频素材导入、字幕样式、音乐和化学工具的实际结果回流，并修复会议开页和全局资料检索。\n- AI 可读取音频的分声道波形区间、峰值、RMS、静音统计和对应采样范围；结果可继续传给模型，音乐渲染回执关联实际生成文件的音频观察。\n\n请重点检查菜单、开页、按钮及此前确认的布局。本轮没有重跑完整功能和稳定性验证；USB 原生驱动包尚未纳入，实际硬件打印、机床安全、物理音频、AP 切换及外部服务仍按各自真实能力和授权使用。音频波形统计不代表听音或语义识别，制造预览也不代表完整机床防撞认证。315 正…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.4/Floe-Agent-1.8.4-build324-unsigned.ipa",
+          "size": 855211938
+        },
+        {
+          "version": "1.8.3",
+          "date": "2026-11-07T20:26:48Z",
+          "localizedDescription": "# Floe 1.8.3 (323)\n\n## 简体中文\n\n本构建继续整批预研接入的内部测试，集中补齐 322 测试中发现的入口、操作和保存链路。\n\n- 空间恢复置顶作品、实际使用记录和传统文件夹；文件默认列表，可切换缩略图。作品和文件夹增加删除与最近删除恢复；任务文件树、搜索结果和预览补齐删除及返回入口，并保护正在编辑的文件。\n- 工具箱采用顶部横向展示与完整工具列表。漫游默认使用当前网关；Wi-Fi 名称与 BSSID 按系统授权读取。修复诊断结果、文件校验选择和导出；AI 分析增加进度、停止与超时反馈。普通聊天接入 WebSocket／匿名 MQTT 与本会话通信记录工具。\n- 加工和 3D 打印从 CAD 的加工入口进入。加工先选择机床，再设置毛坯、坐标和工序；预览沿刀路逐步去料并显示已实现的碰撞检查。切片完成自动进入“预览”，参数与保存结果保持对应。\n- 创意模式画布复用原有编辑框架，保留正文、资产、历史和撤销；补齐源文件、编辑器及流程操作，并回收不再引用的旧快照副本。\n- 补齐 CAD 当前对象读取、改名和保存，二维 DXF 导入接线，以及建筑工作台的墙体、矩形房间工具。导入网格可准备后进入雕刻；精确实体转换需要明确确认。\n- 补齐音视频素材导入、字幕样式、音乐和化学工具的实际结果回流，并修复会议开页和全局资料检索。\n- AI 可读取音频的分声道波形区间、峰值、RMS、静音统计和对应采样范围；结果可继续传给模型，音乐渲染回执关联实际生成文件的音频观察。\n\n请重点检查菜单、开页、按钮及此前确认的布局。本轮没有重跑完整功能和稳定性验证；USB 原生驱动包尚未纳入，实际硬件打印、机床安全、物理音频、AP 切换及外部服务仍按各自真实能力和授权使用。音频波形统计不代表听音或语义识别，制造预览也不代表完整机床防撞认证。315 正式审核和自动发布设置保持不变，本构建仅内部 Te…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.3/Floe-Agent-1.8.3-build323-unsigned.ipa",
+          "size": 855211944
+        }
+      ]
+    },
+    {
       "name": "FluxDO",
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "developerName": "Lingyan000",
