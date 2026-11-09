@@ -106,6 +106,12 @@
       "asset": "^YTKACE_(?!.*iOS16).*\\.ipa$",
       "tintColor": "#fc0434",
       "subtitle": "YouTube 增强与下载器，去广告、后台播放"
+    },
+    {
+      "repo": "huamidev/GestaltX",
+      "bundleIdentifier": "com.huami.gestultx",
+      "name": "GestaltX",
+      "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份"
     }
   ],
   "candidatesRepository": {
