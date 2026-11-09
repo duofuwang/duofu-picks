@@ -143,15 +143,6 @@
     "size": 1196896816,
     "source_repo": "Provenance-Emu/Provenance"
   },
-  "FrizzleM/SideInstaller@1.6.5": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "1.6.5",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10380171,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "mirazbakis/AltLoad@1.4.0": {
     "bundleIdentifier": "com.mirazbakis.altload",
     "displayName": "AltLoad",
@@ -467,15 +458,6 @@
     "size": 48260416,
     "source_repo": "OnionBrowser/OnionBrowser"
   },
-  "missuo/kumone@0.3.31": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.31",
-    "build": "407",
-    "minOSVersion": "16.0",
-    "size": 3937670,
-    "source_repo": "missuo/kumone"
-  },
   "simonoppowa/OpenNutriTracker@2.7.0": {
     "bundleIdentifier": "com.opennutritracker.ont.opennutritracker",
     "displayName": "OpenNutriTracker",
@@ -502,5 +484,23 @@
     "minOSVersion": "17.0",
     "size": 8880854,
     "source_repo": "Leviidev/Henge"
+  },
+  "FrizzleM/SideInstaller@1.7.0": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "1.7.0",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10739837,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "missuo/kumone@0.3.32": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.32",
+    "build": "416",
+    "minOSVersion": "16.0",
+    "size": 4060424,
+    "source_repo": "missuo/kumone"
   }
 }
