@@ -112,6 +112,13 @@
       "bundleIdentifier": "com.huami.gestultx",
       "name": "GestaltX",
       "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份"
+    },
+    {
+      "repo": "Leviidev/Henge",
+      "bundleIdentifier": "com.henge.app",
+      "name": "Henge",
+      "asset": "^Henge\\.ipa$",
+      "subtitle": "在 iPhone / iPad 上跑 macOS，全程端侧安装，无需 Mac"
     }
   ],
   "candidatesRepository": {
