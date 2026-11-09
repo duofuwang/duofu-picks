@@ -366,16 +366,23 @@
       "localizedDescription": "An on-device debugger/JIT enabler for iOS versions 17.4+, powered by idevice.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.stik.stikdebug.png?v=43cbbfbfddc5",
       "tintColor": "#1b97f5",
-      "size": 16924629,
+      "size": 16924687,
       "versions": [
+        {
+          "version": "3.2.2",
+          "date": "2026-11-08T22:05:57Z",
+          "localizedDescription": "- Fix Utsuro, Henge, and \"MeloCafe\"\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.1...3.2.2",
+          "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.2/StikDebug-3.2.2.ipa",
+          "size": 16924687,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "3.2.1",
           "date": "2026-11-07T05:15:03Z",
           "localizedDescription": "- More error cleanup\r\n- Chinese (Simplified) localization\r\n- Kill processes via name via url scheme\r\n- FYI- StikDebug now requires Xcode 27+\n\n## What's Changed\n* Added Chinese localization by @jlj1102 in https://github.com/StikDebug/StikDebug/pull/494\n\n## New Contributors\n* @jlj1102 made their first contribution in https://github.com/StikDebug/StikDebug/pull/494\n\n**Full Changelog**: https://github.com/StikDebug/StikDebug/compare/3.2.0...3.2.1",
           "downloadURL": "https://github.com/StikDebug/StikDebug/releases/download/3.2.1/StikDebug-3.2.1.ipa",
-          "size": 16924629,
-          "buildVersion": "1",
-          "minOSVersion": "17.4"
+          "size": 16924629
         },
         {
           "version": "3.2.0",
