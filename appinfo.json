@@ -152,15 +152,6 @@
     "size": 10380171,
     "source_repo": "FrizzleM/SideInstaller"
   },
-  "OnionBrowser/OnionBrowser@3.4.5": {
-    "bundleIdentifier": "com.miketigas.OnionBrowser",
-    "displayName": "Onion Browser",
-    "version": "3.4.5",
-    "build": "184466.519833954",
-    "minOSVersion": "15.0",
-    "size": 41185417,
-    "source_repo": "OnionBrowser/OnionBrowser"
-  },
   "mirazbakis/AltLoad@1.4.0": {
     "bundleIdentifier": "com.mirazbakis.altload",
     "displayName": "AltLoad",
@@ -287,15 +278,6 @@
     "size": 29659453,
     "source_repo": "linroid/Ketch"
   },
-  "simonoppowa/OpenNutriTracker@2.6.0": {
-    "bundleIdentifier": "com.opennutritracker.ont.opennutritracker",
-    "displayName": "OpenNutriTracker",
-    "version": "2.6.0",
-    "build": "68",
-    "minOSVersion": "15.5",
-    "size": 32794585,
-    "source_repo": "simonoppowa/OpenNutriTracker"
-  },
   "FriesI23/mhabit@1.27.18+207": {
     "bundleIdentifier": "io.github.friesi23.mhabit",
     "displayName": "Table Habit",
@@ -395,15 +377,6 @@
     "size": 14833319,
     "source_repo": "huamurui/zhihu-minus-minus"
   },
-  "missuo/kumone@0.3.29": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.29",
-    "build": "399",
-    "minOSVersion": "16.0",
-    "size": 3937238,
-    "source_repo": "missuo/kumone"
-  },
   "ResistanceTo/MiniWatts@1.7.0": {
     "bundleIdentifier": "org.zhaohe.MiniWatts",
     "displayName": "MiniWatts",
@@ -475,5 +448,50 @@
     "minOSVersion": "17.4",
     "size": 16924687,
     "source_repo": "StikDebug/StikDebug"
+  },
+  "huamidev/GestaltX@1.0.3": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "displayName": "GestaltX",
+    "version": "1.0.3",
+    "build": "11100017",
+    "minOSVersion": "26.0",
+    "size": 2744822,
+    "source_repo": "huamidev/GestaltX"
+  },
+  "OnionBrowser/OnionBrowser@3.4.6": {
+    "bundleIdentifier": "com.miketigas.OnionBrowser",
+    "displayName": "Onion Browser",
+    "version": "3.4.6",
+    "build": "199068.370922529",
+    "minOSVersion": "15.0",
+    "size": 48260416,
+    "source_repo": "OnionBrowser/OnionBrowser"
+  },
+  "missuo/kumone@0.3.31": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.31",
+    "build": "407",
+    "minOSVersion": "16.0",
+    "size": 3937670,
+    "source_repo": "missuo/kumone"
+  },
+  "simonoppowa/OpenNutriTracker@2.7.0": {
+    "bundleIdentifier": "com.opennutritracker.ont.opennutritracker",
+    "displayName": "OpenNutriTracker",
+    "version": "2.7.0",
+    "build": "69",
+    "minOSVersion": "15.5",
+    "size": 33314067,
+    "source_repo": "simonoppowa/OpenNutriTracker"
+  },
+  "JiangNanGenius/floe-agent@1.8.6": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.6",
+    "build": "326",
+    "minOSVersion": "26.0",
+    "size": 879340265,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }

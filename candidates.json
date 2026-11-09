@@ -214,7 +214,7 @@
         {
           "version": "3.0.37",
           "date": "2026-10-31T09:28:32Z",
-          "localizedDescription": "## 📝 更新日志\n## [v3.0.37]\n\n### 功能更新\n\n- 添加关闭首页和云收藏页的功能\n- 漫画详情页长按收藏按钮现可选择收藏夹\n- 添加本地收藏后自动云收藏的开关\n- 添加滑动验证码支持\n- 移动平台阅读设置添加显示状态栏功能\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\n\n### 修复\n\n- 修复自定义插件顺序无效的问题\n\n### 优化\n\n- 首页添加常驻搜索按钮\n- 优化报错显示\n- 优化部分文本\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/deretame/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/deretame/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\n| **iOS** | [Breeze-iOS-v3.0.37.ipa](https://github.com/deretame/Breeze/releases/…",
+          "localizedDescription": "## 📝 更新日志\r\n## [v3.0.37]\r\n\r\n### 功能更新\r\n\r\n- 添加关闭首页和云收藏页的功能\r\n- 漫画详情页长按收藏按钮现可选择收藏夹\r\n- 添加本地收藏后自动云收藏的开关\r\n- 添加滑动验证码支持\r\n- 移动平台阅读设置添加显示状态栏功能\r\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\r\n\r\n### 修复\r\n\r\n- 修复自定义插件顺序无效的问题\r\n\r\n### 优化\r\n\r\n- 首页添加常驻搜索按钮\r\n- 优化报错显示\r\n- 优化部分文本\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\r\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\r\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\r\n| **iOS** | [Breeze-i…",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
           "size": 26431983,
           "buildVersion": "2225",
@@ -303,6 +303,27 @@
           "localizedDescription": "1. Fixed reading page scroll functionality.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
           "size": 7231227
+        }
+      ]
+    },
+    {
+      "name": "Floe Agent",
+      "bundleIdentifier": "org.floeagent.ios",
+      "developerName": "JiangNanGenius",
+      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
+      "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
+      "tintColor": "#1662df",
+      "size": 879340265,
+      "versions": [
+        {
+          "version": "1.8.6",
+          "date": "2026-11-09T06:48:50Z",
+          "localizedDescription": "# Floe 1.8.6 (326)\n\n## 简体中文\n\n- 空间接入更多原生工作台，包括原理图与 PCB、LaTeX、生物学及 CAD 工程分析；完善从编辑、预览到保存和再次打开的操作。\n- PCB 支持直接在画布中编辑、检查设计规则及原理图与 PCB 同步；新增从 PCB 更新原理图的差异预览与确认。\n- LaTeX 增加源码折叠和 PDF 全文搜索，优化源码、项目面板和预览的布局，保留切换全屏后的阅读与搜索状态。\n- 增强音乐编辑与预制音色，完善原生科学计算、CSV 处理和正文内图表等内容的工具调用；修复部分编辑参数与工具结果格式问题。\n- 改善 iPhone 顶部导航与任务中心布局、文件预览与批量管理、连接工具历史及蓝牙串口的自动发现与错误反馈。\n- 完善 Linux 软件源与依赖安装路径，升级时按已有运行环境识别原镜像，避免误用新的默认镜像。\n\n本版用于内部及公开 TestFlight 测试。请重点检查新工作台入口、触屏与鼠标编辑、预览、保存重开、助手调用及之前报告的界面问题。部分高级 PCB 编辑和仿真分析仍在完善，原生 USB 串口驱动未包含。正式 App Store 提交及发布设置保持不变。\n\n## English\n\n- Adds more native workbenches in Space, including schematic and PCB editing, LaTeX, biology and CAD engineering analysis, with improved editing, previews, saving and reopening.\n- PCB editing uses the canvas, design-rule checks and schematic/PCB synchronization. Updating a s…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.6/Floe-Agent-1.8.6-build326-unsigned.ipa",
+          "size": 879340265,
+          "buildVersion": "326",
+          "minOSVersion": "26.0"
         }
       ]
     },
@@ -657,30 +678,30 @@
       "localizedDescription": "雲の音 — A native music player for macOS and iOS, built with SwiftUI",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/sb.moe.kumone-ios.png?v=e0c37a6f19b7",
       "tintColor": "#df3e34",
-      "size": 3937238,
+      "size": 3937670,
       "versions": [
+        {
+          "version": "0.3.31",
+          "date": "2026-11-09T17:01:43Z",
+          "localizedDescription": "### Fixed\n\n- **Downloads**: lossless and Hi-Res downloads no longer fail with \"Audio verification failed\": the CDN labels FLAC files as MP3, and that label no longer rejects a file whose checksum and decoding are already verified (#147).\n\n---\n\n### 修复\n\n- **下载**：无损和 Hi-Res 音质下载不再报「音频校验失败」。CDN 会把 FLAC 文件标成 MP3 类型，现在不再因为这个标签拒收已通过校验和解码验证的文件（#147）。",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.31/Kumone-iOS-0.3.31.ipa",
+          "size": 3937670,
+          "buildVersion": "407",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.3.30",
+          "date": "2026-11-09T16:34:10Z",
+          "localizedDescription": "### Fixed\n\n- **macOS**: on macOS 15 Sequoia, the toolbar search field stays at the trailing end of the window instead of sitting beside the sidebar toggle and covering the page title (#188).\n- **macOS**: on macOS 15 Sequoia, the sidebar is back to the system sidebar material, flush with the window edge, and the toolbar is back to its standard height (#193).\n\n---\n\n### 修复\n\n- **macOS**：在 macOS 15 Sequoia 上，工具栏搜索框保持在窗口右侧，而不再挤在侧栏按钮旁边挡住页面标题（#188）。\n- **macOS**：在 macOS 15 Sequoia 上，侧栏恢复系统原生侧栏材质并贴齐窗口边缘，工具栏恢复标准高度（#193）。",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.30/Kumone-iOS-0.3.30.ipa",
+          "size": 3937239
+        },
         {
           "version": "0.3.29",
           "date": "2026-11-06T19:18:52Z",
           "localizedDescription": "### Fixed\n\n- **macOS**: the now-playing page opens and closes cleanly — the page title, search field and sidebar toggle no longer hang over it while it moves, it no longer snaps into place at the end, and the thin white line beside the window buttons is gone; its collapse button is larger, sits in the top-right corner and always answers clicks.\n- **iOS**: adding a song to a playlist from the now-playing page shows the confirmation over the page; a song that is already in the playlist says so, and any other failure is shown inside the playlist picker (#182).\n- **iOS**: the search field stays visible when the Search tab opens.\n\n### Improved\n\n- **macOS**: hiding and showing the sidebar is smooth — the sidebar stays put and the page slides over it, the toggle never leaves its place beside the …",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.29/Kumone-iOS-0.3.29.ipa",
-          "size": 3937238,
-          "buildVersion": "399",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "0.3.28",
-          "date": "2026-11-04T13:13:45Z",
-          "localizedDescription": "### Improved\n\n- **macOS**: the bundle identifier is now `sb.moe.kumone`. After updating, settings and caches start fresh, the first-launch check appears once more, the iCloud sync passphrase has to be entered again and system permissions (such as notifications) need granting again; sign-in and offline downloads carry over.\n- **iOS**: the bundle identifier is now `sb.moe.kumone-ios`. AltStore and other sideloading tools install it as a separate app; once it is set up, the old one can be deleted.\n\n---\n\n### 改进\n\n- **macOS**：bundle ID 改为 `sb.moe.kumone`。更新后设置和缓存会重置，需要再做一次首次启动验证、重新输入 iCloud 同步口令，并重新授予通知等系统权限；登录状态和离线下载保留。\n- **iOS**：bundle ID 改为 `sb.moe.kumone-ios`。AltStore 等侧载工具会把它装成一个新的 App，设置好之后可以删除旧版。",
-          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.28/Kumone-iOS-0.3.28.ipa",
-          "size": 4037666
-        },
-        {
-          "version": "0.3.27",
-          "date": "2026-11-04T12:39:48Z",
-          "localizedDescription": "### Added\n\n- **iOS + macOS**: a short first-launch check — answer two simple arithmetic questions to get started.\n\n### Improved\n\n- **iOS + macOS**: sign-in, recommendation and library screens no longer name a specific service — the QR sign-in now just says to scan with the official app.\n- **iOS**: the bundle identifier is `sb.moe.kumone` again.\n\n---\n\n### 新增\n\n- **iOS + macOS**：首次启动新增一个小验证——答对两道简单的算术题即可开始使用。\n\n### 改进\n\n- **iOS + macOS**：登录、推荐和资料库页面不再出现具体服务的名称，扫码登录改为提示用官方 App 扫码。\n- **iOS**：bundle ID 恢复为 `sb.moe.kumone`。",
-          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.27/Kumone-iOS-0.3.27.ipa",
-          "size": 4037650
+          "size": 3937238
         }
       ]
     },
@@ -795,18 +816,25 @@
       "developerName": "OnionBrowser",
       "subtitle": "基于 Tor 的隐私浏览器",
       "localizedDescription": "An open-source, privacy-enhancing web browser for iOS, utilizing the Tor anonymity network",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.miketigas.OnionBrowser.png?v=5a3a4a36912d",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.miketigas.OnionBrowser.png?v=268a5219f220",
       "tintColor": "#912cb2",
-      "size": 41185417,
+      "size": 48260416,
       "versions": [
+        {
+          "version": "3.4.6",
+          "date": "2026-11-09T16:54:54Z",
+          "localizedDescription": "- Updated Tor to 0.4.9.16.\r\n- Updated Lyrebird to 0.10.0.\r\n- Updated Snowflake to 2.15.3.",
+          "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.6/OnionBrowser.ipa",
+          "size": 48260416,
+          "buildVersion": "199068.370922529",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "3.4.5",
           "date": "2026-10-30T13:42:29Z",
           "localizedDescription": "- Updated Tor to 0.4.9.15.",
           "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.5/OnionBrowser.ipa",
-          "size": 41185417,
-          "buildVersion": "184466.519833954",
-          "minOSVersion": "15.0"
+          "size": 41185417
         },
         {
           "version": "3.4.4",
@@ -814,13 +842,6 @@
           "localizedDescription": "- Fixed crash when trying to create or edit a bookmark.",
           "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.4/OnionBrowser.ipa",
           "size": 42254891
-        },
-        {
-          "version": "3.4.3",
-          "date": "2026-10-13T09:37:57Z",
-          "localizedDescription": "- Updated Tor to 0.4.9.14 and OpenSSL to 3.6.5.\r\n- Updated Snowflake to 2.15.1.\r\n- Updated Lyrebird to version 0.9.0.",
-          "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.3/OnionBrowser.ipa",
-          "size": 43256904
         }
       ]
     },
@@ -832,16 +853,23 @@
       "localizedDescription": "🍴 OpenNutriTracker is a free and open source calorie tracker with a focus on simplicity and privacy.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.opennutritracker.ont.opennutritracker.png?v=4a6166b893ee",
       "tintColor": "#1ede5c",
-      "size": 32794585,
+      "size": 33314067,
       "versions": [
+        {
+          "version": "2.7.0",
+          "date": "2026-11-09T09:36:26Z",
+          "localizedDescription": "## What's Changed\n* chore(l10n): update translations by @hosted-weblate[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1497\n* chore(release): bump to 2.6.0+68 and add the build 68 note by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1505\n* chore(l10n): update translations by @hosted-weblate[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1522\n* chore(l10n): update translations by @hosted-weblate[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1524\n* chore(deps): bump fastlane from 2.241.1 to 2.241.2 in /android in the android-bundler group by @dependabot[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1511\n* chore(deps): bump fastlane from 2.241.1 to 2.241.2 in /ios in the ios-bundler group by @dependabot[bot] in …",
+          "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.7.0/opennutritracker.ipa",
+          "size": 33314067,
+          "buildVersion": "69",
+          "minOSVersion": "15.5"
+        },
         {
           "version": "2.6.0",
           "date": "2026-10-30T20:32:44Z",
           "localizedDescription": "## What's Changed\n* fix(ios): give the widget extension a bundle id the release team can register by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1450\n* chore(l10n): update translations by @hosted-weblate[bot] in https://github.com/simonoppowa/OpenNutriTracker/pull/1454\n* fix: stop three top Sentry crashes (comma-decimal quantity, info-link launch, bad meal URLs) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1456\n* fix: tolerate bad OFF responses, drop expected Sentry noise, survive Health Connect rate limits by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1457\n* fix: route every link launch through the safe launcher by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1458\n* feat: one add-food scr…",
           "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.6.0/opennutritracker.ipa",
-          "size": 32794585,
-          "buildVersion": "68",
-          "minOSVersion": "15.5"
+          "size": 32794585
         },
         {
           "version": "2.5.0",
@@ -849,13 +877,6 @@
           "localizedDescription": "## What's Changed\n* chore(store): caption the Play set, add the iOS screenshots, retire \"Free forever\" by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1120\n* chore(ci): drop the iOS screenshot lane by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1121\n* fix(health): read workouts without the permissions Play refused (develop) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1123\n* chore(release): bump to 2.3.0+65 and add the build 65 note (develop) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1125\n* fix(l10n): disclose body fat only where it is read by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1128\n* fix(health): five review findings from #1122, #1128 and #1132 by @si…",
           "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.5.0/opennutritracker.ipa",
           "size": 32731039
-        },
-        {
-          "version": "2.4.0",
-          "date": "2026-09-26T21:58:39Z",
-          "localizedDescription": "## What's Changed\n* ci(ios): drop the screenshot lane from main by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1145\n* chore(store): bring the store assets on main level with develop by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1147\n* ci(l10n): merge Weblate's pull requests with a merge commit once CI is green (main) by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1226\n* Release 2.4.0+66 by @simonoppowa in https://github.com/simonoppowa/OpenNutriTracker/pull/1270\n\n\n**Full Changelog**: https://github.com/simonoppowa/OpenNutriTracker/compare/v2.3.0...v2.4.0",
-          "downloadURL": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.4.0/opennutritracker.ipa",
-          "size": 32376572
         }
       ]
     },

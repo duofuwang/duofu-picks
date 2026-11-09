@@ -149,6 +149,41 @@
       ]
     },
     {
+      "name": "GestaltX",
+      "bundleIdentifier": "com.huami.gestultx",
+      "developerName": "huamidev",
+      "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份",
+      "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
+      "tintColor": "#6156e2",
+      "size": 2744822,
+      "versions": [
+        {
+          "version": "1.0.3",
+          "date": "2026-11-09T16:23:40Z",
+          "localizedDescription": "GestaltX 1.0.3\r\n• 新增分享导入：在“文件”或其他 App 中分享 plist 到 GestaltX，核验后弹窗确认导入。\r\n• 加强设备归属校验，拒绝不匹配或无法核验的文件；本机导出的文件可携带设备校验凭证。\r\n• 优化 MG 控制，支持新增、修改、重命名和删除键值。\r\n• 支持恢复已核验的本机 plist，恢复前自动备份，完成后请重启设备。\r\n\r\n重签时请保留分享扩展，并为主应用和扩展配置同一个 App Group。\r\n\r\nGestaltX 1.0.3\r\n• Added share import: share a plist to GestaltX from Files or another app, then confirm the import after verification.\r\n• Strengthened device ownership checks. Mismatched or unverifiable files are rejected; exports can include a device-bound verification proof.\r\n• Improved MG Control with support for adding, editing, renaming, and deleting keys and values.\r\n• Added restoration of verified device plists, with an automatic backup before restoring. Restart your device afterward.\r\n\r\nWhen re-signing, keep the share extension and configure the same App Group f…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
+          "size": 2744822,
+          "buildVersion": "11100017",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.0.2",
+          "date": "2026-11-09T10:06:31Z",
+          "localizedDescription": "GestaltX 1.0.2\r\n\r\n• 修复预设停用逻辑：原本不存在的字段会被删除，原本存在的字段恢复原值和类型，不再统一写入 0。\r\n• 首次没有备份时自动创建备份，并保留修改前的字段状态，重新打开 App 后仍可还原。\r\n• 每个预设新增“还原”按钮，支持单独还原该项，保留其他尚未应用的修改。\r\n• 新增“移除新增字段”，用于清理确认是后来添加的字段。\r\n• 调整 NeoSpring 的加载与触发时机，修正回到前台时提前关闭注销页面的问题。\r\n\r\nGestaltX 1.0.2\r\n\r\n• Fixed preset disabling: originally absent fields are removed; existing fields regain their original values and types instead of being set to 0.\r\n• Added automatic initial backups and persistent original-value records.\r\n• Added a Revert button to each preset, preserving unrelated pending changes.\r\n• Added Remove Added Fields for fields you know were added later.\r\n• Adjusted NeoSpring loading and startup timing, and fixed premature dismissal when returning to the app.\r\n\r\nSupports iOS / iPadOS 27.x. Signing requires at least one usable App Group.",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
+          "size": 2489231
+        },
+        {
+          "version": "1.0.1",
+          "date": "2026-11-09T05:28:40Z",
+          "localizedDescription": "GestaltX 1.0.1\r\n\r\n• 新增独立的“地区代码”选项，支持美国、中国大陆、香港、台湾、日本和英国。\r\n• 单独修改地区代码时，保留原有销售地区后缀。\r\n• 修复地区代码与销售地区的组合设置，现在可以同时应用。\r\n• 通常只需修改地区代码即可尝试启用 AI，无需更改销售地区。\r\n\r\n* 之前修改过销售地区的用户，可以先恢复设备原本的销售地区。例如原本为国行 CH/A，可将销售地区选回“中国大陆”并应用，再按需修改地区代码。应用后请重启设备。\r\n\r\n支持 iOS / iPadOS 27.x；iOS / iPadOS 26.x 不支持本机 MobileGestalt 访问。AI 可用性及验机结果因设备与系统而异。\r\n\r\n———\r\n\r\nGestaltX 1.0.1\r\n\r\n• Added a separate Region Code option with presets for the United States, mainland China, Hong Kong, Taiwan, Japan and the United Kingdom.\r\n• Changing Region Code alone preserves the existing sales-region suffix.\r\n• Fixed combined settings: Region Code and Sales Region can now be applied together.\r\n• Usually, changing Region Code is enough to try enabling AI; changing Sales Region is unnecessary.\r\n\r\n* If you previously changed Sales Region, restore your…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.1/GestaltX_1.0.1.ipa",
+          "size": 2459454
+        }
+      ]
+    },
+    {
       "name": "iTorrent",
       "bundleIdentifier": "com.xitrix.iTorrent2",
       "developerName": "XITRIX",
