@@ -493,5 +493,14 @@
     "minOSVersion": "26.0",
     "size": 879340265,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Leviidev/Henge@0.2": {
+    "bundleIdentifier": "com.henge.app",
+    "displayName": "Henge",
+    "version": "0.2.0",
+    "build": "100",
+    "minOSVersion": "17.0",
+    "size": 8880854,
+    "source_repo": "Leviidev/Henge"
   }
 }

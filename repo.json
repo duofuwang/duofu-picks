@@ -184,6 +184,34 @@
       ]
     },
     {
+      "name": "Henge",
+      "bundleIdentifier": "com.henge.app",
+      "developerName": "Leviidev",
+      "subtitle": "在 iPhone / iPad 上跑 macOS，全程端侧安装，无需 Mac",
+      "localizedDescription": "Emulate macOS on iOS and iPadOS",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.henge.app.png?v=8da3dfb0dcf0",
+      "tintColor": "#324ce2",
+      "size": 8880854,
+      "versions": [
+        {
+          "version": "0.2",
+          "date": "2026-11-07T21:49:27Z",
+          "localizedDescription": "## What's new?\n- macOS 27 (Golden Gate) installs and runs, as well as macOS Sequoia\n- Choose your Mac's memory, anywhere from 1 to 16 GB\n- Put the Mac on an external display over USB-C, on iOS 27 and on iOS 17-26\n- A bit faster: guest memory lookups were reworked, and macOS 27's constant TLB flushes no longer wipe every app's entries\n- Settings > Performance: refresh rate (60 Hz, or 120 Hz with ProMotion), faster disk writes, quicker wake from idle, superblocks (experimental) and a 1 GB or 1.5 GB code cache (experimental)\n- Colours fixed: macOS no longer looks washed out, and the iPad's P3 screen is colour matched\n- iPad: Retina and Performance screen modes, smoother Magic Keyboard scrolling, a smaller and sharper pointer with a size setting, and iPadOS's hide-keyboard key works\n- The Mac …",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.2/Henge.ipa",
+          "size": 8880854,
+          "buildVersion": "100",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.1",
+          "date": "2026-11-06T13:28:11Z",
+          "localizedDescription": "## What's new?\nThe first release of Henge: macOS on your iPhone and iPad, installed right on the device with no Mac needed.\n\n## Confirmed Working\nmacOS Sequoia 15.6.1 - installs and boots on an iPhone 17 Pro, lock screen in about 15 seconds\nSafari\nDiscord - install, log in, send messages\nClipboard and file sharing between the iPhone and macOS\n\niPad support is new and hasn't run on a real iPad yet.\n\n## Installation\nSideload Henge.ipa with SideStore or AltStore, or install Henge.tipa with TrollStore or TrollStore Lite. Enable JIT, open the Install tab and install macOS. Needs iOS 17 or later, an A14 or M1 chip or newer, and about 43 GB free.\n\n## Issues\nIf any bugs / issues occur, report it to the GitHub or in my Discord Server.\n\nLinks:\nDiscord Server: https://itslevii.dev/discord\nEmail: hell…",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
+          "size": 8761298
+        }
+      ]
+    },
+    {
       "name": "iTorrent",
       "bundleIdentifier": "com.xitrix.iTorrent2",
       "developerName": "XITRIX",
