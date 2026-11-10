@@ -202,6 +202,41 @@
       ]
     },
     {
+      "name": "BiliSail",
+      "bundleIdentifier": "dev.bilisail.bilisail",
+      "developerName": "CKopoer",
+      "subtitle": "哔帆：Flutter 跨平台第三方哔哩哔哩客户端，支持投屏与听视频",
+      "localizedDescription": "A cross-platform Bilibili third-party client focused on viewing experience",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.bilisail.bilisail.png?v=a55ef55d108d",
+      "tintColor": "#f56086",
+      "size": 44360523,
+      "versions": [
+        {
+          "version": "1.2.8+5",
+          "date": "2026-11-08T16:07:29Z",
+          "localizedDescription": "**BiliSail 1.2.8+5 · 小窗随行，播放更稳 ⛵**\r\n\r\n**重要更新！！！**：新增可选播放后端、迷你小窗和实时播放信息，完善关注管理与直播体验，并集中修复起播、连续跳转、音画同步及缓冲恢复问题。\r\n\r\n[完整更新范围：1.2.7+0 → 当前提交](https://github.com/CKopoer/BiliSail/compare/v1.2.7%2B0...5703519f5aefb62282604f8106767982ee50d188)\r\n\r\n国内下载：[夸克网盘](https://pan.quark.cn/s/ffceda8afc83)\r\n\r\n**✨ 新功能**\r\n\r\n- **可选播放后端**：新增实验性 fvp／MDK 后端，可在「设置 → 播放 → 视频编解码」中选择。media_kit 仍为默认后端，切换后在下次打开或重新加载播放源时生效。\r\n- **迷你小窗与置顶**：桌面端支持可拖动、缩放、置顶的迷你播放器，并记忆小窗大小和位置；Android 支持系统画中画，iOS 提供应用内浮窗。\r\n- **实时播放信息**：播放器设置新增信息页，可查看当前后端、编码、解码、画面输出、音频、缓存和同步等参数，并一键复制全部信息。\r\n- **关注管理完善**：新增关注搜索、最近关注／最常访问排序，支持关注分组的新建、重命名、删除和拖动排序，以及黑名单查看、添加与移除。\r\n- **Android 解码直出**：新增实验性「解码直出纹理」选项，两种后端均可在硬件解码时使用，并保留弹幕、字幕和播放控件；默认继续使用兼容渲染。\r\n\r\n**🛠️ 播放与听视频**\r\n\r\n- **起播与跳转同步**：统一两个后端的准备流程，改善声音先于画面、跳转后音画不同步的问题；暂停时调整进度仍保持暂停。\r\n- **连续跳转更准确**：快速点击进度条时优先处理最新目标；快捷键…",
+          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.8%2B5/BiliSail-1.2.8%2B5-ios-arm64-unsigned.ipa",
+          "size": 44360523,
+          "buildVersion": "5",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.2.8+0",
+          "date": "2026-11-07T09:52:57Z",
+          "localizedDescription": "BiliSail v1.2.8+0 · 播放更稳，信息更清晰 ⛵\r\n\r\n**重要更新，更换底层播放后端**\r\n本次更新新增实验性 fvp 播放后端和实时播放信息，改进进度跳转时的音画同步与缓冲画面保持，并统一两个后端的缓冲窗口。\r\n\r\n✨ 新功能\r\n\r\n- 🎬 **可选播放后端**：新增实验性 fvp 后端，可在「设置 → 播放 → 视频编解码 → 播放后端」中选择。media_kit 仍为默认后端；切换后在下次打开或重新加载播放源时生效，无需重启应用。\r\n- 📊 **实时播放信息**：播放器设置新增信息页，可查看当前播放状态、编码、解码、画面输出、音频、缓存和音画同步等参数，并一键复制当前显示的全部信息。不同后端提供的参数可能有所不同，暂不可用的项目会显示为“—”。\r\n\r\n🛠️ 播放与交互修复\r\n\r\n- 🎯 **跳转后音画同步**：改进两个播放后端的跳转处理，等待目标画面准备后再按原有播放意图恢复，减少声音先于画面的情况。连续跳转时会转向最新目标，并保留手动暂停状态。\r\n- 🖼️ **缓冲时保留画面**：修复 media_kit 在等待缓冲时可能误判播放中断、反复恢复并出现黑屏的问题；等待数据期间保留最后一帧。\r\n- 📦 **统一缓冲窗口**：两个后端的普通播放前向缓冲上限统一为 2 分钟，悬停预览为 5 秒。实际缓冲量仍取决于网络、码率和播放器的内存策略。\r\n- 🔁 **播放结束后重播**：修复 fvp 后端在播放结束后重新播放时未从开头开始的问题。\r\n- 📱 **移动端全屏**：修复切换播放全屏时状态栏可能闪现的问题。\r\n- 🕒 **推荐发布时间**：改进首页推荐视频的发布时间显示。\r\n- ⚙️ **播放器基础组件**：统一维护 media-kit 播放组件及其平台原生库，继续以 media_kit 作为默认播放后端。\r\n\r\n国内下载：[夸克网盘](https://p…",
+          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.8%2B0/BiliSail-1.2.8%2B0-ios-arm64-unsigned.ipa",
+          "size": 43833561
+        },
+        {
+          "version": "1.2.7+0",
+          "date": "2026-11-06T17:30:04Z",
+          "localizedDescription": "BiliSail v1.2.7+0 · 消息焕新，播放更随心 ⛵\r\n\r\n本次更新重新设计消息中心和个人空间，新增播放器画面手势、自定义倍速、播放模式与视频定时，支持导出诊断日志，并改进播放恢复、评论浏览和 macOS 退出体验。\r\n\r\n✨ 新功能\r\n\r\n- 💬 **消息中心焕新**：重新调整宽窄屏布局，私信支持表情、图片和更多类型的消息展示；新增会话搜索、未读筛选、置顶、免打扰和移除等操作。回复通知可直接回复，也可在应用内访问消息设置、屏蔽词、黑名单和通讯录等入口。\r\n- 🏠 **个人空间改版**：重新整理 UP 主与个人公开主页，适配不同窗口宽度；补充空间头图、资料详情、合集／系列及追番／追剧浏览，关注列表支持查看分组，也可在应用内举报 UP 主。\r\n- 👆 **播放器画面手势**：支持双指缩放、移动和还原视频画面；在画面中部上下滑动可进入或退出全屏。可在设置中调整缩小和全屏手势，弹幕、字幕与控件不随画面缩放。\r\n- 🎚️ **自定义倍速选项**：在播放设置中添加或删除倍速档位，支持 0.25x～5.0x，最多保留九档；视频、影视、离线播放与听视频共用设置。\r\n- 🔁 **更多播放模式**：可选择播完暂停、连续播放、列表循环或单集循环，并在设置页和播放器设置中切换。\r\n- ⏰ **视频定时暂停**：视频播放新增定时入口，与听视频共用定时状态；可设置 1～1440 分钟，切换视频和听视频后仍保留，到期自动暂停。\r\n- 📦 **导出诊断日志**：设置页新增“导出日志”，可将脱敏后的核心与播放日志打包保存，方便反馈问题。\r\n\r\n🛠️ 播放与交互修复\r\n\r\n- ▶️ **播放冻结恢复**：改进缓冲充足但播放进度停滞时的检测与恢复，减少进度轻微抖动对判断的干扰，并在恢复时保留播放位置和原有播放意图。\r\n- ⚡ **倍速切换优化**：改善倍速变化时的音频时钟衔接，减轻部分场景下长按加…",
+          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.7%2B0/BiliSail-1.2.7%2B0-ios-arm64-unsigned.ipa",
+          "size": 39716977
+        }
+      ]
+    },
+    {
       "name": "Breeze",
       "bundleIdentifier": "com.zephyr.breeze",
       "developerName": "breeze-project-org",
@@ -1189,16 +1224,23 @@
       "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
       "tintColor": "#2ad8c9",
-      "size": 11050215,
+      "size": 11050569,
       "versions": [
+        {
+          "version": "1.2.8",
+          "date": "2026-11-10T07:12:38Z",
+          "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.8-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.8-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.8-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.8-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.8-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.8-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.8-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.8-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.8-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.8-ios-unsigned.ipa` - **unsigned**, sideload…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.8/tokenbar-v1.2.8-ios-unsigned.ipa",
+          "size": 11050569,
+          "buildVersion": "14",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.2.7",
           "date": "2026-11-03T12:19:52Z",
           "localizedDescription": "## TokenBar v1.2.7\r\n\r\nA fix for a **Windows crash**, on top of v1.2.6.\r\n\r\n### Fixed\r\n\r\n- **Windows: the app no longer closes itself** when you open an account (for example by clicking the Codex card) or close a dialog. The crash is a bug in Flutter's Windows engine: once any accessibility client is attached (a screen reader, an input method or another tool that inspects windows) and a page is opened or closed, the engine dereferences an empty pointer and the process dies. The upstream bug (flutter/flutter#175041) is still open and is present in the newest Flutter (3.47.9), so TokenBar now stops publishing its accessibility tree on Windows.\r\n- Built with Flutter 3.47.9 (was 3.47.7).\r\n\r\n### Notes\r\n\r\n- **Windows no longer supports screen readers** until the Flutter bug is fixed. Other platfor…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.7/tokenbar-v1.2.7-ios-unsigned.ipa",
-          "size": 11050215,
-          "buildVersion": "13",
-          "minOSVersion": "15.0"
+          "size": 11050215
         },
         {
           "version": "1.2.6",
@@ -1206,13 +1248,6 @@
           "localizedDescription": "## TokenBar v1.2.6\r\n\r\nA follow-up to v1.2.0 (Liquid Glass). It adds **in-app updates**, a custom background, swipe navigation on phones and a cost-first usage history, makes the app smoother and lighter, and **fixes very high memory use and laggy window resizing on Windows**. This release replaces v1.2.1, v1.2.2, v1.2.4 and v1.2.5 (their notes are included below); v1.2.2 was withdrawn because of the memory problem.\r\n\r\n### Fixed in v1.2.6 (Android)\r\n\r\n- **Card blur no longer disappears** while pulling down to refresh or scrolling past the end of a list: Android 12+ wrapped the list in an effect layer that left the blurred cards without a backdrop. The stretch effect is gone (the refresh spinner is unchanged).\r\n- **Card blur stays on while opening a page** such as an account's details, inste…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.6/tokenbar-v1.2.6-ios-unsigned.ipa",
           "size": 11041461
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-11-02T16:22:57Z",
-          "localizedDescription": "## TokenBar v1.2.0 - Liquid Glass\r\n\r\nA full visual refresh across desktop and mobile. Behavior, data and sync are unchanged.\r\n\r\n### Highlights\r\n\r\n- **Liquid Glass look**: translucent glass panels over a softly drifting ambient background, rounded corners, hairline rims and staggered entrance animations. Reduced-motion settings are honored, and the background animation pauses while the app is hidden.\r\n- **Unified title bar (desktop)**: frameless window with a custom 40 px title bar that blends into the app. Windows keeps native resizing, macOS keeps the traffic lights, Linux gets resize edges.\r\n- **Restyled pages**: navigation (side rail on wide screens, floating bottom bar on narrow ones), dashboard, accounts, settings, account detail, update dialog and the tray panel.\r\n- **Mobile sync (An…",
-          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.0/tokenbar-v1.2.0-ios-unsigned.ipa",
-          "size": 9969979
         }
       ]
     },

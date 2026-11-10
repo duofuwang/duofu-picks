@@ -296,15 +296,6 @@
     "size": 54067691,
     "source_repo": "Termix-SSH/Mobile"
   },
-  "lwh0630/TokenBar@1.2.7": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.7",
-    "build": "13",
-    "minOSVersion": "15.0",
-    "size": 11050215,
-    "source_repo": "lwh0630/TokenBar"
-  },
   "Lingyan000/fluxdo@0.2.29": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
     "displayName": "FluxDO",
@@ -440,15 +431,6 @@
     "size": 16924687,
     "source_repo": "StikDebug/StikDebug"
   },
-  "huamidev/GestaltX@1.0.3": {
-    "bundleIdentifier": "com.huami.gestultx",
-    "displayName": "GestaltX",
-    "version": "1.0.3",
-    "build": "11100017",
-    "minOSVersion": "26.0",
-    "size": 2744822,
-    "source_repo": "huamidev/GestaltX"
-  },
   "OnionBrowser/OnionBrowser@3.4.6": {
     "bundleIdentifier": "com.miketigas.OnionBrowser",
     "displayName": "Onion Browser",
@@ -503,13 +485,40 @@
     "size": 4060424,
     "source_repo": "missuo/kumone"
   },
-  "Kianuni/Erosion-CN@0.5.1": {
+  "huamidev/GestaltX@1.0.4": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "displayName": "GestaltX",
+    "version": "1.0.4",
+    "build": "11101436",
+    "minOSVersion": "26.0",
+    "size": 2865180,
+    "source_repo": "huamidev/GestaltX"
+  },
+  "Kianuni/Erosion-CN@0.6.2": {
     "bundleIdentifier": "com.jbdotparty.Erosion",
     "displayName": "Erosion",
-    "version": "0.5.1",
-    "build": "6",
+    "version": "0.6.2",
+    "build": "11",
     "minOSVersion": "26.0",
-    "size": 5569655,
+    "size": 5702643,
     "source_repo": "Kianuni/Erosion-CN"
+  },
+  "lwh0630/TokenBar@1.2.8": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.8",
+    "build": "14",
+    "minOSVersion": "15.0",
+    "size": 11050569,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "CKopoer/BiliSail@1.2.8+5": {
+    "bundleIdentifier": "dev.bilisail.bilisail",
+    "displayName": "BiliSail",
+    "version": "1.2.8",
+    "build": "5",
+    "minOSVersion": "15.0",
+    "size": 44360523,
+    "source_repo": "CKopoer/BiliSail"
   }
 }

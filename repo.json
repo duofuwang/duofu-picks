@@ -89,16 +89,30 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 5569655,
+      "size": 5702643,
       "versions": [
         {
-          "version": "0.5.1",
-          "date": "2026-11-10T02:50:56Z",
-          "localizedDescription": "### Erosion-CN v0.5.1 (Build 6) 发布说明\n\n- **修复重启后修改自动失效还原（反弹回原厂）的严重 Bug**：锁定原位覆盖写入保留系统文件 Inode 与 POSIX 权限属性，严格遵循 iOS 27 原厂缓存键结构（避免注入非缓存 `RegionInfo` 触发开机重置），自动匹配对应机型监管型号，重启持久生效不反弹。\n- **修复内置 Plist 编辑器导致「相机黑屏」的严重 Bug**：采用 `CFBooleanGetTypeID()` 与 `CFNumberIsFloatType()` 精确识别底层类型，未修改项 100% 原样无损直通，不再将相机变焦倍率等浮点参数误转为整型。\n- **零 0 字节窗口原位写入协议（`pwrite` + `F_FULLFSYNC`）+ 变更预览与自动回滚**：写入前提供变更对比预览，写入后执行全量磁盘读回与严格类型比对，异常自动原位回滚。\n- **本机 `libMobileGestalt.dylib` 动态偏移实时解析（零硬编码）**：运行时从本机内存系统库实时解析 `CacheUUID` 与布尔槽位精确偏移，多重校验未通过时自动锁定并拦截写入。\n- **100% 简体中文本地化、重签 `App Group` 自动识别与跨机型防呆**：完整适配 iPhone 15 / 16 / 17 / Air / 18 / Duo 全系列及 M 系列 iPad，兼容 SideStore、AltStore、Feather、Sideloadly、Impactor 等签名工具，并移除上游存在软砖隐患的高危功能。\n\n### 特别致谢 (Credits)\n- 上游主项目：[jailbreakdotparty/Erosion](https://github.com/jailbreakdotparty/Erosion) & […",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.5.1/Erosion_v0.5.1_zh-Hans.ipa",
-          "size": 5569655,
-          "buildVersion": "6",
+          "version": "0.6.2",
+          "date": "2026-11-10T08:18:12Z",
+          "localizedDescription": "## ✨ Erosion-CN v0.6.2 (Build 11) 更新内容\n\n### 🧠 1. Apple 智能子能力自动打包与 iOS 27 进阶 AI 解锁\n- **「启用 Apple 智能开关」自动同步解锁相册消除与手写合成**：\n  - 针对不支持 Apple 智能的旧机型（如 iPhone 14 Pro / 15 标准版），开启「启用 Apple 智能开关」时，现自动同步写入相册**「消除」(Photos Clean Up, `XNCjqOupLM/S8fNyxRNQTA`)** 与备忘录**「手写体合成」(Handwriting Synthesis, `YgYIIViDt1kgzyIsIV61vA`)** 能力标记，无需用户额外点击多个开关。\n- **新增「解锁 iOS 27 进阶 AI 能力」合并开关（附带行内说明与详情弹窗）**：\n  - 一键开启 2 项默认仅在最新代机型硬件设备树 (`IODeviceTree:/product`) 中启用的端侧 AI 能力（即便在原生支持 AI 的 iPhone 15 Pro / 16 / 17 系列上默认也为关闭）：\n    1. **个人实时翻译 (`Personal Translator`, `M1n2sAqf33NAOgZRGxQYBA`)**：解锁电话、FaceTime 与信息中的系统级实时同声传译及个人音色保留翻译能力；\n    2. **iOS 27 音频智能 (`Audio Intelligence`, `rb2tKZxlj0Gm2tBmUQSLqQ`)**：解锁语音备忘录与通话录音的端侧实时语音理解、流式智能摘要与环境人声分离能力。\n\n### 🛡️ 2. 原始备份 `SHA-256` 完整性校验与防丢 eSIM 护栏增强\n- **`OriginalGestalt.plist` `SHA-256` 摘要…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.2/Erosion_v0.6.2_zh-Hans.ipa",
+          "size": 5702643,
+          "buildVersion": "11",
           "minOSVersion": "26.0"
+        },
+        {
+          "version": "0.6.1",
+          "date": "2026-11-10T07:27:39Z",
+          "localizedDescription": "### Erosion-CN v0.6.1 (Build 10) 安全与防白苹果审计更新\n\n针对 `v0.6.0` 新增的四大模块（状态栏自定义、桌面与动画调优、应用/游戏存档管理、容器缓存清理）进行了逐行代码安全审计与防白苹果加固：\n\n1. **防止 `com.apple.springboard.plist` 解析异常时被空字典覆盖（防桌面状态丢失）**：\n   - 在 `StatusBarView` 与 `SpringBoardTweakView` 中，若现有的 `com.apple.springboard.plist` 读取或反序列化失败，安全护栏会立即拦截并中止写入，绝不回退为空字典覆盖原文件。\n2. **「恢复默认」升级为键值级精准无损还原（防跨模块误伤与系统新状态回滚）**：\n   - 状态栏模块与动画调优模块在执行「恢复默认」时，仅精准还原或移除各自管理的键值，不再将数天前的整包 `com.apple.springboard.plist` 快照强行覆盖回去，100% 保留系统近期更新的桌面布局与另一模块的设置。\n3. **运营商覆盖配置 (`Carrier Bundles/Overlay`) 符号链接拦截与写前反序列化自检**：\n   - 遍历运营商 `.plist` 时通过 `lstat()` 严格过滤，仅修改真实普通文件（`S_IFREG`），严禁跟随指向 `/System/Library/...` 的符号链接，并在原位写入前验证生成的二进制 Plist 可被正常反序列化。\n4. **应用存档还原「防符号链接逃逸 (`S_IFLNK`)」+ 核心系统容器保护 + 清单识别**：\n   - 还原存档时优先从包内 `BackupManifest.plist` 读取真实 `bundleID`（即使外部备份 `.zip` 被重命名也能精准还原）；\n   - 严格拦…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.1/Erosion_v0.6.1_zh-Hans.ipa",
+          "size": 5697200
+        },
+        {
+          "version": "0.6.0",
+          "date": "2026-11-10T07:17:07Z",
+          "localizedDescription": "### Erosion-CN v0.6.0 (Build 9) 重磅功能更新\n\n在 `v0.5.3` 防白苹果安全加固与 `pathleak` 动态 Inode 扫描加速的基础上，全新加入**四大实用扩展模块**：\n\n1. **状态栏与运营商自定义 (`StatusBarView`)**：\n   - 自动扫描并修改 `/var/mobile/Library/Carrier Bundles/Overlay` 下的 `StatusBarCarrierName` 运营商文字（支持任意中文、英文或 Emoji）；\n   - 支持自定义状态栏时间处文字（`SBFakeTime` / `SBFakeTimeString`）、强制开启电池百分比（`SBShowBatteryPercentage`）、数字信号强度（`SBShowRSSI`）以及隐藏左上角返回上个应用面包屑导航；\n   - 首次修改前自动备份原厂文件并排除云同步，采用保留 Inode 的原位原子写入，支持一键无损恢复默认。\n2. **桌面与系统动画调优 (`SpringBoardTweakView`)**：\n   - 支持调节全局 UI 过渡动画速度缩放系数（`UIAnimationDragCoefficient`），提供 `0.25x 瞬开`、`0.50x 极速`、`0.75x 轻快`、`1.00x 默认` 快捷预设与 `0.15x–1.50x` 无级滑块；\n   - 支持屏蔽 20% / 10% 低电量全屏弹窗打断（游戏/观影免打扰）、锁屏禁止下拉控制中心（防丢机被下拉开飞行模式断网）、锁屏禁止下拉通知中心及锁定主屏幕旋转。\n3. **应用与游戏存档备份、还原与修改器 (`AppDataBackupView`)**：\n   - 自动扫描本机安装的第三方应用与单机游戏数据容器（内置常用应用/游戏中文名称识别与实时搜索）；\n…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.0/Erosion_v0.6.0_zh-Hans.ipa",
+          "size": 5690748
         }
       ]
     },
@@ -177,16 +191,23 @@
       "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
       "tintColor": "#6156e2",
-      "size": 2744822,
+      "size": 2865180,
       "versions": [
+        {
+          "version": "1.0.4",
+          "date": "2026-11-10T07:27:47Z",
+          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.4/CHANGELOG_ZH-CN.md)\n\nBuild `11101436`.\n\n### Added\n\n- WAPI preset under **Device → Presets**: disable the WAPI regulatory flag or\n  restore the recorded original value. The cached Boolean is resolved from the\n  device's own MobileGestalt image instead of a hard-coded slot (#30).\n- Per-device originals for the WAPI flag. The value survives edits, app\n  restarts, journal migration, and is restored together with the other cached\n  options (#30).\n- New display presets: high-luminance Always-On Display, AOD flipbook and its\n  entry count, HDR photo display, wallpaper parallax control, and experimental\n  PWM and DisplayPort capability flags.\n- New device presets: Collision SOS, Audio Mix, and Spatial FaceTime audio.\n- New intellige…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
+          "size": 2865180,
+          "buildVersion": "11101436",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.3",
           "date": "2026-11-09T16:23:40Z",
           "localizedDescription": "GestaltX 1.0.3\r\n• 新增分享导入：在“文件”或其他 App 中分享 plist 到 GestaltX，核验后弹窗确认导入。\r\n• 加强设备归属校验，拒绝不匹配或无法核验的文件；本机导出的文件可携带设备校验凭证。\r\n• 优化 MG 控制，支持新增、修改、重命名和删除键值。\r\n• 支持恢复已核验的本机 plist，恢复前自动备份，完成后请重启设备。\r\n\r\n重签时请保留分享扩展，并为主应用和扩展配置同一个 App Group。\r\n\r\nGestaltX 1.0.3\r\n• Added share import: share a plist to GestaltX from Files or another app, then confirm the import after verification.\r\n• Strengthened device ownership checks. Mismatched or unverifiable files are rejected; exports can include a device-bound verification proof.\r\n• Improved MG Control with support for adding, editing, renaming, and deleting keys and values.\r\n• Added restoration of verified device plists, with an automatic backup before restoring. Restart your device afterward.\r\n\r\nWhen re-signing, keep the share extension and configure the same App Group f…",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
-          "size": 2744822,
-          "buildVersion": "11100017",
-          "minOSVersion": "26.0"
+          "size": 2744822
         },
         {
           "version": "1.0.2",
@@ -194,13 +215,6 @@
           "localizedDescription": "GestaltX 1.0.2\r\n\r\n• 修复预设停用逻辑：原本不存在的字段会被删除，原本存在的字段恢复原值和类型，不再统一写入 0。\r\n• 首次没有备份时自动创建备份，并保留修改前的字段状态，重新打开 App 后仍可还原。\r\n• 每个预设新增“还原”按钮，支持单独还原该项，保留其他尚未应用的修改。\r\n• 新增“移除新增字段”，用于清理确认是后来添加的字段。\r\n• 调整 NeoSpring 的加载与触发时机，修正回到前台时提前关闭注销页面的问题。\r\n\r\nGestaltX 1.0.2\r\n\r\n• Fixed preset disabling: originally absent fields are removed; existing fields regain their original values and types instead of being set to 0.\r\n• Added automatic initial backups and persistent original-value records.\r\n• Added a Revert button to each preset, preserving unrelated pending changes.\r\n• Added Remove Added Fields for fields you know were added later.\r\n• Adjusted NeoSpring loading and startup timing, and fixed premature dismissal when returning to the app.\r\n\r\nSupports iOS / iPadOS 27.x. Signing requires at least one usable App Group.",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
           "size": 2489231
-        },
-        {
-          "version": "1.0.1",
-          "date": "2026-11-09T05:28:40Z",
-          "localizedDescription": "GestaltX 1.0.1\r\n\r\n• 新增独立的“地区代码”选项，支持美国、中国大陆、香港、台湾、日本和英国。\r\n• 单独修改地区代码时，保留原有销售地区后缀。\r\n• 修复地区代码与销售地区的组合设置，现在可以同时应用。\r\n• 通常只需修改地区代码即可尝试启用 AI，无需更改销售地区。\r\n\r\n* 之前修改过销售地区的用户，可以先恢复设备原本的销售地区。例如原本为国行 CH/A，可将销售地区选回“中国大陆”并应用，再按需修改地区代码。应用后请重启设备。\r\n\r\n支持 iOS / iPadOS 27.x；iOS / iPadOS 26.x 不支持本机 MobileGestalt 访问。AI 可用性及验机结果因设备与系统而异。\r\n\r\n———\r\n\r\nGestaltX 1.0.1\r\n\r\n• Added a separate Region Code option with presets for the United States, mainland China, Hong Kong, Taiwan, Japan and the United Kingdom.\r\n• Changing Region Code alone preserves the existing sales-region suffix.\r\n• Fixed combined settings: Region Code and Sales Region can now be applied together.\r\n• Usually, changing Region Code is enough to try enabling AI; changing Sales Region is unnecessary.\r\n\r\n* If you previously changed Sales Region, restore your…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.1/GestaltX_1.0.1.ipa",
-          "size": 2459454
         }
       ]
     },
