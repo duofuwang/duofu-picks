@@ -89,16 +89,23 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 5702643,
+      "size": 5782794,
       "versions": [
+        {
+          "version": "0.7.0",
+          "date": "2026-11-10T11:48:48Z",
+          "localizedDescription": "## Erosion-CN v0.7.0 更新日志 (Build 12)\n\n### 🚀 三大 MobileGestalt 全新能力\n1. **底层槽位与实时生效探针 (`MGInspector`)**：\n   - 支持 **「核心键值实时生效对比」**（三源同屏对比 `OriginalGestalt` 原厂备份 vs `com.apple.MobileGestalt.plist` 当前落盘值 vs `MGCopyAnswer` 系统实时生效值，遵循 `+1 Copy rule` 零内存泄漏）。\n   - 支持 **「全量动态槽位映射表」**（直连 `/usr/lib/libMobileGestalt.dylib` 描述符表，实时枚举 `0..<slotCount` 全部二进制槽位、精确字节偏移、原厂初值与当前缓存字节，含未分配保留槽位识别）。\n   - 支持 **「任意 Key 只读探针」**（内置常用快捷芯片，支持任意混淆哈希或明文键名实时查询）。\n2. **Apple 智能四维激活条件自检与一键补齐 (`AppleIntelligenceCheckupCard`)**：\n   - 自动诊断地区代码 (`h63QSdBCiT/z0WU6rdQv6Q`)、监管型号 (`bZfpdqxzvNvLs+s54+KP5w`)、芯片准入 (`j8/Omm6s1lsmTDFsXjsBfA`) 与系统实时生效状态，未达标时支持 **「一键补齐缺失项」**。\n   - **原生 AI 硬件防呆**：在 iPhone 15 Pro / 16 / 17 / 18 等原生支持端侧智能的机型上自动锁定 `InternalInstall` 伪装开关；还原或关闭地区限制时强制读取 `OriginalGestalt.plist` 原厂 `ProductType`。\n3. **影像与健康进阶能力 (`Ca…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.0/Erosion_v0.7.0_zh-Hans.ipa",
+          "size": 5782794,
+          "buildVersion": "12",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "0.6.2",
           "date": "2026-11-10T08:18:12Z",
-          "localizedDescription": "## ✨ Erosion-CN v0.6.2 (Build 11) 更新内容\n\n### 🧠 1. Apple 智能子能力自动打包与 iOS 27 进阶 AI 解锁\n- **「启用 Apple 智能开关」自动同步解锁相册消除与手写合成**：\n  - 针对不支持 Apple 智能的旧机型（如 iPhone 14 Pro / 15 标准版），开启「启用 Apple 智能开关」时，现自动同步写入相册**「消除」(Photos Clean Up, `XNCjqOupLM/S8fNyxRNQTA`)** 与备忘录**「手写体合成」(Handwriting Synthesis, `YgYIIViDt1kgzyIsIV61vA`)** 能力标记，无需用户额外点击多个开关。\n- **新增「解锁 iOS 27 进阶 AI 能力」合并开关（附带行内说明与详情弹窗）**：\n  - 一键开启 2 项默认仅在最新代机型硬件设备树 (`IODeviceTree:/product`) 中启用的端侧 AI 能力（即便在原生支持 AI 的 iPhone 15 Pro / 16 / 17 系列上默认也为关闭）：\n    1. **个人实时翻译 (`Personal Translator`, `M1n2sAqf33NAOgZRGxQYBA`)**：解锁电话、FaceTime 与信息中的系统级实时同声传译及个人音色保留翻译能力；\n    2. **iOS 27 音频智能 (`Audio Intelligence`, `rb2tKZxlj0Gm2tBmUQSLqQ`)**：解锁语音备忘录与通话录音的端侧实时语音理解、流式智能摘要与环境人声分离能力。\n\n### 🛡️ 2. 原始备份 `SHA-256` 完整性校验与防丢 eSIM 护栏增强\n- **`OriginalGestalt.plist` `SHA-256` 摘要…",
+          "localizedDescription": "## ✨ Erosion-CN v0.6.2 (Build 11) 更新内容\n\n### 🧠 1. Apple 智能子能力自动打包与 iOS 27 进阶 AI 解锁\n- **「启用 Apple 智能开关」自动同步解锁相册消除与手写合成**：\n  - 针对不支持 Apple 智能的旧机型（如 iPhone 14 Pro / 15 标准版），开启「启用 Apple 智能开关」时，现自动同步写入相册**「消除」(Photos Clean Up, `XNCjqOupLM/S8fNyxRNQTA`)** 与备忘录**「手写体合成」(Handwriting Synthesis, `YgYIIViDt1kgzyIsIV61vA`)** 能力标记，无需用户额外点击多个开关。\n- **新增「解锁 iOS 27 进阶 AI 能力」合并开关（附带行内说明与详情弹窗）**：\n  - 一键开启 2 项默认仅在最新代机型硬件设备树 (`IODeviceTree:/product`) 中启用的端侧 AI 能力（在 iPhone 15 Pro / 16 / 17 系列上默认关闭）：\n    1. **个人实时翻译 (`Personal Translator`, `M1n2sAqf33NAOgZRGxQYBA`)**：解锁电话、FaceTime 与信息中的系统级实时同声传译及个人音色保留翻译能力；\n    2. **iOS 27 音频智能 (`Audio Intelligence`, `rb2tKZxlj0Gm2tBmUQSLqQ`)**：解锁语音备忘录与通话录音的端侧实时语音理解、流式智能摘要与环境人声分离能力。\n  - 💡 **iPhone 18 系列机型说明**：iPhone 18 全系硬件设备树已原生开启上述全部 Apple 智能与 iOS 27 进阶 AI 能力，无需额外开启，因此应用内默认不展示该…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.2/Erosion_v0.6.2_zh-Hans.ipa",
-          "size": 5702643,
-          "buildVersion": "11",
-          "minOSVersion": "26.0"
+          "size": 5702079
         },
         {
           "version": "0.6.1",
@@ -106,13 +113,6 @@
           "localizedDescription": "### Erosion-CN v0.6.1 (Build 10) 安全与防白苹果审计更新\n\n针对 `v0.6.0` 新增的四大模块（状态栏自定义、桌面与动画调优、应用/游戏存档管理、容器缓存清理）进行了逐行代码安全审计与防白苹果加固：\n\n1. **防止 `com.apple.springboard.plist` 解析异常时被空字典覆盖（防桌面状态丢失）**：\n   - 在 `StatusBarView` 与 `SpringBoardTweakView` 中，若现有的 `com.apple.springboard.plist` 读取或反序列化失败，安全护栏会立即拦截并中止写入，绝不回退为空字典覆盖原文件。\n2. **「恢复默认」升级为键值级精准无损还原（防跨模块误伤与系统新状态回滚）**：\n   - 状态栏模块与动画调优模块在执行「恢复默认」时，仅精准还原或移除各自管理的键值，不再将数天前的整包 `com.apple.springboard.plist` 快照强行覆盖回去，100% 保留系统近期更新的桌面布局与另一模块的设置。\n3. **运营商覆盖配置 (`Carrier Bundles/Overlay`) 符号链接拦截与写前反序列化自检**：\n   - 遍历运营商 `.plist` 时通过 `lstat()` 严格过滤，仅修改真实普通文件（`S_IFREG`），严禁跟随指向 `/System/Library/...` 的符号链接，并在原位写入前验证生成的二进制 Plist 可被正常反序列化。\n4. **应用存档还原「防符号链接逃逸 (`S_IFLNK`)」+ 核心系统容器保护 + 清单识别**：\n   - 还原存档时优先从包内 `BackupManifest.plist` 读取真实 `bundleID`（即使外部备份 `.zip` 被重命名也能精准还原）；\n   - 严格拦…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.1/Erosion_v0.6.1_zh-Hans.ipa",
           "size": 5697200
-        },
-        {
-          "version": "0.6.0",
-          "date": "2026-11-10T07:17:07Z",
-          "localizedDescription": "### Erosion-CN v0.6.0 (Build 9) 重磅功能更新\n\n在 `v0.5.3` 防白苹果安全加固与 `pathleak` 动态 Inode 扫描加速的基础上，全新加入**四大实用扩展模块**：\n\n1. **状态栏与运营商自定义 (`StatusBarView`)**：\n   - 自动扫描并修改 `/var/mobile/Library/Carrier Bundles/Overlay` 下的 `StatusBarCarrierName` 运营商文字（支持任意中文、英文或 Emoji）；\n   - 支持自定义状态栏时间处文字（`SBFakeTime` / `SBFakeTimeString`）、强制开启电池百分比（`SBShowBatteryPercentage`）、数字信号强度（`SBShowRSSI`）以及隐藏左上角返回上个应用面包屑导航；\n   - 首次修改前自动备份原厂文件并排除云同步，采用保留 Inode 的原位原子写入，支持一键无损恢复默认。\n2. **桌面与系统动画调优 (`SpringBoardTweakView`)**：\n   - 支持调节全局 UI 过渡动画速度缩放系数（`UIAnimationDragCoefficient`），提供 `0.25x 瞬开`、`0.50x 极速`、`0.75x 轻快`、`1.00x 默认` 快捷预设与 `0.15x–1.50x` 无级滑块；\n   - 支持屏蔽 20% / 10% 低电量全屏弹窗打断（游戏/观影免打扰）、锁屏禁止下拉控制中心（防丢机被下拉开飞行模式断网）、锁屏禁止下拉通知中心及锁定主屏幕旋转。\n3. **应用与游戏存档备份、还原与修改器 (`AppDataBackupView`)**：\n   - 自动扫描本机安装的第三方应用与单机游戏数据容器（内置常用应用/游戏中文名称识别与实时搜索）；\n…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.6.0/Erosion_v0.6.0_zh-Hans.ipa",
-          "size": 5690748
         }
       ]
     },

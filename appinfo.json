@@ -494,24 +494,6 @@
     "size": 2865180,
     "source_repo": "huamidev/GestaltX"
   },
-  "Kianuni/Erosion-CN@0.6.2": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "0.6.2",
-    "build": "11",
-    "minOSVersion": "26.0",
-    "size": 5702643,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
-  "lwh0630/TokenBar@1.2.8": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.8",
-    "build": "14",
-    "minOSVersion": "15.0",
-    "size": 11050569,
-    "source_repo": "lwh0630/TokenBar"
-  },
   "CKopoer/BiliSail@1.2.8+5": {
     "bundleIdentifier": "dev.bilisail.bilisail",
     "displayName": "BiliSail",
@@ -520,5 +502,23 @@
     "minOSVersion": "15.0",
     "size": 44360523,
     "source_repo": "CKopoer/BiliSail"
+  },
+  "Kianuni/Erosion-CN@0.7.0": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "0.7.0",
+    "build": "12",
+    "minOSVersion": "26.0",
+    "size": 5782794,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "lwh0630/TokenBar@1.2.9": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.9",
+    "build": "15",
+    "minOSVersion": "15.0",
+    "size": 11054874,
+    "source_repo": "lwh0630/TokenBar"
   }
 }

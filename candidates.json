@@ -993,14 +993,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1196630504,
+      "size": 1196632127,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-10T04:35:42Z",
-          "localizedDescription": "## Alpha Build `41efc43`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`41efc43`](https://github.com/Provenance-Emu/Provenance/commit/41efc437c0703c685e3fa68110fd3eb898a4a1d3) |\n| **Built** | 2026-11-10 04:34 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42751364246) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n41efc437c [Agent] feat: run the web server on the shared PVWebServer (#3807)\n```\n\n### Merged PRs\n- #3807: [Agent] feat: run the web server on the shared PVWebServer\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/Side…",
+          "date": "2026-11-10T09:07:24Z",
+          "localizedDescription": "## Alpha Build `2f79565`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`2f79565`](https://github.com/Provenance-Emu/Provenance/commit/2f795655c39f98bb200283c0577a9d87e9d6197a) |\n| **Built** | 2026-11-10 09:06 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42782292999) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n2f795655c feat: lay out for the folding iPhone from the window, not the device\n939ebc2e9 fix(skins): place the game picture where the skin renderer draws its screen\nc3086e129 feat(pause): open the skin catalog from the pause menu, slimmer head…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1196630504,
+          "size": 1196632127,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1224,15 +1224,15 @@
       "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
       "tintColor": "#2ad8c9",
-      "size": 11050569,
+      "size": 11054874,
       "versions": [
         {
-          "version": "1.2.8",
-          "date": "2026-11-10T07:12:38Z",
-          "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.8-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.8-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.8-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.8-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.8-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.8-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.8-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.8-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.8-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.8-ios-unsigned.ipa` - **unsigned**, sideload…",
-          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.8/tokenbar-v1.2.8-ios-unsigned.ipa",
-          "size": 11050569,
-          "buildVersion": "14",
+          "version": "1.2.9",
+          "date": "2026-11-10T11:01:05Z",
+          "localizedDescription": "### What's new\r\n\r\n- **macOS: menu bar only mode.** New switch in Settings → Desktop, *Menu bar only (hide the Dock icon)*, so TokenBar lives only in the menu bar. Open the window or quit from the menu bar icon (⌘Q is unavailable while the Dock icon is hidden). Default is off. Thanks to @tianhuanyun for the suggestion and for testing the approach on macOS 26 ([#8](https://github.com/lwh0630/TokenBar/issues/8)).\r\n- Includes the v1.2.8 fix: API keys are no longer lost after restarting on macOS (reported and diagnosed in detail by @tianhuanyun, [#6](https://github.com/lwh0630/TokenBar/issues/6)).\r\n### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.9-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.9-windows-arm64-setup.…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.9/tokenbar-v1.2.9-ios-unsigned.ipa",
+          "size": 11054874,
+          "buildVersion": "15",
           "minOSVersion": "15.0"
         },
         {
