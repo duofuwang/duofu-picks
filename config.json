@@ -310,9 +310,8 @@
       "subtitle": "植物大战僵尸社区重实现"
     },
     {
-      "repo": "CKopoer/BiliSail",
-      "subtitle": "哔帆：Flutter 跨平台第三方哔哩哔哩客户端，支持投屏与听视频",
-      "asset": "-ios-arm64.*\\.ipa$"
+      "repo": "Rone89/cilicili",
+      "subtitle": "iOS 原生第三方哔哩哔哩客户端，支持弹幕、字幕与听视频"
     }
   ],
   "maxVersions": 3,
