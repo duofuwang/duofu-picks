@@ -82,6 +82,27 @@
       ]
     },
     {
+      "name": "Erosion CN",
+      "bundleIdentifier": "com.jbdotparty.Erosion",
+      "developerName": "Kianuni",
+      "subtitle": "简体中文 MobileGestalt 改区工具，写入预览 + 自动回滚，重启不反弹",
+      "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
+      "tintColor": "#b66330",
+      "size": 5569655,
+      "versions": [
+        {
+          "version": "0.5.1",
+          "date": "2026-11-10T02:50:56Z",
+          "localizedDescription": "### Erosion-CN v0.5.1 (Build 6) 发布说明\n\n- **修复重启后修改自动失效还原（反弹回原厂）的严重 Bug**：锁定原位覆盖写入保留系统文件 Inode 与 POSIX 权限属性，严格遵循 iOS 27 原厂缓存键结构（避免注入非缓存 `RegionInfo` 触发开机重置），自动匹配对应机型监管型号，重启持久生效不反弹。\n- **修复内置 Plist 编辑器导致「相机黑屏」的严重 Bug**：采用 `CFBooleanGetTypeID()` 与 `CFNumberIsFloatType()` 精确识别底层类型，未修改项 100% 原样无损直通，不再将相机变焦倍率等浮点参数误转为整型。\n- **零 0 字节窗口原位写入协议（`pwrite` + `F_FULLFSYNC`）+ 变更预览与自动回滚**：写入前提供变更对比预览，写入后执行全量磁盘读回与严格类型比对，异常自动原位回滚。\n- **本机 `libMobileGestalt.dylib` 动态偏移实时解析（零硬编码）**：运行时从本机内存系统库实时解析 `CacheUUID` 与布尔槽位精确偏移，多重校验未通过时自动锁定并拦截写入。\n- **100% 简体中文本地化、重签 `App Group` 自动识别与跨机型防呆**：完整适配 iPhone 15 / 16 / 17 / Air / 18 / Duo 全系列及 M 系列 iPad，兼容 SideStore、AltStore、Feather、Sideloadly、Impactor 等签名工具，并移除上游存在软砖隐患的高危功能。\n\n### 特别致谢 (Credits)\n- 上游主项目：[jailbreakdotparty/Erosion](https://github.com/jailbreakdotparty/Erosion) & […",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.5.1/Erosion_v0.5.1_zh-Hans.ipa",
+          "size": 5569655,
+          "buildVersion": "6",
+          "minOSVersion": "26.0"
+        }
+      ]
+    },
+    {
       "name": "Feather",
       "bundleIdentifier": "thewonderofyou.Feather",
       "developerName": "claration",

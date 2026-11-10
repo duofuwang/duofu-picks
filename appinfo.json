@@ -502,5 +502,14 @@
     "minOSVersion": "16.0",
     "size": 4060424,
     "source_repo": "missuo/kumone"
+  },
+  "Kianuni/Erosion-CN@0.5.1": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "0.5.1",
+    "build": "6",
+    "minOSVersion": "26.0",
+    "size": 5569655,
+    "source_repo": "Kianuni/Erosion-CN"
   }
 }

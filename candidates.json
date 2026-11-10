@@ -958,14 +958,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1198503709,
+      "size": 1196630504,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-10T00:55:16Z",
-          "localizedDescription": "## Alpha Build `62e4fae`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`62e4fae`](https://github.com/Provenance-Emu/Provenance/commit/62e4fae5d220f35c0bf1892ee280b04be4c8c536) |\n| **Built** | 2026-11-10 00:53 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42725580187) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n62e4fae5d [Agent] fix(skins): restore the built-in controls for TestFlight (#3808)\n0cfa65754 skin fixes\n202fad099 bump dolphin\n```\n\n### Merged PRs\n- #3808: [Agent] fix(skins): restore the built-in controls for TestFlight\n\n\n---\nThese builds are…",
+          "date": "2026-11-10T04:35:42Z",
+          "localizedDescription": "## Alpha Build `41efc43`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`41efc43`](https://github.com/Provenance-Emu/Provenance/commit/41efc437c0703c685e3fa68110fd3eb898a4a1d3) |\n| **Built** | 2026-11-10 04:34 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42751364246) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n41efc437c [Agent] feat: run the web server on the shared PVWebServer (#3807)\n```\n\n### Merged PRs\n- #3807: [Agent] feat: run the web server on the shared PVWebServer\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/Side…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1198503709,
+          "size": 1196630504,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
