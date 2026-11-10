@@ -119,6 +119,12 @@
       "name": "Henge",
       "asset": "^Henge\\.ipa$",
       "subtitle": "在 iPhone / iPad 上跑 macOS，全程端侧安装，无需 Mac"
+    },
+    {
+      "repo": "Kianuni/Erosion-CN",
+      "bundleIdentifier": "com.jbdotparty.Erosion",
+      "name": "Erosion CN",
+      "subtitle": "简体中文 MobileGestalt 改区工具，写入预览 + 自动回滚，重启不反弹"
     }
   ],
   "candidatesRepository": {
