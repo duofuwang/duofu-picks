@@ -17,15 +17,6 @@
     "size": 35403538,
     "source_repo": "LiveContainer/LiveContainer"
   },
-  "Sami-Wali/ryP0@2.2": {
-    "bundleIdentifier": "com.ry0.ryP0",
-    "displayName": "ryP0",
-    "version": "2.2",
-    "build": "1",
-    "minOSVersion": "17.0",
-    "size": 14531954,
-    "source_repo": "Sami-Wali/ryP0"
-  },
   "claration/Feather@2.9.0": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",
@@ -520,5 +511,14 @@
     "minOSVersion": "26.1",
     "size": 24576338,
     "source_repo": "Rone89/cilicili"
+  },
+  "Sami-Wali/ryP0@2.3": {
+    "bundleIdentifier": "com.ry0.ryP0",
+    "displayName": "ryP0",
+    "version": "2.3",
+    "build": "1",
+    "minOSVersion": "17.0",
+    "size": 16597954,
+    "source_repo": "Sami-Wali/ryP0"
   }
 }

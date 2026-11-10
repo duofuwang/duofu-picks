@@ -394,16 +394,23 @@
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=e9e8ae44fc4e",
       "tintColor": "#6456de",
-      "size": 14531954,
+      "size": 16597954,
       "versions": [
+        {
+          "version": "2.3",
+          "date": "2026-11-10T20:28:12Z",
+          "localizedDescription": "## 🌟 What's New\r\n\r\n### ❄️ Interactive Winter Theme\r\n* Snow now settles dynamically on cards and category tabs.\r\n* **Shake it loose:** Simply swipe across the category bar or long-press any card to shake the snow off.\r\n\r\n### 🎵 Background Music (BGM)\r\n* Browse your favorite apps with ambient audio.\r\n* Includes the built-in original track: **ryP0 Drift**.\r\n* Supports importing and playing your own local `.mp3` files.\r\n\r\n### 🧩 Strata & Kagura Support\r\n* Full compatibility to install apps and monitor updates directly through Strata and Kagura.\r\n\r\n### 🌸 Sakura Accent\r\n* Added a new soft-pink accent palette to refresh your interface aesthetics.\r\n\r\n### 📚 Multi-Source Unified Catalog\r\n* Combine multiple repositories into a single unified view. Choose exactly which sources to browse together.\r\n\r\n###…",
+          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.3/ryP0-2.3.ipa",
+          "size": 16597954,
+          "buildVersion": "1",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "2.2",
           "date": "2026-10-23T20:45:34Z",
           "localizedDescription": "# What’s New\r\n\r\n- Install Apps Directly on LiveContainer 1 Without LiveContainer 2 (Thats include any Container App)\r\n- Improved background downloads and Live Activity handling (only for Sideload not work with Containers).\r\n- Added built-in file picker compatibility for **LiveContainer**, without requiring the **Fix File Picker** option.\r\n- Added the new **PS3** theme with and Colors.\r\n- Added Installation Location to track updates for installed apps \r\n- Improved download count and progress indicators on the **Downloads** tab.\r\n- Fix Sign-in with Google Account \r\n- Add sections for Port Category (Ready to Install) (Built it Yourself)\r\n\r\n## Notes\r\n\r\n**LiveContainer or any Container App Users:** Enable **\"Switch App Without Asking\"** from the settings.",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.2/ryP0-unsigned.ipa",
-          "size": 14531954,
-          "buildVersion": "1",
-          "minOSVersion": "17.0"
+          "size": 14531954
         },
         {
           "version": "2.1",
@@ -411,13 +418,6 @@
           "localizedDescription": "# What’s New\r\n\r\n## ryP0 2.1\r\n\r\n- Fixed IPA downloads for non LiveContainer users.\r\n- Added the new **Orbit** theme.\r\n- App requests now require **GitHub sign-in**, making it easier to track request status.\r\n\r\n## Notes\r\n\r\n**LiveContainer users:** Run ryP0 as a Shared App in LiveContainer 2 to keep LiveContainer 1 available for installations.",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.1/ryP0-unsigned.ipa",
           "size": 11010317
-        },
-        {
-          "version": "2.0",
-          "date": "2026-10-11T05:14:56Z",
-          "localizedDescription": "# What's New\r\n\r\n## ryP0 2.0 brings a rebuilt native iOS experience with more ways to discover, download, and organize apps.\r\n\r\n- Native SwiftUI interface with Liquid Glass controls on iOS 26.\r\n- Search, category filters, and support for multiple app sources.\r\n- Favorites and a New Releases page with searchable updates.\r\n- Available version history, release-channel filters, and Patch Notes.\r\n- In-app IPA downloads with progress, cancellation, and retry.\r\n- Background downloads and Live Activities on supported installations.\r\n- Save downloaded IPAs to Files or share them without downloading again.\r\n- LiveContainer, AltStore, and SideStore integrations.\r\n- Return to LiveContainer directly when running inside it.\r\n- Submit app requests and follow their status in My Requests.\r\n- Save app icons …",
-          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.0/ryP0-unsigned.ipa",
-          "size": 10751321
         }
       ]
     },

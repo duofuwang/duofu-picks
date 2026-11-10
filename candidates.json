@@ -1000,14 +1000,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1196632127,
+      "size": 1196683596,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-10T09:07:24Z",
-          "localizedDescription": "## Alpha Build `2f79565`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`2f79565`](https://github.com/Provenance-Emu/Provenance/commit/2f795655c39f98bb200283c0577a9d87e9d6197a) |\n| **Built** | 2026-11-10 09:06 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42782292999) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n2f795655c feat: lay out for the folding iPhone from the window, not the device\n939ebc2e9 fix(skins): place the game picture where the skin renderer draws its screen\nc3086e129 feat(pause): open the skin catalog from the pause menu, slimmer head…",
+          "date": "2026-11-10T21:11:31Z",
+          "localizedDescription": "## Alpha Build `de64c9b`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`de64c9b`](https://github.com/Provenance-Emu/Provenance/commit/de64c9b7cee2875aa4d5cd81e717b4cd09c047d7) |\n| **Built** | 2026-11-10 21:10 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42894224300) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nde64c9b7c feat(skins): unfolded iPhone draws a skin's iPad layout\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload feed]…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1196632127,
+          "size": 1196683596,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
