@@ -958,14 +958,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1198580776,
+      "size": 1198503709,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-09T04:32:26Z",
-          "localizedDescription": "## Alpha Build `f009aad`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`f009aad`](https://github.com/Provenance-Emu/Provenance/commit/f009aad13eece2c68ba4d7c7e43e2bf76eb6593a) |\n| **Built** | 2026-11-09 04:31 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42558309326) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nf009aad13 fix: await Realm opening after content server import\nee46c1a7e feat: add opt-in content server game browsing and playback\n488c11089 fix(maint): commit unattended, without submodule pointers\n362f838aa fix(skins): default to built-in c…",
+          "date": "2026-11-10T00:55:16Z",
+          "localizedDescription": "## Alpha Build `62e4fae`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`62e4fae`](https://github.com/Provenance-Emu/Provenance/commit/62e4fae5d220f35c0bf1892ee280b04be4c8c536) |\n| **Built** | 2026-11-10 00:53 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42725580187) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n62e4fae5d [Agent] fix(skins): restore the built-in controls for TestFlight (#3808)\n0cfa65754 skin fixes\n202fad099 bump dolphin\n```\n\n### Merged PRs\n- #3808: [Agent] fix(skins): restore the built-in controls for TestFlight\n\n\n---\nThese builds are…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1198580776,
+          "size": 1198503709,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
