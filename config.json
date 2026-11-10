@@ -308,6 +308,11 @@
     {
       "repo": "wszqkzqk/PvZ-Portable",
       "subtitle": "植物大战僵尸社区重实现"
+    },
+    {
+      "repo": "CKopoer/BiliSail",
+      "subtitle": "哔帆：Flutter 跨平台第三方哔哩哔哩客户端，支持投屏与听视频",
+      "asset": "-ios-arm64.*\\.ipa$"
     }
   ],
   "maxVersions": 3,
