@@ -202,41 +202,6 @@
       ]
     },
     {
-      "name": "BiliSail",
-      "bundleIdentifier": "dev.bilisail.bilisail",
-      "developerName": "CKopoer",
-      "subtitle": "哔帆：Flutter 跨平台第三方哔哩哔哩客户端，支持投屏与听视频",
-      "localizedDescription": "A cross-platform Bilibili third-party client focused on viewing experience",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.bilisail.bilisail.png?v=a55ef55d108d",
-      "tintColor": "#f56086",
-      "size": 44360523,
-      "versions": [
-        {
-          "version": "1.2.8+5",
-          "date": "2026-11-08T16:07:29Z",
-          "localizedDescription": "**BiliSail 1.2.8+5 · 小窗随行，播放更稳 ⛵**\r\n\r\n**重要更新！！！**：新增可选播放后端、迷你小窗和实时播放信息，完善关注管理与直播体验，并集中修复起播、连续跳转、音画同步及缓冲恢复问题。\r\n\r\n[完整更新范围：1.2.7+0 → 当前提交](https://github.com/CKopoer/BiliSail/compare/v1.2.7%2B0...5703519f5aefb62282604f8106767982ee50d188)\r\n\r\n国内下载：[夸克网盘](https://pan.quark.cn/s/ffceda8afc83)\r\n\r\n**✨ 新功能**\r\n\r\n- **可选播放后端**：新增实验性 fvp／MDK 后端，可在「设置 → 播放 → 视频编解码」中选择。media_kit 仍为默认后端，切换后在下次打开或重新加载播放源时生效。\r\n- **迷你小窗与置顶**：桌面端支持可拖动、缩放、置顶的迷你播放器，并记忆小窗大小和位置；Android 支持系统画中画，iOS 提供应用内浮窗。\r\n- **实时播放信息**：播放器设置新增信息页，可查看当前后端、编码、解码、画面输出、音频、缓存和同步等参数，并一键复制全部信息。\r\n- **关注管理完善**：新增关注搜索、最近关注／最常访问排序，支持关注分组的新建、重命名、删除和拖动排序，以及黑名单查看、添加与移除。\r\n- **Android 解码直出**：新增实验性「解码直出纹理」选项，两种后端均可在硬件解码时使用，并保留弹幕、字幕和播放控件；默认继续使用兼容渲染。\r\n\r\n**🛠️ 播放与听视频**\r\n\r\n- **起播与跳转同步**：统一两个后端的准备流程，改善声音先于画面、跳转后音画不同步的问题；暂停时调整进度仍保持暂停。\r\n- **连续跳转更准确**：快速点击进度条时优先处理最新目标；快捷键…",
-          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.8%2B5/BiliSail-1.2.8%2B5-ios-arm64-unsigned.ipa",
-          "size": 44360523,
-          "buildVersion": "5",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.2.8+0",
-          "date": "2026-11-07T09:52:57Z",
-          "localizedDescription": "BiliSail v1.2.8+0 · 播放更稳，信息更清晰 ⛵\r\n\r\n**重要更新，更换底层播放后端**\r\n本次更新新增实验性 fvp 播放后端和实时播放信息，改进进度跳转时的音画同步与缓冲画面保持，并统一两个后端的缓冲窗口。\r\n\r\n✨ 新功能\r\n\r\n- 🎬 **可选播放后端**：新增实验性 fvp 后端，可在「设置 → 播放 → 视频编解码 → 播放后端」中选择。media_kit 仍为默认后端；切换后在下次打开或重新加载播放源时生效，无需重启应用。\r\n- 📊 **实时播放信息**：播放器设置新增信息页，可查看当前播放状态、编码、解码、画面输出、音频、缓存和音画同步等参数，并一键复制当前显示的全部信息。不同后端提供的参数可能有所不同，暂不可用的项目会显示为“—”。\r\n\r\n🛠️ 播放与交互修复\r\n\r\n- 🎯 **跳转后音画同步**：改进两个播放后端的跳转处理，等待目标画面准备后再按原有播放意图恢复，减少声音先于画面的情况。连续跳转时会转向最新目标，并保留手动暂停状态。\r\n- 🖼️ **缓冲时保留画面**：修复 media_kit 在等待缓冲时可能误判播放中断、反复恢复并出现黑屏的问题；等待数据期间保留最后一帧。\r\n- 📦 **统一缓冲窗口**：两个后端的普通播放前向缓冲上限统一为 2 分钟，悬停预览为 5 秒。实际缓冲量仍取决于网络、码率和播放器的内存策略。\r\n- 🔁 **播放结束后重播**：修复 fvp 后端在播放结束后重新播放时未从开头开始的问题。\r\n- 📱 **移动端全屏**：修复切换播放全屏时状态栏可能闪现的问题。\r\n- 🕒 **推荐发布时间**：改进首页推荐视频的发布时间显示。\r\n- ⚙️ **播放器基础组件**：统一维护 media-kit 播放组件及其平台原生库，继续以 media_kit 作为默认播放后端。\r\n\r\n国内下载：[夸克网盘](https://p…",
-          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.8%2B0/BiliSail-1.2.8%2B0-ios-arm64-unsigned.ipa",
-          "size": 43833561
-        },
-        {
-          "version": "1.2.7+0",
-          "date": "2026-11-06T17:30:04Z",
-          "localizedDescription": "BiliSail v1.2.7+0 · 消息焕新，播放更随心 ⛵\r\n\r\n本次更新重新设计消息中心和个人空间，新增播放器画面手势、自定义倍速、播放模式与视频定时，支持导出诊断日志，并改进播放恢复、评论浏览和 macOS 退出体验。\r\n\r\n✨ 新功能\r\n\r\n- 💬 **消息中心焕新**：重新调整宽窄屏布局，私信支持表情、图片和更多类型的消息展示；新增会话搜索、未读筛选、置顶、免打扰和移除等操作。回复通知可直接回复，也可在应用内访问消息设置、屏蔽词、黑名单和通讯录等入口。\r\n- 🏠 **个人空间改版**：重新整理 UP 主与个人公开主页，适配不同窗口宽度；补充空间头图、资料详情、合集／系列及追番／追剧浏览，关注列表支持查看分组，也可在应用内举报 UP 主。\r\n- 👆 **播放器画面手势**：支持双指缩放、移动和还原视频画面；在画面中部上下滑动可进入或退出全屏。可在设置中调整缩小和全屏手势，弹幕、字幕与控件不随画面缩放。\r\n- 🎚️ **自定义倍速选项**：在播放设置中添加或删除倍速档位，支持 0.25x～5.0x，最多保留九档；视频、影视、离线播放与听视频共用设置。\r\n- 🔁 **更多播放模式**：可选择播完暂停、连续播放、列表循环或单集循环，并在设置页和播放器设置中切换。\r\n- ⏰ **视频定时暂停**：视频播放新增定时入口，与听视频共用定时状态；可设置 1～1440 分钟，切换视频和听视频后仍保留，到期自动暂停。\r\n- 📦 **导出诊断日志**：设置页新增“导出日志”，可将脱敏后的核心与播放日志打包保存，方便反馈问题。\r\n\r\n🛠️ 播放与交互修复\r\n\r\n- ▶️ **播放冻结恢复**：改进缓冲充足但播放进度停滞时的检测与恢复，减少进度轻微抖动对判断的干扰，并在恢复时保留播放位置和原有播放意图。\r\n- ⚡ **倍速切换优化**：改善倍速变化时的音频时钟衔接，减轻部分场景下长按加…",
-          "downloadURL": "https://github.com/CKopoer/BiliSail/releases/download/v1.2.7%2B0/BiliSail-1.2.7%2B0-ios-arm64-unsigned.ipa",
-          "size": 39716977
-        }
-      ]
-    },
-    {
       "name": "Breeze",
       "bundleIdentifier": "com.zephyr.breeze",
       "developerName": "breeze-project-org",
@@ -268,6 +233,41 @@
           "localizedDescription": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v…",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
           "size": 26309164
+        }
+      ]
+    },
+    {
+      "name": "cilicili",
+      "bundleIdentifier": "nsk-1695.v-team.cn",
+      "developerName": "Rone89",
+      "subtitle": "iOS 原生第三方哔哩哔哩客户端，支持弹幕、字幕与听视频",
+      "localizedDescription": "A SwiftUI third-party iOS client experiment for Bilibili browsing, dynamics, video playback, and danmaku.",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/nsk-1695.v-team.cn.png?v=8ad732d1bdd1",
+      "tintColor": "#f5609b",
+      "size": 24576338,
+      "versions": [
+        {
+          "version": "1.1.3",
+          "date": "2026-11-09T10:12:47Z",
+          "localizedDescription": "## 这版更新了啥\n\n- 首页推荐和动态都可以点底栏回到顶部，到顶后再点一次就刷新。动态下拉也会直接获取新内容。\n- 动态页顶部可以自选显示哪些频道，还能调整顺序。\n- 长动态和长评论可以点末行的「… 展开」，直接看全文。\n- 播放器新增 CC 字幕入口，可以选字幕轨，也能设置 AI 字幕偏好。横屏播放的设置移到右侧，屏幕顶部左右分别显示时间和电量。\n- 分 P、番剧选集和合集换成了带封面的紧凑列表。视频详情里的头像和操作按钮也重新排过，更容易区分。\n\n## 修了哪些问题\n\n- 优化评论滚动和翻页，修了切换「最热／最新」时出现的大块空白和加载占位盖住排序栏的问题。\n- 修正部分 HDR 视频的显示和弹幕设置，并补充了部分视频取流失败时的重试方式。\n- 调整搜索筛选栏和投币面板，投币时可以选择是否同时点赞。\n\n## 安装包\n\n- 附件里的 `bili-release-unsigned.ipa` 是 1.1.3（Build 150）的未签名安装包，需自行签名后安装。",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.3/bili-release-unsigned.ipa",
+          "size": 24576338,
+          "buildVersion": "150",
+          "minOSVersion": "26.1"
+        },
+        {
+          "version": "1.1.2",
+          "date": "2026-11-03T13:44:00Z",
+          "localizedDescription": "> 注意：版本标签暂时指向旧源码，请勿使用下方自动生成的 Source code。附件 IPA 为正确的 1.1.2（Build 57）；[查看对应源码](https://github.com/Rone89/cilicili/tree/f15c51da490e5f1fda32b8574e5cfc8014f2e72d)。\r\n\r\n## 本次更新\r\n\r\n- 改善暂停、恢复和拖动进度时的播放稳定性，支持设置后台播放。\r\n- 收藏和稍后再看支持搜索、排序；稍后再看可按观看进度筛选。\r\n- 评论草稿可保留，改善评论刷新与显示；视频评论排序使用系统控件。\r\n- 优化搜索结果加载和键盘操作。\r\n- 投币时可同时点赞，修复部分未点赞视频投币失败的问题。\r\n- 网络断开时显示提示；自动恢复测试入口可在开发者与诊断中开启，默认关闭。\r\n\r\n## 安装包\r\n\r\n附件为未签名 IPA，需要自行签名后安装。",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.2/bili-release-unsigned.ipa",
+          "size": 24312627
+        },
+        {
+          "version": "1.1.1",
+          "date": "2026-10-12T07:59:58Z",
+          "localizedDescription": "# CiliCili 1.1.1\n\n- 新增动态「全部、投稿、番剧、专栏、UP」分类，独立保留浏览位置，并支持搜索当前动态账号全部已关注 UP 主。\n- 升级动态番剧卡片，点击直接进入对应分集，优化首次进入流程并修复简介及分集信息停留在加载状态的问题。\n- 升级个人空间，新增主页概览、收藏夹最新三项内容和三列追番列表，完善公开收藏查看与关注状态显示。\n- 新增底部标签显示设置，隐藏入口可从首页右上角访问，仅保留首页时自动隐藏底部栏，并完善首页头像菜单和未读消息提示。\n- 新增首页推荐长按反馈与 UP 屏蔽操作，支持管理本地屏蔽名单及账户黑名单。\n- 增强收藏夹与稍后再看管理，支持视频多选、批量移动、复制和移除，以及收藏夹创建、编辑、删除与排序。\n- 优化视频详情页旋转与清晰度切换的画面衔接，支持 4:3、3:2 等比例在竖屏全宽展示和滚动收缩，简介／评论切换移至底部栏。\n- 升级私信会话界面，点击底部「发送电波」打开输入弹窗，修复右滑返回误触刷新和短消息异常换行，并支持在评论弹窗内打开个人空间。\n- 优化大图缩放、下拉关闭和多图切换，默认加载 1600px 高清预览、按需查看原图，下载／分享与原图操作分开显示。\n- 修复部分评论分页提前停止和失败后无法继续加载的问题，完善楼中楼恢复，统一图文与评论排版，并将图片阴影控制扩展至视频封面。\n- 优化搜索页和我的页顶部搜索框，搜索类型与排序集中在同一菜单，同时完善底部渐进模糊、页面返回及视频横屏时的底部栏显示。\n- 修复首页冷启动短暂显示旧推荐的问题，加载占位随可见区域调整，避免首屏占位不足。\n\n未签名 IPA 已上传至本次 Release 附件，安装前需由侧载工具签名。",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.1/cilicili-1.1.1-1-unsigned.ipa",
+          "size": 23969183
         }
       ]
     },
@@ -349,16 +349,23 @@
       "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 879340265,
+      "size": 908120405,
       "versions": [
+        {
+          "version": "1.8.7",
+          "date": "2026-11-10T13:13:27Z",
+          "localizedDescription": "# Floe 1.8.7 (329)\n\n## 简体中文\n\n- 重新整理音乐、二维设计和媒体编辑器的布局，改善工具分组、播放控制、时间轴拖动、全屏编辑和触屏操作。\n- 音乐增加五线谱、简谱与双 Deck DJ 工作流；乐谱可按声部选择合成乐器音色演奏，并将音频加入编曲时间轴。完善音色、节拍、Cue／Loop、混音、录制和保存。\n- 扩展图片和视频创作工具，包括选区、变形、修复、合成、关键帧、色彩处理、复合片段与人声分离；完善原件、撤销、保存和导出之间的衔接。\n- 支持 40 类原生图表，并能在回复段落之间展示；增加读值、筛选、缩放、全屏及图片／PDF 导出，改善 SVG 和其他正文内容的预览。\n- 文件修改直接展示差异：小改动展开可见，较长内容提供增减统计和有高度上限的展开查看。文件名旁直接显示增减统计与展开入口；改善文件与回收站的批量管理。\n- 补齐原生 Git 日常操作和 GitHub 问题、拉取请求、评审与检查流程；链接可查看原始来源并返回任务，助手复用相同操作链。\n- 局域网发现增加常用设备范围、扫描进度、取消和结果复用；完善连接工具的历史输入与错误反馈，改进本地 Linux 网络传输。\n- LaTeX 原生排版按文章补齐宏包和字体，生成 PDF 并保留目录、链接和阅读位置；改善 PCB 元件库、化学编辑器、手记与文档助手、苹果同步和任务状态提示。\n- 修复图乐园产物提示与图标，增加独立的自动调用设置；改善新模型配置、导入、预览和多个页面的细节。\n\n请重点反馈之前出现问题的界面与操作、保存重开、助手调用及连接工具。云端服务需要自行配置；人声分离可使用导入的兼容本地模型或已配置服务。图乐园受系统、设备和地区支持范围影响。原生 USB 串口驱动仍等待额外授权，本版不包含。\n\n## English\n\n- Refines music, 2D design and media …",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.7/Floe-Agent-1.8.7-build329-unsigned.ipa",
+          "size": 908120405,
+          "buildVersion": "329",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.8.6",
           "date": "2026-11-09T06:48:50Z",
           "localizedDescription": "# Floe 1.8.6 (326)\n\n## 简体中文\n\n- 空间接入更多原生工作台，包括原理图与 PCB、LaTeX、生物学及 CAD 工程分析；完善从编辑、预览到保存和再次打开的操作。\n- PCB 支持直接在画布中编辑、检查设计规则及原理图与 PCB 同步；新增从 PCB 更新原理图的差异预览与确认。\n- LaTeX 增加源码折叠和 PDF 全文搜索，优化源码、项目面板和预览的布局，保留切换全屏后的阅读与搜索状态。\n- 增强音乐编辑与预制音色，完善原生科学计算、CSV 处理和正文内图表等内容的工具调用；修复部分编辑参数与工具结果格式问题。\n- 改善 iPhone 顶部导航与任务中心布局、文件预览与批量管理、连接工具历史及蓝牙串口的自动发现与错误反馈。\n- 完善 Linux 软件源与依赖安装路径，升级时按已有运行环境识别原镜像，避免误用新的默认镜像。\n\n本版用于内部及公开 TestFlight 测试。请重点检查新工作台入口、触屏与鼠标编辑、预览、保存重开、助手调用及之前报告的界面问题。部分高级 PCB 编辑和仿真分析仍在完善，原生 USB 串口驱动未包含。正式 App Store 提交及发布设置保持不变。\n\n## English\n\n- Adds more native workbenches in Space, including schematic and PCB editing, LaTeX, biology and CAD engineering analysis, with improved editing, previews, saving and reopening.\n- PCB editing uses the canvas, design-rule checks and schematic/PCB synchronization. Updating a s…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.6/Floe-Agent-1.8.6-build326-unsigned.ipa",
-          "size": 879340265,
-          "buildVersion": "326",
-          "minOSVersion": "26.0"
+          "size": 879340265
         }
       ]
     },

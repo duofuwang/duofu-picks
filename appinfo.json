@@ -449,15 +449,6 @@
     "size": 33314067,
     "source_repo": "simonoppowa/OpenNutriTracker"
   },
-  "JiangNanGenius/floe-agent@1.8.6": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.6",
-    "build": "326",
-    "minOSVersion": "26.0",
-    "size": 879340265,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "Leviidev/Henge@0.2": {
     "bundleIdentifier": "com.henge.app",
     "displayName": "Henge",
@@ -494,24 +485,6 @@
     "size": 2865180,
     "source_repo": "huamidev/GestaltX"
   },
-  "CKopoer/BiliSail@1.2.8+5": {
-    "bundleIdentifier": "dev.bilisail.bilisail",
-    "displayName": "BiliSail",
-    "version": "1.2.8",
-    "build": "5",
-    "minOSVersion": "15.0",
-    "size": 44360523,
-    "source_repo": "CKopoer/BiliSail"
-  },
-  "Kianuni/Erosion-CN@0.7.0": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "0.7.0",
-    "build": "12",
-    "minOSVersion": "26.0",
-    "size": 5782794,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
   "lwh0630/TokenBar@1.2.9": {
     "bundleIdentifier": "dev.tokenbar.app",
     "displayName": "TokenBar",
@@ -520,5 +493,32 @@
     "minOSVersion": "15.0",
     "size": 11054874,
     "source_repo": "lwh0630/TokenBar"
+  },
+  "Kianuni/Erosion-CN@0.7.2": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "0.7.2",
+    "build": "14",
+    "minOSVersion": "26.0",
+    "size": 5769202,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "JiangNanGenius/floe-agent@1.8.7": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.7",
+    "build": "329",
+    "minOSVersion": "26.0",
+    "size": 908120405,
+    "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Rone89/cilicili@1.1.3": {
+    "bundleIdentifier": "nsk-1695.v-team.cn",
+    "displayName": "cilicili",
+    "version": "1.1.3",
+    "build": "150",
+    "minOSVersion": "26.1",
+    "size": 24576338,
+    "source_repo": "Rone89/cilicili"
   }
 }
