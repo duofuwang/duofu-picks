@@ -1000,14 +1000,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1197778707,
+      "size": 1197645060,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-10T23:04:42Z",
-          "localizedDescription": "## Alpha Build `c13e6b5`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`c13e6b5`](https://github.com/Provenance-Emu/Provenance/commit/c13e6b55832b2addd59d32472b72b7a45049be20) |\n| **Built** | 2026-11-10 23:03 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42912377946) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nc13e6b558 refactor(pause): delete the unused RetroMenuView\n2888bbebe fix(overlay): keep built-in controls clear of the home indicator\n31a0eb9b9 build(skins): move to SkinKit 0.4.0\n```\n\n---\nThese builds are unsigned and intended for sideloading…",
+          "date": "2026-11-11T04:26:10Z",
+          "localizedDescription": "## Alpha Build `ee0c300`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`ee0c300`](https://github.com/Provenance-Emu/Provenance/commit/ee0c300f7b40c722ea127131cc0e77c6d7b778ce) |\n| **Built** | 2026-11-11 04:25 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42953211252) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nee0c300f7 fix(ui): add Done button to all save states browser\n8364924dd fix(skins): skip skin filters that take no input image\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alp…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1197778707,
+          "size": 1197645060,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1056,16 +1056,23 @@
       "localizedDescription": "Robrix: a powerful multi-platform Matrix chat client written in Rust, using the Makepad UI toolkit and Robius platform abstractions",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/rs.robius.robrix.png?v=d72a3422dbd4",
       "tintColor": "#15d2cc",
-      "size": 64432202,
+      "size": 65215535,
       "versions": [
+        {
+          "version": "1.0.0-beta.6",
+          "date": "2026-11-11T01:42:41Z",
+          "localizedDescription": "Lots of new features! An upgraded rooms list with filter bubbles, a nice emoji picker, quick reactions, custom emoji, creating rooms, powerful moderation tools, redesigned link previews, and better virtual keyboard behavior on mobile.\r\n\r\nWe've been working really hard these past few weeks to close the gap between Robrix and other major clients like Element. We're almost there, and in many respects Robrix is even better! We plan to tackle the biggest missing feature soon: notifications.\r\n\r\nBy the way, if you don't like some of the new UI behavior or features, most of them are configurable in the Settings screen.\r\n\r\n## Highlights from this release\r\n* 🛡️ Powerful moderator tools: report, mute, kick, or ban users\r\n  * Easily find, select, and delete specific messages sent by a user (e.g., for …",
+          "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.6/robrix-1.0.0-beta.6-ios-aarch64.ipa",
+          "size": 65215535,
+          "buildVersion": "20261110.1609",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.0.0-beta.5",
           "date": "2026-10-31T06:19:21Z",
           "localizedDescription": "New features: find and add people/rooms/spaces, a new Room Info pane, better sync status indicator, improved Android performance (120 Hz!) and better battery life, and also 32-bit Android support.\r\n\r\n## Highlights from this release\r\n* 👥 Search for and add people (and rooms and spaces, like before)\r\n  * You can search public directories of rooms and spaces too (see Settings to modify)\r\n  * Find someone by name or user ID to start a direct message with them\r\n* ℹ️ The new Room Info pane shows a room's details and options\r\n* 🔄 The sync indicator now shows when Robrix is catching up, and when it was last synced\r\n* Light or dark themes now apply to system UI too, like window title bars, soft keyboards, menus, etc\r\n* ⚡ 🔋 Android performance and efficiency improvements: 120Hz buttery smooth refres…",
           "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.5/robrix-1.0.0-beta.5-ios-aarch64.ipa",
-          "size": 64432202,
-          "buildVersion": "20261030.1635",
-          "minOSVersion": "15.0"
+          "size": 64432202
         },
         {
           "version": "1.0.0-beta.4",
@@ -1073,13 +1080,6 @@
           "localizedDescription": "The big new feature in this release is a proper 🌑 dark mode theme 🌚, which you can select in the settings screen.\r\n\r\nThere are a few other improvements, mostly platform things on Android & iOS.\r\n\r\n## Highlights from this release\r\n* A brand new 🌑 dark mode theme 🌚! Choose it in Settings → Appearance\r\n  * Switching themes takes effect instantly without restarting Robrix, and is remembered across restarting the app\r\n  * Coming soon: more themes, auto-switching based on system theme, etc\r\n* Android: resizing the screen, doing split-screen, or opening/closing a folding phone now seamlessly works without losing any app context\r\n* iOS 27: fixed a rare/unusual crash when tapping a text input\r\n* Rotating your phone keeps your scroll position in the room locked to where it was\r\n* Modals (dialog popu…",
           "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.4/robrix-1.0.0-beta.4-ios-aarch64.ipa",
           "size": 63919528
-        },
-        {
-          "version": "1.0.0-beta.3",
-          "date": "2026-10-12T22:45:50Z",
-          "localizedDescription": "Cool new features: full navigation history that lets you go back and forward through rooms just like a web browser, swipe gestures to go back (on mobile), support for animated stickers/images, in-app link handling, and more!\r\n\r\nWe also polished the UI all over the place, from the image viewer and welcome screen to the layout and HTML formatting of messages. Many features were further stabilized in preparation for our full 1.0 release.\r\n\r\n## Highlights from this release\r\n* Full navigation history: go back and forward through all the rooms, threads, spaces, etc you've visited, just like a web browser\r\n  * You can use the new back/forward buttons in the window's title bar, your mouse's back/forward buttons, the back gesture on Android, or the back button in mobile view mode\r\n  * Long-press (o…",
-          "downloadURL": "https://github.com/project-robius/robrix/releases/download/v1.0.0-beta.3/robrix-1.0.0-beta.3-ios-aarch64.ipa",
-          "size": 63909803
         }
       ]
     },

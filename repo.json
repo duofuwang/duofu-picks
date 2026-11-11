@@ -89,16 +89,23 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 5769202,
+      "size": 6021405,
       "versions": [
+        {
+          "version": "0.8.0",
+          "date": "2026-11-11T03:36:17Z",
+          "localizedDescription": "## Erosion-CN v0.8.0 更新日志 (Build 15)\n\n### 🛡️ 双重原厂安全金库与全模块「一键恢复原机出厂参数」\n\n1. **沙盒 + 系统级安全金库双冗余备份（跨掉签卸载重装不丢备份）**：\n   - 首次生成 `OriginalGestalt.plist` 时同步计算 `SHA-256` 完整性摘要，并镜像锁定至系统共享容器安全金库（自动标记 `isExcludedFromBackup = true` 防换机迁移污染）。即使因侧载证书过期而卸载重装本应用，重新打开时也会自动校验并无损找回最初未修改的原厂备份。\n   - 新增首次备份「第三方改机脏状态」自动识别提示，并在「高级设置」中支持手动导入/导出外部 `.plist` 原始备份（强制执行真机 `ProductType`、系统 `CacheVersion`、`CacheUUID` 与 `CacheData` 字节长度四重核验）。\n2. **全模块一键恢复原机出厂参数（主页 & MobileGestalt 页顶双入口）**：\n   - 在 `SHA-256` 与本机四重指纹校验通过后，通过无零字节窗口原位刷盘（`pwrite + F_FULLFSYNC`）及全量读回验证将 `MobileGestalt` 完整恢复至出厂状态（包括因外部工具误改偏移或破坏相机浮点类型引发的 eSIM 异常、相机黑屏等软故障均可一并自愈修复）；\n   - 同步清理本地自定义键值残留、锁屏底部文字与资产铭牌、第三方伪监管残留文件（自动保护真实企业 MDM）以及自定义拨号盘缓存；\n   - 若设备曾跨 iOS 版本 OTA 升级导致旧备份 `CacheVersion` 不匹配，安全护栏将自动拦截跨版本覆盖并提供一键联动 **「重建系统纯净原厂缓存」**。\n\n---\n\n### ✨ MobileGestalt 全量槽位双写…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.0/Erosion_v0.8.0_zh-Hans.ipa",
+          "size": 6021405,
+          "buildVersion": "15",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "0.7.2",
           "date": "2026-11-10T14:20:03Z",
           "localizedDescription": "## Erosion-CN v0.7.2 更新日志 (Build 14)\n\n### 🛡️ 全链路沙盒逃逸与文件操作安全加固（覆盖 24 个源码文件）\n1. **修复内置 Plist 编辑器「保存回旧值」的 P0 缺陷**：\n   - 修复 `ModifyItemPage` 通过 `@Binding` 原地修改数组元素导致 `PlistManager.replacePlistItem` 误判键值未变动、将 `isModified` 重置为 `false` 并写回原值 `rawVal` 的问题；现改用独立草稿状态 `draftItem` 并在保存时强制清除旧 `rawVal`，确保已有键值修改 100% 落盘生效。\n2. **重构 `WorseQuerySwift` 令牌保留机制与文件浏览器容器授权**：\n   - 新增 `requireWrite: Bool` 参数：当访问 `System`、`SystemGroup`、`InternalDaemon` 等属主非 `mobile` 的只读系统容器（或 iOS 26 下的只读目录）且成功获取沙盒令牌（`res >= 0 && isActuallyReadable`）时，始终缓存并保留该内核沙盒令牌，不再因 `!isActuallyWritable` 主动调用 `worse_query_release` 吊销只读权限。\n   - 修复 `getFileItem` 中 `getBIDFromXattr` 过早释放容器令牌导致目录属性与读写状态读取失真的问题；将 `FMRootView` 中「共享应用组 (App Groups)」与「系统数据容器 (System)」统一标记为 `isContainer: true`。\n   - 修复 `FileBrowserView` 切换排序模式或升降序时重复触发 1500 万 Inode `pat…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.2/Erosion_v0.7.2_zh-Hans.ipa",
-          "size": 5769202,
-          "buildVersion": "14",
-          "minOSVersion": "26.0"
+          "size": 5769202
         },
         {
           "version": "0.7.1",
@@ -106,13 +113,6 @@
           "localizedDescription": "## Erosion-CN v0.7.1 更新日志 (Build 13)\n\n### 🐛 修复与清理\n1. **修复 `WorseQuerySwift` 错误码日志被覆盖的问题**：\n   - 当 `worse_query` 返回负错误码（如 `-6`：内核拒绝向 `containermanagerd` 签发非容器路径沙盒扩展令牌）时，保留真实底层原因提示，不再被通用文案覆盖。\n2. **清理不在 `containermanagerd` 容器授权范围内的 `/var/mobile/Library` 入口**：\n   - 移除依赖 `/var/mobile/Library`（传统 `HomeDomain`，仅支持电脑端 `mobilebackup2` 还原写入，不支持手机端 `containermanagerd` 容器逃逸签发令牌）的遗留入口，仅保留 100% 位于容器路径（`/var/containers` 与 `/var/mobile/Containers`）内且经真机验证可用的功能模块。\n\n### 🚀 包含 v0.7.0 全部核心特性\n- **底层槽位与实时生效探针 (`MGInspectorView`)**：三源同屏只读对比（`OriginalGestalt` 原厂备份 vs `com.apple.MobileGestalt.plist` 当前落盘值 vs `MGCopyAnswer` 系统实时生效值）+ 全量 `0..<slotCount` 动态槽位映射表 + 任意 Key 只读探针。\n- **Apple 智能四维激活条件自检与一键补齐 (`AppleIntelligenceCheckupCard`)**：自动诊断地区代码、监管型号、芯片准入与系统实时生效状态，支持一键补齐缺失项，并在原生 AI 机型上自动锁定 `InternalInstall` 互斥开关。\n- **…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.1/Erosion_v0.7.1_zh-Hans.ipa",
           "size": 5733412
-        },
-        {
-          "version": "0.7.0",
-          "date": "2026-11-10T11:48:48Z",
-          "localizedDescription": "## Erosion-CN v0.7.0 更新日志 (Build 12)\n\n### 🚀 三大 MobileGestalt 全新能力\n1. **底层槽位与实时生效探针 (`MGInspector`)**：\n   - 支持 **「核心键值实时生效对比」**（三源同屏对比 `OriginalGestalt` 原厂备份 vs `com.apple.MobileGestalt.plist` 当前落盘值 vs `MGCopyAnswer` 系统实时生效值，遵循 `+1 Copy rule` 零内存泄漏）。\n   - 支持 **「全量动态槽位映射表」**（直连 `/usr/lib/libMobileGestalt.dylib` 描述符表，实时枚举 `0..<slotCount` 全部二进制槽位、精确字节偏移、原厂初值与当前缓存字节，含未分配保留槽位识别）。\n   - 支持 **「任意 Key 只读探针」**（内置常用快捷芯片，支持任意混淆哈希或明文键名实时查询）。\n2. **Apple 智能四维激活条件自检与一键补齐 (`AppleIntelligenceCheckupCard`)**：\n   - 自动诊断地区代码 (`h63QSdBCiT/z0WU6rdQv6Q`)、监管型号 (`bZfpdqxzvNvLs+s54+KP5w`)、芯片准入 (`j8/Omm6s1lsmTDFsXjsBfA`) 与系统实时生效状态，未达标时支持 **「一键补齐缺失项」**。\n   - **原生 AI 硬件防呆**：在 iPhone 15 Pro / 16 / 17 / 18 等原生支持端侧智能的机型上自动锁定 `InternalInstall` 伪装开关；还原或关闭地区限制时强制读取 `OriginalGestalt.plist` 原厂 `ProductType`。\n3. **影像与健康进阶能力 (`Ca…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.0/Erosion_v0.7.0_zh-Hans.ipa",
-          "size": 5782794
         }
       ]
     },
@@ -191,16 +191,23 @@
       "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
       "tintColor": "#6156e2",
-      "size": 2865180,
+      "size": 2942882,
       "versions": [
+        {
+          "version": "1.0.5",
+          "date": "2026-11-11T03:45:16Z",
+          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/144c0c44a762db616089faddfbc0581929ae1a0a/CHANGELOG_ZH-CN.md#105---2026-11-11)\n\nBuild `11111140`.\n\n### Added\n\n- Spanish localization, bringing the app to nine supported locales ([#97](https://github.com/huamidev/GestaltX/pull/97)).\n- iPhone Air model presets ([#92](https://github.com/huamidev/GestaltX/pull/92)) and a Japanese README ([#83](https://github.com/huamidev/GestaltX/pull/83)).\n\n### Changed\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations ([#84](https://github.com/huamidev/GestaltX/pull/84)) and corrected mixed-language text in\n  Traditional Chinese and other locales ([#61](https://git…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "size": 2942882,
+          "buildVersion": "11111140",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.4",
           "date": "2026-11-10T07:27:47Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.4/CHANGELOG_ZH-CN.md)\n\nBuild `11101436`.\n\n### Added\n\n- WAPI preset under **Device → Presets**: disable the WAPI regulatory flag or\n  restore the recorded original value. The cached Boolean is resolved from the\n  device's own MobileGestalt image instead of a hard-coded slot (#30).\n- Per-device originals for the WAPI flag. The value survives edits, app\n  restarts, journal migration, and is restored together with the other cached\n  options (#30).\n- New display presets: high-luminance Always-On Display, AOD flipbook and its\n  entry count, HDR photo display, wallpaper parallax control, and experimental\n  PWM and DisplayPort capability flags.\n- New device presets: Collision SOS, Audio Mix, and Spatial FaceTime audio.\n- New intellige…",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
-          "size": 2865180,
-          "buildVersion": "11101436",
-          "minOSVersion": "26.0"
+          "size": 2865180
         },
         {
           "version": "1.0.3",
@@ -208,13 +215,6 @@
           "localizedDescription": "GestaltX 1.0.3\r\n• 新增分享导入：在“文件”或其他 App 中分享 plist 到 GestaltX，核验后弹窗确认导入。\r\n• 加强设备归属校验，拒绝不匹配或无法核验的文件；本机导出的文件可携带设备校验凭证。\r\n• 优化 MG 控制，支持新增、修改、重命名和删除键值。\r\n• 支持恢复已核验的本机 plist，恢复前自动备份，完成后请重启设备。\r\n\r\n重签时请保留分享扩展，并为主应用和扩展配置同一个 App Group。\r\n\r\nGestaltX 1.0.3\r\n• Added share import: share a plist to GestaltX from Files or another app, then confirm the import after verification.\r\n• Strengthened device ownership checks. Mismatched or unverifiable files are rejected; exports can include a device-bound verification proof.\r\n• Improved MG Control with support for adding, editing, renaming, and deleting keys and values.\r\n• Added restoration of verified device plists, with an automatic backup before restoring. Restart your device afterward.\r\n\r\nWhen re-signing, keep the share extension and configure the same App Group f…",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
           "size": 2744822
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-11-09T10:06:31Z",
-          "localizedDescription": "GestaltX 1.0.2\r\n\r\n• 修复预设停用逻辑：原本不存在的字段会被删除，原本存在的字段恢复原值和类型，不再统一写入 0。\r\n• 首次没有备份时自动创建备份，并保留修改前的字段状态，重新打开 App 后仍可还原。\r\n• 每个预设新增“还原”按钮，支持单独还原该项，保留其他尚未应用的修改。\r\n• 新增“移除新增字段”，用于清理确认是后来添加的字段。\r\n• 调整 NeoSpring 的加载与触发时机，修正回到前台时提前关闭注销页面的问题。\r\n\r\nGestaltX 1.0.2\r\n\r\n• Fixed preset disabling: originally absent fields are removed; existing fields regain their original values and types instead of being set to 0.\r\n• Added automatic initial backups and persistent original-value records.\r\n• Added a Revert button to each preset, preserving unrelated pending changes.\r\n• Added Remove Added Fields for fields you know were added later.\r\n• Adjusted NeoSpring loading and startup timing, and fixed premature dismissal when returning to the app.\r\n\r\nSupports iOS / iPadOS 27.x. Signing requires at least one usable App Group.",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.2/GestaltX_1.0.2.ipa",
-          "size": 2489231
         }
       ]
     },
@@ -258,6 +258,7 @@
       "bundleIdentifier": "app.local.iPadn",
       "developerName": "mengangs",
       "subtitle": "App Store 多区账号下载器，支持原生安装并覆盖保留数据",
+      "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
       "size": 46851248,
@@ -575,14 +576,14 @@
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=1075b78b6bbe",
       "tintColor": "#fc0434",
-      "size": 140301936,
+      "size": 140303052,
       "versions": [
         {
-          "version": "1.1.6",
+          "version": "1.1.7",
           "date": "2026-11-10T21:54:48Z",
-          "localizedDescription": "by @itzzace0\n\n1,000 stars 🎉\nThanks for 1k stars! To celebrate, FlareStore is sponsoring a giveaway of 5 certificates in the new YTKACE Telegram channel: https://t.me/ytkace\n\nWhat's new:\n• Updated to YouTube 21.45.4\n• Button Layout: drag the player buttons into YouTube's top row, the row under it, or next to the fullscreen button\n• Added a Quality Button that shows the current quality\n• Added Auto Fullscreen and Exit Fullscreen at End\n• Added Swipe to Seek\n• Added Previous/Next Skip\n• Added Keep Playing, which stops the \"Continue watching?\" pause\n• Added a Playlist tab\n• Added a default video quality and audio language for downloads\n• Added Remove Live Videos from Home\n• Added an Auto-Scroll Delay for Shorts\n• Added a minimum segment length to SponsorBlock\n• Added iPhone Duo layouts\n\nFixed:…",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.6/YTKACE_1.1.6_YouTube_21.45.4.ipa",
-          "size": 140301936,
+          "localizedDescription": "by @itzzace0\n\n1,000 stars 🎉\nThanks for 1k stars! To celebrate, [FlareStore](https://flarestore.vip/p/ytkace) is sponsoring a giveaway of 5 certificates in the new YTKACE Telegram channel: https://t.me/ytkace\n\nWhat's new:\n• Updated to YouTube 21.45.4\n• Button Layout: drag the player buttons into YouTube's top row, the row under it, or next to the fullscreen button\n• Added a Quality Button that shows the current quality\n• Added Auto Fullscreen and Exit Fullscreen at End\n• Added Swipe to Seek\n• Added Previous/Next Skip\n• Added Keep Playing, which stops the \"Continue watching?\" pause\n• Added a Playlist tab\n• Added a default video quality and audio language for downloads\n• Added Remove Live Videos from Home\n• Added an Auto-Scroll Delay for Shorts\n• Added a minimum segment length to SponsorBlock…",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.7/YTKACE_1.1.7_YouTube_21.45.4.ipa",
+          "size": 140303052,
           "buildVersion": "21.45.4",
           "minOSVersion": "17.0"
         },
