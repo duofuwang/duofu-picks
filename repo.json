@@ -89,30 +89,30 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 6021405,
+      "size": 6039610,
       "versions": [
         {
-          "version": "0.8.0",
-          "date": "2026-11-11T03:36:17Z",
-          "localizedDescription": "## Erosion-CN v0.8.0 更新日志 (Build 15)\n\n### 🛡️ 双重原厂安全金库与全模块「一键恢复原机出厂参数」\n\n1. **沙盒 + 系统级安全金库双冗余备份（跨掉签卸载重装不丢备份）**：\n   - 首次生成 `OriginalGestalt.plist` 时同步计算 `SHA-256` 完整性摘要，并镜像锁定至系统共享容器安全金库（自动标记 `isExcludedFromBackup = true` 防换机迁移污染）。即使因侧载证书过期而卸载重装本应用，重新打开时也会自动校验并无损找回最初未修改的原厂备份。\n   - 新增首次备份「第三方改机脏状态」自动识别提示，并在「高级设置」中支持手动导入/导出外部 `.plist` 原始备份（强制执行真机 `ProductType`、系统 `CacheVersion`、`CacheUUID` 与 `CacheData` 字节长度四重核验）。\n2. **全模块一键恢复原机出厂参数（主页 & MobileGestalt 页顶双入口）**：\n   - 在 `SHA-256` 与本机四重指纹校验通过后，通过无零字节窗口原位刷盘（`pwrite + F_FULLFSYNC`）及全量读回验证将 `MobileGestalt` 完整恢复至出厂状态（包括因外部工具误改偏移或破坏相机浮点类型引发的 eSIM 异常、相机黑屏等软故障均可一并自愈修复）；\n   - 同步清理本地自定义键值残留、锁屏底部文字与资产铭牌、第三方伪监管残留文件（自动保护真实企业 MDM）以及自定义拨号盘缓存；\n   - 若设备曾跨 iOS 版本 OTA 升级导致旧备份 `CacheVersion` 不匹配，安全护栏将自动拦截跨版本覆盖并提供一键联动 **「重建系统纯净原厂缓存」**。\n\n---\n\n### ✨ MobileGestalt 全量槽位双写…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.0/Erosion_v0.8.0_zh-Hans.ipa",
-          "size": 6021405,
-          "buildVersion": "15",
+          "version": "0.8.5",
+          "date": "2026-11-11T13:17:51Z",
+          "localizedDescription": "## Erosion-CN v0.8.5 更新日志 (Build 20)\n\n### 🛠️ 照片「高质量」消除防冲突锁定 & iPhone 18 Pro 系列原厂基线精准保护\n\n1. **修复开启「解锁 iOS 27 进阶 AI 能力 `[测试特性]`」导致照片「高质量」消除报错的问题**：\n   - 经 `iPhone 18 Pro Max (iPhone19,7)` 真机 A/B 对照与 `MGInspector` 三源底层探针实锤确认：\n     - 照片「快速」消除走本地独立 GAN 模型，而「高质量」消除走云端扩散模型管线 (`ServerDiffusionInpainting`)；\n     - **`Audio Intelligence`（iOS 27 音频智能，`rb2tKZxlj0Gm2tBmUQSLqQ`，槽位 `#178`）** 在 iPhone / iPad 出厂均为 **`false (0x00)`**——强行开启该非原生实验槽位会导致系统生成式模型管线校验断路，直接造成照片「高质量」消除报错（提示 *“消除此照片时出错。请稍后再试。”*）；\n     - **`Personal Translator`（个人实时翻译，`M1n2sAqf33NAOgZRGxQYBA`，槽位 `#266`）** 在 iPhone 18 Pro 系列 (`iPhone19,*`) 出厂原生即为 **`true (0x01)`**，与照片「高质量」消除完全兼容。\n2. **默认防呆锁定 + 原厂基线保护 + 一键自愈修复**：\n   - 已将非原生实验槽位从顶部 **「⚡ 一键配齐 / 修复」** 中移除，并在 iPhone / iPad 上默认锁定关闭防误开（常规通话录音、语音备忘录转写与系统翻译均由主 AI 开关完整支持）；\n   - 新增 `isNativePerso…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.5/Erosion_v0.8.5_zh-Hans.ipa",
+          "size": 6039610,
+          "buildVersion": "20",
           "minOSVersion": "26.0"
         },
         {
-          "version": "0.7.2",
-          "date": "2026-11-10T14:20:03Z",
-          "localizedDescription": "## Erosion-CN v0.7.2 更新日志 (Build 14)\n\n### 🛡️ 全链路沙盒逃逸与文件操作安全加固（覆盖 24 个源码文件）\n1. **修复内置 Plist 编辑器「保存回旧值」的 P0 缺陷**：\n   - 修复 `ModifyItemPage` 通过 `@Binding` 原地修改数组元素导致 `PlistManager.replacePlistItem` 误判键值未变动、将 `isModified` 重置为 `false` 并写回原值 `rawVal` 的问题；现改用独立草稿状态 `draftItem` 并在保存时强制清除旧 `rawVal`，确保已有键值修改 100% 落盘生效。\n2. **重构 `WorseQuerySwift` 令牌保留机制与文件浏览器容器授权**：\n   - 新增 `requireWrite: Bool` 参数：当访问 `System`、`SystemGroup`、`InternalDaemon` 等属主非 `mobile` 的只读系统容器（或 iOS 26 下的只读目录）且成功获取沙盒令牌（`res >= 0 && isActuallyReadable`）时，始终缓存并保留该内核沙盒令牌，不再因 `!isActuallyWritable` 主动调用 `worse_query_release` 吊销只读权限。\n   - 修复 `getFileItem` 中 `getBIDFromXattr` 过早释放容器令牌导致目录属性与读写状态读取失真的问题；将 `FMRootView` 中「共享应用组 (App Groups)」与「系统数据容器 (System)」统一标记为 `isContainer: true`。\n   - 修复 `FileBrowserView` 切换排序模式或升降序时重复触发 1500 万 Inode `pat…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.2/Erosion_v0.7.2_zh-Hans.ipa",
-          "size": 5769202
+          "version": "0.8.2",
+          "date": "2026-11-11T10:44:15Z",
+          "localizedDescription": "## Erosion-CN v0.8.2 更新日志 (Build 17)\n\n### 🛡️ `SiriHub` 实验项防卡死护栏与一键体检修复（[#10](https://github.com/Kianuni/Erosion-CN/issues/10)）\n\n1. **自动防呆锁定 `[测试特性] 端侧 Siri Hub 路由与指令模型动态剪枝`**（感谢 [#10](https://github.com/Kianuni/Erosion-CN/issues/10) `@RFFFF0` 真机二分定位）：\n   - `DeviceSupportsSiriHub`（`waGD2UTpntjbDXD1r3oALQ`）属于带屏智能家居中枢（`HomeAccessory` / HomePad）专属路由标记；在 iPhone / iPad 上开启会导致 `assistantd` 向苹果资产服务器请求不存在于手机目录的 `SiriHub` UAF 模型包，从而使 Apple 智能无限卡死在「正在添加 Siri 支持内容，更新完成前，Siri 将无法使用」。\n   - `v0.8.2` 已默认将该开关设为防误开锁定状态（严禁在 iPhone / iPad 上新开启）；若用户在旧版本中曾开启过该开关，界面将保持可关闭状态以支持一键关闭还原。\n2. **「Apple 智能激活四要素体检」冲突识别与一键自愈**：\n   - 顶部四要素体检卡片现已纳入 `SiriHub` 冲突检测，一旦检测到该槽位处于异常开启状态将醒目预警，点击 **「一键补齐缺失项」** 即可自动将其复位回原厂状态。\n\n---\n\n### 🌐 新增 `Stash (.stoverride / YAML)` 覆写导出与完整分流规则升级（[#11](https://github.com/Kianuni/Erosion-CN/issues/…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.2/Erosion_v0.8.2_zh-Hans.ipa",
+          "size": 6036683
         },
         {
-          "version": "0.7.1",
-          "date": "2026-11-10T12:42:17Z",
-          "localizedDescription": "## Erosion-CN v0.7.1 更新日志 (Build 13)\n\n### 🐛 修复与清理\n1. **修复 `WorseQuerySwift` 错误码日志被覆盖的问题**：\n   - 当 `worse_query` 返回负错误码（如 `-6`：内核拒绝向 `containermanagerd` 签发非容器路径沙盒扩展令牌）时，保留真实底层原因提示，不再被通用文案覆盖。\n2. **清理不在 `containermanagerd` 容器授权范围内的 `/var/mobile/Library` 入口**：\n   - 移除依赖 `/var/mobile/Library`（传统 `HomeDomain`，仅支持电脑端 `mobilebackup2` 还原写入，不支持手机端 `containermanagerd` 容器逃逸签发令牌）的遗留入口，仅保留 100% 位于容器路径（`/var/containers` 与 `/var/mobile/Containers`）内且经真机验证可用的功能模块。\n\n### 🚀 包含 v0.7.0 全部核心特性\n- **底层槽位与实时生效探针 (`MGInspectorView`)**：三源同屏只读对比（`OriginalGestalt` 原厂备份 vs `com.apple.MobileGestalt.plist` 当前落盘值 vs `MGCopyAnswer` 系统实时生效值）+ 全量 `0..<slotCount` 动态槽位映射表 + 任意 Key 只读探针。\n- **Apple 智能四维激活条件自检与一键补齐 (`AppleIntelligenceCheckupCard`)**：自动诊断地区代码、监管型号、芯片准入与系统实时生效状态，支持一键补齐缺失项，并在原生 AI 机型上自动锁定 `InternalInstall` 互斥开关。\n- **…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.7.1/Erosion_v0.7.1_zh-Hans.ipa",
-          "size": 5733412
+          "version": "0.8.1",
+          "date": "2026-11-11T06:46:21Z",
+          "localizedDescription": "## Erosion-CN v0.8.1 更新日志 (Build 16)\n\n### ✨ 地区修改细化子选项（保留 `CH/A` 后缀与双卡兼容模式）\n\n1. **在「解除地区限制（国行 AI / 美版 LL/A）」下方新增双模式切换**（感谢 [#8](https://github.com/Kianuni/Erosion-CN/issues/8) `@guestwrt` 及社区双卡机友实测反馈）：\n   - **完整美版 `LL + LL/A`（默认）**：同时将 `RegionCode` 改为 `LL`、`RegionInfoFromSysconfig` 改为 `LL/A`，并基于主板真实硬件型号自动填入对应的美版监管型号（`Axxxx`），跨区域受限特性（海外版完整 Apple 智能、相机快门静音、健康区域特性等）一致性最完整；\n   - **仅改区域代码 `LL`（保留 `CH/A` 后缀与双卡兼容）**：仅将 `RegionCode` 改为 `LL`，完整保留原厂的销售地区后缀（如 `CH/A`）与原厂监管型号（如 `A3715` / `A3718`）。既可满足基础 Apple 智能准入、让 `设置 → 通用 → 关于本机` 型号末尾继续显示 `CH/A`，也能避免国行双实体 SIM 卡槽 + 内置 eSIM 机型（如 iPhone 18 Pro / Pro Max）因映射无卡槽美版型号引发基带卡槽冲突。\n2. **「Apple 智能激活四要素体检」与脏备份智能纠偏同步适配**：\n   - 四要素体检面板与「一键补齐缺失项」已全面适配上述两种地区模式；\n   - 若国行硬件（`CacheData` 中 `wapi == 1` 或 `green-tea == 1`）在安装本应用前曾被其他工具改过 `LL/A`，切换至「仅改区域代码 `LL`」或关闭地区限制时会自动纠偏…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.1/Erosion_v0.8.1_zh-Hans.ipa",
+          "size": 6029106
         }
       ]
     },
@@ -261,30 +261,30 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
-      "size": 46851248,
+      "size": 47376820,
       "versions": [
+        {
+          "version": "1.9.2",
+          "date": "2026-11-11T11:19:37Z",
+          "localizedDescription": "## iPadn 1.9.2\n\n本版本新增「支持 iPadn」页面，改进诊断信息，并修复两个问题。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n**支持 iPadn**\n\n- 新增「账号 › 设置 › 支持 iPadn」：iPadn 会一直免费开源、没有广告；如果它帮到了你，可以通过爱发电（支付宝、微信）或 USDT（BEP20）请作者喝杯咖啡，也可以在 GitHub 点个 Star 或帮忙改进翻译。\n\n**下载**\n\n- 修复部分签名方式下下载完成后提示「未能打开文件 CFNetworkDownload_….tmp，因为你没有查看它的权限」（#36）：遇到这种情况会自动改用应用内下载重新下载一次，之后的下载直接在应用内进行，下载时请保持 iPadn 在前台。首次启动时的后台下载检测也会检查文件能否读取。\n\n**诊断**\n\n- 「账号 › 设置 › 维护」新增「复制诊断信息」：在 LiveContainer 等无法弹出分享面板的环境中，可以直接复制后粘贴反馈。\n- 诊断信息会记录最近失败的请求：时间、服务器、接口名称和状态码，不包含账号、链接参数或登录凭据，方便定位下载失败。\n- Apple 返回 401 时，提示登录可能已失效并建议重新登录账号，不再只显示「网络请求失败」。\n\n**应用图标**\n\n- 修复更新 iPadn 后，主屏幕上仍是之前选择的浅色或跟随系统图标，「设置」里却显示为深色。从本版本起 iPadn 会记住你选择的图标；更新前就遇到这种情况时，在「设置 › 应用图标 › 图标主题」中重新选择一次即可。\n\n**English**\n\nAdds a Support iPadn page under Account › Settings: iPadn stays free, open source and ad-fr…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.2/iPadn-1.9.2-unsigned.ipa",
+          "size": 47376820,
+          "buildVersion": "27",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.9.1",
+          "date": "2026-11-11T07:01:12Z",
+          "localizedDescription": "## iPadn 1.9.1\r\n\r\n本版本新增多语言界面，并修复若干显示问题。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\r\n\r\n**多语言**\r\n\r\n- 界面支持 11 种语言：简体中文、繁體中文、English、日本語、한국어、Русский、Español、Français、Deutsch、Português (Brasil)、العربية。iPadn 跟随系统语言，也可以在「设置 › iPadn › 语言」中单独设置。\r\n- 阿拉伯语使用从右到左的排版，列表左滑、右滑等操作随之镜像。\r\n- 内购项目名称按界面语言显示，例如日语界面读取日本区的名称。\r\n- 英文翻译由 [kylefmohr](https://github.com/kylefmohr) 贡献（#35）；其他语言为机器辅助翻译，欢迎在 Issues 或 Pull Request 中纠错。\r\n\r\n**修复与改进**\r\n\r\n- 修复简体中文界面下，多地区价格中的「免费」可能显示为繁体，应用详情中的价格可能显示为英文「Free」。\r\n- 关注应用的价格变化通知跟随界面语言，不再跟随地区设置。\r\n- 搜索结果中的分类单独一行，较长的分类名不再挤掉版本号。\r\n- 已购项目的下载按钮改为云朵图标，购买日期可以完整显示。\r\n- 安装设置中的安装方式在各语言下使用简短名称，都能完整显示。\r\n\r\n**English**\r\n\r\niPadn now speaks 11 languages: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Russian, Spanish, French, German, Portuguese (Brazil) and Arabic, with a right…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.1/iPadn-1.9.1-unsigned.ipa",
+          "size": 47322069
+        },
         {
           "version": "1.9.0",
           "date": "2026-11-11T00:17:29Z",
           "localizedDescription": "## iPadn 1.9.0\n\n本版本新增原生安装，并集中修复下载、验证和界面细节。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n**原生安装**\n\n- 新增「原生安装」方式：通过系统自带的安装服务安装，效果与用电脑安装相同。App Store 能识别并更新安装的应用，爱思助手等工具显示为苹果正版，可以直接覆盖 App Store 已装的版本并保留数据。之前用其他方式安装、App Store 显示云朵的应用，用原生安装覆盖一次即可恢复。\n- iOS / iPadOS 27 起可以在手机上完成配对，不需要电脑：在「设置 › 隐私与安全性 › 开发者模式」中选择 iPadn，输入配对码即可。配对步骤和配对码实时显示在灵动岛、锁屏和通知中。\n- iOS 17.4 – 26 可导入电脑生成的远程配对文件；放进 iPadn 的「文件」文件夹会自动导入。\n- 需要 LocalDevVPN。安装包不会离开这台设备；默认安装方式不变。\n\n**下载与验证**\n\n- 下载或获取应用需要验证 Apple 账户时，会先替你请求 Apple 发送验证码，再显示输入页；新增「重新发送验证码」。下载列表、已购批量下载和 Mac 安装包也会直接弹出验证，验证后自动继续。\n- 持续保存 Apple 返回的会话信息，减少获取新应用时反复要求验证。\n- 修复部分签名下载到 100% 后又从头下载：首次启动时用一个很小的文件检测后台下载是否可用，不可用时直接改用应用内下载。\n- 点「获取」后更快开始：下载、登录等操作排在后台读取版本信息之前，签名组件保留更久，并在打开应用详情时提前准备。\n- 暂停的任务在详情中显示已下载大小、百分比和总大小。\n\n**版本来源**\n\n- 新增默认版本来源 iosdump；接口地址同时支持 `{id}` 与 `{appId}`。\n- …",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.0/iPadn-1.9.0-unsigned.ipa",
-          "size": 46851248,
-          "buildVersion": "25",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "1.8.5",
-          "date": "2026-11-10T12:52:09Z",
-          "localizedDescription": "## iPadn 1.8.5\r\n\r\n本轮集中改善列表交互、加载流畅性和下载稳定性。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\r\n\r\n- 列表侧滑参考 Telegram iOS 开源运动模型，统一双向拖动、阻尼、回弹、操作阈值与触觉反馈；支持减少动态效果和辅助操作。\r\n- 侧滑整张圆角卡片跟手移动，搜索历史使用红色胶囊按钮，其他列表使用圆形图标与下方标题；修复横向滑动抬手误触原行操作。\r\n- 侧滑过程中保留该行文字、图标和操作按钮原色，收起后无需等待颜色恢复；防误触处理保留。\r\n- 账号行静止时与“添加账号”保持连续分组，仅展开侧滑的当前行变成圆角卡片，收回恢复分组。\r\n- 顶部提示恢复紧凑布局并限制最大宽度；删除/移除确认保留原生底部弹层，大字体内容可滚动，按钮保持易点按。\r\n- 侧滑界面状态按屏幕刷新合并提交，复用宿主查找结果并减少重复裁剪。\r\n- 补齐设备容量显示和应用内计时 API 的用途声明，与工程生成脚本保持同步。\r\n- 搜索历史删除、清空及取消关注支持限时撤销；账号移除提示具体账号及当前登录影响。\r\n- 下载记录与安装包支持异步批量删除和保存失败回滚；重启时恢复尚未提交删除的安装包。\r\n- 下载回调使用任务对象身份校验，避免前后台 Session 编号碰撞；进度单独更新对应行。\r\n- 本地缓存异步加载，关注和账号缓存后台保存；图标与截图合并重复请求，同条件搜索刷新保留已有结果。\r\n- 修复多组件授权顺序、授权数量校验、安装包冲突覆盖及签名运行组件取消、超时、复用重试问题。\r\n- CI 默认执行完整单元测试，手动可增加 UI 测试；新增侧滑模型、下载并发、删除回滚及 100/500/1000 条记录交互检查。\r\n\r\nOTA 安装来源由 iOS 决定，清单使用应用真实版本号，不承诺改变系统的企业分发分类。\r\n\r\n更早…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.8.5/iPadn-1.8.5-unsigned.ipa",
-          "size": 43961928
-        },
-        {
-          "version": "1.8.0",
-          "date": "2026-11-09T00:04:33Z",
-          "localizedDescription": "## iPadn 1.8.0\n\n适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n### 新增\n\n- 支持 Apple Store 设备验证（X-Apple-AMD）：登录、购买、下载时按服务器要求自动完成设备注册与验证头生成，减少因设备验证导致的登录或下载失败。验证数据仅保存在本机钥匙串，不随备份迁移。\n- 账号页改为与其他页面一致的大标题页头和底部标签栏样式。\n\n### 修复\n\n- 登录请求改用 Apple 当前的 plist 请求格式，并兼容 `auth.itunes.apple.com` 原生登录节点。\n- 登录、下载节点校验更严格：拒绝编码斜杠和路径穿越，仅接受 Apple 官方购买节点。\n- 签名运行组件在 Windows 检出（CRLF 换行）时也能通过校验。\n- 列表底部增加留白，避免最后一行被标签栏遮挡。\n\n真实账号登录、双重认证和下载授权效果待真机验证。\n\n更早版本的更新内容见 [Releases](https://github.com/mengangs/ipadn/releases)。\n\n验证：设备 Release 编译与 IPA 检查通过；114 项测试通过，0 项失败，0 项跳过。",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.8.0/iPadn-1.8.0-unsigned.ipa",
-          "size": 43743768
+          "size": 46851248
         }
       ]
     },
@@ -441,7 +441,7 @@
         {
           "version": "2.3",
           "date": "2026-11-10T20:28:12Z",
-          "localizedDescription": "## 🌟 What's New\r\n\r\n### ❄️ Interactive Winter Theme\r\n* Snow now settles dynamically on cards and category tabs.\r\n* **Shake it loose:** Simply swipe across the category bar or long-press any card to shake the snow off.\r\n\r\n### 🎵 Background Music (BGM)\r\n* Browse your favorite apps with ambient audio.\r\n* Includes the built-in original track: **ryP0 Drift**.\r\n* Supports importing and playing your own local `.mp3` files.\r\n\r\n### 🧩 Strata & Kagura Support\r\n* Full compatibility to install apps and monitor updates directly through Strata and Kagura.\r\n\r\n### 🌸 Sakura Accent\r\n* Added a new soft-pink accent palette to refresh your interface aesthetics.\r\n\r\n### 📚 Multi-Source Unified Catalog\r\n* Combine multiple repositories into a single unified view. Choose exactly which sources to browse together.\r\n\r\n###…",
+          "localizedDescription": "## 🌟 What's New\r\n\r\n### ❄️ Interactive Winter Theme\r\n* Snow now settles dynamically on cards and category tabs.\r\n* **Shake it loose:** Simply swipe across the category bar or long-press any card to shake the snow off.\r\n\r\n### 🎵 Background Music\r\n* Supports importing and playing your own local `.mp3` files.\r\n\r\n### 🧩 Strata & Kagura Support\r\n* Full compatibility to install apps and monitor updates directly through Strata and Kagura.\r\n\r\n### 🌸 Sakura Accent\r\n* Added a new soft-pink accent palette to refresh your interface aesthetics.\r\n\r\n### 📚 Multi-Source Unified Catalog\r\n* Combine multiple repositories into a single unified view. Choose exactly which sources to browse together.\r\n\r\n### ⚡ Prefer TIPA\r\n* Set TIPA as your default package format preference whenever both standard IPA and TIPA builds …",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.3/ryP0-2.3.ipa",
           "size": 16533197,
           "buildVersion": "1",
