@@ -125,6 +125,12 @@
       "bundleIdentifier": "com.jbdotparty.Erosion",
       "name": "Erosion CN",
       "subtitle": "简体中文 MobileGestalt 改区工具，写入预览 + 自动回滚，重启不反弹"
+    },
+    {
+      "repo": "mengangs/ipadn",
+      "bundleIdentifier": "app.local.iPadn",
+      "name": "iPadn",
+      "subtitle": "App Store 多区账号下载器，支持原生安装并覆盖保留数据"
     }
   ],
   "candidatesRepository": {
