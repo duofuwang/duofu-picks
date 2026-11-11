@@ -71,15 +71,6 @@
     "size": 14753154,
     "source_repo": "Aidoku/Aidoku"
   },
-  "itzzace/ytkace@1.1.5": {
-    "bundleIdentifier": "com.google.ios.youtube",
-    "displayName": "YouTube",
-    "version": "21.44.4",
-    "build": "21.44.4",
-    "minOSVersion": "17.0",
-    "size": 139496330,
-    "source_repo": "itzzace/ytkace"
-  },
   "duofuwang/feather@2.9.0-3": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",
@@ -440,15 +431,6 @@
     "size": 33314067,
     "source_repo": "simonoppowa/OpenNutriTracker"
   },
-  "Leviidev/Henge@0.2": {
-    "bundleIdentifier": "com.henge.app",
-    "displayName": "Henge",
-    "version": "0.2.0",
-    "build": "100",
-    "minOSVersion": "17.0",
-    "size": 8880854,
-    "source_repo": "Leviidev/Henge"
-  },
   "FrizzleM/SideInstaller@1.7.0": {
     "bundleIdentifier": "com.frizzlem.sideinstaller",
     "displayName": "SideInstaller",
@@ -520,5 +502,32 @@
     "minOSVersion": "17.0",
     "size": 16597954,
     "source_repo": "Sami-Wali/ryP0"
+  },
+  "itzzace/ytkace@1.1.6": {
+    "bundleIdentifier": "com.google.ios.youtube",
+    "displayName": "YouTube",
+    "version": "21.45.4",
+    "build": "21.45.4",
+    "minOSVersion": "17.0",
+    "size": 140301936,
+    "source_repo": "itzzace/ytkace"
+  },
+  "Leviidev/Henge@0.3": {
+    "bundleIdentifier": "com.henge.app",
+    "displayName": "Henge",
+    "version": "0.3.0",
+    "build": "101",
+    "minOSVersion": "17.0",
+    "size": 9036911,
+    "source_repo": "Leviidev/Henge"
+  },
+  "mengangs/ipadn@1.9.0": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "1.9.0",
+    "build": "25",
+    "minOSVersion": "17.0",
+    "size": 46851248,
+    "source_repo": "mengangs/ipadn"
   }
 }

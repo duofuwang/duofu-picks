@@ -1000,14 +1000,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1196683596,
+      "size": 1197778707,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-10T21:11:31Z",
-          "localizedDescription": "## Alpha Build `de64c9b`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`de64c9b`](https://github.com/Provenance-Emu/Provenance/commit/de64c9b7cee2875aa4d5cd81e717b4cd09c047d7) |\n| **Built** | 2026-11-10 21:10 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42894224300) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nde64c9b7c feat(skins): unfolded iPhone draws a skin's iPad layout\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload feed]…",
+          "date": "2026-11-10T23:04:42Z",
+          "localizedDescription": "## Alpha Build `c13e6b5`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`c13e6b5`](https://github.com/Provenance-Emu/Provenance/commit/c13e6b55832b2addd59d32472b72b7a45049be20) |\n| **Built** | 2026-11-10 23:03 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42912377946) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nc13e6b558 refactor(pause): delete the unused RetroMenuView\n2888bbebe fix(overlay): keep built-in controls clear of the home indicator\n31a0eb9b9 build(skins): move to SkinKit 0.4.0\n```\n\n---\nThese builds are unsigned and intended for sideloading…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1196683596,
+          "size": 1197778707,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

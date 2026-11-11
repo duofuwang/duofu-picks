@@ -226,16 +226,23 @@
       "localizedDescription": "Emulate macOS on iOS and iPadOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.henge.app.png?v=8da3dfb0dcf0",
       "tintColor": "#324ce2",
-      "size": 8880854,
+      "size": 9036911,
       "versions": [
+        {
+          "version": "0.3",
+          "date": "2026-11-10T23:53:38Z",
+          "localizedDescription": "## What's new?\n- macOS Sonoma 14.6.1 and Ventura 13.6 in the Install tab: smaller downloads (14.1 and 12.3 GB) for devices short on storage\n- Sonoma's and Ventura's graphics drivers work with Henge, including Sonoma's moving wallpaper and video, without green bands\n- A light theme: Settings › Appearance picks System, Light or Dark (the session stays dark while a Mac runs)\n- The screen is a Magic Trackpad 2 to the Mac: macOS's own gestures, tap and hold clicks, and optional volume-button clicks (#54)\n- macOS downloads go on after Henge is closed or killed, and a trash button deletes a downloaded or partial one\n- macOS shuts down and restarts properly, and a Mac can start again without reopening Henge (#50)\n- Installs: a 10 GB Mac no longer runs the phone out of memory two thirds of the way …",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.3/Henge.ipa",
+          "size": 9036911,
+          "buildVersion": "101",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.2",
           "date": "2026-11-07T21:49:27Z",
           "localizedDescription": "## What's new?\n- macOS 27 (Golden Gate) installs and runs, as well as macOS Sequoia\n- Choose your Mac's memory, anywhere from 1 to 16 GB\n- Put the Mac on an external display over USB-C, on iOS 27 and on iOS 17-26\n- A bit faster: guest memory lookups were reworked, and macOS 27's constant TLB flushes no longer wipe every app's entries\n- Settings > Performance: refresh rate (60 Hz, or 120 Hz with ProMotion), faster disk writes, quicker wake from idle, superblocks (experimental) and a 1 GB or 1.5 GB code cache (experimental)\n- Colours fixed: macOS no longer looks washed out, and the iPad's P3 screen is colour matched\n- iPad: Retina and Performance screen modes, smoother Magic Keyboard scrolling, a smaller and sharper pointer with a size setting, and iPadOS's hide-keyboard key works\n- The Mac …",
           "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.2/Henge.ipa",
-          "size": 8880854,
-          "buildVersion": "100",
-          "minOSVersion": "17.0"
+          "size": 8880854
         },
         {
           "version": "0.1",
@@ -243,6 +250,40 @@
           "localizedDescription": "## What's new?\nThe first release of Henge: macOS on your iPhone and iPad, installed right on the device with no Mac needed.\n\n## Confirmed Working\nmacOS Sequoia 15.6.1 - installs and boots on an iPhone 17 Pro, lock screen in about 15 seconds\nSafari\nDiscord - install, log in, send messages\nClipboard and file sharing between the iPhone and macOS\n\niPad support is new and hasn't run on a real iPad yet.\n\n## Installation\nSideload Henge.ipa with SideStore or AltStore, or install Henge.tipa with TrollStore or TrollStore Lite. Enable JIT, open the Install tab and install macOS. Needs iOS 17 or later, an A14 or M1 chip or newer, and about 43 GB free.\n\n## Issues\nIf any bugs / issues occur, report it to the GitHub or in my Discord Server.\n\nLinks:\nDiscord Server: https://itslevii.dev/discord\nEmail: hell…",
           "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
           "size": 8761298
+        }
+      ]
+    },
+    {
+      "name": "iPadn",
+      "bundleIdentifier": "app.local.iPadn",
+      "developerName": "mengangs",
+      "subtitle": "App Store 多区账号下载器，支持原生安装并覆盖保留数据",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
+      "tintColor": "#6156e2",
+      "size": 46851248,
+      "versions": [
+        {
+          "version": "1.9.0",
+          "date": "2026-11-11T00:17:29Z",
+          "localizedDescription": "## iPadn 1.9.0\n\n本版本新增原生安装，并集中修复下载、验证和界面细节。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n**原生安装**\n\n- 新增「原生安装」方式：通过系统自带的安装服务安装，效果与用电脑安装相同。App Store 能识别并更新安装的应用，爱思助手等工具显示为苹果正版，可以直接覆盖 App Store 已装的版本并保留数据。之前用其他方式安装、App Store 显示云朵的应用，用原生安装覆盖一次即可恢复。\n- iOS / iPadOS 27 起可以在手机上完成配对，不需要电脑：在「设置 › 隐私与安全性 › 开发者模式」中选择 iPadn，输入配对码即可。配对步骤和配对码实时显示在灵动岛、锁屏和通知中。\n- iOS 17.4 – 26 可导入电脑生成的远程配对文件；放进 iPadn 的「文件」文件夹会自动导入。\n- 需要 LocalDevVPN。安装包不会离开这台设备；默认安装方式不变。\n\n**下载与验证**\n\n- 下载或获取应用需要验证 Apple 账户时，会先替你请求 Apple 发送验证码，再显示输入页；新增「重新发送验证码」。下载列表、已购批量下载和 Mac 安装包也会直接弹出验证，验证后自动继续。\n- 持续保存 Apple 返回的会话信息，减少获取新应用时反复要求验证。\n- 修复部分签名下载到 100% 后又从头下载：首次启动时用一个很小的文件检测后台下载是否可用，不可用时直接改用应用内下载。\n- 点「获取」后更快开始：下载、登录等操作排在后台读取版本信息之前，签名组件保留更久，并在打开应用详情时提前准备。\n- 暂停的任务在详情中显示已下载大小、百分比和总大小。\n\n**版本来源**\n\n- 新增默认版本来源 iosdump；接口地址同时支持 `{id}` 与 `{appId}`。\n- …",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.0/iPadn-1.9.0-unsigned.ipa",
+          "size": 46851248,
+          "buildVersion": "25",
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.8.5",
+          "date": "2026-11-10T12:52:09Z",
+          "localizedDescription": "## iPadn 1.8.5\r\n\r\n本轮集中改善列表交互、加载流畅性和下载稳定性。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\r\n\r\n- 列表侧滑参考 Telegram iOS 开源运动模型，统一双向拖动、阻尼、回弹、操作阈值与触觉反馈；支持减少动态效果和辅助操作。\r\n- 侧滑整张圆角卡片跟手移动，搜索历史使用红色胶囊按钮，其他列表使用圆形图标与下方标题；修复横向滑动抬手误触原行操作。\r\n- 侧滑过程中保留该行文字、图标和操作按钮原色，收起后无需等待颜色恢复；防误触处理保留。\r\n- 账号行静止时与“添加账号”保持连续分组，仅展开侧滑的当前行变成圆角卡片，收回恢复分组。\r\n- 顶部提示恢复紧凑布局并限制最大宽度；删除/移除确认保留原生底部弹层，大字体内容可滚动，按钮保持易点按。\r\n- 侧滑界面状态按屏幕刷新合并提交，复用宿主查找结果并减少重复裁剪。\r\n- 补齐设备容量显示和应用内计时 API 的用途声明，与工程生成脚本保持同步。\r\n- 搜索历史删除、清空及取消关注支持限时撤销；账号移除提示具体账号及当前登录影响。\r\n- 下载记录与安装包支持异步批量删除和保存失败回滚；重启时恢复尚未提交删除的安装包。\r\n- 下载回调使用任务对象身份校验，避免前后台 Session 编号碰撞；进度单独更新对应行。\r\n- 本地缓存异步加载，关注和账号缓存后台保存；图标与截图合并重复请求，同条件搜索刷新保留已有结果。\r\n- 修复多组件授权顺序、授权数量校验、安装包冲突覆盖及签名运行组件取消、超时、复用重试问题。\r\n- CI 默认执行完整单元测试，手动可增加 UI 测试；新增侧滑模型、下载并发、删除回滚及 100/500/1000 条记录交互检查。\r\n\r\nOTA 安装来源由 iOS 决定，清单使用应用真实版本号，不承诺改变系统的企业分发分类。\r\n\r\n更早…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.8.5/iPadn-1.8.5-unsigned.ipa",
+          "size": 43961928
+        },
+        {
+          "version": "1.8.0",
+          "date": "2026-11-09T00:04:33Z",
+          "localizedDescription": "## iPadn 1.8.0\n\n适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n### 新增\n\n- 支持 Apple Store 设备验证（X-Apple-AMD）：登录、购买、下载时按服务器要求自动完成设备注册与验证头生成，减少因设备验证导致的登录或下载失败。验证数据仅保存在本机钥匙串，不随备份迁移。\n- 账号页改为与其他页面一致的大标题页头和底部标签栏样式。\n\n### 修复\n\n- 登录请求改用 Apple 当前的 plist 请求格式，并兼容 `auth.itunes.apple.com` 原生登录节点。\n- 登录、下载节点校验更严格：拒绝编码斜杠和路径穿越，仅接受 Apple 官方购买节点。\n- 签名运行组件在 Windows 检出（CRLF 换行）时也能通过校验。\n- 列表底部增加留白，避免最后一行被标签栏遮挡。\n\n真实账号登录、双重认证和下载授权效果待真机验证。\n\n更早版本的更新内容见 [Releases](https://github.com/mengangs/ipadn/releases)。\n\n验证：设备 Release 编译与 IPA 检查通过；114 项测试通过，0 项失败，0 项跳过。",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.8.0/iPadn-1.8.0-unsigned.ipa",
+          "size": 43743768
         }
       ]
     },
@@ -394,14 +435,14 @@
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=e9e8ae44fc4e",
       "tintColor": "#6456de",
-      "size": 16597954,
+      "size": 16533197,
       "versions": [
         {
           "version": "2.3",
           "date": "2026-11-10T20:28:12Z",
           "localizedDescription": "## 🌟 What's New\r\n\r\n### ❄️ Interactive Winter Theme\r\n* Snow now settles dynamically on cards and category tabs.\r\n* **Shake it loose:** Simply swipe across the category bar or long-press any card to shake the snow off.\r\n\r\n### 🎵 Background Music (BGM)\r\n* Browse your favorite apps with ambient audio.\r\n* Includes the built-in original track: **ryP0 Drift**.\r\n* Supports importing and playing your own local `.mp3` files.\r\n\r\n### 🧩 Strata & Kagura Support\r\n* Full compatibility to install apps and monitor updates directly through Strata and Kagura.\r\n\r\n### 🌸 Sakura Accent\r\n* Added a new soft-pink accent palette to refresh your interface aesthetics.\r\n\r\n### 📚 Multi-Source Unified Catalog\r\n* Combine multiple repositories into a single unified view. Choose exactly which sources to browse together.\r\n\r\n###…",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.3/ryP0-2.3.ipa",
-          "size": 16597954,
+          "size": 16533197,
           "buildVersion": "1",
           "minOSVersion": "17.0"
         },
@@ -534,16 +575,23 @@
       "localizedDescription": "YTKACE is a free, open-source YouTube enhancer and downloader for iOS with SponsorBlock, background playback, player controls, and interface customization including liquid glass.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.google.ios.youtube.png?v=1075b78b6bbe",
       "tintColor": "#fc0434",
-      "size": 139496330,
+      "size": 140301936,
       "versions": [
+        {
+          "version": "1.1.6",
+          "date": "2026-11-10T21:54:48Z",
+          "localizedDescription": "by @itzzace0\n\n1,000 stars 🎉\nThanks for 1k stars! To celebrate, FlareStore is sponsoring a giveaway of 5 certificates in the new YTKACE Telegram channel: https://t.me/ytkace\n\nWhat's new:\n• Updated to YouTube 21.45.4\n• Button Layout: drag the player buttons into YouTube's top row, the row under it, or next to the fullscreen button\n• Added a Quality Button that shows the current quality\n• Added Auto Fullscreen and Exit Fullscreen at End\n• Added Swipe to Seek\n• Added Previous/Next Skip\n• Added Keep Playing, which stops the \"Continue watching?\" pause\n• Added a Playlist tab\n• Added a default video quality and audio language for downloads\n• Added Remove Live Videos from Home\n• Added an Auto-Scroll Delay for Shorts\n• Added a minimum segment length to SponsorBlock\n• Added iPhone Duo layouts\n\nFixed:…",
+          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.6/YTKACE_1.1.6_YouTube_21.45.4.ipa",
+          "size": 140301936,
+          "buildVersion": "21.45.4",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "1.1.5",
           "date": "2026-11-03T22:13:29Z",
           "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.44.4\n• Normal Home Layout now brings back the old Home with topic chips\n• Added Turn Off Haptics\n• Added Open Links Directly\n• Added Remove Autoplay Prompt\n• Added Remove More Videos\n• Added an option to remove Listen with YouTube Music from the ⋯ menu\n• Added a rotate button to the downloads player\n• Captions can now be turned on in Always Off mode\n\nFixed:\n• Tab settings ignored on YouTube's glass tab bar\n• Glass tab bar with icon-only tabs\n• Startup tab when Home is hidden\n• Tab labels and icons on YouTube's icon-only tab bar\n• Subscriptions tab missing from the bottom bar, and its icon\n• Remove Channel Watermark not working\n• Remove End Screen not working\n• Keep Progress Bar Visible not working\n\nYouTube 21.44.4 requires iOS 17, so there …",
           "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.5/YTKACE_1.1.5_YouTube_21.44.4.ipa",
-          "size": 139496330,
-          "buildVersion": "21.44.4",
-          "minOSVersion": "17.0"
+          "size": 139496330
         },
         {
           "version": "1.1.4",
@@ -551,13 +599,6 @@
           "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.42.4\n• Added a SponsorBlock button to the player to whitelist channels, vote on segments and submit new ones\n• Added Report AI Channels to report channels to AiSList from the ⋯ menu\n• Added Clean Copied Links to remove tracking like si= from links you copy or share\n• Added options to remove items from the ⋯ menu\n• Added Tab Bar options for Liquid Glass: Default, YTKACE, YouTube or Off\n• Added Keep Shorts in Home, Search and on Channels\n\nFixed:\n• Remove Previous/Next not working in playlists\n• Blank space left when fullscreen actions are hidden\n• Remove Mixes missing some mixes\n\nYouTube 21.42.4 requires iOS 17, so there are two IPAs:\n• `YTKACE_1.1.4_YouTube_21.42.4.ipa` for iOS 17 and newer\n• `YTKACE_1.1.4_YouTube_iOS16_21.33.6.ipa` for iOS …",
           "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.4/YTKACE_1.1.4_YouTube_21.42.4.ipa",
           "size": 138006169
-        },
-        {
-          "version": "1.1.3",
-          "date": "2026-10-11T21:19:19Z",
-          "localizedDescription": "by @itzzace0\n\nWhat's new:\n• Updated to YouTube 21.41.5\n• Added Hide AI Channels, which hides videos from channels on the AiSList blocklist in your feed and search, with an option for the warnlist too\n• Swipe the SponsorBlock popup away to dismiss it\n\nFixed:\n• Shorts download button sometimes missing on the new Shorts UI\n• Auto-Skip and Play Shorts Once not working on the new Shorts UI\n• Pinch to fullscreen in Shorts freezing or starting the next Short\n• Loop button not looping when Local Queue is on\n• SponsorBlock popup not fading in\n• Chapter pill in the player sometimes not getting Liquid Glass\n\nYouTube 21.41.5 requires iOS 17, so there are two IPAs:\n• `YTKACE_1.1.3_YouTube_21.41.5.ipa` for iOS 17 and newer\n• `YTKACE_1.1.3_YouTube_iOS16_21.33.6.ipa` for iOS 16",
-          "downloadURL": "https://github.com/itzzace/ytkace/releases/download/v1.1.3/YTKACE_1.1.3_YouTube_21.41.5.ipa",
-          "size": 137158764
         }
       ]
     },
