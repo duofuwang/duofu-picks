@@ -349,16 +349,23 @@
       "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 914457675,
+      "size": 915566752,
       "versions": [
+        {
+          "version": "1.8.10",
+          "date": "2026-11-11T18:11:44Z",
+          "localizedDescription": "# Floe 1.8.10 (332)\n\n## 简体中文\n\n- 失败工具卡片支持手动收起，并在结果刷新后保持选择；精简回复操作栏。\n- 独立二维 CAD 移除不适用的三维、加工和仿真入口；三维草图编辑时固定视角，退出后恢复。\n- 更新图片编辑器的颜色调整、预览和导出功能。\n\n- 编辑器中的 AI 助手与普通聊天分开，避免不同作品的会话混入聊天列表。\n- 改善聊天列表中的失败、受阻和待处理提示，可打开原聊天查看原因并继续处理。\n- 修正部分流式回复结束后的状态收尾，改善后台任务的进度、停止和结束提示。\n- 改善会议录音的实时字幕衔接和说话人标记；离开录音页时可选择继续录音或停止。\n- 改进工具箱的显示和常用操作，路由跟踪可配合本地信息库显示 IP 地区和网络信息。\n- 三维编辑器的草图页可导入 DXF/DWG，也可从本 App 的二维 CAD 项目选择草图并加入当前草图。直接复制原生曲线和构造图形，原项目保持独立。\n\n请重点检查作品助手与普通聊天的区分、回复结束与等待提示、录音页的继续和停止，以及工具箱操作。CAD 导入请检查多个源草图的选择、实际尺寸、取消和一次撤销；只复制图形，尺寸约束与关联留在原项目。\n\n## English\n\n- Simplifies reply actions. Failed tool cards respect manual collapse when results refresh.\n- Removes unsuitable 3D, manufacturing and simulation actions from standalone 2D CAD. Editing a 3D sketch locks the view to its plane and restores the view when you finish.\n- Updates i…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.10/Floe-Agent-1.8.10-build332-unsigned.ipa",
+          "size": 915566752,
+          "buildVersion": "332",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.8.9",
           "date": "2026-11-11T11:27:07Z",
           "localizedDescription": "# Floe 1.8.9 (331)\n\n## 简体中文\n\n- 修复打开气压计、指南针、陀螺仪等测量工具时的闪退，并修复同类声音采集回调问题。\n- 自定义倒计时改用时、分、秒滚轮，支持上下滑动选择时长。\n- 修复部分旧化学项目无法删除、提示“未授权”的问题。\n- 修复部分生物项目无法从回收站彻底清理的问题，并保留删除失败后的继续清理能力。\n- 修正部分完成按钮和本地终端屏幕错误提示的显示。\n- 目标设置成功后，输入框返回普通 Agent 模式；保存失败时保留目标表单与草稿，便于修改重试。\n- 支持 AI 为当前已授权任务设置目标，并提示目标暂停、继续和受阻状态。\n\n本次为中间内测更新。请重点检查测量工具的打开和退出、倒计时设置，以及旧项目的删除、恢复和回收站清空。也请检查目标保存成功或失败后的输入框行为、AI 为当前任务设置目标，以及暂停、继续和受阻提示。Linux GPU 与新增视频硬件解码另行继续，后续完整版本再安排公开 TestFlight。\n\n## English\n\n- Fixes crashes when opening the barometer, compass, gyroscope and related measurement tools, and corrects the same callback issue in sound capture.\n- Uses hour, minute and second wheels to set a custom timer by scrolling.\n- Fixes an unauthorized error when deleting some older chemistry projects.\n- Fixes permanent deletion of some biology projects from Tr…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.9/Floe-Agent-1.8.9-build331-unsigned.ipa",
-          "size": 914457675,
-          "buildVersion": "331",
-          "minOSVersion": "26.0"
+          "size": 914457675
         },
         {
           "version": "1.8.8",
@@ -366,13 +373,6 @@
           "localizedDescription": "# Floe 1.8.8 (330)\n\n## 简体中文\n\n- 设置新增“帮助与指南”，提供双语离线文档、搜索、章节定位和相关设置入口；助手回答可引用指南。\n- 文件助手按文件收纳会话，可继续同一文件的对话，并在任务运行时选择引导当前任务或排队输入。\n- 改善音乐录制的计时与对齐，保留已有片段，并可播放已有轨道作为伴奏。\n- 会议支持连续录音和分段转写，提供说话人标签、改名与合并，方便整理记录和回听。\n- 完善文件、回收站与关联助手的删除和恢复，改善化学、生物、地图及媒体编辑中的对象操作、撤销和保存。\n- 改进任务完成状态、中断恢复和无效请求提示；任务等待保留原会话，倒计时支持暂停、继续和取消。\n- 扩展工具箱的测量、换算、定位、扫描与计时功能；网络路径逐跳显示，停止后保留已有结果，可选下载离线 IP 资料库查看地区与 ASN 信息。\n- 修正部分 Mac Bridge 1.1.3 命令和文件传输响应出错时误报版本不兼容的问题。\n- 改善 iPhone 窄屏与展开布局中的导航、侧栏和弹窗，减少遮挡并保持当前编辑现场。\n- 收紧绘画输入选项的布局，并将“流程图”入口统一命名为“思维导图”。\n- 更新本地 Linux 组件与服务停止管理。请重点反馈 Linux 图形应用的启动、交互和停止体验。\n\n本次为中间内测版本，新增的 Linux 视频硬件解码未纳入；应用内原有视频编辑与播放功能保留。请重点检查音乐录制与伴奏、会议标签整理、帮助阅读、返回原任务及保存重开。云端服务需自行配置；录音需授予麦克风权限。Siri 与快捷指令沿用已有功能。\n\n## English\n\n- Adds Help and Guides in Settings, with bilingual offline articles, search, section links and links to relevan…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.8/Floe-Agent-1.8.8-build330-unsigned.ipa",
           "size": 914328340
-        },
-        {
-          "version": "1.8.7",
-          "date": "2026-11-10T13:13:27Z",
-          "localizedDescription": "# Floe 1.8.7 (329)\n\n## 简体中文\n\n- 重新整理音乐、二维设计和媒体编辑器的布局，改善工具分组、播放控制、时间轴拖动、全屏编辑和触屏操作。\n- 音乐增加五线谱、简谱与双 Deck DJ 工作流；乐谱可按声部选择合成乐器音色演奏，并将音频加入编曲时间轴。完善音色、节拍、Cue／Loop、混音、录制和保存。\n- 扩展图片和视频创作工具，包括选区、变形、修复、合成、关键帧、色彩处理、复合片段与人声分离；完善原件、撤销、保存和导出之间的衔接。\n- 支持 40 类原生图表，并能在回复段落之间展示；增加读值、筛选、缩放、全屏及图片／PDF 导出，改善 SVG 和其他正文内容的预览。\n- 文件修改直接展示差异：小改动展开可见，较长内容提供增减统计和有高度上限的展开查看。文件名旁直接显示增减统计与展开入口；改善文件与回收站的批量管理。\n- 补齐原生 Git 日常操作和 GitHub 问题、拉取请求、评审与检查流程；链接可查看原始来源并返回任务，助手复用相同操作链。\n- 局域网发现增加常用设备范围、扫描进度、取消和结果复用；完善连接工具的历史输入与错误反馈，改进本地 Linux 网络传输。\n- LaTeX 原生排版按文章补齐宏包和字体，生成 PDF 并保留目录、链接和阅读位置；改善 PCB 元件库、化学编辑器、手记与文档助手、苹果同步和任务状态提示。\n- 修复图乐园产物提示与图标，增加独立的自动调用设置；改善新模型配置、导入、预览和多个页面的细节。\n\n请重点反馈之前出现问题的界面与操作、保存重开、助手调用及连接工具。云端服务需要自行配置；人声分离可使用导入的兼容本地模型或已配置服务。图乐园受系统、设备和地区支持范围影响。原生 USB 串口驱动仍等待额外授权，本版不包含。\n\n## English\n\n- Refines music, 2D design and media …",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.7/Floe-Agent-1.8.7-build329-unsigned.ipa",
-          "size": 908120405
         }
       ]
     },
@@ -1007,14 +1007,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1197759024,
+      "size": 1198159597,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-11T08:20:39Z",
-          "localizedDescription": "## Alpha Build `0cb2f26`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`0cb2f26`](https://github.com/Provenance-Emu/Provenance/commit/0cb2f2644fddc90b065d4adf1b79dda94e36cd7f) |\n| **Built** | 2026-11-11 08:19 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/42980845256) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n0cb2f2644 dolphin\n9bd8b1ffd feat: browse and import games from RomM\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload fee…",
+          "date": "2026-11-11T19:58:00Z",
+          "localizedDescription": "## Alpha Build `0affd70`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`0affd70`](https://github.com/Provenance-Emu/Provenance/commit/0affd70519cbd9b7f11153c02215c5ffff2e5d79) |\n| **Built** | 2026-11-11 19:56 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43084263452) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n0affd7051 Render Provenance default overlays from bundled Format 2 artwork (#3811)\n```\n\n### Merged PRs\n- #3811: Render Provenance default overlays from bundled Format 2 artwork\n\n\n---\nThese builds are unsigned and intended for sideloading via A…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1197759024,
+          "size": 1198159597,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
