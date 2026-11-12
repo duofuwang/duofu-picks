@@ -89,30 +89,30 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 6039610,
+      "size": 6277874,
       "versions": [
         {
-          "version": "0.8.5",
-          "date": "2026-11-11T13:17:51Z",
-          "localizedDescription": "## Erosion-CN v0.8.5 更新日志 (Build 20)\n\n### 🛠️ 照片「高质量」消除防冲突锁定 & iPhone 18 Pro 系列原厂基线精准保护\n\n1. **修复开启「解锁 iOS 27 进阶 AI 能力 `[测试特性]`」导致照片「高质量」消除报错的问题**：\n   - 经 `iPhone 18 Pro Max (iPhone19,7)` 真机 A/B 对照与 `MGInspector` 三源底层探针实锤确认：\n     - 照片「快速」消除走本地独立 GAN 模型，而「高质量」消除走云端扩散模型管线 (`ServerDiffusionInpainting`)；\n     - **`Audio Intelligence`（iOS 27 音频智能，`rb2tKZxlj0Gm2tBmUQSLqQ`，槽位 `#178`）** 在 iPhone / iPad 出厂均为 **`false (0x00)`**——强行开启该非原生实验槽位会导致系统生成式模型管线校验断路，直接造成照片「高质量」消除报错（提示 *“消除此照片时出错。请稍后再试。”*）；\n     - **`Personal Translator`（个人实时翻译，`M1n2sAqf33NAOgZRGxQYBA`，槽位 `#266`）** 在 iPhone 18 Pro 系列 (`iPhone19,*`) 出厂原生即为 **`true (0x01)`**，与照片「高质量」消除完全兼容。\n2. **默认防呆锁定 + 原厂基线保护 + 一键自愈修复**：\n   - 已将非原生实验槽位从顶部 **「⚡ 一键配齐 / 修复」** 中移除，并在 iPhone / iPad 上默认锁定关闭防误开（常规通话录音、语音备忘录转写与系统翻译均由主 AI 开关完整支持）；\n   - 新增 `isNativePerso…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.5/Erosion_v0.8.5_zh-Hans.ipa",
-          "size": 6039610,
-          "buildVersion": "20",
+          "version": "0.9.1",
+          "date": "2026-11-12T13:06:38Z",
+          "localizedDescription": "## Erosion-CN v0.9.1 更新日志 · Bilingual Release Notes (Build 23)\n\n### 🇨🇳 简体中文\n\n#### 🛠️ 关键 Bug 修复：原生 AI 机型 `Personal Translator (#266)` 基线锁定与双向自愈（修复 #16 / #22）\n1. **修复旧版（`v0.8.3 – v0.8.5`）误关槽位 `#266` 导致相册云端工具与相机 Siri「0 秒瞬间报错」的问题**：\n   - 在所有原生支持 Apple 智能的 iPhone（`iPhone 15 Pro` 至 `iPhone 18 Pro Max` 全系列）原厂 `CacheData` 中，`Personal Translator`（`M1n2sAqf33NAOgZRGxQYBA`，槽位 `#266`）原厂默认为 `true (0x01)`，而 `Audio Intelligence`（`rb2tKZxlj0Gm2tBmUQSLqQ`，槽位 `#178`）原厂默认为 `false (0x00)`。\n   - 此前跨 iOS 版本 OTA 升级（旧 `OriginalGestalt.plist` 的 `CacheUUID` 变化）或非 18 Pro 机型执行一键配齐时，可能将 `#266` 误写为 `false (0x00)` 并污染本地 `UserDefaults` 基线快照，触发 `GenerativeModels / ModelCatalog` 本地预检 0ms 熔断报错（端侧快速消除正常，但**照片高质量消除、扩图延伸、重构及相机 `SIRI` 模式**瞬间报错）。\n   - `v0.9.1` 已锁定全系原生 AI iPhone 的硬件原厂基线（`#266 = true`、`#178 = false`，免疫跨版本备份不匹配与污染缓…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.9.1/Erosion_v0.9.1_Bilingual.ipa",
+          "size": 6277874,
+          "buildVersion": "23",
           "minOSVersion": "26.0"
         },
         {
-          "version": "0.8.2",
-          "date": "2026-11-11T10:44:15Z",
-          "localizedDescription": "## Erosion-CN v0.8.2 更新日志 (Build 17)\n\n### 🛡️ `SiriHub` 实验项防卡死护栏与一键体检修复（[#10](https://github.com/Kianuni/Erosion-CN/issues/10)）\n\n1. **自动防呆锁定 `[测试特性] 端侧 Siri Hub 路由与指令模型动态剪枝`**（感谢 [#10](https://github.com/Kianuni/Erosion-CN/issues/10) `@RFFFF0` 真机二分定位）：\n   - `DeviceSupportsSiriHub`（`waGD2UTpntjbDXD1r3oALQ`）属于带屏智能家居中枢（`HomeAccessory` / HomePad）专属路由标记；在 iPhone / iPad 上开启会导致 `assistantd` 向苹果资产服务器请求不存在于手机目录的 `SiriHub` UAF 模型包，从而使 Apple 智能无限卡死在「正在添加 Siri 支持内容，更新完成前，Siri 将无法使用」。\n   - `v0.8.2` 已默认将该开关设为防误开锁定状态（严禁在 iPhone / iPad 上新开启）；若用户在旧版本中曾开启过该开关，界面将保持可关闭状态以支持一键关闭还原。\n2. **「Apple 智能激活四要素体检」冲突识别与一键自愈**：\n   - 顶部四要素体检卡片现已纳入 `SiriHub` 冲突检测，一旦检测到该槽位处于异常开启状态将醒目预警，点击 **「一键补齐缺失项」** 即可自动将其复位回原厂状态。\n\n---\n\n### 🌐 新增 `Stash (.stoverride / YAML)` 覆写导出与完整分流规则升级（[#11](https://github.com/Kianuni/Erosion-CN/issues/…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.2/Erosion_v0.8.2_zh-Hans.ipa",
-          "size": 6036683
+          "version": "0.9.0",
+          "date": "2026-11-12T10:54:42Z",
+          "localizedDescription": "## Erosion-CN v0.9.0 更新日志 · Bilingual Release Notes (Build 22)\n\n### 🌐 单包完整中英双语支持 / Full Bilingual Support (`zh-Hans` + `en`)（#7）\n\n1. **全量双语本地化（1,305 条词条 100% 覆盖） / Full App Localization (1,305 Strings)**:\n   - 单一 IPA 同时内置完整 **简体中文 (`zh-Hans`)** 与 **英文 (`en`)** 语言包，全量覆盖主界面、所有 `MobileGestalt` 与跨容器实验模块、弹窗告警、槽位检视器（`MGInspector`）、内置 Plist/文本编辑器与底层运行日志。\n   - Single unified IPA bundling complete **Simplified Chinese (`zh-Hans`)** and **English (`en`)** localizations across every view, alert, `MGInspector` probe, Plist/Text editor, cross-container tool, and runtime log.\n2. **智能系统语言识别 + 设置页实时热切换 / Smart Auto-Detection + Live Switcher**:\n   - 中文系统默认启动为简体中文；所有非中文系统语言自动以 **英文界面** 启动。\n   - **设置 → 界面语言 (`Settings → App Language`)** 新增 **跟随系统 (`Follow System`) / `简体中文` / `English`** 三档实时切换器，无需重启应用即可即时切换全…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.9.0/Erosion_v0.9.0_Bilingual.ipa",
+          "size": 7525162
         },
         {
-          "version": "0.8.1",
-          "date": "2026-11-11T06:46:21Z",
-          "localizedDescription": "## Erosion-CN v0.8.1 更新日志 (Build 16)\n\n### ✨ 地区修改细化子选项（保留 `CH/A` 后缀与双卡兼容模式）\n\n1. **在「解除地区限制（国行 AI / 美版 LL/A）」下方新增双模式切换**（感谢 [#8](https://github.com/Kianuni/Erosion-CN/issues/8) `@guestwrt` 及社区双卡机友实测反馈）：\n   - **完整美版 `LL + LL/A`（默认）**：同时将 `RegionCode` 改为 `LL`、`RegionInfoFromSysconfig` 改为 `LL/A`，并基于主板真实硬件型号自动填入对应的美版监管型号（`Axxxx`），跨区域受限特性（海外版完整 Apple 智能、相机快门静音、健康区域特性等）一致性最完整；\n   - **仅改区域代码 `LL`（保留 `CH/A` 后缀与双卡兼容）**：仅将 `RegionCode` 改为 `LL`，完整保留原厂的销售地区后缀（如 `CH/A`）与原厂监管型号（如 `A3715` / `A3718`）。既可满足基础 Apple 智能准入、让 `设置 → 通用 → 关于本机` 型号末尾继续显示 `CH/A`，也能避免国行双实体 SIM 卡槽 + 内置 eSIM 机型（如 iPhone 18 Pro / Pro Max）因映射无卡槽美版型号引发基带卡槽冲突。\n2. **「Apple 智能激活四要素体检」与脏备份智能纠偏同步适配**：\n   - 四要素体检面板与「一键补齐缺失项」已全面适配上述两种地区模式；\n   - 若国行硬件（`CacheData` 中 `wapi == 1` 或 `green-tea == 1`）在安装本应用前曾被其他工具改过 `LL/A`，切换至「仅改区域代码 `LL`」或关闭地区限制时会自动纠偏…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.1/Erosion_v0.8.1_zh-Hans.ipa",
-          "size": 6029106
+          "version": "0.8.6",
+          "date": "2026-11-12T08:25:04Z",
+          "localizedDescription": "## Erosion-CN v0.8.6 更新日志 (Build 21)\n\n### 🚀 容器极速枚举修复 & 空间音频硬件防呆解耦 & 分流规则增强\n\n1. **修复高 Inode 主力机容器扫描卡死 5–6 分钟，并适配 `iOS 26.3.x` `CSStore2` 秒开（修复 #21）**：\n   - **修正 `pathleak` 上限保护逻辑**：修复长期使用的设备（累计 APFS 单调递增 Inode 超过 2 亿）在回退 `pathleak` 时外层 `min/max` 写反导致 `15,000,000` 上限失效、强行遍历 2.28 亿次系统调用的问题；\n   - **新增不依赖结构体偏移的 `CSStore2` 书签 TLV（`NSURL minimalBookmark`）兜底提取引擎**：在 `iOS 26.3.x` 与 `iOS 27.x` 上均可直接从 `.csstore` 提取并校验有效的应用数据（`Application`）、扩展插件（`PluginKitPlugin`）、应用共享组（`AppGroup`）与守护进程（`InternalDaemon`）容器路径，无论容器 Inode 高低均可秒级加载。\n\n2. **拆分「FaceTime 空间音频」与「空间音频录制」，新增非四麦克风机型自动防呆（修复 #19）**：\n   - 将原合并开关拆分为独立的 **「FaceTime 空间音频」**（`spatial-facetime-audio`，纯软件声场渲染，兼容 `iPhone 15 Pro` 及更早机型）与 **「空间音频录制（相机 / 语音备忘录录音室）」**（`spatial-audio-recording`）；\n   - 对非四麦克风阵列旧机型（`iPhone 15` 系列及更早三麦克风机型）默认自动防呆锁定关闭「空间音频录制」，避免语音备…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v0.8.6/Erosion_v0.8.6_zh-Hans.ipa",
+          "size": 6047130
         }
       ]
     },
@@ -188,19 +188,26 @@
       "bundleIdentifier": "com.huami.gestultx",
       "developerName": "huamidev",
       "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份",
-      "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
+      "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
       "tintColor": "#6156e2",
-      "size": 2942882,
+      "size": 3552457,
       "versions": [
+        {
+          "version": "1.0.6",
+          "date": "2026-11-12T15:08:16Z",
+          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.6/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11122300`.\r\n\r\n### Added\r\n\r\n- Add custom lock screen text in System Settings, applied without restarting the device.\r\n- Add Wallpaper Settings for importing, applying and removing wallpaper packs, including `.tendies` and `.zip` import through the share extension.\r\n- Add App Launch Images with custom photos, full-resolution saving to Photos, automatic backups and restore.\r\n- Add Japanese localization based on [@kagithu](https://github.com/kagithu)'s contribution, with missing strings completed ([#124](https://github.com/huamidev/GestaltX/issues/124)).\r\n- Add the iPhone Air Dynamic Island layout ([#105](https://github.com/huamidev/GestaltX/pull/105)).\r\n\r\n### Changed\r\n\r\n- Add a symbol to Discard Ch…",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.6/GestaltX_1.0.6.ipa",
+          "size": 3552457,
+          "buildVersion": "11122300",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.5",
           "date": "2026-11-11T03:45:16Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/144c0c44a762db616089faddfbc0581929ae1a0a/CHANGELOG_ZH-CN.md#105---2026-11-11)\n\nBuild `11111140`.\n\n### Added\n\n- Spanish localization, bringing the app to nine supported locales ([#97](https://github.com/huamidev/GestaltX/pull/97)).\n- iPhone Air model presets ([#92](https://github.com/huamidev/GestaltX/pull/92)) and a Japanese README ([#83](https://github.com/huamidev/GestaltX/pull/83)).\n\n### Changed\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations ([#84](https://github.com/huamidev/GestaltX/pull/84)) and corrected mixed-language text in\n  Traditional Chinese and other locales ([#61](https://git…",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
-          "size": 2942882,
-          "buildVersion": "11111140",
-          "minOSVersion": "26.0"
+          "size": 2942882
         },
         {
           "version": "1.0.4",
@@ -208,13 +215,6 @@
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.4/CHANGELOG_ZH-CN.md)\n\nBuild `11101436`.\n\n### Added\n\n- WAPI preset under **Device → Presets**: disable the WAPI regulatory flag or\n  restore the recorded original value. The cached Boolean is resolved from the\n  device's own MobileGestalt image instead of a hard-coded slot (#30).\n- Per-device originals for the WAPI flag. The value survives edits, app\n  restarts, journal migration, and is restored together with the other cached\n  options (#30).\n- New display presets: high-luminance Always-On Display, AOD flipbook and its\n  entry count, HDR photo display, wallpaper parallax control, and experimental\n  PWM and DisplayPort capability flags.\n- New device presets: Collision SOS, Audio Mix, and Spatial FaceTime audio.\n- New intellige…",
           "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.4/GestaltX_1.0.4.ipa",
           "size": 2865180
-        },
-        {
-          "version": "1.0.3",
-          "date": "2026-11-09T16:23:40Z",
-          "localizedDescription": "GestaltX 1.0.3\r\n• 新增分享导入：在“文件”或其他 App 中分享 plist 到 GestaltX，核验后弹窗确认导入。\r\n• 加强设备归属校验，拒绝不匹配或无法核验的文件；本机导出的文件可携带设备校验凭证。\r\n• 优化 MG 控制，支持新增、修改、重命名和删除键值。\r\n• 支持恢复已核验的本机 plist，恢复前自动备份，完成后请重启设备。\r\n\r\n重签时请保留分享扩展，并为主应用和扩展配置同一个 App Group。\r\n\r\nGestaltX 1.0.3\r\n• Added share import: share a plist to GestaltX from Files or another app, then confirm the import after verification.\r\n• Strengthened device ownership checks. Mismatched or unverifiable files are rejected; exports can include a device-bound verification proof.\r\n• Improved MG Control with support for adding, editing, renaming, and deleting keys and values.\r\n• Added restoration of verified device plists, with an automatic backup before restoring. Restart your device afterward.\r\n\r\nWhen re-signing, keep the share extension and configure the same App Group f…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.3/GestaltX_1.0.3.ipa",
-          "size": 2744822
         }
       ]
     },
@@ -261,16 +261,23 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
-      "size": 47376820,
+      "size": 48080581,
       "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-11-12T10:41:39Z",
+          "localizedDescription": "## iPadn 2.0.0\n\niPadn 2.0 是一次大更新：新增发现页、用户评论、翻译、应用锁、本机应用、Wi‑Fi 传输、灵动岛下载进度、小组件和快捷指令，原生安装可以阻止 App Store 更新，并开始支持 iOS / iPadOS 16。安装包未签名，请用自己的工具签名后安装。\n\n**两个安装包**\n\n- `iPadn-2.0.0-unsigned.ipa`：标准版，包含实时活动（灵动岛、锁屏）和小组件，签名时需要 2 个 App ID。\n- `iPadn-2.0.0-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID，适合 App ID 数量有限的签名方式。其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可以添加源 `https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`，在工具里直接安装和更新。\n\n**发现与应用详情**\n\n- 搜索页新增「发现」：免费榜、付费榜、畅销榜，可切换地区并按分类筛选。\n- 详情页新增「评论」，可查看各地区最近的用户评论并按星级筛选。\n- 简介和更新说明不是你的语言时，可以用系统翻译替换为译文（iOS 17.4 及更新版本）。\n- 版本历史默认显示最近 5 个版本。\n\n**下载与安装**\n\n- 锁屏和灵动岛显示下载进度（可在设置中关闭）。\n- 新增「仅使用 Wi‑Fi 下载」和「下载完成后自动安装」。\n- 下载页可以「全部更新」，编辑模式改为紧凑列表并支持全选。\n- 任务详情新增「安装包信息」：权限、扩展、语言、URL Scheme、后台模式等。\n- 原生安装新增「阻止 App Store 更新」：App Store 会把应用视为最新版本，不再提示或自动更新；关闭后再安…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.0.0/iPadn-2.0.0-lite-unsigned.ipa",
+          "size": 48080581,
+          "buildVersion": "28",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.9.2",
           "date": "2026-11-11T11:19:37Z",
           "localizedDescription": "## iPadn 1.9.2\n\n本版本新增「支持 iPadn」页面，改进诊断信息，并修复两个问题。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n**支持 iPadn**\n\n- 新增「账号 › 设置 › 支持 iPadn」：iPadn 会一直免费开源、没有广告；如果它帮到了你，可以通过爱发电（支付宝、微信）或 USDT（BEP20）请作者喝杯咖啡，也可以在 GitHub 点个 Star 或帮忙改进翻译。\n\n**下载**\n\n- 修复部分签名方式下下载完成后提示「未能打开文件 CFNetworkDownload_….tmp，因为你没有查看它的权限」（#36）：遇到这种情况会自动改用应用内下载重新下载一次，之后的下载直接在应用内进行，下载时请保持 iPadn 在前台。首次启动时的后台下载检测也会检查文件能否读取。\n\n**诊断**\n\n- 「账号 › 设置 › 维护」新增「复制诊断信息」：在 LiveContainer 等无法弹出分享面板的环境中，可以直接复制后粘贴反馈。\n- 诊断信息会记录最近失败的请求：时间、服务器、接口名称和状态码，不包含账号、链接参数或登录凭据，方便定位下载失败。\n- Apple 返回 401 时，提示登录可能已失效并建议重新登录账号，不再只显示「网络请求失败」。\n\n**应用图标**\n\n- 修复更新 iPadn 后，主屏幕上仍是之前选择的浅色或跟随系统图标，「设置」里却显示为深色。从本版本起 iPadn 会记住你选择的图标；更新前就遇到这种情况时，在「设置 › 应用图标 › 图标主题」中重新选择一次即可。\n\n**English**\n\nAdds a Support iPadn page under Account › Settings: iPadn stays free, open source and ad-fr…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.2/iPadn-1.9.2-unsigned.ipa",
-          "size": 47376820,
-          "buildVersion": "27",
-          "minOSVersion": "17.0"
+          "size": 47376820
         },
         {
           "version": "1.9.1",
@@ -278,13 +285,6 @@
           "localizedDescription": "## iPadn 1.9.1\r\n\r\n本版本新增多语言界面，并修复若干显示问题。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\r\n\r\n**多语言**\r\n\r\n- 界面支持 11 种语言：简体中文、繁體中文、English、日本語、한국어、Русский、Español、Français、Deutsch、Português (Brasil)、العربية。iPadn 跟随系统语言，也可以在「设置 › iPadn › 语言」中单独设置。\r\n- 阿拉伯语使用从右到左的排版，列表左滑、右滑等操作随之镜像。\r\n- 内购项目名称按界面语言显示，例如日语界面读取日本区的名称。\r\n- 英文翻译由 [kylefmohr](https://github.com/kylefmohr) 贡献（#35）；其他语言为机器辅助翻译，欢迎在 Issues 或 Pull Request 中纠错。\r\n\r\n**修复与改进**\r\n\r\n- 修复简体中文界面下，多地区价格中的「免费」可能显示为繁体，应用详情中的价格可能显示为英文「Free」。\r\n- 关注应用的价格变化通知跟随界面语言，不再跟随地区设置。\r\n- 搜索结果中的分类单独一行，较长的分类名不再挤掉版本号。\r\n- 已购项目的下载按钮改为云朵图标，购买日期可以完整显示。\r\n- 安装设置中的安装方式在各语言下使用简短名称，都能完整显示。\r\n\r\n**English**\r\n\r\niPadn now speaks 11 languages: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Russian, Spanish, French, German, Portuguese (Brazil) and Arabic, with a right…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.1/iPadn-1.9.1-unsigned.ipa",
           "size": 47322069
-        },
-        {
-          "version": "1.9.0",
-          "date": "2026-11-11T00:17:29Z",
-          "localizedDescription": "## iPadn 1.9.0\n\n本版本新增原生安装，并集中修复下载、验证和界面细节。适用于 iOS / iPadOS 17 及更新版本；安装包未签名，请用自己的工具签名后安装。\n\n**原生安装**\n\n- 新增「原生安装」方式：通过系统自带的安装服务安装，效果与用电脑安装相同。App Store 能识别并更新安装的应用，爱思助手等工具显示为苹果正版，可以直接覆盖 App Store 已装的版本并保留数据。之前用其他方式安装、App Store 显示云朵的应用，用原生安装覆盖一次即可恢复。\n- iOS / iPadOS 27 起可以在手机上完成配对，不需要电脑：在「设置 › 隐私与安全性 › 开发者模式」中选择 iPadn，输入配对码即可。配对步骤和配对码实时显示在灵动岛、锁屏和通知中。\n- iOS 17.4 – 26 可导入电脑生成的远程配对文件；放进 iPadn 的「文件」文件夹会自动导入。\n- 需要 LocalDevVPN。安装包不会离开这台设备；默认安装方式不变。\n\n**下载与验证**\n\n- 下载或获取应用需要验证 Apple 账户时，会先替你请求 Apple 发送验证码，再显示输入页；新增「重新发送验证码」。下载列表、已购批量下载和 Mac 安装包也会直接弹出验证，验证后自动继续。\n- 持续保存 Apple 返回的会话信息，减少获取新应用时反复要求验证。\n- 修复部分签名下载到 100% 后又从头下载：首次启动时用一个很小的文件检测后台下载是否可用，不可用时直接改用应用内下载。\n- 点「获取」后更快开始：下载、登录等操作排在后台读取版本信息之前，签名组件保留更久，并在打开应用详情时提前准备。\n- 暂停的任务在详情中显示已下载大小、百分比和总大小。\n\n**版本来源**\n\n- 新增默认版本来源 iosdump；接口地址同时支持 `{id}` 与 `{appId}`。\n- …",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v1.9.0/iPadn-1.9.0-unsigned.ipa",
-          "size": 46851248
         }
       ]
     },

@@ -314,23 +314,16 @@
       "localizedDescription": "An unofficial E-Hentai App for iOS built with SwiftUI & TCA.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.ehpanda.png?v=aeb2413f9c17",
       "tintColor": "#56b297",
-      "size": 18850504,
+      "size": 7352364,
       "versions": [
-        {
-          "version": "3.0.0",
-          "date": "2026-11-11T14:08:56Z",
-          "localizedDescription": "## Features\r\n\r\n- **Offline downloads.** Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- **Date Seek.** Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- **WebP images** are now supported.\r\n- **Redesigned toasts.** Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\n\r\n## Bugfixes\r\n\r\n- The page slider and the current page no longer drift out of sync\r\n- Fixed a gesture problem in the reading control panel…",
-          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-Beta.ipa",
-          "size": 18850504,
-          "buildVersion": "158",
-          "minOSVersion": "27.0"
-        },
         {
           "version": "2.8.1",
           "date": "2026-07-20T12:12:04Z",
           "localizedDescription": "1. feat: Adapt to the new Liquid Glass design.\r\n3. fix: Gesture issue in the reading page.\r\n4. fix: Crash issue in eh setting page.\r\n5. fix: A minor issue in search page.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.8.1/EhPanda.ipa",
-          "size": 7352364
+          "size": 7352364,
+          "buildVersion": "158",
+          "minOSVersion": "26.0"
         },
         {
           "version": "2.7.10",
@@ -338,6 +331,13 @@
           "localizedDescription": "1. Fixed reading page scroll functionality.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
           "size": 7231227
+        },
+        {
+          "version": "2.7.9",
+          "date": "2024-12-15T05:32:14Z",
+          "localizedDescription": "1. Fixed reading page gestures not responding issue when scale is greater than 1.\r\n閲覧ページでスケール係数が 1 より大きい場合にジェスチャーが動作しなくなる不具合を修正しました。\r\n修正了閱讀頁面中縮放比例大於 1 時出現的手勢失效問題。\r\n\r\n2. Improved Taiwanese Mandarin & Traditional Chinese (HK) localizations. (credit @NeKoOuO)\r\n台湾華語と中国語繁体字（香港）の翻訳を改善しました。\r\n改善了台灣華語和繁體中文（香港）翻譯。",
+          "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.9/EhPanda.ipa",
+          "size": 7231285
         }
       ]
     },
@@ -622,16 +622,23 @@
       "localizedDescription": "基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕，支持实时超分辨率。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.example.kazumi.png?v=e1e18b5bfdc4",
       "tintColor": "#b1e572",
-      "size": 30439714,
+      "size": 30341213,
       "versions": [
+        {
+          "version": "2.4.4",
+          "date": "2026-11-12T10:27:44Z",
+          "localizedDescription": "- 适配 flutter 3.50",
+          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.4/Kazumi_ios_2.4.4_no_sign.ipa",
+          "size": 30341213,
+          "buildVersion": "20404",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "2.4.3",
           "date": "2026-11-04T12:12:33Z",
           "localizedDescription": "- 新增自定义规则仓库支持 (#2485) (@chendianshuiyin)\r\n- 优化远程投屏体验 (#2797 #2798) (@DSplay123)\r\n- 新增 iPhone Duo 内屏支持 (@Predidit)\r\n- 修复批量下载时排队剧集没有缓存弹幕的问题 (#2780) (@wanxinlei1)\r\n- 修复退出后系统托盘图标残留的问题 (#2762) (@fgfsgsgvo)\r\n- 修复 deb 软件包在精简安装的发行版上无法启动的问题 (#2755) (@Huayuluoshi)\r\n- 优化追番页切换分类时的流畅度 (@Predidit)\r\n- 文档更新 (@Predidit)",
           "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.3/Kazumi_ios_2.4.3_no_sign.ipa",
-          "size": 30439714,
-          "buildVersion": "20403",
-          "minOSVersion": "15.0"
+          "size": 30439714
         },
         {
           "version": "2.4.2",
@@ -639,13 +646,6 @@
           "localizedDescription": "- 修复部分地区规则仓库无法访问的问题",
           "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.2/Kazumi_ios_2.4.2_no_sign.ipa",
           "size": 30521004
-        },
-        {
-          "version": "2.4.1",
-          "date": "2026-10-22T15:04:45Z",
-          "localizedDescription": "- 修复规则镜像在部分地区无法访问的问题 (#2747 #2748) (@Predidit)\r\n- 修复 linux 平台 deeplink 无法使用的问题 (@Tobiichi-Origuchi)\r\n> [!NOTE]\r\n> 这是 2.4.0 的热修复版本，更多更新日志参考 2.4.0",
-          "downloadURL": "https://github.com/Predidit/Kazumi/releases/download/2.4.1/Kazumi_ios_2.4.1_no_sign.ipa",
-          "size": 30514613
         }
       ]
     },
@@ -1007,14 +1007,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1198455866,
+      "size": 1198857809,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-12T04:58:35Z",
-          "localizedDescription": "## Alpha Build `62c0512`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`62c0512`](https://github.com/Provenance-Emu/Provenance/commit/62c0512f8a42156ae2cd43c988884f23eb85ea30) |\n| **Built** | 2026-11-12 04:57 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43153031928) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n62c0512f8 docs(input): add Wii shake and GameCube triggers to the design; plan for steps 0-2\n90a19eff5 feat(display): rules for imported and per-game bezels\n74fadde49 docs(input): design for controller touchpad and gyro as pause, mouse, pointe…",
+          "date": "2026-11-12T08:44:28Z",
+          "localizedDescription": "## Alpha Build `526bea8`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`526bea8`](https://github.com/Provenance-Emu/Provenance/commit/526bea8920c8c300fff30f3c75ad3b71807b8c01) |\n| **Built** | 2026-11-12 08:43 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43178979464) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n526bea892 feat(controller): aim with the controller gyro, live pointer settings\nac35bb071 feat(controller): a pad's touchpad is the light gun\n7ecc52d04 resolved\ne67224463 dilphon\n6968708c9 fix(ui): keep the TV layout while the keyboard is up o…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1198455866,
+          "size": 1198857809,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1131,18 +1131,25 @@
       "developerName": "FrizzleM",
       "subtitle": "在 iOS 27 设备上纯端侧安装 SideStore",
       "localizedDescription": "An an app that installs Sidestore on iOS 27, fully on-device",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.frizzlem.sideinstaller.png?v=f5575a80ef0e",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.frizzlem.sideinstaller.png?v=e46ebd639976",
       "tintColor": "#6156e2",
-      "size": 10739837,
+      "size": 10634541,
       "versions": [
+        {
+          "version": "2.0.0",
+          "date": "2026-11-12T16:22:11Z",
+          "localizedDescription": "### Added\n- **AltStore.** AltStore Classic is on the Install tab and in Side by Side, from AltStore's own source, with the download checked against the SHA-256 it lists. Its pairing file goes where AltStore reads it, so setting up Remote AltServer skips pairing.\n\n### Changed\n- **A quieter look.** A still, near-black background with plain cards and an off-white main button. Blue marks only progress, selections and links. The pairing code shows one key per digit, on the Lock Screen too, and nothing pulses, breathes or bounces any more.\n- **Setup takes three pages** (the terms, the sideinstaller.net question and your Apple ID) under a progress bar, and picks up where it stopped.\n- **The app picker shows each app's icon.**\n\n### Fixed\n- **AltStore installed as a custom IPA gets its pairing file…",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.0.0/SideInstaller.ipa",
+          "size": 10634541,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "1.7.0",
           "date": "2026-11-09T17:55:39Z",
           "localizedDescription": "### Added\n- **Turkish.** Pick Türkçe in Settings › Language. Thanks to Mr3242-Scripter (#111).\n- **A nudge to update to iOS 27 at setup** on devices that can run it: on iOS 27 the iPhone pairs with itself, no computer needed.\n\n### Changed\n- **Side by Side goes step by step** and can now install SideStore and LiveContainer + SideStore too (Stable or Nightly), each set up with the pairing file on the other iPhone.\n- **Your Apple ID session and pairing stay on this iPhone:** private files are left out of backups, and the saved password is kept in the Keychain for this device only. After restoring a backup, sign in and pair again.\n\n### Fixed\n- Keys and passwords no longer end up in the activity log or problem reports.\n- Side by Side no longer keeps the other person's signing key on your iPhone…",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.7.0/SideInstaller.ipa",
-          "size": 10739837,
-          "buildVersion": "1",
-          "minOSVersion": "17.4"
+          "size": 10739837
         },
         {
           "version": "1.6.5",
@@ -1150,13 +1157,6 @@
           "localizedDescription": "# Added\r\n\r\n- Madeira is now fetched from its main repo, with stable and nightly releases being given as a choice to the user\r\n\r\n# Fixed\r\n\r\n- An imported SideStore, LiveContainer + SideStore or Madeira .ipa is now set up just like the download, including SideStore's pairing file and certificate (#108). Where GitHub can't be reached, as in mainland China, a card explains how to bring the .ipa this way.\r\n- Apps with an ExtensionKit extension (in Extensions rather than PlugIns) install instead of failing with “Mismatched bundle IDs”: those extensions now get the app's new bundle ID, its provisioning profile and their own signature (#110).\r\n- Apps with data after a binary's signature, such as IPAs taken from a TrollStore install, can be signed instead of stopping with “cannot grow a code signat…",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.6.5/SideInstaller.ipa",
           "size": 10380171
-        },
-        {
-          "version": "1.6.4",
-          "date": "2026-10-31T14:30:24Z",
-          "localizedDescription": "# Fixed\n\n- Inside LiveContainer, “Use SideStore's certificate” now works (#95). SideStore's reply can't reach SideInstaller there, so SideInstaller takes the certificate LiveContainer holds instead (its built-in SideStore's, or the copy LiveContainer imported) and checks it against your Apple ID as before.\n- Inside LiveContainer, “Get it from SideStore” now imports the pairing file LiveContainer's built-in SideStore keeps, asking first, instead of opening SideStore for a reply that never came. In Multitask Mode, or when there's no file to take, it says what to do instead.",
-          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.6.4/SideInstaller.ipa",
-          "size": 10345806
         }
       ]
     },

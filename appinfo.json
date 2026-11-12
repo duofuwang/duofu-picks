@@ -152,15 +152,6 @@
     "size": 8938581,
     "source_repo": "weiran/Hackers"
   },
-  "Predidit/Kazumi@2.4.3": {
-    "bundleIdentifier": "com.example.kazumi",
-    "displayName": "Kazumi",
-    "version": "2.4.3",
-    "build": "20403",
-    "minOSVersion": "15.0",
-    "size": 30439714,
-    "source_repo": "Predidit/Kazumi"
-  },
   "czy0729/Bangumi@8.41.1": {
     "bundleIdentifier": "tv.bangumi.czy0729",
     "displayName": "Bangumi",
@@ -205,15 +196,6 @@
     "minOSVersion": "15.0",
     "size": 26431983,
     "source_repo": "deretame/Breeze"
-  },
-  "EhPanda-Team/EhPanda@3.0.0": {
-    "bundleIdentifier": "app.ehpanda",
-    "displayName": "EhPanda",
-    "version": "3.0.0",
-    "build": "158",
-    "minOSVersion": "27.0",
-    "size": 19041995,
-    "source_repo": "EhPanda-Team/EhPanda"
   },
   "pounat/absorb@1.12.1-304": {
     "bundleIdentifier": "com.barnabas.absorb",
@@ -404,15 +386,6 @@
     "size": 33314067,
     "source_repo": "simonoppowa/OpenNutriTracker"
   },
-  "FrizzleM/SideInstaller@1.7.0": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "1.7.0",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10739837,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "missuo/kumone@0.3.32": {
     "bundleIdentifier": "sb.moe.kumone-ios",
     "displayName": "Kumone",
@@ -467,15 +440,6 @@
     "size": 140303052,
     "source_repo": "itzzace/ytkace"
   },
-  "huamidev/GestaltX@1.0.5": {
-    "bundleIdentifier": "com.huami.gestultx",
-    "displayName": "GestaltX",
-    "version": "1.0.5",
-    "build": "11111140",
-    "minOSVersion": "26.0",
-    "size": 2942882,
-    "source_repo": "huamidev/GestaltX"
-  },
   "project-robius/robrix@1.0.0-beta.6": {
     "bundleIdentifier": "rs.robius.robrix",
     "displayName": "Robrix",
@@ -484,24 +448,6 @@
     "minOSVersion": "15.0",
     "size": 65215535,
     "source_repo": "project-robius/robrix"
-  },
-  "Kianuni/Erosion-CN@0.8.5": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "0.8.5",
-    "build": "20",
-    "minOSVersion": "26.0",
-    "size": 6039610,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
-  "mengangs/ipadn@1.9.2": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "1.9.2",
-    "build": "27",
-    "minOSVersion": "17.0",
-    "size": 47376820,
-    "source_repo": "mengangs/ipadn"
   },
   "lollipopkit/flutter_server_box@1.0.1925": {
     "bundleIdentifier": "com.lollipopkit.toolbox",
@@ -529,5 +475,59 @@
     "minOSVersion": "26.0",
     "size": 916594333,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "huamidev/GestaltX@1.0.6": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "displayName": "GestaltX",
+    "version": "1.0.6",
+    "build": "11122300",
+    "minOSVersion": "26.0",
+    "size": 3552457,
+    "source_repo": "huamidev/GestaltX"
+  },
+  "Kianuni/Erosion-CN@0.9.1": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "0.9.1",
+    "build": "23",
+    "minOSVersion": "26.0",
+    "size": 6277874,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "mengangs/ipadn@2.0.0": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.0.0",
+    "build": "28",
+    "minOSVersion": "16.0",
+    "size": 48080581,
+    "source_repo": "mengangs/ipadn"
+  },
+  "FrizzleM/SideInstaller@2.0.0": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "2.0.0",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10634541,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "Predidit/Kazumi@2.4.4": {
+    "bundleIdentifier": "com.example.kazumi",
+    "displayName": "Kazumi",
+    "version": "2.4.4",
+    "build": "20404",
+    "minOSVersion": "15.0",
+    "size": 30341213,
+    "source_repo": "Predidit/Kazumi"
+  },
+  "EhPanda-Team/EhPanda@2.8.1": {
+    "bundleIdentifier": "app.ehpanda",
+    "displayName": "EhPanda",
+    "version": "2.8.1",
+    "build": "158",
+    "minOSVersion": "26.0",
+    "size": 7352364,
+    "source_repo": "EhPanda-Team/EhPanda"
   }
 }
