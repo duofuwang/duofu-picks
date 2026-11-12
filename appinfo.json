@@ -521,13 +521,13 @@
     "size": 48367660,
     "source_repo": "cogwheel0/conduit"
   },
-  "JiangNanGenius/floe-agent@1.8.10": {
+  "JiangNanGenius/floe-agent@1.8.11": {
     "bundleIdentifier": "org.floeagent.ios",
     "displayName": "Floe Agent",
-    "version": "1.8.10",
-    "build": "332",
+    "version": "1.8.11",
+    "build": "333",
     "minOSVersion": "26.0",
-    "size": 915566752,
+    "size": 916594333,
     "source_repo": "JiangNanGenius/floe-agent"
   }
 }

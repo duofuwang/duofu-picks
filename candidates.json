@@ -314,14 +314,14 @@
       "localizedDescription": "An unofficial E-Hentai App for iOS built with SwiftUI & TCA.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.ehpanda.png?v=aeb2413f9c17",
       "tintColor": "#56b297",
-      "size": 18819632,
+      "size": 18850504,
       "versions": [
         {
           "version": "3.0.0",
           "date": "2026-11-11T14:08:56Z",
           "localizedDescription": "## Features\r\n\r\n- **Offline downloads.** Save galleries to your device and read them with no connection. Sort them into folders, and let the app repair a download that got interrupted or update it later. Downloads keep going while the app is in the background and won't get cut off partway.\r\n- **Date Seek.** Jump straight to a specific date while paging through a gallery. It works on the Frontpage, Watched and Favorites lists.\r\n- **WebP images** are now supported.\r\n- **Redesigned toasts.** Progress and status messages (login, page jump, background updates, and more) now show as a sleek glass toast at the bottom of the screen instead of a pop-up spinner.\r\n\r\n## Bugfixes\r\n\r\n- The page slider and the current page no longer drift out of sync\r\n- Fixed a gesture problem in the reading control panel…",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/3.0.0/EhPanda-Beta.ipa",
-          "size": 18819632,
+          "size": 18850504,
           "buildVersion": "158",
           "minOSVersion": "27.0"
         },
@@ -349,16 +349,23 @@
       "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 915566752,
+      "size": 916594333,
       "versions": [
+        {
+          "version": "1.8.11",
+          "date": "2026-11-12T05:27:26Z",
+          "localizedDescription": "# Floe 1.8.11 (333)\n\n## 简体中文\n\n- 改善会议录音、转写提示与页面布局。回放加入可拖动时间轴、前后跳转和播放／暂停；调整语音输入的中断处理。\n- 改进计划与目标的衔接，目标可编辑、暂停、继续和删除。暂停或删除目标只影响后续自动推进，当前这轮工作继续；输入框的停止会停止本轮并暂停对应目标。同轮继续不会自动重新开启长期目标。\n- 记忆列表用“已保留”区分保存与实际使用。浏览不再延长保留期限，已删除任务的旧信息逐步淡化与归档，固定内容、长期偏好和当前任务引用受到保护。\n- 完善二维 CAD、地图及原理图／PCB 助手的编辑、查询与操作反馈，加入三维元件库。独立二维图纸隐藏不适用的三维草图提示栏。\n- 整理图片编辑菜单与小屏参数入口，区分新建文字和更新文字；助手可查看编辑历史、撤销和重做。\n- 改善生物编辑器中已保存序列与运行结果的显示和选择，统一化学、生物计算对所选环境的使用。\n- 改进 Office 公式结果更新与 Word 标题转换，以及部分模型服务的工具请求兼容性和任务停止、恢复提示。\n- 模型设置增加“不发送思考参数”开关，用于不兼容的自定义接口；按实际能力选择支持的思考强度，并保留模型返回的思考内容。\n- 改善长文档的分段读取、追加写入和校验保存，优先使用原生文件工具。文件已保存但预览暂不可用时，不再误报整次写入失败。\n- Mac Bridge 支持按授权读取 Mac 上指定的文件和图片，包括其它工作区；旧 Mac 端不支持时会提示更新。\n- 普通 PDF 手记移除不相关的 LaTeX 编辑入口。帮助内容按 iOS、Android 整理，保留 iPhone Duo 的展开布局和草稿连续性。\n\n请重点反馈录音与回放、目标暂停／继续／停止的区别、旧记忆保留、编辑器助手的结果显示与撤销，以及 Office、Mac Bridge 和 Duo 布局的实际…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.11/Floe-Agent-1.8.11-build333-unsigned.ipa",
+          "size": 916594333,
+          "buildVersion": "333",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.8.10",
           "date": "2026-11-11T18:11:44Z",
           "localizedDescription": "# Floe 1.8.10 (332)\n\n## 简体中文\n\n- 失败工具卡片支持手动收起，并在结果刷新后保持选择；精简回复操作栏。\n- 独立二维 CAD 移除不适用的三维、加工和仿真入口；三维草图编辑时固定视角，退出后恢复。\n- 更新图片编辑器的颜色调整、预览和导出功能。\n\n- 编辑器中的 AI 助手与普通聊天分开，避免不同作品的会话混入聊天列表。\n- 改善聊天列表中的失败、受阻和待处理提示，可打开原聊天查看原因并继续处理。\n- 修正部分流式回复结束后的状态收尾，改善后台任务的进度、停止和结束提示。\n- 改善会议录音的实时字幕衔接和说话人标记；离开录音页时可选择继续录音或停止。\n- 改进工具箱的显示和常用操作，路由跟踪可配合本地信息库显示 IP 地区和网络信息。\n- 三维编辑器的草图页可导入 DXF/DWG，也可从本 App 的二维 CAD 项目选择草图并加入当前草图。直接复制原生曲线和构造图形，原项目保持独立。\n\n请重点检查作品助手与普通聊天的区分、回复结束与等待提示、录音页的继续和停止，以及工具箱操作。CAD 导入请检查多个源草图的选择、实际尺寸、取消和一次撤销；只复制图形，尺寸约束与关联留在原项目。\n\n## English\n\n- Simplifies reply actions. Failed tool cards respect manual collapse when results refresh.\n- Removes unsuitable 3D, manufacturing and simulation actions from standalone 2D CAD. Editing a 3D sketch locks the view to its plane and restores the view when you finish.\n- Updates i…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.10/Floe-Agent-1.8.10-build332-unsigned.ipa",
-          "size": 915566752,
-          "buildVersion": "332",
-          "minOSVersion": "26.0"
+          "size": 915566752
         },
         {
           "version": "1.8.9",
@@ -366,13 +373,6 @@
           "localizedDescription": "# Floe 1.8.9 (331)\n\n## 简体中文\n\n- 修复打开气压计、指南针、陀螺仪等测量工具时的闪退，并修复同类声音采集回调问题。\n- 自定义倒计时改用时、分、秒滚轮，支持上下滑动选择时长。\n- 修复部分旧化学项目无法删除、提示“未授权”的问题。\n- 修复部分生物项目无法从回收站彻底清理的问题，并保留删除失败后的继续清理能力。\n- 修正部分完成按钮和本地终端屏幕错误提示的显示。\n- 目标设置成功后，输入框返回普通 Agent 模式；保存失败时保留目标表单与草稿，便于修改重试。\n- 支持 AI 为当前已授权任务设置目标，并提示目标暂停、继续和受阻状态。\n\n本次为中间内测更新。请重点检查测量工具的打开和退出、倒计时设置，以及旧项目的删除、恢复和回收站清空。也请检查目标保存成功或失败后的输入框行为、AI 为当前任务设置目标，以及暂停、继续和受阻提示。Linux GPU 与新增视频硬件解码另行继续，后续完整版本再安排公开 TestFlight。\n\n## English\n\n- Fixes crashes when opening the barometer, compass, gyroscope and related measurement tools, and corrects the same callback issue in sound capture.\n- Uses hour, minute and second wheels to set a custom timer by scrolling.\n- Fixes an unauthorized error when deleting some older chemistry projects.\n- Fixes permanent deletion of some biology projects from Tr…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.9/Floe-Agent-1.8.9-build331-unsigned.ipa",
           "size": 914457675
-        },
-        {
-          "version": "1.8.8",
-          "date": "2026-11-11T06:25:26Z",
-          "localizedDescription": "# Floe 1.8.8 (330)\n\n## 简体中文\n\n- 设置新增“帮助与指南”，提供双语离线文档、搜索、章节定位和相关设置入口；助手回答可引用指南。\n- 文件助手按文件收纳会话，可继续同一文件的对话，并在任务运行时选择引导当前任务或排队输入。\n- 改善音乐录制的计时与对齐，保留已有片段，并可播放已有轨道作为伴奏。\n- 会议支持连续录音和分段转写，提供说话人标签、改名与合并，方便整理记录和回听。\n- 完善文件、回收站与关联助手的删除和恢复，改善化学、生物、地图及媒体编辑中的对象操作、撤销和保存。\n- 改进任务完成状态、中断恢复和无效请求提示；任务等待保留原会话，倒计时支持暂停、继续和取消。\n- 扩展工具箱的测量、换算、定位、扫描与计时功能；网络路径逐跳显示，停止后保留已有结果，可选下载离线 IP 资料库查看地区与 ASN 信息。\n- 修正部分 Mac Bridge 1.1.3 命令和文件传输响应出错时误报版本不兼容的问题。\n- 改善 iPhone 窄屏与展开布局中的导航、侧栏和弹窗，减少遮挡并保持当前编辑现场。\n- 收紧绘画输入选项的布局，并将“流程图”入口统一命名为“思维导图”。\n- 更新本地 Linux 组件与服务停止管理。请重点反馈 Linux 图形应用的启动、交互和停止体验。\n\n本次为中间内测版本，新增的 Linux 视频硬件解码未纳入；应用内原有视频编辑与播放功能保留。请重点检查音乐录制与伴奏、会议标签整理、帮助阅读、返回原任务及保存重开。云端服务需自行配置；录音需授予麦克风权限。Siri 与快捷指令沿用已有功能。\n\n## English\n\n- Adds Help and Guides in Settings, with bilingual offline articles, search, section links and links to relevan…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.8/Floe-Agent-1.8.8-build330-unsigned.ipa",
-          "size": 914328340
         }
       ]
     },
@@ -1007,14 +1007,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1198159597,
+      "size": 1198455866,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-11T19:58:00Z",
-          "localizedDescription": "## Alpha Build `0affd70`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`0affd70`](https://github.com/Provenance-Emu/Provenance/commit/0affd70519cbd9b7f11153c02215c5ffff2e5d79) |\n| **Built** | 2026-11-11 19:56 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43084263452) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n0affd7051 Render Provenance default overlays from bundled Format 2 artwork (#3811)\n```\n\n### Merged PRs\n- #3811: Render Provenance default overlays from bundled Format 2 artwork\n\n\n---\nThese builds are unsigned and intended for sideloading via A…",
+          "date": "2026-11-12T04:58:35Z",
+          "localizedDescription": "## Alpha Build `62c0512`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`62c0512`](https://github.com/Provenance-Emu/Provenance/commit/62c0512f8a42156ae2cd43c988884f23eb85ea30) |\n| **Built** | 2026-11-12 04:57 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43153031928) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n62c0512f8 docs(input): add Wii shake and GameCube triggers to the design; plan for steps 0-2\n90a19eff5 feat(display): rules for imported and per-game bezels\n74fadde49 docs(input): design for controller touchpad and gyro as pause, mouse, pointe…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1198159597,
+          "size": 1198455866,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
