@@ -197,15 +197,6 @@
     "size": 26431983,
     "source_repo": "deretame/Breeze"
   },
-  "pounat/absorb@1.12.1-304": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.12.1",
-    "build": "304",
-    "minOSVersion": "15.0",
-    "size": 48090333,
-    "source_repo": "pounat/absorb"
-  },
   "GopeedLab/gopeed@2.0.0-beta.4": {
     "bundleIdentifier": "com.gopeed.gopeed",
     "displayName": "Gopeed",
@@ -386,15 +377,6 @@
     "size": 33314067,
     "source_repo": "simonoppowa/OpenNutriTracker"
   },
-  "missuo/kumone@0.3.32": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.32",
-    "build": "416",
-    "minOSVersion": "16.0",
-    "size": 4060424,
-    "source_repo": "missuo/kumone"
-  },
   "lwh0630/TokenBar@1.2.9": {
     "bundleIdentifier": "dev.tokenbar.app",
     "displayName": "TokenBar",
@@ -412,15 +394,6 @@
     "minOSVersion": "26.1",
     "size": 24576338,
     "source_repo": "Rone89/cilicili"
-  },
-  "Sami-Wali/ryP0@2.3": {
-    "bundleIdentifier": "com.ry0.ryP0",
-    "displayName": "ryP0",
-    "version": "2.3",
-    "build": "1",
-    "minOSVersion": "17.0",
-    "size": 16597954,
-    "source_repo": "Sami-Wali/ryP0"
   },
   "Leviidev/Henge@0.3": {
     "bundleIdentifier": "com.henge.app",
@@ -467,24 +440,6 @@
     "size": 48367660,
     "source_repo": "cogwheel0/conduit"
   },
-  "JiangNanGenius/floe-agent@1.8.11": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.11",
-    "build": "333",
-    "minOSVersion": "26.0",
-    "size": 916594333,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
-  "huamidev/GestaltX@1.0.6": {
-    "bundleIdentifier": "com.huami.gestultx",
-    "displayName": "GestaltX",
-    "version": "1.0.6",
-    "build": "11122300",
-    "minOSVersion": "26.0",
-    "size": 3552457,
-    "source_repo": "huamidev/GestaltX"
-  },
   "Kianuni/Erosion-CN@0.9.1": {
     "bundleIdentifier": "com.jbdotparty.Erosion",
     "displayName": "Erosion",
@@ -503,15 +458,6 @@
     "size": 48080581,
     "source_repo": "mengangs/ipadn"
   },
-  "FrizzleM/SideInstaller@2.0.0": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "2.0.0",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10634541,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "Predidit/Kazumi@2.4.4": {
     "bundleIdentifier": "com.example.kazumi",
     "displayName": "Kazumi",
@@ -521,13 +467,67 @@
     "size": 30341213,
     "source_repo": "Predidit/Kazumi"
   },
-  "EhPanda-Team/EhPanda@2.8.1": {
+  "Sami-Wali/ryP0@2.3.2": {
+    "bundleIdentifier": "com.ry0.ryP0",
+    "displayName": "ryP0",
+    "version": "2.3.2",
+    "build": "1",
+    "minOSVersion": "17.0",
+    "size": 16554800,
+    "source_repo": "Sami-Wali/ryP0"
+  },
+  "huamidev/GestaltX@1.0.7": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "displayName": "GestaltX",
+    "version": "1.0.7",
+    "build": "11130112",
+    "minOSVersion": "26.0",
+    "size": 3563948,
+    "source_repo": "huamidev/GestaltX"
+  },
+  "FrizzleM/SideInstaller@2.0.1": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "2.0.1",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10770716,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "EhPanda-Team/EhPanda@3.0.0": {
     "bundleIdentifier": "app.ehpanda",
     "displayName": "EhPanda",
-    "version": "2.8.1",
-    "build": "158",
-    "minOSVersion": "26.0",
-    "size": 7352364,
+    "version": "3.0.0",
+    "build": "163",
+    "minOSVersion": "27.0",
+    "size": 18858405,
     "source_repo": "EhPanda-Team/EhPanda"
+  },
+  "missuo/kumone@0.3.34": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.34",
+    "build": "438",
+    "minOSVersion": "16.0",
+    "size": 4270017,
+    "source_repo": "missuo/kumone"
+  },
+  "pounat/absorb@1.12.1-305": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.12.1",
+    "build": "305",
+    "minOSVersion": "15.0",
+    "size": 48217939,
+    "source_repo": "pounat/absorb"
+  },
+  "JiangNanGenius/floe-agent@1.8.17": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.17",
+    "build": "338",
+    "minOSVersion": "26.0",
+    "size": 917946884,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }

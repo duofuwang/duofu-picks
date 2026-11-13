@@ -191,15 +191,15 @@
       "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
       "tintColor": "#6156e2",
-      "size": 3552457,
+      "size": 3563948,
       "versions": [
         {
-          "version": "1.0.6",
-          "date": "2026-11-12T15:08:16Z",
-          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.6/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11122300`.\r\n\r\n### Added\r\n\r\n- Add custom lock screen text in System Settings, applied without restarting the device.\r\n- Add Wallpaper Settings for importing, applying and removing wallpaper packs, including `.tendies` and `.zip` import through the share extension.\r\n- Add App Launch Images with custom photos, full-resolution saving to Photos, automatic backups and restore.\r\n- Add Japanese localization based on [@kagithu](https://github.com/kagithu)'s contribution, with missing strings completed ([#124](https://github.com/huamidev/GestaltX/issues/124)).\r\n- Add the iPhone Air Dynamic Island layout ([#105](https://github.com/huamidev/GestaltX/pull/105)).\r\n\r\n### Changed\r\n\r\n- Add a symbol to Discard Ch…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.6/GestaltX_1.0.6.ipa",
-          "size": 3552457,
-          "buildVersion": "11122300",
+          "version": "1.0.7",
+          "date": "2026-11-12T17:14:29Z",
+          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11130112`.\r\n\r\n### Fixed\r\n\r\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.",
+          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
+          "size": 3563948,
+          "buildVersion": "11130112",
           "minOSVersion": "26.0"
         },
         {
@@ -436,16 +436,23 @@
       "localizedDescription": "ryP0 is a modern iOS app library for discovering, downloading, and managing IPA files from GitHub and other sources, with automatic update tracking.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.ry0.ryP0.png?v=e9e8ae44fc4e",
       "tintColor": "#6456de",
-      "size": 16533197,
+      "size": 16554800,
       "versions": [
+        {
+          "version": "2.3.2",
+          "date": "2026-11-12T18:39:43Z",
+          "localizedDescription": "## 🌟 What's New\r\n\r\n### 🛠️ Bug Fixes & Improvements\r\n* **Update Tracker:** Resolved issues where app updates were not tracking or displaying properly.\r\n  > **New Setting:** Added **\"Track All Releases\"** — enable this to track the newest versions, even if they are Action builds.\r\n\r\n* **Installation Methods:** Fixed app installation failures and improved overall stability.",
+          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.3.2/ryP0-2.3.2.ipa",
+          "size": 16554800,
+          "buildVersion": "1",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "2.3",
           "date": "2026-11-10T20:28:12Z",
           "localizedDescription": "## 🌟 What's New\r\n\r\n### ❄️ Interactive Winter Theme\r\n* Snow now settles dynamically on cards and category tabs.\r\n* **Shake it loose:** Simply swipe across the category bar or long-press any card to shake the snow off.\r\n\r\n### 🎵 Background Music\r\n* Supports importing and playing your own local `.mp3` files.\r\n\r\n### 🧩 Strata & Kagura Support\r\n* Full compatibility to install apps and monitor updates directly through Strata and Kagura.\r\n\r\n### 🌸 Sakura Accent\r\n* Added a new soft-pink accent palette to refresh your interface aesthetics.\r\n\r\n### 📚 Multi-Source Unified Catalog\r\n* Combine multiple repositories into a single unified view. Choose exactly which sources to browse together.\r\n\r\n### ⚡ Prefer TIPA\r\n* Set TIPA as your default package format preference whenever both standard IPA and TIPA builds …",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.3/ryP0-2.3.ipa",
-          "size": 16533197,
-          "buildVersion": "1",
-          "minOSVersion": "17.0"
+          "size": 16533197
         },
         {
           "version": "2.2",
@@ -453,13 +460,6 @@
           "localizedDescription": "# What’s New\r\n\r\n- Install Apps Directly on LiveContainer 1 Without LiveContainer 2 (Thats include any Container App)\r\n- Improved background downloads and Live Activity handling (only for Sideload not work with Containers).\r\n- Added built-in file picker compatibility for **LiveContainer**, without requiring the **Fix File Picker** option.\r\n- Added the new **PS3** theme with and Colors.\r\n- Added Installation Location to track updates for installed apps \r\n- Improved download count and progress indicators on the **Downloads** tab.\r\n- Fix Sign-in with Google Account \r\n- Add sections for Port Category (Ready to Install) (Built it Yourself)\r\n\r\n## Notes\r\n\r\n**LiveContainer or any Container App Users:** Enable **\"Switch App Without Asking\"** from the settings.",
           "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.2/ryP0-unsigned.ipa",
           "size": 14531954
-        },
-        {
-          "version": "2.1",
-          "date": "2026-10-16T10:27:52Z",
-          "localizedDescription": "# What’s New\r\n\r\n## ryP0 2.1\r\n\r\n- Fixed IPA downloads for non LiveContainer users.\r\n- Added the new **Orbit** theme.\r\n- App requests now require **GitHub sign-in**, making it easier to track request status.\r\n\r\n## Notes\r\n\r\n**LiveContainer users:** Run ryP0 as a Shared App in LiveContainer 2 to keep LiveContainer 1 available for installations.",
-          "downloadURL": "https://github.com/Sami-Wali/ryP0/releases/download/2.1/ryP0-unsigned.ipa",
-          "size": 11010317
         }
       ]
     },
