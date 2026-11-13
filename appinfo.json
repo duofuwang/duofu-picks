@@ -125,15 +125,6 @@
     "size": 1196896816,
     "source_repo": "Provenance-Emu/Provenance"
   },
-  "mirazbakis/AltLoad@1.4.0": {
-    "bundleIdentifier": "com.mirazbakis.altload",
-    "displayName": "AltLoad",
-    "version": "1.4.0",
-    "build": "7",
-    "minOSVersion": "18.0",
-    "size": 11794981,
-    "source_repo": "mirazbakis/AltLoad"
-  },
   "YangJiiii/3105@2.0": {
     "bundleIdentifier": "com.apple.mobile.MobileHouseArrest",
     "displayName": "3105",
@@ -440,15 +431,6 @@
     "size": 6277874,
     "source_repo": "Kianuni/Erosion-CN"
   },
-  "mengangs/ipadn@2.0.0": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.0.0",
-    "build": "28",
-    "minOSVersion": "16.0",
-    "size": 48080581,
-    "source_repo": "mengangs/ipadn"
-  },
   "Predidit/Kazumi@2.4.4": {
     "bundleIdentifier": "com.example.kazumi",
     "displayName": "Kazumi",
@@ -466,15 +448,6 @@
     "minOSVersion": "17.0",
     "size": 16554800,
     "source_repo": "Sami-Wali/ryP0"
-  },
-  "huamidev/GestaltX@1.0.7": {
-    "bundleIdentifier": "com.huami.gestultx",
-    "displayName": "GestaltX",
-    "version": "1.0.7",
-    "build": "11130112",
-    "minOSVersion": "26.0",
-    "size": 3563948,
-    "source_repo": "huamidev/GestaltX"
   },
   "FrizzleM/SideInstaller@2.0.1": {
     "bundleIdentifier": "com.frizzlem.sideinstaller",
@@ -494,15 +467,6 @@
     "size": 18858405,
     "source_repo": "EhPanda-Team/EhPanda"
   },
-  "missuo/kumone@0.3.34": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.34",
-    "build": "438",
-    "minOSVersion": "16.0",
-    "size": 4270017,
-    "source_repo": "missuo/kumone"
-  },
   "pounat/absorb@1.12.1-305": {
     "bundleIdentifier": "com.barnabas.absorb",
     "displayName": "Absorb",
@@ -512,15 +476,6 @@
     "size": 48217939,
     "source_repo": "pounat/absorb"
   },
-  "JiangNanGenius/floe-agent@1.8.20": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.20",
-    "build": "341",
-    "minOSVersion": "26.0",
-    "size": 918213318,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "Lingyan000/fluxdo@0.2.30": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
     "displayName": "FluxDO",
@@ -529,5 +484,50 @@
     "minOSVersion": "15.0",
     "size": 41377170,
     "source_repo": "Lingyan000/fluxdo"
+  },
+  "huamidev/GestaltX@1.1.1": {
+    "bundleIdentifier": "com.huami.gestultx",
+    "displayName": "GestaltX",
+    "version": "1.1.1",
+    "build": "11140102",
+    "minOSVersion": "26.0",
+    "size": 6774794,
+    "source_repo": "huamidev/GestaltX"
+  },
+  "mengangs/ipadn@2.1.0": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.1.0",
+    "build": "30",
+    "minOSVersion": "16.0",
+    "size": 48684606,
+    "source_repo": "mengangs/ipadn"
+  },
+  "mirazbakis/AltLoad@1.5.0": {
+    "bundleIdentifier": "com.mirazbakis.altload",
+    "displayName": "AltLoad",
+    "version": "1.5.0",
+    "build": "8",
+    "minOSVersion": "18.0",
+    "size": 11992455,
+    "source_repo": "mirazbakis/AltLoad"
+  },
+  "missuo/kumone@0.3.35": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.35",
+    "build": "443",
+    "minOSVersion": "16.0",
+    "size": 4289752,
+    "source_repo": "missuo/kumone"
+  },
+  "JiangNanGenius/floe-agent@1.8.22": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.22",
+    "build": "343",
+    "minOSVersion": "26.0",
+    "size": 918244256,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }

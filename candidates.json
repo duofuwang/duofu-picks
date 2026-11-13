@@ -83,16 +83,23 @@
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 11794981,
+      "size": 11992455,
       "versions": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-13T15:34:23Z",
+          "localizedDescription": "## AltLoad 1.5.0\n\n### New\n- **altpair.** Install AltLoad with your own Apple ID, on the iPhone, with no computer, no DNS profile and no shared certificate. It uses three free App Store apps: rootshell, Open Minis and LocalDevVPN. I wrote it from scratch; the steps are on the [website](https://mirazbakis.github.io/AltLoad/) and the source is in [altpair](https://github.com/mirazbakis/AltLoad/tree/main/altpair).\n- **AltStore without AltServer.** After installing AltStore, AltLoad leaves this iPhone's pairing file where AltStore 2.3.1 and later look for it. Open AltStore › Settings › Set up Remote AltServer once, and it skips pairing; from then on AltStore installs and refreshes apps by itself, with AltLoad closed.\n- **JIT that stays.** AltLoad now stays with the app while it asks for JIT mem…",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.0/AltLoad.ipa",
+          "size": 11992455,
+          "buildVersion": "8",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.4.0",
           "date": "2026-11-01T09:56:00Z",
           "localizedDescription": "## AltLoad 1.4.0\n\n### New\n- **Husk.** Install Husk from the store list, with this iPhone's pairing file already inside it for its built-in JIT.\n- **French, German, Italian, Chinese and Russian.** AltLoad follows your iPhone's language.\n- **Update notices.** AltLoad tells you when a newer version is out.\n\n### Fixed\n- **Pairing files for SideStore and SideStore + LiveContainer.** They now include this iPhone's UDID and go everywhere SideStore looks, along with the settings newer builds need.\n- **\"Apple ID or password incorrect\" with Anisette on Automatic.** Apple gives that answer for anisette data it won't accept too, so AltLoad now tries the next server instead of stopping, and keeps your saved password.\n- Fixed potential issues with Apple IDs",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.4.0/AltLoad.ipa",
-          "size": 11794981,
-          "buildVersion": "7",
-          "minOSVersion": "18.0"
+          "size": 11794981
         },
         {
           "version": "1.3.0",
@@ -100,13 +107,6 @@
           "localizedDescription": "## AltLoad 1.3.0\n\n### Fixed\n- **SideStore no longer asks you to import a pairing file.** AltLoad now hands the pairing file over the way SideStore reads it, on stable and Nightly. If SideStore has already been opened and still asks, restart your iPhone.\n- **SideStore + LiveContainer gets the pairing file too.** It's placed for you at install, so there's nothing to import by hand.\n\n### Changed\n- **Far fewer Apple ID sign-ins.** AltLoad keeps Apple's developer token after you sign in and reuses it for installs, refreshes and the account screens, so unstable anisette servers and 2FA prompts get in the way less often. Signing out deletes it.\n- **Pure black background** with a small navy glow.\n- **Cleaner screens.** Pair, Pairing File to Apps and the install results are simpler, and placing a p…",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.3.0/AltLoad.ipa",
           "size": 11540525
-        },
-        {
-          "version": "1.2.0",
-          "date": "2026-10-16T18:03:50Z",
-          "localizedDescription": "## AltLoad 1.2.0\n\n### New\n- **Choose what happens to app extensions.** Before installing a store or an IPA, pick **Keep Extensions**, **Keep, Use Main Profile** (the whole app uses one App ID) or **Remove Extensions**, like SideStore. Handy with a free Apple ID's 10 App IDs a week.\n- **Pairing code in the Dynamic Island.** While you pair, the six-digit code shows in the Dynamic Island and on the Lock Screen, so you can read it while you're in Settings.\n- **Import a pairing file.** Tools › Pair › Import Pairing File adds a pairing file made on a computer and uses it for installs.\n- **Runs on iOS 18 and later.** Below iOS 27 the iPhone can't pair with AltLoad itself, so the Pair screen walks you through importing a pairing file instead.\n- **App IDs in Tools.** See every App ID on your Apple …",
-          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.2.0/AltLoad.ipa",
-          "size": 11637451
         }
       ]
     },
@@ -349,30 +349,30 @@
       "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 918213318,
+      "size": 918244256,
       "versions": [
+        {
+          "version": "1.8.22",
+          "date": "2026-11-13T18:35:34Z",
+          "localizedDescription": "# Floe 1.8.22 (343)\n\n## 简体中文\n\n- 修复更新后“优化占用”无法运行的问题，正确识别上次磁盘恢复留下的原生关闭回执。\n- 再次启动时保留旧作业及全部历史锁，继续保护原文件、已安装软件和恢复盘。\n\n仅内部测试及现有GitHub／Feather渠道。实际回收量以设备完成结果为准。\n\n## English\n\n- Fixes Optimize Storage becoming unavailable after an update by recognizing native closure receipts retained from an earlier recovery session.\n- Preserves pending jobs and all historical locks on restart, protecting original files, installed software and recovery disks.\n\nFor internal testing and the existing GitHub/Feather channels. Reclaimed storage depends on completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the …",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.22/Floe-Agent-1.8.22-build343-unsigned.ipa",
+          "size": 918244256,
+          "buildVersion": "343",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.8.21",
+          "date": "2026-11-13T14:56:38Z",
+          "localizedDescription": "# Floe 1.8.21 (342)\n\n## 简体中文\n\n- 完善中断的磁盘整理收尾：严格确认原盘未变后，仅清理该作业的临时副本，保留原资料、软件和恢复记录。\n- 区分安全收尾与磁盘提交恢复，改善再次整理时的保护与诊断。\n\n仅内部测试及现有GitHub／Feather渠道。实际回收量以设备完成结果为准；不承诺全部容量已经释放。\n\n## English\n\n- Improves recovery from interrupted storage cleanup: after strictly verifying the unchanged original disk, removes only the job's temporary copy while preserving files, installed software and recovery records.\n- Separates safe cleanup from disk-commit recovery, with clearer protection and diagnostics when optimization resumes.\n\nFor internal testing and the existing GitHub/Feather channels. Reclaimed storage depends on completed work on the device; this does not promise that all capacity has been reclaimed.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed d…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.21/Floe-Agent-1.8.21-build342-unsigned.ipa",
+          "size": 918222518
+        },
         {
           "version": "1.8.20",
           "date": "2026-11-13T11:25:00Z",
           "localizedDescription": "# Floe 1.8.20 (341)\n\n## 简体中文\n\n- 调整会议录音操作和素材布局，清楚区分原始录音与转写片段。\n- 改善暂停、续录与整段回放，保留原片，并在缺少片段时提供重试和单段入口。\n- 修复旧环境迁移后的整理恢复与记录问题，继续保护原资料。\n- 修复运行中以“引导”提交目标后，目标卡偶发缺失及输入模式未复位的问题。\n\n仅内部测试及现有GitHub／Feather渠道；实际容量回收以设备完成结果为准。\n\n## English\n\n- Refines meeting recording controls and media layout, keeping original recordings distinct from transcription chunks.\n- Improves pause, resume and full-recording playback while preserving originals and offering retry or individual-part access when a part is unavailable.\n- Repairs cleanup recovery and records after legacy-environment migration while protecting existing data.\n- Fixes missing Goal cards and restores Agent input mode after a Goal is accepted as guidance during a running task.\n\nFor internal testing and the existing GitHub/Feather channels. Reclaimed storage …",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.20/Floe-Agent-1.8.20-build341-unsigned.ipa",
-          "size": 918213318,
-          "buildVersion": "341",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.8.19",
-          "date": "2026-11-13T05:24:15Z",
-          "localizedDescription": "# Floe 1.8.19 (340)\n\n## 简体中文\n\n- 修复 App 更新后原资料存储位置改变时，旧环境整理进度与恢复任务未能接续的问题。\n- 继续使用已核验的原资料，保留复制目录或身份不明时的保护与明确提示。\n\n本次仅修复旧环境路径恢复，不新增引擎或能力。容量以设备实际完成结果为准。\n\n## English\n\n- Restores legacy-environment cleanup progress and recovery tasks when an app update changes the location of the original data directory.\n- Continues from verified original data while retaining protection and clear feedback for copied or unidentified directories.\n\nThis update only repairs legacy-environment path recovery. It adds no engines or capabilities; reclaimed storage depends on the actual completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis ins…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.19/Floe-Agent-1.8.19-build340-unsigned.ipa",
-          "size": 917945982
-        },
-        {
-          "version": "1.8.18",
-          "date": "2026-11-13T03:39:24Z",
-          "localizedDescription": "# Floe 1.8.18 (339)\n\n## 简体中文\n\n- 改善旧执行环境占用优化在中断、切换或恢复后的继续整理。\n- 正常使用其他任务和工作区时，不再因无关状态变化打断整理；正在使用的资料仍受保护。\n- 修复重点文件快捷入口误把工具说明和资源元数据当作真实文件的问题。\n\n本次为窄范围内部修复；容量回收以设备实际完成结果为准。\n\n## English\n\n- Improves resuming storage optimization for older execution environments after interruption or recovery.\n- Keeps unrelated task and workspace activity from unnecessarily interrupting cleanup, while protecting data that is in use.\n- Fixes important-file shortcuts mistaking tool descriptions and resource metadata for actual files.\n\nThis is a focused internal repair. Reclaimed storage depends on the actual completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.18/Floe-Agent-1.8.18-build339-unsigned.ipa",
-          "size": 917936385
+          "size": 918213318
         }
       ]
     },
@@ -727,16 +727,23 @@
       "localizedDescription": "雲の音 — A native music player for macOS and iOS, built with SwiftUI",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/sb.moe.kumone-ios.png?v=e0c37a6f19b7",
       "tintColor": "#df3e34",
-      "size": 4270017,
+      "size": 4289752,
       "versions": [
+        {
+          "version": "0.3.35",
+          "date": "2026-11-13T19:25:08Z",
+          "localizedDescription": "### Added\n\n- **Comments**: on the iPhone now-playing page, swipe left from the lyrics to the song's comments, and right to return; two dots show which page is up. Comments load when you first turn to them and follow the song that is playing.\n\n### Fixed\n\n- **Playback**: a request for a song's playback address that drops, times out or meets a server error is retried once, instead of failing at once with \"Unable to play\" or switching to a third-party source (#210).\n- **iOS**: songs the service can play no longer keep playing from a third-party source copy in the cache; that copy is only used when the service refuses the song. Thanks @yuanruoyu515 (#205, closes #206).\n- **iOS 16/17**: the now-playing page no longer stops part way when it opens from the mini player, leaving it short of the top;…",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.35/Kumone-iOS-0.3.35.ipa",
+          "size": 4289752,
+          "buildVersion": "443",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.3.34",
           "date": "2026-11-12T20:52:06Z",
           "localizedDescription": "### Added\n\n- **Comments**: read a song's comments from its context menu, or on iOS from the now-playing page's More menu — top comments first, then the latest, loading more as you scroll, with the reply each one answers and its likes. Signed in, you can like a comment or take the like back (#113).\n- **Search**: on iOS every playlist can be searched (the magnifying glass, or pull down), not only Liked Songs; tapping a result plays the whole playlist from that song (#185).\n- **Cloud Disk**: search by song, artist, album or uploaded file name, on macOS and iOS. The cloud disk now loads every song instead of the first 1,000, so search and Play All cover them all (#186).\n\n### Improved\n\n- **iOS**: Daily Recs drops the large cover banner at the top, so the songs start right below the date, title …",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.34/Kumone-iOS-0.3.34.ipa",
-          "size": 4270017,
-          "buildVersion": "438",
-          "minOSVersion": "16.0"
+          "size": 4270017
         },
         {
           "version": "0.3.33",
@@ -744,13 +751,6 @@
           "localizedDescription": "### Added\n\n- **Login**: sign in with a Cookie when QR or SMS login does not work — paste a browser Cookie with `MUSIC_U` (and optionally `__csrf`); it is verified on its own before it replaces the current session. Thanks @mvanhorn (#176, closes #150).\n- **Recommendations**: add a song or an artist to the account's music blacklist from a song's menu, the now-playing page's More menu or an artist page, on macOS and iOS. The daily recommendations' \"Not interested\" is now on iOS too. Thanks @yamakze (#195).\n\n### Fixed\n\n- **Recently Played**: lists the songs you played last, newest first, with when each was played, as the official app does; it used to show the listening ranking by play count, which stays available under Top This Week and Top All Time (#198).\n- **Storage**: the device's used spa…",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.33/Kumone-iOS-0.3.33.ipa",
           "size": 4135139
-        },
-        {
-          "version": "0.3.32",
-          "date": "2026-11-09T17:49:02Z",
-          "localizedDescription": "### Added\n\n- **iOS**: eight sound-effect presets and a ten-band custom equalizer on the now-playing page and in Settings, with a live response curve. A change applies to the playing track without rebuilding the player (#191).\n\n### Improved\n\n- **iOS**: the app follows the system language, English or Simplified Chinese, as the macOS app does (#191).\n- **Localization**: the English interface is complete on macOS, iOS and CarPlay. Album, playlist, artist and search pages, the iOS updater and CarPlay no longer fall back to Chinese, and VoiceOver reads the now-playing buttons in English. CarPlay play counts use K/M/B in English.\n- **Downloads**: a failed download now says why — the service's own reason (such as a risk-control refusal) or the system error code — instead of only asking you to chec…",
-          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.32/Kumone-iOS-0.3.32.ipa",
-          "size": 4060424
         }
       ]
     },
