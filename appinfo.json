@@ -242,15 +242,6 @@
     "size": 54067691,
     "source_repo": "Termix-SSH/Mobile"
   },
-  "Lingyan000/fluxdo@0.2.29": {
-    "bundleIdentifier": "com.github.lingyan000.fluxdo",
-    "displayName": "FluxDO",
-    "version": "0.2.29",
-    "build": "2026102016",
-    "minOSVersion": "15.0",
-    "size": 55505719,
-    "source_repo": "Lingyan000/fluxdo"
-  },
   "aeharding/voyager@2.49.1": {
     "bundleIdentifier": "app.vger.voyager",
     "displayName": "Voyager",
@@ -521,13 +512,22 @@
     "size": 48217939,
     "source_repo": "pounat/absorb"
   },
-  "JiangNanGenius/floe-agent@1.8.17": {
+  "JiangNanGenius/floe-agent@1.8.20": {
     "bundleIdentifier": "org.floeagent.ios",
     "displayName": "Floe Agent",
-    "version": "1.8.17",
-    "build": "338",
+    "version": "1.8.20",
+    "build": "341",
     "minOSVersion": "26.0",
-    "size": 917946884,
+    "size": 918213318,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Lingyan000/fluxdo@0.2.30": {
+    "bundleIdentifier": "com.github.lingyan000.fluxdo",
+    "displayName": "FluxDO",
+    "version": "0.2.30",
+    "build": "2026111316",
+    "minOSVersion": "15.0",
+    "size": 41377170,
+    "source_repo": "Lingyan000/fluxdo"
   }
 }

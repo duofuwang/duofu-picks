@@ -349,30 +349,30 @@
       "localizedDescription": "iPad-first, open-source iOS AI Agent with native on-device 3D/CAD editing, iPhone support and Android alpha. On-device Linux, terminal, Python/Node.js, Git and web previews; BYOK AI, Notes, Office, Canvas, voice, Skill Hub and supported local models on iOS. 开源设备端 AI 智能体工作台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 917946884,
+      "size": 918213318,
       "versions": [
         {
-          "version": "1.8.17",
-          "date": "2026-11-13T00:29:51Z",
-          "localizedDescription": "# Floe 1.8.17 (338)\n\n## 简体中文\n\n- 改善会议连续转写的分段、实时草稿和静音处理，完善停止补写、录音恢复及所选转写服务的错误提示。\n- 调整会议工作台布局，分开显示录音与转写状态；回放保留拖动时间轴、前进和后退控制。\n- 修复执行计划仍沿用规划权限的问题。生成计划后，输入框切回智能体；后续手动选择计划模式仍然有效。\n- 计划进度跟随当前一轮运行，保留历史；增加模型可调用的清空与重建能力。\n- 补齐子任务生成文件的消息卡引用和重开预览，改善大文本文件的连续阅读。\n- 扩展原生 Workspace 文本工具的格式识别和说明，支持代码、脚本、网页、配置及其他纯文本文件，保留换行和 UTF-8 字节标记。\n- 修复旧环境资料检查中的数据库读取与引用判断，完善无损优化的进度、受阻原因和容量估算显示。原资料、已安装软件和恢复盘继续保留。\n- 修复任务仍在重试时过早显示失败，以及恢复后残留旧失败通知的问题；停止、挂起和最终失败分别呈现。\n\n本版先供内部测试。请重点核对会议录音与回放、执行计划后的实际编辑、TXT／网页／代码文件卡，以及迁移设备优化前后的实际占用和资料完整性。\n\n## English\n\n- Improves continuous meeting transcription, draft display and silence handling, with better stop-tail settlement, recording recovery and errors from the selected transcription service.\n- Refines the meeting workbench, separates recording and transcription status, and keeps a seekable …",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.17/Floe-Agent-1.8.17-build338-unsigned.ipa",
-          "size": 917946884,
-          "buildVersion": "338",
+          "version": "1.8.20",
+          "date": "2026-11-13T11:25:00Z",
+          "localizedDescription": "# Floe 1.8.20 (341)\n\n## 简体中文\n\n- 调整会议录音操作和素材布局，清楚区分原始录音与转写片段。\n- 改善暂停、续录与整段回放，保留原片，并在缺少片段时提供重试和单段入口。\n- 修复旧环境迁移后的整理恢复与记录问题，继续保护原资料。\n- 修复运行中以“引导”提交目标后，目标卡偶发缺失及输入模式未复位的问题。\n\n仅内部测试及现有GitHub／Feather渠道；实际容量回收以设备完成结果为准。\n\n## English\n\n- Refines meeting recording controls and media layout, keeping original recordings distinct from transcription chunks.\n- Improves pause, resume and full-recording playback while preserving originals and offering retry or individual-part access when a part is unavailable.\n- Repairs cleanup recovery and records after legacy-environment migration while protecting existing data.\n- Fixes missing Goal cards and restores Agent input mode after a Goal is accepted as guidance during a running task.\n\nFor internal testing and the existing GitHub/Feather channels. Reclaimed storage …",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.20/Floe-Agent-1.8.20-build341-unsigned.ipa",
+          "size": 918213318,
+          "buildVersion": "341",
           "minOSVersion": "26.0"
         },
         {
-          "version": "1.8.16",
-          "date": "2026-11-12T19:31:17Z",
-          "localizedDescription": "# Floe 1.8.16 (337)\n\n## 简体中文\n\n- 修复专用 Linux 清理任务初次启动时的环境绑定错误，正确显示检查失败与清理结果。\n- 改善换机后的环境恢复，重建时显示实际阶段和下载进度，取消及失败状态及时更新。\n- 修复旧环境占用检查对系统目录读取权限的额外要求，保留原有目录与文件身份验证。\n- 完善储存优化的失败提示和反馈记录；资料、已安装软件及待恢复旧盘继续保留。\n- 计划接受或转为目标后，收起待确认卡并在聊天中保留确认版本；增加仅收起卡片的关闭按钮，完善关键问题澄清和步骤细节。\n- 完善文本文件预览和连续阅读，减少文件侧栏的重复标题与操作栏。\n- 改善云端、本地模型及子智能体的工具发现，使加载状态与实际提供的工具保持一致。\n\n请重点检查换机后重新下载或重建、Linux 缓存检查与清理、取消恢复，以及优化前后的实际占用。没有完成的清理和优化不会计为已释放空间。本版先供内部测试。\n\n## English\n\n- Fixes environment binding when a dedicated Linux cleanup task starts for the first time, and shows inspection failures and cleanup results accurately.\n- Improves environment recovery after device migration, showing actual rebuild stages and download progress with timely cancellation and failure states.\n- Removes an unnecessary requirement to read system ancestor directories d…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.16/Floe-Agent-1.8.16-build337-unsigned.ipa",
-          "size": 917760873
+          "version": "1.8.19",
+          "date": "2026-11-13T05:24:15Z",
+          "localizedDescription": "# Floe 1.8.19 (340)\n\n## 简体中文\n\n- 修复 App 更新后原资料存储位置改变时，旧环境整理进度与恢复任务未能接续的问题。\n- 继续使用已核验的原资料，保留复制目录或身份不明时的保护与明确提示。\n\n本次仅修复旧环境路径恢复，不新增引擎或能力。容量以设备实际完成结果为准。\n\n## English\n\n- Restores legacy-environment cleanup progress and recovery tasks when an app update changes the location of the original data directory.\n- Continues from verified original data while retaining protection and clear feedback for copied or unidentified directories.\n\nThis update only repairs legacy-environment path recovery. It adds no engines or capabilities; reclaimed storage depends on the actual completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis ins…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.19/Floe-Agent-1.8.19-build340-unsigned.ipa",
+          "size": 917945982
         },
         {
-          "version": "1.8.11",
-          "date": "2026-11-12T05:27:26Z",
-          "localizedDescription": "# Floe 1.8.11 (333)\n\n## 简体中文\n\n- 改善会议录音、转写提示与页面布局。回放加入可拖动时间轴、前后跳转和播放／暂停；调整语音输入的中断处理。\n- 改进计划与目标的衔接，目标可编辑、暂停、继续和删除。暂停或删除目标只影响后续自动推进，当前这轮工作继续；输入框的停止会停止本轮并暂停对应目标。同轮继续不会自动重新开启长期目标。\n- 记忆列表用“已保留”区分保存与实际使用。浏览不再延长保留期限，已删除任务的旧信息逐步淡化与归档，固定内容、长期偏好和当前任务引用受到保护。\n- 完善二维 CAD、地图及原理图／PCB 助手的编辑、查询与操作反馈，加入三维元件库。独立二维图纸隐藏不适用的三维草图提示栏。\n- 整理图片编辑菜单与小屏参数入口，区分新建文字和更新文字；助手可查看编辑历史、撤销和重做。\n- 改善生物编辑器中已保存序列与运行结果的显示和选择，统一化学、生物计算对所选环境的使用。\n- 改进 Office 公式结果更新与 Word 标题转换，以及部分模型服务的工具请求兼容性和任务停止、恢复提示。\n- 模型设置增加“不发送思考参数”开关，用于不兼容的自定义接口；按实际能力选择支持的思考强度，并保留模型返回的思考内容。\n- 改善长文档的分段读取、追加写入和校验保存，优先使用原生文件工具。文件已保存但预览暂不可用时，不再误报整次写入失败。\n- Mac Bridge 支持按授权读取 Mac 上指定的文件和图片，包括其它工作区；旧 Mac 端不支持时会提示更新。\n- 普通 PDF 手记移除不相关的 LaTeX 编辑入口。帮助内容按 iOS、Android 整理，保留 iPhone Duo 的展开布局和草稿连续性。\n\n请重点反馈录音与回放、目标暂停／继续／停止的区别、旧记忆保留、编辑器助手的结果显示与撤销，以及 Office、Mac Bridge 和 Duo 布局的实际…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.11/Floe-Agent-1.8.11-build333-unsigned.ipa",
-          "size": 916594333
+          "version": "1.8.18",
+          "date": "2026-11-13T03:39:24Z",
+          "localizedDescription": "# Floe 1.8.18 (339)\n\n## 简体中文\n\n- 改善旧执行环境占用优化在中断、切换或恢复后的继续整理。\n- 正常使用其他任务和工作区时，不再因无关状态变化打断整理；正在使用的资料仍受保护。\n- 修复重点文件快捷入口误把工具说明和资源元数据当作真实文件的问题。\n\n本次为窄范围内部修复；容量回收以设备实际完成结果为准。\n\n## English\n\n- Improves resuming storage optimization for older execution environments after interruption or recovery.\n- Keeps unrelated task and workspace activity from unnecessarily interrupting cleanup, while protecting data that is in use.\n- Fixes important-file shortcuts mistaking tool descriptions and resource metadata for actual files.\n\nThis is a focused internal repair. Reclaimed storage depends on the actual completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.18/Floe-Agent-1.8.18-build339-unsigned.ipa",
+          "size": 917936385
         }
       ]
     },
@@ -384,16 +384,23 @@
       "localizedDescription": "一个 Linux.do 第三方客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.lingyan000.fluxdo.png?v=2069ea0effe2",
       "tintColor": "#f5b018",
-      "size": 55505719,
+      "size": 41377170,
       "versions": [
+        {
+          "version": "0.2.30",
+          "date": "2026-11-13T08:38:12Z",
+          "localizedDescription": "这次更新带来了全新的主题画廊与自定义主题、应用广场，以及更完整的个人资料和论坛偏好设置。日常刷帖、打开网页、回应佬友和安装更新，也有了一批体验改进。\n\n### 🎨 把界面调成喜欢的样子\n\n- 外观设置新增主题画廊与实时预览，按动态取色、素雅、阅读和代码配色分组挑选。轻云、燕麦、纸张等主题各有风格，卡片、按钮、引用块和代码高亮也会随主题一起变化。\n- 可以基于现有主题创建自己的配色，分别调整浅色与深色外观、强调色、圆角，以及卡片、输入框等界面样式。编辑时可直接预览效果，还能查看文字对比度提示。\n- 喜欢的自定义主题可以复制为主题代码分享，也能从剪贴板导入他人的作品。圆角提供标准、适中、方正三档，强调色支持一键重置。\n- 自定义背景在话题卡片和正文区域的展示更完整，玻璃效果也会跟随主题配色与质感。\n\n### 🌸 字体与节日新装\n\n- 正文与代码字体可以分别选择，新增霞鹜文楷、霞鹜新晰黑、思源宋体和 Fira Code，也可跟随主题推荐或使用系统字体。\n- 字体改为按需下载，提供下载源选择。此前使用 MiSans 的用户，升级后会收到下载引导，可以转入后台下载，或先使用系统字体。\n- 传统节日期间会自动换上对应配色，配有节日问候和图案装饰。节日主题默认开启，可在外观设置中调整，也可仅关闭本次节日效果，节日结束后恢复原有主题。\n\n### 🧩 在应用广场发现工具与游戏\n\n- 新增应用广场，可以搜索佬友创作的小程序，按热度、评分等方式浏览，也能找到已收藏和最近使用的应用。首页继续下拉即可进入，也可从“我的”打开。\n- 帖子里的小程序可以直接打开，收起后继续阅读，再从底栏恢复。支持全屏和独立窗口，应用菜单中可收藏、评分、分享或打赏开发者。\n- 改进首次打开和再次进入时的加载流程，完善小屏卡片排版，并修复部分启动失败误报、滚动停顿和窗口关闭后重新出现的问题。\n\n### 👤 资料、偏好设置与…",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.30/fluxdo-unsigned.ipa",
+          "size": 41377170,
+          "buildVersion": "2026111316",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.2.29",
           "date": "2026-10-20T08:49:53Z",
           "localizedDescription": "这一版重点打磨了发帖与回复：编辑工具更顺手，草稿保存和附件上传的状态也更清楚。话题列表可按需展示摘要与图片，树形阅读支持续读，底栏和编辑工具栏则换上了新的玻璃质感。\n\n### ✍️ 更顺手的编辑体验\n\n- 发帖、编辑和回复的工具栏重新整理，支持切换富文本、源码和预览。手机上收起键盘后仍可使用工具，展开面板查找功能，也能搜索全部工具、挑选常用项。\n- 富文本编辑器仍为「实验性」功能。这次完善了文字选择、光标移动、链接编辑和图片操作，减少切换视图时失败、编辑链接后光标位置异常等问题。\n- 输入斜杠可查找要插入的内容；图片、引用、代码块等内容的操作入口也更统一。图片网格可以继续添加图片，并单独操作其中一张。\n- 手机端新增表格行列操作面板，点选单元格后即可插入或删除行列。编辑表格时会调整滚动位置，减少输入区域被键盘挡住的情况。\n\n### 📝 草稿保存更安心\n\n- 草稿会明确显示待保存、保存中、已保存或失败；只存到本机、尚未同步到云端时，也有单独提示。\n- 多设备修改同一份草稿发生冲突时，可以选择使用云端版本或用本机内容覆盖云端，取消则继续保留本机内容。\n- 修复云端草稿恢复、多设备同步和展开编辑器后自动保存的问题，也修复了舍弃草稿后旧内容又被重新保存、长草稿恢复时编辑区偶现空白的情况。\n\n### 📤 附件上传与视频压缩\n\n- 发帖、回复和聊天中的附件现在都有更清楚的任务状态，可以查看准备、上传和处理进度，失败后重试，也能取消或移除。\n- 富文本中的上传图片会在正文位置显示预览和状态，减少重复提示；还有附件未完成或失败时，会提示先处理再发布。\n- 超限音视频按社区允许的附件大小进行压缩。视频可选择「兼容优先」「录屏清晰优先」或「体积优先」；未超限的文件保留原文件。\n- 支持社区开启的分片上传，并修复空草稿选图后无法上传、部分上传创建失败和聊天图片处理不一致的问题。\n\n### 📖 列…",
           "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.29/fluxdo-unsigned.ipa",
-          "size": 55505719,
-          "buildVersion": "2026102016",
-          "minOSVersion": "15.0"
+          "size": 55505719
         },
         {
           "version": "0.2.28",
@@ -401,13 +408,6 @@
           "localizedDescription": "这一版重点补齐了多人私信的成员管理，也重新梳理了下载、保存和导出的整套体验。表情包市场更好找、更快打开，弱网看图、Mac 粘贴和反复验证等实际问题也得到修复。\n\n### 💌 多人私信\n\n- 多人私信现在会展示全部成员和群组，长对话在首楼和帖子流底部都能方便查看。\n- 可以继续邀请用户或群组加入；新建私信时，原本预填的收件人也可以自由增删。\n- 有权限的管理者可以移除成员或群组，参与者也可以主动退出。成员变动会及时反映在当前会话中，被移出的用户会自动离开该私信页面。\n- 私信可以从更多菜单归档，之后也能移回收件箱；其他设备上的归档变化会同步过来。\n- 成员标签统一为更紧凑的单行样式，点击用户即可打开资料卡片，查看信息或继续互动。\n\n### 📤 下载、保存与导出\n\n- 导出文章的面板重新整理为「范围、文件格式、去向」三部分。选好后可以直接保存、另存为、分享或发送到 Notion，执行进度会显示在对应选项旁。\n- Android 可以把文章直接保存到公共下载目录；iPhone 和 iPad 改用系统文件导出面板，导出楼层很多的长文章时也更省内存、更稳定。\n- 下载列表新增长按菜单，可以按当前平台选择打开、保存到文件、另存为、分享或删除，不必再到应用目录里找文件。\n- 导出历史也有了长按菜单，可打开文件或所在文件夹、在浏览器中打开、再次分享，或者只删除这条记录。\n- 正文图片的长按或右键菜单新增「保存图片」。移动端保存到相册，桌面端选择保存位置，Linux 上不再错误提示相册权限。\n- 备份文件现在只保存到本地，避免误分享到聊天软件；日志则明确拆成「保存」和「分享」。分享、导出产生的临时文件会定期自动清理。\n\n### 😀 表情包市场\n\n- 表情包市场支持按分类浏览和按名称搜索，找表情包不再需要从完整列表一路翻下去。\n- 搜索会先给出已经加载的结果，再自动补齐当前分类；快速切换分类或…",
           "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.28/fluxdo-unsigned.ipa",
           "size": 54824957
-        },
-        {
-          "version": "0.2.27",
-          "date": "2026-08-21T07:40:24Z",
-          "localizedDescription": "这一版重点在两处:长按、放大、返回这些动作的观感重做了一轮,外观能改的地方多了不少。另外新增加解密工具箱和话题目录。\n\n### 🎨 外观\n\n- 主题色新增六套配色:默认、湖蓝、海洋、樱花、春、秋。\n- 「中性」开关:界面表面不再被主题色染色。\n- 「纯黑」开关:深色模式下用真黑背景,AMOLED 屏更省电。\n- 可以设置背景图片,配合「透明」表面质感透出背景,遮罩浓淡和模糊程度可调。\n- 底栏新增三个开关:只留图标、悬浮胶囊、毛玻璃。\n\n### 🔍 长按预览\n\n- 长按话题卡片的预览换了样式,打开和收起都比以前连贯。\n- 预览里的分类和标签可以直接点进去。\n- 预览打开更快,大多数时候不用等加载。\n- 搜索结果、话题内搜索的卡片也能长按预览了。\n\n### 🖼️ 图片\n\n- 长按正文图片会浮起预览和一排操作。\n- 放大之后直接返回,不再中途跳一下才回到原位。\n- 修了返回时的黑闪,以及轮播图、聊天图片被裁切。\n\n### 🔐 加解密工具箱\n\n- 选中疑似密文的内容,工具栏出现「解密」,面板自动识别算法,解出来可复制或引用回复。\n- 编辑器里选中内容点钥匙按钮即加密插回,富文本模式在「+」菜单。\n- 算法覆盖 AES、3DES、ChaCha20 等对称算法,Base64/Hex/ROT13 编码,MD5/SHA/SM3 哈希,RSA,以及凯撒、维吉尼亚、栅栏、摩斯。与 openssl 命令行生成的密文互通。\n- 密文识别认 Base32、折行 Base64、带冒号或短横的 Hex;可选记住密码,功能设置里一键清除。\n\n### 📑 话题目录\n\n- 长帖会生成目录,宽屏在右侧,窄屏收在右下角按钮里。\n- 滚动时当前小节自动高亮,点一下跳过去。\n- Markdown 工具栏新增「插入目录」。\n\n### 🛡️ 过盾与网络\n\n- 修了验证通过后又被反复要求验证。\n- 「切换兼容模式」的询问…",
-          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.27/fluxdo-unsigned.ipa",
-          "size": 54730095
         }
       ]
     },
