@@ -143,15 +143,6 @@
     "size": 28323372,
     "source_repo": "czy0729/Bangumi"
   },
-  "kodjodevf/mangayomi@0.9.95": {
-    "bundleIdentifier": "com.kodjodevf.mangayomi",
-    "displayName": "Mangayomi",
-    "version": "0.9.95",
-    "build": "128",
-    "minOSVersion": "15.0",
-    "size": 115450399,
-    "source_repo": "kodjodevf/mangayomi"
-  },
   "yattee/yattee@2.0.0-259": {
     "bundleIdentifier": "stream.yattee.app",
     "displayName": "Yattee",
@@ -529,5 +520,14 @@
     "minOSVersion": "26.1",
     "size": 24660955,
     "source_repo": "Rone89/cilicili"
+  },
+  "kodjodevf/mangayomi@0.9.96": {
+    "bundleIdentifier": "com.kodjodevf.mangayomi",
+    "displayName": "Mangayomi",
+    "version": "0.9.96",
+    "build": "129",
+    "minOSVersion": "15.0",
+    "size": 117340839,
+    "source_repo": "kodjodevf/mangayomi"
   }
 }

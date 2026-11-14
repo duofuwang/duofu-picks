@@ -832,16 +832,23 @@
       "localizedDescription": "Free and open source application for reading manga, novels, and watching animes available on Android, iOS, macOS, Linux and Windows",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kodjodevf.mangayomi.png?v=3b7171face5d",
       "tintColor": "#d61f2b",
-      "size": 115450399,
+      "size": 117340839,
       "versions": [
+        {
+          "version": "0.9.96",
+          "date": "2026-11-14T17:16:59Z",
+          "localizedDescription": "## What's Changed\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\n* fix(migrate): search a few sources at a time and open the dialog at once by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1141\n* fix(sync): persist since and lastSync in one awaited write by @sergwei in https://github.com/kodjodevf/mangayomi/pull/1146\n* fix(filters):…",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.96/Mangayomi-v0.9.96-ios.ipa",
+          "size": 117340839,
+          "buildVersion": "129",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.9.95",
           "date": "2026-11-01T15:17:25Z",
           "localizedDescription": "## Why 0.9.95 and not 1.0.0?\r\n\r\nThis release has almost everything planned for 1.0.0: a new design, a rebuilt player and hundreds of fixes. But so much has changed that it needs testing on more devices and libraries than we can cover ourselves.\r\n\r\nSo 0.9.95 is the last step before 1.0.0. The goal now is stability, not new features. If something breaks or looks wrong, please [open an issue](https://github.com/kodjodevf/mangayomi/issues) with your device and app version. 1.0.0 will come once this version has proven solid.\r\n\r\n## Highlights\r\n\r\n* **Shiori, a new design for the whole app:** every screen has been redrawn on one design system, with new navigation, transitions and an ergonomic pass throughout (#1077).\r\n* **A rebuilt video player:** new controls on phone, desktop and TV, plus video …",
           "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa",
-          "size": 115450399,
-          "buildVersion": "128",
-          "minOSVersion": "15.0"
+          "size": 115450399
         },
         {
           "version": "0.9.9",
@@ -849,13 +856,6 @@
           "localizedDescription": "## What's Changed\n* fix(extension): enable mobile code copy by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1039\n* fix(reader): restore double-tap zoom toggle by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1037\n* feat(player): add hold-and-slide speed selector by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1038\n* fix(http): drop the quotes Linux wraps the saved user agent in by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1036\n* fix(security): show what deep links install and keep tokens out of sh… by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1041\n* chore: await dropped writes, add guard lints, localize hardcoded strings by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1042\n* refactor: move the …",
           "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.9/Mangayomi-v0.9.9-ios.ipa",
           "size": 114603425
-        },
-        {
-          "version": "0.9.8",
-          "date": "2026-10-06T13:56:40Z",
-          "localizedDescription": "## What's Changed\r\n* fix(tracker): improve Trakt.tv multi-season mapping, watchlist, and ratings sync by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1024\r\n* feat(tracker): Add backlog sections (Plan to read/Watchlist), handle AniList 429 rate limits, and prioritize Trakt series by @lee-gangjin in https://github.com/kodjodevf/mangayomi/pull/1030\r\n* fix(mihon): use the Cloudflare proxy for extension-server sources by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1026\r\n* fix(mihon): identify which source of an extension a call is for by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1027\r\n* Improve LNReader extension compatibility\r\n* fix: stale chapter page lists and add WebP decoding on Linux by @MenaHere in https://github.com/kodjodevf/…",
-          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.8/Mangayomi-v0.9.8-ios.ipa",
-          "size": 114518028
         }
       ]
     },
