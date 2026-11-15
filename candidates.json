@@ -1168,16 +1168,23 @@
       "localizedDescription": "Open-source Flutter habit tracker with smart scoring, WebDAV sync, local-first storage, privacy-focused design, and support for Android, iOS, Windows, macOS, and Linux.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.friesi23.mhabit.png?v=ac25ecabf890",
       "tintColor": "#1790e3",
-      "size": 15961434,
+      "size": 16672428,
       "versions": [
+        {
+          "version": "1.27.20+209",
+          "date": "2026-11-15T05:02:52Z",
+          "localizedDescription": "# Released: v1.27.20+209\r\n\r\n## ✨ Features\r\n\r\n- Add shared support cards to Settings and optional startup reminders, with\r\n  animated headers, automatic paging and clickable page indicators. Keep GitHub\r\n  Star and donation actions, and offer store review or Flathub favorites links\r\n  for the current distribution. Remember **Remind me later** and **Don't remind\r\n  me again** choices (#707)\r\n- Choose and remember the interface style in Display settings. When using the\r\n  Apple style, choose automatic, inset or edge Sidebar appearance (#709)\r\n\r\n## 🐛 Fixes\r\n\r\n- Restore normal browsing after an empty search in the Apple interface (#703)\r\n- Restore WebDAV sync with mixed authentication challenges, including Fastmail\r\n  (#705)\r\n- Preserve Loop import history for habits with non-Latin names and re…",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.20%2B209/mhabit-unsigned.ipa",
+          "size": 16672428,
+          "buildVersion": "209",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.27.18+207",
           "date": "2026-11-02T00:45:29Z",
           "localizedDescription": "# Released: v1.27.18+207\r\n\r\nTable Habit now supports iOS Home Screen widgets! Thanks to\r\n[@IlyaPalochkin](https://github.com/IlyaPalochkin) for contributing the initial\r\ninteractive widgets (#680).\r\n\r\n## ✨ Features\r\n\r\n- Add interactive Home Screen widgets for iOS 17+, with seven-day progress and\r\n  check-in, undo and refresh actions without opening the app (#680)\r\n- Choose automatic or fixed habits, including archived habits; fixed habits\r\n  appear first. Small, medium and large widgets show up to one, three and six\r\n  habits respectively (#687)\r\n- Keep automatic check-ins visible until tapping **Next** to show another habit;\r\n  widgets on the same device share check-in and Next updates. Fixed habits stay\r\n  visible with Undo. Show a completion message when all goals are complete, or\r\n  **…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.18%2B207/mhabit-unsigned.ipa",
-          "size": 15961434,
-          "buildVersion": "207",
-          "minOSVersion": "15.0"
+          "size": 15961434
         },
         {
           "version": "1.27.15+204",
@@ -1185,13 +1192,6 @@
           "localizedDescription": "# Released: v1.27.15+204\r\n\r\n## ✨ Features\r\n\r\n- Integrate native desktop title bars and keep app bars pinned while scrolling\r\n  (#677)\r\n  - Fuse macOS window controls with adaptive toolbars and handle fullscreen\r\n    transitions\r\n  - Match native title bar colors to the app theme on Windows and Linux\r\n- Keep a manually collapsed sidebar closed across layout and interface-style\r\n  changes within the current session (#679)\r\n- Restore desktop window size and position before the window first appears\r\n  (#681)\r\n  - Save ordinary window geometry without treating fullscreen or maximized\r\n    bounds as the preferred window size\r\n\r\n## 🐛 Fixes\r\n\r\n- Preserve open dialogs and their state while updating theme colors, and keep\r\n  dialog app bars consistent with their local theme (#677)\r\n- Restore the Set…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.15%2B204/mhabit-unsigned.ipa",
           "size": 15128625
-        },
-        {
-          "version": "1.27.13+202",
-          "date": "2026-10-10T00:16:09Z",
-          "localizedDescription": "# Released: v1.27.13+202\r\n\r\n> Includes updates since the previous stable release, v1.27.9+198.\r\n\r\n## ✨ Features\r\n\r\n- Add adaptive, collapsible side navigation with an edge style on newer Apple\r\n  systems (#667)\r\n  - Preserve navigation state, search, selection, and page actions across\r\n    layout changes\r\n- Apply app theme colors and custom palettes to the side navigation (#668)\r\n- Let users show or hide navigation destinations in the top toolbar when the\r\n  Apple sidebar is collapsed (#671)\r\n- Adapt navigation and content safe areas for iPhone Duo and compact-height\r\n  layouts (#674)\r\n- Scroll Habits and Today to the top when reselecting the active root tab\r\n  (#675)\r\n  - Return nested pages to the tab's root before scrolling on a subsequent tap\r\n  - Respect reduced motion preferences and…",
-          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.13%2B202/mhabit-unsigned.ipa",
-          "size": 15116961
         }
       ]
     },

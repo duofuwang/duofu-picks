@@ -179,15 +179,6 @@
     "size": 40979942,
     "source_repo": "GopeedLab/gopeed"
   },
-  "FriesI23/mhabit@1.27.18+207": {
-    "bundleIdentifier": "io.github.friesi23.mhabit",
-    "displayName": "Table Habit",
-    "version": "1.27.18",
-    "build": "207",
-    "minOSVersion": "15.0",
-    "size": 15961434,
-    "source_repo": "FriesI23/mhabit"
-  },
   "ossappscollective/oss-weather@ios/alpha/3.01.1/169": {
     "bundleIdentifier": "com.akylas.weather",
     "displayName": "OSS Weather",
@@ -529,5 +520,14 @@
     "minOSVersion": "15.0",
     "size": 117340839,
     "source_repo": "kodjodevf/mangayomi"
+  },
+  "FriesI23/mhabit@1.27.20+209": {
+    "bundleIdentifier": "io.github.friesi23.mhabit",
+    "displayName": "Table Habit",
+    "version": "1.27.20",
+    "build": "209",
+    "minOSVersion": "15.0",
+    "size": 16672428,
+    "source_repo": "FriesI23/mhabit"
   }
 }
