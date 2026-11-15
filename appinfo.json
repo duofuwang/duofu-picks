@@ -260,15 +260,6 @@
     "size": 21467556,
     "source_repo": "CyrilPeng/Venera-Next"
   },
-  "mxhm11cr/LinuxRunner@1.1.1": {
-    "bundleIdentifier": "dev.linuxrunner.app",
-    "displayName": "LinuxRunner",
-    "version": "1.1.1",
-    "build": "905",
-    "minOSVersion": "15.0",
-    "size": 26429748,
-    "source_repo": "mxhm11cr/LinuxRunner"
-  },
   "Jellify-Music/App@1.4.1": {
     "bundleIdentifier": "com.cosmonautical.jellify",
     "displayName": "Jellify",
@@ -322,15 +313,6 @@
     "minOSVersion": "17.0",
     "size": 9036911,
     "source_repo": "Leviidev/Henge"
-  },
-  "itzzace/ytkace@1.1.7": {
-    "bundleIdentifier": "com.google.ios.youtube",
-    "displayName": "YouTube",
-    "version": "21.45.4",
-    "build": "21.45.4",
-    "minOSVersion": "17.0",
-    "size": 140303052,
-    "source_repo": "itzzace/ytkace"
   },
   "lollipopkit/flutter_server_box@1.0.1925": {
     "bundleIdentifier": "com.lollipopkit.toolbox",
@@ -529,5 +511,23 @@
     "minOSVersion": "15.0",
     "size": 27173399,
     "source_repo": "deretame/Breeze"
+  },
+  "itzzace/ytkace@1.1.8": {
+    "bundleIdentifier": "com.google.ios.youtube",
+    "displayName": "YouTube",
+    "version": "21.46.3",
+    "build": "21.46.3",
+    "minOSVersion": "17.0",
+    "size": 141821255,
+    "source_repo": "itzzace/ytkace"
+  },
+  "mxhm11cr/LinuxRunner@1.1.2": {
+    "bundleIdentifier": "dev.linuxrunner.app",
+    "displayName": "LinuxRunner",
+    "version": "1.1.2",
+    "build": "910",
+    "minOSVersion": "15.0",
+    "size": 26854984,
+    "source_repo": "mxhm11cr/LinuxRunner"
   }
 }

@@ -762,16 +762,23 @@
       "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=84a600dbb996",
       "tintColor": "#60bdf5",
-      "size": 26429748,
+      "size": 26854984,
       "versions": [
+        {
+          "version": "1.1.2",
+          "date": "2026-11-15T18:03:39Z",
+          "localizedDescription": "LinuxRunner 1.1.2 brings **LinuxRunner Modes**, six optional ways to turn the Linux on your iPhone into something new: an AI coding workstation, a remote desktop for your PC, a server, a web lab, a Wi-Fi file server or a retro console. It adds new distributions and their real desktops, makes window dragging lighter, and fixes the desktop freezes reported in 1.1.1.\n\n## LinuxRunner Modes\n\nOpen **Settings › General › LinuxRunner Modes**. Every mode is off until you install and start it, and everything stops when Linux stops.\n\n- **Agent Mode:** Claude Code, Codex CLI and OpenCode, with Node.js, git, ripgrep and Python. **Open Agent Terminal** shows a menu of the installed agents and starts them in `~/Projects` as your Linux user. Each agent signs in with your own account; LinuxRunner never see…",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.2/LinuxRunner-1.1.2-build910.ipa",
+          "size": 26854984,
+          "buildVersion": "910",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.1.1",
           "date": "2026-11-08T16:35:07Z",
           "localizedDescription": "LinuxRunner 1.1.1 adds Fedora and Kali Linux, an experimental SteamOS ARM64 environment that installs from Valve's image, and a redesigned interface. It also reduces memory pressure on iPhone and iPad and fixes a long list of desktop problems.\n\n## What's New\n\n- **Redesigned interface:** a new Home screen with a live desktop preview, a Distributions tab with installed cards and each distribution's own logo, and Settings grouped into clear categories. Existing preferences are kept.\n- **Termux-like terminal on iPhone:** sharper text, true black background, a two-row key bar (ESC, TAB, CTRL, ALT, arrows, HOME, END, PGUP, PGDN) and clipboard access.\n- **Install screensaver for OLED screens:** after 3, 4 or 5 minutes without a touch during an installation, the screen goes black with a small movi…",
           "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.1/LinuxRunner-1.1.1-build905.ipa",
-          "size": 26429748,
-          "buildVersion": "905",
-          "minOSVersion": "15.0"
+          "size": 26429748
         },
         {
           "version": "1.1.0",
@@ -779,13 +786,6 @@
           "localizedDescription": "# LinuxRunner 1.1.0 — Build 900\r\n\r\nLinuxRunner brings ARM64 Linux applications and desktop environments to iPhone and iPad without a jailbreak. Version 1.1.0 adds external-display workflows, a Metal-backed virtual GPU, more desktops and substantial runtime improvements.\r\n\r\n## What's New\r\n\r\n- **DeX Mode:** use a compatible external display with keyboard/mouse input or the iPhone's relative touchpad. USB-C/compatible adapters and AirPlay use iOS display support; a separate external scene enables independent phone controls.\r\n- **Metal GPU acceleration:** compatible guest Mesa/virgl workloads use virglrenderer, ANGLE and Apple Metal. Select **Settings → Graphics → Linux GPU Device → GPU → Metal GPU · Experimental**, fully restart the app, then check **Active renderer**. Automatic does not enab…",
           "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.0/LinuxRunner-1.1.0-build900.ipa",
           "size": 21513740
-        },
-        {
-          "version": "1.0.1",
-          "date": "2026-10-27T07:30:48Z",
-          "localizedDescription": "# LinuxRunner v1.0.1\n\nLinux on your iPhone and iPad. This update adds iPad desktop adaptations, brings Arch Linux ARM into the setup workflow and improves package recovery and desktop sessions.\n\n## What's New\n\n- **iPad support:** window-aware desktop sizing, hardware-keyboard desktop shortcuts and the shared touch/pointer interface. Tested on a physical iPad.\n- **Arch Linux ARM:** install signed packages, use `pacman` and explore an experimental Openbox desktop with LXQt Panel and PCManFM-Qt.\n- **One setup workflow:** **Distributions → Set Up Linux…** installs a distribution or configures an existing environment while preserving its files and accounts.\n\nThe maintainer reports a working Arch graphical desktop and graphical application launches on a physical iPhone using **build 897**. Teleg…",
-          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.0.1/LinuxRunner-1.0.1.ipa",
-          "size": 14646386
         }
       ]
     },
@@ -837,7 +837,7 @@
         {
           "version": "0.9.96",
           "date": "2026-11-14T17:16:59Z",
-          "localizedDescription": "## What's Changed\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\n* fix(migrate): search a few sources at a time and open the dialog at once by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1141\n* fix(sync): persist since and lastSync in one awaited write by @sergwei in https://github.com/kodjodevf/mangayomi/pull/1146\n* fix(filters):…",
+          "localizedDescription": "## What's Changed\r\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\r\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\r\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\r\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\r\n* fix(migrate): search a few sources at a time and open the dialog at once by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1141\r\n* fix(sync): persist since and lastSync in one awaited write by @sergwei in https://github.com/kodjodevf/mangayomi/pull/1146\r\n* fix(fi…",
           "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.96/Mangayomi-v0.9.96-ios.ipa",
           "size": 117340839,
           "buildVersion": "129",
