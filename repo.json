@@ -261,30 +261,30 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
-      "size": 48708836,
+      "size": 49310532,
       "versions": [
+        {
+          "version": "2.1.3",
+          "date": "2026-11-15T14:54:47Z",
+          "localizedDescription": "## iPadn 2.1.3\n\n本次为修复与体验优化更新，解决关键词搜索时的并发闪退问题，隔离顶部提示动画重绘，并改进 iOS 27 本机配对引导与灵动岛交接体验。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复关键词搜索闪退与并发竞争**：移除搜索前并发嵌套任务组与超时竞争探测，改为在搜索结果返回后按商店地区顺序核验候选已下架应用（最多 15 项），并在新搜索、取消搜索或关闭开关时显式取消旧核验任务。\n- **隔离全局提示动画并优化切换账号响应**：将顶部提示与撤销横幅拆分为独立视图，避免横幅弹簧动画触发整个标签页层级重绘；切换账号时先让提示横幅开始渲染，再触发地区同步、重新搜索与已购刷新。\n- **优化 iOS 27 本机配对引导与灵动岛提醒**：点按「打开设置」跳转到系统设置时主动释放后台音频并推送第 1 步灵动岛横幅指引，补充锁屏密码验证提示与 11 种语言文案，后台等待状态更新支持按代数及时取消，避免旧状态阻塞新提醒。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.3-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.3-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance release fixes a concurr…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.3/iPadn-2.1.3-lite-unsigned.ipa",
+          "size": 49310532,
+          "buildVersion": "33",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.1.2",
+          "date": "2026-11-15T12:17:53Z",
+          "localizedDescription": "## iPadn 2.1.2\n\n本次更新优化了下载与按钮交互动画、侧滑反馈、历史版本校准及原生配对灵动岛提醒，新增直接替换翻译与已下架应用关键词优先搜索，并提升原生安装稳定性。安装包未签名，请用自己的工具签名后安装。\n\n### 新增与优化\n\n- **搜索优先显示已下架应用**：关键词搜索结合内置应用别名目录及本机已购、收藏、下载记录做相关度分级匹配，并核验候选应用的下架状态，将已确认下架且匹配关键词的应用优先排在结果前排；可在「账号 › 设置 › 下载 › 搜索时优先显示已下架应用」随时关闭恢复原排序（默认开启）。\n- **下载操作与按钮形变动效**：下载、已购、搜索与详情页的操作按钮、云朵按钮与黑白进度环统一居中对齐，点按后以按钮中心平滑形变为加载/下载环；进度环底轨与前景进度弧统一为相同线宽，状态过渡更连贯。\n- **侧滑动画与 5 秒撤销**：下载卡片侧滑垃圾桶与分享图标显露后由原生 Core Animation 播放完整动画（开启「减少动态效果」时显示静态完整图标）；下载卡片侧滑删除不再弹确认窗，改为 5 秒倒计时与撤销（连续删除可合并撤销），长按「删除任务及文件」与批量删除仍保留确认，搜索记录删除不再显示倒计时或撤销。\n- **底部标签栏与同步骨架屏微光**：底部标签栏改为自适应动态矢量图标并统一描边粗细，优化搜索图标视觉重量与账号页切换动画；加载骨架屏改为全屏同相位的单色扫光（shimmer），并统一列表轻按触感与轻量化确认弹窗。\n- **直接替换翻译（iOS 18+）**：简介和更新说明默认保留系统翻译面板；iOS 18 及以上可在「账号 › 设置 › 外观与图标 › 翻译」开启「直接替换翻译」，选择原文语言并准备语言包后直接替换为界面语言译文，支持「显示原文」。\n- **下载列表、内联更新说明与图标开关**：精简下载任务展示与状态文案，任务信息区分商店版本、…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.2/iPadn-2.1.2-lite-unsigned.ipa",
+          "size": 49328014
+        },
         {
           "version": "2.1.1",
           "date": "2026-11-14T05:53:21Z",
           "localizedDescription": "## iPadn 2.1.1\n\n本次为修复与布局优化更新，包含 iOS 16 安装设置崩溃修复和历史版本日期范围筛选排版改进。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复 iOS 16 打开安装设置时崩溃**：对安装帮助链接的中文片段进行显式编码，并避免无效 URL 的强制解包。感谢 #86 的贡献。\n- **完善商店链接容错**：应用详情无法构造有效 App Store 链接时，不再强制解包或显示不可用的查看/分享入口。\n- **优化历史版本日期筛选面板**：将起止日期、查询/取消/清除按钮与状态提示集中展示，统一日期控件对齐和布局间距，并适配无障碍大字体。保留原有日期查询、取消与清除行为。详见 #87。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.1-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.1-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance update fixes a crash when opening Installation settings on iOS 16 and improves the version-history date-range filter layout.\n\n- Encode…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.1/iPadn-2.1.1-lite-unsigned.ipa",
-          "size": 48708836,
-          "buildVersion": "31",
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "2.1.0",
-          "date": "2026-11-13T12:52:49Z",
-          "localizedDescription": "## iPadn 2.1.0\n\n本次更新为历史版本加入对应版本的真实图标与 IPA 大小，完善下载交互、自动安装和本机应用详情，并修复侧滑裁剪、重复安装排队及搜索标签圆角问题。安装包未签名，请用自己的工具签名后安装。\n\n### 历史版本\n\n- 新增起止日期范围查询（包含结束日全天），逐步检查当前来源提供的版本，显示进度并支持取消、清除筛选；失败或日期未知会明确提示结果不完整，不按版本 ID 猜日期，也不会遇到一条范围外的日期就停止。包内时间戳标记为「包内日期」，不等同于商店发布日期。\n- 展开和筛选结果按每批 20 条追加；可见历史行延迟触发读取，滑离时取消排队，先显示版本资料再补图标。图标在后台解码，并以最多 80 张 / 8 MiB 的内存缓存减少反复滚动的开销。日期扫描不主动读取图标。\n\n- 每个历史版本行内显示从对应 IPA 提取的主图标，便于比较活动角标；按需局部读取、分版本缓存，未获取时显示占位，不使用最新版商店图标代替。仅存储在 Assets.car 中的图标暂不支持。\n- 显示每个版本对应的 IPA 安装包大小，而不是套用最新版的大小；读取已有元数据即可取得远端完整包大小，无需先下载整个安装包。\n- 版本号、日期、大小和版本 ID 分层显示，大字体下自动纵向排列。\n- 长按版本行，通过系统菜单复制版本号或版本 ID；点击菜单外即可收起。\n- 兼容旧元数据缓存；无法读取大小时显示「—」。大小是远端原始 IPA 的长度，可能与下载处理后的本地文件略有差异。\n\n### 下载与操作体验\n\n- 下载卡片侧滑可删除或分享，分享文件名包含应用名称与版本号。\n- 修复侧滑时卡片边缘被裁剪、快速滑动后分享按钮短暂变灰的问题；整张圆角卡片一起移动，收起后恢复原样。\n- 点侧滑操作以外的位置即可收起，不会顺带触发下面的按钮。修正掉帧时弹簧动画推进过慢、收起后操作恢复延迟的问题。\n…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.0/iPadn-2.1.0-lite-unsigned.ipa",
-          "size": 48684606
-        },
-        {
-          "version": "2.0.0",
-          "date": "2026-11-12T10:41:39Z",
-          "localizedDescription": "## iPadn 2.0.0\n\niPadn 2.0 是一次大更新：新增发现页、用户评论、翻译、应用锁、本机应用、Wi‑Fi 传输、灵动岛下载进度、小组件和快捷指令，原生安装可以阻止 App Store 更新，并开始支持 iOS / iPadOS 16。安装包未签名，请用自己的工具签名后安装。\n\n**两个安装包**\n\n- `iPadn-2.0.0-unsigned.ipa`：标准版，包含实时活动（灵动岛、锁屏）和小组件，签名时需要 2 个 App ID。\n- `iPadn-2.0.0-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID，适合 App ID 数量有限的签名方式。其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可以添加源 `https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`，在工具里直接安装和更新。\n\n**发现与应用详情**\n\n- 搜索页新增「发现」：免费榜、付费榜、畅销榜，可切换地区并按分类筛选。\n- 详情页新增「评论」，可查看各地区最近的用户评论并按星级筛选。\n- 简介和更新说明不是你的语言时，可以用系统翻译替换为译文（iOS 17.4 及更新版本）。\n- 版本历史默认显示最近 5 个版本。\n\n**下载与安装**\n\n- 锁屏和灵动岛显示下载进度（可在设置中关闭）。\n- 新增「仅使用 Wi‑Fi 下载」和「下载完成后自动安装」。\n- 下载页可以「全部更新」，编辑模式改为紧凑列表并支持全选。\n- 任务详情新增「安装包信息」：权限、扩展、语言、URL Scheme、后台模式等。\n- 原生安装新增「阻止 App Store 更新」：App Store 会把应用视为最新版本，不再提示或自动更新；关闭后再安…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.0.0/iPadn-2.0.0-lite-unsigned.ipa",
-          "size": 48080581
+          "size": 48708836
         }
       ]
     },

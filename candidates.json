@@ -209,16 +209,23 @@
       "localizedDescription": "使用flutter构建的漫画阅读器，通过插件提供漫画支持。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.zephyr.breeze.png?v=796a11be77ae",
       "tintColor": "#e22e2e",
-      "size": 26431983,
+      "size": 27173399,
       "versions": [
+        {
+          "version": "3.0.38",
+          "date": "2026-11-15T09:03:41Z",
+          "localizedDescription": "## 📝 更新日志\r\n## [v3.0.38]\r\n\r\n### 功能更新\r\n\r\n- 添加编辑已下载漫画的功能\r\n- 添加章节已读标记\r\n- 移动端阅读新增「横屏自动双页」功能\r\n- 新增「内网拦截」开关\r\n- 更新弹窗支持「一周内不再提醒」\r\n- 新增「显示搜索书签」开关\r\n- 追更与更新日志新增 NEW 提示\r\n- 插件筛选面板新增下拉框支持\r\n- 添加doh支持\r\n- 网络层支持域名前置（IP 直连 / SNI 绕过）与 ECH，改善部分图源的连通性 with [daiwenwen3](https://github.com/daiwenwen3)\r\n\r\n### 修复\r\n\r\n- 修复导入漫画时失败的问题\r\n\r\n### 优化\r\n\r\n- 优化部分性能\r\n- 调整部分文本与ui样式\r\n\r\n### 杂项\r\n\r\n- 重做Windows安装器\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.38.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/windows-installer-v3.0.38.exe) |\r\n| **macOS** | [Breeze-macOS-v3.0.38.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-macOS-v3.0.38.dmg) |\r\n| **Android** | [app-arm64-v8a-release-v3.0.38.apk](https://github.com/breeze-pro…",
+          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.38/Breeze-iOS-v3.0.38.ipa",
+          "size": 27173399,
+          "buildVersion": "2225",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "3.0.37",
           "date": "2026-10-31T09:28:32Z",
           "localizedDescription": "## 📝 更新日志\r\n## [v3.0.37]\r\n\r\n### 功能更新\r\n\r\n- 添加关闭首页和云收藏页的功能\r\n- 漫画详情页长按收藏按钮现可选择收藏夹\r\n- 添加本地收藏后自动云收藏的开关\r\n- 添加滑动验证码支持\r\n- 移动平台阅读设置添加显示状态栏功能\r\n- 添加搜索书签 with [AdySnowflake](https://github.com/AdySnowflake)\r\n\r\n### 修复\r\n\r\n- 修复自定义插件顺序无效的问题\r\n\r\n### 优化\r\n\r\n- 首页添加常驻搜索按钮\r\n- 优化报错显示\r\n- 优化部分文本\r\n\r\n---\r\n\r\n### 📦 推荐下载\r\n| 平台 | 下载链接 |\r\n| :--- | :--- |\r\n| **Windows** | [windows-installer-v3.0.37.exe](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/windows-installer-v3.0.37.exe) |\r\n| **macOS** | [Breeze-macOS-v3.0.37.dmg](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-macOS-v3.0.37.dmg) |\r\n| **Android** | [app-arm64-v8a-release-v3.0.37.apk](https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/app-arm64-v8a-release-v3.0.37.apk) |\r\n| **iOS** | [Breeze-i…",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.37/Breeze-iOS-v3.0.37.ipa",
-          "size": 26431983,
-          "buildVersion": "2225",
-          "minOSVersion": "15.0"
+          "size": 26431983
         },
         {
           "version": "3.0.36",
@@ -226,13 +233,6 @@
           "localizedDescription": "## 📝 更新日志\n## [v3.0.36]\n\n### 功能更新\n\n- 导航添加首页和云收藏页\n- 添加详情风格漫画列表\n- 添加默认章节倒序选项\n- 漫画详情页操作栏添加云收藏按钮\n\n### 优化\n\n- 优化书架多选操作体验\n- 优化性能\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.36.exe](https://github.com/deretame/Breeze/releases/download/v3.0.36/windows-installer-v3.0.36.exe) |\n| **macOS** | [Breeze-macOS-v3.0.36.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-macOS-v3.0.36.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.36.apk](https://github.com/deretame/Breeze/releases/download/v3.0.36/app-arm64-v8a-release-v3.0.36.apk) |\n| **iOS** | [Breeze-iOS-v3.0.36.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa) |\n| **Linux** | [breeze-v3.0.36.flatpak](https://github.com/deretame/Breeze/releases/dow…",
           "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.36/Breeze-iOS-v3.0.36.ipa",
           "size": 26377539
-        },
-        {
-          "version": "3.0.35",
-          "date": "2026-10-18T05:23:12Z",
-          "localizedDescription": "## 📝 更新日志\n## [v3.0.35]\n\n### 功能更新\n\n- 章节目录添加分组支持\n- 评论添加复制，查看头像功能\n\n### 优化\n\n- 优化追更逻辑与追更页ui\n- 优化云收藏错误提示\n\n---\n\n### 📦 推荐下载\n| 平台 | 下载链接 |\n| :--- | :--- |\n| **Windows** | [windows-installer-v3.0.35.exe](https://github.com/deretame/Breeze/releases/download/v3.0.35/windows-installer-v3.0.35.exe) |\n| **macOS** | [Breeze-macOS-v3.0.35.dmg](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-macOS-v3.0.35.dmg) |\n| **Android** | [app-arm64-v8a-release-v3.0.35.apk](https://github.com/deretame/Breeze/releases/download/v3.0.35/app-arm64-v8a-release-v3.0.35.apk) |\n| **iOS** | [Breeze-iOS-v3.0.35.ipa](https://github.com/deretame/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa) |\n| **Linux** | [breeze-v3.0.35.flatpak](https://github.com/deretame/Breeze/releases/download/v3.0.35/breeze-v…",
-          "downloadURL": "https://github.com/breeze-project-org/Breeze/releases/download/v3.0.35/Breeze-iOS-v3.0.35.ipa",
-          "size": 26309164
         }
       ]
     },
@@ -657,16 +657,23 @@
       "localizedDescription": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/psyche.kelivo.png?v=752ceed4b0bc",
       "tintColor": "#b27545",
-      "size": 47758377,
+      "size": 49119693,
       "versions": [
+        {
+          "version": "1.3.6",
+          "date": "2026-11-15T13:38:07Z",
+          "localizedDescription": "## What's Changed\n\n- feat: Preview and edit images in the draft before sending.\n- feat: Find text in the current conversation and move between matches, with case, whole word, and reasoning options.\n- feat: Delete the other versions of a message, keeping the version on screen.\n- feat: Carry selected earlier messages and replies through context compression, and review them before it runs.\n- feat: Add DeepSeek speech synthesis and recognition.\n- feat: Remember passwords for manual encrypted backups on this device.\n- feat: Reconnect MCP servers when a tool is needed again.\n- feat: Set a timeout for each context compression request.\n- feat: Paginate the context operation history.\n- feat: Enable balance queries for every provider format.\n- feat: Choose a hosted image model and image complexity s…",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.6/Kelivo_ios_1.3.6%2B88.ipa",
+          "size": 49119693,
+          "buildVersion": "88",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.3.5",
           "date": "2026-11-08T12:28:45Z",
           "localizedDescription": "## What's Changed\n\n- feat: Add automatic context compaction, with editable summary templates, per-conversation settings, and undo. OpenAI native compaction can be enabled separately.\n- feat: Add a fixed context start, so history is sent from a chosen message without rolling truncation by message count.\n- feat: Add Standard, Fast, and UltraFast response speed controls in the reasoning picker, saved per conversation and model.\n- feat: Add a per-conversation control for image recall, plus local budgets for image size, image count, and request body.\n- feat: Detect vision, tools, and thinking support on local Ollama models.\n- feat: Let each assistant choose which memory types are always injected in full.\n- feat: Add custom model icons, including color and monochrome LobeHub styles.\n- feat: Add …",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.5/Kelivo_ios_1.3.5%2B85.ipa",
-          "size": 47758377,
-          "buildVersion": "85",
-          "minOSVersion": "15.0"
+          "size": 47758377
         },
         {
           "version": "1.3.4",
@@ -674,13 +681,6 @@
           "localizedDescription": "## What's Changed\r\n\r\nThis maintenance release focuses on message-saving stability and platform interaction fixes.\r\n\r\n- **Message-saving stability:** Fix an AOT compiler issue that could terminate the process when sending messages, regenerating replies, or saving edits to message history. Resolve checkpoint compatibility before the write loop while retaining incremental writes for changed message parts. This covers the persistence path used when saving an edit that removes images. (#1342)\r\n- **Android text selection:** Keep the editor's selection menu available after Select All so subsequent actions remain accessible. Retire replaced selection sessions before actions can use callbacks from an outdated selection. (#1343)\r\n- **iOS Live Activities:** Use the system background for the Lock Scre…",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.4/Kelivo_ios_1.3.4%2B84.ipa",
           "size": 46627606
-        },
-        {
-          "version": "1.3.3",
-          "date": "2026-11-02T06:55:29Z",
-          "localizedDescription": "## What's Changed\n\n- feat: Add a desktop side panel that keeps files, topics, and browser tabs together for each conversation, with shortcuts.\n- feat: Adapt desktop layouts down to a 360px-wide window.\n- feat: Add isolated workspace web apps. A `.app.html` file keeps its own saved data and cookies, separate from normal browsing.\n- feat: Bound how many images stay in context. Older tool screenshots can be omitted automatically, pinned images stay, and an omitted image can be attached again.\n- feat: Quote selected message text into the composer, jump back to the source, and translate the selection in the app.\n- feat: Copy an assistant in full, or choose memories, phrases, world books, skills, tools, and the default workspace.\n- feat: Let each conversation choose its own MCP servers, or keep …",
-          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.3/Kelivo_ios_1.3.3%2B83.ipa",
-          "size": 46628767
         }
       ]
     },
