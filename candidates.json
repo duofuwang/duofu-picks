@@ -1007,14 +1007,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1198766998,
+      "size": 1199340823,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-13T00:38:25Z",
-          "localizedDescription": "## Alpha Build `45eca85`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`45eca85`](https://github.com/Provenance-Emu/Provenance/commit/45eca85dcdb9f2c4529ad2225b606e23ed6b1f8f) |\n| **Built** | 2026-11-13 00:37 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43330352195) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n45eca85dc feat(input): route controller tilt to Dolphin Wii Remote\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload feed…",
+          "date": "2026-11-16T05:08:03Z",
+          "localizedDescription": "## Alpha Build `4b837c4`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`4b837c4`](https://github.com/Provenance-Emu/Provenance/commit/4b837c4971429a4c7b9efd9318be7d921103c045) |\n| **Built** | 2026-11-16 05:07 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43804358931) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n4b837c497 docs: link the PVSystems platform id fix in the 3.4.0 list\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload fe…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1198766998,
+          "size": 1199340823,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
