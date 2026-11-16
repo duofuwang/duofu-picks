@@ -413,15 +413,6 @@
     "size": 29921372,
     "source_repo": "linroid/Ketch"
   },
-  "JiangNanGenius/floe-agent@1.8.25": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.25",
-    "build": "346",
-    "minOSVersion": "26.0",
-    "size": 649780098,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "project-robius/robrix@1.0.0-beta.7": {
     "bundleIdentifier": "rs.robius.robrix",
     "displayName": "Robrix",

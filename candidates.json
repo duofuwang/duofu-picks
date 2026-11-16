@@ -193,11 +193,11 @@
           "size": 28173699
         },
         {
-          "version": "upstream-8.39.0",
-          "date": "2026-08-27T19:28:27Z",
-          "localizedDescription": "Automated unsigned IPA build for upstream Bangumi tag `8.39.0`.\n\nSource: https://github.com/czy0729/Bangumi/tree/8.39.0\n\nSource archive: https://github.com/czy0729/Bangumi/archive/refs/tags/8.39.0.zip\n\nThe IPA is intentionally unsigned and should be signed by your sideloading tool or a later signing workflow.\n\nBuild run: https://github.com/czy0729/Bangumi/actions/runs/33107489626",
-          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/upstream-8.39.0/Bangumi-8.39.0-unsigned.ipa",
-          "size": 23457639
+          "version": "upstream-8.42.0",
+          "date": "2026-11-16T15:50:27Z",
+          "localizedDescription": "Automated unsigned IPA build for Bangumi tag `8.42.0`.\r\n\r\nSource: https://github.com/czy0729/Bangumi/tree/8.42.0\r\n\r\nSource archive: https://github.com/czy0729/Bangumi/archive/refs/tags/8.42.0.zip\r\n\r\nThe IPA is intentionally unsigned and should be signed by your sideloading tool or a later signing workflow.\r\n\r\nBuild run: https://github.com/czy0729/Bangumi/actions/runs/43896232150",
+          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/upstream-8.42.0/bangumi_v8.42.0.ipa",
+          "size": 32031310
         }
       ]
     },
@@ -373,34 +373,6 @@
           "localizedDescription": "1. Fixed reading page scroll functionality.",
           "downloadURL": "https://github.com/EhPanda-Team/EhPanda/releases/download/v2.7.10/EhPanda.ipa",
           "size": 7231227
-        }
-      ]
-    },
-    {
-      "name": "Floe Agent",
-      "bundleIdentifier": "org.floeagent.ios",
-      "developerName": "JiangNanGenius",
-      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
-      "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
-      "tintColor": "#1662df",
-      "size": 649780098,
-      "versions": [
-        {
-          "version": "1.8.25",
-          "date": "2026-11-14T08:52:12Z",
-          "localizedDescription": "# Floe Agent 1.8.25（346）\n\n## 简体中文\n\n增加字体设计作品的单项删除、多选、全选和批量管理。字体管理展示完整内置字体及用户导入字体，标记内置项目并保护其不被删除。\n\n改善智能体首轮工具可见性；聊天、计划与智能体按各自用途提供工具，本地模型按需加载工具定义。保留所选模式在重试与会话恢复时的工具边界。\n\n改善模型反复查询工具目录时的停转判断，按实际进展更新状态。\n\n本次用于内部测试。换机后的储存整理、真实 Linux 清理与跨设备同步仍需设备验证；不把旧结果计作本版新增回收。不提交公开 TestFlight 或正式 App Store 审核。\n\n## English\n\nAdds single and batch deletion, multiple selection and Select All for font-design projects. Font management lists all bundled and user-imported fonts, identifies bundled items and protects them from deletion.\n\nImproves first-turn tool visibility for agents. Chat, Plan and Agent modes expose tools appropriate to their purpose, while local models load definitions on demand. Preserves mode boundaries during retries and conversation recovery.\n\nImproves stall detection during repeated tool-catalog qu…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.25/Floe-Agent-1.8.25-build346-unsigned.ipa",
-          "size": 649780098,
-          "buildVersion": "346",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.8.24",
-          "date": "2026-11-14T01:39:53Z",
-          "localizedDescription": "# Floe Agent 1.8.24（345）\n\n## 简体中文\n\n修复换机后旧磁盘整理记录阻止再次整理的问题。恢复时完整核对文件内容，显示校验进度并支持取消；保留原资料、已装软件和恢复盘。实际回收量以整理完成后的结果和设备剩余空间为准。\n\n清理 Linux 任务改为由助手通过终端检查和整理共享 Linux 内的缓存与垃圾；缓存检查工具不再是必须通过的前置步骤。没有可用模型时仍可使用安全清理脚本。\n\n补齐语音云端配置等设置的 iCloud 同步与入站刷新，沿用现有凭据同步开关。优化字体打包并退役已被替代的旧组件，保留现有文档、字体内容和许可证。\n\n优化图片工作台的工具、图层、导出与画布导航，修复同一编辑器连续更新原图的保存冲突。\n\n本次用于内部测试；不提交公开 TestFlight 或正式 App Store 审核。GitHub 未签名安装包与 Feather 更新源按既有交付方式提供，需要自行签名。\n\n## English\n\nFixes old storage-optimization records blocking a fresh optimization after device migration. Recovery verifies the complete file contents, reports progress and supports cancellation while preserving original data, installed software and recovery disks. Check completed results and device free space for actual reclamation.\n\nLinux cleanup tasks now let the assistant inspect and c…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.24/Floe-Agent-1.8.24-build345-unsigned.ipa",
-          "size": 649692748
         }
       ]
     },
