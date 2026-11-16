@@ -48,16 +48,23 @@
       "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=8db853b5a9fb",
       "tintColor": "#5fbfb7",
-      "size": 48217939,
+      "size": 48221386,
       "versions": [
+        {
+          "version": "1.12.1-306",
+          "date": "2026-11-16T06:31:45Z",
+          "localizedDescription": "# v1.12.1-306\n\n## Beta 7\n\n### Playback\n- **Fix** - Streamed podcasts and books that stopped with a source error a moment after pressing play, and needed several more taps before they went, now resume on the first one (#488)\n\n### BookOrbit\n- **Fix** - Year in Review now shows on BookOrbit 3.7 and newer, where the server locks the activity routes to its own app (#486)",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-306/absorb-1.12.1-306-pre.ipa",
+          "size": 48221386,
+          "buildVersion": "306",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.12.1-305",
           "date": "2026-11-12T22:55:37Z",
           "localizedDescription": "# v1.12.1-305\n## Beta 6\n\n### Wear OS\n- **New** - The Absorb watch app ships with each release from now on. Play from the wrist, see your bookmarks, and the watch can pause and rewind the phone when you fall asleep (a toggle in the sleep timer settings)\n- For now the watch APK is a companion to the GitHub version of Absorb. It also works on its own with a basic sign-in. Play Store is in the works\n\n### Reader\n- **New** - Sentence mode shows one sentence at a time, pictures included, and turns the page when the narration runs on. Auto scroll speed is in words per minute\n- **Improved** - The tap zones card can move to the top or shrink away. Swipe between the reader settings tabs\n- **Fix** - A narrated EPUB keeps the read along color you picked after a restart\n\n### Playback\n- **Fix** - A pause…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-305/absorb-1.12.1-305-pre.ipa",
-          "size": 48217939,
-          "buildVersion": "305",
-          "minOSVersion": "15.0"
+          "size": 48217939
         },
         {
           "version": "1.12.1-304",
@@ -65,13 +72,6 @@
           "localizedDescription": "# v1.12.1-304\n## Beta 5\n\n### Windows\n- **New** - Absorb for Windows: an installer is attached to each release from now on. Sign in, play, download, read and transcribe like on the phone. Needs Windows 10 or newer\n  - It's new, so as always let me know about bugs you find, and about areas that don't feel very desktop yet\n  - The installer isn't signed yet, so Windows will warn before it runs\n\n### Audio (Android)\n- **Improved** - The loudness slider levels quiet books automatically instead of adding a fixed boost\n- **Improved** - The equalizer and bass boost run inside the player on Android, so they work on every phone\n- **New** - A pitch slider in the equalizer, to make the narrator sound lower or higher\n- **New** - Play with other audio, in Playback settings, keeps Absorb playing when anot…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-304/absorb-1.12.1-304-pre.ipa",
           "size": 48090333
-        },
-        {
-          "version": "1.12.1-303",
-          "date": "2026-11-01T16:07:47Z",
-          "localizedDescription": "# v1.12.1-303\r\n## Beta 4\r\n\r\n### BookOrbit\r\n- **New** - Send to E-Reader: email a book to your Kindle or other e-reader from its details. Your devices, groups, templates and send history are under Send by email in your account in Settings, and admins set up mail servers in Server admin\r\n- **New** - Quick Match several books at once from the library's select mode, like on Audiobookshelf\r\n- **New** - Request books missing from your series, from Find Missing Books or the Scan Series results, if your account can make requests\r\n- **New** - Tab hold shortcuts include BookOrbit's admin pages\r\n- **Fix** - Resetting a book takes it out of Currently Reading and clears its ebook spot, books you only read can be reset, and you can set a book back to Unread\r\n\r\n### Read along\r\n- **New** - Create a read a…",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-303/absorb-1.12.1-303-pre.ipa",
-          "size": 47841246
         }
       ]
     },
@@ -307,6 +307,41 @@
       ]
     },
     {
+      "name": "crate",
+      "bundleIdentifier": "com.amendez.crate",
+      "developerName": "oneamendez",
+      "subtitle": "在 iPhone / iPad 上跑 Linux 桌面虚拟机，需 JIT 与 LocalDevVPN",
+      "localizedDescription": "crate: run Linux VMs on iPhone and iPad",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.amendez.crate.png?v=5c995a62cd1c",
+      "tintColor": "#2a8bf5",
+      "size": 13636890,
+      "versions": [
+        {
+          "version": "0.1.5",
+          "date": "2026-11-16T00:28:19Z",
+          "localizedDescription": "## What's new\n\n- **More memory sizes:** pick 2, 10 or 12 GB for a VM, beside 4, 6 and 8, when you install it or in its settings. On an iPad Pro with 16 GB, 10 and 12 GB are given in full. iPhones let crate use about 6 GB, so there a VM gets at most about 4 GB whatever you pick. A 2 GB VM leaves the most room for the desktop and apps: it kept Ubuntu running Chrome and YouTube on an iPhone 16.\n\ncrate v0.1.5 for iPhone and iPad, unsigned: sign it with your own Apple account, then install it. [INSTALL.md](https://github.com/oneamendez/crate-ios/blob/v0.1.5/INSTALL.md) has the steps, and a request to paste into Claude Code, which does them for you.\n\nBuilt from d3289faf94777da9fd35f4d0250568d87e8c29e3 with crate v0.1.1 and frameworks-2026.11.14, each attested. To check where this IPA came from: …",
+          "downloadURL": "https://github.com/oneamendez/crate-ios/releases/download/v0.1.5/crate-unsigned.ipa",
+          "size": 13636890,
+          "buildVersion": "6",
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.1.4",
+          "date": "2026-11-15T02:32:42Z",
+          "localizedDescription": "## What's new\n\n- **External monitor:** a connected monitor shows the VM's desktop at the monitor's resolution, and the iPhone or iPad becomes its trackpad. GNOME may need its resolution set in Settings → Displays to fill the monitor.\n- **Mouse and trackpad on iPad:** the wheel scrolls, the pointer follows the mouse, and right and middle click work.\n- **Disk size:** pick a VM's disk size when you install it, from 16 GB up to what your device holds.\n- **Memory setting:** change a VM's memory limit in its settings, on every device.\n- **Sturdier JIT:** turning JIT on waits for LocalDevVPN, tries again when you come back from it, and finds the Remote Pairing port if it isn't the usual one.\n- **Logs that survive a crash:** Export Logs includes the launch before, memory use is logged while a VM r…",
+          "downloadURL": "https://github.com/oneamendez/crate-ios/releases/download/v0.1.4/crate-unsigned.ipa",
+          "size": 13636894
+        },
+        {
+          "version": "0.1.3",
+          "date": "2026-11-14T11:38:10Z",
+          "localizedDescription": "crate v0.1.3 for iPhone and iPad, unsigned: sign it with your own Apple account, then install it. [INSTALL.md](https://github.com/oneamendez/crate-ios/blob/v0.1.3/INSTALL.md) has the steps, and a request to paste into Claude Code, which does them for you.\n\nBuilt from 7c351b07262033e02548ad60b128d61e374dfe45 with crate v0.1.1 and frameworks-2026.11.14, each attested. To check where this IPA came from: `gh attestation verify crate-unsigned.ipa --repo oneamendez/crate-ios`\n\n    SHA-256 bb81053df316d8ac81cd896980cb7c76e9fe1e97329c31a859dcc724f9ef615d",
+          "downloadURL": "https://github.com/oneamendez/crate-ios/releases/download/v0.1.3/crate-unsigned.ipa",
+          "size": 13587299
+        }
+      ]
+    },
+    {
       "name": "EhPanda",
       "bundleIdentifier": "app.ehpanda",
       "developerName": "EhPanda-Team",
@@ -366,13 +401,6 @@
           "localizedDescription": "# Floe Agent 1.8.24（345）\n\n## 简体中文\n\n修复换机后旧磁盘整理记录阻止再次整理的问题。恢复时完整核对文件内容，显示校验进度并支持取消；保留原资料、已装软件和恢复盘。实际回收量以整理完成后的结果和设备剩余空间为准。\n\n清理 Linux 任务改为由助手通过终端检查和整理共享 Linux 内的缓存与垃圾；缓存检查工具不再是必须通过的前置步骤。没有可用模型时仍可使用安全清理脚本。\n\n补齐语音云端配置等设置的 iCloud 同步与入站刷新，沿用现有凭据同步开关。优化字体打包并退役已被替代的旧组件，保留现有文档、字体内容和许可证。\n\n优化图片工作台的工具、图层、导出与画布导航，修复同一编辑器连续更新原图的保存冲突。\n\n本次用于内部测试；不提交公开 TestFlight 或正式 App Store 审核。GitHub 未签名安装包与 Feather 更新源按既有交付方式提供，需要自行签名。\n\n## English\n\nFixes old storage-optimization records blocking a fresh optimization after device migration. Recovery verifies the complete file contents, reports progress and supports cancellation while preserving original data, installed software and recovery disks. Check completed results and device free space for actual reclamation.\n\nLinux cleanup tasks now let the assistant inspect and c…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.24/Floe-Agent-1.8.24-build345-unsigned.ipa",
           "size": 649692748
-        },
-        {
-          "version": "1.8.22",
-          "date": "2026-11-13T18:35:34Z",
-          "localizedDescription": "# Floe 1.8.22 (343)\n\n## 简体中文\n\n- 修复更新后“优化占用”无法运行的问题，正确识别上次磁盘恢复留下的原生关闭回执。\n- 再次启动时保留旧作业及全部历史锁，继续保护原文件、已安装软件和恢复盘。\n\n仅内部测试及现有GitHub／Feather渠道。实际回收量以设备完成结果为准。\n\n## English\n\n- Fixes Optimize Storage becoming unavailable after an update by recognizing native closure receipts retained from an earlier recovery session.\n- Preserves pending jobs and all historical locks on restart, protecting original files, installed software and recovery disks.\n\nFor internal testing and the existing GitHub/Feather channels. Reclaimed storage depends on completed work on the device.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the …",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.22/Floe-Agent-1.8.22-build343-unsigned.ipa",
-          "size": 918244256
         }
       ]
     },
@@ -762,14 +790,14 @@
       "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.linuxrunner.app.png?v=84a600dbb996",
       "tintColor": "#60bdf5",
-      "size": 26854984,
+      "size": 26858049,
       "versions": [
         {
           "version": "1.1.2",
           "date": "2026-11-15T18:03:39Z",
           "localizedDescription": "LinuxRunner 1.1.2 brings **LinuxRunner Modes**, six optional ways to turn the Linux on your iPhone into something new: an AI coding workstation, a remote desktop for your PC, a server, a web lab, a Wi-Fi file server or a retro console. It adds new distributions and their real desktops, makes window dragging lighter, and fixes the desktop freezes reported in 1.1.1.\n\n## LinuxRunner Modes\n\nOpen **Settings › General › LinuxRunner Modes**. Every mode is off until you install and start it, and everything stops when Linux stops.\n\n- **Agent Mode:** Claude Code, Codex CLI and OpenCode, with Node.js, git, ripgrep and Python. **Open Agent Terminal** shows a menu of the installed agents and starts them in `~/Projects` as your Linux user. Each agent signs in with your own account; LinuxRunner never see…",
           "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.2/LinuxRunner-1.1.2-build910.ipa",
-          "size": 26854984,
+          "size": 26858049,
           "buildVersion": "910",
           "minOSVersion": "15.0"
         },
@@ -1238,16 +1266,23 @@
       "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
       "tintColor": "#2ad8c9",
-      "size": 11054874,
+      "size": 11074246,
       "versions": [
+        {
+          "version": "1.2.10",
+          "date": "2026-11-16T08:33:05Z",
+          "localizedDescription": "### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.10-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.10-windows-arm64-setup.exe` - installer |\r\n| Android 64-bit (most phones) | `tokenbar-v1.2.10-android-arm64-v8a.apk` |\r\n| Android 32-bit ARM | `tokenbar-v1.2.10-android-armeabi-v7a.apk` |\r\n| Android x86_64 (emulator) | `tokenbar-v1.2.10-android-x86_64.apk` |\r\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.10-macos-arm64.dmg` |\r\n| macOS 12+ (Intel) | `tokenbar-v1.2.10-macos-x86_64.dmg` |\r\n| Linux x64 | `tokenbar-v1.2.10-linux-x64.tar.gz` - extract and run `token_bar` |\r\n| Linux ARM64 | `tokenbar-v1.2.10-linux-arm64.tar.gz` - extract and run `token_bar` |\r\n| iOS 15+ | `tokenbar-v1.2.10-ios-unsigned.ipa` -…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.10/tokenbar-v1.2.10-ios-unsigned.ipa",
+          "size": 11074246,
+          "buildVersion": "16",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.2.9",
           "date": "2026-11-10T11:01:05Z",
           "localizedDescription": "### What's new\r\n\r\n- **macOS: menu bar only mode.** New switch in Settings → Desktop, *Menu bar only (hide the Dock icon)*, so TokenBar lives only in the menu bar. Open the window or quit from the menu bar icon (⌘Q is unavailable while the Dock icon is hidden). Default is off. Thanks to @tianhuanyun for the suggestion and for testing the approach on macOS 26 ([#8](https://github.com/lwh0630/TokenBar/issues/8)).\r\n- Includes the v1.2.8 fix: API keys are no longer lost after restarting on macOS (reported and diagnosed in detail by @tianhuanyun, [#6](https://github.com/lwh0630/TokenBar/issues/6)).\r\n### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.9-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.9-windows-arm64-setup.…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.9/tokenbar-v1.2.9-ios-unsigned.ipa",
-          "size": 11054874,
-          "buildVersion": "15",
-          "minOSVersion": "15.0"
+          "size": 11054874
         },
         {
           "version": "1.2.7",
@@ -1255,13 +1290,6 @@
           "localizedDescription": "## TokenBar v1.2.7\r\n\r\nA fix for a **Windows crash**, on top of v1.2.6.\r\n\r\n### Fixed\r\n\r\n- **Windows: the app no longer closes itself** when you open an account (for example by clicking the Codex card) or close a dialog. The crash is a bug in Flutter's Windows engine: once any accessibility client is attached (a screen reader, an input method or another tool that inspects windows) and a page is opened or closed, the engine dereferences an empty pointer and the process dies. The upstream bug (flutter/flutter#175041) is still open and is present in the newest Flutter (3.47.9), so TokenBar now stops publishing its accessibility tree on Windows.\r\n- Built with Flutter 3.47.9 (was 3.47.7).\r\n\r\n### Notes\r\n\r\n- **Windows no longer supports screen readers** until the Flutter bug is fixed. Other platfor…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.7/tokenbar-v1.2.7-ios-unsigned.ipa",
           "size": 11050215
-        },
-        {
-          "version": "1.2.6",
-          "date": "2026-11-03T11:10:50Z",
-          "localizedDescription": "## TokenBar v1.2.6\r\n\r\nA follow-up to v1.2.0 (Liquid Glass). It adds **in-app updates**, a custom background, swipe navigation on phones and a cost-first usage history, makes the app smoother and lighter, and **fixes very high memory use and laggy window resizing on Windows**. This release replaces v1.2.1, v1.2.2, v1.2.4 and v1.2.5 (their notes are included below); v1.2.2 was withdrawn because of the memory problem.\r\n\r\n### Fixed in v1.2.6 (Android)\r\n\r\n- **Card blur no longer disappears** while pulling down to refresh or scrolling past the end of a list: Android 12+ wrapped the list in an effect layer that left the blurred cards without a backdrop. The stretch effect is gone (the refresh spinner is unchanged).\r\n- **Card blur stays on while opening a page** such as an account's details, inste…",
-          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.6/tokenbar-v1.2.6-ios-unsigned.ipa",
-          "size": 11041461
         }
       ]
     },

@@ -296,15 +296,6 @@
     "size": 33314067,
     "source_repo": "simonoppowa/OpenNutriTracker"
   },
-  "lwh0630/TokenBar@1.2.9": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.9",
-    "build": "15",
-    "minOSVersion": "15.0",
-    "size": 11054874,
-    "source_repo": "lwh0630/TokenBar"
-  },
   "Leviidev/Henge@0.3": {
     "bundleIdentifier": "com.henge.app",
     "displayName": "Henge",
@@ -331,15 +322,6 @@
     "minOSVersion": "16.0",
     "size": 48367660,
     "source_repo": "cogwheel0/conduit"
-  },
-  "Kianuni/Erosion-CN@0.9.1": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "0.9.1",
-    "build": "23",
-    "minOSVersion": "26.0",
-    "size": 6277874,
-    "source_repo": "Kianuni/Erosion-CN"
   },
   "Predidit/Kazumi@2.4.4": {
     "bundleIdentifier": "com.example.kazumi",
@@ -376,15 +358,6 @@
     "minOSVersion": "27.0",
     "size": 18858405,
     "source_repo": "EhPanda-Team/EhPanda"
-  },
-  "pounat/absorb@1.12.1-305": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.12.1",
-    "build": "305",
-    "minOSVersion": "15.0",
-    "size": 48217939,
-    "source_repo": "pounat/absorb"
   },
   "Lingyan000/fluxdo@0.2.30": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
@@ -529,5 +502,41 @@
     "minOSVersion": "15.0",
     "size": 26854984,
     "source_repo": "mxhm11cr/LinuxRunner"
+  },
+  "Kianuni/Erosion-CN@0.9.2": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "0.9.2",
+    "build": "24",
+    "minOSVersion": "26.0",
+    "size": 6279347,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "pounat/absorb@1.12.1-306": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.12.1",
+    "build": "306",
+    "minOSVersion": "15.0",
+    "size": 48221386,
+    "source_repo": "pounat/absorb"
+  },
+  "lwh0630/TokenBar@1.2.10": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.10",
+    "build": "16",
+    "minOSVersion": "15.0",
+    "size": 11074246,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "oneamendez/crate-ios@0.1.5": {
+    "bundleIdentifier": "com.amendez.crate",
+    "displayName": "crate",
+    "version": "0.1.5",
+    "build": "6",
+    "minOSVersion": "18.0",
+    "size": 13636890,
+    "source_repo": "oneamendez/crate-ios"
   }
 }
