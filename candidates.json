@@ -244,16 +244,23 @@
       "localizedDescription": "A SwiftUI third-party iOS client experiment for Bilibili browsing, dynamics, video playback, and danmaku.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/nsk-1695.v-team.cn.png?v=8ad732d1bdd1",
       "tintColor": "#f5609b",
-      "size": 24660955,
+      "size": 24814110,
       "versions": [
+        {
+          "version": "1.1.5",
+          "date": "2026-11-17T11:42:35Z",
+          "localizedDescription": "## 更新内容（1.1.4 → 1.1.5）\n\n- **顶栏交互统一**：搜索页与「我的」页面采用系统原生顶栏搜索与按钮布局；动态页右上角切换箭头尺寸调整得更协调。\n- **视频页状态栏清晰**：浅色模式下进入视频或直播详情页时，顶部状态栏图标恢复清晰可见。\n- **底栏防误触回顶**：底栏最小化成胶囊后，首次点击只展开底栏方便切换页面；在展开状态下再轻点当前 Tab 才返回顶部。\n- **顶部渐变收窄**：保留系统柔和渐进模糊效果，移除多余顶部留白占位，整体视野更干净。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.5/bili-release-unsigned.ipa",
+          "size": 24814110,
+          "buildVersion": "203",
+          "minOSVersion": "26.1"
+        },
         {
           "version": "1.1.4",
           "date": "2026-11-14T09:45:45Z",
           "localizedDescription": "## 更新内容（1.1.3 → 1.1.4）\n\n- **启动更快**：点开视频到出画面明显提速。\n- **修复 #66**：全屏后画面漂移到左下角（HEVC/AV1 编码场景）。\n- **弹幕重做**：更省电，暂停/拖动/倍速自动跟随；修好不显示、位置错、重叠、断流、空档、重复等问题。\n- **弹幕设置更干净**：去掉灰黑色块；横屏调字体粗细不再被弹回竖屏。\n- **横屏 100% 显示区域可铺满**（底部按钮区除外）。\n- **其他**：图片/封面清晰度合并为一个选项；长视频标题可展开看全。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.4/bili-release-unsigned.ipa",
-          "size": 24660955,
-          "buildVersion": "172",
-          "minOSVersion": "26.1"
+          "size": 24660955
         },
         {
           "version": "1.1.3",
@@ -261,13 +268,6 @@
           "localizedDescription": "## 这版更新了啥\n\n- 首页推荐和动态都可以点底栏回到顶部，到顶后再点一次就刷新。动态下拉也会直接获取新内容。\n- 动态页顶部可以自选显示哪些频道，还能调整顺序。\n- 长动态和长评论可以点末行的「… 展开」，直接看全文。\n- 播放器新增 CC 字幕入口，可以选字幕轨，也能设置 AI 字幕偏好。横屏播放的设置移到右侧，屏幕顶部左右分别显示时间和电量。\n- 分 P、番剧选集和合集换成了带封面的紧凑列表。视频详情里的头像和操作按钮也重新排过，更容易区分。\n\n## 修了哪些问题\n\n- 优化评论滚动和翻页，修了切换「最热／最新」时出现的大块空白和加载占位盖住排序栏的问题。\n- 修正部分 HDR 视频的显示和弹幕设置，并补充了部分视频取流失败时的重试方式。\n- 调整搜索筛选栏和投币面板，投币时可以选择是否同时点赞。\n\n## 安装包\n\n- 附件里的 `bili-release-unsigned.ipa` 是 1.1.3（Build 150）的未签名安装包，需自行签名后安装。",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.3/bili-release-unsigned.ipa",
           "size": 24576338
-        },
-        {
-          "version": "1.1.2",
-          "date": "2026-11-03T13:44:00Z",
-          "localizedDescription": "> 注意：版本标签暂时指向旧源码，请勿使用下方自动生成的 Source code。附件 IPA 为正确的 1.1.2（Build 57）；[查看对应源码](https://github.com/Rone89/cilicili/tree/f15c51da490e5f1fda32b8574e5cfc8014f2e72d)。\r\n\r\n## 本次更新\r\n\r\n- 改善暂停、恢复和拖动进度时的播放稳定性，支持设置后台播放。\r\n- 收藏和稍后再看支持搜索、排序；稍后再看可按观看进度筛选。\r\n- 评论草稿可保留，改善评论刷新与显示；视频评论排序使用系统控件。\r\n- 优化搜索结果加载和键盘操作。\r\n- 投币时可同时点赞，修复部分未点赞视频投币失败的问题。\r\n- 网络断开时显示提示；自动恢复测试入口可在开发者与诊断中开启，默认关闭。\r\n\r\n## 安装包\r\n\r\n附件为未签名 IPA，需要自行签名后安装。",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.2/bili-release-unsigned.ipa",
-          "size": 24312627
         }
       ]
     },
@@ -590,13 +590,6 @@
           "localizedDescription": "Welcome to Jellify 1.4.0\n\nI am so excited to share all the wonderful improvements we have packed into this latest version! We have introduced some amazing new features like CarPlay support and several polish updates to your favorite interface elements. This update is all about making your music experience smoother, faster, and more enjoyable for everyone.\n\n* We have officially added CarPlay support, which includes a dedicated library tab for your road trips. We also introduced a new Your Playlists section and renamed the Add to Queue button to Play Later to make the app even more intuitive.\n* The shuffle feature is now nearly instant because we moved the logic to native operations to remove any lag. We also fixed several playback issues, including lyrics readability on light backgrounds, s…",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.0/Jellify-1.4.0.ipa",
           "size": 38242006
-        },
-        {
-          "version": "1.3.1",
-          "date": "2026-10-29T20:17:21Z",
-          "localizedDescription": "Welcome to Jellify 1.3.1\r\n\r\nWe’ve polished up the whole experience this week, bringing some snappy performance fixes and useful new management tools to your library. Everything feels smoother, faster, and more intuitive than ever!\r\n\r\n*   Audio Quality Upgrade: We fixed how Jellify streams AAC files on Android, so your music now streams as-is without needing unnecessary transcoding. Enjoy cleaner, more consistent audio quality across the board!\r\n*   UI Polish: The underlying design library was upgraded - giving us an opportunity to comb through the app to make styling more consistent, animations more stable, and the overall feel to be more cohesive \r\n*   Smarter Filtering and Flow: We’ve significantly improved the filtering component and made some quality-of-life updates to components like …",
-          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.3.1/Jellify-1.3.1.ipa",
-          "size": 37133055
         }
       ]
     },
@@ -993,16 +986,23 @@
       "localizedDescription": "一个使用Compose Multiplatform开发的第三方Pixiv客户端，支持国内直连",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mrl.pixiv.PiPixiv.png?v=7fd6be94e3c6",
       "tintColor": "#18b4f5",
-      "size": 21428661,
+      "size": 21448968,
       "versions": [
+        {
+          "version": "2.6.1",
+          "date": "2026-11-17T09:10:31Z",
+          "localizedDescription": "## ✨ 新功能\r\n\r\n- 📖 **小说卡片详情**。「查看更多」可直接查看完整标题、标签、简介、发布时间和阅读、收藏数据，无需打开阅读页。\r\n- 🖼️ **应用内大图预览**。点击小说内嵌图片或作者主页头像即可查看大图并缩放。\r\n- 🫧 **底栏样式切换**。可在设置中切换悬浮液态玻璃导航和常规底栏。\r\n- 🔐 **登出确认**。登出前弹出二次确认，减少误触。\r\n\r\n## 🐛 问题修复与体验优化\r\n\r\n- 修复首页跨标签切换时的崩溃，以及 Android 预测性返回完成后蒙层残留一帧的问题。\r\n- 修复通知中心正文显示原始 HTML 标签的问题。插画与小说的原文标签和译文现在按文字基线对齐。\r\n- 修复 Android 保存对话框的初始化问题。Windows 检测 WebView2 运行时，网页登录加载失败时提供恢复操作。\r\n- 移除无界的 API HTTP 响应缓存，并修复导航场景和小说分页对象的内存滞留。\r\n\r\n## ✅ Issue 处理情况\r\n\r\n| 状态 | Issue | 说明 |\r\n|------|-------|------|\r\n| ✅ 已修复 | [#159](https://github.com/darriousliu/PiPixiv/issues/159) | 正常显示通知正文 |\r\n| ✅ 已实现 | [#161](https://github.com/darriousliu/PiPixiv/issues/161)、[#162](https://github.com/darriousliu/PiPixiv/issues/162) | 查看作者头像大图和小说卡片的完整元数据 |\r\n| ✅ 已实现 | [#164](https://github.com/darriousliu/PiPixiv/issues/164)、[#166](https://gith…",
+          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.6.1/PiPixiv-v2.6.1-ios.ipa",
+          "size": 21448968,
+          "buildVersion": "20601",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "2.6.0",
           "date": "2026-11-03T15:54:18Z",
           "localizedDescription": "## ✨ 新功能\n\n- 🎨 **UI 样式优化**：进一步统一漫画、发现、个人页、设置及筛选面板的 Material Expressive 风格，以圆润的卡片和按钮、清晰的内容分组、协调的排版与留白，呈现更轻盈、层次分明的界面；半透明液态玻璃悬浮导航搭配柔和的按压与切换动效，让浏览更流畅自然\n- 🫧 **悬浮导航与入口整理**：底部导航改为悬浮液态玻璃样式，优化选中动画、内容留白和页面切换，宽屏继续使用自适应侧栏；“我的阅读”整合稍后阅读、小说书签与漫画追更，并记忆上次打开的页签\n- 🔎 **搜索高级筛选**：插画搜索新增宽高范围、画幅比例、绘图工具和语言筛选；小说搜索新增字数、单词数、阅读时长、语言、题材、仅原创及支持角色名字替换等筛选条件。非 Premium 用户启用高级筛选时，热门预览会切换为最新作品排序\n- 🗂️ **收藏高级筛选**：自己的插画和小说收藏支持组合收藏标签、作品标签、收藏月份及收藏时间顺序筛选；统一筛选底部面板，支持公开与非公开切换、标签候选和一键清空，应用后直接在原收藏列表查看结果。高级筛选需等待 Pixiv 完成收藏索引同步\n- 🔔 **应用内通知中心**：新增通知列表和未读提示，可从首页及个人页进入，并打开通知关联的作品、作者或网页\n- 👥 **作者发现**：新增推荐作者、相似作者及我的粉丝列表，可预览作品、进入作者主页，以及直接关注或取消关注\n- 📚 **漫画系列与追更**：新增作者漫画系列、系列目录和漫画追更列表；作品页支持查看所属系列及跳转上一话、下一话，追更列表可进入系列目录或直接阅读最新一话\n- ☁️ **Pixiv 云端屏蔽管理**：支持查看、添加和删除账号中的用户、标签屏蔽，显示已用额度；可手动将云端规则导入本地，保留已有本地屏蔽和正则规则\n- 📖 **小说目录快捷入口**：系列小说阅读操作栏新增目录按钮，无需回到顶部即可打开章节…",
           "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.6.0/PiPixiv-v2.6.0-ios.ipa",
-          "size": 21428661,
-          "buildVersion": "20600",
-          "minOSVersion": "18.0"
+          "size": 21428661
         },
         {
           "version": "2.5.1",
@@ -1010,13 +1010,6 @@
           "localizedDescription": "## ✨ 新功能\r\n\r\n- 🌐 **系统代理模式**：网络设置新增并默认使用系统代理，明确区分系统代理、直连与手动 HTTP / SOCKS 代理；切换网络模式后重启应用生效 (#149)\r\n\r\n## 🐛 问题修复\r\n\r\n- 🧭 **主导航底栏遮挡**：修复进入小说、设置、搜索等二级页面后，首页底部导航仍然显示并覆盖内容的问题，保留大屏侧边导航 (#150)\r\n- 💬 **评论与举报页面崩溃**：修复页面进入后台或保存导航状态时，序列化字段冲突导致的崩溃\r\n- 📖 **小说滚动条**：修复长篇小说滚动条位置不稳定、难以拖动定位的问题，扩大拖动热区并调整边缘间距\r\n- 🔝 **小说阅读按钮**：回到顶部、上一章和下一章按钮改为相同尺寸并纵向排列，避免互相重叠，并为滚动条保留拖动空间\r\n- ▶️ **继续阅读入口**：调整系列页面续读入口的位置与布局，章节标题最多显示两行，阅读进度独立展示，修复重复显示百分号的问题 (#151)\r\n- 🎨 **桌面系统主题**：修复 Windows、macOS 跟随系统主题时识别错误或更新不及时的问题，保留手动主题选择 (#148)\r\n- 🍎 **iOS 代理与下载**：修复直连模式仍继承系统代理，以及后台下载未遵循应用代理设置的问题；系统代理、直连、HTTP 和 SOCKS 模式已完成模拟器实际下载回归 (#149)\r\n\r\n## ✅ Issue 处理情况\r\n\r\n以下为本版实现与验证情况，不代表 GitHub Issue 已关闭。\r\n\r\n| 状态 | Issue | 说明 |\r\n|------|-------|------|\r\n| ✅ 已修复 | #148 | 桌面端跟随系统主题识别与更新 |\r\n| ✅ 已实现并完成专项回归 | #149 | 默认系统代理、独立直连模式，以及 iOS 后台下载代理配置 |\r\n| ✅ 已修复 | #150 | 主…",
           "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.5.1/PiPixiv-v2.5.1-ios.ipa",
           "size": 20056263
-        },
-        {
-          "version": "2.5.0",
-          "date": "2026-09-24T06:28:03Z",
-          "localizedDescription": "## ✨ 新功能\r\n\r\n- 🪟 **可调整的自适应分栏**：在宽屏设备上并排浏览列表与详情，支持拖动分隔条调整宽度；图片预览与小说阅读会根据当前分栏宽度调整布局，并优化单栏、双栏切换与返回导航\r\n- 🔎 **搜索内容筛选**：新增仅动图、排除动图、仅漫画、仅系列小说及 R-18 内容筛选；区分搜索页临时筛选与设置中的默认筛选，临时调整不再影响后续搜索的默认值 (#131)\r\n- ⌨️ **多关键词搜索补全**：只替换光标所在的关键词，保留其他搜索词及排除符号，方便组合标签搜索 (#118)\r\n- 🔒 **私密关注入口**：在新作页的“关注”中增加公开与私密切换，并分别保留列表位置 (#118)\r\n- 📚 **小说系列续读**：系列页面显示上次阅读的章节与进度，提供“继续阅读”入口，并标记上次阅读的章节 (#118)\r\n- 📖 **阅读导航增强**：小说阅读页新增返回顶部按钮和可拖动的阅读滚动条，方便快速定位长篇内容 (#140)\r\n- 🗂️ **独立的内容模式偏好**：完善插画与小说模式切换入口；收藏和历史分别记住自己的内容模式，不再跟随其他页面一起切换 (#143)\r\n- 🤖 **AI 翻译设置更新**：更新 OpenAI、Claude、Gemini 的内置模型列表并保留已有模型配置；取消并发请求数原有的 8 个上限，支持设置更大的并发数，默认仍为 2\r\n\r\n## 🐛 问题修复\r\n\r\n- 🔖 **小说阅读位置恢复**：修复重新进入作品时恢复旧进度、旧页面回写覆盖新进度的问题；修复 Android 沉浸模式下反复进入小说造成阅读位置累计偏移的问题 (#141)\r\n- 🖥️ **桌面图片预览无响应**：修复打开图片预览后页面失去响应的问题，恢复预览退出后的列表点击和滚动操作\r\n- 🪟 **分栏切换稳定性**：修复分栏返回时瀑布流列数变化导致的崩溃；切换收藏内容类型时关闭旧详情…",
-          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.5.0/PiPixiv-v2.5.0-ios.ipa",
-          "size": 20037734
         }
       ]
     },
@@ -1028,14 +1021,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199446428,
+      "size": 1200176460,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-17T00:16:58Z",
-          "localizedDescription": "## Alpha Build `e2c0167`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`e2c0167`](https://github.com/Provenance-Emu/Provenance/commit/e2c0167e18c0a3235eae1ce165240ffa3067750f) |\n| **Built** | 2026-11-17 00:16 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43979099160) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ne2c0167e1 docs: Jaguar CD stays mapped; record the upstream libretrodb state\n1d4e0308f [Auto] Maintenance: regenerate stale outputs (#3818)\n```\n\n### Merged PRs\n- #3818: [Auto] Maintenance: regenerate stale outputs\n\n\n---\nThese builds are unsign…",
+          "date": "2026-11-17T10:11:34Z",
+          "localizedDescription": "## Alpha Build `e410df8`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`e410df8`](https://github.com/Provenance-Emu/Provenance/commit/e410df8db00b67f9007ac09f681aaef3f8638e8d) |\n| **Built** | 2026-11-17 10:10 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44055608327) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ne410df8db feat(ecosystem): send GameCube and Wii games to iCube via the drop box (#3819)\n```\n\n### Merged PRs\n- #3819: feat(ecosystem): send GameCube and Wii games to iCube via the drop box\n\n\n---\nThese builds are unsigned and intended for sidel…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199446428,
+          "size": 1200176460,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

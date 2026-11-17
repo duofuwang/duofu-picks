@@ -188,15 +188,6 @@
     "size": 8232319,
     "source_repo": "aeharding/voyager"
   },
-  "darriousliu/PiPixiv@2.6.0": {
-    "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
-    "displayName": "PiPixiv",
-    "version": "2.6.0",
-    "build": "20600",
-    "minOSVersion": "18.0",
-    "size": 21428661,
-    "source_repo": "darriousliu/PiPixiv"
-  },
   "willfaust/Madeira@0.2.0": {
     "bundleIdentifier": "com.willfaust.madeora",
     "displayName": "Madeira",
@@ -404,15 +395,6 @@
     "size": 65428219,
     "source_repo": "project-robius/robrix"
   },
-  "Rone89/cilicili@1.1.4": {
-    "bundleIdentifier": "nsk-1695.v-team.cn",
-    "displayName": "cilicili",
-    "version": "1.1.4",
-    "build": "172",
-    "minOSVersion": "26.1",
-    "size": 24660955,
-    "source_repo": "Rone89/cilicili"
-  },
   "kodjodevf/mangayomi@0.9.96": {
     "bundleIdentifier": "com.kodjodevf.mangayomi",
     "displayName": "Mangayomi",
@@ -476,15 +458,6 @@
     "size": 26854984,
     "source_repo": "mxhm11cr/LinuxRunner"
   },
-  "Kianuni/Erosion-CN@0.9.2": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "0.9.2",
-    "build": "24",
-    "minOSVersion": "26.0",
-    "size": 6279347,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
   "pounat/absorb@1.12.1-306": {
     "bundleIdentifier": "com.barnabas.absorb",
     "displayName": "Absorb",
@@ -538,5 +511,32 @@
     "minOSVersion": "26.0",
     "size": 672366770,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Kianuni/Erosion-CN@1.0.3": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "1.0.3",
+    "build": "28",
+    "minOSVersion": "26.0",
+    "size": 6832062,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "darriousliu/PiPixiv@2.6.1": {
+    "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
+    "displayName": "PiPixiv",
+    "version": "2.6.1",
+    "build": "20601",
+    "minOSVersion": "18.0",
+    "size": 21448968,
+    "source_repo": "darriousliu/PiPixiv"
+  },
+  "Rone89/cilicili@1.1.5": {
+    "bundleIdentifier": "nsk-1695.v-team.cn",
+    "displayName": "cilicili",
+    "version": "1.1.5",
+    "build": "203",
+    "minOSVersion": "26.1",
+    "size": 24814110,
+    "source_repo": "Rone89/cilicili"
   }
 }
