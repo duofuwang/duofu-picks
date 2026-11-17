@@ -377,6 +377,27 @@
       ]
     },
     {
+      "name": "Floe Agent",
+      "bundleIdentifier": "org.floeagent.ios",
+      "developerName": "JiangNanGenius",
+      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
+      "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
+      "tintColor": "#1662df",
+      "size": 672366770,
+      "versions": [
+        {
+          "version": "1.8.41",
+          "date": "2026-11-17T02:27:17Z",
+          "localizedDescription": "# Floe Agent 1.8.41（362）\n\n## 简体中文\n\n修复游戏文件夹导入时的路径错误。改进创意模式的画布入口和删除操作，统一画布编辑与保存。\n\n工作区可创建和编辑 Studio 视频工程，并通过代码生成逐帧画面。新建 Linux 环境可尝试图形和视频加速；已有环境保留原版本，可选择升级。\n\n## English\n\nFixed a path error when importing game folders. Improved canvas controls and deletion in Creative mode, and unified canvas editing and saving.\n\nCreate and edit Studio video projects in a workspace and generate video frames with code. Try graphics and video acceleration in new Linux environments; existing environments retain their current version and can be upgraded explicitly.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local de…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.41/Floe-Agent-1.8.41-build362-unsigned.ipa",
+          "size": 672366770,
+          "buildVersion": "362",
+          "minOSVersion": "26.0"
+        }
+      ]
+    },
+    {
       "name": "FluxDO",
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "developerName": "Lingyan000",
@@ -557,7 +578,7 @@
         {
           "version": "1.4.1",
           "date": "2026-11-08T16:06:22Z",
-          "localizedDescription": "Welcome to Jellify 1.4.1\n\nI am so happy to introduce our latest updates designed to make your music experience even more seamless. This release focuses on refining our internal architecture and enhancing the overall visual polish of the app. We also included some fun new features to help you connect with other Jellify fans.\n\n- We added support for iMessage sticker packs and an optional Discord role ID for release announcements. This makes it much easier to share your love for Jellify with friends and stay in the loop on our newest updates.\n- The app received a major refactor of our theme palettes and types to improve the structural consistency of the UI. You can expect a more refined and cohesive look throughout your music journey.\n- We updated several core dependencies, including tamagui …",
+          "localizedDescription": "Welcome to Jellify 1.4.1\r\n\r\nI am so happy to introduce our latest updates designed to make your music experience even more seamless. This release focuses on refining our internal architecture and enhancing the overall visual polish of the app. We also included some fun new features to help you connect with other Jellify fans.\r\n\r\n- We added support for iMessage sticker packs and an optional Discord role ID for release announcements. This makes it much easier to share your love for Jellify with friends and stay in the loop on our newest updates.\r\n- The app received a major refactor of our theme palettes and types to improve the structural consistency of the UI. You can expect a more refined and cohesive look throughout your music journey.\r\n- We updated several core dependencies, including ta…",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.1/Jellify-1.4.1.ipa",
           "size": 38530310,
           "buildVersion": "317",
@@ -1007,14 +1028,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199340823,
+      "size": 1199446428,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-16T05:08:03Z",
-          "localizedDescription": "## Alpha Build `4b837c4`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`4b837c4`](https://github.com/Provenance-Emu/Provenance/commit/4b837c4971429a4c7b9efd9318be7d921103c045) |\n| **Built** | 2026-11-16 05:07 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43804358931) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n4b837c497 docs: link the PVSystems platform id fix in the 3.4.0 list\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload fe…",
+          "date": "2026-11-17T00:16:58Z",
+          "localizedDescription": "## Alpha Build `e2c0167`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`e2c0167`](https://github.com/Provenance-Emu/Provenance/commit/e2c0167e18c0a3235eae1ce165240ffa3067750f) |\n| **Built** | 2026-11-17 00:16 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/43979099160) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ne2c0167e1 docs: Jaguar CD stays mapped; record the upstream libretrodb state\n1d4e0308f [Auto] Maintenance: regenerate stale outputs (#3818)\n```\n\n### Merged PRs\n- #3818: [Auto] Maintenance: regenerate stale outputs\n\n\n---\nThese builds are unsign…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199340823,
+          "size": 1199446428,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1133,16 +1154,23 @@
       "localizedDescription": "An an app that installs Sidestore on iOS 27, fully on-device",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.frizzlem.sideinstaller.png?v=88da5c621cdd",
       "tintColor": "#1243b2",
-      "size": 10770716,
+      "size": 10860622,
       "versions": [
+        {
+          "version": "2.1.0",
+          "date": "2026-11-16T18:27:35Z",
+          "localizedDescription": "### Added\n- **Pick the developer team that signs.** An Apple Account on more than one developer team (a paid Apple Developer Program membership or a company's team, besides the free one every account has) is asked once which team signs, each marked Free or Paid. The question starts on the team that signed SideInstaller itself, so a copy siboot installed with another team now refreshes itself in place. The pick is remembered for the Apple ID and used for installs, refreshes, Certificates and Entitlements; swipe the Apple ID in Settings › Account and tap Team to pick again.",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.1.0/SideInstaller.ipa",
+          "size": 10860622,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "2.0.1",
           "date": "2026-11-12T20:00:38Z",
           "localizedDescription": "### Changed\n- **Blue is back.** The greys from 2.0.0 are blues again: night-blue pages, cards and popups under a still navy wash at the top, a solid blue main button, and a lighter blue for progress, links, selections and switches. The app icon and the logo tiles have their colour back, in a brighter blue than before 2.0.0. The Live Activities and sideinstaller.net match.",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.0.1/SideInstaller.ipa",
-          "size": 10770716,
-          "buildVersion": "1",
-          "minOSVersion": "17.4"
+          "size": 10770716
         },
         {
           "version": "2.0.0",
@@ -1150,13 +1178,6 @@
           "localizedDescription": "# The main change\r\nThe reason why I have chosen v2.0.0 for this release is because of the huge change in the way SideInstaller is now installed. Enterprise certs are no longer needed as I have developed a method that is no longer subject to blacklists. Full info is at https://sideinstaller.net/install.html\r\n\r\n# App changes\r\n\r\n### Added\r\n- **AltStore.** AltStore Classic is on the Install tab and in Side by Side, from AltStore's own source, with the download checked against the SHA-256 it lists. Its pairing file goes where AltStore reads it, so setting up Remote AltServer skips pairing.\r\n\r\n### Changed\r\n- **A quieter look.** A still, near-black background with plain cards and an off-white main button. Blue marks only progress, selections and links. The pairing code shows one key per digit, on…",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.0.0/SideInstaller.ipa",
           "size": 10634541
-        },
-        {
-          "version": "1.7.0",
-          "date": "2026-11-09T17:55:39Z",
-          "localizedDescription": "### Added\n- **Turkish.** Pick Türkçe in Settings › Language. Thanks to Mr3242-Scripter (#111).\n- **A nudge to update to iOS 27 at setup** on devices that can run it: on iOS 27 the iPhone pairs with itself, no computer needed.\n\n### Changed\n- **Side by Side goes step by step** and can now install SideStore and LiveContainer + SideStore too (Stable or Nightly), each set up with the pairing file on the other iPhone.\n- **Your Apple ID session and pairing stay on this iPhone:** private files are left out of backups, and the saved password is kept in the Keychain for this device only. After restoring a backup, sign in and pair again.\n\n### Fixed\n- Keys and passwords no longer end up in the activity log or problem reports.\n- Side by Side no longer keeps the other person's signing key on your iPhone…",
-          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v1.7.0/SideInstaller.ipa",
-          "size": 10739837
         }
       ]
     },
@@ -1273,16 +1294,23 @@
       "localizedDescription": "Virtual machines for iOS and macOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.utmapp.UTM.png?v=a7c05965a891",
       "tintColor": "#2951d8",
-      "size": 150556668,
+      "size": 150730281,
       "versions": [
+        {
+          "version": "5.0.9",
+          "date": "2026-11-16T19:46:15Z",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to e…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
+          "size": 150730281,
+          "buildVersion": "130",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "5.0.8",
           "date": "2026-10-17T02:44:56Z",
           "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\r\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk …",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
-          "size": 150556668,
-          "buildVersion": "128",
-          "minOSVersion": "15.0"
+          "size": 150556668
         },
         {
           "version": "4.7.5",
@@ -1290,13 +1318,6 @@
           "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.5)\r\n* Fixed some rare conditions that could lead to a VM fail to start and spin infinitely\r\n* Fi…",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-HV.ipa",
           "size": 130058653
-        },
-        {
-          "version": "4.7.4",
-          "date": "2025-09-15T19:14:29Z",
-          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.4)\r\n* (macOS) Fixed a crash on VM start when a toolbar menu was reinitialized (note v4.7.4 was r…",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.4/UTM-HV.ipa",
-          "size": 130036994
         }
       ]
     },

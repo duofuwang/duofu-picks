@@ -71,15 +71,6 @@
     "size": 14163630,
     "source_repo": "duofuwang/feather"
   },
-  "utmapp/UTM@5.0.8": {
-    "bundleIdentifier": "com.utmapp.UTM",
-    "displayName": "UTM",
-    "version": "5.0.8",
-    "build": "128",
-    "minOSVersion": "15.0",
-    "size": 150556668,
-    "source_repo": "utmapp/UTM"
-  },
   "altstoreio/AltStore@2.3": {
     "bundleIdentifier": "com.rileytestut.AltStore",
     "displayName": "AltStore",
@@ -341,15 +332,6 @@
     "size": 16554800,
     "source_repo": "Sami-Wali/ryP0"
   },
-  "FrizzleM/SideInstaller@2.0.1": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "2.0.1",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10770716,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "EhPanda-Team/EhPanda@3.0.0": {
     "bundleIdentifier": "app.ehpanda",
     "displayName": "EhPanda",
@@ -529,5 +511,32 @@
     "minOSVersion": "18.0",
     "size": 13636890,
     "source_repo": "oneamendez/crate-ios"
+  },
+  "utmapp/UTM@5.0.9": {
+    "bundleIdentifier": "com.utmapp.UTM",
+    "displayName": "UTM",
+    "version": "5.0.9",
+    "build": "130",
+    "minOSVersion": "15.0",
+    "size": 150730281,
+    "source_repo": "utmapp/UTM"
+  },
+  "FrizzleM/SideInstaller@2.1.0": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "2.1.0",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10860622,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "JiangNanGenius/floe-agent@1.8.41": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.41",
+    "build": "362",
+    "minOSVersion": "26.0",
+    "size": 672366770,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }
