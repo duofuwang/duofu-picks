@@ -89,16 +89,23 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-safe iOS / iPadOS System Configuration & MobileGestalt Toolbox (Bilingual EN/ZH)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 6832062,
+      "size": 6857330,
       "versions": [
+        {
+          "version": "1.0.4",
+          "date": "2026-11-17T14:37:22Z",
+          "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in [#51](https://github.com/Kianuni/Erosion-CN/issues/51) / 特别感谢 [@iiichika](https://github.com/iiichika) 在 [#51](https://github.com/Kianuni/Erosion-CN/issues/51) 的详细根因排查)*\n   - **Instant UI & Import Re…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
+          "size": 6857330,
+          "buildVersion": "29",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.3",
           "date": "2026-11-17T12:58:20Z",
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` on the directory so ad SDKs cannot remove an empty `0555` folder and recreate a fresh `0755` folder under writable parent directories.\n   - Unlocking (`0755`) removes `.erosion_adlock` automatically, a…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
-          "size": 6832062,
-          "buildVersion": "28",
-          "minOSVersion": "26.0"
+          "size": 6832062
         },
         {
           "version": "1.0.2",
@@ -106,13 +113,6 @@
           "localizedDescription": "## Erosion-CN v1.0.2 (Build 27)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Per-App Splash Ad Cache Blocker (`chmod`) / 开屏广告缓存精准锁死 (`AdCacheBlockerView`)**\n   - Added **「开屏广告缓存精准锁死 / Splash Ad Cache Blocker」** quick entries under **Tweaks → App Saves & Cleanup** (`功能修改 → 应用存档与空间清理`) and **File Browser → Quick Access** (`文件浏览 → 快捷访问`).\n   - Combines curated per-app splash-ad paths (Weibo, Zhihu, NetEase Cloud Music, QQ Music, Bilibili, Xiaohongshu, Taobao/Idlefish, JD, Meituan/Dianping, Amap, Baidu/…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.2/Erosion_v1.0.2_Bilingual.ipa",
           "size": 6791366
-        },
-        {
-          "version": "1.0.1",
-          "date": "2026-11-17T05:26:32Z",
-          "localizedDescription": "## Erosion-CN v1.0.1 (Build 26)\n\n### What's New / 更新内容\n1. **Built-in Interactive APFS Swap & Multi-App Migration Guide / 内置 APFS 换包与多开搬家分步教程 (`APFSVaultGuideSheet`)**\n   - Added a bilingual **Usage Guide (`使用说明`)** button right in the **App & Game Save Manager** toolbar, APFS Swap Vault card, and inside **APFS Swap Vault**.\n   - Clearly explains:\n     - **APFS Zero-Space Stage vs `.zip` Save Backup** (when to use each);\n     - **Same-App Re-sign / Reinstall (6 Steps)**: swipe-close → stage → reinstall → launch once to create fresh container & close → restore → re-login once (Keychain) & release vault;\n     - **Official ↔ Clone Migration** (e.g. `com.tencent.xin` → `com.tencent.wx` with automatic `.plist` renaming);\n     - **3 Critical Safety Rules** (never uninstall Erosion before releasin…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.1/Erosion_v1.0.1_Bilingual.ipa",
-          "size": 6696463
         }
       ]
     },

@@ -512,15 +512,6 @@
     "size": 672366770,
     "source_repo": "JiangNanGenius/floe-agent"
   },
-  "Kianuni/Erosion-CN@1.0.3": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "1.0.3",
-    "build": "28",
-    "minOSVersion": "26.0",
-    "size": 6832062,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
   "darriousliu/PiPixiv@2.6.1": {
     "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
     "displayName": "PiPixiv",
@@ -538,5 +529,14 @@
     "minOSVersion": "26.1",
     "size": 24814110,
     "source_repo": "Rone89/cilicili"
+  },
+  "Kianuni/Erosion-CN@1.0.4": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "1.0.4",
+    "build": "29",
+    "minOSVersion": "26.0",
+    "size": 6857330,
+    "source_repo": "Kianuni/Erosion-CN"
   }
 }
