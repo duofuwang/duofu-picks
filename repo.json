@@ -89,16 +89,23 @@
       "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-safe iOS / iPadOS System Configuration & MobileGestalt Toolbox (Bilingual EN/ZH)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 6857330,
+      "size": 6875541,
       "versions": [
+        {
+          "version": "1.0.5",
+          "date": "2026-11-17T23:33:43Z",
+          "localizedDescription": "## Erosion-CN v1.0.5 (Build 30)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Fixed Unresponsive \"Clean Selected\" in Container Cache Cleaner (`CacheCleanerView`) / 修复容器缓存「一键清理已选」不生效** *(Thanks to [@KindLin99](https://github.com/KindLin99) for reporting [#53](https://github.com/Kianuni/Erosion-CN/issues/53) / 感谢 [@KindLin99](https://github.com/KindLin99) 反馈 [#53](https://github.com/Kianuni/Erosion-CN/issues/53))*\n   - **Separated Button Styles in Overview Card**：Assigned `.borderless` to **Rescan** (`重新…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.5/Erosion_v1.0.5_Bilingual.ipa",
+          "size": 6875541,
+          "buildVersion": "30",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.4",
           "date": "2026-11-17T14:37:22Z",
           "localizedDescription": "## Erosion-CN v1.0.4 (Build 29)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Non-Blocking Cold Start in Custom Lock Screen Wallpapers + `Camlo · 开幕` Guide (`PosterBoardView`) / 「自定义锁屏壁纸」零阻塞秒开与 Camlo 动态壁纸引导** *(Special thanks to [@iiichika](https://github.com/iiichika) for the thorough root-cause report in [#51](https://github.com/Kianuni/Erosion-CN/issues/51) / 特别感谢 [@iiichika](https://github.com/iiichika) 在 [#51](https://github.com/Kianuni/Erosion-CN/issues/51) 的详细根因排查)*\n   - **Instant UI & Import Re…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.4/Erosion_v1.0.4_Bilingual.ipa",
-          "size": 6857330,
-          "buildVersion": "29",
-          "minOSVersion": "26.0"
+          "size": 6857330
         },
         {
           "version": "1.0.3",
@@ -106,13 +113,6 @@
           "localizedDescription": "## Erosion-CN v1.0.3 (Build 28)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Anti-Recreate Sentinel Lock (`0555` + `0444` `.erosion_adlock`) / 防重建占位锁加固**\n   - Locking an ad directory now wipes existing ad files, places a 0-byte `0444` read-only sentinel file (`.erosion_adlock`) inside, and sets `0555` on the directory so ad SDKs cannot remove an empty `0555` folder and recreate a fresh `0755` folder under writable parent directories.\n   - Unlocking (`0755`) removes `.erosion_adlock` automatically, a…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.3/Erosion_v1.0.3_Bilingual.ipa",
           "size": 6832062
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-11-17T09:44:48Z",
-          "localizedDescription": "## Erosion-CN v1.0.2 (Build 27)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**: `iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**: Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Per-App Splash Ad Cache Blocker (`chmod`) / 开屏广告缓存精准锁死 (`AdCacheBlockerView`)**\n   - Added **「开屏广告缓存精准锁死 / Splash Ad Cache Blocker」** quick entries under **Tweaks → App Saves & Cleanup** (`功能修改 → 应用存档与空间清理`) and **File Browser → Quick Access** (`文件浏览 → 快捷访问`).\n   - Combines curated per-app splash-ad paths (Weibo, Zhihu, NetEase Cloud Music, QQ Music, Bilibili, Xiaohongshu, Taobao/Idlefish, JD, Meituan/Dianping, Amap, Baidu/…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.2/Erosion_v1.0.2_Bilingual.ipa",
-          "size": 6791366
         }
       ]
     },
@@ -186,7 +186,7 @@
     {
       "name": "GestaltX",
       "bundleIdentifier": "com.huami.gestultx",
-      "developerName": "huamidev",
+      "developerName": "huami-dev",
       "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份",
       "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
@@ -197,7 +197,7 @@
           "version": "1.1.1",
           "date": "2026-11-13T16:46:05Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/main/CHANGELOG_ZH-CN.md)\n\nBuild `11140102`.\n\n### Added\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\n\n### Changed\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist comparisons (#139)\n- Trav…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
           "size": 6774794,
           "buildVersion": "11140102",
           "minOSVersion": "26.0"
@@ -206,14 +206,14 @@
           "version": "1.0.7",
           "date": "2026-11-12T17:14:29Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11130112`.\r\n\r\n### Fixed\r\n\r\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
+          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
           "size": 3563948
         },
         {
           "version": "1.0.5",
           "date": "2026-11-11T03:45:16Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/144c0c44a762db616089faddfbc0581929ae1a0a/CHANGELOG_ZH-CN.md#105---2026-11-11)\n\nBuild `11111140`.\n\n### Added\n\n- Spanish localization, bringing the app to nine supported locales ([#97](https://github.com/huamidev/GestaltX/pull/97)).\n- iPhone Air model presets ([#92](https://github.com/huamidev/GestaltX/pull/92)) and a Japanese README ([#83](https://github.com/huamidev/GestaltX/pull/83)).\n\n### Changed\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations ([#84](https://github.com/huamidev/GestaltX/pull/84)) and corrected mixed-language text in\n  Traditional Chinese and other locales ([#61](https://git…",
-          "downloadURL": "https://github.com/huamidev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
           "size": 2942882
         }
       ]
@@ -261,16 +261,23 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
-      "size": 49310532,
+      "size": 50502422,
       "versions": [
+        {
+          "version": "2.2.0",
+          "date": "2026-11-18T02:18:30Z",
+          "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐藏对应板块并停止请求额外媒体和评论资源（与「发现」及「显示历史版本图标」开关协同）。\n\n### 修复与安全加固\n\n- **修复嵌套应用扩展 FairPlay 扫描与统计**：改为相对路径递归枚举包内文件，确保扩展与内置框架的 `.sinf` 安放路径与校验计数准确无误。\n- **加强加密、C 边界与并发安全**：完善 `FairPlayCore` Mach-O/LC 边界与整型溢出校验及失败临时文…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
+          "size": 50502422,
+          "buildVersion": "34",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "2.1.3",
           "date": "2026-11-15T14:54:47Z",
           "localizedDescription": "## iPadn 2.1.3\n\n本次为修复与体验优化更新，解决关键词搜索时的并发闪退问题，隔离顶部提示动画重绘，并改进 iOS 27 本机配对引导与灵动岛交接体验。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复关键词搜索闪退与并发竞争**：移除搜索前并发嵌套任务组与超时竞争探测，改为在搜索结果返回后按商店地区顺序核验候选已下架应用（最多 15 项），并在新搜索、取消搜索或关闭开关时显式取消旧核验任务。\n- **隔离全局提示动画并优化切换账号响应**：将顶部提示与撤销横幅拆分为独立视图，避免横幅弹簧动画触发整个标签页层级重绘；切换账号时先让提示横幅开始渲染，再触发地区同步、重新搜索与已购刷新。\n- **优化 iOS 27 本机配对引导与灵动岛提醒**：点按「打开设置」跳转到系统设置时主动释放后台音频并推送第 1 步灵动岛横幅指引，补充锁屏密码验证提示与 11 种语言文案，后台等待状态更新支持按代数及时取消，避免旧状态阻塞新提醒。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.3-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.3-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance release fixes a concurr…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.3/iPadn-2.1.3-lite-unsigned.ipa",
-          "size": 49310532,
-          "buildVersion": "33",
-          "minOSVersion": "16.0"
+          "size": 49310532
         },
         {
           "version": "2.1.2",
@@ -278,13 +285,6 @@
           "localizedDescription": "## iPadn 2.1.2\n\n本次更新优化了下载与按钮交互动画、侧滑反馈、历史版本校准及原生配对灵动岛提醒，新增直接替换翻译与已下架应用关键词优先搜索，并提升原生安装稳定性。安装包未签名，请用自己的工具签名后安装。\n\n### 新增与优化\n\n- **搜索优先显示已下架应用**：关键词搜索结合内置应用别名目录及本机已购、收藏、下载记录做相关度分级匹配，并核验候选应用的下架状态，将已确认下架且匹配关键词的应用优先排在结果前排；可在「账号 › 设置 › 下载 › 搜索时优先显示已下架应用」随时关闭恢复原排序（默认开启）。\n- **下载操作与按钮形变动效**：下载、已购、搜索与详情页的操作按钮、云朵按钮与黑白进度环统一居中对齐，点按后以按钮中心平滑形变为加载/下载环；进度环底轨与前景进度弧统一为相同线宽，状态过渡更连贯。\n- **侧滑动画与 5 秒撤销**：下载卡片侧滑垃圾桶与分享图标显露后由原生 Core Animation 播放完整动画（开启「减少动态效果」时显示静态完整图标）；下载卡片侧滑删除不再弹确认窗，改为 5 秒倒计时与撤销（连续删除可合并撤销），长按「删除任务及文件」与批量删除仍保留确认，搜索记录删除不再显示倒计时或撤销。\n- **底部标签栏与同步骨架屏微光**：底部标签栏改为自适应动态矢量图标并统一描边粗细，优化搜索图标视觉重量与账号页切换动画；加载骨架屏改为全屏同相位的单色扫光（shimmer），并统一列表轻按触感与轻量化确认弹窗。\n- **直接替换翻译（iOS 18+）**：简介和更新说明默认保留系统翻译面板；iOS 18 及以上可在「账号 › 设置 › 外观与图标 › 翻译」开启「直接替换翻译」，选择原文语言并准备语言包后直接替换为界面语言译文，支持「显示原文」。\n- **下载列表、内联更新说明与图标开关**：精简下载任务展示与状态文案，任务信息区分商店版本、…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.2/iPadn-2.1.2-lite-unsigned.ipa",
           "size": 49328014
-        },
-        {
-          "version": "2.1.1",
-          "date": "2026-11-14T05:53:21Z",
-          "localizedDescription": "## iPadn 2.1.1\n\n本次为修复与布局优化更新，包含 iOS 16 安装设置崩溃修复和历史版本日期范围筛选排版改进。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复 iOS 16 打开安装设置时崩溃**：对安装帮助链接的中文片段进行显式编码，并避免无效 URL 的强制解包。感谢 #86 的贡献。\n- **完善商店链接容错**：应用详情无法构造有效 App Store 链接时，不再强制解包或显示不可用的查看/分享入口。\n- **优化历史版本日期筛选面板**：将起止日期、查询/取消/清除按钮与状态提示集中展示，统一日期控件对齐和布局间距，并适配无障碍大字体。保留原有日期查询、取消与清除行为。详见 #87。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.1-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.1-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance update fixes a crash when opening Installation settings on iOS 16 and improves the version-history date-range filter layout.\n\n- Encode…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.1/iPadn-2.1.1-lite-unsigned.ipa",
-          "size": 48708836
         }
       ]
     },

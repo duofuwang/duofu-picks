@@ -413,15 +413,6 @@
     "size": 16672428,
     "source_repo": "FriesI23/mhabit"
   },
-  "mengangs/ipadn@2.1.3": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.1.3",
-    "build": "33",
-    "minOSVersion": "16.0",
-    "size": 49310532,
-    "source_repo": "mengangs/ipadn"
-  },
   "Chevey339/kelivo@1.3.6": {
     "bundleIdentifier": "psyche.kelivo",
     "displayName": "Kelivo",
@@ -503,15 +494,6 @@
     "size": 10860622,
     "source_repo": "FrizzleM/SideInstaller"
   },
-  "JiangNanGenius/floe-agent@1.8.41": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.41",
-    "build": "362",
-    "minOSVersion": "26.0",
-    "size": 672366770,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "darriousliu/PiPixiv@2.6.1": {
     "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
     "displayName": "PiPixiv",
@@ -530,13 +512,31 @@
     "size": 24814110,
     "source_repo": "Rone89/cilicili"
   },
-  "Kianuni/Erosion-CN@1.0.4": {
+  "Kianuni/Erosion-CN@1.0.5": {
     "bundleIdentifier": "com.jbdotparty.Erosion",
     "displayName": "Erosion",
-    "version": "1.0.4",
-    "build": "29",
+    "version": "1.0.5",
+    "build": "30",
     "minOSVersion": "26.0",
-    "size": 6857330,
+    "size": 6875541,
     "source_repo": "Kianuni/Erosion-CN"
+  },
+  "mengangs/ipadn@2.2.0": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.2.0",
+    "build": "34",
+    "minOSVersion": "16.0",
+    "size": 50502422,
+    "source_repo": "mengangs/ipadn"
+  },
+  "JiangNanGenius/floe-agent@1.8.43": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.43",
+    "build": "364",
+    "minOSVersion": "26.0",
+    "size": 672521480,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }

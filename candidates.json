@@ -384,16 +384,23 @@
       "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 672366770,
+      "size": 672521480,
       "versions": [
+        {
+          "version": "1.8.43",
+          "date": "2026-11-18T03:24:37Z",
+          "localizedDescription": "# Floe Agent 1.8.43（364）\n\n## 简体中文\n\n游戏助手现在使用游戏工程的工作区处理文件和源码管理。改进游戏目录选择、试玩前的状态更新，以及自带运行文件的游戏提示。\n\n## English\n\nThe game assistant now uses the game project's workspace for files and source control. Improved game folder selection, pre-play status refresh, and guidance for games that include their own runtime.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.43/Floe-Agent-1.8.43-build364-unsigned.ipa",
+          "size": 672521480,
+          "buildVersion": "364",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.8.41",
           "date": "2026-11-17T02:27:17Z",
           "localizedDescription": "# Floe Agent 1.8.41（362）\n\n## 简体中文\n\n修复游戏文件夹导入时的路径错误。改进创意模式的画布入口和删除操作，统一画布编辑与保存。\n\n工作区可创建和编辑 Studio 视频工程，并通过代码生成逐帧画面。新建 Linux 环境可尝试图形和视频加速；已有环境保留原版本，可选择升级。\n\n## English\n\nFixed a path error when importing game folders. Improved canvas controls and deletion in Creative mode, and unified canvas editing and saving.\n\nCreate and edit Studio video projects in a workspace and generate video frames with code. Try graphics and video acceleration in new Linux environments; existing environments retain their current version and can be upgraded explicitly.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local de…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.41/Floe-Agent-1.8.41-build362-unsigned.ipa",
-          "size": 672366770,
-          "buildVersion": "362",
-          "minOSVersion": "26.0"
+          "size": 672366770
         }
       ]
     },
