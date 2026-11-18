@@ -384,16 +384,23 @@
       "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 672521480,
+      "size": 672536711,
       "versions": [
+        {
+          "version": "1.8.45",
+          "date": "2026-11-18T15:06:09Z",
+          "localizedDescription": "# Floe Agent 1.8.45（366）\n\n## 简体中文\n\n首次打开此版本时会显示用户协议。游戏助手会在建议工程目录和引擎后等待你确认，并使用工作区工具查看工程文件。缺少运行文件的 RPG Maker MV 工程现在可自动获取所需资源。\n\n## English\n\nThis version presents the user agreement on first launch. The game assistant uses workspace tools for project files and waits for you to confirm its suggested folder and engine. RPG Maker MV projects that lack runtime files can now download the required resources automatically.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.45/Floe-Agent-1.8.45-build366-unsigned.ipa",
+          "size": 672536711,
+          "buildVersion": "366",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.8.43",
           "date": "2026-11-18T03:24:37Z",
           "localizedDescription": "# Floe Agent 1.8.43（364）\n\n## 简体中文\n\n游戏助手现在使用游戏工程的工作区处理文件和源码管理。改进游戏目录选择、试玩前的状态更新，以及自带运行文件的游戏提示。\n\n## English\n\nThe game assistant now uses the game project's workspace for files and source control. Improved game folder selection, pre-play status refresh, and guidance for games that include their own runtime.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.43/Floe-Agent-1.8.43-build364-unsigned.ipa",
-          "size": 672521480,
-          "buildVersion": "364",
-          "minOSVersion": "26.0"
+          "size": 672521480
         },
         {
           "version": "1.8.41",
@@ -888,14 +895,14 @@
       "localizedDescription": "An open-source, privacy-enhancing web browser for iOS, utilizing the Tor anonymity network",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.miketigas.OnionBrowser.png?v=268a5219f220",
       "tintColor": "#912cb2",
-      "size": 48219749,
+      "size": 37481525,
       "versions": [
         {
           "version": "3.4.6",
           "date": "2026-11-09T16:54:54Z",
-          "localizedDescription": "- Updated Tor to 0.4.9.16.\r\n- Updated Lyrebird to 0.10.0.\r\n- Updated Snowflake to 2.15.3.\r\n- Minor layout improvements for iPhone Duo.",
+          "localizedDescription": "- Updated Tor to 0.4.9.17.\r\n- Updated Lyrebird to 0.10.0.\r\n- Updated Snowflake to 2.15.3.\r\n- Minor layout improvements for iPhone Duo.",
           "downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.6/OnionBrowser.ipa",
-          "size": 48219749,
+          "size": 37481525,
           "buildVersion": "199068.370922529",
           "minOSVersion": "15.0"
         },
@@ -1294,16 +1301,23 @@
       "localizedDescription": "Virtual machines for iOS and macOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.utmapp.UTM.png?v=a7c05965a891",
       "tintColor": "#2951d8",
-      "size": 150730281,
+      "size": 150730267,
       "versions": [
+        {
+          "version": "5.0.9-2",
+          "date": "2026-11-18T09:03:04Z",
+          "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to e…",
+          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9-2/UTM-HV.ipa",
+          "size": 150730267,
+          "buildVersion": "132",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "5.0.9",
           "date": "2026-11-16T19:46:15Z",
           "localizedDescription": "## Highlights\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk to e…",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.9/UTM-HV.ipa",
-          "size": 150730281,
-          "buildVersion": "130",
-          "minOSVersion": "15.0"
+          "size": 150730281
         },
         {
           "version": "5.0.8",
@@ -1311,13 +1325,6 @@
           "localizedDescription": "## Highlights\r\n* (macOS) **DirectX graphics support for Windows**: Modern accelerated graphics for Windows 11 is now available on UTM for the first time. The driver is still experimental and games compatibility is currently limited.\r\n* **Vulkan 1.3 graphics support for Linux**: Vulkan 1.3 is now supported on Linux guests with VirtIO Venus drivers in Mesa. Additionally, OpenGL 4.1 is supported with the new Apple Core OpenGL backend (macOS only).\r\n* **Snapshots**: Save your VM at any point and go back to it later from the new Snapshots tab. Works with QEMU VMs on macOS and iOS 26, and with Apple Virtualization VMs on macOS 27.\r\n* (macOS) **Apple Virtualization on macOS 27**: Pass USB devices through to your VM, turn on Secure Boot for Linux, run a VM without saving changes, and let VMs talk …",
           "downloadURL": "https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM-HV.ipa",
           "size": 150556668
-        },
-        {
-          "version": "4.7.5",
-          "date": "2026-01-03T17:51:54Z",
-          "localizedDescription": "## Highlights\r\n* **QEMU v10.0.2**: The backend has been updated to the latest upstream QEMU which brings with it a variety of bug fixes and performance improvements.\r\n* **Liquid Glass**: UTM adopts the Liquid Glass design on *OS 26.\r\n* **App Intents**: New support for automation with Shortcuts.\r\n* **Keyboard Shortcuts**: Define custom key combinations (such as Ctrl+Alt+Del) that can be sent to the VM from the new Keyboard menu.\r\n* **Improved Wizard**: Simplify the creation of emulated machines by selecting from a list of well-supported configurations. The updated wizard can create more working configurations such as RISC-V64 Ubuntu, classic Mac OS 8.x/9.x, and Windows 95/98.\r\n\r\n## Changes (v4.7.5)\r\n* Fixed some rare conditions that could lead to a VM fail to start and spin infinitely\r\n* Fi…",
-          "downloadURL": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM-HV.ipa",
-          "size": 130058653
         }
       ]
     },

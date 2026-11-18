@@ -44,15 +44,6 @@
     "size": 9347637,
     "source_repo": "infinityf4p/TiebaPure-iOS"
   },
-  "open-ani/animeko@6.4.0": {
-    "bundleIdentifier": "org.animeko.animeko",
-    "displayName": "Animeko",
-    "version": "6.4.0",
-    "build": "6.4.99",
-    "minOSVersion": "16.0",
-    "size": 48615547,
-    "source_repo": "open-ani/animeko"
-  },
   "Aidoku/Aidoku@0.9-4": {
     "bundleIdentifier": "app.aidoku.Aidoku",
     "displayName": "Aidoku",
@@ -476,15 +467,6 @@
     "size": 13636890,
     "source_repo": "oneamendez/crate-ios"
   },
-  "utmapp/UTM@5.0.9": {
-    "bundleIdentifier": "com.utmapp.UTM",
-    "displayName": "UTM",
-    "version": "5.0.9",
-    "build": "130",
-    "minOSVersion": "15.0",
-    "size": 150730281,
-    "source_repo": "utmapp/UTM"
-  },
   "FrizzleM/SideInstaller@2.1.0": {
     "bundleIdentifier": "com.frizzlem.sideinstaller",
     "displayName": "SideInstaller",
@@ -521,22 +503,40 @@
     "size": 6875541,
     "source_repo": "Kianuni/Erosion-CN"
   },
-  "mengangs/ipadn@2.2.0": {
+  "open-ani/animeko@6.4.1": {
+    "bundleIdentifier": "org.animeko.animeko",
+    "displayName": "Animeko",
+    "version": "6.4.1",
+    "build": "6.4.199",
+    "minOSVersion": "16.0",
+    "size": 48615556,
+    "source_repo": "open-ani/animeko"
+  },
+  "mengangs/ipadn@2.2.1": {
     "bundleIdentifier": "app.local.iPadn",
     "displayName": "iPadn",
-    "version": "2.2.0",
-    "build": "34",
+    "version": "2.2.1",
+    "build": "35",
     "minOSVersion": "16.0",
-    "size": 50502422,
+    "size": 50602330,
     "source_repo": "mengangs/ipadn"
   },
-  "JiangNanGenius/floe-agent@1.8.43": {
+  "utmapp/UTM@5.0.9-2": {
+    "bundleIdentifier": "com.utmapp.UTM",
+    "displayName": "UTM",
+    "version": "5.0.9",
+    "build": "132",
+    "minOSVersion": "15.0",
+    "size": 150730267,
+    "source_repo": "utmapp/UTM"
+  },
+  "JiangNanGenius/floe-agent@1.8.45": {
     "bundleIdentifier": "org.floeagent.ios",
     "displayName": "Floe Agent",
-    "version": "1.8.43",
-    "build": "364",
+    "version": "1.8.45",
+    "build": "366",
     "minOSVersion": "26.0",
-    "size": 672521480,
+    "size": 672536711,
     "source_repo": "JiangNanGenius/floe-agent"
   }
 }

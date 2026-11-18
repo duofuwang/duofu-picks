@@ -54,16 +54,23 @@
       "localizedDescription": "集找番、追番、看番的一站式弹幕追番平台，云收藏同步 (Bangumi)，离线缓存，BitTorrent，弹幕云过滤。100% Kotlin/Compose Multiplatform",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.animeko.animeko.png?v=8f3100fc8127",
       "tintColor": "#6c9cc4",
-      "size": 48615547,
+      "size": 48615556,
       "versions": [
+        {
+          "version": "6.4.1",
+          "date": "2026-11-18T14:44:06Z",
+          "localizedDescription": "- 安全性修复，请桌面端用户立刻更新\r\n\r\n----\r\n\r\n**Full Changelog**: https://github.com/open-ani/animeko/compare/v6.4.0...v6.4.1\r\n\r\n[//]: # (ANI-SERVER-MAGIC-SEPARATOR)\r\n\r\n[//]: # (注意: api server 依赖这个特殊分隔符)\r\n\r\n[//]: # (对于所有可用的变量列表, 参考 CI release.yml 的 step release-notes)\r\n\r\n[github-win-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-x86_64.zip\r\n\r\n[github-win-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-windows-aarch64.zip\r\n\r\n[github-mac-x64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-x86_64.dmg\r\n\r\n[github-mac-aarch64]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-macos-aarch64.dmg\r\n\r\n[github-android]: https://github.com/open-ani/ani/releases/download/v6.4.1/ani-6.4.1-universal.apk\r\n\r\n[github-…",
+          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.1/ani-6.4.1.ipa",
+          "size": 48615556,
+          "buildVersion": "6.4.199",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "6.4.0",
           "date": "2026-10-24T04:52:28Z",
           "localizedDescription": "- 加快桌面端网页视频解析速度\r\n- 优化季度拆分资源的弹幕匹配准确性\r\n- 新增通知中心与公告，可查看互动消息、举报处理结果和账号安全提醒，并按类型设置通知\r\n- 新增弹幕文字转换设置，支持按弹幕来源单独配置并预览转换效果 (#3536 by @GeneralK1ng)\r\n- iOS 支持 Anime4K 视频增强，提升视频画面清晰度 (#3606 by @black4der)\r\n- Windows 和 macOS 自动更新支持增量下载，减少下载流量并加快更新\r\n- 新增 JSON API 数据源\r\n- 修复一系列播放相关问题\r\n\r\n----\r\n\r\n- TV 端支持配置全局网络代理 (#3550 by @LoliWolf)\r\n- Android 支持通过包含 Bangumi 章节 ID 或剧集 ID 的 ani 链接打开指定剧集\r\n- 优化续播与换源体验，直接从记忆进度开始播放，减少重复缓冲并避免换源后进度回退\r\n- 优化剧集页播放器快捷键，切换标签页或关闭侧边栏后可直接操作视频，输入文字时避免误触快捷键 (#3542 by @Tsukumi233)\r\n- 修复桌面端在部分多显卡或渲染模式切换场景下视频黑屏、窗口空白的问题\r\n- 修复 Windows 退出播放页时可能卡死的问题\r\n- 修复 Windows 和 Linux 播放纯音频媒体时可能卡在加载中的问题\r\n- 修复 Android 播放部分 MKV 视频时无法显示压缩字幕的问题，支持 ASS 和 SRT 字幕\r\n- 修复 Android 暂停或播放结束后切换全屏时画面缩在左侧或被裁切的问题\r\n- 修复 Android 应用语言切换不生效的问题\r\n- 修复 Jellyfin 数据源切集后找不到下一集资源的问题\r\n- 修复部分网络环境下数据源因页面链接使用 HTTP 而无法加载的问题 (#3633 by @wdw89)\r…",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.4.0/ani-6.4.0.ipa",
-          "size": 48615547,
-          "buildVersion": "6.4.99",
-          "minOSVersion": "16.0"
+          "size": 48615547
         },
         {
           "version": "6.3.0",
@@ -71,13 +78,6 @@
           "localizedDescription": "- 数据源选择支持手动查找模式，支持直接浏览数据源剧集并记住选择，方便后续切集，同时优化 BT 资源搜索、筛选和列表展示\r\n- 新增热度排行页，可浏览完整的 Bangumi 动画热度榜\r\n- 大幅提升分季拆分放送的动画的选集准确性\r\n- Android 和 iOS 支持系统画中画播放 (#3466 by @GeneralK1ng)\r\n- 优化播放器截图体验，新增角落预览，支持查看、复制与系统分享\r\n- 观看进度支持离线处理, 上线后自动同步\r\n- 剧集列表按正片、特别篇等类型分组，上一集、下一集与自动连播只在同类型剧集之间切换\r\n- 优化 Windows 平台的兼容性和性能\r\n\r\n----\r\n\r\n新功能: \r\n- 改进在线视频插播广告过滤并默认开启，优化起播和续播速度，修复桌面端播放进度跳动，并在 iOS 提供广告过滤开关 (#3471 by @NihilDigit)\r\n- 支持折叠屏的半折叠模式，可在设置关闭 (#3446 by @U29kaXVt)\r\n- PikPak 失败时自动回退 BT 引擎 (#3444 by @NihilDigit)\r\n- Windows 支持多点触控与触控笔输入，图片查看器可双指缩放，改善触摸拖动的响应 (#3461 by @NihilDigit)\r\n- 播放器弹幕设置支持来源管理与时间校准 (#3480 by @Tsukumi233)\r\n- 重新设计数据源设置页，按订阅和自定义分组，订阅支持名称、描述、图标与详情页，可批量启用或禁用数据源，订阅内数据源改名后保留启用状态\r\n- 缓存选源支持手动查找，选定一集后可沿同一线路批量下载其他剧集\r\n- 资源自动匹配支持在主名称搜索失败时尝试季度别名和系列名，并优先使用此前搜索成功的关键词\r\n- 自动匹配与手动选集支持分段放送番剧的整季合并页及连续编号，改善后半部分的剧集对应关系\r\n- 电视版支持 An…",
           "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.3.0/ani-6.3.0.ipa",
           "size": 46485035
-        },
-        {
-          "version": "6.2.0",
-          "date": "2026-09-26T14:00:29Z",
-          "localizedDescription": "- 安卓 TV 版已发布，全新设计精美 UI，更多功能开发中\r\n- 新增显示缓冲进度条，优化缓冲机制\r\n- 新增系列关系图，直观展示正片、续集、番外与衍生作品\r\n- 新增按线路批量缓存\r\n- 支持发送自定义位置和颜色的弹幕\r\n- 搜索支持年份与季度筛选 (#3396 by @Bonger34)\r\n- 新增 GitHub 账号绑定，贡献者可认证以免除广告\r\n\r\n----\r\n\r\n- 新增 Bangumi 收藏冲突处理，可对照两侧收藏、选择保留内容或采用较新的记录，并在合并后同步刷新收藏列表\r\n- 新增「显示原名」设置，可在条目、剧集、搜索、收藏和播放等页面显示原始名称 (#3451 by @azusachino)\r\n- 桌面端图片查看器支持独立窗口、缩放、保存、复制及拖出图片到其他应用，并支持触摸板手势\r\n- 人物与角色页面支持发表评论、回复、表情、点赞和举报\r\n- 剧集卡片支持显示剧照、播放进度和已看完标记，可在设置中关闭剧照显示，翻页时及时清除上一页图片\r\n- 桌面端播放页支持拖入本地视频文件，在当前剧集中直接播放\r\n- 缓存详情页显示下载器状态、视频地址解析进度、连接情况及最近错误，便于排查下载停滞\r\n- 已缓存剧集支持显示观看进度\r\n- 账号设置支持换绑邮箱，以及在保留其他登录方式时解绑邮箱\r\n- 时间表支持显示「时间未定」，跨午夜自动切换日期，并修正剧集播出时间与开播状态判断\r\n- 首次启动直接进入主界面，网络检测失败时显示提示，主题与代理可在设置中调整\r\n- 自动选源优先使用本地缓存，在线资源无结果时可回退到 BT 资源，并优化匹配与等待策略\r\n- 优化数据源线路展示，保留网站原有名称、分组和顺序，避免同名线路被合并\r\n- 优化下载管理，批量暂停、继续和删除按操作顺序执行，减少重复创建任务，切换条目时保持标题显示\r\n- 优化列表封面加载及人物、制作人员信息缓存，减少…",
-          "downloadURL": "https://github.com/open-ani/animeko/releases/download/v6.2.0/ani-6.2.0.ipa",
-          "size": 45401084
         }
       ]
     },
@@ -186,7 +186,7 @@
     {
       "name": "GestaltX",
       "bundleIdentifier": "com.huami.gestultx",
-      "developerName": "huami-dev",
+      "developerName": "huami1314",
       "subtitle": "iOS 27 设备端 MobileGestalt 编辑器：地区代码、预设与备份",
       "localizedDescription": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huami.gestultx.png?v=09f6c2680765",
@@ -197,7 +197,7 @@
           "version": "1.1.1",
           "date": "2026-11-13T16:46:05Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/main/CHANGELOG_ZH-CN.md)\n\nBuild `11140102`.\n\n### Added\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\n\n### Changed\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist comparisons (#139)\n- Trav…",
-          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+          "downloadURL": "https://github.com/huami1314/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
           "size": 6774794,
           "buildVersion": "11140102",
           "minOSVersion": "26.0"
@@ -206,14 +206,14 @@
           "version": "1.0.7",
           "date": "2026-11-12T17:14:29Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/v1.0.7/CHANGELOG_ZH-CN.md)\r\n\r\nBuild `11130112`.\r\n\r\n### Fixed\r\n\r\n- Fix container discovery on iOS 27.3 so wallpaper and App Launch Images can locate their containers again.",
-          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
+          "downloadURL": "https://github.com/huami1314/GestaltX/releases/download/v1.0.7/GestaltX_1.0.7.ipa",
           "size": 3563948
         },
         {
           "version": "1.0.5",
           "date": "2026-11-11T03:45:16Z",
           "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/144c0c44a762db616089faddfbc0581929ae1a0a/CHANGELOG_ZH-CN.md#105---2026-11-11)\n\nBuild `11111140`.\n\n### Added\n\n- Spanish localization, bringing the app to nine supported locales ([#97](https://github.com/huamidev/GestaltX/pull/97)).\n- iPhone Air model presets ([#92](https://github.com/huamidev/GestaltX/pull/92)) and a Japanese README ([#83](https://github.com/huamidev/GestaltX/pull/83)).\n\n### Changed\n\n- About now lists the supported OS as iOS / iPadOS 27.x. Installation remains\n  available on 26.x, where on-device MobileGestalt access is marked unsupported.\n- Updated Korean translations ([#84](https://github.com/huamidev/GestaltX/pull/84)) and corrected mixed-language text in\n  Traditional Chinese and other locales ([#61](https://git…",
-          "downloadURL": "https://github.com/huami-dev/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
+          "downloadURL": "https://github.com/huami1314/GestaltX/releases/download/v1.0.5/GestaltX_1.0.5.ipa",
           "size": 2942882
         }
       ]
@@ -261,16 +261,23 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
       "tintColor": "#6156e2",
-      "size": 50502422,
+      "size": 50602330,
       "versions": [
+        {
+          "version": "2.2.1",
+          "date": "2026-11-18T10:04:29Z",
+          "localizedDescription": "## iPadn 2.2.1\n\n本次版本重点修复开启「专业模式」时白屏与无法重进设置页、搜索结果偶现重复条目、「Wi‑Fi 传输」大包 30 秒断流等体验问题，并同步完成全仓导航栈、外部链接确认、磁盘空间清理与 `FairPlayCore` 流式解密边界安全加固。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与稳定性提升\n\n- **修复专业模式白屏与子页面导航**：将底部标签切换统一绑定到语义化 `TabID`，修复开启或关闭「专业模式」时标签数组变化引发的白屏、设置页失联及退出专业模式时的导航监听循环；将「账号」与「应用包」导航栈升级为异构 `NavigationPath`，确保「本机应用 › 应用详情」、「历史版本来源」编辑页、「安装包信息」与「浏览安装包内容」深层进退稳定可靠。\n- **修复搜索偶现重复应用与下架状态串染**：对单区/多区商店搜索、本地索引与「更多结果」执行 `trackId` 及 `bundleID` 双重保序去重，合并最完整图标与体积元数据；防止本地旧缓存的已下架标记覆盖实时重新上架结果，并兼容 Apple Arcade 与 tvOS 实体核验。\n- **修复「Wi‑Fi 传输」满 30 秒断连**：将 30 秒连接超时严格限制在 HTTP 请求头读取阶段，进入安装包流式传输后立即解除计时，避免大体积 IPA 局域网下载中途断流。\n- **修复弹窗吞没、空间残留与边界崩溃**：修复「下载 › + › 通过链接下载」及备份/证书选择器收起动画期间吞没后续弹窗的问题；删除下载任务与启动时自动清理 `tmp/Share` 硬链接及残留临时导出文件，释放磁盘空间；修复灵动岛倒计时跨零崩溃、「应用包」页文件变动强制解包、备份导入覆盖商店地区竞态、无锁屏密码设备导入备份锁死、冷启动误触发自动解密、Mac `.pkg` 过期签名链接重试及根页面顶栏标题…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.1/iPadn-2.2.1-lite-unsigned.ipa",
+          "size": 50602330,
+          "buildVersion": "35",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "2.2.0",
           "date": "2026-11-18T02:18:30Z",
           "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐藏对应板块并停止请求额外媒体和评论资源（与「发现」及「显示历史版本图标」开关协同）。\n\n### 修复与安全加固\n\n- **修复嵌套应用扩展 FairPlay 扫描与统计**：改为相对路径递归枚举包内文件，确保扩展与内置框架的 `.sinf` 安放路径与校验计数准确无误。\n- **加强加密、C 边界与并发安全**：完善 `FairPlayCore` Mach-O/LC 边界与整型溢出校验及失败临时文…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
-          "size": 50502422,
-          "buildVersion": "34",
-          "minOSVersion": "16.0"
+          "size": 50502422
         },
         {
           "version": "2.1.3",
@@ -278,13 +285,6 @@
           "localizedDescription": "## iPadn 2.1.3\n\n本次为修复与体验优化更新，解决关键词搜索时的并发闪退问题，隔离顶部提示动画重绘，并改进 iOS 27 本机配对引导与灵动岛交接体验。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复关键词搜索闪退与并发竞争**：移除搜索前并发嵌套任务组与超时竞争探测，改为在搜索结果返回后按商店地区顺序核验候选已下架应用（最多 15 项），并在新搜索、取消搜索或关闭开关时显式取消旧核验任务。\n- **隔离全局提示动画并优化切换账号响应**：将顶部提示与撤销横幅拆分为独立视图，避免横幅弹簧动画触发整个标签页层级重绘；切换账号时先让提示横幅开始渲染，再触发地区同步、重新搜索与已购刷新。\n- **优化 iOS 27 本机配对引导与灵动岛提醒**：点按「打开设置」跳转到系统设置时主动释放后台音频并推送第 1 步灵动岛横幅指引，补充锁屏密码验证提示与 11 种语言文案，后台等待状态更新支持按代数及时取消，避免旧状态阻塞新提醒。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.3-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.3-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance release fixes a concurr…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.3/iPadn-2.1.3-lite-unsigned.ipa",
           "size": 49310532
-        },
-        {
-          "version": "2.1.2",
-          "date": "2026-11-15T12:17:53Z",
-          "localizedDescription": "## iPadn 2.1.2\n\n本次更新优化了下载与按钮交互动画、侧滑反馈、历史版本校准及原生配对灵动岛提醒，新增直接替换翻译与已下架应用关键词优先搜索，并提升原生安装稳定性。安装包未签名，请用自己的工具签名后安装。\n\n### 新增与优化\n\n- **搜索优先显示已下架应用**：关键词搜索结合内置应用别名目录及本机已购、收藏、下载记录做相关度分级匹配，并核验候选应用的下架状态，将已确认下架且匹配关键词的应用优先排在结果前排；可在「账号 › 设置 › 下载 › 搜索时优先显示已下架应用」随时关闭恢复原排序（默认开启）。\n- **下载操作与按钮形变动效**：下载、已购、搜索与详情页的操作按钮、云朵按钮与黑白进度环统一居中对齐，点按后以按钮中心平滑形变为加载/下载环；进度环底轨与前景进度弧统一为相同线宽，状态过渡更连贯。\n- **侧滑动画与 5 秒撤销**：下载卡片侧滑垃圾桶与分享图标显露后由原生 Core Animation 播放完整动画（开启「减少动态效果」时显示静态完整图标）；下载卡片侧滑删除不再弹确认窗，改为 5 秒倒计时与撤销（连续删除可合并撤销），长按「删除任务及文件」与批量删除仍保留确认，搜索记录删除不再显示倒计时或撤销。\n- **底部标签栏与同步骨架屏微光**：底部标签栏改为自适应动态矢量图标并统一描边粗细，优化搜索图标视觉重量与账号页切换动画；加载骨架屏改为全屏同相位的单色扫光（shimmer），并统一列表轻按触感与轻量化确认弹窗。\n- **直接替换翻译（iOS 18+）**：简介和更新说明默认保留系统翻译面板；iOS 18 及以上可在「账号 › 设置 › 外观与图标 › 翻译」开启「直接替换翻译」，选择原文语言并准备语言包后直接替换为界面语言译文，支持「显示原文」。\n- **下载列表、内联更新说明与图标开关**：精简下载任务展示与状态文案，任务信息区分商店版本、…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.2/iPadn-2.1.2-lite-unsigned.ipa",
-          "size": 49328014
         }
       ]
     },
