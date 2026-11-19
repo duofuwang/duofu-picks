@@ -83,16 +83,23 @@
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 11992467,
+      "size": 12454821,
       "versions": [
+        {
+          "version": "1.6.0",
+          "date": "2026-11-18T19:04:04Z",
+          "localizedDescription": "## AltLoad 1.6.0\n\nLogs, a choice of developer team, more control over entitlements and JIT, and three new languages.\n\n### New\n- **Logs.** Tools › Support › Logs shows what AltLoad did: installs, refreshes, sign-ins, pairing, JIT, AltServer and LocalDevVPN. Filter by category, show errors only, search, copy, share as a file or clear it. Apple ID emails are masked, and passwords, codes, tokens and pairing files are never logged.\n- **Copy Log.** When an install fails, tap Copy Log to copy the error, your AltLoad and iOS versions and the last lines of the log, ready to paste into an issue.\n- **Developer team.** If your Apple ID belongs to more than one team, pick which one signs your apps in Tools › Certificates. Automatic keeps using the first team. The choice is used for installs, refreshes …",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.0/AltLoad.ipa",
+          "size": 12454821,
+          "buildVersion": "10",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.5.1",
           "date": "2026-11-14T05:37:20Z",
           "localizedDescription": "## AltLoad 1.5.1\n\nA fix release for altpair. The AltLoad app itself is unchanged apart from the version number.\n\n### Fixed\n- **altpair two-factor sign-in.** If Apple couldn't send the code to your devices, altpair kept asking for a code that Apple would never accept, and the only way out was to stop. Now it asks where to get a new code. At the code question you can also type `r` to resend the code, `s` to get it by text message (`s1`, `s2`… to pick a number), or `d` to send it to your devices.\n- **altpair sign-in messages.** When Apple turns down a sign-in, altpair now points to its own `--anisette <url>` option instead of a Settings screen that only exists in the app.\n- **altpair anisette servers.** A server given with `--anisette` and a trailing slash or capital letters is no longer trie…",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.1/AltLoad.ipa",
-          "size": 11992467,
-          "buildVersion": "9",
-          "minOSVersion": "18.0"
+          "size": 11992467
         },
         {
           "version": "1.5.0",
@@ -100,13 +107,6 @@
           "localizedDescription": "## AltLoad 1.5.0\n\n### New\n- **altpair.** Install AltLoad with your own Apple ID, on the iPhone, with no computer, no DNS profile and no shared certificate. It uses three free App Store apps: rootshell, Open Minis and LocalDevVPN. I wrote it from scratch; the steps are on the [website](https://mirazbakis.github.io/AltLoad/) and the source is in [altpair](https://github.com/mirazbakis/AltLoad/tree/main/altpair).\n- **AltStore without AltServer.** After installing AltStore, AltLoad leaves this iPhone's pairing file where AltStore 2.3.1 and later look for it. Open AltStore › Settings › Set up Remote AltServer once, and it skips pairing; from then on AltStore installs and refreshes apps by itself, with AltLoad closed.\n- **JIT that stays.** AltLoad now stays with the app while it asks for JIT mem…",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.0/AltLoad.ipa",
           "size": 11992455
-        },
-        {
-          "version": "1.4.0",
-          "date": "2026-11-01T09:56:00Z",
-          "localizedDescription": "## AltLoad 1.4.0\n\n### New\n- **Husk.** Install Husk from the store list, with this iPhone's pairing file already inside it for its built-in JIT.\n- **French, German, Italian, Chinese and Russian.** AltLoad follows your iPhone's language.\n- **Update notices.** AltLoad tells you when a newer version is out.\n\n### Fixed\n- **Pairing files for SideStore and SideStore + LiveContainer.** They now include this iPhone's UDID and go everywhere SideStore looks, along with the settings newer builds need.\n- **\"Apple ID or password incorrect\" with Anisette on Automatic.** Apple gives that answer for anisette data it won't accept too, so AltLoad now tries the next server instead of stopping, and keeps your saved password.\n- Fixed potential issues with Apple IDs",
-          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.4.0/AltLoad.ipa",
-          "size": 11794981
         }
       ]
     },

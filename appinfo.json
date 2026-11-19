@@ -350,15 +350,6 @@
     "size": 25053075,
     "source_repo": "bggRGjQaUbCoE/PiliPlus"
   },
-  "mirazbakis/AltLoad@1.5.1": {
-    "bundleIdentifier": "com.mirazbakis.altload",
-    "displayName": "AltLoad",
-    "version": "1.5.1",
-    "build": "9",
-    "minOSVersion": "18.0",
-    "size": 11992467,
-    "source_repo": "mirazbakis/AltLoad"
-  },
   "missuo/kumone@0.3.37": {
     "bundleIdentifier": "sb.moe.kumone-ios",
     "displayName": "Kumone",
@@ -538,5 +529,14 @@
     "minOSVersion": "26.0",
     "size": 672536711,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "mirazbakis/AltLoad@1.6.0": {
+    "bundleIdentifier": "com.mirazbakis.altload",
+    "displayName": "AltLoad",
+    "version": "1.6.0",
+    "build": "10",
+    "minOSVersion": "18.0",
+    "size": 12454821,
+    "source_repo": "mirazbakis/AltLoad"
   }
 }
