@@ -48,30 +48,30 @@
       "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=8db853b5a9fb",
       "tintColor": "#5fbfb7",
-      "size": 48221386,
+      "size": 48803526,
       "versions": [
+        {
+          "version": "1.15.1-309",
+          "date": "2026-11-19T17:00:16Z",
+          "localizedDescription": "# v1.15.1-309\n\n## Beta 1\n\n### Appearance\n- **New** - Liquid Glass on iOS 26: glass tab bar, library pills and toasts (Settings, Appearance)\n- **New** - Material 3 Expressive on Android: rolling tab highlight, shape loader, squishy buttons and a new player card look (Settings, Appearance)\n- **Improved** - Settings switches use the iOS style on iPhone and iPad\n\n### Absorbing cards\n- **New** - Card swipe style: Classic, Carousel or Stack\n- **New** - Solid card background, a calm shade of the cover's color\n- **Improved** - Button style moved to the Absorbing Cards settings\n\n### Library\n- **New** - Detail sheets grow out of the cover you tap\n\n### Languages\n- **New** - Polish, thanks to TheMatrixan (#490)",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-309/absorb-1.15.1-309-pre.ipa",
+          "size": 48803526,
+          "buildVersion": "309",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "1.14.0",
+          "date": "2026-11-19T16:57:31Z",
+          "localizedDescription": "# v1.14.0\n\n### Windows\n- **New** - Absorb on Windows, with an installer and media key support\n\n### Ebook reader\n- **New** - Sentence mode\n- **New** - Slide, Curl and Ripple page turns and an editable tap grid\n- **New** - Translate button\n- **Fix** - Swipe to turn pages works on iOS\n\n### Read along\n- **New** - EPUB3 narration, streamed or downloaded\n  - On Audiobookshelf, for best results, make the EPUB3 the only book file in the item (a cover and metadata files are fine)\n  - On Audiobookshelf, listening time still gets logged, but the book's duration shows as 0 since ABS doesn't support these natively\n  - Check out [Storyteller](https://storyteller-platform.dev/)'s STAlign for creating narrated EPUBs\n- **New** - Sync position button\n\n### BookOrbit\n- **New** - API key sign-in, stats with Ye…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.14.0/absorb-1.14.0-308.ipa",
+          "size": 48228182
+        },
         {
           "version": "1.12.1-306",
           "date": "2026-11-16T06:31:45Z",
           "localizedDescription": "# v1.12.1-306\n\n## Beta 7\n\n### Playback\n- **Fix** - Streamed podcasts and books that stopped with a source error a moment after pressing play, and needed several more taps before they went, now resume on the first one (#488)\n\n### BookOrbit\n- **Fix** - Year in Review now shows on BookOrbit 3.7 and newer, where the server locks the activity routes to its own app (#486)",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-306/absorb-1.12.1-306-pre.ipa",
-          "size": 48221386,
-          "buildVersion": "306",
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "1.12.1-305",
-          "date": "2026-11-12T22:55:37Z",
-          "localizedDescription": "# v1.12.1-305\n## Beta 6\n\n### Wear OS\n- **New** - The Absorb watch app ships with each release from now on. Play from the wrist, see your bookmarks, and the watch can pause and rewind the phone when you fall asleep (a toggle in the sleep timer settings)\n- For now the watch APK is a companion to the GitHub version of Absorb. It also works on its own with a basic sign-in. Play Store is in the works\n\n### Reader\n- **New** - Sentence mode shows one sentence at a time, pictures included, and turns the page when the narration runs on. Auto scroll speed is in words per minute\n- **Improved** - The tap zones card can move to the top or shrink away. Swipe between the reader settings tabs\n- **Fix** - A narrated EPUB keeps the read along color you picked after a restart\n\n### Playback\n- **Fix** - A pause…",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-305/absorb-1.12.1-305-pre.ipa",
-          "size": 48217939
-        },
-        {
-          "version": "1.12.1-304",
-          "date": "2026-11-05T03:29:05Z",
-          "localizedDescription": "# v1.12.1-304\n## Beta 5\n\n### Windows\n- **New** - Absorb for Windows: an installer is attached to each release from now on. Sign in, play, download, read and transcribe like on the phone. Needs Windows 10 or newer\n  - It's new, so as always let me know about bugs you find, and about areas that don't feel very desktop yet\n  - The installer isn't signed yet, so Windows will warn before it runs\n\n### Audio (Android)\n- **Improved** - The loudness slider levels quiet books automatically instead of adding a fixed boost\n- **Improved** - The equalizer and bass boost run inside the player on Android, so they work on every phone\n- **New** - A pitch slider in the equalizer, to make the narrator sound lower or higher\n- **New** - Play with other audio, in Playback settings, keeps Absorb playing when anot…",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-304/absorb-1.12.1-304-pre.ipa",
-          "size": 48090333
+          "size": 48221386
         }
       ]
     },
@@ -238,22 +238,29 @@
     },
     {
       "name": "cilicili",
-      "bundleIdentifier": "nsk-1695.v-team.cn",
+      "bundleIdentifier": "cc.bili",
       "developerName": "Rone89",
       "subtitle": "iOS 原生第三方哔哩哔哩客户端，支持弹幕、字幕与听视频",
       "localizedDescription": "A SwiftUI third-party iOS client experiment for Bilibili browsing, dynamics, video playback, and danmaku.",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/nsk-1695.v-team.cn.png?v=8ad732d1bdd1",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/cc.bili.png?v=8ad732d1bdd1",
       "tintColor": "#f5609b",
-      "size": 24814110,
+      "size": 24747937,
       "versions": [
+        {
+          "version": "1.1.6",
+          "date": "2026-11-19T21:24:27Z",
+          "localizedDescription": "## 更新内容（1.1.5 → 1.1.6）\n\n• **原生播放底层转正与手感优化**：正式采用系统原生 `AVPlayerViewController` 底座配合通透液态玻璃自绘控件，优化横向滑动调进度响应与松手出帧速度，统一手动全屏、重力横屏与系统画中画衔接体验。\n• **弹幕架构收敛与旋转稳定性修复**：点播由原生 `AVSynchronizedLayer` 同步驱动、直播由 `Metal` 渲染并彻底移除第三方 `DanmakuKit` 依赖；解决横竖屏旋转时弹幕闪烁、位置偏移与清晰度切换闪退问题，新增大会员渐变彩色弹幕及「同屏弹幕上限」设置。\n• **杜比视界与 HDR 播放精简**：移除旧版「杜比视界渲染」开关与双层叠加播放器，统一交由系统原生高动态范围输出配合内置防过曝兼容处理，避免额外功耗与画中画/全屏割裂。\n• **底栏动效与评论弹窗细节**：彻底修复二级页面返回一级页面时底部 TabBar 闪现及滚动最小化失效问题；新增「评论弹窗不展开到最大高度」开关，保持更舒适的阅读视野。\n\n--------\n\n安装说明：附件为未签名 IPA（`1.1.6` Build `218`），需自行签名后安装。",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.6/bili-release-unsigned.ipa",
+          "size": 24747937,
+          "buildVersion": "218",
+          "minOSVersion": "26.1"
+        },
         {
           "version": "1.1.5",
           "date": "2026-11-17T11:42:35Z",
           "localizedDescription": "## 更新内容（1.1.4 → 1.1.5）\n\n- **顶栏交互统一**：搜索页与「我的」页面采用系统原生顶栏搜索与按钮布局；动态页右上角切换箭头尺寸调整得更协调。\n- **视频页状态栏清晰**：浅色模式下进入视频或直播详情页时，顶部状态栏图标恢复清晰可见。\n- **底栏防误触回顶**：底栏最小化成胶囊后，首次点击只展开底栏方便切换页面；在展开状态下再轻点当前 Tab 才返回顶部。\n- **顶部渐变收窄**：保留系统柔和渐进模糊效果，移除多余顶部留白占位，整体视野更干净。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.5/bili-release-unsigned.ipa",
-          "size": 24814110,
-          "buildVersion": "203",
-          "minOSVersion": "26.1"
+          "size": 24814110
         },
         {
           "version": "1.1.4",
@@ -261,13 +268,6 @@
           "localizedDescription": "## 更新内容（1.1.3 → 1.1.4）\n\n- **启动更快**：点开视频到出画面明显提速。\n- **修复 #66**：全屏后画面漂移到左下角（HEVC/AV1 编码场景）。\n- **弹幕重做**：更省电，暂停/拖动/倍速自动跟随；修好不显示、位置错、重叠、断流、空档、重复等问题。\n- **弹幕设置更干净**：去掉灰黑色块；横屏调字体粗细不再被弹回竖屏。\n- **横屏 100% 显示区域可铺满**（底部按钮区除外）。\n- **其他**：图片/封面清晰度合并为一个选项；长视频标题可展开看全。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.4/bili-release-unsigned.ipa",
           "size": 24660955
-        },
-        {
-          "version": "1.1.3",
-          "date": "2026-11-09T10:12:47Z",
-          "localizedDescription": "## 这版更新了啥\n\n- 首页推荐和动态都可以点底栏回到顶部，到顶后再点一次就刷新。动态下拉也会直接获取新内容。\n- 动态页顶部可以自选显示哪些频道，还能调整顺序。\n- 长动态和长评论可以点末行的「… 展开」，直接看全文。\n- 播放器新增 CC 字幕入口，可以选字幕轨，也能设置 AI 字幕偏好。横屏播放的设置移到右侧，屏幕顶部左右分别显示时间和电量。\n- 分 P、番剧选集和合集换成了带封面的紧凑列表。视频详情里的头像和操作按钮也重新排过，更容易区分。\n\n## 修了哪些问题\n\n- 优化评论滚动和翻页，修了切换「最热／最新」时出现的大块空白和加载占位盖住排序栏的问题。\n- 修正部分 HDR 视频的显示和弹幕设置，并补充了部分视频取流失败时的重试方式。\n- 调整搜索筛选栏和投币面板，投币时可以选择是否同时点赞。\n\n## 安装包\n\n- 附件里的 `bili-release-unsigned.ipa` 是 1.1.3（Build 150）的未签名安装包，需自行签名后安装。",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.3/bili-release-unsigned.ipa",
-          "size": 24576338
         }
       ]
     },
@@ -958,16 +958,23 @@
       "localizedDescription": "An OSS weather app for iOS/Android",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.akylas.weather.png?v=4573599fdc3a",
       "tintColor": "#f49e1e",
-      "size": 27510302,
+      "size": 27517158,
       "versions": [
+        {
+          "version": "ios/alpha/3.02.0/170",
+          "date": "2026-11-19T21:03:30Z",
+          "localizedDescription": "### Bug fixes\n- align right axis padding with left in model charts (#650) (https://github.com/ossappscollective/oss-weather/commit/81708640d1f32b7477ee9d67cd164e3907625b99)\n- update next and last 24 hours when switching days (#653) (https://github.com/ossappscollective/oss-weather/commit/e5c8db60a54017a2fe883039ec4e2d48349cca6f)\n- show the rain amount in the hourly chart tooltip (#659) (https://github.com/ossappscollective/oss-weather/commit/2a7a417157bf5286b97c5089d1ae998195884703)\n- rebuild the favorites drawer when the design style changes (#660) (https://github.com/ossappscollective/oss-weather/commit/b900047b0731cd1033a3f0e997fa9c981e273f5a)\n- keep METAR conditions when the provider current data is stale (#661) (https://github.com/ossappscollective/oss-weather/commit/79c4c52697685dd16…",
+          "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.02.0/170/ossweather.ipa",
+          "size": 27517158,
+          "buildVersion": "170",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "ios/alpha/3.01.1/169",
           "date": "2026-11-04T13:30:02Z",
           "localizedDescription": "### Bug fixes\n- clear stale data on a failed provider switch and send the runtime MF key (#646) (https://github.com/ossappscollective/oss-weather/commit/e66bcc724d4d62f3e65096f67c6aa45de4520dc4)",
           "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.01.1/169/ossweather.ipa",
-          "size": 27510302,
-          "buildVersion": "169",
-          "minOSVersion": "17.0"
+          "size": 27510302
         },
         {
           "version": "ios/alpha/3.01.0/168",
@@ -975,13 +982,6 @@
           "localizedDescription": "### Features\n- add daily rows to tall hourly widget (#610) (https://github.com/ossappscollective/oss-weather/commit/2275337af54b51c6b4399b7124b1fa89f524a662)\n- use METAR observations for the current conditions (#617) (https://github.com/ossappscollective/oss-weather/commit/797258e29a969dfd34fa42da836c1d80bef1735a)\n- add Open-Meteo as marine weather provider and a full-day tide chart (#628) (https://github.com/ossappscollective/oss-weather/commit/4060aa5ca82f01f2ed0a8f690918632532e9711a)\n\n### Bug fixes\n- Translations update from Hosted Weblate (#606) (https://github.com/ossappscollective/oss-weather/commit/f27ee6d452433f68df94e03a8029e1617ec2e6fa)\n- skip provider in swipe cycle when no api key is set (#608) (https://github.com/ossappscollective/oss-weather/commit/2565f602997730f61868d3b45c7…",
           "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.01.0/168/ossweather.ipa",
           "size": 27510198
-        },
-        {
-          "version": "ios/alpha/3.00.5/167",
-          "date": "2026-10-26T16:26:03Z",
-          "localizedDescription": "### Features\n- add a clear button to the api key prompts (#603) (https://github.com/ossappscollective/oss-weather/commit/2902348f5d556986501e10434b0d4c031ae82c93)\n\n### Bug fixes\n- replace model chips with one models chip and sheet (#591) (https://github.com/ossappscollective/oss-weather/commit/e469925e73949ec52a09f3d72615bfc7cad28255)\n- skip the highlight when the daily page has no start time (#594) (https://github.com/ossappscollective/oss-weather/commit/989b549d3886670c3ce12c7788bd071323c3b9bb)\n- Translations update from Hosted Weblate (#595) (https://github.com/ossappscollective/oss-weather/commit/2cdd87846be45ef26f4b74f235373afc83bb62cd)\n- Translations update from Hosted Weblate (#596) (https://github.com/ossappscollective/oss-weather/commit/de77da5115c9fc90e579137085b59ff361dee057)\n- …",
-          "downloadURL": "https://github.com/ossappscollective/oss-weather/releases/download/ios/alpha/3.00.5/167/ossweather.ipa",
-          "size": 27484196
         }
       ]
     },
@@ -1241,13 +1241,6 @@
           "localizedDescription": "The app now follows which Termix plugins are turned on, and RDP asks for credentials when a host has none saved.\n\n| Platform | Download |\n|----------|----------|\n| **Android** | [APK](https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_android.apk) |\n| **iOS** | [IPA](https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_ios.ipa) |\n\n### Added\n\n- Hide host actions, editor sections, settings and keyboard tabs for features the server has turned off\n- Refresh the server's features on pull to refresh, when the app comes back and when the server reports a feature is off\n\n### Changed\n\n- Renamed Server Stats to Host Metrics, including the home screen widget, to match Termix\n\n### Fixed\n\n- RDP asks for a username and password when the host has none saved instead of fa…",
           "downloadURL": "https://github.com/Termix-SSH/Mobile/releases/download/v1.6.0/termix_ios.ipa",
           "size": 17172388
-        },
-        {
-          "version": "release-1.5.1-tag",
-          "date": "2026-10-01T18:57:16Z",
-          "localizedDescription": "Improved terminal text selection, added compatibility for Termix plugins, and fixed several bugs.\r\n\r\n| Platform | Download |\r\n|----------|----------|\r\n| **Android** | [APK](https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_android.apk) |\r\n| **iOS** | [IPA](https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_ios.ipa) |\r\n\r\nUpdate Log:\r\n- Improved terminal selection system\r\n- Added compatibility for the Termix plugin update\r\n\r\nBug Fixes:\r\n- Restore format checks for guacamole assets\r\n- Respect configured RDP resolution\r\n- Send terminal JWT as protocol fixing infinite reconnect\r\n- Fit VNC and keep touch cords in sync\r\n- Host form keeps field it does not edit\r\n- Handle TOTP/browser sign in replies for files/docker",
-          "downloadURL": "https://github.com/Termix-SSH/Mobile/releases/download/release-1.5.1-tag/termix_ios.ipa",
-          "size": 17167817
         }
       ]
     },

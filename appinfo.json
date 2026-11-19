@@ -152,15 +152,6 @@
     "size": 40979942,
     "source_repo": "GopeedLab/gopeed"
   },
-  "ossappscollective/oss-weather@ios/alpha/3.01.1/169": {
-    "bundleIdentifier": "com.akylas.weather",
-    "displayName": "OSS Weather",
-    "version": "3.01.1",
-    "build": "169",
-    "minOSVersion": "17.0",
-    "size": 27510302,
-    "source_repo": "ossappscollective/oss-weather"
-  },
   "Termix-SSH/Mobile@2.0.0": {
     "bundleIdentifier": "com.karmaa.termix",
     "displayName": "Termix",
@@ -431,15 +422,6 @@
     "size": 26854984,
     "source_repo": "mxhm11cr/LinuxRunner"
   },
-  "pounat/absorb@1.12.1-306": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.12.1",
-    "build": "306",
-    "minOSVersion": "15.0",
-    "size": 48221386,
-    "source_repo": "pounat/absorb"
-  },
   "lwh0630/TokenBar@1.2.10": {
     "bundleIdentifier": "dev.tokenbar.app",
     "displayName": "TokenBar",
@@ -475,24 +457,6 @@
     "minOSVersion": "18.0",
     "size": 21448968,
     "source_repo": "darriousliu/PiPixiv"
-  },
-  "Rone89/cilicili@1.1.5": {
-    "bundleIdentifier": "nsk-1695.v-team.cn",
-    "displayName": "cilicili",
-    "version": "1.1.5",
-    "build": "203",
-    "minOSVersion": "26.1",
-    "size": 24814110,
-    "source_repo": "Rone89/cilicili"
-  },
-  "Kianuni/Erosion-CN@1.0.5": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "1.0.5",
-    "build": "30",
-    "minOSVersion": "26.0",
-    "size": 6875541,
-    "source_repo": "Kianuni/Erosion-CN"
   },
   "open-ani/animeko@6.4.1": {
     "bundleIdentifier": "org.animeko.animeko",
@@ -538,5 +502,41 @@
     "minOSVersion": "18.0",
     "size": 12519786,
     "source_repo": "mirazbakis/AltLoad"
+  },
+  "Kianuni/Erosion-CN@1.0.6": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "1.0.6",
+    "build": "31",
+    "minOSVersion": "26.0",
+    "size": 6948787,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "pounat/absorb@1.15.1-309": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.15.1",
+    "build": "309",
+    "minOSVersion": "15.0",
+    "size": 48803526,
+    "source_repo": "pounat/absorb"
+  },
+  "ossappscollective/oss-weather@ios/alpha/3.02.0/170": {
+    "bundleIdentifier": "com.akylas.weather",
+    "displayName": "OSS Weather",
+    "version": "3.02.0",
+    "build": "170",
+    "minOSVersion": "17.0",
+    "size": 27517158,
+    "source_repo": "ossappscollective/oss-weather"
+  },
+  "Rone89/cilicili@1.1.6": {
+    "bundleIdentifier": "cc.bili",
+    "displayName": "cilicili",
+    "version": "1.1.6",
+    "build": "218",
+    "minOSVersion": "26.1",
+    "size": 24747937,
+    "source_repo": "Rone89/cilicili"
   }
 }
