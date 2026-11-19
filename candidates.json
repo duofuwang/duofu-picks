@@ -83,16 +83,23 @@
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 12454821,
+      "size": 12519786,
       "versions": [
+        {
+          "version": "1.6.1",
+          "date": "2026-11-19T11:27:13Z",
+          "localizedDescription": "## AltLoad 1.6.1\n\nA fix release for installs, JIT and device tools that stopped with \"Connection refused\" or \"tunnel connect timed out\".\n\n### Fixed\n- **\"Connection refused\" on 10.7.0.1:49152.** AltLoad always connected to port 49152, but iOS doesn't keep its pairing service on a fixed port. It usually gets 49152, but after a restart it can move, and every install then failed. AltLoad now looks up the real port over Bonjour. If that doesn't lead to it, AltLoad checks the iPhone's other ports, which takes a few seconds, and remembers the one it finds.\n- **Installs on iOS 27.2.** Since iOS 27.2, the iPhone closes a tunnel's services when a new connection to it identifies itself differently. AltLoad now uses the same identity every time, so installs, refreshes, JIT and AltServer no longer cut …",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.1/AltLoad.ipa",
+          "size": 12519786,
+          "buildVersion": "11",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.6.0",
           "date": "2026-11-18T19:04:04Z",
           "localizedDescription": "## AltLoad 1.6.0\n\nLogs, a choice of developer team, more control over entitlements and JIT, and three new languages.\n\n### New\n- **Logs.** Tools › Support › Logs shows what AltLoad did: installs, refreshes, sign-ins, pairing, JIT, AltServer and LocalDevVPN. Filter by category, show errors only, search, copy, share as a file or clear it. Apple ID emails are masked, and passwords, codes, tokens and pairing files are never logged.\n- **Copy Log.** When an install fails, tap Copy Log to copy the error, your AltLoad and iOS versions and the last lines of the log, ready to paste into an issue.\n- **Developer team.** If your Apple ID belongs to more than one team, pick which one signs your apps in Tools › Certificates. Automatic keeps using the first team. The choice is used for installs, refreshes …",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.0/AltLoad.ipa",
-          "size": 12454821,
-          "buildVersion": "10",
-          "minOSVersion": "18.0"
+          "size": 12454821
         },
         {
           "version": "1.5.1",
@@ -100,13 +107,6 @@
           "localizedDescription": "## AltLoad 1.5.1\n\nA fix release for altpair. The AltLoad app itself is unchanged apart from the version number.\n\n### Fixed\n- **altpair two-factor sign-in.** If Apple couldn't send the code to your devices, altpair kept asking for a code that Apple would never accept, and the only way out was to stop. Now it asks where to get a new code. At the code question you can also type `r` to resend the code, `s` to get it by text message (`s1`, `s2`… to pick a number), or `d` to send it to your devices.\n- **altpair sign-in messages.** When Apple turns down a sign-in, altpair now points to its own `--anisette <url>` option instead of a Settings screen that only exists in the app.\n- **altpair anisette servers.** A server given with `--anisette` and a trailing slash or capital letters is no longer trie…",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.1/AltLoad.ipa",
           "size": 11992467
-        },
-        {
-          "version": "1.5.0",
-          "date": "2026-11-13T15:34:23Z",
-          "localizedDescription": "## AltLoad 1.5.0\n\n### New\n- **altpair.** Install AltLoad with your own Apple ID, on the iPhone, with no computer, no DNS profile and no shared certificate. It uses three free App Store apps: rootshell, Open Minis and LocalDevVPN. I wrote it from scratch; the steps are on the [website](https://mirazbakis.github.io/AltLoad/) and the source is in [altpair](https://github.com/mirazbakis/AltLoad/tree/main/altpair).\n- **AltStore without AltServer.** After installing AltStore, AltLoad leaves this iPhone's pairing file where AltStore 2.3.1 and later look for it. Open AltStore › Settings › Set up Remote AltServer once, and it skips pairing; from then on AltStore installs and refreshes apps by itself, with AltLoad closed.\n- **JIT that stays.** AltLoad now stays with the app while it asks for JIT mem…",
-          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.0/AltLoad.ipa",
-          "size": 11992455
         }
       ]
     },
@@ -401,13 +401,6 @@
           "localizedDescription": "# Floe Agent 1.8.43（364）\n\n## 简体中文\n\n游戏助手现在使用游戏工程的工作区处理文件和源码管理。改进游戏目录选择、试玩前的状态更新，以及自带运行文件的游戏提示。\n\n## English\n\nThe game assistant now uses the game project's workspace for files and source control. Improved game folder selection, pre-play status refresh, and guidance for games that include their own runtime.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.43/Floe-Agent-1.8.43-build364-unsigned.ipa",
           "size": 672521480
-        },
-        {
-          "version": "1.8.41",
-          "date": "2026-11-17T02:27:17Z",
-          "localizedDescription": "# Floe Agent 1.8.41（362）\n\n## 简体中文\n\n修复游戏文件夹导入时的路径错误。改进创意模式的画布入口和删除操作，统一画布编辑与保存。\n\n工作区可创建和编辑 Studio 视频工程，并通过代码生成逐帧画面。新建 Linux 环境可尝试图形和视频加速；已有环境保留原版本，可选择升级。\n\n## English\n\nFixed a path error when importing game folders. Improved canvas controls and deletion in Creative mode, and unified canvas editing and saving.\n\nCreate and edit Studio video projects in a workspace and generate video frames with code. Try graphics and video acceleration in new Linux environments; existing environments retain their current version and can be upgraded explicitly.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local de…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.41/Floe-Agent-1.8.41-build362-unsigned.ipa",
-          "size": 672366770
         }
       ]
     },
@@ -1035,14 +1028,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1200176460,
+      "size": 1200607141,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-17T10:11:34Z",
-          "localizedDescription": "## Alpha Build `e410df8`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`e410df8`](https://github.com/Provenance-Emu/Provenance/commit/e410df8db00b67f9007ac09f681aaef3f8638e8d) |\n| **Built** | 2026-11-17 10:10 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44055608327) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ne410df8db feat(ecosystem): send GameCube and Wii games to iCube via the drop box (#3819)\n```\n\n### Merged PRs\n- #3819: feat(ecosystem): send GameCube and Wii games to iCube via the drop box\n\n\n---\nThese builds are unsigned and intended for sidel…",
+          "date": "2026-11-19T07:35:19Z",
+          "localizedDescription": "## Alpha Build `994a60d`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`994a60d`](https://github.com/Provenance-Emu/Provenance/commit/994a60d374ddd0f5b5110505cbaebef000691f9e) |\n| **Built** | 2026-11-19 07:34 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44474666997) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n994a60d37 fix(display): review fixes for TVs on by default\n9e34a64e6 docs: note the log viewer, export sheet and search polish fixes\na98e748de fix(logs): close the export sheet once the share completes\n27f1ae75f feat(settings): a Bezels page, …",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1200176460,
+          "size": 1200607141,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

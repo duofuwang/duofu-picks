@@ -530,13 +530,13 @@
     "size": 672536711,
     "source_repo": "JiangNanGenius/floe-agent"
   },
-  "mirazbakis/AltLoad@1.6.0": {
+  "mirazbakis/AltLoad@1.6.1": {
     "bundleIdentifier": "com.mirazbakis.altload",
     "displayName": "AltLoad",
-    "version": "1.6.0",
-    "build": "10",
+    "version": "1.6.1",
+    "build": "11",
     "minOSVersion": "18.0",
-    "size": 12454821,
+    "size": 12519786,
     "source_repo": "mirazbakis/AltLoad"
   }
 }
