@@ -46,18 +46,25 @@
       "developerName": "pounat",
       "subtitle": "Audiobookshelf 有声书客户端",
       "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=8db853b5a9fb",
-      "tintColor": "#5fbfb7",
-      "size": 48803526,
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=be00d8b6da96",
+      "tintColor": "#5fbdb5",
+      "size": 48762949,
       "versions": [
+        {
+          "version": "1.15.1-310",
+          "date": "2026-11-20T05:37:15Z",
+          "localizedDescription": "# v1.15.1-310\n\n## Beta 2\n\n### Player\n- **Improved** - Smoother card expand, it grows and shrinks with your swipe\n- **Improved** - A book you play slides its card to the front\n- **Improved** - Button rows join up in every look\n\n### App icon\n- **New** - App icon colors on iPhone and Android (Settings, Appearance)\n\n### Covers\n- **Fix** - Android Auto, CarPlay and the watch show new covers\n- **New** - Edit sheet previews a new cover before saving\n\n### BookOrbit\n- **New** - Hide libraries from shelves, series or stats (3.9)\n- **New** - Pause and resume read along creation\n- **New** - KOReader device names in the reading log\n- **Improved** - API key sign-ins can change password and keys\n\n### Audiobookshelf\n- **Fix** - Saving a user keeps their tag limits (2.38)\n\n### Ebooks\n- **Fix** - Progress k…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-310/absorb-1.15.1-310-pre.ipa",
+          "size": 48762949,
+          "buildVersion": "310",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.15.1-309",
           "date": "2026-11-19T17:00:16Z",
           "localizedDescription": "# v1.15.1-309\n\n## Beta 1\n\n### Appearance\n- **New** - Liquid Glass on iOS 26: glass tab bar, library pills and toasts (Settings, Appearance)\n- **New** - Material 3 Expressive on Android: rolling tab highlight, shape loader, squishy buttons and a new player card look (Settings, Appearance)\n- **Improved** - Settings switches use the iOS style on iPhone and iPad\n\n### Absorbing cards\n- **New** - Card swipe style: Classic, Carousel or Stack\n- **New** - Solid card background, a calm shade of the cover's color\n- **Improved** - Button style moved to the Absorbing Cards settings\n\n### Library\n- **New** - Detail sheets grow out of the cover you tap\n\n### Languages\n- **New** - Polish, thanks to TheMatrixan (#490)",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-309/absorb-1.15.1-309-pre.ipa",
-          "size": 48803526,
-          "buildVersion": "309",
-          "minOSVersion": "15.0"
+          "size": 48803526
         },
         {
           "version": "1.14.0",
@@ -65,13 +72,6 @@
           "localizedDescription": "# v1.14.0\n\n### Windows\n- **New** - Absorb on Windows, with an installer and media key support\n\n### Ebook reader\n- **New** - Sentence mode\n- **New** - Slide, Curl and Ripple page turns and an editable tap grid\n- **New** - Translate button\n- **Fix** - Swipe to turn pages works on iOS\n\n### Read along\n- **New** - EPUB3 narration, streamed or downloaded\n  - On Audiobookshelf, for best results, make the EPUB3 the only book file in the item (a cover and metadata files are fine)\n  - On Audiobookshelf, listening time still gets logged, but the book's duration shows as 0 since ABS doesn't support these natively\n  - Check out [Storyteller](https://storyteller-platform.dev/)'s STAlign for creating narrated EPUBs\n- **New** - Sync position button\n\n### BookOrbit\n- **New** - API key sign-in, stats with Ye…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.14.0/absorb-1.14.0-308.ipa",
           "size": 48228182
-        },
-        {
-          "version": "1.12.1-306",
-          "date": "2026-11-16T06:31:45Z",
-          "localizedDescription": "# v1.12.1-306\n\n## Beta 7\n\n### Playback\n- **Fix** - Streamed podcasts and books that stopped with a source error a moment after pressing play, and needed several more taps before they went, now resume on the first one (#488)\n\n### BookOrbit\n- **Fix** - Year in Review now shows on BookOrbit 3.7 and newer, where the server locks the activity routes to its own app (#486)",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.12.1-306/absorb-1.12.1-306-pre.ipa",
-          "size": 48221386
         }
       ]
     },
@@ -412,16 +412,23 @@
       "localizedDescription": "一个 Linux.do 第三方客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.lingyan000.fluxdo.png?v=2069ea0effe2",
       "tintColor": "#f5b018",
-      "size": 41377170,
+      "size": 42460860,
       "versions": [
+        {
+          "version": "0.2.31",
+          "date": "2026-11-20T05:13:46Z",
+          "localizedDescription": "这次更新重做了话题页底栏，选楼、看时间线和回复都能在底栏完成。通知可以按分类浏览，原来的追觅换成了关注动态，私信和帖子回复的展示也做了调整。网络连接方面，新连接更快，修复了部分 Android 设备提示证书错误的问题。\n\n### 🧭 全新话题底栏\n\n- 在底栏上横向拖动即可选楼，松手后跳转。拖动时手指往上移，可以从按比例选楼切换到附近楼层或逐楼选择。停下时会显示目标楼层的日期和内容摘要。\n- 底栏右侧显示当前楼层和日期，顶边用已读、未读两种颜色的分界标出阅读进度。手机上底栏贴在屏幕底部，宽屏时是悬浮卡片；离开顶部后，回到顶部按钮跟着底栏出现。\n- 点楼层数打开时间线。时间线标出话题的起止日期、当前位置和上次读到的位置，左侧显示所选楼层的作者和摘要；拖动时手指离轨道越远，选楼越精细。\n- 屏幕足够宽时，帖子右侧常驻时间线、回复入口、筛选和自选的快捷操作，目录移到左侧并贴着正文；点目录跳转后，所选章节保持高亮。\n- 新增「底栏自动隐藏」开关：开启时向下阅读会收起底栏，向上滑重新出现。\n\n### ✍️ 在话题页直接回复\n\n- 点底栏的回复入口，快捷回复面板从入口处展开，可以插入表情和最近用过的表情，也能显示字数和最低字数要求，按 Ctrl/Cmd + Enter 发送。有未发送的草稿时，回复入口会显示草稿摘要。\n- 快捷回复可以展开为完整编辑器，已输入的内容会带过去，键盘不会收起。宽屏下，完整编辑器停靠在帖子列底部，可以调整高度或最小化。\n- 新增「回复方式」设置，可选自动、总是快捷回复或总是完整编辑器。自动模式下，如果开启了富文本编辑器，并且是引用回复或草稿中有块级格式，会直接打开完整编辑器。\n- 编辑页顶栏重新设计。编辑已有帖子时，关闭前会确认是否放弃修改；编辑器加载失败时也能正常退出。\n- 编辑器可以把选中内容标记为 AI 代码块、AI 引用或 AI 折叠详情。\n\n### …",
+          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.31/fluxdo-unsigned.ipa",
+          "size": 42460860,
+          "buildVersion": "2026112011",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.2.30",
           "date": "2026-11-13T08:38:12Z",
           "localizedDescription": "这次更新带来了全新的主题画廊与自定义主题、应用广场，以及更完整的个人资料和论坛偏好设置。日常刷帖、打开网页、回应佬友和安装更新，也有了一批体验改进。\n\n### 🎨 把界面调成喜欢的样子\n\n- 外观设置新增主题画廊与实时预览，按动态取色、素雅、阅读和代码配色分组挑选。轻云、燕麦、纸张等主题各有风格，卡片、按钮、引用块和代码高亮也会随主题一起变化。\n- 可以基于现有主题创建自己的配色，分别调整浅色与深色外观、强调色、圆角，以及卡片、输入框等界面样式。编辑时可直接预览效果，还能查看文字对比度提示。\n- 喜欢的自定义主题可以复制为主题代码分享，也能从剪贴板导入他人的作品。圆角提供标准、适中、方正三档，强调色支持一键重置。\n- 自定义背景在话题卡片和正文区域的展示更完整，玻璃效果也会跟随主题配色与质感。\n\n### 🌸 字体与节日新装\n\n- 正文与代码字体可以分别选择，新增霞鹜文楷、霞鹜新晰黑、思源宋体和 Fira Code，也可跟随主题推荐或使用系统字体。\n- 字体改为按需下载，提供下载源选择。此前使用 MiSans 的用户，升级后会收到下载引导，可以转入后台下载，或先使用系统字体。\n- 传统节日期间会自动换上对应配色，配有节日问候和图案装饰。节日主题默认开启，可在外观设置中调整，也可仅关闭本次节日效果，节日结束后恢复原有主题。\n\n### 🧩 在应用广场发现工具与游戏\n\n- 新增应用广场，可以搜索佬友创作的小程序，按热度、评分等方式浏览，也能找到已收藏和最近使用的应用。首页继续下拉即可进入，也可从“我的”打开。\n- 帖子里的小程序可以直接打开，收起后继续阅读，再从底栏恢复。支持全屏和独立窗口，应用菜单中可收藏、评分、分享或打赏开发者。\n- 改进首次打开和再次进入时的加载流程，完善小屏卡片排版，并修复部分启动失败误报、滚动停顿和窗口关闭后重新出现的问题。\n\n### 👤 资料、偏好设置与…",
           "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.30/fluxdo-unsigned.ipa",
-          "size": 41377170,
-          "buildVersion": "2026111316",
-          "minOSVersion": "15.0"
+          "size": 41377170
         },
         {
           "version": "0.2.29",
@@ -429,13 +436,6 @@
           "localizedDescription": "这一版重点打磨了发帖与回复：编辑工具更顺手，草稿保存和附件上传的状态也更清楚。话题列表可按需展示摘要与图片，树形阅读支持续读，底栏和编辑工具栏则换上了新的玻璃质感。\n\n### ✍️ 更顺手的编辑体验\n\n- 发帖、编辑和回复的工具栏重新整理，支持切换富文本、源码和预览。手机上收起键盘后仍可使用工具，展开面板查找功能，也能搜索全部工具、挑选常用项。\n- 富文本编辑器仍为「实验性」功能。这次完善了文字选择、光标移动、链接编辑和图片操作，减少切换视图时失败、编辑链接后光标位置异常等问题。\n- 输入斜杠可查找要插入的内容；图片、引用、代码块等内容的操作入口也更统一。图片网格可以继续添加图片，并单独操作其中一张。\n- 手机端新增表格行列操作面板，点选单元格后即可插入或删除行列。编辑表格时会调整滚动位置，减少输入区域被键盘挡住的情况。\n\n### 📝 草稿保存更安心\n\n- 草稿会明确显示待保存、保存中、已保存或失败；只存到本机、尚未同步到云端时，也有单独提示。\n- 多设备修改同一份草稿发生冲突时，可以选择使用云端版本或用本机内容覆盖云端，取消则继续保留本机内容。\n- 修复云端草稿恢复、多设备同步和展开编辑器后自动保存的问题，也修复了舍弃草稿后旧内容又被重新保存、长草稿恢复时编辑区偶现空白的情况。\n\n### 📤 附件上传与视频压缩\n\n- 发帖、回复和聊天中的附件现在都有更清楚的任务状态，可以查看准备、上传和处理进度，失败后重试，也能取消或移除。\n- 富文本中的上传图片会在正文位置显示预览和状态，减少重复提示；还有附件未完成或失败时，会提示先处理再发布。\n- 超限音视频按社区允许的附件大小进行压缩。视频可选择「兼容优先」「录屏清晰优先」或「体积优先」；未超限的文件保留原文件。\n- 支持社区开启的分片上传，并修复空草稿选图后无法上传、部分上传创建失败和聊天图片处理不一致的问题。\n\n### 📖 列…",
           "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.29/fluxdo-unsigned.ipa",
           "size": 55505719
-        },
-        {
-          "version": "0.2.28",
-          "date": "2026-09-04T14:08:17Z",
-          "localizedDescription": "这一版重点补齐了多人私信的成员管理，也重新梳理了下载、保存和导出的整套体验。表情包市场更好找、更快打开，弱网看图、Mac 粘贴和反复验证等实际问题也得到修复。\n\n### 💌 多人私信\n\n- 多人私信现在会展示全部成员和群组，长对话在首楼和帖子流底部都能方便查看。\n- 可以继续邀请用户或群组加入；新建私信时，原本预填的收件人也可以自由增删。\n- 有权限的管理者可以移除成员或群组，参与者也可以主动退出。成员变动会及时反映在当前会话中，被移出的用户会自动离开该私信页面。\n- 私信可以从更多菜单归档，之后也能移回收件箱；其他设备上的归档变化会同步过来。\n- 成员标签统一为更紧凑的单行样式，点击用户即可打开资料卡片，查看信息或继续互动。\n\n### 📤 下载、保存与导出\n\n- 导出文章的面板重新整理为「范围、文件格式、去向」三部分。选好后可以直接保存、另存为、分享或发送到 Notion，执行进度会显示在对应选项旁。\n- Android 可以把文章直接保存到公共下载目录；iPhone 和 iPad 改用系统文件导出面板，导出楼层很多的长文章时也更省内存、更稳定。\n- 下载列表新增长按菜单，可以按当前平台选择打开、保存到文件、另存为、分享或删除，不必再到应用目录里找文件。\n- 导出历史也有了长按菜单，可打开文件或所在文件夹、在浏览器中打开、再次分享，或者只删除这条记录。\n- 正文图片的长按或右键菜单新增「保存图片」。移动端保存到相册，桌面端选择保存位置，Linux 上不再错误提示相册权限。\n- 备份文件现在只保存到本地，避免误分享到聊天软件；日志则明确拆成「保存」和「分享」。分享、导出产生的临时文件会定期自动清理。\n\n### 😀 表情包市场\n\n- 表情包市场支持按分类浏览和按名称搜索，找表情包不再需要从完整列表一路翻下去。\n- 搜索会先给出已经加载的结果，再自动补齐当前分类；快速切换分类或…",
-          "downloadURL": "https://github.com/Lingyan000/fluxdo/releases/download/v0.2.28/fluxdo-unsigned.ipa",
-          "size": 54824957
         }
       ]
     },
@@ -1028,14 +1028,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1200607141,
+      "size": 1193562173,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-19T07:35:19Z",
-          "localizedDescription": "## Alpha Build `994a60d`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`994a60d`](https://github.com/Provenance-Emu/Provenance/commit/994a60d374ddd0f5b5110505cbaebef000691f9e) |\n| **Built** | 2026-11-19 07:34 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44474666997) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n994a60d37 fix(display): review fixes for TVs on by default\n9e34a64e6 docs: note the log viewer, export sheet and search polish fixes\na98e748de fix(logs): close the export sheet once the share completes\n27f1ae75f feat(settings): a Bezels page, …",
+          "date": "2026-11-20T04:23:44Z",
+          "localizedDescription": "> [!WARNING]\n> **Incomplete build.** These locally-built cores are missing from the IPAs: bluemsx_libretro_ios.dylib bluemsx_libretro_tvos.dylib flycast-jitless_libretro.dylib virtualjaguar_libretro_ios.dylib virtualjaguar_libretro_tvos.dylib\n\n## Alpha Build `9683a32`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`9683a32`](https://github.com/Provenance-Emu/Provenance/commit/9683a32931997d52381affa84a1d8dd3465a765b) |\n| **Built** | 2026-11-20 04:23 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44668844560) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1200607141,
+          "size": 1193562173,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

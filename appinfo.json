@@ -314,15 +314,6 @@
     "size": 18858405,
     "source_repo": "EhPanda-Team/EhPanda"
   },
-  "Lingyan000/fluxdo@0.2.30": {
-    "bundleIdentifier": "com.github.lingyan000.fluxdo",
-    "displayName": "FluxDO",
-    "version": "0.2.30",
-    "build": "2026111316",
-    "minOSVersion": "15.0",
-    "size": 41377170,
-    "source_repo": "Lingyan000/fluxdo"
-  },
   "huamidev/GestaltX@1.1.1": {
     "bundleIdentifier": "com.huami.gestultx",
     "displayName": "GestaltX",
@@ -512,15 +503,6 @@
     "size": 6948787,
     "source_repo": "Kianuni/Erosion-CN"
   },
-  "pounat/absorb@1.15.1-309": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.15.1",
-    "build": "309",
-    "minOSVersion": "15.0",
-    "size": 48803526,
-    "source_repo": "pounat/absorb"
-  },
   "ossappscollective/oss-weather@ios/alpha/3.02.0/170": {
     "bundleIdentifier": "com.akylas.weather",
     "displayName": "OSS Weather",
@@ -538,5 +520,23 @@
     "minOSVersion": "26.1",
     "size": 24747937,
     "source_repo": "Rone89/cilicili"
+  },
+  "pounat/absorb@1.15.1-310": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.15.1",
+    "build": "310",
+    "minOSVersion": "15.0",
+    "size": 48762949,
+    "source_repo": "pounat/absorb"
+  },
+  "Lingyan000/fluxdo@0.2.31": {
+    "bundleIdentifier": "com.github.lingyan000.fluxdo",
+    "displayName": "FluxDO",
+    "version": "0.2.31",
+    "build": "2026112011",
+    "minOSVersion": "15.0",
+    "size": 42460860,
+    "source_repo": "Lingyan000/fluxdo"
   }
 }
