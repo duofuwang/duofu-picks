@@ -458,15 +458,6 @@
     "size": 48615556,
     "source_repo": "open-ani/animeko"
   },
-  "mengangs/ipadn@2.2.1": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.2.1",
-    "build": "35",
-    "minOSVersion": "16.0",
-    "size": 50602330,
-    "source_repo": "mengangs/ipadn"
-  },
   "utmapp/UTM@5.0.9-2": {
     "bundleIdentifier": "com.utmapp.UTM",
     "displayName": "UTM",
@@ -475,15 +466,6 @@
     "minOSVersion": "15.0",
     "size": 150730267,
     "source_repo": "utmapp/UTM"
-  },
-  "JiangNanGenius/floe-agent@1.8.45": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.45",
-    "build": "366",
-    "minOSVersion": "26.0",
-    "size": 672536711,
-    "source_repo": "JiangNanGenius/floe-agent"
   },
   "mirazbakis/AltLoad@1.6.1": {
     "bundleIdentifier": "com.mirazbakis.altload",
@@ -538,5 +520,14 @@
     "minOSVersion": "15.0",
     "size": 42460860,
     "source_repo": "Lingyan000/fluxdo"
+  },
+  "mengangs/ipadn@2.3.0": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.3.0",
+    "build": "36",
+    "minOSVersion": "17.0",
+    "size": 46354796,
+    "source_repo": "mengangs/ipadn"
   }
 }

@@ -377,34 +377,6 @@
       ]
     },
     {
-      "name": "Floe Agent",
-      "bundleIdentifier": "org.floeagent.ios",
-      "developerName": "JiangNanGenius",
-      "subtitle": "iPad 优先的本地 AI Agent，带 3D/CAD 编辑",
-      "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
-      "tintColor": "#1662df",
-      "size": 672536711,
-      "versions": [
-        {
-          "version": "1.8.45",
-          "date": "2026-11-18T15:06:09Z",
-          "localizedDescription": "# Floe Agent 1.8.45（366）\n\n## 简体中文\n\n首次打开此版本时会显示用户协议。游戏助手会在建议工程目录和引擎后等待你确认，并使用工作区工具查看工程文件。缺少运行文件的 RPG Maker MV 工程现在可自动获取所需资源。\n\n## English\n\nThis version presents the user agreement on first launch. The game assistant uses workspace tools for project files and waits for you to confirm its suggested folder and engine. RPG Maker MV projects that lack runtime files can now download the required resources automatically.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.45/Floe-Agent-1.8.45-build366-unsigned.ipa",
-          "size": 672536711,
-          "buildVersion": "366",
-          "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.8.43",
-          "date": "2026-11-18T03:24:37Z",
-          "localizedDescription": "# Floe Agent 1.8.43（364）\n\n## 简体中文\n\n游戏助手现在使用游戏工程的工作区处理文件和源码管理。改进游戏目录选择、试玩前的状态更新，以及自带运行文件的游戏提示。\n\n## English\n\nThe game assistant now uses the game project's workspace for files and source control. Improved game folder selection, pre-play status refresh, and guidance for games that include their own runtime.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.43/Floe-Agent-1.8.43-build364-unsigned.ipa",
-          "size": 672521480
-        }
-      ]
-    },
-    {
       "name": "FluxDO",
       "bundleIdentifier": "com.github.lingyan000.fluxdo",
       "developerName": "Lingyan000",
@@ -1028,14 +1000,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1193562173,
+      "size": 1200939915,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-20T04:23:44Z",
-          "localizedDescription": "> [!WARNING]\n> **Incomplete build.** These locally-built cores are missing from the IPAs: bluemsx_libretro_ios.dylib bluemsx_libretro_tvos.dylib flycast-jitless_libretro.dylib virtualjaguar_libretro_ios.dylib virtualjaguar_libretro_tvos.dylib\n\n## Alpha Build `9683a32`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`9683a32`](https://github.com/Provenance-Emu/Provenance/commit/9683a32931997d52381affa84a1d8dd3465a765b) |\n| **Built** | 2026-11-20 04:23 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44668844560) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```…",
+          "date": "2026-11-20T10:10:28Z",
+          "localizedDescription": "## Alpha Build `bedf493`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`bedf493`](https://github.com/Provenance-Emu/Provenance/commit/bedf493da946162f712afe93de6db00a439f2cd3) |\n| **Built** | 2026-11-20 10:09 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44709730099) |\n| **Bundle ID** | `com.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nbedf493da fix(library): missing ROM recovery works end to end between two devices\nc6358e07d build(deps): bump mustache from 1.1.1 to 1.1.3 in /Packages/RxRealm in the bundler group across 1 directory (#3821)\n01b3acd28 feat(widgets): add a Cont…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1193562173,
+          "size": 1200939915,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

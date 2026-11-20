@@ -86,7 +86,7 @@
       "bundleIdentifier": "com.jbdotparty.Erosion",
       "developerName": "Kianuni",
       "subtitle": "简体中文 MobileGestalt 改区工具，写入预览 + 自动回滚，重启不反弹",
-      "localizedDescription": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-safe iOS / iPadOS System Configuration & MobileGestalt Toolbox (Bilingual EN/ZH)",
+      "localizedDescription": "iOS / iPadOS 国行 Apple 智能、eSIM 与 MobileGestalt 系统配置工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-Safe iOS / iPadOS MobileGestalt, Apple Intelligence & eSIM Toolbox (EN/ZH)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
       "size": 6948787,
@@ -259,18 +259,25 @@
       "developerName": "mengangs",
       "subtitle": "App Store 多区账号下载器，支持原生安装并覆盖保留数据",
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
-      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=38f2f2a56f77",
+      "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=773c4b3e1220",
       "tintColor": "#6156e2",
-      "size": 50602330,
+      "size": 46354796,
       "versions": [
+        {
+          "version": "2.3.0",
+          "date": "2026-11-20T12:50:39Z",
+          "localizedDescription": "## iPadn 2.3.0\r\n\r\n**目录 / Contents**：[简体中文](#-官方频道与反馈迁移公告) · [TestFlight 安全与免责](#-testflight-实验性说明安全提示与免责声明) · [English](#english) · [TestFlight Disclaimer](#testflight-experimental-notice-security--disclaimer)\r\n\r\n> **版本跨度说明**：自上一版 GitHub Release（**v2.2.1**）以来，项目在本地完成了 **20+ 次连续功能与稳定性迭代**，现统一合并发布为 **v2.3.0**。本次最大的变化是从零构建并集成了全新的 **TestFlight 模块（实验性）**，同时完善了应用内更新版本选择、本地化名称显示与官方 Telegram 社区体系。\r\n\r\n安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 📢 官方频道与反馈迁移公告\r\n\r\n- **官方 Telegram 频道**：👉 [**https://t.me/ipadn_official**](https://t.me/ipadn_official)（点击加入获取首发布与讨论）\r\n- **发布节奏说明**：iPadn 继续保持**免费开源**，GitHub 仍会同步更新与发布源码；自 **v2.3.0** 起，新版本安装包与源码归档会**优先在官方 Telegram 频道发布**（GitHub 发布略慢一步）。\r\n- **GitHub Issues 停止受理（历史 Issues 保留只读归档）**：由于个人维护精力有限，为提升排查与沟通效率，**GitHub Issues 已停止接受新反馈，原有历史 Issues 仅作只读归档保留**。所有新版本使用交流、TestFlight 问题…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.0/iPadn-2.3.0-lite-unsigned.ipa",
+          "size": 46354796,
+          "buildVersion": "36",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "2.2.1",
           "date": "2026-11-18T10:04:29Z",
           "localizedDescription": "## iPadn 2.2.1\n\n本次版本重点修复开启「专业模式」时白屏与无法重进设置页、搜索结果偶现重复条目、「Wi‑Fi 传输」大包 30 秒断流等体验问题，并同步完成全仓导航栈、外部链接确认、磁盘空间清理与 `FairPlayCore` 流式解密边界安全加固。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与稳定性提升\n\n- **修复专业模式白屏与子页面导航**：将底部标签切换统一绑定到语义化 `TabID`，修复开启或关闭「专业模式」时标签数组变化引发的白屏、设置页失联及退出专业模式时的导航监听循环；将「账号」与「应用包」导航栈升级为异构 `NavigationPath`，确保「本机应用 › 应用详情」、「历史版本来源」编辑页、「安装包信息」与「浏览安装包内容」深层进退稳定可靠。\n- **修复搜索偶现重复应用与下架状态串染**：对单区/多区商店搜索、本地索引与「更多结果」执行 `trackId` 及 `bundleID` 双重保序去重，合并最完整图标与体积元数据；防止本地旧缓存的已下架标记覆盖实时重新上架结果，并兼容 Apple Arcade 与 tvOS 实体核验。\n- **修复「Wi‑Fi 传输」满 30 秒断连**：将 30 秒连接超时严格限制在 HTTP 请求头读取阶段，进入安装包流式传输后立即解除计时，避免大体积 IPA 局域网下载中途断流。\n- **修复弹窗吞没、空间残留与边界崩溃**：修复「下载 › + › 通过链接下载」及备份/证书选择器收起动画期间吞没后续弹窗的问题；删除下载任务与启动时自动清理 `tmp/Share` 硬链接及残留临时导出文件，释放磁盘空间；修复灵动岛倒计时跨零崩溃、「应用包」页文件变动强制解包、备份导入覆盖商店地区竞态、无锁屏密码设备导入备份锁死、冷启动误触发自动解密、Mac `.pkg` 过期签名链接重试及根页面顶栏标题…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.1/iPadn-2.2.1-lite-unsigned.ipa",
-          "size": 50602330,
-          "buildVersion": "35",
-          "minOSVersion": "16.0"
+          "size": 50602330
         },
         {
           "version": "2.2.0",
@@ -278,13 +285,6 @@
           "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐藏对应板块并停止请求额外媒体和评论资源（与「发现」及「显示历史版本图标」开关协同）。\n\n### 修复与安全加固\n\n- **修复嵌套应用扩展 FairPlay 扫描与统计**：改为相对路径递归枚举包内文件，确保扩展与内置框架的 `.sinf` 安放路径与校验计数准确无误。\n- **加强加密、C 边界与并发安全**：完善 `FairPlayCore` Mach-O/LC 边界与整型溢出校验及失败临时文…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
           "size": 50502422
-        },
-        {
-          "version": "2.1.3",
-          "date": "2026-11-15T14:54:47Z",
-          "localizedDescription": "## iPadn 2.1.3\n\n本次为修复与体验优化更新，解决关键词搜索时的并发闪退问题，隔离顶部提示动画重绘，并改进 iOS 27 本机配对引导与灵动岛交接体验。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与优化\n\n- **修复关键词搜索闪退与并发竞争**：移除搜索前并发嵌套任务组与超时竞争探测，改为在搜索结果返回后按商店地区顺序核验候选已下架应用（最多 15 项），并在新搜索、取消搜索或关闭开关时显式取消旧核验任务。\n- **隔离全局提示动画并优化切换账号响应**：将顶部提示与撤销横幅拆分为独立视图，避免横幅弹簧动画触发整个标签页层级重绘；切换账号时先让提示横幅开始渲染，再触发地区同步、重新搜索与已购刷新。\n- **优化 iOS 27 本机配对引导与灵动岛提醒**：点按「打开设置」跳转到系统设置时主动释放后台音频并推送第 1 步灵动岛横幅指引，补充锁屏密码验证提示与 11 种语言文案，后台等待状态更新支持按代数及时取消，避免旧状态阻塞新提醒。\n- 继续支持 iOS / iPadOS 16 及更新版本，各功能保留各自系统版本要求。\n\n### 两个安装包\n\n- `iPadn-2.1.3-unsigned.ipa`：标准版，含实时活动和小组件，签名需要 2 个 App ID。\n- `iPadn-2.1.3-lite-unsigned.ipa`：精简版，不含扩展，只需 1 个 App ID；不提供实时活动或小组件，其他功能相同。\n- SideStore、AltStore、Feather 等签名工具可添加源：`https://raw.githubusercontent.com/mengangs/ipadn/main/altstore-source.json`。\n\n### English\n\nThis maintenance release fixes a concurr…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.1.3/iPadn-2.1.3-lite-unsigned.ipa",
-          "size": 49310532
         }
       ]
     },
