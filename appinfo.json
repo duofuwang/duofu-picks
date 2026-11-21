@@ -143,15 +143,6 @@
     "size": 40979942,
     "source_repo": "GopeedLab/gopeed"
   },
-  "Termix-SSH/Mobile@2.0.0": {
-    "bundleIdentifier": "com.karmaa.termix",
-    "displayName": "Termix",
-    "version": "2.0.0",
-    "build": "132",
-    "minOSVersion": "16.4",
-    "size": 54067691,
-    "source_repo": "Termix-SSH/Mobile"
-  },
   "aeharding/voyager@2.49.1": {
     "bundleIdentifier": "app.vger.voyager",
     "displayName": "Voyager",
@@ -341,15 +332,6 @@
     "size": 49119693,
     "source_repo": "Chevey339/kelivo"
   },
-  "deretame/Breeze@3.0.38": {
-    "bundleIdentifier": "com.zephyr.breeze",
-    "displayName": "Breeze",
-    "version": "3.0.38",
-    "build": "2225",
-    "minOSVersion": "15.0",
-    "size": 27173399,
-    "source_repo": "deretame/Breeze"
-  },
   "itzzace/ytkace@1.1.8": {
     "bundleIdentifier": "com.google.ios.youtube",
     "displayName": "YouTube",
@@ -367,15 +349,6 @@
     "minOSVersion": "15.0",
     "size": 26854984,
     "source_repo": "mxhm11cr/LinuxRunner"
-  },
-  "lwh0630/TokenBar@1.2.10": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.10",
-    "build": "16",
-    "minOSVersion": "15.0",
-    "size": 11074246,
-    "source_repo": "lwh0630/TokenBar"
   },
   "oneamendez/crate-ios@0.1.5": {
     "bundleIdentifier": "com.amendez.crate",
@@ -485,15 +458,6 @@
     "size": 14901422,
     "source_repo": "huamurui/zhihu-minus-minus"
   },
-  "mengangs/ipadn@2.3.2": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.3.2",
-    "build": "38",
-    "minOSVersion": "16.0",
-    "size": 46527099,
-    "source_repo": "mengangs/ipadn"
-  },
   "FrizzleM/SideInstaller@2.1.1": {
     "bundleIdentifier": "com.frizzlem.sideinstaller",
     "displayName": "SideInstaller",
@@ -512,15 +476,6 @@
     "size": 30370674,
     "source_repo": "Predidit/Kazumi"
   },
-  "JiangNanGenius/floe-agent@1.8.62": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.62",
-    "build": "383",
-    "minOSVersion": "26.0",
-    "size": 721777498,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "wszqkzqk/PvZ-Portable@0.3.0": {
     "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
     "displayName": "PvZ Portable",
@@ -538,5 +493,50 @@
     "minOSVersion": "26.1",
     "size": 25017751,
     "source_repo": "Rone89/cilicili"
+  },
+  "mengangs/ipadn@2.3.3": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.3.3",
+    "build": "39",
+    "minOSVersion": "16.0",
+    "size": 49730145,
+    "source_repo": "mengangs/ipadn"
+  },
+  "deretame/Breeze@3.1.0": {
+    "bundleIdentifier": "com.zephyr.breeze",
+    "displayName": "Breeze",
+    "version": "3.1.0",
+    "build": "2226",
+    "minOSVersion": "15.0",
+    "size": 27861953,
+    "source_repo": "deretame/Breeze"
+  },
+  "Termix-SSH/Mobile@2.1.0": {
+    "bundleIdentifier": "com.karmaa.termix",
+    "displayName": "Termix",
+    "version": "2.1.0",
+    "build": "133",
+    "minOSVersion": "16.4",
+    "size": 56987981,
+    "source_repo": "Termix-SSH/Mobile"
+  },
+  "lwh0630/TokenBar@1.2.12": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.12",
+    "build": "18",
+    "minOSVersion": "15.0",
+    "size": 11206743,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "JiangNanGenius/floe-agent@1.8.68": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.68",
+    "build": "389",
+    "minOSVersion": "26.0",
+    "size": 721781307,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }
