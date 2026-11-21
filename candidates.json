@@ -825,16 +825,23 @@
       "localizedDescription": "Free and open source application for reading manga, novels, and watching animes available on Android, iOS, macOS, Linux and Windows",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.kodjodevf.mangayomi.png?v=3b7171face5d",
       "tintColor": "#d61f2b",
-      "size": 117340839,
+      "size": 117415847,
       "versions": [
+        {
+          "version": "0.9.97",
+          "date": "2026-11-20T16:46:43Z",
+          "localizedDescription": "## What's Changed\n* fix(sync): one row over a limit no longer stops every sync by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1168\n* fix(app): keep open pages when the lock screen comes and goes by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1172\n* fix(library): the extension filter offers every extension again by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1173\n* fix(linux): a failed Discord connection no longer crashes the app by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1175\n* fix(sync-server): `pair` opens pairing again by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1177\n* fix(desktop): the window no longer comes back fullscreen by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1178\n* fix(reader): the ne…",
+          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.97/Mangayomi-v0.9.97-ios.ipa",
+          "size": 117415847,
+          "buildVersion": "130",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.9.96",
           "date": "2026-11-14T17:16:59Z",
           "localizedDescription": "## What's Changed\r\n* fix(appearance): bring back the app-wide Google Fonts picker by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1127\r\n* fix: make the genre chip's searches work, in the source and the library by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1129\r\n* fix(library) select between option by @Lukas-DS in https://github.com/kodjodevf/mangayomi/pull/1131\r\n* fix(js): send PUT, DELETE and PATCH from the extension client by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1132\r\n* fix(migrate): search a few sources at a time and open the dialog at once by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1141\r\n* fix(sync): persist since and lastSync in one awaited write by @sergwei in https://github.com/kodjodevf/mangayomi/pull/1146\r\n* fix(fi…",
           "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.96/Mangayomi-v0.9.96-ios.ipa",
-          "size": 117340839,
-          "buildVersion": "129",
-          "minOSVersion": "15.0"
+          "size": 117340839
         },
         {
           "version": "0.9.95",
@@ -842,13 +849,6 @@
           "localizedDescription": "## Why 0.9.95 and not 1.0.0?\r\n\r\nThis release has almost everything planned for 1.0.0: a new design, a rebuilt player and hundreds of fixes. But so much has changed that it needs testing on more devices and libraries than we can cover ourselves.\r\n\r\nSo 0.9.95 is the last step before 1.0.0. The goal now is stability, not new features. If something breaks or looks wrong, please [open an issue](https://github.com/kodjodevf/mangayomi/issues) with your device and app version. 1.0.0 will come once this version has proven solid.\r\n\r\n## Highlights\r\n\r\n* **Shiori, a new design for the whole app:** every screen has been redrawn on one design system, with new navigation, transitions and an ergonomic pass throughout (#1077).\r\n* **A rebuilt video player:** new controls on phone, desktop and TV, plus video …",
           "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.95/Mangayomi-v0.9.95-ios.ipa",
           "size": 115450399
-        },
-        {
-          "version": "0.9.9",
-          "date": "2026-10-12T15:52:14Z",
-          "localizedDescription": "## What's Changed\n* fix(extension): enable mobile code copy by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1039\n* fix(reader): restore double-tap zoom toggle by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1037\n* feat(player): add hold-and-slide speed selector by @mrandhawa14 in https://github.com/kodjodevf/mangayomi/pull/1038\n* fix(http): drop the quotes Linux wraps the saved user agent in by @matsukiender-star in https://github.com/kodjodevf/mangayomi/pull/1036\n* fix(security): show what deep links install and keep tokens out of sh… by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1041\n* chore: await dropped writes, add guard lints, localize hardcoded strings by @kodjodevf in https://github.com/kodjodevf/mangayomi/pull/1042\n* refactor: move the …",
-          "downloadURL": "https://github.com/kodjodevf/mangayomi/releases/download/v0.9.9/Mangayomi-v0.9.9-ios.ipa",
-          "size": 114603425
         }
       ]
     },

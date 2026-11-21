@@ -53,15 +53,6 @@
     "size": 14753154,
     "source_repo": "Aidoku/Aidoku"
   },
-  "duofuwang/feather@2.9.0-3": {
-    "bundleIdentifier": "thewonderofyou.Feather",
-    "displayName": "Feather",
-    "version": "2.9.0",
-    "build": "4d82070dfb53df1f0a4bb3146fe02d32240d38c9",
-    "minOSVersion": "16.0",
-    "size": 14163630,
-    "source_repo": "duofuwang/feather"
-  },
   "altstoreio/AltStore@2.3": {
     "bundleIdentifier": "com.rileytestut.AltStore",
     "displayName": "AltStore",
@@ -359,15 +350,6 @@
     "size": 65428219,
     "source_repo": "project-robius/robrix"
   },
-  "kodjodevf/mangayomi@0.9.96": {
-    "bundleIdentifier": "com.kodjodevf.mangayomi",
-    "displayName": "Mangayomi",
-    "version": "0.9.96",
-    "build": "129",
-    "minOSVersion": "15.0",
-    "size": 117340839,
-    "source_repo": "kodjodevf/mangayomi"
-  },
   "FriesI23/mhabit@1.27.20+209": {
     "bundleIdentifier": "io.github.friesi23.mhabit",
     "displayName": "Table Habit",
@@ -529,5 +511,23 @@
     "minOSVersion": "17.0",
     "size": 46354796,
     "source_repo": "mengangs/ipadn"
+  },
+  "duofuwang/feather@2.9.0-4": {
+    "bundleIdentifier": "thewonderofyou.Feather",
+    "displayName": "Feather",
+    "version": "2.9.0",
+    "build": "802b276a17eb88b31c8e375ca652798a080c55a7",
+    "minOSVersion": "16.0",
+    "size": 14163613,
+    "source_repo": "duofuwang/feather"
+  },
+  "kodjodevf/mangayomi@0.9.97": {
+    "bundleIdentifier": "com.kodjodevf.mangayomi",
+    "displayName": "Mangayomi",
+    "version": "0.9.97",
+    "build": "130",
+    "minOSVersion": "15.0",
+    "size": 117415847,
+    "source_repo": "kodjodevf/mangayomi"
   }
 }

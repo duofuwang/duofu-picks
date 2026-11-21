@@ -159,27 +159,27 @@
       "localizedDescription": "Free on-device iOS/iPadOS application manager/installer, using certificates part of the Apple Developer Program.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/thewonderofyou.Feather.png?v=a19f4038904c",
       "tintColor": "#6874f1",
-      "size": 14163630,
+      "size": 14163613,
       "versions": [
+        {
+          "version": "2.9.0-4",
+          "date": "2026-11-20T23:39:34Z",
+          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-4/Feather.ipa",
+          "size": 14163613,
+          "buildVersion": "802b276a17eb88b31c8e375ca652798a080c55a7",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "2.9.0-3",
           "date": "2026-11-05T23:11:58Z",
           "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-3/Feather.ipa",
-          "size": 14163630,
-          "buildVersion": "4d82070dfb53df1f0a4bb3146fe02d32240d38c9",
-          "minOSVersion": "16.0"
+          "size": 14163630
         },
         {
           "version": "2.9.0-2",
           "date": "2026-11-05T06:16:06Z",
           "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-2/Feather.ipa",
           "size": 14163633
-        },
-        {
-          "version": "2.9.0-1",
-          "date": "2026-11-05T03:52:39Z",
-          "downloadURL": "https://github.com/duofuwang/feather/releases/download/v2.9.0-1/Feather.ipa",
-          "size": 14122517
         }
       ]
     },
