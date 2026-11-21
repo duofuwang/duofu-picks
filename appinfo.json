@@ -179,15 +179,6 @@
     "size": 142303569,
     "source_repo": "Leviidev/Husk"
   },
-  "huamurui/zhihu-minus-minus@0.9.10": {
-    "bundleIdentifier": "com.huamu013.ZhihuMinusMinus",
-    "displayName": "知乎--",
-    "version": "0.9.10",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 14833319,
-    "source_repo": "huamurui/zhihu-minus-minus"
-  },
   "ResistanceTo/MiniWatts@1.7.0": {
     "bundleIdentifier": "org.zhaohe.MiniWatts",
     "displayName": "MiniWatts",
@@ -196,15 +187,6 @@
     "minOSVersion": "17.0",
     "size": 3374224,
     "source_repo": "ResistanceTo/MiniWatts"
-  },
-  "wszqkzqk/PvZ-Portable@0.2.7": {
-    "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
-    "displayName": "PvZ Portable",
-    "version": "0.2.7",
-    "build": "943",
-    "minOSVersion": "16.4",
-    "size": 4328679,
-    "source_repo": "wszqkzqk/PvZ-Portable"
   },
   "CyrilPeng/Venera-Next@1.18.3": {
     "bundleIdentifier": "com.github.cyrilpeng.veneranext",
@@ -277,15 +259,6 @@
     "minOSVersion": "16.0",
     "size": 48367660,
     "source_repo": "cogwheel0/conduit"
-  },
-  "Predidit/Kazumi@2.4.4": {
-    "bundleIdentifier": "com.example.kazumi",
-    "displayName": "Kazumi",
-    "version": "2.4.4",
-    "build": "20404",
-    "minOSVersion": "15.0",
-    "size": 30341213,
-    "source_repo": "Predidit/Kazumi"
   },
   "Sami-Wali/ryP0@2.3.2": {
     "bundleIdentifier": "com.ry0.ryP0",
@@ -413,15 +386,6 @@
     "size": 13636890,
     "source_repo": "oneamendez/crate-ios"
   },
-  "FrizzleM/SideInstaller@2.1.0": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "2.1.0",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10860622,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "darriousliu/PiPixiv@2.6.1": {
     "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
     "displayName": "PiPixiv",
@@ -476,15 +440,6 @@
     "size": 27517158,
     "source_repo": "ossappscollective/oss-weather"
   },
-  "Rone89/cilicili@1.1.6": {
-    "bundleIdentifier": "cc.bili",
-    "displayName": "cilicili",
-    "version": "1.1.6",
-    "build": "218",
-    "minOSVersion": "26.1",
-    "size": 24747937,
-    "source_repo": "Rone89/cilicili"
-  },
   "pounat/absorb@1.15.1-310": {
     "bundleIdentifier": "com.barnabas.absorb",
     "displayName": "Absorb",
@@ -503,15 +458,6 @@
     "size": 42460860,
     "source_repo": "Lingyan000/fluxdo"
   },
-  "mengangs/ipadn@2.3.0": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.3.0",
-    "build": "36",
-    "minOSVersion": "17.0",
-    "size": 46354796,
-    "source_repo": "mengangs/ipadn"
-  },
   "duofuwang/feather@2.9.0-4": {
     "bundleIdentifier": "thewonderofyou.Feather",
     "displayName": "Feather",
@@ -529,5 +475,68 @@
     "minOSVersion": "15.0",
     "size": 117415847,
     "source_repo": "kodjodevf/mangayomi"
+  },
+  "huamurui/zhihu-minus-minus@0.10.0": {
+    "bundleIdentifier": "com.huamurui.ZhihuMinusMinus",
+    "displayName": "知乎--",
+    "version": "0.10.0",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 14901422,
+    "source_repo": "huamurui/zhihu-minus-minus"
+  },
+  "mengangs/ipadn@2.3.2": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.3.2",
+    "build": "38",
+    "minOSVersion": "16.0",
+    "size": 46527099,
+    "source_repo": "mengangs/ipadn"
+  },
+  "FrizzleM/SideInstaller@2.1.1": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "2.1.1",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 10958767,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "Predidit/Kazumi@2.4.5": {
+    "bundleIdentifier": "com.example.kazumi",
+    "displayName": "Kazumi",
+    "version": "2.4.5",
+    "build": "20405",
+    "minOSVersion": "15.0",
+    "size": 30370674,
+    "source_repo": "Predidit/Kazumi"
+  },
+  "JiangNanGenius/floe-agent@1.8.62": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.62",
+    "build": "383",
+    "minOSVersion": "26.0",
+    "size": 721777498,
+    "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "wszqkzqk/PvZ-Portable@0.3.0": {
+    "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
+    "displayName": "PvZ Portable",
+    "version": "0.3.0",
+    "build": "953",
+    "minOSVersion": "16.4",
+    "size": 4329117,
+    "source_repo": "wszqkzqk/PvZ-Portable"
+  },
+  "Rone89/cilicili@1.1.7": {
+    "bundleIdentifier": "com.rayc.cilicili",
+    "displayName": "cilicili",
+    "version": "1.1.7",
+    "build": "230",
+    "minOSVersion": "26.1",
+    "size": 25017751,
+    "source_repo": "Rone89/cilicili"
   }
 }

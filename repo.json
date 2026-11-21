@@ -261,30 +261,30 @@
       "localizedDescription": "Search, download and install the apps you own on iPhone and iPad: older versions, removed apps, regional prices and native install. 11 languages. | 在 iPhone 和 iPad 上搜索、下载、安装你拥有的 App：历史版本、已下架应用、多地区比价与原生安装。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/app.local.iPadn.png?v=773c4b3e1220",
       "tintColor": "#6156e2",
-      "size": 46354796,
+      "size": 46527099,
       "versions": [
+        {
+          "version": "2.3.2",
+          "date": "2026-11-21T07:16:08Z",
+          "localizedDescription": "## iPadn 2.3.2\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.2** 修复与体验优化版：全面补全**「已购项目」历史与已下架应用**并大幅提升同步速度，解决切换账号后已购应用图标卡在灰色占位的问题，修复 **TestFlight** 登录误报「暂不支持多个受信任号码」与设备身份缓存失效，并修正深色模式下设置页「可更新」标签看不清的对比度问题。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **完整同步「已购项目」历史记录与已下架应用**\r\n  - 在原有 DMAP 活跃目录同步的基础上，接入 Apple 完整购买历史接口（`/commerce/account/purchases`，自动处理 pod/cookie 握手、401/403 会话静默刷新与多语言购买日期解析），并与 DMAP 结果智能合并，找回大量历史与已下架应用（含俄区等地区已下架应用）。\r\n  - 首次全量历史同步改用 **6 路并发** 拉取（并在列表顶部实时显示 `已完成/总年份` 进度），大幅缩短多年账号等待时间；同步完成后自动记录进度，日常刷新仅增量扫描当年记录，几秒即可完成；右上角菜单亦支持随时手动触发「同步完整购买历史」。\r\n- **修复切换账号后已购列表图标一直加载不出来**\r\n  - 修复切换 Apple 账号后，后台防抖更新商店地区时误中止 `loadOwnedArtwork()` 拉取任务的竞态问题；改为按账号…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.2/iPadn-2.3.2-lite-unsigned.ipa",
+          "size": 46527099,
+          "buildVersion": "38",
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.3.1",
+          "date": "2026-11-21T05:47:39Z",
+          "localizedDescription": "## iPadn 2.3.1\r\n\r\n**目录 / Contents**：[简体中文](#-核心修复与优化) · [TestFlight 说明与免责](#-testflight-实验性说明与免责声明) · [English](#english) · [TestFlight Notice](#testflight-experimental-notice--disclaimer)\r\n\r\n本次为 **v2.3.0** 的首个快速修复与性能优化版：全面恢复 **iOS / iPadOS 16** 兼容运行，彻底解决快速滑动已缓存及未缓存「历史版本」长列表时的掉帧卡顿，新增跨区下载失败（`2059` / `1010`）后的智能原因提示与一键切换账号重试，并补齐 Xcode / TestFlight CI 编译与初始化稳定性。安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 🔧 核心修复与优化\r\n\r\n- **恢复 iOS / iPadOS 16 完整兼容（感谢 [@tageniu](https://github.com/tageniu) 在 PR #108 的贡献）**\r\n  - 修复 `v2.3.0` 构建时将部署目标升至 iOS 17 导致 iOS 16 设备冷启动即因 `dyld` 缺失 `Symbols.framework` 闪退的问题：统一把 SwiftPM、`xtool` 与 Xcode 的最低部署目标恢复为 **iOS 16.0**，并对 `Symbols`、`Translation`、`ActivityKit` 保持弱链接（`LC_LOAD_WEAK_DYLIB`）与完整运行时可用性防护。\r\n  - 修复 iOS 16 设备本地生成安装 PKCS#12 证书时 `SecItemImport` 因默认 AES 算法不兼容导致的失败：iOS 16 上自动回退为兼容…",
+          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.1/iPadn-2.3.1-lite-unsigned.ipa",
+          "size": 46481444
+        },
         {
           "version": "2.3.0",
           "date": "2026-11-20T12:50:39Z",
           "localizedDescription": "## iPadn 2.3.0\r\n\r\n**目录 / Contents**：[简体中文](#-官方频道与反馈迁移公告) · [TestFlight 安全与免责](#-testflight-实验性说明安全提示与免责声明) · [English](#english) · [TestFlight Disclaimer](#testflight-experimental-notice-security--disclaimer)\r\n\r\n> **版本跨度说明**：自上一版 GitHub Release（**v2.2.1**）以来，项目在本地完成了 **20+ 次连续功能与稳定性迭代**，现统一合并发布为 **v2.3.0**。本次最大的变化是从零构建并集成了全新的 **TestFlight 模块（实验性）**，同时完善了应用内更新版本选择、本地化名称显示与官方 Telegram 社区体系。\r\n\r\n安装包均未签名，请使用自用签名工具签名后安装。\r\n\r\n### 📢 官方频道与反馈迁移公告\r\n\r\n- **官方 Telegram 频道**：👉 [**https://t.me/ipadn_official**](https://t.me/ipadn_official)（点击加入获取首发布与讨论）\r\n- **发布节奏说明**：iPadn 继续保持**免费开源**，GitHub 仍会同步更新与发布源码；自 **v2.3.0** 起，新版本安装包与源码归档会**优先在官方 Telegram 频道发布**（GitHub 发布略慢一步）。\r\n- **GitHub Issues 停止受理（历史 Issues 保留只读归档）**：由于个人维护精力有限，为提升排查与沟通效率，**GitHub Issues 已停止接受新反馈，原有历史 Issues 仅作只读归档保留**。所有新版本使用交流、TestFlight 问题…",
           "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.3.0/iPadn-2.3.0-lite-unsigned.ipa",
-          "size": 46354796,
-          "buildVersion": "36",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "2.2.1",
-          "date": "2026-11-18T10:04:29Z",
-          "localizedDescription": "## iPadn 2.2.1\n\n本次版本重点修复开启「专业模式」时白屏与无法重进设置页、搜索结果偶现重复条目、「Wi‑Fi 传输」大包 30 秒断流等体验问题，并同步完成全仓导航栈、外部链接确认、磁盘空间清理与 `FairPlayCore` 流式解密边界安全加固。安装包未签名，请用自己的工具签名后安装。\n\n### 修复与稳定性提升\n\n- **修复专业模式白屏与子页面导航**：将底部标签切换统一绑定到语义化 `TabID`，修复开启或关闭「专业模式」时标签数组变化引发的白屏、设置页失联及退出专业模式时的导航监听循环；将「账号」与「应用包」导航栈升级为异构 `NavigationPath`，确保「本机应用 › 应用详情」、「历史版本来源」编辑页、「安装包信息」与「浏览安装包内容」深层进退稳定可靠。\n- **修复搜索偶现重复应用与下架状态串染**：对单区/多区商店搜索、本地索引与「更多结果」执行 `trackId` 及 `bundleID` 双重保序去重，合并最完整图标与体积元数据；防止本地旧缓存的已下架标记覆盖实时重新上架结果，并兼容 Apple Arcade 与 tvOS 实体核验。\n- **修复「Wi‑Fi 传输」满 30 秒断连**：将 30 秒连接超时严格限制在 HTTP 请求头读取阶段，进入安装包流式传输后立即解除计时，避免大体积 IPA 局域网下载中途断流。\n- **修复弹窗吞没、空间残留与边界崩溃**：修复「下载 › + › 通过链接下载」及备份/证书选择器收起动画期间吞没后续弹窗的问题；删除下载任务与启动时自动清理 `tmp/Share` 硬链接及残留临时导出文件，释放磁盘空间；修复灵动岛倒计时跨零崩溃、「应用包」页文件变动强制解包、备份导入覆盖商店地区竞态、无锁屏密码设备导入备份锁死、冷启动误触发自动解密、Mac `.pkg` 过期签名链接重试及根页面顶栏标题…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.1/iPadn-2.2.1-lite-unsigned.ipa",
-          "size": 50602330
-        },
-        {
-          "version": "2.2.0",
-          "date": "2026-11-18T02:18:30Z",
-          "localizedDescription": "## iPadn 2.2.0\n\n本次版本引入本机 FairPlay IPA 解密工作流、基于 AES-256-GCM 的完整账号与配置加密备份恢复，以及详情页预览/评论按需开关，同时强化 C 解密核心与加密内存安全。安装包未签名，请用自己的工具签名后安装。\n\n### 新增功能\n\n- **本机 FairPlay IPA 解密（`FairPlayCore`）**：将零外部依赖纯 C `FairPlayCore` 模块完整集成至工程与专业模式「应用包」页，支持对已合法获取安装包的加密 Mach-O（含嵌套 `PlugIns/*.appex` 与 `Frameworks/` 以及 64 位 Universal/FAT 二进制）执行 SINF 解密、封装与逐架构解密校验，并提供严格脱敏的可导出解密日志。\n- **完整加密备份与恢复（AES-256-GCM + PBKDF2-HMAC-SHA256）**：「账号 › 设置 › 备份与维护」支持明文或设置密码加密导出，涵盖设置、版本来源、关注列表、最近搜索，以及 Apple 账号会话 Cookie、令牌与设备/StoreProof 凭据。导入前先本地验证解密并展示可勾选恢复预览，错误密码给出明确提示而不影响现有数据。\n- **详情页内容按需开关**：「账号 › 设置 › 外观与图标」支持独立开关「显示应用预览图」与「显示应用评论」，关闭后详情页隐藏对应板块并停止请求额外媒体和评论资源（与「发现」及「显示历史版本图标」开关协同）。\n\n### 修复与安全加固\n\n- **修复嵌套应用扩展 FairPlay 扫描与统计**：改为相对路径递归枚举包内文件，确保扩展与内置框架的 `.sinf` 安放路径与校验计数准确无误。\n- **加强加密、C 边界与并发安全**：完善 `FairPlayCore` Mach-O/LC 边界与整型溢出校验及失败临时文…",
-          "downloadURL": "https://github.com/mengangs/ipadn/releases/download/v2.2.0/iPadn-2.2.0-lite-unsigned.ipa",
-          "size": 50502422
+          "size": 46354796
         }
       ]
     },
@@ -611,16 +611,23 @@
       "localizedDescription": "知乎-- ｜zhihu-- ｜ zhihu-minus-minus｜一款轻量、简洁的第三方知乎客户端",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.huamu013.ZhihuMinusMinus.png?v=8d13574c3405",
       "tintColor": "#0484fc",
-      "size": 14833319,
+      "size": 14901422,
       "versions": [
+        {
+          "version": "0.10.0",
+          "date": "2026-11-21T03:09:18Z",
+          "localizedDescription": "### What's Changed\r\n\r\n* 下拉刷新不清空已加载列表内容 by @duofuwang in https://github.com/huamurui/zhihu-minus-minus/pull/193\r\n* fix: 个人主页分页拼接时按 id 去重 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/198\r\n* 完善划线评论、选区操作与富文本阅读 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/200\r\n* 稳定折叠回答卡片的滚动位置，直接展示同题问题详情 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/201\r\n* fix: 预览列表模式下点回答卡片不发起标题过渡 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/202\r\n* 为「我的」页添加随滚动收起的头像和模糊封面 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/205\r\n* fix: 展开问题描述时不再闪出灰色占位条 by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/203\r\n* 修复 Android 下拉刷新手势，调整 iOS 为 42 个等距齿位 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull…",
+          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.10.0/zhihu-minus-minus-v0.10.0-unsigned.ipa",
+          "size": 14901422,
+          "buildVersion": "1",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "0.9.10",
           "date": "2026-11-06T14:01:41Z",
           "localizedDescription": "### What's Changed\r\n* 统一首页导航与内容操作栏外观 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/187\r\n* 调整 Android 页面进入和返回转场 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/186\r\n* 优化文章与想法详情首屏和操作栏 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/188\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6296309837490493137-w\" src=\"https://github.com/user-attachments/assets/bbed6e50-bf62-4205-a4ef-65cc71fd9174\" />\r\n\r\n<img height=\"500\" alt=\"telegram-cloud-photo-size-5-6298716015608665964-w\" src=\"https://github.com/user-attachments/assets/99226fd4-0af5-47a7-b3aa-5aae9ac0b929\" />\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.9...v0.9.10",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.10/zhihu-minus-minus-v0.9.10-unsigned.ipa",
-          "size": 14833319,
-          "buildVersion": "1",
-          "minOSVersion": "16.4"
+          "size": 14833319
         },
         {
           "version": "0.9.9",
@@ -628,13 +635,6 @@
           "localizedDescription": "一些 ui 调整与问题修复。\r\n\r\n### What's Changed\r\n* fix(ios): 修复系统分享无响应及长图导出失败 by @Cheukfung in https://github.com/huamurui/zhihu-minus-minus/pull/177\r\n* 优化回答悬浮操作栏布局与液态玻璃交互 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/182\r\n* fix(images): 长图在正文和预览中保持清晰 (#147) by @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/157\r\n* fix(iOS): 修复复杂行内公式字形重叠 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/180\r\n* fix(iOS): 改善液态玻璃控件的对比度与布局 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/181\r\n\r\n### New Contributors\r\n* @Cheukfung made their first contribution in https://github.com/huamurui/zhihu-minus-minus/pull/177\r\n \r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.8...v0.9.9\r\n\r\n\r\n<details>\r\n<summary>📱 ios 界面截图 </sum…",
           "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.9/zhihu-minus-minus-v0.9.9-unsigned.ipa",
           "size": 14830602
-        },
-        {
-          "version": "0.9.8",
-          "date": "2026-11-01T13:23:20Z",
-          "localizedDescription": "进一步处理闪烁跳动；ios26+ 放了更多的液态玻璃🎉\r\n### changes\r\n* feat(ios): 统一 iOS 26 Liquid Glass 导航与悬浮控件 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/172\r\n* fix(animation): 稳定正文渐显与标题接力，减少页面切换闪烁 by @huamurui in https://github.com/huamurui/zhihu-minus-minus/pull/174\r\n* fix(list): 稳定分页与卡片复用，完善个人主页交互 by @huamurui @NobetaSena in https://github.com/huamurui/zhihu-minus-minus/pull/175\r\n\r\n\r\n**Full Changelog**: https://github.com/huamurui/zhihu-minus-minus/compare/v0.9.7...v0.9.8",
-          "downloadURL": "https://github.com/huamurui/zhihu-minus-minus/releases/download/v0.9.8/zhihu-minus-minus-v0.9.8-unsigned.ipa",
-          "size": 14501451
         }
       ]
     }
