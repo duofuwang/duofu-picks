@@ -467,15 +467,6 @@
     "size": 10958767,
     "source_repo": "FrizzleM/SideInstaller"
   },
-  "Predidit/Kazumi@2.4.5": {
-    "bundleIdentifier": "com.example.kazumi",
-    "displayName": "Kazumi",
-    "version": "2.4.5",
-    "build": "20405",
-    "minOSVersion": "15.0",
-    "size": 30370674,
-    "source_repo": "Predidit/Kazumi"
-  },
   "wszqkzqk/PvZ-Portable@0.3.0": {
     "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
     "displayName": "PvZ Portable",
@@ -493,15 +484,6 @@
     "minOSVersion": "26.1",
     "size": 25017751,
     "source_repo": "Rone89/cilicili"
-  },
-  "mengangs/ipadn@2.3.3": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.3.3",
-    "build": "39",
-    "minOSVersion": "16.0",
-    "size": 49730145,
-    "source_repo": "mengangs/ipadn"
   },
   "deretame/Breeze@3.1.0": {
     "bundleIdentifier": "com.zephyr.breeze",
@@ -538,5 +520,23 @@
     "minOSVersion": "26.0",
     "size": 721781307,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "mengangs/ipadn@2.3.4": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.3.4",
+    "build": "40",
+    "minOSVersion": "16.0",
+    "size": 49848919,
+    "source_repo": "mengangs/ipadn"
+  },
+  "Predidit/Kazumi@2.4.6": {
+    "bundleIdentifier": "com.example.kazumi",
+    "displayName": "Kazumi",
+    "version": "2.4.6",
+    "build": "20406",
+    "minOSVersion": "15.0",
+    "size": 30369553,
+    "source_repo": "Predidit/Kazumi"
   }
 }
