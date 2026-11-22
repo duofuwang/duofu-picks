@@ -287,15 +287,6 @@
     "size": 25053075,
     "source_repo": "bggRGjQaUbCoE/PiliPlus"
   },
-  "missuo/kumone@0.3.37": {
-    "bundleIdentifier": "sb.moe.kumone-ios",
-    "displayName": "Kumone",
-    "version": "0.3.37",
-    "build": "454",
-    "minOSVersion": "16.0",
-    "size": 4407346,
-    "source_repo": "missuo/kumone"
-  },
   "linroid/Ketch@0.10.5": {
     "bundleIdentifier": "com.linroid.ketch.app",
     "displayName": "Ketch",
@@ -322,15 +313,6 @@
     "minOSVersion": "15.0",
     "size": 16672428,
     "source_repo": "FriesI23/mhabit"
-  },
-  "Chevey339/kelivo@1.3.6": {
-    "bundleIdentifier": "psyche.kelivo",
-    "displayName": "Kelivo",
-    "version": "1.3.6",
-    "build": "88",
-    "minOSVersion": "15.0",
-    "size": 49119693,
-    "source_repo": "Chevey339/kelivo"
   },
   "itzzace/ytkace@1.1.8": {
     "bundleIdentifier": "com.google.ios.youtube",
@@ -503,24 +485,6 @@
     "size": 56987981,
     "source_repo": "Termix-SSH/Mobile"
   },
-  "lwh0630/TokenBar@1.2.12": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.12",
-    "build": "18",
-    "minOSVersion": "15.0",
-    "size": 11206743,
-    "source_repo": "lwh0630/TokenBar"
-  },
-  "JiangNanGenius/floe-agent@1.8.68": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.68",
-    "build": "389",
-    "minOSVersion": "26.0",
-    "size": 721781307,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "mengangs/ipadn@2.3.4": {
     "bundleIdentifier": "app.local.iPadn",
     "displayName": "iPadn",
@@ -538,5 +502,41 @@
     "minOSVersion": "15.0",
     "size": 30369553,
     "source_repo": "Predidit/Kazumi"
+  },
+  "Chevey339/kelivo@1.3.7": {
+    "bundleIdentifier": "psyche.kelivo",
+    "displayName": "Kelivo",
+    "version": "1.3.7",
+    "build": "89",
+    "minOSVersion": "15.0",
+    "size": 49630149,
+    "source_repo": "Chevey339/kelivo"
+  },
+  "missuo/kumone@0.3.38": {
+    "bundleIdentifier": "sb.moe.kumone-ios",
+    "displayName": "Kumone",
+    "version": "0.3.38",
+    "build": "470",
+    "minOSVersion": "16.0",
+    "size": 4420454,
+    "source_repo": "missuo/kumone"
+  },
+  "lwh0630/TokenBar@1.2.13": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.13",
+    "build": "19",
+    "minOSVersion": "15.0",
+    "size": 11206759,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "JiangNanGenius/floe-agent@1.8.72": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.72",
+    "build": "393",
+    "minOSVersion": "26.0",
+    "size": 721843642,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }

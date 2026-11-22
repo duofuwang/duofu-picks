@@ -384,30 +384,30 @@
       "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 721781307,
+      "size": 721843642,
       "versions": [
         {
-          "version": "1.8.68",
-          "date": "2026-11-21T18:30:52Z",
-          "localizedDescription": "# Floe Agent 1.8.68（389）\n\n## 简体中文\n\n- Linux 启动时会为仍可核验的旧磁盘记录补齐稳定的卷标识。后台装包遇到无法核验的旧磁盘时，会显示保留数据的恢复操作。\n- 补齐 App 内 Linux 离线安装的回归验证，核对安装结果、命令超时前的输出，以及超时后的子进程清理。\n- 验证主任务与两个子任务可以在同一 Linux 环境中并行运行，各自保有独立的终端会话和输出。\n- 更新模型提示词的回归检查，覆盖 Linux CPU 在线调整、共享运行保护，以及区分图形渲染、计算与视频编解码能力。\n- 合并 Linux 虚拟盘的部分读写。支持从 Linux 回收虚拟盘空闲块，跨盘准备镜像时保留稀疏区域。挂载工作区直接读写宿主文件。\n- 多个虚拟 CPU 同时访问文件时轮流处理请求，减少重复唤醒和挂载请求完成时的内存写入。\n- 长期记忆显示关联与遗忘状态。打开记忆详情可改写原有内容，确认的新事实可覆盖同一范围内的旧值。\n\n## English\n\n- On startup, Linux records stable volume identifiers for older disks whose identity can still be verified. Background installs show data-preserving recovery instructions when disk verification fails.\n- Verify in-app offline Linux package installation, output retained by timed-out commands, and cleanup of their child processes.\n- Verify that a main task and t…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.68/Floe-Agent-1.8.68-build389-unsigned.ipa",
-          "size": 721781307,
-          "buildVersion": "389",
+          "version": "1.8.72",
+          "date": "2026-11-22T12:28:43Z",
+          "localizedDescription": "# Floe Agent 1.8.72（393）\n\n## 简体中文\n\n- 确认升级 Linux 后，聊天会显示升级进度。尚未执行的命令会等待升级完成，并在核验原运行位置后从同一任务继续。\n- 如果已在设置中开始升级，当前任务会等待同一次升级完成。\n\n## English\n\n- Confirming a Linux upgrade shows its progress in chat. Commands that have yet to start wait for the upgrade, then resume in the same task once the original execution location is verified.\n- Tasks join an upgrade already started in Settings and wait for it to finish.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.72/Floe-Agent-1.8.72-build393-unsigned.ipa",
+          "size": 721843642,
+          "buildVersion": "393",
           "minOSVersion": "26.0"
         },
         {
-          "version": "1.8.66",
-          "date": "2026-11-21T15:46:03Z",
-          "localizedDescription": "# Floe Agent 1.8.66（387）\n\n## 简体中文\n\n- Linux 虚拟机在持续读写磁盘时也能推进 CPU 任务，减少多个 vCPU 同时完成工作时的重复唤醒。\n- 虚拟 CPU 加速 CRC32、CRC32C 和 SHA‑256 指令。支持的设备直接运行编译期 ARM 指令，其他宿主使用原软件路径。\n- Linux 图形更新透传 Apple GPU 型号和硬件类型。Vulkan 渲染和 BLAS 按驱动与设备能力选择加速路径。\n- 模型可识别 virtio-gpu 背后是 Apple GPU，并通过当前客机的探测结果核对渲染、计算和视频编码能力。\n- 建筑平面支持直接拖画墙线、端点吸附和平移缩放。同一工程可切换平面与三维，也可另存为独立副本。\n\n## English\n\n- Linux keeps scheduling CPU work during sustained disk activity and coalesces redundant wakeups when several vCPUs complete work together.\n- The virtual CPU uses ahead-of-time ARM instructions for CRC32, CRC32C and SHA-256 on supported hosts, with the original software implementation available as a fallback.\n- The Linux graphics update reports the Apple GPU model and hardware device type. Vulkan and BLAS select acceleration using driver and devic…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.66/Floe-Agent-1.8.66-build387-unsigned.ipa",
-          "size": 721779017
+          "version": "1.8.71",
+          "date": "2026-11-22T10:14:28Z",
+          "localizedDescription": "# Floe Agent 1.8.71（392）\n\n## 简体中文\n\n- 为需要密钥的服务测试连接时，先检查凭据。密钥缺失时会定位到输入框，连接错误会显示本地化提示。\n- 修复用户协议首段的加粗显示。已同意的用户可以继续使用。\n- 提高 iPad 设置向导选中行状态标签的对比度，便于在浅色、深色及放大字体下读取。\n\n## English\n\n- Connection tests check credentials for services that require a key. The form focuses the API key field when a key is missing and shows localized connection errors.\n- Fix the emphasis in the opening paragraph of the user agreement. Existing acceptances still apply.\n- Improve the contrast of status labels on the selected iPad setup row in light and dark appearance, including at larger text sizes.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was package…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.71/Floe-Agent-1.8.71-build392-unsigned.ipa",
+          "size": 721820906
         },
         {
-          "version": "1.8.62",
-          "date": "2026-11-21T08:58:11Z",
-          "localizedDescription": "# Floe Agent 1.8.62（383）\n\n## 简体中文\n\n- CAD 草图的跟踪点跟随平移和缩放。只查看模型并退出时，工程会保留原来的保存版本。已有损坏且存在有效历史版本的工程可以查看并恢复副本。\n- 「CAD 工具」按设计与场景分组。「加工」可直接打开 3D 打印和切削加工的入口。\n- 打印逐层预览、加工工作台和加工仿真可展开查看。切换时保留当前层、工序或回放位置。\n- 建筑工程可直接在二维平面和三维模型之间切换。需要独立工程时使用「另存为」。\n\n## English\n\n- CAD sketch points follow viewport pan and zoom. Viewing and closing an unchanged model preserves its saved revision. A damaged project with a verified previous save can be reviewed and restored as a copy.\n- CAD Tools groups design and scene tools. Manufacture opens the entry points for 3D printing and machining.\n- Expand the print layer preview, machining preview or simulation while keeping the selected layer, operation or playback position.\n- Switch between the 2D plan and 3D model in the same building project. Use Save As to create an independen…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.62/Floe-Agent-1.8.62-build383-unsigned.ipa",
-          "size": 721777498
+          "version": "1.8.70",
+          "date": "2026-11-22T07:48:15Z",
+          "localizedDescription": "# Floe Agent 1.8.70（391）\n\n## 简体中文\n\n- 密集到达的消息和互动卡片按消息 ID 合并。聊天保留已加载的内容，跳到搜索结果和返回最新消息都使用稳定的滚动定位。\n- 游戏工作台可识别和运行完整的 TyranoScript 网页导出。兼容的 Ren’Py 桌面游戏可从编译后的 RPA 档案准备网页运行版本。\n- 游戏工程缺少可获取的运行资源时，可以在运行前准备。模型可以用 `game.runtime` 为尚未完成的工程下载对应的已校验资源。Ren’Py 会一并准备 SDK 和 Web 支持包。\n- 工作区接受单文件 Git 补丁。行号移动时可按唯一的完整上下文定位，保留 UTF-8 BOM 和原换行。\n- 已验证重建凭证且任务仍绑定原 Linux 位置时，可以在下一次执行前接续原任务。\n- Linux 虚拟 CPU 在支持的设备上使用预编译指令加速 AES 和 64 位多项式乘法。虚拟机继续使用无 JIT 的解释器。\n\n- Linux 客机在采用 ARM 批量拷贝指令且两个缓冲区争用同一个地址转换缓存槽位时，可以按页批量拷贝。\n\n## English\n\n- Merge bursts of messages and interactive cards by message ID. Chat keeps the loaded transcript visible and uses stable scroll positions when jumping to search hits or returning to the latest message.\n- Open and run complete TyranoScript web exports in the game workbench. Compatible Ren’Py desktop gam…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.70/Floe-Agent-1.8.70-build391-unsigned.ipa",
+          "size": 721827389
         }
       ]
     },
@@ -685,16 +685,23 @@
       "localizedDescription": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/psyche.kelivo.png?v=752ceed4b0bc",
       "tintColor": "#b27545",
-      "size": 49119693,
+      "size": 49630149,
       "versions": [
+        {
+          "version": "1.3.7",
+          "date": "2026-11-22T15:14:51Z",
+          "localizedDescription": "## What's Changed\n\n- feat: Organize World Books into groups and select a whole group in chat.\n- feat: Add a full-width chat layout on desktop.\n- feat: Give thinking and tool cards their own style.\n- feat: Choose whether to expand all thinking and tool steps when exporting messages as images.\n- feat: Keep individual images visible in chat while leaving them out of future requests to the model.\n- feat: Set your own desktop shortcut for Find in Conversation.\n- feat: Select or clear all assistant replies at once in the chat summary preview.\n- feat: Choose whether the chat summary uses your instruction cards.\n- feat: Attach text files directly in regular chats.\n- feat: Let workspace tools open images from public URLs.\n- feat: Let the assistant install skills when workspace file writing is enabl…",
+          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.7/Kelivo_ios_1.3.7%2B89.ipa",
+          "size": 49630149,
+          "buildVersion": "89",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.3.6",
           "date": "2026-11-15T13:38:07Z",
           "localizedDescription": "## What's Changed\n\n- feat: Preview and edit images in the draft before sending.\n- feat: Find text in the current conversation and move between matches, with case, whole word, and reasoning options.\n- feat: Delete the other versions of a message, keeping the version on screen.\n- feat: Carry selected earlier messages and replies through context compression, and review them before it runs.\n- feat: Add DeepSeek speech synthesis and recognition.\n- feat: Remember passwords for manual encrypted backups on this device.\n- feat: Reconnect MCP servers when a tool is needed again.\n- feat: Set a timeout for each context compression request.\n- feat: Paginate the context operation history.\n- feat: Enable balance queries for every provider format.\n- feat: Choose a hosted image model and image complexity s…",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.6/Kelivo_ios_1.3.6%2B88.ipa",
-          "size": 49119693,
-          "buildVersion": "88",
-          "minOSVersion": "15.0"
+          "size": 49119693
         },
         {
           "version": "1.3.5",
@@ -702,13 +709,6 @@
           "localizedDescription": "## What's Changed\n\n- feat: Add automatic context compaction, with editable summary templates, per-conversation settings, and undo. OpenAI native compaction can be enabled separately.\n- feat: Add a fixed context start, so history is sent from a chosen message without rolling truncation by message count.\n- feat: Add Standard, Fast, and UltraFast response speed controls in the reasoning picker, saved per conversation and model.\n- feat: Add a per-conversation control for image recall, plus local budgets for image size, image count, and request body.\n- feat: Detect vision, tools, and thinking support on local Ollama models.\n- feat: Let each assistant choose which memory types are always injected in full.\n- feat: Add custom model icons, including color and monochrome LobeHub styles.\n- feat: Add …",
           "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.5/Kelivo_ios_1.3.5%2B85.ipa",
           "size": 47758377
-        },
-        {
-          "version": "1.3.4",
-          "date": "2026-11-02T15:08:16Z",
-          "localizedDescription": "## What's Changed\r\n\r\nThis maintenance release focuses on message-saving stability and platform interaction fixes.\r\n\r\n- **Message-saving stability:** Fix an AOT compiler issue that could terminate the process when sending messages, regenerating replies, or saving edits to message history. Resolve checkpoint compatibility before the write loop while retaining incremental writes for changed message parts. This covers the persistence path used when saving an edit that removes images. (#1342)\r\n- **Android text selection:** Keep the editor's selection menu available after Select All so subsequent actions remain accessible. Retire replaced selection sessions before actions can use callbacks from an outdated selection. (#1343)\r\n- **iOS Live Activities:** Use the system background for the Lock Scre…",
-          "downloadURL": "https://github.com/Chevey339/kelivo/releases/download/v1.3.4/Kelivo_ios_1.3.4%2B84.ipa",
-          "size": 46627606
         }
       ]
     },
@@ -755,16 +755,23 @@
       "localizedDescription": "雲の音 — A native music player for macOS and iOS, built with SwiftUI",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/sb.moe.kumone-ios.png?v=e0c37a6f19b7",
       "tintColor": "#df3e34",
-      "size": 4407346,
+      "size": 4420454,
       "versions": [
+        {
+          "version": "0.3.38",
+          "date": "2026-11-22T15:28:06Z",
+          "localizedDescription": "### Added\n\n- **macOS**: an Add to Playlist button next to the heart in the player bar saves the playing song to one of your playlists in one click (#232, thanks @WillowBranch127).\n- **iOS**: a Swipe Left from Lyrics for Comments switch in Settings turns the swipe off for anyone who triggers it by accident; View Comments stays in the now-playing menu (#225).\n\n### Fixed\n\n- **iOS**: skipping to another song now stops the previous one straight away, instead of letting it play on for a few seconds under the new song's title and lyrics (#221).\n- **Now playing**: after a relaunch, the restored song's lyrics load right away instead of spinning until you press play (#219).\n- **macOS 26**: with Liquid Glass, the page no longer covers part of the floating sidebar; a gap now runs between them, also wi…",
+          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.38/Kumone-iOS-0.3.38.ipa",
+          "size": 4420454,
+          "buildVersion": "470",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "0.3.37",
           "date": "2026-11-14T11:23:41Z",
           "localizedDescription": "![分享评论 · Share a comment](https://raw.githubusercontent.com/missuo/kumone/v0.3.37/docs/releases/0.3.37-comment-share.png)\n\n![macOS 播放页评论 · Comments on the macOS now-playing page](https://raw.githubusercontent.com/missuo/kumone/v0.3.37/docs/releases/0.3.37-macos-comments.png)\n\n### Added\n\n- **Comments**: long-press a comment (right-click on macOS) to share it as a picture — the comment and who wrote it, with the song's title, artist and cover, over the cover's colours — then share it or save it to Photos (copy it on macOS). Copy Comment copies its text.\n- **Comments**: on macOS (and iPad), a Lyrics | Comments switch above the now-playing lyrics shows the playing song's comments in their place; songs without lyrics but with comments now get the column too.\n\n### Fixed\n\n- **iOS 17**: tapping th…",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.37/Kumone-iOS-0.3.37.ipa",
-          "size": 4407346,
-          "buildVersion": "454",
-          "minOSVersion": "16.0"
+          "size": 4407346
         },
         {
           "version": "0.3.36",
@@ -772,13 +779,6 @@
           "localizedDescription": "### Fixed\n\n- **Third-party sources**: for songs Kuwo won't serve, its 11-second clip suggesting Kuwo Music is no longer played as the song; the next source is tried instead, and copies of the clip already in the cache are removed (#212).\n- **iOS 16/17**: opening the now-playing page from the mini player no longer freezes the app on iOS 17. These systems show the lyrics alone; the song's comments stay in its More menu (#213).\n- **Comments**: the comments beside the iPhone lyrics no longer keep spinning after a load is interrupted; they load again on their own (#214).\n- **iOS**: \"Unable to play\" now says why — the request that failed, or the code the service answered with when it gave no playback address (#209).\n\n---\n\n### 修复\n\n- **第三方音源**：酷我不给播放的歌，它返回的「建议去酷我音乐收听」的 11 秒提示音不再被当成歌曲播放，会改为尝试下一个音源，…",
           "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.36/Kumone-iOS-0.3.36.ipa",
           "size": 4292609
-        },
-        {
-          "version": "0.3.35",
-          "date": "2026-11-13T19:25:08Z",
-          "localizedDescription": "### Added\n\n- **Comments**: on the iPhone now-playing page, swipe left from the lyrics to the song's comments, and right to return; two dots show which page is up. Comments load when you first turn to them and follow the song that is playing.\n\n### Fixed\n\n- **Playback**: a request for a song's playback address that drops, times out or meets a server error is retried once, instead of failing at once with \"Unable to play\" or switching to a third-party source (#210).\n- **iOS**: songs the service can play no longer keep playing from a third-party source copy in the cache; that copy is only used when the service refuses the song. Thanks @yuanruoyu515 (#205, closes #206).\n- **iOS 16/17**: the now-playing page no longer stops part way when it opens from the mini player, leaving it short of the top;…",
-          "downloadURL": "https://github.com/missuo/kumone/releases/download/v0.3.35/Kumone-iOS-0.3.35.ipa",
-          "size": 4289752
         }
       ]
     },
@@ -1259,16 +1259,23 @@
       "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
       "tintColor": "#2ad8c9",
-      "size": 11206743,
+      "size": 11206759,
       "versions": [
+        {
+          "version": "1.2.13",
+          "date": "2026-11-22T13:50:03Z",
+          "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.13-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.13-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.13-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.13-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.13-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.13-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.13-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.13-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.13-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.13-ios-unsigned.ipa` - **unsigned**…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.13/tokenbar-v1.2.13-ios-unsigned.ipa",
+          "size": 11206759,
+          "buildVersion": "19",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.2.12",
           "date": "2026-11-21T14:14:49Z",
           "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.12-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.12-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.12-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.12-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.12-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.12-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.12-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.12-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.12-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.12-ios-unsigned.ipa` - **unsigned**…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.12/tokenbar-v1.2.12-ios-unsigned.ipa",
-          "size": 11206743,
-          "buildVersion": "18",
-          "minOSVersion": "15.0"
+          "size": 11206743
         },
         {
           "version": "1.2.10",
@@ -1276,13 +1283,6 @@
           "localizedDescription": "### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.10-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.10-windows-arm64-setup.exe` - installer |\r\n| Android 64-bit (most phones) | `tokenbar-v1.2.10-android-arm64-v8a.apk` |\r\n| Android 32-bit ARM | `tokenbar-v1.2.10-android-armeabi-v7a.apk` |\r\n| Android x86_64 (emulator) | `tokenbar-v1.2.10-android-x86_64.apk` |\r\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.10-macos-arm64.dmg` |\r\n| macOS 12+ (Intel) | `tokenbar-v1.2.10-macos-x86_64.dmg` |\r\n| Linux x64 | `tokenbar-v1.2.10-linux-x64.tar.gz` - extract and run `token_bar` |\r\n| Linux ARM64 | `tokenbar-v1.2.10-linux-arm64.tar.gz` - extract and run `token_bar` |\r\n| iOS 15+ | `tokenbar-v1.2.10-ios-unsigned.ipa` -…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.10/tokenbar-v1.2.10-ios-unsigned.ipa",
           "size": 11074246
-        },
-        {
-          "version": "1.2.9",
-          "date": "2026-11-10T11:01:05Z",
-          "localizedDescription": "### What's new\r\n\r\n- **macOS: menu bar only mode.** New switch in Settings → Desktop, *Menu bar only (hide the Dock icon)*, so TokenBar lives only in the menu bar. Open the window or quit from the menu bar icon (⌘Q is unavailable while the Dock icon is hidden). Default is off. Thanks to @tianhuanyun for the suggestion and for testing the approach on macOS 26 ([#8](https://github.com/lwh0630/TokenBar/issues/8)).\r\n- Includes the v1.2.8 fix: API keys are no longer lost after restarting on macOS (reported and diagnosed in detail by @tianhuanyun, [#6](https://github.com/lwh0630/TokenBar/issues/6)).\r\n### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.9-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.9-windows-arm64-setup.…",
-          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.9/tokenbar-v1.2.9-ios-unsigned.ipa",
-          "size": 11054874
         }
       ]
     },
