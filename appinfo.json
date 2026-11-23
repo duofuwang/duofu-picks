@@ -107,15 +107,6 @@
     "size": 8938581,
     "source_repo": "weiran/Hackers"
   },
-  "czy0729/Bangumi@8.41.1": {
-    "bundleIdentifier": "tv.bangumi.czy0729",
-    "displayName": "Bangumi",
-    "version": "8.41.1",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 28323372,
-    "source_repo": "czy0729/Bangumi"
-  },
   "yattee/yattee@2.0.0-259": {
     "bundleIdentifier": "stream.yattee.app",
     "displayName": "Yattee",
@@ -314,15 +305,6 @@
     "size": 16672428,
     "source_repo": "FriesI23/mhabit"
   },
-  "itzzace/ytkace@1.1.8": {
-    "bundleIdentifier": "com.google.ios.youtube",
-    "displayName": "YouTube",
-    "version": "21.46.3",
-    "build": "21.46.3",
-    "minOSVersion": "17.0",
-    "size": 141821255,
-    "source_repo": "itzzace/ytkace"
-  },
   "mxhm11cr/LinuxRunner@1.1.2": {
     "bundleIdentifier": "dev.linuxrunner.app",
     "displayName": "LinuxRunner",
@@ -340,15 +322,6 @@
     "minOSVersion": "18.0",
     "size": 13636890,
     "source_repo": "oneamendez/crate-ios"
-  },
-  "darriousliu/PiPixiv@2.6.1": {
-    "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
-    "displayName": "PiPixiv",
-    "version": "2.6.1",
-    "build": "20601",
-    "minOSVersion": "18.0",
-    "size": 21448968,
-    "source_repo": "darriousliu/PiPixiv"
   },
   "open-ani/animeko@6.4.1": {
     "bundleIdentifier": "org.animeko.animeko",
@@ -394,15 +367,6 @@
     "minOSVersion": "17.0",
     "size": 27517158,
     "source_repo": "ossappscollective/oss-weather"
-  },
-  "pounat/absorb@1.15.1-310": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.15.1",
-    "build": "310",
-    "minOSVersion": "15.0",
-    "size": 48762949,
-    "source_repo": "pounat/absorb"
   },
   "Lingyan000/fluxdo@0.2.31": {
     "bundleIdentifier": "com.github.lingyan000.fluxdo",
@@ -538,5 +502,41 @@
     "minOSVersion": "26.0",
     "size": 721843642,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "itzzace/ytkace@1.1.9": {
+    "bundleIdentifier": "com.google.ios.youtube",
+    "displayName": "YouTube",
+    "version": "21.47.6",
+    "build": "21.47.6",
+    "minOSVersion": "17.0",
+    "size": 143414110,
+    "source_repo": "itzzace/ytkace"
+  },
+  "czy0729/Bangumi@8.42.2": {
+    "bundleIdentifier": "tv.bangumi.czy0729",
+    "displayName": "Bangumi",
+    "version": "8.42.2",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 31340480,
+    "source_repo": "czy0729/Bangumi"
+  },
+  "pounat/absorb@1.15.1-311": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.15.1",
+    "build": "311",
+    "minOSVersion": "15.0",
+    "size": 48831411,
+    "source_repo": "pounat/absorb"
+  },
+  "darriousliu/PiPixiv@2.7.0": {
+    "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
+    "displayName": "PiPixiv",
+    "version": "2.7.0",
+    "build": "20700",
+    "minOSVersion": "18.0",
+    "size": 20333927,
+    "source_repo": "darriousliu/PiPixiv"
   }
 }

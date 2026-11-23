@@ -48,16 +48,23 @@
       "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=be00d8b6da96",
       "tintColor": "#5fbdb5",
-      "size": 48762949,
+      "size": 48831411,
       "versions": [
+        {
+          "version": "1.15.1-311",
+          "date": "2026-11-23T00:24:22Z",
+          "localizedDescription": "# v1.15.1-311\n\n## Beta 3\n\n### Settings\n- **New** - Each section opens as its own page\n- **New** - Appearance has a live preview and one color choice\n- **New** - True cover colors option, for colors closer to the cover\n\n### Colors\n- **New** - Soft glow at the top in the playing book's cover color\n- **Fix** - Cover colors no longer turn pink in dark mode\n- **Improved** - App color only on things that are on or selected\n\n### Android TV\n- **New** - Android TV app, sign in from your phone\n- **New** - Game controller A and B work as OK and Back\n\n### Sign-in\n- **Fix** - iPhones stay signed in after sitting in the background (#501)\n- **Fix** - BookOrbit no longer signs you out when the server is slow\n\n\n### Installing on a TV\nMost Android TVs need the 32-bit build, so grab `absorb-1.15.1-311-armeab…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-311/absorb-1.15.1-311-pre.ipa",
+          "size": 48831411,
+          "buildVersion": "311",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.15.1-310",
           "date": "2026-11-20T05:37:15Z",
           "localizedDescription": "# v1.15.1-310\n\n## Beta 2\n\n### Player\n- **Improved** - Smoother card expand, it grows and shrinks with your swipe\n- **Improved** - A book you play slides its card to the front\n- **Improved** - Button rows join up in every look\n\n### App icon\n- **New** - App icon colors on iPhone and Android (Settings, Appearance)\n\n### Covers\n- **Fix** - Android Auto, CarPlay and the watch show new covers\n- **New** - Edit sheet previews a new cover before saving\n\n### BookOrbit\n- **New** - Hide libraries from shelves, series or stats (3.9)\n- **New** - Pause and resume read along creation\n- **New** - KOReader device names in the reading log\n- **Improved** - API key sign-ins can change password and keys\n\n### Audiobookshelf\n- **Fix** - Saving a user keeps their tag limits (2.38)\n\n### Ebooks\n- **Fix** - Progress k…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-310/absorb-1.15.1-310-pre.ipa",
-          "size": 48762949,
-          "buildVersion": "310",
-          "minOSVersion": "15.0"
+          "size": 48762949
         },
         {
           "version": "1.15.1-309",
@@ -65,13 +72,6 @@
           "localizedDescription": "# v1.15.1-309\n\n## Beta 1\n\n### Appearance\n- **New** - Liquid Glass on iOS 26: glass tab bar, library pills and toasts (Settings, Appearance)\n- **New** - Material 3 Expressive on Android: rolling tab highlight, shape loader, squishy buttons and a new player card look (Settings, Appearance)\n- **Improved** - Settings switches use the iOS style on iPhone and iPad\n\n### Absorbing cards\n- **New** - Card swipe style: Classic, Carousel or Stack\n- **New** - Solid card background, a calm shade of the cover's color\n- **Improved** - Button style moved to the Absorbing Cards settings\n\n### Library\n- **New** - Detail sheets grow out of the cover you tap\n\n### Languages\n- **New** - Polish, thanks to TheMatrixan (#490)",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-309/absorb-1.15.1-309-pre.ipa",
           "size": 48803526
-        },
-        {
-          "version": "1.14.0",
-          "date": "2026-11-19T16:57:31Z",
-          "localizedDescription": "# v1.14.0\n\n### Windows\n- **New** - Absorb on Windows, with an installer and media key support\n\n### Ebook reader\n- **New** - Sentence mode\n- **New** - Slide, Curl and Ripple page turns and an editable tap grid\n- **New** - Translate button\n- **Fix** - Swipe to turn pages works on iOS\n\n### Read along\n- **New** - EPUB3 narration, streamed or downloaded\n  - On Audiobookshelf, for best results, make the EPUB3 the only book file in the item (a cover and metadata files are fine)\n  - On Audiobookshelf, listening time still gets logged, but the book's duration shows as 0 since ABS doesn't support these natively\n  - Check out [Storyteller](https://storyteller-platform.dev/)'s STAlign for creating narrated EPUBs\n- **New** - Sync position button\n\n### BookOrbit\n- **New** - API key sign-in, stats with Ye…",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.14.0/absorb-1.14.0-308.ipa",
-          "size": 48228182
         }
       ]
     },
@@ -174,16 +174,23 @@
       "localizedDescription": ":electron: An unofficial https://bgm.tv ui first app client for Android and iOS, built with React Native. 一个无广告、以爱好为驱动、不以盈利为目的、专门做 ACG 的类似豆瓣的追番记录，bgm.tv 第三方客户端。为移动端重新设计，内置大量加强的网页端难以实现的功能，且提供了相当的自定义选项。 目前已适配 iOS / Android。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/tv.bangumi.czy0729.png?v=fc1d5950a9af",
       "tintColor": "#df271e",
-      "size": 28323372,
+      "size": 31340480,
       "versions": [
+        {
+          "version": "8.42.2",
+          "date": "2026-11-22T17:22:01Z",
+          "localizedDescription": "[图文说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/osqdpz?singleDoc)\r\n\r\n[蓝奏云 v8a APK](https://czy0729.lanzoub.com/iWJJE4h1ickd)（只能电脑UA访问） |  [123pan v8a APK](https://1819463884.share.123pan.cn/123pan/K0fQjv-13MH3)（需登录，zip 请自行解压） \r\n\r\n[v8a APK、IPA] 手动点击下方 Assets\r\n\r\n## 8.42.2 - 2026/11/23\r\n\r\n### 优化\r\n- [x] [目录详情] 工具栏收纳为设置菜单\r\n- [x] [安卓] 系统长按文字菜单入口，可在设置里关闭\r\n- [x] 统一全客户端文案叫法与标点，破坏性操作补齐危险确认\r\n- [x] 大量内部重构、类型收敛与补充单测，不详细说明\r\n\r\n### 修复\r\n- [x] 因官方备用 api 域名故障，临时换回去原本不能直连的 api 域名\r\n- [x] [组件] 修复浮层面板收起后可能残留透明遮罩、导致整页无法点击的问题\r\n- [x] [安卓] 修复关系图年份不显示的问题\r\n- [x] [安卓] 修复打开主站等网页时链接被客户端自身接管、无法在浏览器中打开的问题\r\n- [x] [安卓] 修复 Passkey 登录部分机型校验失败的问题；ECH 代理下改为弹窗引导切换直连\r\n- [x] [iOS] 修复部分机型顶部标签栏可被上下拖拽的问题\r\n- [x] [iOS] 修复回复面板与收藏弹窗透过毛玻璃显出灰底的问题，统一各处毛玻璃的明暗表现\r\n- [x] [iOS] 修复骨架屏扫光不显示的问题\r\n- [x] [iOS] 下滑后显示的头部标题与左右按钮重新对齐",
+          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/8.42.2/bangumi_v8.42.2.ipa",
+          "size": 31340480,
+          "buildVersion": "1",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "8.41.1",
           "date": "2026-10-01T16:00:42Z",
           "localizedDescription": "[图文说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/osqdpz?singleDoc)\r\n\r\n[蓝奏云 v8a APK](https://czy0729.lanzoub.com/i9zUd4alwcni) (只能电脑UA访问) |  [123pan v8a APK](https://1819463884.share.123pan.cn/123pan/K0fQjv-M84A3) (需登录, zip请自行解压) \r\n\r\n[v8a APK 或者 IPA] 手动点击下方 Assets\r\n\r\n## 8.41.1 - 2026/10/01\r\n\r\n### 优化\r\n- [x] [每日放送] 新增 2026S4 元数据\r\n- [x] [组件] Tab 页面改为按距当前页的距离保活（默认 2 页，可在设置里调整为 1 页或无限制），超出距离的失焦页面会停止常驻副作用并卸载内容，改善长时间使用的内存占用\r\n- [x] [游戏、ADV] 静态数据重建更新\r\n- [x] [设置] 底栏分组改名为「页面导航」，并调整了部分设置的分组位置\r\n- [x] [更多角色] 新增角色定位筛选工具条\r\n- [x] [组件] 隐藏右上角菜单的「网页版查看」项\r\n- [x] 大量内部重构、类型收敛与补充单测，不详细说明\r\n\r\n### 修复\r\n- [x] [iOS] 修复输入框长按菜单显示英文的问题\r\n- [x] [iOS] 修复用户页有概率视差背景图不显示的问题，并统一双端背景图的加载与失败回退表现\r\n- [x] [人物] 修复人物作品路由参数过窄的问题\r\n- [x] [好友] 修复代理模式下 p1 接口 /p1 前缀丢失的问题",
           "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/8.41.1/bangumi_v8.41.1.ipa",
-          "size": 28323372,
-          "buildVersion": "1",
-          "minOSVersion": "16.4"
+          "size": 28323372
         },
         {
           "version": "8.40.2",
@@ -191,13 +198,6 @@
           "localizedDescription": "[图文说明](https://www.yuque.com/chenzhenyu-k0epm/znygb4/osqdpz?singleDoc)\r\n\r\n[蓝奏云 v8a APK](https://czy0729.lanzoub.com/iWOGc48vb3eh) (只能电脑UA访问) |  [123pan v8a APK](https://1819463884.share.123pan.cn/123pan/K0fQjv-J4iH3) (需登录, zip请自行解压)  | [v8a APK] 手动点击下方 Assets\r\n\r\n[蓝奏云 IPA](https://czy0729.lanzoub.com/ikUOE49083vg) (最新 Expo 版本下的公测版，目前可能会有很多小问题，遇到问题请反馈，持续优化发包后会一直替换这个下载地址)  | [github IPA] 手动点击下方 Assets\r\n\r\n## 8.40.2 - 2026/09/17\r\n\r\n### 优化\r\n- [x] [组件] 修复图片不能根据大小自动加载的问题，现在图片支持显示下载进度，加载失败后自动重试有次数上限；封面圆角与安卓卡片遮罩等视觉细节统一优化\r\n- [x] [条目] 优化续集条目的剧照匹配，并支持手动刷新\r\n- [x] [条目] 优化非动画类型条目的相关预览，视频点击优先唤起客户端\r\n- [x] [发现] 封面卡底部改为图片本色模糊的氛围色，按压反馈改为缩放\r\n\r\n### 修复\r\n- [x] [进度] 修复了收藏为空的用户被误判为授权过期、每次冷启动都重复要求重新授权的问题\r\n- [x] [条目] 修复取景地标截图因接口图片地址错误而全部加载失败的问题\r\n- [x] 修复开启过反代镜像，反代镜像失效后切换到新代理后，部分图片仍在使用过期缓存数据导致不能加载的问题\r\n- [x] 修复部分页面首屏渲染报…",
           "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/8.40.2/bangumi_v8.40.2_build_20260919.ipa",
           "size": 28173699
-        },
-        {
-          "version": "upstream-8.42.0",
-          "date": "2026-11-16T15:50:27Z",
-          "localizedDescription": "Automated unsigned IPA build for Bangumi tag `8.42.0`.\r\n\r\nSource: https://github.com/czy0729/Bangumi/tree/8.42.0\r\n\r\nSource archive: https://github.com/czy0729/Bangumi/archive/refs/tags/8.42.0.zip\r\n\r\nThe IPA is intentionally unsigned and should be signed by your sideloading tool or a later signing workflow.\r\n\r\nBuild run: https://github.com/czy0729/Bangumi/actions/runs/43896232150",
-          "downloadURL": "https://github.com/czy0729/Bangumi/releases/download/upstream-8.42.0/bangumi_v8.42.0.ipa",
-          "size": 32031310
         }
       ]
     },
@@ -1000,16 +1000,23 @@
       "localizedDescription": "一个使用Compose Multiplatform开发的第三方Pixiv客户端，支持国内直连",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mrl.pixiv.PiPixiv.png?v=7fd6be94e3c6",
       "tintColor": "#18b4f5",
-      "size": 21448968,
+      "size": 20333927,
       "versions": [
+        {
+          "version": "2.7.0",
+          "date": "2026-11-22T18:06:36Z",
+          "localizedDescription": "> [!IMPORTANT]\r\n> **升级前务必备份数据。** 为支持多账号，v2.7.0 对账号管理和本地数据存储进行了大范围重构。首次启动新版时，应用会迁移旧版数据。\r\n>\r\n> 请先在**旧版**打开「设置 → 应用数据 → 导出数据」，将 ZIP 备份保存到应用外。**确认备份成功后再升级**，并保留备份，直到确认常用数据可以正常访问。\r\n\r\n## ✨ 新功能\r\n\r\n- 👥 **多账号与旧数据迁移。** 在「设置 → 切换账户」添加和即时切换 Pixiv 账号。浏览历史、搜索历史、稍后阅读和小说阅读进度按账号保存，移除账号时默认保留该账号的本地数据。升级后如有待恢复项，可在「设置 → 应用数据 → 数据恢复」逐项重试，也可导出旧数据或从旧数据包导入。\r\n- 🌐 **网络设置与自检。** 修改网络设置后，新请求会立即使用新配置。支持自定义 App API 代理域名，并可通过「网络自检」检查 DNS、Pixiv API、网页、登录端点和图片下载。\r\n- 🖼️ **批量下载多图作品。** 从作品详情工具栏选择要下载的图片，或一次下载全部原图。\r\n- 📋 **应用日志。** 可查看本次和上次运行的本地日志，按级别筛选，并在反馈问题时复制或分享。\r\n- 🔒 **匿名使用统计开关。** Android Default、iOS 和桌面版可在「隐私设置」中关闭匿名使用统计。\r\n- 📣 **Telegram 更新频道。** 可从设置直接进入频道，查看新版发布公告。\r\n\r\n## 🐛 问题修复与体验优化\r\n\r\n- 修复竖屏作品网格未按浏览设置显示列数的问题。 [#169](https://github.com/darriousliu/PiPixiv/issues/169)\r\n- 恢复 Android 预测性返回的共享图片过渡，快速完成手势时也会播完过渡动画。 [#170](https:…",
+          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.7.0/PiPixiv-v2.7.0-ios.ipa",
+          "size": 20333927,
+          "buildVersion": "20700",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "2.6.1",
           "date": "2026-11-17T09:10:31Z",
           "localizedDescription": "## ✨ 新功能\r\n\r\n- 📖 **小说卡片详情**。「查看更多」可直接查看完整标题、标签、简介、发布时间和阅读、收藏数据，无需打开阅读页。\r\n- 🖼️ **应用内大图预览**。点击小说内嵌图片或作者主页头像即可查看大图并缩放。\r\n- 🫧 **底栏样式切换**。可在设置中切换悬浮液态玻璃导航和常规底栏。\r\n- 🔐 **登出确认**。登出前弹出二次确认，减少误触。\r\n\r\n## 🐛 问题修复与体验优化\r\n\r\n- 修复首页跨标签切换时的崩溃，以及 Android 预测性返回完成后蒙层残留一帧的问题。\r\n- 修复通知中心正文显示原始 HTML 标签的问题。插画与小说的原文标签和译文现在按文字基线对齐。\r\n- 修复 Android 保存对话框的初始化问题。Windows 检测 WebView2 运行时，网页登录加载失败时提供恢复操作。\r\n- 移除无界的 API HTTP 响应缓存，并修复导航场景和小说分页对象的内存滞留。\r\n\r\n## ✅ Issue 处理情况\r\n\r\n| 状态 | Issue | 说明 |\r\n|------|-------|------|\r\n| ✅ 已修复 | [#159](https://github.com/darriousliu/PiPixiv/issues/159) | 正常显示通知正文 |\r\n| ✅ 已实现 | [#161](https://github.com/darriousliu/PiPixiv/issues/161)、[#162](https://github.com/darriousliu/PiPixiv/issues/162) | 查看作者头像大图和小说卡片的完整元数据 |\r\n| ✅ 已实现 | [#164](https://github.com/darriousliu/PiPixiv/issues/164)、[#166](https://gith…",
           "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.6.1/PiPixiv-v2.6.1-ios.ipa",
-          "size": 21448968,
-          "buildVersion": "20601",
-          "minOSVersion": "18.0"
+          "size": 21448968
         },
         {
           "version": "2.6.0",
@@ -1017,13 +1024,6 @@
           "localizedDescription": "## ✨ 新功能\n\n- 🎨 **UI 样式优化**：进一步统一漫画、发现、个人页、设置及筛选面板的 Material Expressive 风格，以圆润的卡片和按钮、清晰的内容分组、协调的排版与留白，呈现更轻盈、层次分明的界面；半透明液态玻璃悬浮导航搭配柔和的按压与切换动效，让浏览更流畅自然\n- 🫧 **悬浮导航与入口整理**：底部导航改为悬浮液态玻璃样式，优化选中动画、内容留白和页面切换，宽屏继续使用自适应侧栏；“我的阅读”整合稍后阅读、小说书签与漫画追更，并记忆上次打开的页签\n- 🔎 **搜索高级筛选**：插画搜索新增宽高范围、画幅比例、绘图工具和语言筛选；小说搜索新增字数、单词数、阅读时长、语言、题材、仅原创及支持角色名字替换等筛选条件。非 Premium 用户启用高级筛选时，热门预览会切换为最新作品排序\n- 🗂️ **收藏高级筛选**：自己的插画和小说收藏支持组合收藏标签、作品标签、收藏月份及收藏时间顺序筛选；统一筛选底部面板，支持公开与非公开切换、标签候选和一键清空，应用后直接在原收藏列表查看结果。高级筛选需等待 Pixiv 完成收藏索引同步\n- 🔔 **应用内通知中心**：新增通知列表和未读提示，可从首页及个人页进入，并打开通知关联的作品、作者或网页\n- 👥 **作者发现**：新增推荐作者、相似作者及我的粉丝列表，可预览作品、进入作者主页，以及直接关注或取消关注\n- 📚 **漫画系列与追更**：新增作者漫画系列、系列目录和漫画追更列表；作品页支持查看所属系列及跳转上一话、下一话，追更列表可进入系列目录或直接阅读最新一话\n- ☁️ **Pixiv 云端屏蔽管理**：支持查看、添加和删除账号中的用户、标签屏蔽，显示已用额度；可手动将云端规则导入本地，保留已有本地屏蔽和正则规则\n- 📖 **小说目录快捷入口**：系列小说阅读操作栏新增目录按钮，无需回到顶部即可打开章节…",
           "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.6.0/PiPixiv-v2.6.0-ios.ipa",
           "size": 21428661
-        },
-        {
-          "version": "2.5.1",
-          "date": "2026-09-25T02:25:54Z",
-          "localizedDescription": "## ✨ 新功能\r\n\r\n- 🌐 **系统代理模式**：网络设置新增并默认使用系统代理，明确区分系统代理、直连与手动 HTTP / SOCKS 代理；切换网络模式后重启应用生效 (#149)\r\n\r\n## 🐛 问题修复\r\n\r\n- 🧭 **主导航底栏遮挡**：修复进入小说、设置、搜索等二级页面后，首页底部导航仍然显示并覆盖内容的问题，保留大屏侧边导航 (#150)\r\n- 💬 **评论与举报页面崩溃**：修复页面进入后台或保存导航状态时，序列化字段冲突导致的崩溃\r\n- 📖 **小说滚动条**：修复长篇小说滚动条位置不稳定、难以拖动定位的问题，扩大拖动热区并调整边缘间距\r\n- 🔝 **小说阅读按钮**：回到顶部、上一章和下一章按钮改为相同尺寸并纵向排列，避免互相重叠，并为滚动条保留拖动空间\r\n- ▶️ **继续阅读入口**：调整系列页面续读入口的位置与布局，章节标题最多显示两行，阅读进度独立展示，修复重复显示百分号的问题 (#151)\r\n- 🎨 **桌面系统主题**：修复 Windows、macOS 跟随系统主题时识别错误或更新不及时的问题，保留手动主题选择 (#148)\r\n- 🍎 **iOS 代理与下载**：修复直连模式仍继承系统代理，以及后台下载未遵循应用代理设置的问题；系统代理、直连、HTTP 和 SOCKS 模式已完成模拟器实际下载回归 (#149)\r\n\r\n## ✅ Issue 处理情况\r\n\r\n以下为本版实现与验证情况，不代表 GitHub Issue 已关闭。\r\n\r\n| 状态 | Issue | 说明 |\r\n|------|-------|------|\r\n| ✅ 已修复 | #148 | 桌面端跟随系统主题识别与更新 |\r\n| ✅ 已实现并完成专项回归 | #149 | 默认系统代理、独立直连模式，以及 iOS 后台下载代理配置 |\r\n| ✅ 已修复 | #150 | 主…",
-          "downloadURL": "https://github.com/darriousliu/PiPixiv/releases/download/v2.5.1/PiPixiv-v2.5.1-ios.ipa",
-          "size": 20056263
         }
       ]
     },
