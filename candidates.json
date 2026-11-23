@@ -83,14 +83,14 @@
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 12519786,
+      "size": 12517789,
       "versions": [
         {
           "version": "1.6.1",
           "date": "2026-11-19T11:27:13Z",
           "localizedDescription": "## AltLoad 1.6.1\n\nA fix release for installs, JIT and device tools that stopped with \"Connection refused\" or \"tunnel connect timed out\".\n\n### Fixed\n- **\"Connection refused\" on 10.7.0.1:49152.** AltLoad always connected to port 49152, but iOS doesn't keep its pairing service on a fixed port. It usually gets 49152, but after a restart it can move, and every install then failed. AltLoad now looks up the real port over Bonjour. If that doesn't lead to it, AltLoad checks the iPhone's other ports, which takes a few seconds, and remembers the one it finds.\n- **Installs on iOS 27.2.** Since iOS 27.2, the iPhone closes a tunnel's services when a new connection to it identifies itself differently. AltLoad now uses the same identity every time, so installs, refreshes, JIT and AltServer no longer cut …",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.1/AltLoad.ipa",
-          "size": 12519786,
+          "size": 12517789,
           "buildVersion": "11",
           "minOSVersion": "18.0"
         },
@@ -1035,14 +1035,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1201203136,
+      "size": 1201810638,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-21T07:10:20Z",
-          "localizedDescription": "## Alpha Build `e0f5945`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`e0f5945`](https://github.com/Provenance-Emu/Provenance/commit/e0f59456cc63b51d82c72891d2ec9fdadaa0ee83) |\n| **Built** | 2026-11-21 07:09 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/44875476950) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\ne0f59456c feat(sharing): a library's games are a cover grid\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload feed](https…",
+          "date": "2026-11-23T12:26:24Z",
+          "localizedDescription": "## Alpha Build `b85aa52`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`b85aa52`](https://github.com/Provenance-Emu/Provenance/commit/b85aa52be3fd76ee66449e365325409735130d28) |\n| **Built** | 2026-11-23 12:25 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45166125543) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nb85aa52be fix(input): computer systems boot with a working mouse and keyboard\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[si…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1201203136,
+          "size": 1201810638,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1126,16 +1126,23 @@
       "localizedDescription": "ServerBox - high performance server toolbox app & server written in Flutter & Rust.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.lollipopkit.toolbox.png?v=9ac4188436ba",
       "tintColor": "#e0695e",
-      "size": 49970752,
+      "size": 52388975,
       "versions": [
+        {
+          "version": "1.0.1962",
+          "date": "2026-11-23T10:05:23Z",
+          "localizedDescription": "### Added\n\n- **MCP server in the app and on Monitor:** expose ServerBox hosts and settings through a local MCP server in the app, and expose an authenticated MCP endpoint on Monitor with scoped API tokens and per-IP / per-token rate limiting.\n- **Expanded BMC (Redfish) management:** read and clear event logs, inspect drives and predictive failure status, set boot device overrides, mount or eject virtual media, and toggle the locator LED.\n- **SSH agent and jump-host multiplexing:** authenticate using keys from the system `ssh-agent`, forward the agent to terminal sessions, and connect through a jump host's existing OpenSSH ControlMaster.\n- **Agent secret redaction:** automatically redact sensitive tokens, keys and passwords before the Agent sends context to a model.\n- **Monitor fallback add…",
+          "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1962/ServerBox_v1.0.1962_NoSign.ipa",
+          "size": 52388975,
+          "buildVersion": "1962",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.0.1925",
           "date": "2026-11-11T09:07:31Z",
           "localizedDescription": "### Before you upgrade\n\n- **Usage analytics are removed**, along with the Full diagnostics level. Installations set to Full now use Basic, which uploads only errors and crashes.\n- **Monitor v0.4.0 uses a single account and signs in with a password only.** Signing in grants the permissions of the system account Monitor runs as; roles, per-feature permissions, file roots and read-only mode are removed. On upgrade, the oldest admin account is kept and other accounts' tasks, memory and desk data move to it. ServerBox no longer asks for a username, and offers to update Monitors older than v0.4.0 before signing in.\n- **Self-signed Monitor certificates are trusted once by fingerprint.** The \"ignore certificate\" toggle is replaced by SHA-256 fingerprint pinning: the first connection prompts you to…",
           "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1925/ServerBox_v1.0.1925_NoSign.ipa",
-          "size": 49970752,
-          "buildVersion": "1925",
-          "minOSVersion": "15.0"
+          "size": 49970752
         },
         {
           "version": "1.0.1856",
@@ -1143,13 +1150,6 @@
           "localizedDescription": "### Added\n\n- **Every block device in the server details:** the disk dialog lists all disks and partitions, including unmounted and blank disks, with model, size, type, connection and file system. Also in the Monitor panel (agent v0.3.0). Linux only.\n- **Android:** a redesigned home-screen widget that can be resized and shows more as it grows; Home-screen shortcuts to a server; a Quick Settings tile for sessions; share text and files from other apps into a snippet or a server; keyboard shortcuts; the app's language in system settings; and widget previews in the launcher.\n- **Editing files on Monitor-only servers and this device,** as on SSH servers. A file that changed on the server since it was opened is not overwritten without asking.\n- Persian (فارسی), the first right-to-left language.\n\n…",
           "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1856/ServerBox_v1.0.1856_NoSign.ipa",
           "size": 46255780
-        },
-        {
-          "version": "1.0.1844",
-          "date": "2026-10-29T18:40:29Z",
-          "localizedDescription": "### Added\n\n- **SSH host certificates:** connect to servers that present only a host certificate, and trust host certificate authorities in Settings → SSH, as OpenSSH's `@cert-authority` does, matched by host pattern.\n- **Encrypted key passphrases are remembered** in this device's system keychain, so they are not asked for after a restart. The key itself stays encrypted, including in backups. The key editor shows the saved passphrase after app-lock authentication. Turn it off in Settings → SSH.\n- Agent: a conversation can include what is on screen, such as the selected server's status, containers, processes, services, terminal or file view.\n\n### Changed\n\n- SSH connections using AES-GCM are faster, including file transfers.\n- The first tab of Terminal, Files and Remote desktop, the list to p…",
-          "downloadURL": "https://github.com/lollipopkit/flutter_server_box/releases/download/v1.0.1844/ServerBox_v1.0.1844_NoSign.ipa",
-          "size": 45584899
         }
       ]
     },
@@ -1329,16 +1329,23 @@
       "localizedDescription": "VeneraNext 是一个跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源、第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.cyrilpeng.veneranext.png?v=d3a6b622a90d",
       "tintColor": "#1580c2",
-      "size": 21467556,
+      "size": 21589601,
       "versions": [
+        {
+          "version": "1.18.4",
+          "date": "2026-11-23T03:27:29Z",
+          "localizedDescription": "### 正式发布与验收\n\n- 发布 `1.18.4+253`，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n\n### 候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单。纵向连续／瀑布流支持默认关闭的「裁剪左右白边」，后台逐页检测、保留内容和双页中线，原图、下载、保存及导出不变（#139）。\n- 收藏支持从零开始多选、全选／反选、长按范围选择及…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
+          "size": 21589601,
+          "buildVersion": "253",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "1.18.3",
           "date": "2026-11-07T18:10:18Z",
           "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyrilpeng.veneranext.harmony`，最低／目标 SDK 为 API 26，版本为 `1.18.3`，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，以及带一层可选外部总目录的「漫画合集 ZIP」；结构有多本漫画／单本多章节歧义时由用户确认，取消不入库。目录仅复制导入，PDF 导入、系统分享及生物认证等…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
-          "size": 21467556,
-          "buildVersion": "249",
-          "minOSVersion": "14.0"
+          "size": 21467556
         },
         {
           "version": "1.18.2",
@@ -1346,13 +1353,6 @@
           "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- **Android TV（#120）**：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打开菜单，返回先关闭菜单再保存退出；菜单内不在背景翻页，失焦或切后台停止连发。目录搜索用上下键移出输入框，左右键编辑光标。\n- TV 默认开启单页低内存模式…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
           "size": 21307925
-        },
-        {
-          "version": "1.18.1",
-          "date": "2026-10-25T03:30:26Z",
-          "localizedDescription": "### 正式版说明\n\n- 发布补丁正式版 `1.18.1+236`，完整承接 RC1 的阅读器、本地漫画、启动诊断、后台下载与依赖安全修复；本次转正不额外加入运行时代码或依赖变更。\n- RC1 发布后暂未收到新的问题反馈，这不等同于所有原设备问题已经验收通过。维护者决定保留明确的已知限制发布正式版，并继续邀请相关 issue 的反馈者复测，不自动将未确认的报告标为已解决。\n- 升级前请导出并另存应用数据备份，保留原漫画文件；覆盖安装沿用现有数据，不需要清空应用数据、删除数据库或重建同步配置。若回退旧版，请先另存新版数据，并使用升级前的备份恢复，不保证旧版能读取新版已修改的数据。iOS IPA 仍需自行侧载签名。\n\n### 重点复测与已知限制\n\n- **#111 升级／恢复后启动**：已修复 Windows 旧收藏库的 SQLite 内部表迁移错误，并完善不被异步收尾阻挡的启动诊断页；Android 原设备卡启动图的根因尚未确认。请复测覆盖升级和完整应用数据恢复；若仍失败，提供启动阶段与脱敏后的原始错误，不要以清空数据代替定位。\n- **#119 Android 自定义存储目录**：已修复 SAF 选择器返回的 `android://` 路径被误判为相对路径；真实 Android 目录权限、双向迁移及重启恢复仍需确认。请先备份，不要删除迁移失败时保留的原文件或副本。\n- **#115 归档导入后不显示**：已修复全部失败仍报成功及省略具体错误的问题；原附件在本机按原名／改名均可导入，原设备“不显示”的根因尚未复现。请核对导入数量、具体失败文件、列表筛选／屏蔽设置，以及重启后的列表与页面读取结果，不自动改名或绕过屏蔽规则。\n- **#118 单页翻页闪背景**：已修复切换当前页时重建已加载画面的代码路径；iPad／Android 原设备观感仍待复测，不取消墨水屏的主动刷新。\n-…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.1/VeneraNext-ios-1.18.1%2B236.ipa",
-          "size": 21194544
         }
       ]
     },

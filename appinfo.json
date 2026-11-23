@@ -170,15 +170,6 @@
     "size": 3374224,
     "source_repo": "ResistanceTo/MiniWatts"
   },
-  "CyrilPeng/Venera-Next@1.18.3": {
-    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
-    "displayName": "VeneraNext",
-    "version": "1.18.3",
-    "build": "249",
-    "minOSVersion": "14.0",
-    "size": 21467556,
-    "source_repo": "CyrilPeng/Venera-Next"
-  },
   "Jellify-Music/App@1.4.1": {
     "bundleIdentifier": "com.cosmonautical.jellify",
     "displayName": "Jellify",
@@ -223,15 +214,6 @@
     "minOSVersion": "17.0",
     "size": 9036911,
     "source_repo": "Leviidev/Henge"
-  },
-  "lollipopkit/flutter_server_box@1.0.1925": {
-    "bundleIdentifier": "com.lollipopkit.toolbox",
-    "displayName": "ServerBox",
-    "version": "1.0.1925",
-    "build": "1925",
-    "minOSVersion": "15.0",
-    "size": 49970752,
-    "source_repo": "lollipopkit/flutter_server_box"
   },
   "cogwheel0/conduit@4.3.1": {
     "bundleIdentifier": "app.cogwheel.conduit",
@@ -538,5 +520,23 @@
     "minOSVersion": "18.0",
     "size": 20333927,
     "source_repo": "darriousliu/PiPixiv"
+  },
+  "CyrilPeng/Venera-Next@1.18.4": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "displayName": "VeneraNext",
+    "version": "1.18.4",
+    "build": "253",
+    "minOSVersion": "14.0",
+    "size": 21589601,
+    "source_repo": "CyrilPeng/Venera-Next"
+  },
+  "lollipopkit/flutter_server_box@1.0.1962": {
+    "bundleIdentifier": "com.lollipopkit.toolbox",
+    "displayName": "ServerBox",
+    "version": "1.0.1962",
+    "build": "1962",
+    "minOSVersion": "15.0",
+    "size": 52388975,
+    "source_repo": "lollipopkit/flutter_server_box"
   }
 }
