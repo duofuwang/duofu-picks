@@ -384,16 +384,30 @@
       "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 736117257,
+      "size": 736114779,
       "versions": [
+        {
+          "version": "1.8.80",
+          "date": "2026-11-24T14:27:46Z",
+          "localizedDescription": "# Floe Agent 1.8.80（401）\n\n## 简体中文\n\n- 修复长会话加载末尾消息后偶尔停在较早位置的问题。\n- 点向下箭头可立即跳到最新消息。阅读较早消息或查看搜索结果时，保留当前位置。\n\n## English\n\n- Fix an issue where a long conversation sometimes stayed above the latest messages after they loaded.\n- Jump straight to the latest message with the down arrow. Keep your place while reading earlier messages or viewing a search result.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.80/Floe-Agent-1.8.80-build401-unsigned.ipa",
+          "size": 736114779,
+          "buildVersion": "401",
+          "minOSVersion": "26.0"
+        },
+        {
+          "version": "1.8.79",
+          "date": "2026-11-24T12:52:56Z",
+          "localizedDescription": "# Floe Agent 1.8.79（400）\n\n## 简体中文\n\n- 减少长回复刷新时的重复解析，降低流式输出和回看历史回复的渲染开销。\n- 减少会话和任务列表在状态未变化时的界面刷新。\n- 优化长文本的用量估算，兼容中英文混排和表情。\n- 减少工具名称查找和工具列表排序的重复开销，加快工作区目录筛选。\n\n## English\n\n- Reduce repeated parsing during streaming and when revisiting long answers.\n- Avoid refreshing conversations and task lists when their displayed state has not changed.\n- Estimate usage for long drafts more efficiently, including mixed languages and emoji.\n- Reduce repeated tool lookup and catalog sorting work, and filter workspace directories more efficiently.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.79/Floe-Agent-1.8.79-build400-unsigned.ipa",
+          "size": 736113741
+        },
         {
           "version": "1.8.78",
           "date": "2026-11-23T22:31:25Z",
           "localizedDescription": "# Floe Agent 1.8.78（399）\n\n## 简体中文\n\n- 优化切回 App 和打开长会话的加载，后台任务状态会随当前运行结果更新。\n- 提问和任务进度更新直接执行。审批模型默认关闭思考，可在「Agent 与权限」开启。\n- 配对设备可同步用户附件。工作区文件的改名和删除可以单独开启同步，同步前会保留冲突版本。\n- 游戏工作台加入原生运行支持。游戏可以从工作台或 IDE 运行，存档按工程保留。\n- Studio 支持导入程序生成的像素帧并导出视频。语音接入 DeepSeek 流式输出。\n- 更新 App 内图文帮助，补充工作台用途与操作步骤。\n\n## English\n\n- Return to the app and open long conversations more quickly. Background task status follows the current run outcome.\n- Questions and task progress updates run directly. Approval model reasoning is off by default and can be enabled in Agent & Permissions.\n- Paired devices can sync user attachments. Workspace rename and deletion sync has its own setting, with conflicting versions preserved.\n- The game workbench adds native runtime support. Run games from the workbench or IDE, with saves kept per proje…",
           "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.78/Floe-Agent-1.8.78-build399-unsigned.ipa",
-          "size": 736117257,
-          "buildVersion": "399",
-          "minOSVersion": "26.0"
+          "size": 736117257
         }
       ]
     },
@@ -1021,14 +1035,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1201810638,
+      "size": 1202070005,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-23T12:26:24Z",
-          "localizedDescription": "## Alpha Build `b85aa52`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`b85aa52`](https://github.com/Provenance-Emu/Provenance/commit/b85aa52be3fd76ee66449e365325409735130d28) |\n| **Built** | 2026-11-23 12:25 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45166125543) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nb85aa52be fix(input): computer systems boot with a working mouse and keyboard\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[si…",
+          "date": "2026-11-24T10:44:54Z",
+          "localizedDescription": "## Alpha Build `155c5b7`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`155c5b7`](https://github.com/Provenance-Emu/Provenance/commit/155c5b7fab415405bb9504c80a91a1982ca62b17) |\n| **Built** | 2026-11-24 10:44 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45368717863) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n155c5b7fa build(deps): bump iCube to SkinKit 0.7.0 pin\n25cbed87d build(deps): SkinKit 0.7.0\n8bff97b49 bump dolphin\n3731b59bf [Agent] fix(tvos): the bezel strip works with the Siri Remote (#3828)\n```\n\n### Merged PRs\n- #3828: [Agent] fix(tvos): …",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1201810638,
+          "size": 1202070005,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1147,16 +1161,23 @@
       "localizedDescription": "An an app that installs Sidestore on iOS 27, fully on-device",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.frizzlem.sideinstaller.png?v=88da5c621cdd",
       "tintColor": "#1243b2",
-      "size": 10958767,
+      "size": 11642855,
       "versions": [
+        {
+          "version": "2.2.0",
+          "date": "2026-11-24T07:55:43Z",
+          "localizedDescription": "# Added\n\n* JIT. Please keep SideInstaller in the background to keep JIT running\n* Sources. Add an AltStore-format source as an https link, an altstore:// or sidestore:// link, or a .json file. Thanks to @TinusTK (#143).\n* Shortcuts actions, such as location spoofing, app installing and app refreshing.\n* Pairing compatibility with ARMSX3\n\n\n# Fixed\n\n* Sign-in reports a current Mac again. 2.1.1 signed in as a Mac on macOS 10.15.7. Apple sometimes answers that Mac with a text-message code it never sends, or with -22410 or -23782. SideInstaller now signs in as the macOS 26.6 Mac it used up to 2.1.0, spelled \\\"Mac OS X\\\", and that Mac gets the code on trusted devices. The first sign-in with a password makes a new anisette identity, so Apple may ask for a code one more time.\n* SideStore gets clie…",
+          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.2.0/SideInstaller.ipa",
+          "size": 11642855,
+          "buildVersion": "1",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "2.1.1",
           "date": "2026-11-21T12:07:42Z",
           "localizedDescription": "### Changed\n- **lillq is the first anisette server.** anisette.lillq.me, a pool of anisette servers that checks every hour which clients Apple lets through, is now on the list in Settings › Anisette Server, and a first sign-in starts there. With Auto on, it comes right after the server that signed in last and the others that share its anisette identity, which keep the saved sign-in.\n\n### Fixed\n- **Signing in to Apple works again.** Since 20 November Apple has answered sign-ins through every Mac anisette server with HTTP 503 (#146–#161), turning away any client that calls its system “macOS”. SideInstaller now signs in as a Mac on macOS 10.15.7, the newest that still calls itself “Mac OS X”, which Apple lets through and which is new enough for the accounts that need macOS 10.13 or later.\n- *…",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.1.1/SideInstaller.ipa",
-          "size": 10958767,
-          "buildVersion": "1",
-          "minOSVersion": "17.4"
+          "size": 10958767
         },
         {
           "version": "2.1.0",
@@ -1164,13 +1185,6 @@
           "localizedDescription": "### Added\n- **Pick the developer team that signs.** An Apple Account on more than one developer team (a paid Apple Developer Program membership or a company's team, besides the free one every account has) is asked once which team signs, each marked Free or Paid. The question starts on the team that signed SideInstaller itself, so a copy siboot installed with another team now refreshes itself in place. The pick is remembered for the Apple ID and used for installs, refreshes, Certificates and Entitlements; swipe the Apple ID in Settings › Account and tap Team to pick again.",
           "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.1.0/SideInstaller.ipa",
           "size": 10860622
-        },
-        {
-          "version": "2.0.1",
-          "date": "2026-11-12T20:00:38Z",
-          "localizedDescription": "### Changed\n- **Blue is back.** The greys from 2.0.0 are blues again: night-blue pages, cards and popups under a still navy wash at the top, a solid blue main button, and a lighter blue for progress, links, selections and switches. The app icon and the logo tiles have their colour back, in a brighter blue than before 2.0.0. The Live Activities and sideinstaller.net match.",
-          "downloadURL": "https://github.com/FrizzleM/SideInstaller/releases/download/v2.0.1/SideInstaller.ipa",
-          "size": 10770716
         }
       ]
     },
@@ -1182,16 +1196,23 @@
       "localizedDescription": "Open-source Flutter habit tracker with smart scoring, WebDAV sync, local-first storage, privacy-focused design, and support for Android, iOS, Windows, macOS, and Linux.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.friesi23.mhabit.png?v=ac25ecabf890",
       "tintColor": "#1790e3",
-      "size": 16672428,
+      "size": 17635302,
       "versions": [
+        {
+          "version": "1.27.24+213",
+          "date": "2026-11-24T03:02:07Z",
+          "localizedDescription": "# Released: v1.27.24+213\r\n\r\n## 🐛 Fixes\r\n\r\n- Report corrupt Loop ZIP backups as import errors (#715)\r\n- Restore reliable first-frame rendering and window lifecycle handling on\r\n  Windows. Use the English app name in the title bar to avoid garbled text\r\n  (#715)\r\n- Correct English text in habit details, check-ins, reminders, import, export,\r\n  and settings. Show the correct number of days until a habit starts in\r\n  Russian and Ukrainian (#720)\r\n- Avoid a crash when entering full screen or resizing the window on macOS by\r\n  temporarily switching to Skia\r\n\r\n## 🌐 Localization\r\n\r\n- Add Esperanto translation to the app and iOS Home Screen widgets, thanks to\r\n  Jon Stevenson's contribution on Weblate (#717)\r\n\r\n## 🧹 Others\r\n\r\n- Upgrade to Flutter 3.47.9 and Dart 3.13.7, and migrate the adaptive int…",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.24%2B213/mhabit-unsigned.ipa",
+          "size": 17635302,
+          "buildVersion": "213",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.27.20+209",
           "date": "2026-11-15T05:02:52Z",
           "localizedDescription": "# Released: v1.27.20+209\r\n\r\n## ✨ Features\r\n\r\n- Add shared support cards to Settings and optional startup reminders, with\r\n  animated headers, automatic paging and clickable page indicators. Keep GitHub\r\n  Star and donation actions, and offer store review or Flathub favorites links\r\n  for the current distribution. Remember **Remind me later** and **Don't remind\r\n  me again** choices (#707)\r\n- Choose and remember the interface style in Display settings. When using the\r\n  Apple style, choose automatic, inset or edge Sidebar appearance (#709)\r\n\r\n## 🐛 Fixes\r\n\r\n- Restore normal browsing after an empty search in the Apple interface (#703)\r\n- Restore WebDAV sync with mixed authentication challenges, including Fastmail\r\n  (#705)\r\n- Preserve Loop import history for habits with non-Latin names and re…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.20%2B209/mhabit-unsigned.ipa",
-          "size": 16672428,
-          "buildVersion": "209",
-          "minOSVersion": "15.0"
+          "size": 16672428
         },
         {
           "version": "1.27.18+207",
@@ -1199,13 +1220,6 @@
           "localizedDescription": "# Released: v1.27.18+207\r\n\r\nTable Habit now supports iOS Home Screen widgets! Thanks to\r\n[@IlyaPalochkin](https://github.com/IlyaPalochkin) for contributing the initial\r\ninteractive widgets (#680).\r\n\r\n## ✨ Features\r\n\r\n- Add interactive Home Screen widgets for iOS 17+, with seven-day progress and\r\n  check-in, undo and refresh actions without opening the app (#680)\r\n- Choose automatic or fixed habits, including archived habits; fixed habits\r\n  appear first. Small, medium and large widgets show up to one, three and six\r\n  habits respectively (#687)\r\n- Keep automatic check-ins visible until tapping **Next** to show another habit;\r\n  widgets on the same device share check-in and Next updates. Fixed habits stay\r\n  visible with Undo. Show a completion message when all goals are complete, or\r\n  **…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.18%2B207/mhabit-unsigned.ipa",
           "size": 15961434
-        },
-        {
-          "version": "1.27.15+204",
-          "date": "2026-10-19T04:13:10Z",
-          "localizedDescription": "# Released: v1.27.15+204\r\n\r\n## ✨ Features\r\n\r\n- Integrate native desktop title bars and keep app bars pinned while scrolling\r\n  (#677)\r\n  - Fuse macOS window controls with adaptive toolbars and handle fullscreen\r\n    transitions\r\n  - Match native title bar colors to the app theme on Windows and Linux\r\n- Keep a manually collapsed sidebar closed across layout and interface-style\r\n  changes within the current session (#679)\r\n- Restore desktop window size and position before the window first appears\r\n  (#681)\r\n  - Save ordinary window geometry without treating fullscreen or maximized\r\n    bounds as the preferred window size\r\n\r\n## 🐛 Fixes\r\n\r\n- Preserve open dialogs and their state while updating theme colors, and keep\r\n  dialog app bars consistent with their local theme (#677)\r\n- Restore the Set…",
-          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.15%2B204/mhabit-unsigned.ipa",
-          "size": 15128625
         }
       ]
     },
@@ -1245,16 +1259,23 @@
       "localizedDescription": "Open-source, cross-platform AI quota monitor (Codex, Claude, Cursor and 47 more). Windows, macOS, Linux, Android and iOS. Built with Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.tokenbar.app.png?v=f4781f708dae",
       "tintColor": "#2ad8c9",
-      "size": 11206759,
+      "size": 11212720,
       "versions": [
+        {
+          "version": "1.2.14",
+          "date": "2026-11-24T06:16:21Z",
+          "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.14-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.14-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.14-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.14-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.14-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.14-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.14-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.14-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.14-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.14-ios-unsigned.ipa` - **unsigned**…",
+          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.14/tokenbar-v1.2.14-ios-unsigned.ipa",
+          "size": 11212720,
+          "buildVersion": "20",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.2.13",
           "date": "2026-11-22T13:50:03Z",
           "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.13-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.13-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.13-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.13-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.13-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.13-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.13-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.13-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.13-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.13-ios-unsigned.ipa` - **unsigned**…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.13/tokenbar-v1.2.13-ios-unsigned.ipa",
-          "size": 11206759,
-          "buildVersion": "19",
-          "minOSVersion": "15.0"
+          "size": 11206759
         },
         {
           "version": "1.2.12",
@@ -1262,13 +1283,6 @@
           "localizedDescription": "### Downloads\n\n| Platform | File |\n| --- | --- |\n| Windows 10/11 (x64) | `tokenbar-v1.2.12-windows-x64-setup.exe` - installer |\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.12-windows-arm64-setup.exe` - installer |\n| Android 64-bit (most phones) | `tokenbar-v1.2.12-android-arm64-v8a.apk` |\n| Android 32-bit ARM | `tokenbar-v1.2.12-android-armeabi-v7a.apk` |\n| Android x86_64 (emulator) | `tokenbar-v1.2.12-android-x86_64.apk` |\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.12-macos-arm64.dmg` |\n| macOS 12+ (Intel) | `tokenbar-v1.2.12-macos-x86_64.dmg` |\n| Linux x64 | `tokenbar-v1.2.12-linux-x64.tar.gz` - extract and run `token_bar` |\n| Linux ARM64 | `tokenbar-v1.2.12-linux-arm64.tar.gz` - extract and run `token_bar` |\n| iOS 15+ | `tokenbar-v1.2.12-ios-unsigned.ipa` - **unsigned**…",
           "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.12/tokenbar-v1.2.12-ios-unsigned.ipa",
           "size": 11206743
-        },
-        {
-          "version": "1.2.10",
-          "date": "2026-11-16T08:33:05Z",
-          "localizedDescription": "### Downloads\r\n\r\n| Platform | File |\r\n| --- | --- |\r\n| Windows 10/11 (x64) | `tokenbar-v1.2.10-windows-x64-setup.exe` - installer |\r\n| Windows 11 on ARM (arm64) | `tokenbar-v1.2.10-windows-arm64-setup.exe` - installer |\r\n| Android 64-bit (most phones) | `tokenbar-v1.2.10-android-arm64-v8a.apk` |\r\n| Android 32-bit ARM | `tokenbar-v1.2.10-android-armeabi-v7a.apk` |\r\n| Android x86_64 (emulator) | `tokenbar-v1.2.10-android-x86_64.apk` |\r\n| macOS 12+ (Apple Silicon: M1 and later) | `tokenbar-v1.2.10-macos-arm64.dmg` |\r\n| macOS 12+ (Intel) | `tokenbar-v1.2.10-macos-x86_64.dmg` |\r\n| Linux x64 | `tokenbar-v1.2.10-linux-x64.tar.gz` - extract and run `token_bar` |\r\n| Linux ARM64 | `tokenbar-v1.2.10-linux-arm64.tar.gz` - extract and run `token_bar` |\r\n| iOS 15+ | `tokenbar-v1.2.10-ios-unsigned.ipa` -…",
-          "downloadURL": "https://github.com/lwh0630/TokenBar/releases/download/v1.2.10/tokenbar-v1.2.10-ios-unsigned.ipa",
-          "size": 11074246
         }
       ]
     },

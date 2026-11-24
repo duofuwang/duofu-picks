@@ -278,15 +278,6 @@
     "size": 65428219,
     "source_repo": "project-robius/robrix"
   },
-  "FriesI23/mhabit@1.27.20+209": {
-    "bundleIdentifier": "io.github.friesi23.mhabit",
-    "displayName": "Table Habit",
-    "version": "1.27.20",
-    "build": "209",
-    "minOSVersion": "15.0",
-    "size": 16672428,
-    "source_repo": "FriesI23/mhabit"
-  },
   "mxhm11cr/LinuxRunner@1.1.2": {
     "bundleIdentifier": "dev.linuxrunner.app",
     "displayName": "LinuxRunner",
@@ -377,15 +368,6 @@
     "size": 14901422,
     "source_repo": "huamurui/zhihu-minus-minus"
   },
-  "FrizzleM/SideInstaller@2.1.1": {
-    "bundleIdentifier": "com.frizzlem.sideinstaller",
-    "displayName": "SideInstaller",
-    "version": "2.1.1",
-    "build": "1",
-    "minOSVersion": "17.4",
-    "size": 10958767,
-    "source_repo": "FrizzleM/SideInstaller"
-  },
   "wszqkzqk/PvZ-Portable@0.3.0": {
     "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
     "displayName": "PvZ Portable",
@@ -439,15 +421,6 @@
     "minOSVersion": "16.0",
     "size": 4420454,
     "source_repo": "missuo/kumone"
-  },
-  "lwh0630/TokenBar@1.2.13": {
-    "bundleIdentifier": "dev.tokenbar.app",
-    "displayName": "TokenBar",
-    "version": "1.2.13",
-    "build": "19",
-    "minOSVersion": "15.0",
-    "size": 11206759,
-    "source_repo": "lwh0630/TokenBar"
   },
   "itzzace/ytkace@1.1.9": {
     "bundleIdentifier": "com.google.ios.youtube",
@@ -521,15 +494,6 @@
     "size": 12739509,
     "source_repo": "mirazbakis/AltLoad"
   },
-  "JiangNanGenius/floe-agent@1.8.78": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.78",
-    "build": "399",
-    "minOSVersion": "26.0",
-    "size": 736117257,
-    "source_repo": "JiangNanGenius/floe-agent"
-  },
   "Rone89/cilicili@1.1.8": {
     "bundleIdentifier": "com.rayc.cilicili",
     "displayName": "cilicili",
@@ -538,5 +502,41 @@
     "minOSVersion": "26.1",
     "size": 25470044,
     "source_repo": "Rone89/cilicili"
+  },
+  "FrizzleM/SideInstaller@2.2.0": {
+    "bundleIdentifier": "com.frizzlem.sideinstaller",
+    "displayName": "SideInstaller",
+    "version": "2.2.0",
+    "build": "1",
+    "minOSVersion": "17.4",
+    "size": 11642855,
+    "source_repo": "FrizzleM/SideInstaller"
+  },
+  "FriesI23/mhabit@1.27.24+213": {
+    "bundleIdentifier": "io.github.friesi23.mhabit",
+    "displayName": "Table Habit",
+    "version": "1.27.24",
+    "build": "213",
+    "minOSVersion": "15.0",
+    "size": 17635302,
+    "source_repo": "FriesI23/mhabit"
+  },
+  "lwh0630/TokenBar@1.2.14": {
+    "bundleIdentifier": "dev.tokenbar.app",
+    "displayName": "TokenBar",
+    "version": "1.2.14",
+    "build": "20",
+    "minOSVersion": "15.0",
+    "size": 11212720,
+    "source_repo": "lwh0630/TokenBar"
+  },
+  "JiangNanGenius/floe-agent@1.8.80": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.80",
+    "build": "401",
+    "minOSVersion": "26.0",
+    "size": 736114779,
+    "source_repo": "JiangNanGenius/floe-agent"
   }
 }
