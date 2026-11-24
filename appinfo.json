@@ -323,15 +323,6 @@
     "size": 150730267,
     "source_repo": "utmapp/UTM"
   },
-  "mirazbakis/AltLoad@1.6.1": {
-    "bundleIdentifier": "com.mirazbakis.altload",
-    "displayName": "AltLoad",
-    "version": "1.6.1",
-    "build": "11",
-    "minOSVersion": "18.0",
-    "size": 12519786,
-    "source_repo": "mirazbakis/AltLoad"
-  },
   "Kianuni/Erosion-CN@1.0.6": {
     "bundleIdentifier": "com.jbdotparty.Erosion",
     "displayName": "Erosion",
@@ -404,15 +395,6 @@
     "size": 4329117,
     "source_repo": "wszqkzqk/PvZ-Portable"
   },
-  "Rone89/cilicili@1.1.7": {
-    "bundleIdentifier": "com.rayc.cilicili",
-    "displayName": "cilicili",
-    "version": "1.1.7",
-    "build": "230",
-    "minOSVersion": "26.1",
-    "size": 25017751,
-    "source_repo": "Rone89/cilicili"
-  },
   "deretame/Breeze@3.1.0": {
     "bundleIdentifier": "com.zephyr.breeze",
     "displayName": "Breeze",
@@ -430,15 +412,6 @@
     "minOSVersion": "16.4",
     "size": 56987981,
     "source_repo": "Termix-SSH/Mobile"
-  },
-  "mengangs/ipadn@2.3.4": {
-    "bundleIdentifier": "app.local.iPadn",
-    "displayName": "iPadn",
-    "version": "2.3.4",
-    "build": "40",
-    "minOSVersion": "16.0",
-    "size": 49848919,
-    "source_repo": "mengangs/ipadn"
   },
   "Predidit/Kazumi@2.4.6": {
     "bundleIdentifier": "com.example.kazumi",
@@ -475,15 +448,6 @@
     "minOSVersion": "15.0",
     "size": 11206759,
     "source_repo": "lwh0630/TokenBar"
-  },
-  "JiangNanGenius/floe-agent@1.8.72": {
-    "bundleIdentifier": "org.floeagent.ios",
-    "displayName": "Floe Agent",
-    "version": "1.8.72",
-    "build": "393",
-    "minOSVersion": "26.0",
-    "size": 721843642,
-    "source_repo": "JiangNanGenius/floe-agent"
   },
   "itzzace/ytkace@1.1.9": {
     "bundleIdentifier": "com.google.ios.youtube",
@@ -538,5 +502,41 @@
     "minOSVersion": "15.0",
     "size": 52388975,
     "source_repo": "lollipopkit/flutter_server_box"
+  },
+  "mengangs/ipadn@2.3.5": {
+    "bundleIdentifier": "app.local.iPadn",
+    "displayName": "iPadn",
+    "version": "2.3.5",
+    "build": "41",
+    "minOSVersion": "16.0",
+    "size": 49971723,
+    "source_repo": "mengangs/ipadn"
+  },
+  "mirazbakis/AltLoad@1.8.0": {
+    "bundleIdentifier": "com.mirazbakis.altload",
+    "displayName": "AltLoad",
+    "version": "1.8.0",
+    "build": "12",
+    "minOSVersion": "18.0",
+    "size": 12739509,
+    "source_repo": "mirazbakis/AltLoad"
+  },
+  "JiangNanGenius/floe-agent@1.8.78": {
+    "bundleIdentifier": "org.floeagent.ios",
+    "displayName": "Floe Agent",
+    "version": "1.8.78",
+    "build": "399",
+    "minOSVersion": "26.0",
+    "size": 736117257,
+    "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "Rone89/cilicili@1.1.8": {
+    "bundleIdentifier": "com.rayc.cilicili",
+    "displayName": "cilicili",
+    "version": "1.1.8",
+    "build": "233",
+    "minOSVersion": "26.1",
+    "size": 25470044,
+    "source_repo": "Rone89/cilicili"
   }
 }

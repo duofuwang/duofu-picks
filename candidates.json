@@ -83,16 +83,23 @@
       "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 12517789,
+      "size": 12739509,
       "versions": [
+        {
+          "version": "1.8.0",
+          "date": "2026-11-23T17:20:50Z",
+          "localizedDescription": "## AltLoad 1.8.0\n\nSources, Korean, a name for your certificate, and fixes for installs that timed out while connecting and for the Apple ID install tools.\n\n### New\n- **Sources.** Add AltStore and SideStore sources from the Install tab's **…** menu, then browse their apps, read release notes and install them. Apps from a source show **Update** when a newer version is out, in Sources and in Your Apps, and an app's page lists older versions too. Paste an https link or an `altstore://` / `sidestore://` source link; AltStore, SideStore and Husk are one tap away.\n- **Korean.** AltLoad and its readme are now in Korean.\n- **Certificate name.** Settings › Certificate Name sets the name AltLoad gives the development certificate it requests, which your Apple ID's certificate list shows. Changing it m…",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.8.0/AltLoad.ipa",
+          "size": 12739509,
+          "buildVersion": "12",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.6.1",
           "date": "2026-11-19T11:27:13Z",
           "localizedDescription": "## AltLoad 1.6.1\n\nA fix release for installs, JIT and device tools that stopped with \"Connection refused\" or \"tunnel connect timed out\".\n\n### Fixed\n- **\"Connection refused\" on 10.7.0.1:49152.** AltLoad always connected to port 49152, but iOS doesn't keep its pairing service on a fixed port. It usually gets 49152, but after a restart it can move, and every install then failed. AltLoad now looks up the real port over Bonjour. If that doesn't lead to it, AltLoad checks the iPhone's other ports, which takes a few seconds, and remembers the one it finds.\n- **Installs on iOS 27.2.** Since iOS 27.2, the iPhone closes a tunnel's services when a new connection to it identifies itself differently. AltLoad now uses the same identity every time, so installs, refreshes, JIT and AltServer no longer cut …",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.1/AltLoad.ipa",
-          "size": 12517789,
-          "buildVersion": "11",
-          "minOSVersion": "18.0"
+          "size": 12517789
         },
         {
           "version": "1.6.0",
@@ -100,13 +107,6 @@
           "localizedDescription": "## AltLoad 1.6.0\n\nLogs, a choice of developer team, more control over entitlements and JIT, and three new languages.\n\n### New\n- **Logs.** Tools › Support › Logs shows what AltLoad did: installs, refreshes, sign-ins, pairing, JIT, AltServer and LocalDevVPN. Filter by category, show errors only, search, copy, share as a file or clear it. Apple ID emails are masked, and passwords, codes, tokens and pairing files are never logged.\n- **Copy Log.** When an install fails, tap Copy Log to copy the error, your AltLoad and iOS versions and the last lines of the log, ready to paste into an issue.\n- **Developer team.** If your Apple ID belongs to more than one team, pick which one signs your apps in Tools › Certificates. Automatic keeps using the first team. The choice is used for installs, refreshes …",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.0/AltLoad.ipa",
           "size": 12454821
-        },
-        {
-          "version": "1.5.1",
-          "date": "2026-11-14T05:37:20Z",
-          "localizedDescription": "## AltLoad 1.5.1\n\nA fix release for altpair. The AltLoad app itself is unchanged apart from the version number.\n\n### Fixed\n- **altpair two-factor sign-in.** If Apple couldn't send the code to your devices, altpair kept asking for a code that Apple would never accept, and the only way out was to stop. Now it asks where to get a new code. At the code question you can also type `r` to resend the code, `s` to get it by text message (`s1`, `s2`… to pick a number), or `d` to send it to your devices.\n- **altpair sign-in messages.** When Apple turns down a sign-in, altpair now points to its own `--anisette <url>` option instead of a Settings screen that only exists in the app.\n- **altpair anisette servers.** A server given with `--anisette` and a trailing slash or capital letters is no longer trie…",
-          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.5.1/AltLoad.ipa",
-          "size": 11992467
         }
       ]
     },
@@ -244,16 +244,23 @@
       "localizedDescription": "A SwiftUI third-party iOS client experiment for Bilibili browsing, dynamics, video playback, and danmaku.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.rayc.cilicili.png?v=8ad732d1bdd1",
       "tintColor": "#f5609b",
-      "size": 25017751,
+      "size": 25470044,
       "versions": [
+        {
+          "version": "1.1.8",
+          "date": "2026-11-23T17:50:55Z",
+          "localizedDescription": "## v1.1.8 更新内容\n\n### ✨ 新增功能与正式转正\n- **大屏自适应布局正式转正（iPad / iPhone Duo）**：\n  - 宽屏、iPad、iPhone Duo 展开态及分屏窗口全面启用自适应多栏网格、自适应侧边/底部导航、双栏视频详情页与双栏直播间，并移除实验室开关固化为正式默认体验。\n  - 折叠态 iPhone Duo 适配左侧 9:16 主内容区与右侧竖向功能栏，弹窗严格限定在内容区内不遮挡侧边栏。\n- **动态页新增多栏布局与纯文本引用卡排版**：\n  - 支持**列表**、**瀑布流**、**16:9 等高网格**三种布局自由切换，可在动态页顶部菜单或设置页随时调整。\n  - 纯文本短动态按字数自动阶梯放大并居中排布，搭配极淡引号角标与柔和微渐变底纹，消除短句卡片留白空洞感。\n- **播放器长按滑动调速与上滑锁定**：\n  - 长按默认触发 `1.5x` 倍速，左右滑动可丝滑切换档位（`1.25x / 1.5x / 2.0x`），上滑锁定持续倍速播放；点按锁定胶囊即可恢复原速且不唤醒播放控件。\n- **内容过滤新增充电专属屏蔽**：\n  - 支持在过滤设置中按需开启屏蔽首页推荐与动态流中的充电专属及提前看视频（默认关闭）。\n- **搜索与「我的」页交互升级**：\n  - 搜索页支持原生 TabBar 形态切换与宽屏多栏发现/结果网格；「我的」页内嵌原生分组搜索栏。\n\n### 🎨 界面与交互优化\n- **视频详情页 UP 主关注角标优化**：移除头像外圈描边，改为右下角带背景镂空环的微角标（未关注为主题色 `+`，已关注平滑切换为克制的 `✓`）。\n- **卡片视觉更轻盈**：首页有边框自适应布局与动态页瀑布流/等高网格卡片统一去除厚重阴影，并调低描边不透明度（浅色 `0.06` / 深色 `0.10`）。\n- **根 TabBar 过渡与…",
+          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.8/bili-release-unsigned.ipa",
+          "size": 25470044,
+          "buildVersion": "233",
+          "minOSVersion": "26.1"
+        },
         {
           "version": "1.1.7",
           "date": "2026-11-21T02:38:11Z",
           "localizedDescription": "## v1.1.7 更新内容\n\n### ✨ 新增功能\n- **原生专栏阅读页**：动态页与搜索结果中的专栏（支持 `cv` 专栏与 `opus` 图文动态）支持原生打开，不再跳转外部网页。\n  - 动态中的专栏卡片点击整卡直接进入专栏详情页，无需先经由动态详情页中转。\n  - 支持封面、标题、分类/字数/发布时间、富文本排版（标题、粗斜体、删除线、引用、列表、代码块）、正文图片全屏缩放查看。\n  - 右上角提供独立的作者头像液态玻璃按钮（点击跳转 UP 主主页）；底部提供与动态详情页一致的**点赞、评论（「点击发送电波」发评及楼中楼回复）、分享**交互栏。\n- **视频三分手势控制**（可在「我的 → 播放设置 → 播放体验」中开启）：\n  - **左侧 1/3**：上下滑调节屏幕亮度。\n  - **中间 1/3**：横屏视频在竖屏下上滑转至横屏全屏、横屏下下滑退回竖屏；竖屏视频上滑进入竖屏全屏、全屏下下滑退出全屏。\n  - **右侧 1/3**：上下滑调节音量。\n\n### 🐛 修复与优化\n- **应用内画中画（小窗）稳定性与体验优化**：\n  - 修复退出视频页后无法自动进入应用内画中画小窗的问题。\n  - 修复小窗播放期间点击进入新视频时旧小窗卡住无法播放的问题，并优化旧小窗退出与新视频起播的切换速度。\n  - 修复在应用内画中画中点击暂停后仍自动恢复播放的问题。\n  - 修复未开启后台播放时，画中画播放期间锁屏未自动暂停的问题（普通返回桌面/切换 App 仍保持小窗播放）。\n- **构建与发布规范**：\n  - 统一未签名 Release IPA 的默认 Bundle ID 为 `com.rayc.cilicili`。\n\n### 📦 未签名 IPA 信息\n- **Bundle ID**：`com.rayc.cilicili`\n- **版本**：`1.1.7 (230)…",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.7/bili-release-unsigned.ipa",
-          "size": 25017751,
-          "buildVersion": "230",
-          "minOSVersion": "26.1"
+          "size": 25017751
         },
         {
           "version": "1.1.6",
@@ -261,13 +268,6 @@
           "localizedDescription": "## 更新内容（1.1.5 → 1.1.6）\n\n• **原生播放底层转正与手感优化**：正式采用系统原生 `AVPlayerViewController` 底座配合通透液态玻璃自绘控件，优化横向滑动调进度响应与松手出帧速度，统一手动全屏、重力横屏与系统画中画衔接体验。\n• **弹幕架构收敛与旋转稳定性修复**：点播由原生 `AVSynchronizedLayer` 同步驱动、直播由 `Metal` 渲染并彻底移除第三方 `DanmakuKit` 依赖；解决横竖屏旋转时弹幕闪烁、位置偏移与清晰度切换闪退问题，新增大会员渐变彩色弹幕及「同屏弹幕上限」设置。\n• **杜比视界与 HDR 播放精简**：移除旧版「杜比视界渲染」开关与双层叠加播放器，统一交由系统原生高动态范围输出配合内置防过曝兼容处理，避免额外功耗与画中画/全屏割裂。\n• **底栏动效与评论弹窗细节**：彻底修复二级页面返回一级页面时底部 TabBar 闪现及滚动最小化失效问题；新增「评论弹窗不展开到最大高度」开关，保持更舒适的阅读视野。\n\n--------\n\n安装说明：附件为未签名 IPA（`1.1.6` Build `218`），需自行签名后安装。",
           "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.6/bili-release-unsigned.ipa",
           "size": 24747937
-        },
-        {
-          "version": "1.1.5",
-          "date": "2026-11-17T11:42:35Z",
-          "localizedDescription": "## 更新内容（1.1.4 → 1.1.5）\n\n- **顶栏交互统一**：搜索页与「我的」页面采用系统原生顶栏搜索与按钮布局；动态页右上角切换箭头尺寸调整得更协调。\n- **视频页状态栏清晰**：浅色模式下进入视频或直播详情页时，顶部状态栏图标恢复清晰可见。\n- **底栏防误触回顶**：底栏最小化成胶囊后，首次点击只展开底栏方便切换页面；在展开状态下再轻点当前 Tab 才返回顶部。\n- **顶部渐变收窄**：保留系统柔和渐进模糊效果，移除多余顶部留白占位，整体视野更干净。\n\n---\n\n**安装说明**：附件为**未签名** IPA，需自行签名后安装。",
-          "downloadURL": "https://github.com/Rone89/cilicili/releases/download/v1.1.5/bili-release-unsigned.ipa",
-          "size": 24814110
         }
       ]
     },
@@ -384,30 +384,16 @@
       "localizedDescription": "Open-source AI Agent for iOS, iPadOS and Android, designed primarily for iPadOS. On-device Linux, 3D/CAD, Notes, Office, Canvas, Python/Node.js, terminal, Git, voice and Skill Hub. BYOK AI; supported local models and native 3D editing on iOS. 开源设备端 AI 工作台，以 iPadOS 体验为核心。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.floeagent.ios.png?v=8d8fadd0e2ff",
       "tintColor": "#1662df",
-      "size": 721843642,
+      "size": 736117257,
       "versions": [
         {
-          "version": "1.8.72",
-          "date": "2026-11-22T12:28:43Z",
-          "localizedDescription": "# Floe Agent 1.8.72（393）\n\n## 简体中文\n\n- 确认升级 Linux 后，聊天会显示升级进度。尚未执行的命令会等待升级完成，并在核验原运行位置后从同一任务继续。\n- 如果已在设置中开始升级，当前任务会等待同一次升级完成。\n\n## English\n\n- Confirming a Linux upgrade shows its progress in chat. Commands that have yet to start wait for the upgrade, then resume in the same task once the original execution location is verified.\n- Tasks join an upgrade already started in Settings and wait for it to finish.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was packaged from the exact local device build and attested by the workflow; private symbols and the transport archive are never public.",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.72/Floe-Agent-1.8.72-build393-unsigned.ipa",
-          "size": 721843642,
-          "buildVersion": "393",
+          "version": "1.8.78",
+          "date": "2026-11-23T22:31:25Z",
+          "localizedDescription": "# Floe Agent 1.8.78（399）\n\n## 简体中文\n\n- 优化切回 App 和打开长会话的加载，后台任务状态会随当前运行结果更新。\n- 提问和任务进度更新直接执行。审批模型默认关闭思考，可在「Agent 与权限」开启。\n- 配对设备可同步用户附件。工作区文件的改名和删除可以单独开启同步，同步前会保留冲突版本。\n- 游戏工作台加入原生运行支持。游戏可以从工作台或 IDE 运行，存档按工程保留。\n- Studio 支持导入程序生成的像素帧并导出视频。语音接入 DeepSeek 流式输出。\n- 更新 App 内图文帮助，补充工作台用途与操作步骤。\n\n## English\n\n- Return to the app and open long conversations more quickly. Background task status follows the current run outcome.\n- Questions and task progress updates run directly. Approval model reasoning is off by default and can be enabled in Agent & Permissions.\n- Paired devices can sync user attachments. Workspace rename and deletion sync has its own setting, with conflicting versions preserved.\n- The game workbench adds native runtime support. Run games from the workbench or IDE, with saves kept per proje…",
+          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.78/Floe-Agent-1.8.78-build399-unsigned.ipa",
+          "size": 736117257,
+          "buildVersion": "399",
           "minOSVersion": "26.0"
-        },
-        {
-          "version": "1.8.71",
-          "date": "2026-11-22T10:14:28Z",
-          "localizedDescription": "# Floe Agent 1.8.71（392）\n\n## 简体中文\n\n- 为需要密钥的服务测试连接时，先检查凭据。密钥缺失时会定位到输入框，连接错误会显示本地化提示。\n- 修复用户协议首段的加粗显示。已同意的用户可以继续使用。\n- 提高 iPad 设置向导选中行状态标签的对比度，便于在浅色、深色及放大字体下读取。\n\n## English\n\n- Connection tests check credentials for services that require a key. The form focuses the API key field when a key is missing and shows localized connection errors.\n- Fix the emphasis in the opening paragraph of the user agreement. Existing acceptances still apply.\n- Improve the contrast of status labels on the selected iPad setup row in light and dark appearance, including at larger text sizes.\n\n> [!WARNING]\n> GitHub IPA 未签名，不能直接安装，也不是 App Store 上传包。\n> The GitHub IPA is unsigned, cannot be installed directly, and is not the App Store upload package.\n\n本次安装包由精确的本地设备构建打包并经工作流签名证明；私有符号与传输归档不会公开。\nThis installable was package…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.71/Floe-Agent-1.8.71-build392-unsigned.ipa",
-          "size": 721820906
-        },
-        {
-          "version": "1.8.70",
-          "date": "2026-11-22T07:48:15Z",
-          "localizedDescription": "# Floe Agent 1.8.70（391）\n\n## 简体中文\n\n- 密集到达的消息和互动卡片按消息 ID 合并。聊天保留已加载的内容，跳到搜索结果和返回最新消息都使用稳定的滚动定位。\n- 游戏工作台可识别和运行完整的 TyranoScript 网页导出。兼容的 Ren’Py 桌面游戏可从编译后的 RPA 档案准备网页运行版本。\n- 游戏工程缺少可获取的运行资源时，可以在运行前准备。模型可以用 `game.runtime` 为尚未完成的工程下载对应的已校验资源。Ren’Py 会一并准备 SDK 和 Web 支持包。\n- 工作区接受单文件 Git 补丁。行号移动时可按唯一的完整上下文定位，保留 UTF-8 BOM 和原换行。\n- 已验证重建凭证且任务仍绑定原 Linux 位置时，可以在下一次执行前接续原任务。\n- Linux 虚拟 CPU 在支持的设备上使用预编译指令加速 AES 和 64 位多项式乘法。虚拟机继续使用无 JIT 的解释器。\n\n- Linux 客机在采用 ARM 批量拷贝指令且两个缓冲区争用同一个地址转换缓存槽位时，可以按页批量拷贝。\n\n## English\n\n- Merge bursts of messages and interactive cards by message ID. Chat keeps the loaded transcript visible and uses stable scroll positions when jumping to search hits or returning to the latest message.\n- Open and run complete TyranoScript web exports in the game workbench. Compatible Ren’Py desktop gam…",
-          "downloadURL": "https://github.com/JiangNanGenius/floe-agent/releases/download/v1.8.70/Floe-Agent-1.8.70-build391-unsigned.ipa",
-          "size": 721827389
         }
       ]
     },
