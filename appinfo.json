@@ -440,15 +440,6 @@
     "size": 31340480,
     "source_repo": "czy0729/Bangumi"
   },
-  "pounat/absorb@1.15.1-311": {
-    "bundleIdentifier": "com.barnabas.absorb",
-    "displayName": "Absorb",
-    "version": "1.15.1",
-    "build": "311",
-    "minOSVersion": "15.0",
-    "size": 48831411,
-    "source_repo": "pounat/absorb"
-  },
   "darriousliu/PiPixiv@2.7.0": {
     "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
     "displayName": "PiPixiv",
@@ -538,5 +529,14 @@
     "minOSVersion": "26.0",
     "size": 736114779,
     "source_repo": "JiangNanGenius/floe-agent"
+  },
+  "pounat/absorb@1.15.1-312": {
+    "bundleIdentifier": "com.barnabas.absorb",
+    "displayName": "Absorb",
+    "version": "1.15.1",
+    "build": "312",
+    "minOSVersion": "15.0",
+    "size": 48876213,
+    "source_repo": "pounat/absorb"
   }
 }
