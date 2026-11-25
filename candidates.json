@@ -1035,14 +1035,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1202070005,
+      "size": 1199105348,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-24T10:44:54Z",
-          "localizedDescription": "## Alpha Build `155c5b7`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`155c5b7`](https://github.com/Provenance-Emu/Provenance/commit/155c5b7fab415405bb9504c80a91a1982ca62b17) |\n| **Built** | 2026-11-24 10:44 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45368717863) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n155c5b7fa build(deps): bump iCube to SkinKit 0.7.0 pin\n25cbed87d build(deps): SkinKit 0.7.0\n8bff97b49 bump dolphin\n3731b59bf [Agent] fix(tvos): the bezel strip works with the Siri Remote (#3828)\n```\n\n### Merged PRs\n- #3828: [Agent] fix(tvos): …",
+          "date": "2026-11-25T11:09:48Z",
+          "localizedDescription": "## Alpha Build `1592e26`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`1592e26`](https://github.com/Provenance-Emu/Provenance/commit/1592e26faa70b1cf1fa9e7991b205bd91af3bbf0) |\n| **Built** | 2026-11-25 11:08 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45591649640) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n3e2246654 feat(library): add RomM recovery and fast source lookup\n```\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenance Alpha** app (separate from stable) by adding the\n[sideload feed]…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1202070005,
+          "size": 1199105348,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
@@ -1196,16 +1196,23 @@
       "localizedDescription": "Open-source Flutter habit tracker with smart scoring, WebDAV sync, local-first storage, privacy-focused design, and support for Android, iOS, Windows, macOS, and Linux.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/io.github.friesi23.mhabit.png?v=ac25ecabf890",
       "tintColor": "#1790e3",
-      "size": 17635302,
+      "size": 17659609,
       "versions": [
+        {
+          "version": "1.27.25+214",
+          "date": "2026-11-25T04:00:03Z",
+          "localizedDescription": "# Released: v1.27.25+214\r\n\r\nThis release is intended for F-Droid only.\r\n\r\n## 🐛 Fixes\r\n\r\n- Pin the Android NDK to r28c (`28.2.13676358`) so APK rebuilds can use the\r\n  same compiler as the release build (#725). See the [Android build instructions](https://github.com/FriesI23/mhabit/blob/v1.27.25%2B214/docs/wiki/Dev%EA%9E%89-Build-From-Source.md#building-for-android).\r\n\r\n## 🌐 Localization\r\n\r\n- Complete the Welsh app translation and update Esperanto. Thanks to Jon\r\n  Stevenson for both contributions on Weblate (#721).\r\n\r\n[Full Changelog](https://github.com/FriesI23/mhabit/compare/v1.27.24+213...v1.27.25+214)",
+          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.25%2B214/mhabit-unsigned.ipa",
+          "size": 17659609,
+          "buildVersion": "214",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.27.24+213",
           "date": "2026-11-24T03:02:07Z",
           "localizedDescription": "# Released: v1.27.24+213\r\n\r\n## 🐛 Fixes\r\n\r\n- Report corrupt Loop ZIP backups as import errors (#715)\r\n- Restore reliable first-frame rendering and window lifecycle handling on\r\n  Windows. Use the English app name in the title bar to avoid garbled text\r\n  (#715)\r\n- Correct English text in habit details, check-ins, reminders, import, export,\r\n  and settings. Show the correct number of days until a habit starts in\r\n  Russian and Ukrainian (#720)\r\n- Avoid a crash when entering full screen or resizing the window on macOS by\r\n  temporarily switching to Skia\r\n\r\n## 🌐 Localization\r\n\r\n- Add Esperanto translation to the app and iOS Home Screen widgets, thanks to\r\n  Jon Stevenson's contribution on Weblate (#717)\r\n\r\n## 🧹 Others\r\n\r\n- Upgrade to Flutter 3.47.9 and Dart 3.13.7, and migrate the adaptive int…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.24%2B213/mhabit-unsigned.ipa",
-          "size": 17635302,
-          "buildVersion": "213",
-          "minOSVersion": "15.0"
+          "size": 17635302
         },
         {
           "version": "1.27.20+209",
@@ -1213,13 +1220,6 @@
           "localizedDescription": "# Released: v1.27.20+209\r\n\r\n## ✨ Features\r\n\r\n- Add shared support cards to Settings and optional startup reminders, with\r\n  animated headers, automatic paging and clickable page indicators. Keep GitHub\r\n  Star and donation actions, and offer store review or Flathub favorites links\r\n  for the current distribution. Remember **Remind me later** and **Don't remind\r\n  me again** choices (#707)\r\n- Choose and remember the interface style in Display settings. When using the\r\n  Apple style, choose automatic, inset or edge Sidebar appearance (#709)\r\n\r\n## 🐛 Fixes\r\n\r\n- Restore normal browsing after an empty search in the Apple interface (#703)\r\n- Restore WebDAV sync with mixed authentication challenges, including Fastmail\r\n  (#705)\r\n- Preserve Loop import history for habits with non-Latin names and re…",
           "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.20%2B209/mhabit-unsigned.ipa",
           "size": 16672428
-        },
-        {
-          "version": "1.27.18+207",
-          "date": "2026-11-02T00:45:29Z",
-          "localizedDescription": "# Released: v1.27.18+207\r\n\r\nTable Habit now supports iOS Home Screen widgets! Thanks to\r\n[@IlyaPalochkin](https://github.com/IlyaPalochkin) for contributing the initial\r\ninteractive widgets (#680).\r\n\r\n## ✨ Features\r\n\r\n- Add interactive Home Screen widgets for iOS 17+, with seven-day progress and\r\n  check-in, undo and refresh actions without opening the app (#680)\r\n- Choose automatic or fixed habits, including archived habits; fixed habits\r\n  appear first. Small, medium and large widgets show up to one, three and six\r\n  habits respectively (#687)\r\n- Keep automatic check-ins visible until tapping **Next** to show another habit;\r\n  widgets on the same device share check-in and Next updates. Fixed habits stay\r\n  visible with Undo. Show a completion message when all goals are complete, or\r\n  **…",
-          "downloadURL": "https://github.com/FriesI23/mhabit/releases/download/v1.27.18%2B207/mhabit-unsigned.ipa",
-          "size": 15961434
         }
       ]
     },
@@ -1329,16 +1329,23 @@
       "localizedDescription": "VeneraNext 是一个跨平台漫画阅读器，支持本地漫画、WebDAV 漫画源、第三方网络漫画源，支持 Android、iOS、Windows、Linux、macOS 平台。",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.github.cyrilpeng.veneranext.png?v=d3a6b622a90d",
       "tintColor": "#1580c2",
-      "size": 21589601,
+      "size": 21685908,
       "versions": [
+        {
+          "version": "1.18.5",
+          "date": "2026-11-25T04:24:33Z",
+          "localizedDescription": "### 正式发布与鸿蒙下载\n\n- 发布 `1.18.5+254`，鸿蒙与 Android 手机／TV、Windows、macOS、iOS、Linux 从同一正式标签重新构建，统一在 GitHub Releases 提供安装包；鸿蒙取消 Beta 分类，用户可从公开发布页直接取得 HAP，应用内稳定更新检查可识别同版本的 HAP 和 manifest。\n- 鸿蒙采用 `distribution: bundled`、`channel: harmonyos` 与可选真机报告，HAP、来源 manifest 和 SHA-256 随 Release 长期提供，四种语言 README 与安装指南同步统一下载入口。保持现有包名、桌面名称及递增构建号，覆盖升级仍需沿用用户原签名密钥。\n- 构建、源码、版本、原生库及原始包摘要核验仍为发布前置条件；HAP 继续如实记录 `signed: false`、`runtime_verified: false` 和已知平台能力限制。缺少真机报告不阻止发布，主动提供的无效或失败报告仍会被拒绝；历史标签读取原提交的分发、渠道和验收策略。\n\n### 新增语言\n\n- 新增德语和日语各 1067 条界面翻译，覆盖设置、阅读器、收藏、导入导出、备份恢复和错误提示；语言设置、系统语言匹配、Flutter 组件及 JS `APP.locale` 同步支持 `de_DE`、`ja_JP`，德语不同地区与日语无地区设置均能识别，保留已有语言选择和系统默认策略。\n- 补充 Apple 平台支持语言声明，日语桌面显示优先使用日文字体；语言菜单的「系统」随界面语言翻译，德日继续保留英文未知文案回退和第三方标签原文，新增实际资源、语言切换以及真实字体下的手机／横屏／桌面与两倍字号设置、菜单、覆盖确认回归。\n- 设置选择器限制长选项的占宽，为标题保留空间；确认窗口的长标题支持换行，…",
+          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.5/VeneraNext-ios-1.18.5%2B254.ipa",
+          "size": 21685908,
+          "buildVersion": "254",
+          "minOSVersion": "14.0"
+        },
         {
           "version": "1.18.4",
           "date": "2026-11-23T03:27:29Z",
           "localizedDescription": "### 正式发布与验收\n\n- 发布 `1.18.4+253`，汇总 RC1–RC3 和后续反馈修复。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 从同一正式标签重新构建，公开并核验后推进稳定更新渠道、AltStore 和 Winget 元数据。\n- 鸿蒙改为独立 Actions Beta 分发，继续从准确主线提交构建 ARM64／API 26 未签名 HAP，提供来源 manifest、校验值和独立设备验收模板；本次正式 Release 不附带 HAP，也不声明鸿蒙真机验收通过。历史 RC、正式版及其鸿蒙附件保持原样。\n- #178 的 Android 120 Hz 连续翻页和 #188 的收藏目录切换已获提出者明确确认；#129、#152 已交付可安装修复且超过 72 小时未收到新的失败反馈，按约定接受，不将超时视为真机确认。\n- #166 的强 Cloudflare／TLS 兼容问题及 #186 原设备更新检查网络故障因缺少充分证据暂缓，相关异常处理与诊断改进不代表原始问题已修复。白边裁剪仍会保留带扫描痕迹、压缩灰点或靠边内容的区域；#159 长期外部目录及 #163、#81、#123 等增强继续后续安排。\n- 升级前导出并另存完整应用数据备份、保留原漫画文件；沿用原包名与签名身份覆盖安装，无需清库或重新导入。鸿蒙独立 Beta 仍需用户沿用原密钥自行签装。\n\n### 候选版已交付的功能与修复\n\n- 阅读器提供「锁定阅读菜单」和靠边小锁，锁定期间阻止触摸／右键唤出菜单，保留翻页、滚动、缩放，跨章与旋转保持锁定；TV 确定键先解锁，再次操作打开菜单。纵向连续／瀑布流支持默认关闭的「裁剪左右白边」，后台逐页检测、保留内容和双页中线，原图、下载、保存及导出不变（#139）。\n- 收藏支持从零开始多选、全选／反选、长按范围选择及…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.4/VeneraNext-ios-1.18.4%2B253.ipa",
-          "size": 21589601,
-          "buildVersion": "253",
-          "minOSVersion": "14.0"
+          "size": 21589601
         },
         {
           "version": "1.18.3",
@@ -1346,13 +1353,6 @@
           "localizedDescription": "### 正式版与升级\n\n- 发布正式版 `1.18.3+249`，集中交付收藏操作、目录导航、归档兼容和依赖解耦后的构建，运行时代码沿用已验收的 RC3。Android 手机／TV、Windows、macOS、iOS、Linux x64／ARM64 与鸿蒙从同一正式版提交重新构建；保留历史标签，不复用或重命名候选安装包。\n- 稳定更新渠道推进至本版；AltStore 与 Winget 元数据依据实际公开安装包更新，Winget 公共源收录需等待 Microsoft 审核。iOS IPA 与鸿蒙 HAP 仍需自行签名侧载。\n- 升级前导出并另存完整应用数据备份，保留原漫画文件。共享 WebDAV 数据的设备统一使用兼容版本；回退使用升级前的备份，不让旧版覆盖新版收藏库。覆盖升级保留原数据，无需清库或重新导入。\n\n### 鸿蒙随版分发\n\n- 正式版继续包含同版本的鸿蒙 ARM64 未签名测试版 HAP、`harmonyos-manifest.json`、`harmonyos-SHA256SUMS` 和中英文安装指南。应用源码与平台适配统一在 `main`；普通平台使用官方 Flutter 和根锁，鸿蒙使用独立固定 Flutter OH SDK、CPF 覆盖与受控锁模板。\n- 鸿蒙应用为 `VeneraNext (HarmonyOS Beta)`，包名为 `com.github.cyrilpeng.veneranext.harmony`，最低／目标 SDK 为 API 26，版本为 `1.18.3`，构建号为 249。升级须沿用原签名身份／密钥，同一助手或账号不保证同一把密钥。\n- 鸿蒙本地导入支持系统提供的目录选择、多选归档，以及带一层可选外部总目录的「漫画合集 ZIP」；结构有多本漫画／单本多章节歧义时由用户确认，取消不入库。目录仅复制导入，PDF 导入、系统分享及生物认证等…",
           "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.3/VeneraNext-ios-1.18.3%2B249.ipa",
           "size": 21467556
-        },
-        {
-          "version": "1.18.2",
-          "date": "2026-11-01T03:37:14Z",
-          "localizedDescription": "### 升级提示\n\n- 发布正式版 `1.18.2+243`，包含本轮 RC 的阅读器、下载和归档改进，以及两级收藏目录、Android TV、图片处理优化和 Windows 网页代理修复。\n- **升级前请导出并另存应用数据备份，保留原漫画文件。** 首次启动会迁移旧收藏库，即使不使用子目录也会执行；迁移前自动保留独立数据库快照，旧收藏夹作为一级目录保留。不需要清库、卸载或重新导入漫画。\n- 使用 WebDAV 同步的设备请统一升级，不要让新旧版本交替写入同一份收藏／同步数据。回退使用升级前的备份，不保证旧版能读取新版数据；单夹 JSON 仅包含该目录直接收藏，完整层级请使用应用数据备份。\n- Android 手机与 TV 分别提供通用、ARM64、ARM32 和 x86_64 安装包；TV 可与手机版共存，数据独立，官方 TV Alpha 可保留数据覆盖升级。iOS IPA 仍需自行签名侧载，Winget 新版本需等待公共源审核。\n\n### 新增\n\n- **两级本地收藏目录（#123）**：支持父子目录、展开／折叠、路径搜索、目录移动和同级排序；收藏、批量转移、快捷收藏及追更共用可搜索的目录选择器。父目录与子目录分别保存直接收藏，「全部」按漫画身份去重；目录移动不搬动漫画，目录名称保持全局唯一，不支持三级嵌套。\n- 完整应用备份和 WebDAV 快照保留收藏层级、稳定标识、顺序、网络关联及追更设置；恢复先在暂存副本校验，拒绝损坏或未知版本再替换活动数据库。旧格式单夹 JSON 仍可导入为一级目录。\n- **Android TV（#120）**：独立电视入口、固定横屏、遥控器导航和可见焦点。阅读时方向键翻页／滚动，确定打开菜单，返回先关闭菜单再保存退出；菜单内不在背景翻页，失焦或切后台停止连发。目录搜索用上下键移出输入框，左右键编辑光标。\n- TV 默认开启单页低内存模式…",
-          "downloadURL": "https://github.com/CyrilPeng/Venera-Next/releases/download/v1.18.2/VeneraNext-ios-1.18.2%2B243.ipa",
-          "size": 21307925
         }
       ]
     },

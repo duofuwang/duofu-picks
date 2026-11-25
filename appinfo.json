@@ -314,15 +314,6 @@
     "size": 150730267,
     "source_repo": "utmapp/UTM"
   },
-  "Kianuni/Erosion-CN@1.0.6": {
-    "bundleIdentifier": "com.jbdotparty.Erosion",
-    "displayName": "Erosion",
-    "version": "1.0.6",
-    "build": "31",
-    "minOSVersion": "26.0",
-    "size": 6948787,
-    "source_repo": "Kianuni/Erosion-CN"
-  },
   "ossappscollective/oss-weather@ios/alpha/3.02.0/170": {
     "bundleIdentifier": "com.akylas.weather",
     "displayName": "OSS Weather",
@@ -358,15 +349,6 @@
     "minOSVersion": "15.0",
     "size": 117415847,
     "source_repo": "kodjodevf/mangayomi"
-  },
-  "huamurui/zhihu-minus-minus@0.10.0": {
-    "bundleIdentifier": "com.huamurui.ZhihuMinusMinus",
-    "displayName": "知乎--",
-    "version": "0.10.0",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 14901422,
-    "source_repo": "huamurui/zhihu-minus-minus"
   },
   "wszqkzqk/PvZ-Portable@0.3.0": {
     "bundleIdentifier": "io.github.wszqkzqk.pvz-portable",
@@ -449,15 +431,6 @@
     "size": 20333927,
     "source_repo": "darriousliu/PiPixiv"
   },
-  "CyrilPeng/Venera-Next@1.18.4": {
-    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
-    "displayName": "VeneraNext",
-    "version": "1.18.4",
-    "build": "253",
-    "minOSVersion": "14.0",
-    "size": 21589601,
-    "source_repo": "CyrilPeng/Venera-Next"
-  },
   "lollipopkit/flutter_server_box@1.0.1962": {
     "bundleIdentifier": "com.lollipopkit.toolbox",
     "displayName": "ServerBox",
@@ -503,15 +476,6 @@
     "size": 11642855,
     "source_repo": "FrizzleM/SideInstaller"
   },
-  "FriesI23/mhabit@1.27.24+213": {
-    "bundleIdentifier": "io.github.friesi23.mhabit",
-    "displayName": "Table Habit",
-    "version": "1.27.24",
-    "build": "213",
-    "minOSVersion": "15.0",
-    "size": 17635302,
-    "source_repo": "FriesI23/mhabit"
-  },
   "lwh0630/TokenBar@1.2.14": {
     "bundleIdentifier": "dev.tokenbar.app",
     "displayName": "TokenBar",
@@ -538,5 +502,41 @@
     "minOSVersion": "15.0",
     "size": 48876213,
     "source_repo": "pounat/absorb"
+  },
+  "huamurui/zhihu-minus-minus@0.10.1": {
+    "bundleIdentifier": "com.huamurui.ZhihuMinusMinus",
+    "displayName": "知乎--",
+    "version": "0.10.1",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 14916202,
+    "source_repo": "huamurui/zhihu-minus-minus"
+  },
+  "Kianuni/Erosion-CN@1.0.7": {
+    "bundleIdentifier": "com.jbdotparty.Erosion",
+    "displayName": "Erosion",
+    "version": "1.0.7",
+    "build": "32",
+    "minOSVersion": "26.0",
+    "size": 6948364,
+    "source_repo": "Kianuni/Erosion-CN"
+  },
+  "CyrilPeng/Venera-Next@1.18.5": {
+    "bundleIdentifier": "com.github.cyrilpeng.veneranext",
+    "displayName": "VeneraNext",
+    "version": "1.18.5",
+    "build": "254",
+    "minOSVersion": "14.0",
+    "size": 21685908,
+    "source_repo": "CyrilPeng/Venera-Next"
+  },
+  "FriesI23/mhabit@1.27.25+214": {
+    "bundleIdentifier": "io.github.friesi23.mhabit",
+    "displayName": "Table Habit",
+    "version": "1.27.25",
+    "build": "214",
+    "minOSVersion": "15.0",
+    "size": 17659609,
+    "source_repo": "FriesI23/mhabit"
   }
 }
