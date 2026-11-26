@@ -233,15 +233,6 @@
     "size": 16554800,
     "source_repo": "Sami-Wali/ryP0"
   },
-  "EhPanda-Team/EhPanda@3.0.0": {
-    "bundleIdentifier": "app.ehpanda",
-    "displayName": "EhPanda",
-    "version": "3.0.0",
-    "build": "163",
-    "minOSVersion": "27.0",
-    "size": 18858405,
-    "source_repo": "EhPanda-Team/EhPanda"
-  },
   "huamidev/GestaltX@1.1.1": {
     "bundleIdentifier": "com.huami.gestultx",
     "displayName": "GestaltX",
@@ -376,15 +367,6 @@
     "minOSVersion": "16.4",
     "size": 56987981,
     "source_repo": "Termix-SSH/Mobile"
-  },
-  "Predidit/Kazumi@2.4.6": {
-    "bundleIdentifier": "com.example.kazumi",
-    "displayName": "Kazumi",
-    "version": "2.4.6",
-    "build": "20406",
-    "minOSVersion": "15.0",
-    "size": 30369553,
-    "source_repo": "Predidit/Kazumi"
   },
   "Chevey339/kelivo@1.3.7": {
     "bundleIdentifier": "psyche.kelivo",
@@ -538,5 +520,23 @@
     "minOSVersion": "18.0",
     "size": 12840783,
     "source_repo": "mirazbakis/AltLoad"
+  },
+  "Predidit/Kazumi@2.4.7": {
+    "bundleIdentifier": "com.example.kazumi",
+    "displayName": "Kazumi",
+    "version": "2.4.7",
+    "build": "20407",
+    "minOSVersion": "15.0",
+    "size": 30376353,
+    "source_repo": "Predidit/Kazumi"
+  },
+  "EhPanda-Team/EhPanda@3.1.0": {
+    "bundleIdentifier": "app.ehpanda.beta",
+    "displayName": "EhPanda Beta",
+    "version": "3.1.0",
+    "build": "166",
+    "minOSVersion": "27.0",
+    "size": 20848432,
+    "source_repo": "EhPanda-Team/EhPanda"
   }
 }
