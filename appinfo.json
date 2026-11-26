@@ -449,15 +449,6 @@
     "size": 49971723,
     "source_repo": "mengangs/ipadn"
   },
-  "mirazbakis/AltLoad@1.8.0": {
-    "bundleIdentifier": "com.mirazbakis.altload",
-    "displayName": "AltLoad",
-    "version": "1.8.0",
-    "build": "12",
-    "minOSVersion": "18.0",
-    "size": 12739509,
-    "source_repo": "mirazbakis/AltLoad"
-  },
   "Rone89/cilicili@1.1.8": {
     "bundleIdentifier": "com.rayc.cilicili",
     "displayName": "cilicili",
@@ -538,5 +529,14 @@
     "minOSVersion": "15.0",
     "size": 17659609,
     "source_repo": "FriesI23/mhabit"
+  },
+  "mirazbakis/AltLoad@1.8.1": {
+    "bundleIdentifier": "com.mirazbakis.altload",
+    "displayName": "AltLoad",
+    "version": "1.8.1",
+    "build": "13",
+    "minOSVersion": "18.0",
+    "size": 12840783,
+    "source_repo": "mirazbakis/AltLoad"
   }
 }

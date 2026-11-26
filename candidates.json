@@ -80,19 +80,26 @@
       "bundleIdentifier": "com.mirazbakis.altload",
       "developerName": "mirazbakis",
       "subtitle": "纯端侧安装/自动刷新 AltStore、SideStore",
-      "localizedDescription": "AltLoad is a tool that installs AltStore and SideStore completely on-device.",
+      "localizedDescription": "AltLoad is an app that installs AltStore and SideStore completely on-device.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mirazbakis.altload.png?v=76a3fbbd7ded",
       "tintColor": "#59b299",
-      "size": 12739509,
+      "size": 12840783,
       "versions": [
+        {
+          "version": "1.8.1",
+          "date": "2026-11-25T16:11:37Z",
+          "localizedDescription": "## AltLoad 1.8.1\n\nA fix release for AltLoad crashing when LocalDevVPN is on.\n\n### Fixed\n- **AltLoad crashed a few seconds after opening, or during an install, while LocalDevVPN was on.** Setting up the connection to the iPhone ran out of stack space in 1.8.0. It now runs on a thread with a larger stack. If you installed 1.6.1 to work around this, you can update now.\n- **Clearer connection errors.** When AltLoad can't connect to the iPhone, the error now lists what to try, in order: turn LocalDevVPN off and on, turn off other VPN or proxy apps, use Wi-Fi instead of mobile data, check Developer Mode, reopen AltLoad, and create a new pairing file. When the iPhone rejects the pairing file, it lists how to make a new one.\n\nIf something still fails, open Settings › Logs, tap Copy and paste it in…",
+          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.8.1/AltLoad.ipa",
+          "size": 12840783,
+          "buildVersion": "13",
+          "minOSVersion": "18.0"
+        },
         {
           "version": "1.8.0",
           "date": "2026-11-23T17:20:50Z",
-          "localizedDescription": "## AltLoad 1.8.0\n\nSources, Korean, a name for your certificate, and fixes for installs that timed out while connecting and for the Apple ID install tools.\n\n### New\n- **Sources.** Add AltStore and SideStore sources from the Install tab's **…** menu, then browse their apps, read release notes and install them. Apps from a source show **Update** when a newer version is out, in Sources and in Your Apps, and an app's page lists older versions too. Paste an https link or an `altstore://` / `sidestore://` source link; AltStore, SideStore and Husk are one tap away.\n- **Korean.** AltLoad and its readme are now in Korean.\n- **Certificate name.** Settings › Certificate Name sets the name AltLoad gives the development certificate it requests, which your Apple ID's certificate list shows. Changing it m…",
+          "localizedDescription": "## AltLoad 1.8.0 [BUG FOUND, UPDATE TO LATEST RELEASE]\r\n\r\nSources, Korean, a name for your certificate, and fixes for installs that timed out while connecting and for the Apple ID install tools.\r\n\r\n### New\r\n- **Sources.** Add AltStore and SideStore sources from the Install tab's **…** menu, then browse their apps, read release notes and install them. Apps from a source show **Update** when a newer version is out, in Sources and in Your Apps, and an app's page lists older versions too. Paste an https link or an `altstore://` / `sidestore://` source link; AltStore, SideStore and Husk are one tap away.\r\n- **Korean.** AltLoad and its readme are now in Korean.\r\n- **Certificate name.** Settings › Certificate Name sets the name AltLoad gives the development certificate it requests, which your App…",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.8.0/AltLoad.ipa",
-          "size": 12739509,
-          "buildVersion": "12",
-          "minOSVersion": "18.0"
+          "size": 12739509
         },
         {
           "version": "1.6.1",
@@ -100,13 +107,6 @@
           "localizedDescription": "## AltLoad 1.6.1\n\nA fix release for installs, JIT and device tools that stopped with \"Connection refused\" or \"tunnel connect timed out\".\n\n### Fixed\n- **\"Connection refused\" on 10.7.0.1:49152.** AltLoad always connected to port 49152, but iOS doesn't keep its pairing service on a fixed port. It usually gets 49152, but after a restart it can move, and every install then failed. AltLoad now looks up the real port over Bonjour. If that doesn't lead to it, AltLoad checks the iPhone's other ports, which takes a few seconds, and remembers the one it finds.\n- **Installs on iOS 27.2.** Since iOS 27.2, the iPhone closes a tunnel's services when a new connection to it identifies itself differently. AltLoad now uses the same identity every time, so installs, refreshes, JIT and AltServer no longer cut …",
           "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.1/AltLoad.ipa",
           "size": 12517789
-        },
-        {
-          "version": "1.6.0",
-          "date": "2026-11-18T19:04:04Z",
-          "localizedDescription": "## AltLoad 1.6.0\n\nLogs, a choice of developer team, more control over entitlements and JIT, and three new languages.\n\n### New\n- **Logs.** Tools › Support › Logs shows what AltLoad did: installs, refreshes, sign-ins, pairing, JIT, AltServer and LocalDevVPN. Filter by category, show errors only, search, copy, share as a file or clear it. Apple ID emails are masked, and passwords, codes, tokens and pairing files are never logged.\n- **Copy Log.** When an install fails, tap Copy Log to copy the error, your AltLoad and iOS versions and the last lines of the log, ready to paste into an issue.\n- **Developer team.** If your Apple ID belongs to more than one team, pick which one signs your apps in Tools › Certificates. Automatic keeps using the first team. The choice is used for installs, refreshes …",
-          "downloadURL": "https://github.com/mirazbakis/AltLoad/releases/download/v1.6.0/AltLoad.ipa",
-          "size": 12454821
         }
       ]
     },
