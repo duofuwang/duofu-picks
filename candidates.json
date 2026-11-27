@@ -451,7 +451,7 @@
       "bundleIdentifier": "com.gopeed.gopeed",
       "developerName": "GopeedLab",
       "subtitle": "现代下载管理器，HTTP / BT / 磁力",
-      "localizedDescription": "A fast, modern download manager for HTTP, BitTorrent, Magnet, and ed2k. Cross-platform, built with Golang and Flutter.",
+      "localizedDescription": "A fast, modern download manager for HTTP, BitTorrent, Magnet, HlS(m3u8), FTP and ed2k. Cross-platform, built with Golang and Flutter.",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.gopeed.gopeed.png?v=3337369c0bbd",
       "tintColor": "#5acb6a",
       "size": 40979942,
@@ -1035,14 +1035,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199420599,
+      "size": 1199494446,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-26T07:31:45Z",
-          "localizedDescription": "## Alpha Build `adcfa50`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`adcfa50`](https://github.com/Provenance-Emu/Provenance/commit/adcfa50fb7648330d4599563e38b76fcd99cedaf) |\n| **Built** | 2026-11-26 07:30 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45770386948) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\nadcfa50fb [Agent] build(deps): update shared packages (#3846)\n```\n\n### Merged PRs\n- #3846: [Agent] build(deps): update shared packages\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenanc…",
+          "date": "2026-11-26T18:49:52Z",
+          "localizedDescription": "## Alpha Build `71bb56e`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`71bb56e`](https://github.com/Provenance-Emu/Provenance/commit/71bb56e387410c3b49d79635663d5e36cf79a726) |\n| **Built** | 2026-11-26 18:49 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45872627441) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n71bb56e38 [Agent] build(deps): update shared packages (#3847)\n```\n\n### Merged PRs\n- #3847: [Agent] build(deps): update shared packages\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenanc…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199420599,
+          "size": 1199494446,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
