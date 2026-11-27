@@ -131,6 +131,12 @@
       "bundleIdentifier": "app.local.iPadn",
       "name": "iPadn",
       "subtitle": "App Store 多区账号下载器，支持原生安装并覆盖保留数据"
+    },
+    {
+      "repo": "Reukix/Reloc",
+      "bundleIdentifier": "dev.reloc.ios",
+      "name": "Reloc",
+      "subtitle": "iPhone 外设级虚拟定位，地图选点、后台保活与 NMEA 注入"
     }
   ],
   "candidatesRepository": {
