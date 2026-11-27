@@ -997,7 +997,7 @@
       "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
       "developerName": "darriousliu",
       "subtitle": "Compose Multiplatform 的 Pixiv 客户端",
-      "localizedDescription": "一个使用Compose Multiplatform开发的第三方Pixiv客户端，支持国内直连",
+      "localizedDescription": "Cross-platform Pixiv client (Compose Multiplatform) | 全平台第三方 Pixiv 客户端，支持免代理直连、AI 翻译小说与动图导出",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.mrl.pixiv.PiPixiv.png?v=7fd6be94e3c6",
       "tintColor": "#18b4f5",
       "size": 20333927,
@@ -1035,14 +1035,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199494446,
+      "size": 1199701769,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-26T18:49:52Z",
-          "localizedDescription": "## Alpha Build `71bb56e`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`71bb56e`](https://github.com/Provenance-Emu/Provenance/commit/71bb56e387410c3b49d79635663d5e36cf79a726) |\n| **Built** | 2026-11-26 18:49 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45872627441) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n71bb56e38 [Agent] build(deps): update shared packages (#3847)\n```\n\n### Merged PRs\n- #3847: [Agent] build(deps): update shared packages\n\n\n---\nThese builds are unsigned and intended for sideloading via AltStore/SideStore.\nInstall the **Provenanc…",
+          "date": "2026-11-27T07:58:23Z",
+          "localizedDescription": "## Alpha Build `09d3f24`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`09d3f24`](https://github.com/Provenance-Emu/Provenance/commit/09d3f24355b836c587e3ffa95cd37bbaac852f27) |\n| **Built** | 2026-11-27 07:57 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45956190566) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n09d3f2435 build(deps): bump iCube submodule to latest develop\n90605a579 Serialize manual release signing (#3858)\n6fe161372 chore(changelog): absorb 1 pending fragment(s) (#3857)\na67626fbd [Agent] build(deps): update shared packages (#3856)\n163…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199494446,
+          "size": 1199701769,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }

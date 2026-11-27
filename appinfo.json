@@ -538,5 +538,14 @@
     "minOSVersion": "27.0",
     "size": 20848432,
     "source_repo": "EhPanda-Team/EhPanda"
+  },
+  "Reukix/Reloc@1.0.3": {
+    "bundleIdentifier": "dev.reloc.ios",
+    "displayName": "Reloc",
+    "version": "1.0.3",
+    "build": "4",
+    "minOSVersion": "17.0",
+    "size": 3483181,
+    "source_repo": "Reukix/Reloc"
   }
 }
