@@ -395,15 +395,6 @@
     "size": 143414110,
     "source_repo": "itzzace/ytkace"
   },
-  "czy0729/Bangumi@8.42.2": {
-    "bundleIdentifier": "tv.bangumi.czy0729",
-    "displayName": "Bangumi",
-    "version": "8.42.2",
-    "build": "1",
-    "minOSVersion": "16.4",
-    "size": 31340480,
-    "source_repo": "czy0729/Bangumi"
-  },
   "darriousliu/PiPixiv@2.7.0": {
     "bundleIdentifier": "com.mrl.pixiv.PiPixiv",
     "displayName": "PiPixiv",
@@ -539,13 +530,22 @@
     "size": 20848432,
     "source_repo": "EhPanda-Team/EhPanda"
   },
-  "Reukix/Reloc@1.0.3": {
+  "Reukix/Reloc@1.0.4": {
     "bundleIdentifier": "dev.reloc.ios",
     "displayName": "Reloc",
-    "version": "1.0.3",
-    "build": "4",
+    "version": "1.0.4",
+    "build": "5",
     "minOSVersion": "17.0",
-    "size": 3483181,
+    "size": 3475407,
     "source_repo": "Reukix/Reloc"
+  },
+  "czy0729/Bangumi@8.42.3": {
+    "bundleIdentifier": "tv.bangumi.czy0729",
+    "displayName": "Bangumi",
+    "version": "8.42.2",
+    "build": "1",
+    "minOSVersion": "16.4",
+    "size": 31340480,
+    "source_repo": "czy0729/Bangumi"
   }
 }
