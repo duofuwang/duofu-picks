@@ -89,16 +89,23 @@
       "localizedDescription": "iOS / iPadOS 国行 Apple 智能、eSIM 与 MobileGestalt 系统配置工具箱（中英双语 · 防白苹果安全加固版） | Bootloop-Safe iOS / iPadOS MobileGestalt, Apple Intelligence & eSIM Toolbox (EN/ZH)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.jbdotparty.Erosion.png?v=f143b4f069ea",
       "tintColor": "#b66330",
-      "size": 6948364,
+      "size": 7081576,
       "versions": [
+        {
+          "version": "1.0.8",
+          "date": "2026-11-28T02:48:12Z",
+          "localizedDescription": "## Erosion-CN v1.0.8 (Build 33)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Dedicated \"Import Files\" (Multi-Select) & \"Import Folder\" (Recursive Copy) / 拆分「导入文件（多选）」与「导入文件夹（递归复制）」** *(Thanks to [@leopoldchou](https://github.com/leopoldchou) in [#75](https://github.com/Kianuni/Erosion-CN/issues/75) / 感谢 [@leopoldchou](https://github.com/leopoldchou) 在 [#75](https://github.com/Kianuni/Erosion-CN/issues/75) 提出)*\n   - Split file and folder picking into two dedicated menu entries in `FileBrowserView` with…",
+          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.8/Erosion_v1.0.8_Bilingual.ipa",
+          "size": 7081576,
+          "buildVersion": "33",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "1.0.7",
           "date": "2026-11-25T03:13:04Z",
           "localizedDescription": "## Erosion-CN v1.0.7 (Build 32)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Expanded Built-In Splash Ad Blocker Paths (`AdCacheBlockerView`) / 扩充主流应用内置开屏广告路径识别** *(Thanks to [@oooasis](https://github.com/oooasis) and [@itmubai](https://github.com/itmubai) for testing and sharing in [#58](https://github.com/Kianuni/Erosion-CN/issues/58) / 感谢 [@oooasis](https://github.com/oooasis) 与 [@itmubai](https://github.com/itmubai) 在 [#58](https://github.com/Kianuni/Erosion-CN/issues/58) 实测分享)*\n   - Added curated…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.7/Erosion_v1.0.7_Bilingual.ipa",
-          "size": 6948364,
-          "buildVersion": "32",
-          "minOSVersion": "26.0"
+          "size": 6948364
         },
         {
           "version": "1.0.6",
@@ -106,13 +113,6 @@
           "localizedDescription": "## Erosion-CN v1.0.6 (Build 31)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **General Splash Ad Blocker Whitelist & Manual Manager (`AdWhitelistStore` / `AdWhitelistManagerSheet`) / 去广告应用与路径通用白名单及手动管理面板** *(Thanks to [@appleoner](https://github.com/appleoner) for suggesting [#56](https://github.com/Kianuni/Erosion-CN/issues/56) / 感谢 [@appleoner](https://github.com/appleoner) 在 [#56](https://github.com/Kianuni/Erosion-CN/issues/56) 提出建议)*\n   - **Dedicated Whitelist Manager (`白名单`)**：Added top-bar & Over…",
           "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.6/Erosion_v1.0.6_Bilingual.ipa",
           "size": 6948787
-        },
-        {
-          "version": "1.0.5",
-          "date": "2026-11-17T23:33:43Z",
-          "localizedDescription": "## Erosion-CN v1.0.5 (Build 30)\n\n> [!IMPORTANT]\n> **System Compatibility / 系统兼容性提示**  \n> - **Supported / 完整支持**：`iOS / iPadOS 27.0 – 27.2.1` and `27.3 beta 1` (`24C503*`).  \n> - **Patched / 已封堵**：Apple patched `worse_query` starting in **`iOS 27.3 beta 2` (`24C5049d+`)**. Do **NOT** update past `27.3 beta 1` if you rely on Erosion-CN.\n\n---\n\n### What's New / 更新内容\n\n1. **Fixed Unresponsive \"Clean Selected\" in Container Cache Cleaner (`CacheCleanerView`) / 修复容器缓存「一键清理已选」不生效** *(Thanks to [@KindLin99](https://github.com/KindLin99) for reporting [#53](https://github.com/Kianuni/Erosion-CN/issues/53) / 感谢 [@KindLin99](https://github.com/KindLin99) 反馈 [#53](https://github.com/Kianuni/Erosion-CN/issues/53))*\n   - **Separated Button Styles in Overview Card**：Assigned `.borderless` to **Rescan** (`重新…",
-          "downloadURL": "https://github.com/Kianuni/Erosion-CN/releases/download/v1.0.5/Erosion_v1.0.5_Bilingual.ipa",
-          "size": 6875541
         }
       ]
     },
@@ -436,16 +436,23 @@
       "localizedDescription": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/dev.reloc.ios.png?v=e885bd494230",
       "tintColor": "#78d3ef",
-      "size": 3475407,
+      "size": 3777311,
       "versions": [
+        {
+          "version": "1.0.5",
+          "date": "2026-11-28T04:36:14Z",
+          "localizedDescription": "## Reloc v1.0.5\n\n### 更新\n- 新增**轨迹模拟**模式：支持地图选点/搜索沿真实道路规划轨迹（多途经点、步行/跑步/骑行/驾车预设、实时调速、拟真波动、往返/循环及收藏路线）。\n- 新增 **Apple 快捷指令**支持：提供「开始虚拟定位」（选收藏点 → 启动定位 → 跳转系统定位页清缓存）与「关闭虚拟定位」（停止并跳转系统定位页恢复真实 GPS）两项快捷动作。\n- 移除常驻静默音频保活，改用纯原生定位后台模式，降低功耗并避免音频冲突。\n- 优化轨迹锁定与防冻结检测，脱锁时自动原地暂停等待重新锁定。\n- 最低系统支持降至 **iOS / iPadOS 16.0**（真机实测正常），并修复 iOS 16.0 日志页闪退问题。\n- 提示：超过 15 km 的跨城 / 跨国轨迹模拟建议开启飞行模式；远距离定格刷新若未生效，请再次关闭系统「定位服务」并延长等待时间后再重新开启。\n\n---\n\n### What's New\n- **Trajectory Simulation**: Plan road-snapped routes with multiple waypoints, Walk/Run/Cycle/Drive presets, live speed control, natural motion, round-trip/loop modes, and saved routes.\n- **Apple Shortcuts Support**: Two focused native actions — Start Virtual Location (pick favorite → start GPS → jump to Location Services to clear cache) and Stop Virtual Location (stop & ju…",
+          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.5/Reloc.ipa",
+          "size": 3777311,
+          "buildVersion": "6",
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.0.4",
           "date": "2026-11-27T11:22:31Z",
           "localizedDescription": "## Reloc v1.0.4\n\n### 更新\n- **正式支持 iPad**：移除原有的仅限 iPhone 限制，现已支持 iPad（iPadOS 17.0+）直接使用，真机实测正常。\n\n---\n\n### What's New\n- **iPad Support**: Removed the iPhone-only restriction — Reloc now supports iPad (iPadOS 17.0+) and has been verified on real iPad hardware.",
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.4/Reloc.ipa",
-          "size": 3475407,
-          "buildVersion": "5",
-          "minOSVersion": "17.0"
+          "size": 3475407
         },
         {
           "version": "1.0.3",
@@ -453,13 +460,6 @@
           "localizedDescription": "## Reloc v1.0.3\n\n### 更新\n- **全新模式**：重新实现定位方式，现在无需电脑、无需配对文件，也无需代理、VPN 或依赖 Wi-Fi，**蜂窝网络下同样可以直接使用**，安装后打开即用。\n\n### 新增功能\n- **海拔高度支持**：地图选点、地址搜索或输入坐标时会自动匹配对应地点的真实海拔；底部卡片与状态栏直接显示当前海拔，点击即可手动调整；搜索框支持直接输入 `纬度, 经度, 海拔`；开启自然微漂移时也会同步模拟细微海拔变化。\n- **英文与中文双语支持**：新增完整英文版本，默认跟随系统语言，并可在「设置 → 应用语言 / Language」中即时切换，地名解析也会随当前语言自动适配。\n\n### 优化与稳定性提升\n- **界面精简**：移除了设置页中多余的通道状态区域，操作更简洁。\n- **稳定性增强**：大幅优化运行过程中的连接与保活表现，修复异常频繁重连与后台容易中断的问题，支持中途掉线自动恢复；切换音频设备（如断开蓝牙耳机）时不再影响后台运行。\n\n### 致谢\n感谢 [**huami**](https://github.com/huami1314) 提供的思路。\n\n---\n\n### What's New\n- **New Mode**: Rebuilt for direct on-device use — no computer, pairing files, proxy, VPN, or Wi-Fi required. **Works over cellular data** as well; install and start right away.\n\n### New Features\n- **Elevation Support**: Automatically matches real terrain altitude when pic…",
           "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.3/Reloc.ipa",
           "size": 3483270
-        },
-        {
-          "version": "1.0.2",
-          "date": "2026-11-26T17:31:32Z",
-          "localizedDescription": "## What's Changed\n\n### 地图搜索与交互优化\n- 新增基于当前地图视野范围的实时搜索联想（`MKLocalSearchCompleter` + 当前可视区域同步 + 自动回退 `MKLocalSearch`），支持 Apple 地图与纯 WGS-84 全球图源\n- 修复点击搜索框、下拉联想卡片与底部卡片边缘时触摸穿透到底层地图误改定位的问题；搜索态下点击地图先收起键盘/下拉列表\n- 合并 #11 搜索栏键盘避让与布局稳定化修复，补充无结果/网络错误提示，修复 iOS 26/27 SDK 下按钮着色与下拉副标题渲染问题\n- 优化地图重绘性能，消除定位监控每秒触发整页刷新，支持手动坐标范围校验与中文逗号坐标解析\n\n### 定位注入与连接稳定性\n- 优化 NMEA 注入锁定速度（5Hz 初始捕获脉冲、DGPS 质量标志、远距离跳点滤波重置）与停止时高 HDOP 优雅退化恢复\n- 增强回环通道健壮性：`RLTLSSocket.nudge()`、自动 RST 软重连、`waitingSubscription` 订阅看门狗、无损 CoreLocation 唤醒与「精确位置」关闭提醒\n- 音频保活设置实时生效，修复后台任务到期回调隔离问题，并保留意外中断会话恢复记录直到重连成功\n\n### 安全与存储\n- 启用 Lockdown TLS 证书固定（Certificate Pinning），加固 ObjC/iAP2 协议解析边界与并发安全\n- 配对记录迁移至 Keychain 存储，重新配对时复用 Host 身份避免重复弹窗\n\n### 下载说明\n- 附件 `Reloc.ipa` 为未签名 Release 包，请使用自签工具（如 SideStore / AltStore / TrollStore 等）安装。",
-          "downloadURL": "https://github.com/Reukix/Reloc/releases/download/v1.0.2/Reloc.ipa",
-          "size": 4533520
         }
       ]
     },

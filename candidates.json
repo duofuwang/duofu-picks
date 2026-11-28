@@ -48,16 +48,23 @@
       "localizedDescription": "A cross platform Audiobookshelf client for Android and iOS",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.barnabas.absorb.png?v=be00d8b6da96",
       "tintColor": "#5fbdb5",
-      "size": 48876213,
+      "size": 48935599,
       "versions": [
+        {
+          "version": "1.15.1-313",
+          "date": "2026-11-28T02:09:32Z",
+          "localizedDescription": "# v1.15.1-313\n\n## Beta 5\n\n### BookOrbit\n- **New** - Request settings for admins: download without asking, try the next release when one fails, and keep looking when nothing is found\n- **New** - Book Dock settings, and a docked file can join a book you already have as another format\n- **New** - Hold a picked release for review before it goes into the library\n\n### Requests\n- **New** - Select several books in a series or Upcoming Releases and request them all at once\n\n### Player\n- **Improved** - Absorbing cards stretch the cover and chapter bar out to the edges, like the full player\n\n### Watch\n- **New** - The watch can download the books you have downloaded on your phone\n\n### Android TV\n- **Improved** - Keyboard rows wrap around at the ends\n\n### Settings\n- **Fix** - Icons on the settings head…",
+          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-313/absorb-1.15.1-313-pre.ipa",
+          "size": 48935599,
+          "buildVersion": "313",
+          "minOSVersion": "15.0"
+        },
         {
           "version": "1.15.1-312",
           "date": "2026-11-24T23:27:24Z",
           "localizedDescription": "# v1.15.1-312\n\n## Beta 4\n\n### Player\n- **Improved** - Bigger playback buttons in the full screen player\n- **Fix** - Taking out both earbuds no longer skips forward\n- **Fix** - No rewind on resume after jumping to a chapter or seeking while paused\n\n### Material 3 Expressive\n- **New** - Tab bar floats as a pill and shrinks as you scroll\n- **New** - Ebook reader and long skip buttons get the Expressive shapes\n\n### Casting\n- **New** - BookOrbit books, narrated ebooks and downloads can be cast\n- **New** - Cast through this phone, for servers a cast device can't reach\n- **Fix** - Pause, buffering and sleep timer while casting, thanks to Serph91P (#405)\n\n### Android TV\n- **New** - On-screen keyboard that works with any remote\n- **New** - Equalizer, and a Recently listened sort\n- **Fix** - Sort is…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-312/absorb-1.15.1-312-pre.ipa",
-          "size": 48876213,
-          "buildVersion": "312",
-          "minOSVersion": "15.0"
+          "size": 48876213
         },
         {
           "version": "1.15.1-311",
@@ -65,13 +72,6 @@
           "localizedDescription": "# v1.15.1-311\n\n## Beta 3\n\n### Settings\n- **New** - Each section opens as its own page\n- **New** - Appearance has a live preview and one color choice\n- **New** - True cover colors option, for colors closer to the cover\n\n### Colors\n- **New** - Soft glow at the top in the playing book's cover color\n- **Fix** - Cover colors no longer turn pink in dark mode\n- **Improved** - App color only on things that are on or selected\n\n### Android TV\n- **New** - Android TV app, sign in from your phone\n- **New** - Game controller A and B work as OK and Back\n\n### Sign-in\n- **Fix** - iPhones stay signed in after sitting in the background (#501)\n- **Fix** - BookOrbit no longer signs you out when the server is slow\n\n\n### Installing on a TV\nMost Android TVs need the 32-bit build, so grab `absorb-1.15.1-311-armeab…",
           "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-311/absorb-1.15.1-311-pre.ipa",
           "size": 48831411
-        },
-        {
-          "version": "1.15.1-310",
-          "date": "2026-11-20T05:37:15Z",
-          "localizedDescription": "# v1.15.1-310\n\n## Beta 2\n\n### Player\n- **Improved** - Smoother card expand, it grows and shrinks with your swipe\n- **Improved** - A book you play slides its card to the front\n- **Improved** - Button rows join up in every look\n\n### App icon\n- **New** - App icon colors on iPhone and Android (Settings, Appearance)\n\n### Covers\n- **Fix** - Android Auto, CarPlay and the watch show new covers\n- **New** - Edit sheet previews a new cover before saving\n\n### BookOrbit\n- **New** - Hide libraries from shelves, series or stats (3.9)\n- **New** - Pause and resume read along creation\n- **New** - KOReader device names in the reading log\n- **Improved** - API key sign-ins can change password and keys\n\n### Audiobookshelf\n- **Fix** - Saving a user keeps their tag limits (2.38)\n\n### Ebooks\n- **Fix** - Progress k…",
-          "downloadURL": "https://github.com/pounat/absorb/releases/download/v1.15.1-310/absorb-1.15.1-310-pre.ipa",
-          "size": 48762949
         }
       ]
     },
@@ -1042,14 +1042,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199501317,
+      "size": 1199706086,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-27T23:38:48Z",
-          "localizedDescription": "## Alpha Build `2bd75a1`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`2bd75a1`](https://github.com/Provenance-Emu/Provenance/commit/2bd75a153e27892f19108aa446b1419b1aac4eef) |\n| **Built** | 2026-11-27 23:38 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/46079194067) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n2bd75a153 fix(sentry): drop MetricKit CPU exceptions from emulator-host binaries (#3864)\n```\n\n### Merged PRs\n- #3864: fix(sentry): drop MetricKit CPU exceptions from emulator-host binaries\n\n\n---\nThese builds are unsigned and intended for sidel…",
+          "date": "2026-11-28T05:18:58Z",
+          "localizedDescription": "## Alpha Build `a2623d7`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`a2623d7`](https://github.com/Provenance-Emu/Provenance/commit/a2623d720dfe6c3519d2992a572a02e18d4a153d) |\n| **Built** | 2026-11-28 05:18 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/46108093153) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\na2623d720 chore(bezels): SkinKit 0.11.0; the TV switcher offers the Seat (#3865)\n```\n\n### Merged PRs\n- #3865: chore(bezels): SkinKit 0.11.0; the TV switcher offers the Seat\n\n\n---\nThese builds are unsigned and intended for sideloading via AltSt…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199501317,
+          "size": 1199706086,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
