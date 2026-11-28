@@ -170,15 +170,6 @@
     "size": 3374224,
     "source_repo": "ResistanceTo/MiniWatts"
   },
-  "Jellify-Music/App@1.4.1": {
-    "bundleIdentifier": "com.cosmonautical.jellify",
-    "displayName": "Jellify",
-    "version": "1.4.1",
-    "build": "317",
-    "minOSVersion": "16.4",
-    "size": 38530310,
-    "source_repo": "Jellify-Music/App"
-  },
   "StikDebug/StikDebug@3.2.2": {
     "bundleIdentifier": "com.stik.stikdebug",
     "displayName": "StikDebug",
@@ -547,5 +538,14 @@
     "minOSVersion": "16.4",
     "size": 31340480,
     "source_repo": "czy0729/Bangumi"
+  },
+  "Jellify-Music/App@1.4.2": {
+    "bundleIdentifier": "com.cosmonautical.jellify",
+    "displayName": "Jellify",
+    "version": "1.4.2",
+    "build": "320",
+    "minOSVersion": "16.4",
+    "size": 39944188,
+    "source_repo": "Jellify-Music/App"
   }
 }

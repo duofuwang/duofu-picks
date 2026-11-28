@@ -587,16 +587,23 @@
       "localizedDescription": "A cross-platform, free and open source music player for Jellyfin, powered by React Native",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/com.cosmonautical.jellify.png?v=b09f342f1476",
       "tintColor": "#54d7e6",
-      "size": 38530310,
+      "size": 39944188,
       "versions": [
+        {
+          "version": "1.4.2",
+          "date": "2026-11-27T20:10:09Z",
+          "localizedDescription": "Welcome to Jellify 1.4.2\n\nThis update brings a smoother experience with smarter navigation and improved error handling. You can now favorite tracks directly from your phone's Control Center or media notifications, and the app supports new languages including Slovak. We've also optimized list performance to make scrolling through your library feel snappier.\n\n*   Music library selection is now optional, allowing you to query across all your libraries at once for a more comprehensive search experience.\n*   You can now favorite tracks directly from the Android Control Center or iOS media notification, and tapping an error message will copy the details to your clipboard for easier troubleshooting.\n*   The app now includes an in-app update notification system, and the \"Playing from\" text in the …",
+          "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.2/Jellify-1.4.2.ipa",
+          "size": 39944188,
+          "buildVersion": "320",
+          "minOSVersion": "16.4"
+        },
         {
           "version": "1.4.1",
           "date": "2026-11-08T16:06:22Z",
           "localizedDescription": "Welcome to Jellify 1.4.1\r\n\r\nI am so happy to introduce our latest updates designed to make your music experience even more seamless. This release focuses on refining our internal architecture and enhancing the overall visual polish of the app. We also included some fun new features to help you connect with other Jellify fans.\r\n\r\n- We added support for iMessage sticker packs and an optional Discord role ID for release announcements. This makes it much easier to share your love for Jellify with friends and stay in the loop on our newest updates.\r\n- The app received a major refactor of our theme palettes and types to improve the structural consistency of the UI. You can expect a more refined and cohesive look throughout your music journey.\r\n- We updated several core dependencies, including ta…",
           "downloadURL": "https://github.com/Jellify-Music/App/releases/download/1.4.1/Jellify-1.4.1.ipa",
-          "size": 38530310,
-          "buildVersion": "317",
-          "minOSVersion": "16.4"
+          "size": 38530310
         },
         {
           "version": "1.4.0",
@@ -1035,14 +1042,14 @@
       "localizedDescription": "iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console systems… Get Started:  https://wiki.provenance-emu.com  |",
       "iconURL": "https://duofuwang.github.io/duofu-picks/icons/org.provenance-emu.provenance.alpha.png?v=dbc8ca81dfc4",
       "tintColor": "#1899f5",
-      "size": 1199622324,
+      "size": 1199501317,
       "versions": [
         {
           "version": "alpha",
-          "date": "2026-11-27T10:44:36Z",
-          "localizedDescription": "## Alpha Build `61c4447`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`61c4447`](https://github.com/Provenance-Emu/Provenance/commit/61c44477e4d5dc26374b09169731cda2c8b45cec) |\n| **Built** | 2026-11-27 10:43 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/45974295033) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n61c44477e chore(changelog): absorb 1 pending fragment(s) (#3862)\n829287b58 [Agent] fix(bezels): TVs in portrait below the notch; a changed TV shows without a restart (#3855)\ne6cfc5be9 [Agent] build(deps): update shared packages (#3861)\n633c5cc…",
+          "date": "2026-11-27T23:38:48Z",
+          "localizedDescription": "## Alpha Build `2bd75a1`\n\n**Automated alpha build from `develop` branch**\n\n| | |\n|---|---|\n| **Commit** | [`2bd75a1`](https://github.com/Provenance-Emu/Provenance/commit/2bd75a153e27892f19108aa446b1419b1aac4eef) |\n| **Built** | 2026-11-27 23:38 UTC |\n| **CI Run** | [View build log](https://github.com/Provenance-Emu/Provenance/actions/runs/46079194067) |\n| **Bundle ID** | `org.provenance-emu.provenance.alpha` |\n\n> **Note:** This alpha build uses a separate bundle ID so it can be installed alongside the stable release.\n\n### Commits since last alpha\n```\n2bd75a153 fix(sentry): drop MetricKit CPU exceptions from emulator-host binaries (#3864)\n```\n\n### Merged PRs\n- #3864: fix(sentry): drop MetricKit CPU exceptions from emulator-host binaries\n\n\n---\nThese builds are unsigned and intended for sidel…",
           "downloadURL": "https://github.com/Provenance-Emu/Provenance/releases/download/alpha/Provenance-iOS.ipa",
-          "size": 1199622324,
+          "size": 1199501317,
           "buildVersion": "11056",
           "minOSVersion": "17.0"
         }
